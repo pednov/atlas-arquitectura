@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-16",
+ "actualizado": "2026-11-17",
  "fontes": [
   {
    "id": "encomenda",
@@ -402,48 +402,229 @@
    "sec": "LVT"
   },
   {
-   "id": "auditorio-amt",
-   "titulo": "Auditório da AMT",
-   "promotor": "Autoridade da Mobilidade e dos Transportes",
+   "id": "projeto-de-execucao-edificio-sede-instituto-da-seguranca-soc",
+   "titulo": "Projeto de execução edifício sede Instituto da Segurança Social",
+   "promotor": "Instituto da Segurança Social, I. P.",
    "concelho": "Lisboa",
-   "local": "Av. António Augusto de Aguiar, Lisboa",
-   "programa": "Institucional",
-   "tipo": "Concurso de concepção",
-   "entrega": "2025-04-05T18:00",
-   "esclarecimentos": "2025-03-06",
-   "premios": [
-    [
-     "1.º",
-     6000
-    ],
-    [
-     "2.º",
-     5000
-    ],
-    [
-     "3.º",
-     4000
-    ],
-    [
-     "4.º",
-     3000
-    ],
-    [
-     "5.º",
-     2000
-    ]
-   ],
-   "valor_base": 65000,
-   "custo_obra": 650000,
+   "sec": "LVT",
+   "local": "Lisboa",
+   "programa": "Serviços",
+   "tipo": "Aquisição de serviços",
+   "entrega": "2025-06-13",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": null,
+   "custo_obra": null,
    "fonte": "encomenda",
-   "url": "https://encomenda.oasrs.org/concursos/detalhe/qpmuyL/auditorio-da-amt-lisboa",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/8Y2U7O/analise-projeto-de-execucao-edificio-sede-instituto-da-seguranca-social",
    "links": [
     [
-     "Anúncio DR",
-     "https://encomenda.oasrs.org/media/2025/02/4033-2025.pdf"
+     "Anúncio D.R.",
+     "https://encomenda.oasrs.org/media/2025/06/14421-2025.pdf"
     ]
    ],
-   "sec": "LVT"
+   "auto": true,
+   "nota": "Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original."
+  },
+  {
+   "id": "concecao-construcao-habitacao-multifamiliar-em-meia-via",
+   "titulo": "Conceção-construção Habitação Multifamiliar em Meia Via",
+   "promotor": "Município de Torres Novas",
+   "concelho": "Torres Novas",
+   "sec": "LVT",
+   "local": "Torres Novas",
+   "programa": "Habitação",
+   "tipo": "Concurso de concepção",
+   "entrega": "2025-06-17",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": null,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/B7dSnq/analise-concecao-construcao-habitacao-multifamiliar-em-meia-via-torres-novas",
+   "links": [
+    [
+     "Anúncio D.R.",
+     "https://encomenda.oasrs.org/media/2025/05/12987-2025.pdf"
+    ]
+   ],
+   "auto": true,
+   "nota": "Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original."
+  },
+  {
+   "id": "plano-de-desenvolvimento-do-porto-de-ponta-delgada",
+   "titulo": "Plano de Desenvolvimento do Porto de Ponta Delgada",
+   "promotor": "Portos dos Açores, S. A.",
+   "concelho": "Ponta Delgada",
+   "sec": "ACORES",
+   "local": "Ponta Delgada",
+   "programa": "Planeamento",
+   "tipo": "Aquisição de serviços",
+   "entrega": "2025-07-07",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": null,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/B7yioY/analise-plano-de-desenvolvimento-do-porto-de-ponta-delgada",
+   "links": [
+    [
+     "Anúncio D.R.",
+     "https://encomenda.oasrs.org/media/2025/07/16106-2025.pdf"
+    ]
+   ],
+   "auto": true,
+   "nota": "Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original."
+  },
+  {
+   "id": "concecao-construcao-complexo-desportivo-municipal-de-carnide",
+   "titulo": "Conceção-construção Complexo Desportivo Municipal de Carnide",
+   "promotor": "Município de Lisboa",
+   "concelho": "Lisboa",
+   "sec": "LVT",
+   "local": "Lisboa",
+   "programa": "Desporto",
+   "tipo": "Concurso de concepção",
+   "entrega": "2025-07-18",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": null,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/E3PiDm/analise-concecao-construcao-complexo-desportivo-municipal-de-carnide-lisboa",
+   "links": [
+    [
+     "Anúncio D.R.",
+     "https://encomenda.oasrs.org/media/2025/06/15196-2025.pdf"
+    ]
+   ],
+   "auto": true,
+   "nota": "Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original."
+  },
+  {
+   "id": "concecao-construcao-reabilitacao-e-ampliacao-do-centro-de-sa",
+   "titulo": "Conceção-construção reabilitação e ampliação do Centro de Saúde de Aljubarrota",
+   "promotor": "Município de Alcobaça",
+   "concelho": "Alcobaça",
+   "sec": "LVT",
+   "local": "Alcobaça",
+   "programa": "Saúde",
+   "tipo": "Concurso de concepção",
+   "entrega": "2025-07-05",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": null,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/MMwcPn/analise-concecao-construcao-reabilitacao-e-ampliacao-do-centro-de-saude-de-aljubarrota",
+   "links": [
+    [
+     "Anúncio D.R.",
+     "https://encomenda.oasrs.org/media/2025/05/13324-2025.pdf"
+    ]
+   ],
+   "auto": true,
+   "nota": "Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original."
+  },
+  {
+   "id": "concecao-construcao-residencia-de-estudantes-da-unl-fase-ii",
+   "titulo": "Conceção-construção residência de estudantes da UNL - Fase II",
+   "promotor": "Universidade Nova de Lisboa",
+   "concelho": "Almada",
+   "sec": "LVT",
+   "local": "Almada",
+   "programa": "Habitação (Residência estudantes)",
+   "tipo": "Concurso de concepção",
+   "entrega": "2025-07-04",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": null,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/OyaiRq/analise-concecao-construcao-residencia-de-estudantes-da-unl-fase-ii-almada",
+   "links": [
+    [
+     "Anúncio D.R.",
+     "https://encomenda.oasrs.org/media/2025/06/15276-2025.pdf"
+    ]
+   ],
+   "auto": true,
+   "nota": "Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original."
+  },
+  {
+   "id": "concecao-construcao-pista-simplificada-de-atletismo-pinhal-n",
+   "titulo": "Conceção-construção pista simplificada de atletismo, Pinhal Novo",
+   "promotor": "Município de Palmela",
+   "concelho": "Palmela",
+   "sec": "LVT",
+   "local": "Pinhal Novo, Palmela",
+   "programa": "Desporto",
+   "tipo": "Concurso de concepção",
+   "entrega": "2025-06-18",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": null,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/kblt0Z/analise-concecao-construcao-pista-simplificada-de-atletismo-pinhal-novo",
+   "links": [
+    [
+     "Anúncio D.R.",
+     "https://encomenda.oasrs.org/media/2025/05/12187-2025.pdf"
+    ]
+   ],
+   "auto": true,
+   "nota": "Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original."
+  },
+  {
+   "id": "concecao-construcao-habitacao-multifamiliar-em-pedrogao-torr",
+   "titulo": "Conceção-construção Habitação Multifamiliar em Pedrógão, Torres Novas",
+   "promotor": "Município de Torres Novas",
+   "concelho": "Torres Novas",
+   "sec": "LVT",
+   "local": "Pedrogão, Torres Novas",
+   "programa": "Habitação",
+   "tipo": "Concurso de concepção",
+   "entrega": "2025-06-17",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": null,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/xGjCbw/analise-concecao-construcao-habitacao-multifamiliar-em-pedrogao-torres-novas",
+   "links": [
+    [
+     "Anúncio D.R.",
+     "https://encomenda.oasrs.org/media/2025/05/12988-2025.pdf"
+    ]
+   ],
+   "auto": true,
+   "nota": "Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original."
+  },
+  {
+   "id": "posto-territorial-da-gnr-de-peniche",
+   "titulo": "Posto Territorial da GNR de Peniche",
+   "promotor": "Secretaria-Geral do Ministério da Administração Interna",
+   "concelho": "Peniche",
+   "sec": "LVT",
+   "local": "Peniche",
+   "programa": "Segurança",
+   "tipo": "Aquisição de serviços",
+   "entrega": "2025-07-08",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": null,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/yGkHbG/analise-posto-territorial-da-gnr-de-peniche",
+   "links": [
+    [
+     "Anúncio D.R.",
+     "https://encomenda.oasrs.org/media/2025/06/dr-15409-2025.pdf"
+    ]
+   ],
+   "auto": true,
+   "nota": "Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original."
   }
  ]
 }

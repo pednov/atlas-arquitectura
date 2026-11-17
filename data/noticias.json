@@ -1,320 +1,538 @@
 {
-  "actualizado": "2026-11-16",
-  "fontes": [
-    {
-      "id": "construir",
-      "nome": "Construir",
-      "url": "https://construir.pt/categoria/arquitectura",
-      "nota": "Secção de arquitectura do jornal."
-    },
-    {
-      "id": "archdaily",
-      "nome": "ArchDaily",
-      "url": "https://www.archdaily.com/country/portugal",
-      "nota": "Obras publicadas em Portugal."
-    }
-  ],
-  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o imobiliário e as notícias sem ligação a arquitectura ou a arquitectos portugueses.",
-  "noticias": [
-    {
-      "d": "2026-11-16",
-      "f": "construir",
-      "tema": "Habitação",
-      "t": "Conceito inovador de habitação dá os primeiros passos nos Açores",
-      "m": "Bernardo Rodrigues · Ponta Delgada e Rabo de Peixe",
-      "u": "https://construir.pt/2026/11/16/conceito-inovador-de-habitacao-da-os-primeiros-passos-nos-acores",
-      "sec": "ACORES",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/11/Paraiso-Possivel_Casas-Mala-e-Nave-de-Sonho-1584x900.jpg"
-    },
-    {
-      "d": "2026-11-16",
-      "f": "archdaily",
-      "tema": "Obra",
-      "t": "The Black Timber",
-      "m": "SO Arquitetura & Design",
-      "u": "https://www.archdaily.com/1188494/the-black-timber-so-arquitetura-and-design",
-      "img": "https://images.adsttc.com/media/images/6af4/6d3f/c23f/1f01/895a/f3d8/newsletter/the-black-timber-so-arquitetura-and-design_21.jpg?1794403714"
-    },
-    {
-      "d": "2026-11-12",
-      "f": "construir",
-      "tema": "Instituições",
-      "t": "Casa da Arquitetura e Museu Oscar Niemeyer assinam protocolo de cooperação",
-      "m": "Casa da Arquitectura · Matosinhos",
-      "u": "https://construir.pt/2026/11/12/casa-da-arquitetura-e-museu-oscar-niemeyer-assinam-protocolo-de-cooperacao",
-      "sec": "NORTE",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/11/museu-oscar-niemeyer.jpg"
-    },
-    {
-      "d": "2026-11-11",
-      "f": "archdaily",
-      "tema": "Obra",
-      "t": "Comporta House",
-      "m": "Aurora Arquitectos",
-      "u": "https://www.archdaily.com/1188426/comporta-house-aurora-arquitectos",
-      "img": "https://images.adsttc.com/media/images/6af3/5083/c23f/1f46/c926/e6b3/newsletter/casa-na-comporta-aurora-arquitectos_35.jpg?1794330801"
-    },
-    {
-      "d": "2026-11-10",
-      "f": "archdaily",
-      "tema": "Obra",
-      "t": "Benfica AM & MR Villa",
-      "m": "João Tiago Aguiar, Arquitectos",
-      "u": "https://www.archdaily.com/1188291/benfica-am-and-mr-villa-joao-tiago-aguiar-arquitectos",
-      "img": "https://images.adsttc.com/media/images/6af1/c386/4ba6/4700/01d0/8243/newsletter/JTABenficaFN0182.jpg?1794229141"
-    },
-    {
-      "d": "2026-11-09",
-      "f": "construir",
-      "tema": "Património",
-      "t": "Especialistas debatem os desafios da preservação e valorização do património militar",
-      "m": "Universidade Portucalense, ICOMOS Portugal e Instituto da Defesa Nacional",
-      "u": "https://construir.pt/2026/11/09/especialistas-debatem-os-desafios-da-preservacao-e-valorizacao-do-patrimonio-militar",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/11/Screenshot-2026-11-09-164503_edited.png"
-    },
-    {
-      "d": "2026-11-09",
-      "f": "archdaily",
-      "tema": "Obra",
-      "t": "Hospital da Luz, Clínica da Figueira da Foz",
-      "m": "RISCO",
-      "u": "https://www.archdaily.com/1188321/hospital-da-luz-clinica-da-figueira-da-foz-risco",
-      "sec": "CENTRO",
-      "img": "https://images.adsttc.com/media/images/6af1/a46b/4ba6/4700/01d0/816f/newsletter/RISCO-ClinicaFigueiraFoz-040.jpg?1794221224"
-    },
-    {
-      "d": "2026-11-06",
-      "f": "construir",
-      "tema": "Prémio",
-      "t": "‘Casa no Douro Valley’ distinguida nos Architecture Madrid Awards 2026",
-      "m": "Logoexisto",
-      "u": "https://construir.pt/2026/11/06/casa-no-douro-valley-distinguida-nos-architecture-madrid-awards-2026",
-      "sec": "NORTE",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/11/Logoexisto_Fotografias-3_1-1584x950.jpg"
-    },
-    {
-      "d": "2026-11-06",
-      "f": "construir",
-      "tema": "Prémio",
-      "t": "A alma do Alentejo reconhecida internacionalmente",
-      "m": "SABRAB, Miguel Barbas · Casa M Ariane, Melides",
-      "u": "https://construir.pt/2026/11/06/a-alma-do-alentejo-reconhecida-internacionalmente",
-      "sec": "ALT",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/11/20260525-SABRAB-CASA-M-ARIANE-181-1584x950.jpg"
-    },
-    {
-      "d": "2026-11-05",
-      "f": "archdaily",
-      "tema": "Obra",
-      "t": "Santo António Primary School Requalification and Modernization Project",
-      "m": "BFJ Arquitectos",
-      "u": "https://www.archdaily.com/1188048/santo-antonio-primary-school-requalification-and-modernization-project-bfj-arquitectos",
-      "img": "https://images.adsttc.com/media/images/6aea/9288/1f37/4900/010d/0eee/newsletter/0044.jpg?1793757862"
-    },
-    {
-      "d": "2026-11-04",
-      "f": "construir",
-      "tema": "Prémio",
-      "t": "Fernando Cerqueira Barros vence Prémio Rafael Manzano 2026",
-      "m": "Fernando Cerqueira Barros",
-      "u": "https://construir.pt/2026/11/04/fernando-cerqueira-barros-vence-premio-rafael-manzano-2026"
-    },
-    {
-      "d": "2026-11-04",
-      "f": "archdaily",
-      "tema": "Obra",
-      "t": "House in Beloura",
-      "m": "ARX Portugal Arquitectos",
-      "u": "https://www.archdaily.com/1035360/house-in-beloura-arx-portugal-arquitectos",
-      "sec": "LVT",
-      "img": "https://images.adsttc.com/media/images/68fa/b1e6/66e5/d600/015e/8b35/newsletter/0014.jpg?1761260141"
-    },
-    {
-      "d": "2026-11-03",
-      "f": "construir",
-      "tema": "Prémio",
-      "t": "Reabilitação da Quinta de Crasto vence Prémio Gulbenkian Património 2026",
-      "m": "Coordenação de Nuno Valentim",
-      "u": "https://construir.pt/2026/11/03/reabilitacao-da-quinta-de-crasto-vence-premio-gulbenkian-patrimonio-2026",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/11/Crasto-1584x950.jpg"
-    },
-    {
-      "d": "2026-11-03",
-      "f": "construir",
-      "tema": "Concurso",
-      "t": "Câmara da Maia lança concurso internacional para recuperar Quinta do Mosteiro",
-      "m": "Moreira, Maia · entrega até 8 de Janeiro de 2027",
-      "u": "https://construir.pt/2026/11/03/camara-da-maia-lanca-concurso-internacional-para-recuperar-quinta-do-mosteiro",
-      "sec": "NORTE",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/11/Mosteiro-Norte.jpg"
-    },
-    {
-      "d": "2026-11-03",
-      "f": "construir",
-      "tema": "Prémio",
-      "t": "Projecto da A2OFFICE em Vila do Conde distinguido nos Architecture AMA Awards 2026",
-      "m": "A2OFFICE · Vila do Conde",
-      "u": "https://construir.pt/2026/11/03/projecto-da-a2office-em-vila-do-conde-distinguido-nos-architecture-ama-awards-2026",
-      "sec": "NORTE",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/11/photo_5992439660052943181_y.jpg"
-    },
-    {
-      "d": "2026-11-03",
-      "f": "archdaily",
-      "tema": "Obra",
-      "t": "House Around a Column",
-      "m": "fala",
-      "u": "https://www.archdaily.com/1187983/house-around-a-column-fala",
-      "img": "https://images.adsttc.com/media/images/6ae8/f8ee/62dc/0e01/8725/786e/newsletter/casa-ao-redor-de-uma-coluna-fala_23.jpg?1793653036"
-    },
-    {
-      "d": "2026-11-02",
-      "f": "archdaily",
-      "tema": "Obra",
-      "t": "Quinta da Casa",
-      "m": "Artequitectos",
-      "u": "https://www.archdaily.com/1187977/quinta-da-casa-artequitectos",
-      "img": "https://images.adsttc.com/media/images/6ae3/2f7f/20d6/d801/8852/1f6a/newsletter/house-quinta-da-casa-artequitectos_15.jpg?1793273743"
-    },
-    {
-      "d": "2026-10-30",
-      "f": "construir",
-      "tema": "Prémio",
-      "t": "Casa da Rocha Quebrada vence prémio Technal de arquitectura",
-      "m": "SO Arquitetura & Design · Açores",
-      "u": "https://construir.pt/2026/10/30/casa-da-rocha-quebrada-vence-premio-technal-de-arquitectura",
-      "sec": "ACORES",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/10/Imagem1-1.jpg"
-    },
-    {
-      "d": "2026-10-30",
-      "f": "archdaily",
-      "tema": "Obra",
-      "t": "Hotel MS Collection Arouca",
-      "m": "MiMool Arquitectura & Design de Interiores",
-      "u": "https://www.archdaily.com/1187879/hotel-ms-collection-arouca-mimool-arquitectura-and-design-de-interiores",
-      "sec": "NORTE",
-      "img": "https://images.adsttc.com/media/images/6ae3/22be/20d6/d801/8852/1f28/newsletter/ms-collection-arouca-mimool-arquitectura-and-design-de-interiores_5.jpg?1793270502"
-    },
-    {
-      "d": "2026-10-29",
-      "f": "archdaily",
-      "tema": "Obra",
-      "t": "Wood Structure on top of Brick Structure",
-      "m": "corpo atelier",
-      "u": "https://www.archdaily.com/1187639/wood-structure-on-top-of-brick-structure-corpo-atelier",
-      "img": "https://images.adsttc.com/media/images/6ae0/fba4/3271/8400/01d0/f37b/newsletter/4.jpg?1793129450"
-    },
-    {
-      "d": "2026-10-27",
-      "f": "construir",
-      "tema": "Obra",
-      "t": "Critical Software instala nova sede no edifício reabilitado da Coimbra Editora",
-      "m": "João Mendes Ribeiro · Coimbra",
-      "u": "https://construir.pt/2026/10/27/critical-software-instala-nova-sede-no-edificio-reabilitado-da-coimbra-editora",
-      "sec": "CENTRO",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/10/CSW-1-1-1584x950.jpg"
-    },
-    {
-      "d": "2026-10-27",
-      "f": "construir",
-      "tema": "Concurso",
-      "t": "Porto lança reabilitação para transformar Palácio de São Novo em museu",
-      "m": "Porto · propostas até 29 de Novembro",
-      "u": "https://construir.pt/2026/10/27/porto-lanca-reabilitacao-para-transformar-palacio-de-sao-novo-em-museu",
-      "sec": "NORTE",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/10/Palacio-Sao-Joao-Novo-1460x950.webp"
-    },
-    {
-      "d": "2026-10-27",
-      "f": "construir",
-      "tema": "Iniciativa",
-      "t": "‘Arquitectas da nossa Casa’ abre período de open call",
-      "m": "Candidaturas até 31 de Janeiro de 2027",
-      "u": "https://construir.pt/2026/10/27/arquitectas-da-nossa-casa-abre-periodo-de-open-call",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/10/Ad_NC_Open_Call_1200x630_b62ed895ae.jpeg"
-    },
-    {
-      "d": "2026-10-26",
-      "f": "construir",
-      "tema": "Espaço público",
-      "t": "Requalificação do Largo das Galinheiras prevê empreitada de 2,3M€",
-      "m": "Focus Group",
-      "u": "https://construir.pt/2026/10/26/requalificacao-do-largo-das-galinheiras-preve-empreitada-de-23me",
-      "sec": "LVT",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/10/Req.-Largo-Galinheiras_04_PR-1584x900.jpg"
-    },
-    {
-      "d": "2026-10-23",
-      "f": "construir",
-      "tema": "Exposição",
-      "t": "Parceria entre Portugal e Espanha leva exposição da XIV BIAU a Matosinhos",
-      "m": "Matosinhos",
-      "u": "https://construir.pt/2026/10/23/parceria-entre-portugal-e-espanha-leva-exposicao-da-xiv-biau-a-matosinhos",
-      "sec": "NORTE",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/10/casa_da_arquitetura_e_casa_de_la_arquitectura_reforcam_ligacao_com_itinerancia_da_xiv_biau_6ada44ff7c705-950x1350.jpg"
-    },
-    {
-      "d": "2026-10-21",
-      "f": "construir",
-      "tema": "Exposição",
-      "t": "Trienal recebe ‘Manobras de Aproximação’",
-      "m": "16 ateliers · Palácio Sinel de Cordes, até 2 de Março de 2027",
-      "u": "https://construir.pt/2026/10/21/trienal-recebe-manobras-de-aproximacao",
-      "sec": "LVT"
-    },
-    {
-      "d": "2026-10-19",
-      "f": "construir",
-      "tema": "Prémio",
-      "t": "Openbook conquista dupla distinção nos Architecture MasterPrize 2026",
-      "m": "Openbook",
-      "u": "https://construir.pt/2026/10/19/openbook-conquista-dupla-distincao-nos-architecture-masterprize-2026",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/10/premios-AMP2006-1584x791.jpg"
-    },
-    {
-      "d": "2026-10-16",
-      "f": "construir",
-      "tema": "Instituições",
-      "t": "Acervo do arquitecto brasileiro Assis Reis integra Casa da Arquitectura",
-      "m": "Casa da Arquitectura · Matosinhos",
-      "u": "https://construir.pt/2026/10/16/acervo-do-arquitecto-brasileiro-assis-reis-integra-casa-da-arquitectura",
-      "sec": "NORTE"
-    },
-    {
-      "d": "2026-10-15",
-      "f": "construir",
-      "tema": "Prémio",
-      "t": "Inês Carneiro vence Prémio Fernando Távora com viagem às ‘arquitecturas do cosmos’",
-      "m": "Inês Carneiro",
-      "u": "https://construir.pt/2026/10/15/ines-carneiro-vence-premio-fernando-tavora-com-viagem-as-arquitecturas-do-cosmos"
-    },
-    {
-      "d": "2026-10-06",
-      "f": "construir",
-      "tema": "Habitação",
-      "t": "Atelier Carvalho Araújo questiona atraso nas 204 habitações de Picoutos",
-      "m": "Carvalho Araújo · Picoutos",
-      "u": "https://construir.pt/2026/10/06/atelier-carvalho-araujo-pede-explicacoes-sobre-atraso-nas-204-habitacoes-de-picoutos",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/10/PdP_Picture2.jpg"
-    },
-    {
-      "d": "2026-10-06",
-      "f": "construir",
-      "tema": "Obra",
-      "t": "Focus Group reforça presença na Argélia com projecto de 25M€ para a Faderco",
-      "m": "Focus Group · Argélia",
-      "u": "https://construir.pt/2026/10/06/focus-group-reforca-presenca-na-argelia-com-projecto-de-25me-para-a-faderco",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/10/29.29.2026_FADERCO_03-1584x900.png"
-    },
-    {
-      "d": "2026-10-05",
-      "f": "construir",
-      "tema": "Prémio",
-      "t": "14 projectos portugueses conquistam LOOP Design Awards 2026",
-      "m": "LOOP Design Awards",
-      "u": "https://construir.pt/2026/10/05/14-projectos-portugueses-conquistam-loop-design-awards-2026",
-      "img": "https://backoffice.construir.pt/app/uploads/2026/10/3-600x600.jpg"
-    }
-  ]
+ "actualizado": "2026-11-17",
+ "fontes": [
+  {
+   "id": "construir",
+   "nome": "Construir",
+   "url": "https://construir.pt/categoria/arquitectura",
+   "nota": "Secção de arquitectura do jornal."
+  },
+  {
+   "id": "archdaily",
+   "nome": "ArchDaily",
+   "url": "https://www.archdaily.com/country/portugal",
+   "nota": "Obras publicadas em Portugal."
+  }
+ ],
+ "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o imobiliário e as notícias sem ligação a arquitectura ou a arquitectos portugueses.",
+ "noticias": [
+  {
+   "d": "2026-11-16",
+   "f": "construir",
+   "tema": "Habitação",
+   "t": "Conceito inovador de habitação dá os primeiros passos nos Açores",
+   "m": "Bernardo Rodrigues · Ponta Delgada e Rabo de Peixe",
+   "u": "https://construir.pt/2026/11/16/conceito-inovador-de-habitacao-da-os-primeiros-passos-nos-acores",
+   "sec": "ACORES",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/Paraiso-Possivel_Casas-Mala-e-Nave-de-Sonho-1584x900.jpg"
+  },
+  {
+   "d": "2026-11-16",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "The Black Timber",
+   "m": "SO Arquitetura & Design",
+   "u": "https://www.archdaily.com/1188494/the-black-timber-so-arquitetura-and-design",
+   "img": "https://images.adsttc.com/media/images/6af4/6d3f/c23f/1f01/895a/f3d8/newsletter/the-black-timber-so-arquitetura-and-design_21.jpg?1794403714"
+  },
+  {
+   "d": "2026-11-12",
+   "f": "construir",
+   "tema": "Instituições",
+   "t": "Casa da Arquitetura e Museu Oscar Niemeyer assinam protocolo de cooperação",
+   "m": "Casa da Arquitectura · Matosinhos",
+   "u": "https://construir.pt/2026/11/12/casa-da-arquitetura-e-museu-oscar-niemeyer-assinam-protocolo-de-cooperacao",
+   "sec": "NORTE",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/museu-oscar-niemeyer.jpg"
+  },
+  {
+   "d": "2026-11-11",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Comporta House",
+   "m": "Aurora Arquitectos",
+   "u": "https://www.archdaily.com/1188426/comporta-house-aurora-arquitectos",
+   "img": "https://images.adsttc.com/media/images/6af3/5083/c23f/1f46/c926/e6b3/newsletter/casa-na-comporta-aurora-arquitectos_35.jpg?1794330801"
+  },
+  {
+   "d": "2026-11-10",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Benfica AM & MR Villa",
+   "m": "João Tiago Aguiar, Arquitectos",
+   "u": "https://www.archdaily.com/1188291/benfica-am-and-mr-villa-joao-tiago-aguiar-arquitectos",
+   "img": "https://images.adsttc.com/media/images/6af1/c386/4ba6/4700/01d0/8243/newsletter/JTABenficaFN0182.jpg?1794229141"
+  },
+  {
+   "d": "2026-11-09",
+   "f": "construir",
+   "tema": "Património",
+   "t": "Especialistas debatem os desafios da preservação e valorização do património militar",
+   "m": "Universidade Portucalense, ICOMOS Portugal e Instituto da Defesa Nacional",
+   "u": "https://construir.pt/2026/11/09/especialistas-debatem-os-desafios-da-preservacao-e-valorizacao-do-patrimonio-militar",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/Screenshot-2026-11-09-164503_edited.png"
+  },
+  {
+   "d": "2026-11-09",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Hospital da Luz, Clínica da Figueira da Foz",
+   "m": "RISCO",
+   "u": "https://www.archdaily.com/1188321/hospital-da-luz-clinica-da-figueira-da-foz-risco",
+   "sec": "CENTRO",
+   "img": "https://images.adsttc.com/media/images/6af1/a46b/4ba6/4700/01d0/816f/newsletter/RISCO-ClinicaFigueiraFoz-040.jpg?1794221224"
+  },
+  {
+   "d": "2026-11-06",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "‘Casa no Douro Valley’ distinguida nos Architecture Madrid Awards 2026",
+   "m": "Logoexisto",
+   "u": "https://construir.pt/2026/11/06/casa-no-douro-valley-distinguida-nos-architecture-madrid-awards-2026",
+   "sec": "NORTE",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/Logoexisto_Fotografias-3_1-1584x950.jpg"
+  },
+  {
+   "d": "2026-11-06",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "A alma do Alentejo reconhecida internacionalmente",
+   "m": "SABRAB, Miguel Barbas · Casa M Ariane, Melides",
+   "u": "https://construir.pt/2026/11/06/a-alma-do-alentejo-reconhecida-internacionalmente",
+   "sec": "ALT",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/20260525-SABRAB-CASA-M-ARIANE-181-1584x950.jpg"
+  },
+  {
+   "d": "2026-11-05",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Santo António Primary School Requalification and Modernization Project",
+   "m": "BFJ Arquitectos",
+   "u": "https://www.archdaily.com/1188048/santo-antonio-primary-school-requalification-and-modernization-project-bfj-arquitectos",
+   "img": "https://images.adsttc.com/media/images/6aea/9288/1f37/4900/010d/0eee/newsletter/0044.jpg?1793757862"
+  },
+  {
+   "d": "2026-11-05",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Milan’s New San Siro Stadium and the BIAU’s 12 Awarded Projects: This Week’s Review",
+   "m": "",
+   "u": "https://www.archdaily.com/1188109/milans-new-san-siro-stadium-and-the-biaus-12-awarded-projects-this-weeks-review",
+   "auto": true,
+   "img": "https://images.adsttc.com/media/images/6aec/0e71/c723/9a01/895a/2979/large_jpg/a-new-stadium-replacing-milans-san-siro-and-the-unveiling-of-the-biaus-12-awarded-projects-this-weeks-review_6.jpg?1793855130"
+  },
+  {
+   "d": "2026-11-04",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "Fernando Cerqueira Barros vence Prémio Rafael Manzano 2026",
+   "m": "Fernando Cerqueira Barros",
+   "u": "https://construir.pt/2026/11/04/fernando-cerqueira-barros-vence-premio-rafael-manzano-2026"
+  },
+  {
+   "d": "2026-11-04",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "House in Beloura",
+   "m": "ARX Portugal Arquitectos",
+   "u": "https://www.archdaily.com/1035360/house-in-beloura-arx-portugal-arquitectos",
+   "sec": "LVT",
+   "img": "https://images.adsttc.com/media/images/68fa/b1e6/66e5/d600/015e/8b35/newsletter/0014.jpg?1761260141"
+  },
+  {
+   "d": "2026-11-03",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "Reabilitação da Quinta de Crasto vence Prémio Gulbenkian Património 2026",
+   "m": "Coordenação de Nuno Valentim",
+   "u": "https://construir.pt/2026/11/03/reabilitacao-da-quinta-de-crasto-vence-premio-gulbenkian-patrimonio-2026",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/Crasto-1584x950.jpg"
+  },
+  {
+   "d": "2026-11-03",
+   "f": "construir",
+   "tema": "Concurso",
+   "t": "Câmara da Maia lança concurso internacional para recuperar Quinta do Mosteiro",
+   "m": "Moreira, Maia · entrega até 8 de Janeiro de 2027",
+   "u": "https://construir.pt/2026/11/03/camara-da-maia-lanca-concurso-internacional-para-recuperar-quinta-do-mosteiro",
+   "sec": "NORTE",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/Mosteiro-Norte.jpg"
+  },
+  {
+   "d": "2026-11-03",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "Projecto da A2OFFICE em Vila do Conde distinguido nos Architecture AMA Awards 2026",
+   "m": "A2OFFICE · Vila do Conde",
+   "u": "https://construir.pt/2026/11/03/projecto-da-a2office-em-vila-do-conde-distinguido-nos-architecture-ama-awards-2026",
+   "sec": "NORTE",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/photo_5992439660052943181_y.jpg"
+  },
+  {
+   "d": "2026-11-03",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "House Around a Column",
+   "m": "fala",
+   "u": "https://www.archdaily.com/1187983/house-around-a-column-fala",
+   "img": "https://images.adsttc.com/media/images/6ae8/f8ee/62dc/0e01/8725/786e/newsletter/casa-ao-redor-de-uma-coluna-fala_23.jpg?1793653036"
+  },
+  {
+   "d": "2026-11-02",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Quinta da Casa",
+   "m": "Artequitectos",
+   "u": "https://www.archdaily.com/1187977/quinta-da-casa-artequitectos",
+   "img": "https://images.adsttc.com/media/images/6ae3/2f7f/20d6/d801/8852/1f6a/newsletter/house-quinta-da-casa-artequitectos_15.jpg?1793273743"
+  },
+  {
+   "d": "2026-11-02",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Foster + Partners and MANICA Unveil Design for New Stadium to Replace Milan's San Siro",
+   "m": "",
+   "u": "https://www.archdaily.com/1187932/foster-plus-partners-and-manica-unveil-design-for-new-stadium-to-replace-milans-san-siro",
+   "auto": true,
+   "img": "https://images.adsttc.com/media/images/6ae8/58f5/d5ab/1b01/886e/5251/large_jpg/foster-plus-partners-and-manica-unveil-design-for-new-stadium-to-replace-milans-san-siro_1.jpg?1793612057"
+  },
+  {
+   "d": "2026-11-02",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Making the City: ArchDaily Student Project Awards 2027 Open for Submissions",
+   "m": "",
+   "u": "https://www.archdaily.com/1187728/making-the-city-archdaily-student-project-awards-2027-open-for-submissions",
+   "auto": true,
+   "img": "https://images.adsttc.com/media/images/6ae2/5cb2/db5c/2001/882d/11f0/large_jpg/making-the-city-the-archdaily-student-project-awards-are-now-open-for-submissions_1.jpg?1793219780"
+  },
+  {
+   "d": "2026-10-30",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "Casa da Rocha Quebrada vence prémio Technal de arquitectura",
+   "m": "SO Arquitetura & Design · Açores",
+   "u": "https://construir.pt/2026/10/30/casa-da-rocha-quebrada-vence-premio-technal-de-arquitectura",
+   "sec": "ACORES",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/Imagem1-1.jpg"
+  },
+  {
+   "d": "2026-10-30",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Hotel MS Collection Arouca",
+   "m": "MiMool Arquitectura & Design de Interiores",
+   "u": "https://www.archdaily.com/1187879/hotel-ms-collection-arouca-mimool-arquitectura-and-design-de-interiores",
+   "sec": "NORTE",
+   "img": "https://images.adsttc.com/media/images/6ae3/22be/20d6/d801/8852/1f28/newsletter/ms-collection-arouca-mimool-arquitectura-and-design-de-interiores_5.jpg?1793270502"
+  },
+  {
+   "d": "2026-10-30",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "World Cities Day 2026 Explores \"Regenerating the City: Adequate Housing for All\"",
+   "m": "",
+   "u": "https://www.archdaily.com/1187811/world-cities-day-2026-explores-regenerating-the-city-adequate-housing-for-all",
+   "auto": true,
+   "img": "https://images.adsttc.com/media/images/6ae4/5d96/a8ed/4101/8962/3330/large_jpg/world-cities-day-2026-explores-regenerating-the-city-adequate-housing-for-all_20.jpg?1793351071"
+  },
+  {
+   "d": "2026-10-29",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Wood Structure on top of Brick Structure",
+   "m": "corpo atelier",
+   "u": "https://www.archdaily.com/1187639/wood-structure-on-top-of-brick-structure-corpo-atelier",
+   "img": "https://images.adsttc.com/media/images/6ae0/fba4/3271/8400/01d0/f37b/newsletter/4.jpg?1793129450"
+  },
+  {
+   "d": "2026-10-27",
+   "f": "construir",
+   "tema": "Obra",
+   "t": "Critical Software instala nova sede no edifício reabilitado da Coimbra Editora",
+   "m": "João Mendes Ribeiro · Coimbra",
+   "u": "https://construir.pt/2026/10/27/critical-software-instala-nova-sede-no-edificio-reabilitado-da-coimbra-editora",
+   "sec": "CENTRO",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/CSW-1-1-1584x950.jpg"
+  },
+  {
+   "d": "2026-10-27",
+   "f": "construir",
+   "tema": "Concurso",
+   "t": "Porto lança reabilitação para transformar Palácio de São Novo em museu",
+   "m": "Porto · propostas até 29 de Novembro",
+   "u": "https://construir.pt/2026/10/27/porto-lanca-reabilitacao-para-transformar-palacio-de-sao-novo-em-museu",
+   "sec": "NORTE",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/Palacio-Sao-Joao-Novo-1460x950.webp"
+  },
+  {
+   "d": "2026-10-27",
+   "f": "construir",
+   "tema": "Iniciativa",
+   "t": "‘Arquitectas da nossa Casa’ abre período de open call",
+   "m": "Candidaturas até 31 de Janeiro de 2027",
+   "u": "https://construir.pt/2026/10/27/arquitectas-da-nossa-casa-abre-periodo-de-open-call",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/Ad_NC_Open_Call_1200x630_b62ed895ae.jpeg"
+  },
+  {
+   "d": "2026-10-26",
+   "f": "construir",
+   "tema": "Espaço público",
+   "t": "Requalificação do Largo das Galinheiras prevê empreitada de 2,3M€",
+   "m": "Focus Group",
+   "u": "https://construir.pt/2026/10/26/requalificacao-do-largo-das-galinheiras-preve-empreitada-de-23me",
+   "sec": "LVT",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/Req.-Largo-Galinheiras_04_PR-1584x900.jpg"
+  },
+  {
+   "d": "2026-10-23",
+   "f": "construir",
+   "tema": "Exposição",
+   "t": "Parceria entre Portugal e Espanha leva exposição da XIV BIAU a Matosinhos",
+   "m": "Matosinhos",
+   "u": "https://construir.pt/2026/10/23/parceria-entre-portugal-e-espanha-leva-exposicao-da-xiv-biau-a-matosinhos",
+   "sec": "NORTE",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/casa_da_arquitetura_e_casa_de_la_arquitectura_reforcam_ligacao_com_itinerancia_da_xiv_biau_6ada44ff7c705-950x1350.jpg"
+  },
+  {
+   "d": "2026-10-21",
+   "f": "construir",
+   "tema": "Exposição",
+   "t": "Trienal recebe ‘Manobras de Aproximação’",
+   "m": "16 ateliers · Palácio Sinel de Cordes, até 2 de Março de 2027",
+   "u": "https://construir.pt/2026/10/21/trienal-recebe-manobras-de-aproximacao",
+   "sec": "LVT"
+  },
+  {
+   "d": "2026-10-21",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "The XIV Ibero-American Biennial Comes to Brasília Under the Theme “Caring for Life”",
+   "m": "",
+   "u": "https://www.archdaily.com/1187242/the-xiv-biau-to-be-held-in-brasilia-on-november-3-to-6-under-the-theme-caring-for-life",
+   "auto": true,
+   "img": "https://images.adsttc.com/media/images/6ad7/da8e/db5c/2001/882c/f197/large_jpg/the-xiv-biau-to-be-held-in-brasilia-on-november-3-6-under-the-theme-caring-for-life_11.jpg?1792531152"
+  },
+  {
+   "d": "2026-10-19",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "Openbook conquista dupla distinção nos Architecture MasterPrize 2026",
+   "m": "Openbook",
+   "u": "https://construir.pt/2026/10/19/openbook-conquista-dupla-distincao-nos-architecture-masterprize-2026",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/premios-AMP2006-1584x791.jpg"
+  },
+  {
+   "d": "2026-10-16",
+   "f": "construir",
+   "tema": "Instituições",
+   "t": "Acervo do arquitecto brasileiro Assis Reis integra Casa da Arquitectura",
+   "m": "Casa da Arquitectura · Matosinhos",
+   "u": "https://construir.pt/2026/10/16/acervo-do-arquitecto-brasileiro-assis-reis-integra-casa-da-arquitectura",
+   "sec": "NORTE"
+  },
+  {
+   "d": "2026-10-15",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "Inês Carneiro vence Prémio Fernando Távora com viagem às ‘arquitecturas do cosmos’",
+   "m": "Inês Carneiro",
+   "u": "https://construir.pt/2026/10/15/ines-carneiro-vence-premio-fernando-tavora-com-viagem-as-arquitecturas-do-cosmos"
+  },
+  {
+   "d": "2026-10-09",
+   "f": "construir",
+   "tema": "Debate",
+   "t": "Conferência internacional CICA debate papel da crítica de arquitectura nos dias de hoje",
+   "m": "",
+   "u": "https://construir.pt/2026/10/09/conferencia-internacional-cica-debate-papel-da-critica-de-arquitectura-nos-dias-de-hoje",
+   "auto": true
+  },
+  {
+   "d": "2026-10-06",
+   "f": "construir",
+   "tema": "Habitação",
+   "t": "Atelier Carvalho Araújo questiona atraso nas 204 habitações de Picoutos",
+   "m": "Carvalho Araújo · Picoutos",
+   "u": "https://construir.pt/2026/10/06/atelier-carvalho-araujo-pede-explicacoes-sobre-atraso-nas-204-habitacoes-de-picoutos",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/PdP_Picture2.jpg"
+  },
+  {
+   "d": "2026-10-06",
+   "f": "construir",
+   "tema": "Obra",
+   "t": "Focus Group reforça presença na Argélia com projecto de 25M€ para a Faderco",
+   "m": "Focus Group · Argélia",
+   "u": "https://construir.pt/2026/10/06/focus-group-reforca-presenca-na-argelia-com-projecto-de-25me-para-a-faderco",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/29.29.2026_FADERCO_03-1584x900.png"
+  },
+  {
+   "d": "2026-10-05",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "14 projectos portugueses conquistam LOOP Design Awards 2026",
+   "m": "LOOP Design Awards",
+   "u": "https://construir.pt/2026/10/05/14-projectos-portugueses-conquistam-loop-design-awards-2026",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/3-600x600.jpg"
+  },
+  {
+   "d": "2026-10-05",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "On World Architecture Day 2026: A Call to Build Better, Build Differently, and Share Resources",
+   "m": "",
+   "u": "https://www.archdaily.com/1186206/on-world-architecture-day-2026-a-call-to-build-better-build-differently-and-share-resources",
+   "auto": true,
+   "img": "https://images.adsttc.com/media/images/6abe/cd8f/87ec/5401/8809/f74e/large_jpg/on-world-architecture-day-2026-a-call-to-build-better-build-differently-and-share-resources_1.jpg?1790889364"
+  },
+  {
+   "d": "2026-09-29",
+   "f": "construir",
+   "tema": "Obra",
+   "t": "Novo Museu do Mobiliário de Paredes celebra as artes em madeira",
+   "m": "Spaceworkers",
+   "u": "https://construir.pt/2026/09/29/novo-museu-do-mobiliario-de-paredes-celebra-as-artes-em-madeira",
+   "auto": true,
+   "img": "https://backoffice.construir.pt/app/uploads/2026/09/Museu-do-Mobiliario-Paredes_1-1-300x170.jpg"
+  },
+  {
+   "d": "2026-09-22",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "Quatro projectos portugueses na shortlist dos Dezeen Awards 2026",
+   "m": "",
+   "u": "https://construir.pt/2026/09/22/quatro-projectos-portugueses-na-shortlist-dos-dezeen-awards-2026",
+   "auto": true,
+   "img": "https://backoffice.construir.pt/app/uploads/2026/09/mix-300x170.jpg"
+  },
+  {
+   "d": "2026-09-22",
+   "f": "construir",
+   "tema": "Obra",
+   "t": "Huître assina escritório da FastFiber",
+   "m": "",
+   "u": "https://construir.pt/2026/09/22/huitre-assina-escritorio-da-fastfiber",
+   "auto": true,
+   "img": "https://backoffice.construir.pt/app/uploads/2026/09/huitre-fastfiber-4-300x170.jpg"
+  },
+  {
+   "d": "2026-09-21",
+   "f": "construir",
+   "tema": "Debate",
+   "t": "Paola Viganò é a convidada para a primeira edição das Conferências Nuno Portas",
+   "m": "",
+   "u": "https://construir.pt/2026/09/21/paola-vigano-e-a-convidada-para-a-primeira-edicao-das-conferencias-nuno-portas",
+   "auto": true
+  },
+  {
+   "d": "2026-09-15",
+   "f": "construir",
+   "tema": "Exposição",
+   "t": "Saraiva+Associados ‘leva’ 30 anos de arquitectura para a rua",
+   "m": "",
+   "u": "https://construir.pt/2026/09/15/saraivaassociados-leva-30-anos-de-arquitectura-para-a-rua",
+   "auto": true,
+   "img": "https://backoffice.construir.pt/app/uploads/2026/09/Policia_Judiciaria_Foto_Fernando-Guerra-300x170.jpg"
+  },
+  {
+   "d": "2026-09-15",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "20 Practices Expanding Architecture’s Agency: Winners of the ArchDaily 2026 Next Practices Awards",
+   "m": "",
+   "u": "https://www.archdaily.com/1185003/20-practices-expanding-architectures-agency-winners-of-the-archdaily-2026-next-practices-awards",
+   "auto": true,
+   "img": "https://images.adsttc.com/media/images/6aa8/104e/069c/1b01/89fb/74bc/large_jpg/20-practices-expanding-architectures-agency-winners-of-the-archdaily-2026-next-practices-awards_1.jpg?1789399135"
+  },
+  {
+   "d": "2026-09-10",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "Plano Humano distinguido no Wonder Global Design Awards 2026",
+   "m": "Vila Franca de Xira",
+   "u": "https://construir.pt/2026/09/10/plano-humano-distinguido-no-wonder-global-design-awards-2026",
+   "auto": true,
+   "sec": "LVT",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/09/Cover-300x170.png"
+  },
+  {
+   "d": "2026-09-10",
+   "f": "construir",
+   "tema": "Obra",
+   "t": "Hunter International Forum 2026 reúne grandes nomes da arquitectura no Memorial da América Latina",
+   "m": "",
+   "u": "https://construir.pt/2026/09/10/hunter-international-forum-2026-reune-grandes-nomes-da-arquitectura-no-memorial-da-america-latina",
+   "auto": true
+  },
+  {
+   "d": "2026-09-08",
+   "f": "construir",
+   "tema": "Obra",
+   "t": "Arquitectura biofílica como respostas às ondas de calor integra agenda da Homeing",
+   "m": "",
+   "u": "https://construir.pt/2026/09/08/arquitectura-biofilica-como-respostas-as-ondas-de-calor-integra-agenda-da-homeing",
+   "auto": true,
+   "img": "https://backoffice.construir.pt/app/uploads/2026/09/homeing2025-X8A4236-300x170.jpg"
+  },
+  {
+   "d": "2026-09-07",
+   "f": "construir",
+   "tema": "Obra",
+   "t": "Plano Humano muda de espaço e inicia fase de crescimento",
+   "m": "Loures",
+   "u": "https://construir.pt/2026/09/07/278184",
+   "auto": true,
+   "sec": "LVT",
+   "img": "https://backoffice.construir.pt/app/uploads/2026/09/2-300x170.jpg"
+  },
+  {
+   "d": "2026-09-04",
+   "f": "construir",
+   "tema": "Exposição",
+   "t": "Rentrée na Trienal de Lisboa: arquitectura como chave para ler o mundo",
+   "m": "",
+   "u": "https://construir.pt/2026/09/04/rentree-na-trienal-de-lisboa-arquitectura-como-chave-para-ler-o-mundo",
+   "auto": true
+  },
+  {
+   "d": "2026-08-28",
+   "f": "construir",
+   "tema": "Habitação",
+   "t": "Perkins&Will propõe sistema modular em madeira para acelerar a construção de habitação",
+   "m": "",
+   "u": "https://construir.pt/2026/08/28/perkinswill-propoe-sistema-modular-em-madeira-para-acelerar-a-construcao-de-habitacao",
+   "auto": true,
+   "img": "https://backoffice.construir.pt/app/uploads/2026/08/120622-full_2995-1_120622_sc_v2com-300x170.jpg"
+  },
+  {
+   "d": "2026-08-17",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Brazil in Focus: This Month in Architecture, Heritage, and Cultural Debate",
+   "m": "",
+   "u": "https://www.archdaily.com/1183412/brazil-in-focus-this-month-in-architecture-heritage-and-cultural-debate",
+   "auto": true,
+   "img": "https://images.adsttc.com/media/images/6a82/cc8b/ab59/ca01/8994/5674/large_jpg/brazil-in-focus-this-month-in-architecture-heritage-and-cultural-debate_4.jpg?1786956949"
+  },
+  {
+   "d": "2026-07-25",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "Neither Farm Nor Hotel: Why Agritourism Needs Its Own Architectural Typology",
+   "m": "",
+   "u": "https://www.archdaily.com/1171797/neither-farm-nor-hotel-why-agritourism-needs-its-own-architectural-typology",
+   "auto": true,
+   "img": "https://images.adsttc.com/media/images/6a5b/cafe/3d21/f777/d245/603c/large_jpg/agrotourism_9.jpg?1784400647"
+  },
+  {
+   "d": "2026-07-20",
+   "f": "archdaily",
+   "tema": "Obra",
+   "t": "The Architecture of the FIFA World Cup: Looking Back at 2026 and Ahead to 2030",
+   "m": "",
+   "u": "https://www.archdaily.com/1181248/the-architecture-of-the-fifa-world-cup-looking-back-at-2026-and-ahead-to-2030",
+   "auto": true,
+   "img": "https://images.adsttc.com/media/images/6a5d/e774/e8f5/cb01/8987/a951/large_jpg/the-architecture-of-the-fifa-world-cup-looking-back-at-2026-and-ahead-to-2030_1.jpg?1784539003"
+  }
+ ]
 }
