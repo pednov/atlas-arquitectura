@@ -1,0 +1,21 @@
+/* barra do ATLAS, comum a todos os separadores */
+:root{--abar:54px}
+.abar{height:var(--abar);display:flex;align-items:center;gap:16px;padding:0 18px 0 22px;background:#1b1b1b;color:#fff;position:relative;z-index:60;font-family:"Figtree","Helvetica Neue",Arial,sans-serif}
+.amark{display:flex;align-items:center;gap:10px;text-decoration:none;color:#fff;flex:none}
+.amark .ad{display:grid;grid-template-columns:repeat(4,6px);gap:2.5px}
+.amark .ad i{width:6px;height:6px;border-radius:50%;background:var(--c)}
+.amark b{font:800 17px/1 "Figtree","Helvetica Neue",Arial,sans-serif;letter-spacing:.14em}
+.atabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;min-width:0}
+.atabs::-webkit-scrollbar{display:none}
+.atabs a{flex:none;font:600 14px/1 "Figtree","Helvetica Neue",Arial,sans-serif;text-decoration:none;color:#cfccc6;padding:10px 14px;border-radius:999px;transition:background .15s,color .15s;white-space:nowrap}
+.atabs a:hover{background:rgba(255,255,255,.1);color:#fff}
+.atabs a[aria-current="page"]{background:#fff;color:#1b1b1b}
+.abar .asub{margin-left:auto;font:500 12.5px/1 "Figtree","Helvetica Neue",Arial,sans-serif;color:#a29f99;white-space:nowrap}
+@media (max-width:900px){.abar .asub{display:none}}
+@media (max-width:560px){.abar{gap:10px;padding:0 10px 0 14px}.amark b{font-size:15px;letter-spacing:.1em}.amark .ad{display:none}.atabs a{padding:9px 11px;font-size:13.5px}}
+.atabs .sh{display:none}
+@media (max-width:640px){.atabs .lg{display:none}.atabs .sh{display:inline}}
+@media (max-width:420px){.abar{gap:8px;padding:0 6px 0 12px}.amark b{font-size:14px;letter-spacing:.08em}.atabs a{padding:9px 9px;font-size:13.5px}}
+.aback{display:inline-flex;align-items:center;gap:7px;flex:none;height:34px;padding:0 14px 0 11px;border-radius:999px;border:1.5px solid rgba(255,255,255,.38);color:#fff;text-decoration:none;font:700 13.5px/1 "Figtree","Helvetica Neue",Arial,sans-serif;white-space:nowrap;transition:background .15s,border-color .15s}
+.aback:hover{background:#fff;border-color:#fff;color:#1b1b1b}
+@media (max-width:640px){.aback{padding:0;width:34px;justify-content:center}.aback span{display:none}}
