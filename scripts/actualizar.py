@@ -48,7 +48,7 @@ def save(name, obj):
 CONC = load('concelhos.json')                      # nome do concelho -> região
 CONC_F = {fold(k): v for k, v in CONC.items()}
 REGRAS = load('regras.json')
-BLOQ = set(REGRAS.get('bloquear_urls', []))
+BLOQ = {x.rstrip('/') for x in REGRAS.get('bloquear_urls', [])}
 
 def limpar(s):
     """Retira do texto as referências à Ordem dos Arquitectos e às suas secções (regra editorial do ATLAS)."""
@@ -82,6 +82,44 @@ def regiao_de(*textos):
 def excluir(*textos):
     t = ' '.join(textos)
     return any(re.search(p, t, flags=re.I) for p in REGRAS['excluir'])
+
+# ---------------------------------------------------------------- notícias: região, Nacional ou Internacional
+ESTR = {re.sub(r'[^a-z0-9]+', ' ', fold(x)).strip(): x for x in REGRAS.get('estrangeiro', [])}
+# distritos, regiões e alguns lugares que não são concelhos (em português e em inglês, como aparecem no ArchDaily)
+LUGARES = {'acores': 'ACORES', 'azores': 'ACORES', 'madeira': 'MAD', 'algarve': 'ALG', 'faro district': 'ALG',
+           'lisbon': 'LVT', 'lisbon district': 'LVT', 'setubal district': 'LVT', 'santarem district': 'LVT',
+           'oporto': 'NORTE', 'porto district': 'NORTE', 'braga district': 'NORTE', 'viana do castelo district': 'NORTE',
+           'vila real district': 'NORTE', 'braganca district': 'NORTE', 'aveiro district': 'CENTRO', 'coimbra district': 'CENTRO',
+           'leiria district': 'CENTRO', 'viseu district': 'CENTRO', 'guarda district': 'CENTRO', 'castelo branco district': 'CENTRO',
+           'evora district': 'ALT', 'beja district': 'ALT', 'portalegre district': 'ALT', 'alentejo': 'ALT',
+           'comporta': 'ALT', 'melides': 'ALT', 'douro': 'NORTE', 'minho': 'NORTE'}
+
+def estrangeiro_de(*textos):
+    """País ou cidade estrangeira citada como lugar («na Argélia», «em Paris», «in Madrid»), ou como parte do campo de lugar."""
+    for t in textos:
+        ft = ' ' + re.sub(r'[^a-z0-9]+', ' ', fold(t)) + ' '
+        for nf, nome in ESTR.items():
+            if re.search(r' (?:em|in|no|na|nos|nas|para o|para a|ao|a) ' + re.escape(nf) + ' ', ft):
+                return nome
+        for parte in re.split(r'[·,;/]', t or ''):
+            if re.sub(r'[^a-z0-9]+', ' ', fold(parte)).strip() in ESTR:
+                return parte.strip()
+    return None
+
+def lugar_sec(lugar):
+    """Região de um lugar escrito por extenso («Olhão», «Santa Bárbara, Açores», «Lisbon»)."""
+    _, sec = regiao_do_local(lugar)
+    if sec: return sec
+    for parte in reversed([p for p in re.split(r'[,;/]', lugar or '') if p.strip()]):
+        f = re.sub(r'[^a-z0-9]+', ' ', fold(parte)).strip()
+        if f in LUGARES: return LUGARES[f]
+    return None
+
+def seccao_noticia(sec, *textos):
+    """Região (se houver), senão Internacional quando a notícia se passa no estrangeiro, senão Nacional."""
+    if sec: return sec, None
+    est = estrangeiro_de(*textos)
+    return ('INT', est) if est else ('NAC', None)
 
 # ---------------------------------------------------------------- imagens: sem retratos de pessoas
 _cascade = None
@@ -221,10 +259,10 @@ def construir(existentes):
         except Exception:
             pass
         local, sec = regiao_de(t, ex)
+        sec, fora = seccao_noticia(sec, t, ex)
         autor = limpar(autoria_de(ex))
-        m = ' · '.join(x for x in [autor, local] if x)
-        n = {'d': p['date'][:10], 'f': 'construir', 'tema': tema_de(t + ' ' + ex), 't': t, 'm': m, 'u': u, 'auto': True}
-        if sec: n['sec'] = sec
+        m = ' · '.join(x for x in [autor, local or fora] if x)
+        n = {'d': p['date'][:10], 'f': 'construir', 'tema': tema_de(t + ' ' + ex), 't': t, 'm': m, 'u': u, 'sec': sec, 'auto': True}
         if img: n['img'] = img
         log('  nova notícia (Construir):', n['d'], t, '| imagem' if img else '| sem imagem')
         novos.append(n)
@@ -267,9 +305,21 @@ def archdaily(existentes):
         d = pub[:10] if re.match(r'\d{4}-\d{2}-\d{2}', pub) else HOJE.isoformat()
         img = meta('og:image')
         if img and tem_pessoas(img): img = None
-        local, sec = regiao_de(nome)
-        n = {'d': d, 'f': 'archdaily', 'tema': 'Obra', 't': limpar(nome), 'm': limpar(autor), 'u': u.split('?')[0], 'auto': True}
-        if sec: n['sec'] = sec
+        # lugar da obra: «Completed in 2026 in Olhão, Portugal.» na descrição, ou «Santa Bárbara,Açores,Portugal» nos metadados
+        desc = meta('og:description') or meta('description') or ''
+        mm = re.search(r'\bin ([^.]+?),\s*Portugal\b', desc)
+        lugar = mm.group(1).rsplit(' in ', 1)[-1].strip() if mm else ''
+        sec = lugar_sec(lugar) if lugar else None
+        if not sec:
+            for mm in re.finditer(r'([A-Za-zÀ-ÿ\' .\-]{2,40}(?:,\s*[A-Za-zÀ-ÿ\' .\-]{2,40}){1,2}),\s*Portugal\b', texto):
+                sec = lugar_sec(mm.group(1))
+                if sec:
+                    lugar = lugar or mm.group(1).split(',')[0].strip(); break
+        if not sec:
+            _, sec = regiao_de(nome, desc)
+        sec = sec or 'NAC'                                 # todas as obras desta página são em Portugal
+        m = ' · '.join(x for x in [limpar(autor), lugar] if x)
+        n = {'d': d, 'f': 'archdaily', 'tema': 'Obra', 't': limpar(nome), 'm': m, 'u': u.split('?')[0], 'sec': sec, 'auto': True}
         if img: n['img'] = img
         log('  nova obra (ArchDaily):', d, titulo)
         novos.append(n)
@@ -285,9 +335,15 @@ def main():
     C['concursos'] = [c for c in C['concursos'] + novos_c if c['entrega'][:10] >= limite_c]
 
     novos_n = construir(N['noticias']) + archdaily(N['noticias'])
-    bloq = set(REGRAS.get('bloquear_urls', []))
+    bloq = {x.rstrip('/') for x in REGRAS.get('bloquear_urls', [])}
     limite_n = (HOJE - timedelta(days=120)).isoformat()      # notícias com mais de 4 meses saem
-    todas = [n for n in N['noticias'] + novos_n if n['d'] >= limite_n and n['u'] not in bloq]
+    todas = []
+    for n in N['noticias'] + novos_n:
+        if n['d'] < limite_n or n['u'].rstrip('/') in bloq: continue
+        if n.get('auto') and excluir(n['t'], n.get('m', '')):   # regras novas valem também para o que a recolha já trouxe
+            log('  retirada:', n['t']); continue
+        if not n.get('sec'): n['sec'] = 'NAC'
+        todas.append(n)
     vistos, N['noticias'] = set(), []
     for n in sorted(todas, key=lambda n: n['d'], reverse=True):
         if n['u'] not in vistos:
