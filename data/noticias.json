@@ -31,9 +31,10 @@
    "f": "archdaily",
    "tema": "Obra",
    "t": "The Black Timber",
-   "m": "SO Arquitetura & Design",
+   "m": "SO Arquitetura & Design · Santa Bárbara, Açores",
    "u": "https://www.archdaily.com/1188494/the-black-timber-so-arquitetura-and-design",
-   "img": "https://images.adsttc.com/media/images/6af4/6d3f/c23f/1f01/895a/f3d8/newsletter/the-black-timber-so-arquitetura-and-design_21.jpg?1794403714"
+   "img": "https://images.adsttc.com/media/images/6af4/6d3f/c23f/1f01/895a/f3d8/newsletter/the-black-timber-so-arquitetura-and-design_21.jpg?1794403714",
+   "sec": "ACORES"
   },
   {
    "d": "2026-11-12",
@@ -50,27 +51,30 @@
    "f": "archdaily",
    "tema": "Obra",
    "t": "Comporta House",
-   "m": "Aurora Arquitectos",
+   "m": "Aurora Arquitectos · Comporta",
    "u": "https://www.archdaily.com/1188426/comporta-house-aurora-arquitectos",
-   "img": "https://images.adsttc.com/media/images/6af3/5083/c23f/1f46/c926/e6b3/newsletter/casa-na-comporta-aurora-arquitectos_35.jpg?1794330801"
+   "img": "https://images.adsttc.com/media/images/6af3/5083/c23f/1f46/c926/e6b3/newsletter/casa-na-comporta-aurora-arquitectos_35.jpg?1794330801",
+   "sec": "ALT"
   },
   {
    "d": "2026-11-10",
    "f": "archdaily",
    "tema": "Obra",
    "t": "Benfica AM & MR Villa",
-   "m": "João Tiago Aguiar, Arquitectos",
+   "m": "João Tiago Aguiar, Arquitectos · Benfica, Lisboa",
    "u": "https://www.archdaily.com/1188291/benfica-am-and-mr-villa-joao-tiago-aguiar-arquitectos",
-   "img": "https://images.adsttc.com/media/images/6af1/c386/4ba6/4700/01d0/8243/newsletter/JTABenficaFN0182.jpg?1794229141"
+   "img": "https://images.adsttc.com/media/images/6af1/c386/4ba6/4700/01d0/8243/newsletter/JTABenficaFN0182.jpg?1794229141",
+   "sec": "LVT"
   },
   {
    "d": "2026-11-09",
    "f": "construir",
    "tema": "Património",
    "t": "Especialistas debatem os desafios da preservação e valorização do património militar",
-   "m": "Universidade Portucalense, ICOMOS Portugal e Instituto da Defesa Nacional",
+   "m": "Universidade Portucalense, ICOMOS Portugal e Instituto da Defesa Nacional · Porto",
    "u": "https://construir.pt/2026/11/09/especialistas-debatem-os-desafios-da-preservacao-e-valorizacao-do-patrimonio-militar",
-   "img": "https://backoffice.construir.pt/app/uploads/2026/11/Screenshot-2026-11-09-164503_edited.png"
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/Screenshot-2026-11-09-164503_edited.png",
+   "sec": "NORTE"
   },
   {
    "d": "2026-11-09",
@@ -107,9 +111,10 @@
    "f": "archdaily",
    "tema": "Obra",
    "t": "Santo António Primary School Requalification and Modernization Project",
-   "m": "BFJ Arquitectos",
+   "m": "BFJ Arquitectos · Lisboa",
    "u": "https://www.archdaily.com/1188048/santo-antonio-primary-school-requalification-and-modernization-project-bfj-arquitectos",
-   "img": "https://images.adsttc.com/media/images/6aea/9288/1f37/4900/010d/0eee/newsletter/0044.jpg?1793757862"
+   "img": "https://images.adsttc.com/media/images/6aea/9288/1f37/4900/010d/0eee/newsletter/0044.jpg?1793757862",
+   "sec": "LVT"
   },
   {
    "d": "2026-11-04",
@@ -117,7 +122,8 @@
    "tema": "Prémio",
    "t": "Fernando Cerqueira Barros vence Prémio Rafael Manzano 2026",
    "m": "Fernando Cerqueira Barros",
-   "u": "https://construir.pt/2026/11/04/fernando-cerqueira-barros-vence-premio-rafael-manzano-2026"
+   "u": "https://construir.pt/2026/11/04/fernando-cerqueira-barros-vence-premio-rafael-manzano-2026",
+   "sec": "NAC"
   },
   {
    "d": "2026-11-04",
@@ -134,9 +140,10 @@
    "f": "construir",
    "tema": "Prémio",
    "t": "Reabilitação da Quinta de Crasto vence Prémio Gulbenkian Património 2026",
-   "m": "Coordenação de Nuno Valentim",
+   "m": "Coordenação de Nuno Valentim · Vairão, Vila do Conde",
    "u": "https://construir.pt/2026/11/03/reabilitacao-da-quinta-de-crasto-vence-premio-gulbenkian-patrimonio-2026",
-   "img": "https://backoffice.construir.pt/app/uploads/2026/11/Crasto-1584x950.jpg"
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/Crasto-1584x950.jpg",
+   "sec": "NORTE"
   },
   {
    "d": "2026-11-03",
@@ -163,18 +170,20 @@
    "f": "archdaily",
    "tema": "Obra",
    "t": "House Around a Column",
-   "m": "fala",
+   "m": "fala · Porto",
    "u": "https://www.archdaily.com/1187983/house-around-a-column-fala",
-   "img": "https://images.adsttc.com/media/images/6ae8/f8ee/62dc/0e01/8725/786e/newsletter/casa-ao-redor-de-uma-coluna-fala_23.jpg?1793653036"
+   "img": "https://images.adsttc.com/media/images/6ae8/f8ee/62dc/0e01/8725/786e/newsletter/casa-ao-redor-de-uma-coluna-fala_23.jpg?1793653036",
+   "sec": "NORTE"
   },
   {
    "d": "2026-11-02",
    "f": "archdaily",
    "tema": "Obra",
    "t": "Quinta da Casa",
-   "m": "Artequitectos",
+   "m": "Artequitectos · Vila Nova de Famalicão",
    "u": "https://www.archdaily.com/1187977/quinta-da-casa-artequitectos",
-   "img": "https://images.adsttc.com/media/images/6ae3/2f7f/20d6/d801/8852/1f6a/newsletter/house-quinta-da-casa-artequitectos_15.jpg?1793273743"
+   "img": "https://images.adsttc.com/media/images/6ae3/2f7f/20d6/d801/8852/1f6a/newsletter/house-quinta-da-casa-artequitectos_15.jpg?1793273743",
+   "sec": "NORTE"
   },
   {
    "d": "2026-10-30",
@@ -201,9 +210,10 @@
    "f": "archdaily",
    "tema": "Obra",
    "t": "Wood Structure on top of Brick Structure",
-   "m": "corpo atelier",
+   "m": "corpo atelier · Olhão",
    "u": "https://www.archdaily.com/1187639/wood-structure-on-top-of-brick-structure-corpo-atelier",
-   "img": "https://images.adsttc.com/media/images/6ae0/fba4/3271/8400/01d0/f37b/newsletter/4.jpg?1793129450"
+   "img": "https://images.adsttc.com/media/images/6ae0/fba4/3271/8400/01d0/f37b/newsletter/4.jpg?1793129450",
+   "sec": "ALG"
   },
   {
    "d": "2026-10-27",
@@ -224,15 +234,6 @@
    "u": "https://construir.pt/2026/10/27/porto-lanca-reabilitacao-para-transformar-palacio-de-sao-novo-em-museu",
    "sec": "NORTE",
    "img": "https://backoffice.construir.pt/app/uploads/2026/10/Palacio-Sao-Joao-Novo-1460x950.webp"
-  },
-  {
-   "d": "2026-10-27",
-   "f": "construir",
-   "tema": "Iniciativa",
-   "t": "‘Arquitectas da nossa Casa’ abre período de open call",
-   "m": "Candidaturas até 31 de Janeiro de 2027",
-   "u": "https://construir.pt/2026/10/27/arquitectas-da-nossa-casa-abre-periodo-de-open-call",
-   "img": "https://backoffice.construir.pt/app/uploads/2026/10/Ad_NC_Open_Call_1200x630_b62ed895ae.jpeg"
   },
   {
    "d": "2026-10-26",
@@ -268,9 +269,10 @@
    "f": "construir",
    "tema": "Prémio",
    "t": "Openbook conquista dupla distinção nos Architecture MasterPrize 2026",
-   "m": "Openbook",
+   "m": "Openbook · Lisboa e Braga",
    "u": "https://construir.pt/2026/10/19/openbook-conquista-dupla-distincao-nos-architecture-masterprize-2026",
-   "img": "https://backoffice.construir.pt/app/uploads/2026/10/premios-AMP2006-1584x791.jpg"
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/premios-AMP2006-1584x791.jpg",
+   "sec": "NAC"
   },
   {
    "d": "2026-10-16",
@@ -286,17 +288,19 @@
    "f": "construir",
    "tema": "Prémio",
    "t": "Inês Carneiro vence Prémio Fernando Távora com viagem às ‘arquitecturas do cosmos’",
-   "m": "Inês Carneiro",
-   "u": "https://construir.pt/2026/10/15/ines-carneiro-vence-premio-fernando-tavora-com-viagem-as-arquitecturas-do-cosmos"
+   "m": "Inês Carneiro · Matosinhos",
+   "u": "https://construir.pt/2026/10/15/ines-carneiro-vence-premio-fernando-tavora-com-viagem-as-arquitecturas-do-cosmos",
+   "sec": "NORTE"
   },
   {
    "d": "2026-10-06",
    "f": "construir",
    "tema": "Habitação",
    "t": "Atelier Carvalho Araújo questiona atraso nas 204 habitações de Picoutos",
-   "m": "Carvalho Araújo · Picoutos",
+   "m": "Carvalho Araújo · Picoutos, Matosinhos",
    "u": "https://construir.pt/2026/10/06/atelier-carvalho-araujo-pede-explicacoes-sobre-atraso-nas-204-habitacoes-de-picoutos",
-   "img": "https://backoffice.construir.pt/app/uploads/2026/10/PdP_Picture2.jpg"
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/PdP_Picture2.jpg",
+   "sec": "NORTE"
   },
   {
    "d": "2026-10-06",
@@ -305,7 +309,8 @@
    "t": "Focus Group reforça presença na Argélia com projecto de 25M€ para a Faderco",
    "m": "Focus Group · Argélia",
    "u": "https://construir.pt/2026/10/06/focus-group-reforca-presenca-na-argelia-com-projecto-de-25me-para-a-faderco",
-   "img": "https://backoffice.construir.pt/app/uploads/2026/10/29.29.2026_FADERCO_03-1584x900.png"
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/29.29.2026_FADERCO_03-1584x900.png",
+   "sec": "INT"
   },
   {
    "d": "2026-10-05",
@@ -314,17 +319,19 @@
    "t": "14 projectos portugueses conquistam LOOP Design Awards 2026",
    "m": "LOOP Design Awards",
    "u": "https://construir.pt/2026/10/05/14-projectos-portugueses-conquistam-loop-design-awards-2026",
-   "img": "https://backoffice.construir.pt/app/uploads/2026/10/3-600x600.jpg"
+   "img": "https://backoffice.construir.pt/app/uploads/2026/10/3-600x600.jpg",
+   "sec": "NAC"
   },
   {
    "d": "2026-09-29",
    "f": "construir",
    "tema": "Obra",
    "t": "Novo Museu do Mobiliário de Paredes celebra as artes em madeira",
-   "m": "Spaceworkers",
+   "m": "Spaceworkers · Paredes",
    "u": "https://construir.pt/2026/09/29/novo-museu-do-mobiliario-de-paredes-celebra-as-artes-em-madeira",
    "auto": true,
-   "img": "https://backoffice.construir.pt/app/uploads/2026/09/Museu-do-Mobiliario-Paredes_1-1-300x170.jpg"
+   "img": "https://backoffice.construir.pt/app/uploads/2026/09/Museu-do-Mobiliario-Paredes_1-1-300x170.jpg",
+   "sec": "NORTE"
   },
   {
    "d": "2026-09-22",
@@ -334,7 +341,8 @@
    "m": "",
    "u": "https://construir.pt/2026/09/22/quatro-projectos-portugueses-na-shortlist-dos-dezeen-awards-2026",
    "auto": true,
-   "img": "https://backoffice.construir.pt/app/uploads/2026/09/mix-300x170.jpg"
+   "img": "https://backoffice.construir.pt/app/uploads/2026/09/mix-300x170.jpg",
+   "sec": "NAC"
   },
   {
    "d": "2026-09-21",
@@ -343,17 +351,19 @@
    "t": "Paola Viganò é a convidada para a primeira edição das Conferências Nuno Portas",
    "m": "",
    "u": "https://construir.pt/2026/09/21/paola-vigano-e-a-convidada-para-a-primeira-edicao-das-conferencias-nuno-portas",
-   "auto": true
+   "auto": true,
+   "sec": "NORTE"
   },
   {
    "d": "2026-09-15",
    "f": "construir",
    "tema": "Exposição",
    "t": "Saraiva+Associados ‘leva’ 30 anos de arquitectura para a rua",
-   "m": "",
+   "m": "Saraiva+Associados · Lisboa",
    "u": "https://construir.pt/2026/09/15/saraivaassociados-leva-30-anos-de-arquitectura-para-a-rua",
    "auto": true,
-   "img": "https://backoffice.construir.pt/app/uploads/2026/09/Policia_Judiciaria_Foto_Fernando-Guerra-300x170.jpg"
+   "img": "https://backoffice.construir.pt/app/uploads/2026/09/Policia_Judiciaria_Foto_Fernando-Guerra-300x170.jpg",
+   "sec": "LVT"
   },
   {
    "d": "2026-09-10",
@@ -367,24 +377,14 @@
    "img": "https://backoffice.construir.pt/app/uploads/2026/09/Cover-300x170.png"
   },
   {
-   "d": "2026-09-07",
-   "f": "construir",
-   "tema": "Obra",
-   "t": "Plano Humano muda de espaço e inicia fase de crescimento",
-   "m": "Loures",
-   "u": "https://construir.pt/2026/09/07/278184",
-   "auto": true,
-   "sec": "LVT",
-   "img": "https://backoffice.construir.pt/app/uploads/2026/09/2-300x170.jpg"
-  },
-  {
    "d": "2026-09-04",
    "f": "construir",
    "tema": "Exposição",
    "t": "Rentrée na Trienal de Lisboa: arquitectura como chave para ler o mundo",
-   "m": "",
+   "m": "Trienal de Arquitectura de Lisboa",
    "u": "https://construir.pt/2026/09/04/rentree-na-trienal-de-lisboa-arquitectura-como-chave-para-ler-o-mundo",
-   "auto": true
+   "auto": true,
+   "sec": "LVT"
   }
  ]
 }
