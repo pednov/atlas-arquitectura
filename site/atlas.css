@@ -302,3 +302,19 @@ button,select,input{font:inherit;color:inherit}
 .tiles .tile.dark[style*="--tc"] .pill.out{background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--rule);color:var(--ink)}
 .tiles .tile[style*="--tc"]:hover .ar{background:var(--tc);color:#fff}
 .tiles .tile[style*="--tc"]::before{display:none}
+.lx details.rel{margin-top:10px;font-size:13.5px}
+.lx details.rel summary{cursor:pointer;color:var(--ink);font-weight:600;list-style:none;display:inline-flex;align-items:center;gap:8px}
+.lx details.rel summary::-webkit-details-marker{display:none}
+.lx details.rel summary::before{content:"+";display:grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--faint);font-weight:700;line-height:1}
+.lx details.rel[open] summary::before{content:"–"}
+.lx details.rel .rg{margin-top:10px}
+.lx details.rel .rg b{font-size:12.5px;color:var(--ink-2);font-weight:600}
+.lx details.rel ol{margin:4px 0 0;padding-left:20px}
+.lx details.rel ol.many{columns:2;column-gap:28px}
+.lx details.rel li{break-inside:avoid;margin:2px 0}
+.lx details.rel li a{text-decoration:none;border-bottom:1px solid var(--rule)}
+.lx details.rel li a:hover{border-color:var(--ink)}
+.lx details.rel .rv{font-size:11.5px;color:#8a2a2a}
+@media (max-width:760px){.lx details.rel ol.many{columns:1}}
+.lexrec-list .recmore{grid-column:1/-1;justify-self:start;border:1.5px solid var(--ink);background:var(--paper);border-radius:var(--pill);padding:10px 16px;font:700 13.5px/1 var(--body);cursor:pointer}
+.lexrec-list .recmore:hover{background:var(--ink);color:#fff}

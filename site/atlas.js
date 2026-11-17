@@ -287,28 +287,66 @@ function lexItem(d, temas, ficha){
 <h3><a href="${esc(ficha + d.id)}" target="_blank" rel="noopener">${esc(d.t)}</a></h3>
 ${sm}${meta ? `<div class="m">${esc(meta)}</div>` : ''}
 <div class="lk">${vig ? `<span class="vg">${esc(vig)}</span>` : ''}<a href="${esc(ficha + d.id)}" target="_blank" rel="noopener">Ficha no SILUC ↗</a>${d.dr ? `<a href="${esc(d.dr)}" target="_blank" rel="noopener">Diário da República ↗</a>` : ''}${d.pdf ? `<a href="${esc(d.pdf)}" target="_blank" rel="noopener">PDF ↗</a>` : ''}</div>
+${lexRel(d, ficha)}
 </div></article>`;
+}
+/* «Alterado por», «Regulamentado por», «Retificado por», «Regulamenta» e «Adaptado às RA por», lidos da ficha do SILUC */
+const LEX_REL = [['alt', 'Alterações'], ['reg', 'Regulamentação'], ['ret', 'Rectificações'], ['regu', 'Regulamenta'], ['ra', 'Adaptação às regiões autónomas']];
+const lexRelLink = (x, ficha) => x[3] && /^\d+$/.test(x[3]) ? ficha + x[3] : (x[2] || '');
+const lexDia = s => s ? fmt(parse(s)) : '';
+function lexRel(d, ficha){
+  const grupos = LEX_REL.filter(([k]) => (d[k] || []).length);
+  if (!grupos.length) return '';
+  const alt = d.alt || [], ult = alt.slice().sort((a, b) => (b[1] || '').localeCompare(a[1] || ''))[0];
+  const resumo = [alt.length ? `Alterado ${alt.length === 1 ? 'uma vez' : alt.length + ' vezes'}${ult ? `, a última pelo ${esc(ult[0])}` : ''}` : '',
+    (d.reg || []).length ? `${d.reg.length === 1 ? 'uma portaria ou diploma' : d.reg.length + ' diplomas'} de regulamentação` : ''].filter(Boolean).join(' · ');
+  const lista = ([k, nome]) => `<div class="rg"><b>${nome}</b><ol${(d[k] || []).length > 8 ? ' class="many"' : ''}>${(d[k] || []).slice().sort((a, b) => (b[1] || '').localeCompare(a[1] || '')).map(x => {
+      const u = lexRelLink(x, ficha);
+      return `<li>${u ? `<a href="${esc(u)}" target="_blank" rel="noopener">${esc(x[0])}</a>` : esc(x[0])}${x.includes('revogado') ? ' <span class="rv">revogado</span>' : ''}</li>`; }).join('')}</ol></div>`;
+  return `<details class="rel"><summary>${resumo || 'Diplomas relacionados'}</summary>${grupos.map(lista).join('')}</details>`;
 }
 function renderLegislacao(L){
   const box = $('#lex'); if (!box || !L) return;
   const temas = Object.fromEntries((L.temas || []).map(t => [t.id, t.nome]));
   const ficha = (L.fonte && L.fonte.ficha) || 'https://www.siluc.pt/siluc/detalhe/';
-  const ds = (L.diplomas || []).map(d => Object.assign(d, {_q: fold([d.t, d.s, d.tipo, d.num, (d.cls||[]).join(' '), (d.sub||[]).join(' '), (d.temas||[]).map(i => temas[i]).join(' ')].join(' ')), _ev: lexEv(d.ev), _terr: (d.terr || []).map(fold)}));
+  const relq = d => LEX_REL.map(([k]) => (d[k] || []).map(x => x[0]).join(' ')).join(' ');
+  const ds = (L.diplomas || []).map(d => Object.assign(d, {_q: fold([d.t, d.s, d.tipo, d.num, (d.cls||[]).join(' '), (d.sub||[]).join(' '), (d.temas||[]).map(i => temas[i]).join(' '), relq(d)].join(' ')), _ev: lexEv(d.ev), _terr: (d.terr || []).map(fold)}));
   const set = (id, v) => { const el = $(id); if (el) el.textContent = v; };
   set('#upd-l', L.actualizado ? fmtLong(L.actualizado) : '');
   set('#tot-l', (L.total || ds.length).toLocaleString('pt-PT'));
-  /* alterações recentes: fichas mudadas no SILUC nos 30 dias antes da recolha */
+  /* alterações recentes: alterações e regulamentação publicadas nos últimos seis meses (agrupadas pelo diploma que
+     altera), mais os diplomas novos no SILUC; seguem o tema e o âmbito escolhidos nos filtros. Sem relações lidas,
+     mostram as fichas mudadas nos últimos 30 dias */
   const base = L.actualizado ? parse(L.actualizado) : today0();
-  const lim = new Date(base - 30 * DAY + 12 * 36e5).toISOString().slice(0, 10);
-  const rec = ds.filter(d => d.mod && d.mod >= lim).sort((a, b) => b.mod.localeCompare(a.mod) || (b.d || '').localeCompare(a.d || ''));
-  const rb = $('#lex-rec');
-  if (rb) {
-    rb.innerHTML = rec.slice(0, 6).map(d => {
-      const novo = d.cri && d.cri >= lim;
-      return `<a href="${esc(ficha + d.id)}" target="_blank" rel="noopener"><span class="w">${esc(fmt(parse(d.mod)))} · ${novo ? 'novo no SILUC' : 'ficha actualizada'}</span><b>${esc(d.t)}</b><span class="n">${esc(d.tipo)} ${esc(d.num || '')} · ${esc(d.ev || '')}</span></a>`;
-    }).join('') || '<p class="empty">Sem alterações nos últimos 30 dias.</p>';
-    const rs = $('#lex-rec-n'); if (rs) rs.textContent = rec.length ? `${rec.length} nos últimos 30 dias` : '';
-  }
+  const lim = new Date(base - 183 * DAY + 12 * 36e5).toISOString().slice(0, 10);
+  const lim30 = new Date(base - 30 * DAY + 12 * 36e5).toISOString().slice(0, 10);
+  const temRel = ds.some(d => d._r || d.alt || d.reg);
+  const rb = $('#lex-rec'), rs = $('#lex-rec-n');
+  let recTodas = false;
+  const renderRec = (ok) => {
+    if (!rb) return;
+    const ev = new Map(), base_ = ds.filter(ok);
+    for (const d of base_) for (const [k, verbo] of [['alt', 'altera'], ['reg', 'regulamenta']]) for (const x of d[k] || []) {
+      if (!x[1] || x[1] < lim) continue;
+      if (!ev.has(x[0])) ev.set(x[0], {dt: x[1], t: x[0], verbo, alvos: [], u: lexRelLink(x, ficha)});
+      ev.get(x[0]).alvos.push(d);
+    }
+    const usados = new Set([...ev.values()].map(e => e.u));
+    for (const d of base_) if (d.d && d.d >= lim && !usados.has(ficha + d.id))
+      ev.set('novo' + d.id, {dt: d.d, t: `${d.tipo} n.º ${d.num || ''}`.trim(), verbo: 'novo', alvos: [d], u: ficha + d.id});
+    let rec = [...ev.values()].sort((a, b) => b.dt.localeCompare(a.dt));
+    if (!temRel) rec = base_.filter(d => d.mod && d.mod >= lim30).sort((a, b) => b.mod.localeCompare(a.mod)).map(d => ({dt: d.mod, t: `${d.tipo} n.º ${d.num || ''}`, verbo: 'ficha', alvos: [d], u: ficha + d.id}));
+    const fraseV = {altera: 'altera', regulamenta: 'regulamenta', novo: '', ficha: ''};
+    const mostra = recTodas ? rec : rec.slice(0, 9);
+    rb.innerHTML = mostra.map(e => {
+      const alvo = e.alvos[0], mais = e.alvos.length - 1;
+      const etiqueta = e.verbo === 'altera' ? 'alteração' : e.verbo === 'regulamenta' ? 'regulamentação' : e.verbo === 'novo' ? 'diploma novo' : 'ficha actualizada';
+      const titulo = (e.verbo === 'novo' || e.verbo === 'ficha') ? alvo.t : alvo.t + (mais > 0 ? ` e mais ${mais}` : '');
+      return `<a href="${esc(e.u || ficha + alvo.id)}" target="_blank" rel="noopener"><span class="w">${esc(fmt(parse(e.dt)))} · ${etiqueta}</span><b>${esc(titulo)}</b><span class="n">${fraseV[e.verbo] ? esc(e.t.replace(/, de .*$/, '')) + ' ' + fraseV[e.verbo] : esc(e.t)}</span></a>`;
+    }).join('') + (rec.length > 9 ? `<button type="button" class="recmore">${recTodas ? 'Mostrar só as mais recentes' : 'Mostrar todas (' + rec.length + ')'}</button>` : '')
+      || '<p class="empty">Sem alterações nos últimos seis meses para os filtros escolhidos.</p>';
+    if (rs) rs.textContent = rec.length ? (temRel ? `${rec.length} nos últimos seis meses` : `${rec.length} nos últimos 30 dias`) : '';
+  };
   /* filtros */
   const state = {tema: 'all', sub: '', ev: 'all', terr: 'all', tipo: '', q: '', n: LEX_PASSO};
   const cnt = (f) => ds.filter(f).length;
@@ -334,7 +372,7 @@ function renderLegislacao(L){
   const words = q => fold(q).split(/\s+/).filter(Boolean).map(w => [w, ...(LEX_SIGLAS[w.replace(/[^a-z0-9\-\/]/g, '')] || [])]);
   const hasW = (d, alts) => alts.some(a => d._q.includes(a));
   const score = d => { let n = 0; const ft = fold(d.t), fn = fold(d.num);
-    for (const alts of state._w) { if (alts.some(a => fn === a || fn.startsWith(a + '/') || fn === a.replace(/^n\.?o?/, ''))) n += 8; if (alts.some(a => ft.includes(a))) n += 3; if (alts.some(a => ft.includes('(' + a + ')'))) n += 6; }
+    for (const alts of state._w) { if (alts.some(a => fn === a || fn.startsWith(a + '/') || fn === a.replace(/^n\.?o?/, ''))) n += 8; if (alts.some(a => ft.includes(a))) n += 3; if (alts.some(a => ft.includes('(' + a + ')'))) n += 6; if (alts.slice(1).some(a => ft.startsWith(a))) n += 8; }
     const fq = fold(state.q).trim(); if (fq.length > 3 && ft.includes(fq)) n += 10;
     if (n && /^(regime juridico|regulamento geral|regulamento tecnico|codigo)/.test(ft)) n += 2;
     return n; };
@@ -348,6 +386,8 @@ function renderLegislacao(L){
   const apply = (keep) => {
     state._w = words(state.q);
     if (!keep) state.n = LEX_PASSO;
+    renderRec(d => (state.tema === 'all' || (d.temas || []).includes(state.tema)) && (!state.sub || (d.sub || []).includes(state.sub))
+      && (state.terr === 'all' || (state.terr === 'portugal' ? (!d._terr.length || d._terr.includes('portugal')) : d._terr.includes(state.terr))));
     let hits = ds.filter(d => match(d));
     if (state._w.length) hits = hits.map(d => [score(d), d]).sort((a, b) => b[0] - a[0] || (b[1].d || '').localeCompare(a[1].d || '')).map(x => x[1]);
     list.innerHTML = hits.slice(0, state.n).map(d => lexItem(d, temas, ficha)).join('');
@@ -372,6 +412,7 @@ function renderLegislacao(L){
     $('#lex-tipo').addEventListener('change', e => { state.tipo = e.target.value; apply(); });
     let tq; $('#lex-q').addEventListener('input', e => { clearTimeout(tq); tq = setTimeout(() => { state.q = e.target.value.trim(); apply(); }, 120); });
     more.addEventListener('click', () => { state.n += LEX_PASSO; apply(true); });
+    if (rb) rb.addEventListener('click', e => { if (e.target.closest('.recmore')) { recTodas = !recTodas; apply(true); } });
   }
   fillSub(); apply();
   box.classList.add('ready');
