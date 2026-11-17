@@ -15,7 +15,7 @@ concurrency:
 jobs:
   recolha:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -27,6 +27,12 @@ jobs:
         run: pip install -r scripts/requirements.txt
       - name: Recolher concursos e notícias
         run: python scripts/actualizar.py
+      - name: Instalar o navegador sem janela (para o SILUC)
+        run: python -m playwright install --with-deps chromium
+        continue-on-error: true
+      - name: Recolher a legislação (SILUC)
+        run: python scripts/siluc.py
+        continue-on-error: true
       - name: Gravar no repositório
         run: |
           git config user.name "atlas-recolha"
