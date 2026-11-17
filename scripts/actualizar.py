@@ -6,7 +6,7 @@ O que já lá está (incluindo o que foi revisto à mão) nunca é apagado nem r
 salvo a data de entrega de um concurso, que pode ter sido prorrogada.
 Se uma fonte falhar, as fichas dessa fonte ficam como estavam.
 """
-import html, json, re, sys, unicodedata
+import html, json, re, sys, time, unicodedata
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -27,10 +27,17 @@ def log(*a):
 def fold(s):
     return unicodedata.normalize('NFD', str(s or '')).encode('ascii', 'ignore').decode().lower()
 
-def get(url, **kw):
-    r = requests.get(url, headers=UA, timeout=30, **kw)
-    r.raise_for_status()
-    return r
+def get(url, tentativas=3, **kw):
+    for i in range(tentativas):
+        try:
+            r = requests.get(url, headers=UA, timeout=30, **kw)
+            if r.status_code >= 500 and i < tentativas - 1:
+                time.sleep(8 * (i + 1)); continue
+            r.raise_for_status()
+            return r
+        except requests.ConnectionError:
+            if i == tentativas - 1: raise
+            time.sleep(8 * (i + 1))
 
 def load(name):
     return json.loads((DATA / name).read_text(encoding='utf-8'))
