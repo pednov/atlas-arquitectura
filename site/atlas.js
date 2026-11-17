@@ -160,6 +160,12 @@ function renderNoticias(d){
 ${n.m ? `<div class="m">${esc(n.m)}</div>` : ''}</div></article>`;
     }).join('')}</div></section>`;
   }).join('');
+  const fr = $('#fontes-n');
+  if (fr && (d.fontes || []).length) {
+    const on = ($('.fb[data-k="f"][aria-pressed="true"]', fr) || {}).dataset?.v || 'all';
+    fr.innerHTML = '<span class="lab">Fonte</span>' + [{id: 'all', nome: 'Todas'}, ...d.fontes].map(f =>
+      `<button class="fb" type="button" data-k="f" data-v="${esc(f.id)}" aria-pressed="${f.id === on ? 'true' : 'false'}">${esc(f.nome)}${f.id === 'all' ? '' : ' <span class="n num"></span>'}</button>`).join('');
+  }
   const F = $('.filters[data-for=".ni"]');
   let rb = $('#regs');
   if (!rb && F) { rb = document.createElement('div'); rb.className = 'frow'; rb.id = 'regs'; F.insertBefore(rb, $('#temas', F) || F.firstChild); }
@@ -243,10 +249,139 @@ function setupFilters(){
   apply();
 }
 
+/* ---------- legislação (SILUC) ---------- */
+/* abreviaturas que os arquitectos usam e que não aparecem nos títulos do SILUC */
+const LEX_SIGLAS = {
+  rjue: ['urbanizacao e edificacao', 'urbanizacao e da edificacao'], rgeu: ['regulamento geral das edificacoes urbanas'],
+  scie: ['seguranca contra incendio'], rtscie: ['seguranca contra incendio'], rjru: ['reabilitacao urbana'],
+  rjigt: ['instrumentos de gestao territorial'], ccp: ['codigo dos contratos publicos'], ren: ['reserva ecologica'],
+  ran: ['reserva agricola'], rgr: ['regulamento geral do ruido'], rrae: ['requisitos acusticos'],
+  sce: ['certificacao energetica'], reh: ['edificios de habitacao'], recs: ['comercio e servicos'], aia: ['impacte ambiental'],
+  nrau: ['arrendamento urbano'], lbsotu: ['politica publica de solos'], pdm: ['planos diretores municipais'],
+  ited: ['infraestruturas de telecomunicacoes em edificios'], acessibilidades: ['acessibilidade']};
+const LEX_PASSO = 40;
+const lexTerr = t => String(t).replace(/^Regi[ãa]o Aut[óo]noma d[aeo]s? /, '');
+const lexEv = ev => { const f = fold(ev); return f.startsWith('em vigor') ? 'vigor' : f.startsWith('revog') ? 'revogado' : f ? 'outro' : 'outro'; };
+function lexLoad(){
+  const box = $('#lex'); if (!box) return null;
+  const local = box.dataset.local;
+  const get = u => fetch(u, {cache: 'no-store'}).then(r => r.ok ? r.json() : null).catch(() => null);
+  const remote = CFG.data ? get(CFG.data + 'legislacao.json?t=' + Math.floor(Date.now() / 36e5)) : Promise.resolve(null);
+  return Promise.all([remote, get(local)]).then(([a, b]) => {
+    if (a && b) return (a.actualizado || '') >= (b.actualizado || '') ? a : b;
+    return a || b;
+  });
+}
+function lexItem(d, temas, ficha){
+  const [y, m, dd] = (d.d || '----').split('-');
+  const ev = lexEv(d.ev);
+  const fs = fold(d.s), ft = fold(d.t);
+  const sm = d.s && fs !== ft && !fs.startsWith(ft.slice(0, 60)) ? `<p class="sm">${esc(d.s)}</p>` : '';
+  const terr = (d.terr || []).filter(t => fold(t) !== 'portugal');
+  const tm = (d.temas || []).map(i => temas[i]).filter(Boolean);
+  const meta = [tm.join(' · '), (d.sub || []).filter(x => !tm.includes(x)).slice(0, 3).join(', ')].filter(Boolean).join(' — ');
+  const vig = d.fv ? `Vigorou até ${fmtLong(d.fv)}` : (d.iv ? `Em vigor desde ${fmtLong(d.iv)}` : '');
+  return `<article class="lx" data-ev="${ev}">
+<div class="dt">${d.d ? `<b>${Number(dd)}</b>${MES[Number(m)-1]}<span class="yr">${y}</span>` : '<b>–</b>'}</div>
+<div><div class="tg"><span class="pill dark">${esc(d.tipo)}${d.num ? ' ' + esc(d.num) : ''}</span><span class="ev" data-ev="${ev}">${esc(d.ev || 'Sem estado')}</span>${terr.map(t => `<span class="pill out">${esc(lexTerr(t))}</span>`).join('')}</div>
+<h3><a href="${esc(ficha + d.id)}" target="_blank" rel="noopener">${esc(d.t)}</a></h3>
+${sm}${meta ? `<div class="m">${esc(meta)}</div>` : ''}
+<div class="lk">${vig ? `<span class="vg">${esc(vig)}</span>` : ''}<a href="${esc(ficha + d.id)}" target="_blank" rel="noopener">Ficha no SILUC ↗</a>${d.dr ? `<a href="${esc(d.dr)}" target="_blank" rel="noopener">Diário da República ↗</a>` : ''}${d.pdf ? `<a href="${esc(d.pdf)}" target="_blank" rel="noopener">PDF ↗</a>` : ''}</div>
+</div></article>`;
+}
+function renderLegislacao(L){
+  const box = $('#lex'); if (!box || !L) return;
+  const temas = Object.fromEntries((L.temas || []).map(t => [t.id, t.nome]));
+  const ficha = (L.fonte && L.fonte.ficha) || 'https://www.siluc.pt/siluc/detalhe/';
+  const ds = (L.diplomas || []).map(d => Object.assign(d, {_q: fold([d.t, d.s, d.tipo, d.num, (d.cls||[]).join(' '), (d.sub||[]).join(' '), (d.temas||[]).map(i => temas[i]).join(' ')].join(' ')), _ev: lexEv(d.ev), _terr: (d.terr || []).map(fold)}));
+  const set = (id, v) => { const el = $(id); if (el) el.textContent = v; };
+  set('#upd-l', L.actualizado ? fmtLong(L.actualizado) : '');
+  set('#tot-l', (L.total || ds.length).toLocaleString('pt-PT'));
+  /* alterações recentes: fichas mudadas no SILUC nos 30 dias antes da recolha */
+  const base = L.actualizado ? parse(L.actualizado) : today0();
+  const lim = new Date(base - 30 * DAY + 12 * 36e5).toISOString().slice(0, 10);
+  const rec = ds.filter(d => d.mod && d.mod >= lim).sort((a, b) => b.mod.localeCompare(a.mod) || (b.d || '').localeCompare(a.d || ''));
+  const rb = $('#lex-rec');
+  if (rb) {
+    rb.innerHTML = rec.slice(0, 6).map(d => {
+      const novo = d.cri && d.cri >= lim;
+      return `<a href="${esc(ficha + d.id)}" target="_blank" rel="noopener"><span class="w">${esc(fmt(parse(d.mod)))} · ${novo ? 'novo no SILUC' : 'ficha actualizada'}</span><b>${esc(d.t)}</b><span class="n">${esc(d.tipo)} ${esc(d.num || '')} · ${esc(d.ev || '')}</span></a>`;
+    }).join('') || '<p class="empty">Sem alterações nos últimos 30 dias.</p>';
+    const rs = $('#lex-rec-n'); if (rs) rs.textContent = rec.length ? `${rec.length} nos últimos 30 dias` : '';
+  }
+  /* filtros */
+  const state = {tema: 'all', sub: '', ev: 'all', terr: 'all', tipo: '', q: '', n: LEX_PASSO};
+  const cnt = (f) => ds.filter(f).length;
+  const tb = $('#lex-temas');
+  tb.innerHTML = '<span class="lab">Tema</span><button class="fb" type="button" data-k="tema" data-v="all" aria-pressed="true">Todos</button>' +
+    (L.temas || []).map(t => `<button class="fb" type="button" data-k="tema" data-v="${esc(t.id)}" aria-pressed="false">${esc(t.nome)} <span class="n num"></span></button>`).join('');
+  const evs = [['all', 'Todos'], ['vigor', 'Em vigor'], ['revogado', 'Revogados'], ['outro', 'Outros']].filter(([k]) => k === 'all' || cnt(d => d._ev === k));
+  $('#lex-ev').hidden = evs.length <= 2;
+  $('#lex-ev').innerHTML = '<span class="lab">Estado</span>' + evs.map(([k, t], i) => `<button class="fb" type="button" data-k="ev" data-v="${k}" aria-pressed="${i ? 'false' : 'true'}">${t} ${k === 'all' ? '' : '<span class="n num"></span>'}</button>`).join('');
+  const terrs = [...new Set(ds.flatMap(d => d.terr || []))].filter(t => fold(t) !== 'portugal').sort((a, b) => a.localeCompare(b, 'pt'));
+  $('#lex-terr').innerHTML = '<span class="lab">Âmbito</span><button class="fb" type="button" data-k="terr" data-v="all" aria-pressed="true">Todos</button><button class="fb" type="button" data-k="terr" data-v="portugal" aria-pressed="false">Nacional <span class="n num"></span></button>' +
+    terrs.map(t => `<button class="fb" type="button" data-k="terr" data-v="${esc(fold(t))}" aria-pressed="false">${esc(lexTerr(t))} <span class="n num"></span></button>`).join('');
+  const tipos = Object.entries(ds.reduce((a, d) => (a[d.tipo] = (a[d.tipo] || 0) + 1, a), {})).sort((a, b) => b[1] - a[1]);
+  $('#lex-tipo').innerHTML = '<option value="">Todos os tipos</option>' + tipos.map(([t, n]) => `<option value="${esc(t)}">${esc(t)} (${n})</option>`).join('');
+  const subSel = $('#lex-sub');
+  const fillSub = () => {
+    const t = (L.temas || []).find(t => t.id === state.tema);
+    subSel.hidden = !t || !(t.sub || []).length;
+    subSel.innerHTML = '<option value="">Todos os subtemas</option>' + (t ? t.sub : []).map(x => `<option value="${esc(x)}">${esc(x)}</option>`).join('');
+    state.sub = '';
+  };
+  /* cada palavra vale por si ou pela expansão da sigla; o número do diploma e o título contam mais na ordenação */
+  const words = q => fold(q).split(/\s+/).filter(Boolean).map(w => [w, ...(LEX_SIGLAS[w.replace(/[^a-z0-9\-\/]/g, '')] || [])]);
+  const hasW = (d, alts) => alts.some(a => d._q.includes(a));
+  const score = d => { let n = 0; const ft = fold(d.t), fn = fold(d.num);
+    for (const alts of state._w) { if (alts.some(a => fn === a || fn.startsWith(a + '/') || fn === a.replace(/^n\.?o?/, ''))) n += 8; if (alts.some(a => ft.includes(a))) n += 3; if (alts.some(a => ft.includes('(' + a + ')'))) n += 6; }
+    const fq = fold(state.q).trim(); if (fq.length > 3 && ft.includes(fq)) n += 10;
+    if (n && /^(regime juridico|regulamento geral|regulamento tecnico|codigo)/.test(ft)) n += 2;
+    return n; };
+  const match = (d, skip) => (skip === 'tema' || state.tema === 'all' || (d.temas || []).includes(state.tema))
+    && (!state.sub || (d.sub || []).includes(state.sub))
+    && (skip === 'ev' || state.ev === 'all' || d._ev === state.ev)
+    && (skip === 'terr' || state.terr === 'all' || (state.terr === 'portugal' ? (!d._terr.length || d._terr.includes('portugal')) : d._terr.includes(state.terr)))
+    && (!state.tipo || d.tipo === state.tipo)
+    && (!state._w.length || state._w.every(alts => hasW(d, alts)));
+  const list = $('#lex-list'), more = $('#lex-more'), empty = $('#lex-empty'), count = $('#lex-count');
+  const apply = (keep) => {
+    state._w = words(state.q);
+    if (!keep) state.n = LEX_PASSO;
+    let hits = ds.filter(d => match(d));
+    if (state._w.length) hits = hits.map(d => [score(d), d]).sort((a, b) => b[0] - a[0] || (b[1].d || '').localeCompare(a[1].d || '')).map(x => x[1]);
+    list.innerHTML = hits.slice(0, state.n).map(d => lexItem(d, temas, ficha)).join('');
+    more.hidden = hits.length <= state.n;
+    more.textContent = `Mostrar mais ${Math.min(LEX_PASSO, hits.length - state.n)} de ${(hits.length - state.n).toLocaleString('pt-PT')}`;
+    empty.hidden = hits.length > 0;
+    count.textContent = `${hits.length.toLocaleString('pt-PT')} ${hits.length === 1 ? 'diploma' : 'diplomas'}`;
+    $$('.fb[data-k] .n', box).forEach(n => {
+      const b = n.closest('.fb'), k = b.dataset.k, v = b.dataset.v, old = state[k];
+      state[k] = v; const c = ds.filter(d => match(d)).length; state[k] = old;
+      n.textContent = c.toLocaleString('pt-PT'); b.classList.toggle('zero', !c);
+    });
+  };
+  if (!box.dataset.wired) {
+    box.dataset.wired = '1';
+    box.addEventListener('click', e => {
+      const b = e.target.closest('.fb[data-k]'); if (!b) return;
+      $$(`.fb[data-k="${b.dataset.k}"]`, box).forEach(x => x.setAttribute('aria-pressed', x === b ? 'true' : 'false'));
+      state[b.dataset.k] = b.dataset.v; if (b.dataset.k === 'tema') fillSub(); apply();
+    });
+    subSel.addEventListener('change', () => { state.sub = subSel.value; apply(); });
+    $('#lex-tipo').addEventListener('change', e => { state.tipo = e.target.value; apply(); });
+    let tq; $('#lex-q').addEventListener('input', e => { clearTimeout(tq); tq = setTimeout(() => { state.q = e.target.value.trim(); apply(); }, 120); });
+    more.addEventListener('click', () => { state.n += LEX_PASSO; apply(true); });
+  }
+  fillSub(); apply();
+  box.classList.add('ready');
+}
+
 /* ---------- arranque ---------- */
 const sc = snap('snap-concursos'), sn = snap('snap-noticias');
 if ($('#clist') && sc) { recLabels(); renderConcursos(sc); setupFilters(); fresh('concursos.json', sc).then(d => { if (d !== sc) { renderConcursos(d); setupFilters(); } }); }
 if ($('#nlist') && sn) { renderNoticias(sn); setupFilters(); fresh('noticias.json', sn).then(d => { if (d !== sn) { renderNoticias(d); setupFilters(); } }); }
+if ($('#lex')) { const p = lexLoad(); p && p.then(L => { if (L) renderLegislacao(L); else { const er = $('#lex-erro'); if (er) er.hidden = false; } }); }
 if ($('#mini-c') || $('#mini-n')) {
   renderHome(sc, sn);
   Promise.all([fresh('concursos.json', sc), fresh('noticias.json', sn)]).then(([c, n]) => { if (c !== sc || n !== sn) renderHome(c, n); });
