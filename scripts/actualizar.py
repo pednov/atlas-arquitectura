@@ -173,6 +173,8 @@ def encomenda(existentes):
         if analise:
             c['nota'] = 'Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original.'
         if excluir(titulo, c['promotor'] or ''): continue
+        if entrega < (HOJE - timedelta(days=30)).isoformat():
+            continue                                       # procedimento antigo, já fora de prazo
         log('  novo concurso:', titulo, entrega, sec)
         novos.append(c)
     return novos
@@ -220,9 +222,12 @@ def archdaily(existentes):
         page = get('https://www.archdaily.com/country/portugal').text
     except Exception as ex:
         log('ArchDaily: falhou', ex); return []
-    links = []
-    for m in re.finditer(r'https://www\.archdaily\.com/(\d{6,8})/([a-z0-9\-]+)', page):
-        if m.group(1) not in [x[0] for x in links]: links.append((m.group(1), m.group(0)))
+    links, lista = [], []
+    for m in re.finditer(r'https://www\.archdaily\.com/(\d{6,8})/([a-z0-9\-]+)(\?ad_campaign=normal-tag)?', page):
+        par = (m.group(1), 'https://www.archdaily.com/' + m.group(1) + '/' + m.group(2))
+        if m.group(3) and par not in lista: lista.append(par)
+        if par not in links: links.append(par)
+    if lista: links = lista                                 # a lista principal leva esta marca; o resto são destaques
     log('ArchDaily:', len(links), 'obras na página de Portugal')
     novos = []
     for aid, u in links[:20]:
@@ -233,7 +238,11 @@ def archdaily(existentes):
             log('  ficha falhou', u, ex); continue
         meta = lambda prop: (soup.find('meta', attrs={'property': prop}) or soup.find('meta', attrs={'name': prop}) or {}).get('content')
         titulo = (meta('og:title') or '').replace(' | ArchDaily', '').strip()
-        if not titulo: continue
+        if not titulo or ' / ' not in titulo or titulo.lower().startswith('ad classics'):
+            continue                                       # só fichas de obra («Obra / Autor»), não artigos
+        texto = str(soup)
+        if '/country/portugal' not in texto and '"Portugal"' not in texto:
+            log('  fora de Portugal:', titulo); continue
         nome, _, autor = titulo.partition(' / ')
         pub = meta('article:published_time') or ''
         if not pub:
