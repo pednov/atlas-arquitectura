@@ -21,8 +21,9 @@
 @media (max-width:640px){.aback{padding:0;width:34px;justify-content:center}.aback span{display:none}}
 /* cor de cada separador */
 .atabs a{display:inline-flex;align-items:center;gap:8px}
-.atabs a::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--tc,#8a8780);flex:none}
-.atabs a[aria-current="page"]{background:var(--tc,#fff);color:#fff}
-.atabs a[aria-current="page"]::before{background:#fff}
+.atabs a::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--tc);flex:none}
+.atabs a:not([style*="--tc"])::before{display:none}
+.atabs a[aria-current="page"][style*="--tc"]{background:var(--tc);color:#fff}
+.atabs a[aria-current="page"][style*="--tc"]::before{background:#fff}
 .abar.cur{box-shadow:inset 0 -3px 0 var(--tc)}
 @media (max-width:420px){.atabs a{gap:6px}.atabs a::before{width:7px;height:7px}}
