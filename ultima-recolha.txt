@@ -1,15 +1,5 @@
-2026-11-17 02:15 UTC
+2026-11-17 02:21 UTC
 Encomenda: 19 fichas na listagem
-  novo concurso: Projeto de execução edifício sede Instituto da Segurança Social 2025-06-13 LVT
-  novo concurso: Conceção-construção Habitação Multifamiliar em Meia Via 2025-06-17 LVT
-  novo concurso: Plano de Desenvolvimento do Porto de Ponta Delgada 2025-07-07 ACORES
-  novo concurso: Conceção-construção Complexo Desportivo Municipal de Carnide 2025-07-18 LVT
-  novo concurso: Conceção-construção reabilitação e ampliação do Centro de Saúde de Aljubarrota 2025-07-05 LVT
-  novo concurso: Conceção-construção residência de estudantes da UNL - Fase II 2025-07-04 LVT
-  novo concurso: Conceção-construção pista simplificada de atletismo, Pinhal Novo 2025-06-18 LVT
-  novo concurso: Auditório da AMT 2025-04-05 LVT
-  novo concurso: Conceção-construção Habitação Multifamiliar em Pedrógão, Torres Novas 2025-06-17 LVT
-  novo concurso: Posto Territorial da GNR de Peniche 2025-07-08 LVT
   excluída: Saraiva e Associados lança ‘Unlocker AI’: o primeiro podcast de arquitectura totalmente gerado com IA
   excluída: Feeders assina novo espaço criativo em Telheiras
   excluída: HAS 2026 junta fornecedores e buyers na área da hotelaria e arquitectura (c/ galeria de imagens)
@@ -21,26 +11,6 @@ Encomenda: 19 fichas na listagem
   excluída: Arquitectura de Fernão Simões de Carvalho ‘ouvida’ no PNUM 2026
   nova notícia (Construir): 2026-09-08 Arquitectura biofílica como respostas às ondas de calor integra agenda da Homeing | imagem
   nova notícia (Construir): 2026-08-28 Perkins&Will propõe sistema modular em madeira para acelerar a construção de habitação | imagem
-ArchDaily: 30 obras na página de Portugal
-  nova obra (ArchDaily): 2026-11-05 Milan’s New San Siro Stadium and the BIAU’s 12 Awarded Projects: This Week’s Review
-  nova obra (ArchDaily): 2026-10-30 World Cities Day 2026 Explores "Regenerating the City: Adequate Housing for All"
-  nova obra (ArchDaily): 2026-10-05 On World Architecture Day 2026: A Call to Build Better, Build Differently, and Share Resources
-  nova obra (ArchDaily): 2025-10-06 Foster + Partners and MANICA to Design New Stadium as Milan Approves Sale of San Siro
-  nova obra (ArchDaily): 2026-11-02 Foster + Partners and MANICA Unveil Design for New Stadium to Replace Milan's San Siro
-  nova obra (ArchDaily): 2026-11-02 Making the City: ArchDaily Student Project Awards 2027 Open for Submissions
-  nova obra (ArchDaily): 2026-10-21 The XIV Ibero-American Biennial Comes to Brasília Under the Theme “Caring for Life”
-  nova obra (ArchDaily): 2026-09-15 20 Practices Expanding Architecture’s Agency: Winners of the ArchDaily 2026 Next Practices Awards
-  nova obra (ArchDaily): 2026-08-17 Brazil in Focus: This Month in Architecture, Heritage, and Cultural Debate
-  nova obra (ArchDaily): 2023-12-13 Theatro da Paz and Teatro Amazonas could become World Heritage Sites in the coming years
-  nova obra (ArchDaily): 2026-07-25 Neither Farm Nor Hotel: Why Agritourism Needs Its Own Architectural Typology
-  nova obra (ArchDaily): 2026-07-20 The Architecture of the FIFA World Cup: Looking Back at 2026 and Ahead to 2030
-  nova obra (ArchDaily): 2026-06-04 Discover the Full List of Stadiums Hosting the 2026 FIFA World Cup in the United States, Mexico, and Canada
-  nova obra (ArchDaily): 2018-06-14 The Evolution of the Stadium: How the World Cup Has Influenced the Design of Sports Venues
-  nova obra (ArchDaily): 2022-11-21 Explore the Full List of Football Stadiums for the 2022 FIFA World Cup in Qatar
-  nova obra (ArchDaily): 2026-07-01 Eduardo Souto de Moura Receives UIA Gold Medal at Ceremony Held in Sagrada Família, Barcelona
-  nova obra (ArchDaily): 2013-10-16 AD Classics: La Sagrada Familia / Antoni Gaudí
-  nova obra (ArchDaily): 2026-06-29 UIA World Congress of Architecture 2026 Opens in Barcelona Under the Theme "Architectures for a Planet in Transition"
-  nova obra (ArchDaily): 2026-06-09 "The Century of Gehry": Frank Gehry Retrospective Opens at the Serralves Museum in Porto
-  nova obra (ArchDaily): 2025-12-05 Frank Gehry, Visionary Architect of the Bilbao Guggenheim, Dies at 96
-Concursos: 10 novos, 19 no total. Notícias: 24 novas, 49 no total.
-Dados gravados.
+ArchDaily: 3 obras na página de Portugal
+Concursos: 0 novos, 10 no total. Notícias: 4 novas, 39 no total.
+Sem alterações.
