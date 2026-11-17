@@ -39,7 +39,9 @@ def texto(s):
     return re.sub(r'\s+', ' ', html.unescape(s)).strip()
 
 def lista(v):
-    return (v or {}).get('List', []) if isinstance(v, dict) else (v or [])
+    if isinstance(v, dict): return v.get('List') or []
+    if isinstance(v, list): return v
+    return [v] if v not in (None, '') else []
 
 def recolher():
     cap = {}
@@ -125,7 +127,7 @@ def main():
         if not i or i in vistos: continue
         vistos.add(i)
         temas, subtemas, folhas = set(), set(), []
-        for cid in s.get('ClassificadoresATId') or []:
+        for cid in lista(s.get('ClassificadoresATId')):
             c = cadeia(str(cid))
             if not c: continue
             temas.add(c[0]['id'])
@@ -148,6 +150,7 @@ def main():
             'dr': (s.get('UrlExterno') or '').strip(),
             'pdf': (s.get('UrlPDF') or '').strip(),
             'mod': data(s.get('DataModificacao')),
+            'cri': data(s.get('DataAdicao') or s.get('DataCriacao')),
             'fonte': (s.get('TipoFonte') or '').strip(),
         }
         diplomas.append({k: v for k, v in d.items() if v not in (None, '', [])})
