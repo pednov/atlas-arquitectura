@@ -16,10 +16,11 @@
   {
    "id": "arquitecturaviva",
    "nome": "Arquitectura Viva",
-   "url": "https://arquitecturaviva.com/articulos"
+   "url": "https://arquitecturaviva.com/articulos",
+   "nota": "Actualidade internacional da revista espanhola."
   }
  ],
- "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o imobiliário e as notícias sem ligação a arquitectura ou a arquitectos portugueses.",
+ "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura ou a arquitectos portugueses.",
  "noticias": [
   {
    "d": "2026-11-16",
