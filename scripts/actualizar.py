@@ -99,7 +99,7 @@ def estrangeiro_de(*textos):
     for t in textos:
         ft = ' ' + re.sub(r'[^a-z0-9]+', ' ', fold(t)) + ' '
         for nf, nome in ESTR.items():
-            if re.search(r' (?:em|in|no|na|nos|nas|para o|para a|ao|a) ' + re.escape(nf) + ' ', ft):
+            if re.search(r' (?:em|en|in|no|na|nos|nas|para o|para a|ao|a) ' + re.escape(nf) + ' ', ft):
                 return nome
         for parte in re.split(r'[·,;/]', t or ''):
             if re.sub(r'[^a-z0-9]+', ' ', fold(parte)).strip() in ESTR:
@@ -268,6 +268,70 @@ def construir(existentes):
         novos.append(n)
     return novos
 
+# ---------------------------------------------------------------- notícias internacionais: Arquitectura Viva
+# Pedido do Pedro (17 Nov. 2026). A listagem de artigos é carregada por um pedido interno da própria página
+# (POST /listados/obtener_listado_ajax/...), que devolve os cartões em HTML. Guardamos título, data, imagem e
+# ligação, sem resumos. Só categorias de actualidade (sem produtos nem empresas) e no máximo AV_MAX notícias.
+AV = 'https://arquitecturaviva.com'
+AV_CATS = {'44670': None, '42': 'Prémio', '46408': 'Exposição', '37': 'Urbanismo', '43': 'Necrologia'}
+AV_MAX = 20
+def arquitecturaviva(existentes):
+    urls = {n['u'].rstrip('/') for n in existentes}
+    ses = requests.Session()
+    ses.headers.update(UA); ses.headers['Accept-Language'] = 'es-ES,es;q=0.9'
+    try:
+        ses.get(AV + '/articulos', timeout=30)
+    except Exception as ex:
+        log('Arquitectura Viva: falhou', ex); return []
+    novos, vistos = [], set()
+    for cat, tema_cat in AV_CATS.items():
+        datos = f'text_search=&date-range=1980-{HOJE.year}&entidad=articulos&lang=es&orden=reciente&pagina=1&categoria={cat}'
+        j = None
+        for tentativa in range(3):
+            try:
+                r = ses.post(AV + '/listados/obtener_listado_ajax/articulos/es/1', data={'datos': datos},
+                             headers={'X-Requested-With': 'XMLHttpRequest', 'Referer': AV + '/articulos'}, timeout=40)
+                j = r.json(); break
+            except Exception as ex:
+                if tentativa == 2: log('Arquitectura Viva: falhou a categoria', cat, ex)
+                time.sleep(4 * (tentativa + 1))
+        if not j: continue
+        soup = BeautifulSoup(j.get('items') or '', 'html.parser')
+        for a in soup.select('article.result'):
+            link = a.get('data-link') or ''
+            if not link.startswith('/articulos/'): continue
+            u = (AV + link).rstrip('/')
+            if u in urls or u in BLOQ or u in vistos: continue
+            vistos.add(u)
+            t = limpar(html.unescape(a.get('data-titulo') or '').strip())
+            try:
+                dd, mm, aa = (a.get('data-fecha') or '').split('/'); d = f'{aa}-{mm}-{dd}'
+            except ValueError:
+                continue
+            if not t or excluir(t):
+                log('  excluída (Arquitectura Viva):', t); continue
+            img = None
+            el = a.select_one('.result__img')
+            mi = re.search(r"url\(['\"]?([^'\")]+)", (el.get('style') if el else '') or '')
+            if mi:
+                cand = mi.group(1) if mi.group(1).startswith('http') else AV + mi.group(1)
+                if not tem_pessoas(cand): img = cand
+            local, sec = regiao_de(re.sub(r'\bOporto\b', 'Porto', re.sub(r'\ben\b', 'em', t)))
+            pais = (a.get('data-pais') or '').strip()
+            fora = None
+            if not sec:
+                fora = estrangeiro_de(t) or (pais if pais and fold(pais) != 'portugal' else None)
+                sec = 'INT'
+            n = {'d': d, 'f': 'arquitecturaviva', 'tema': tema_cat or tema_de(t).replace('Obra', 'Actualidade'),
+                 't': t, 'm': local or fora or '', 'u': u, 'sec': sec, 'auto': True}
+            if img: n['img'] = img
+            novos.append(n)
+        time.sleep(1)
+    novos.sort(key=lambda n: n['d'], reverse=True)
+    for n in novos[:AV_MAX]:
+        log('  nova notícia (Arquitectura Viva):', n['d'], n['t'], '| imagem' if n.get('img') else '| sem imagem')
+    return novos[:AV_MAX]
+
 # ---------------------------------------------------------------- notícias: ArchDaily (obras em Portugal)
 def archdaily(existentes):
     ids = {re.search(r'archdaily\.com/(\d+)/', n['u']).group(1) for n in existentes if 'archdaily' in n['u'] and re.search(r'archdaily\.com/(\d+)/', n['u'])}
@@ -334,7 +398,9 @@ def main():
     limite_c = (HOJE - timedelta(days=550)).isoformat()      # fichas encerradas há mais de 18 meses saem
     C['concursos'] = [c for c in C['concursos'] + novos_c if c['entrega'][:10] >= limite_c]
 
-    novos_n = construir(N['noticias']) + archdaily(N['noticias'])
+    novos_n = construir(N['noticias']) + archdaily(N['noticias']) + arquitecturaviva(N['noticias'])
+    if not any(f['id'] == 'arquitecturaviva' for f in N['fontes']):
+        N['fontes'].append({'id': 'arquitecturaviva', 'nome': 'Arquitectura Viva', 'url': AV + '/articulos'})
     bloq = {x.rstrip('/') for x in REGRAS.get('bloquear_urls', [])}
     limite_n = (HOJE - timedelta(days=120)).isoformat()      # notícias com mais de 4 meses saem
     todas = []
@@ -348,7 +414,8 @@ def main():
     for n in sorted(todas, key=lambda n: n['d'], reverse=True):
         if n['u'] not in vistos:
             vistos.add(n['u']); N['noticias'].append(n)
-    N['noticias'] = N['noticias'][:80]
+    av = [n for n in N['noticias'] if n['f'] == 'arquitecturaviva'][:AV_MAX]      # as internacionais não tomam o lugar das portuguesas
+    N['noticias'] = [n for n in N['noticias'] if n['f'] != 'arquitecturaviva' or n in av][:100]
 
     mudou_c = json.dumps(C, sort_keys=True) != antes_c
     mudou_n = json.dumps(N, sort_keys=True) != antes_n
