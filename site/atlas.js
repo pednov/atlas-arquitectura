@@ -125,27 +125,39 @@ function renderConcursos(d){
 }
 
 /* ---------- notícias ---------- */
+/* agrupadas por região, mais «Nacional» (sem região própria) e «Internacional» (no estrangeiro) */
+const NEXTRA = {NAC: {nome: 'Nacional', cor: '#8c8c8c'}, INT: {nome: 'Internacional', cor: '#2b2b2b'}};
+const nsecOf = id => SEC[id] || NEXTRA[id] || NEXTRA.NAC;
+const nsecId = n => (SEC[n.sec] || NEXTRA[n.sec]) ? n.sec : 'NAC';
 function renderNoticias(d){
   const box = $('#nlist'); if (!box) return;
   const fontes = Object.fromEntries((d.fontes || []).map(f => [f.id, f]));
   const ns = (d.noticias || []).slice().sort((a,b) => b.d.localeCompare(a.d));
-  const groups = new Map();
-  ns.forEach(n => { const k = n.d.slice(0,7); if (!groups.has(k)) groups.set(k, []); groups.get(k).push(n); });
-  box.innerHTML = [...groups].map(([k, items]) => {
-    const [y,m] = k.split('-').map(Number);
-    return `<section data-group><h2 class="nmonth">${MESES[m-1]} de ${y}</h2><div class="nlist">${items.map(n => {
-      const [, mm, dd] = n.d.split('-').map(Number);
+  const order = [...SECORDER, 'NAC', 'INT'];
+  box.innerHTML = order.map(id => {
+    const items = ns.filter(n => nsecId(n) === id); if (!items.length) return '';
+    const s = nsecOf(id);
+    return `<section class="cgroup ngroup" data-group="${esc(id)}" style="--c:${s.cor}"><h2 class="cgh"><i></i>${esc(s.nome)}<span class="gn num"></span></h2><div class="nlist">${items.map(n => {
+      const [y, mm, dd] = n.d.split('-').map(Number);
       const f = fontes[n.f] || {nome: n.f};
-      const s = n.sec && SEC[n.sec];
       const th = n.img ? `<a class="th" href="${esc(n.u)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>` : '';
-      const q = fold([n.t, n.m, n.tema, f.nome].join(' '));
-      return `<article class="ni" data-f="${esc(n.f)}" data-tema="${esc(n.tema)}" data-q="${esc(q)}">
-<div class="dt"><b>${dd}</b>${MES[mm-1]}${th}</div>
+      const q = fold([n.t, n.m, n.tema, f.nome, s.nome].join(' '));
+      return `<article class="ni" data-f="${esc(n.f)}" data-tema="${esc(n.tema)}" data-sec="${esc(id)}" data-q="${esc(q)}">
+<div class="dt"><b>${dd}</b>${MES[mm-1]}<span class="yr">${y}</span>${th}</div>
 <div><div class="tg"><span class="pill f-${esc(n.f)}">${esc(f.nome)}</span><span class="pill out">${esc(n.tema)}</span></div>
 <h3><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a></h3>
-${n.m || s ? `<div class="m">${s ? `<i style="--c:${s.cor}" title="${esc(s.nome)}"></i>` : ''}${esc(n.m || '')}</div>` : ''}</div></article>`;
+${n.m ? `<div class="m">${esc(n.m)}</div>` : ''}</div></article>`;
     }).join('')}</div></section>`;
   }).join('');
+  const F = $('.filters[data-for=".ni"]');
+  let rb = $('#regs');
+  if (!rb && F) { rb = document.createElement('div'); rb.className = 'frow'; rb.id = 'regs'; F.insertBefore(rb, $('#temas', F) || F.firstChild); }
+  if (rb) {
+    const used = new Set(ns.map(nsecId));
+    rb.innerHTML = '<span class="lab">Região</span><button class="fb" type="button" data-k="sec" data-v="all" aria-pressed="true">Todas</button>' +
+      order.filter(id => used.has(id) || SEC[id]).map(id => { const s = nsecOf(id);
+        return `<button class="fb" type="button" data-k="sec" data-v="${esc(id)}" aria-pressed="false" style="--c:${s.cor}"><i></i>${esc(s.nome)} <span class="n num"></span></button>`; }).join('');
+  }
   const tb = $('#temas');
   if (tb) {
     const temas = [...new Set(ns.map(n => n.tema))].sort((a,b) => a.localeCompare(b, 'pt'));
