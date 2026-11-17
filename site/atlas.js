@@ -28,7 +28,18 @@ function statusOf(due){
 const LABEL = {aberto:'Propostas abertas', encerrado:'Prazo encerrado', arquivo:'Arquivo'};
 /* cor do prazo: verde com mais de 15 dias, amarelo nos últimos 15, vermelho depois de fechar */
 const urgOf = (due, st) => st !== 'aberto' ? 'vermelho' : (daysTo(due) > 15 ? 'verde' : 'amarelo');
-const REC = {sim: ['Recomendado', '✓'], nao: ['Não recomendado', '✕'], sem: ['Sem parecer', '–']};
+/* parecer: o Pedro pediu que a recomendação nomeie a OA (17 Nov. 2026) */
+const REC = {sim: ['Recomendado pela OA', '✓', 'Recomendados pela OA', 'Recomendado pela Ordem dos Arquitectos'],
+             nao: ['Não recomendado pela OA', '✕', 'Não recomendados pela OA', 'Não recomendado pela Ordem dos Arquitectos'],
+             sem: ['Sem parecer', '–', 'Sem parecer', 'Sem parecer da Ordem dos Arquitectos']};
+function recLabels(){
+  document.querySelectorAll('.fb[data-k="rec"]').forEach(b => {
+    const r = REC[b.dataset.v]; if (!r) return;
+    const t = [...b.childNodes].find(n => n.nodeType === 3);
+    if (t) t.textContent = r[2] + ' '; b.title = r[3];
+    const lab = b.parentNode.querySelector('.lab'); if (lab) lab.textContent = 'Parecer da OA';
+  });
+}
 const daysTo = due => Math.round((new Date(due.getFullYear(), due.getMonth(), due.getDate()) - today0()) / DAY);
 function dueText(due, st){
   const days = daysTo(due);
@@ -85,7 +96,7 @@ function concursoCard(c){
   Object.assign(el.dataset, {st, u, rec, sec: c.sec || '', prog: c.programa || '', q});
   el._due = due;
   el.innerHTML = `<div class="band"></div><div class="in">
-<div class="top"><span class="st" data-s="${st}" data-u="${u}">${LABEL[st]}</span><span class="rec" data-r="${rec}"><b>${REC[rec][1]}</b>${REC[rec][0]}</span></div>
+<div class="top"><span class="st" data-s="${st}" data-u="${u}">${LABEL[st]}</span><span class="rec" data-r="${rec}" title="${REC[rec][3]}"><b>${REC[rec][1]}</b>${REC[rec][0]}</span></div>
 <div class="due">${dueText(due, st)}</div>
 <h3><a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.titulo)}</a></h3>
 ${meta ? `<div class="meta">${esc(meta)}</div>` : ''}
@@ -234,7 +245,7 @@ function setupFilters(){
 
 /* ---------- arranque ---------- */
 const sc = snap('snap-concursos'), sn = snap('snap-noticias');
-if ($('#clist') && sc) { renderConcursos(sc); setupFilters(); fresh('concursos.json', sc).then(d => { if (d !== sc) { renderConcursos(d); setupFilters(); } }); }
+if ($('#clist') && sc) { recLabels(); renderConcursos(sc); setupFilters(); fresh('concursos.json', sc).then(d => { if (d !== sc) { renderConcursos(d); setupFilters(); } }); }
 if ($('#nlist') && sn) { renderNoticias(sn); setupFilters(); fresh('noticias.json', sn).then(d => { if (d !== sn) { renderNoticias(d); setupFilters(); } }); }
 if ($('#mini-c') || $('#mini-n')) {
   renderHome(sc, sn);
