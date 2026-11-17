@@ -14,7 +14,7 @@ internas que mudam sempre que o SILUC é republicado.
 Escreve data/legislacao.json e acrescenta um resumo a ultima-recolha.txt.
 """
 import json, re, sys, time, html
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from playwright.sync_api import sync_playwright
@@ -24,6 +24,9 @@ SAIDA = RAIZ / 'data' / 'legislacao.json'
 REGISTO = RAIZ / 'ultima-recolha.txt'
 PAGINA = 'https://www.siluc.pt/siluc/consulta-por-tema'
 POR_PEDIDO = 200
+# os regimes que os arquitectos mais consultam: as alterações destes são lidas todos os dias
+PRINCIPAIS = {'555/99', '18/2008', '38382', '220/2008', '1532/2008', '163/2006', '101-D/2020', '129/2002', '9/2007',
+              '307/2009', '80/2015', '31/2014', '96/2008', '135/2023', '10/2024'}
 linhas = []
 
 def log(*a):
@@ -43,7 +46,7 @@ def lista(v):
     if isinstance(v, list): return v
     return [v] if v not in (None, '') else []
 
-def recolher():
+def recolher(escolher=None):
     cap = {}
     with sync_playwright() as p:
         nav = p.chromium.launch()
@@ -91,8 +94,77 @@ def recolher():
             hits += bloco
             inicio += POR_PEDIDO
             time.sleep(1)                                      # sem pressa: são uma dúzia de pedidos por dia
+        rel = {}
+        if escolher:
+            try:
+                rel = relacoes(ctx, escolher(hits))
+            except Exception as e:
+                log(f'  aviso: as alterações e a regulamentação não foram lidas ({e})')
         nav.close()
-    return hits, total, cap.get('temas')
+    return hits, total, cap.get('temas'), rel
+
+# ---------------------------------------------------------------- alterações, regulamentação e rectificações
+# A ficha de cada diploma no SILUC lista «Alterado por», «Retificado por», «Regulamentado por», «Regulamenta» e
+# «Adaptado às RA por». Estas listas não vêm nos resultados da pesquisa: a página da ficha pede-as com dois pedidos
+# (DataActionGetAnaliseTecnica e DataActionGetArticulacao). Abrimos uma ficha, apanhamos esses dois pedidos e
+# repetimo-los para cada diploma escolhido, trocando só o identificador.
+REL_CHAVES = {'AlteradoPor': 'alt', 'RetificadoPor': 'ret', 'RegulamentadoPor': 'reg', 'Regulamenta': 'regu', 'AdaptadoRegioesAutonomas': 'ra'}
+
+def relacoes(ctx, ids):
+    ids = list(dict.fromkeys(ids))
+    if not ids: return {}
+    pg = ctx.new_page(); cap = {}
+    def pedido(req):
+        for k in ('DataActionGetAnaliseTecnica', 'DataActionGetArticulacao'):
+            if req.url.endswith('/conteudo/detalhe/' + k) and k not in cap:
+                cap[k] = (req.url, req.all_headers(), req.post_data)
+    pg.on('request', pedido)
+    pg.goto('https://www.siluc.pt/siluc/detalhe/' + ids[0], wait_until='networkidle', timeout=90000)
+    for _ in range(40):
+        if len(cap) == 2: break
+        time.sleep(1)
+    pg.close()
+    if len(cap) < 2:
+        raise RuntimeError('a ficha do SILUC não fez os pedidos esperados')
+    ua, ha, ba = cap['DataActionGetAnaliseTecnica']; ur, hr, br = cap['DataActionGetArticulacao']
+    cab = lambda h: {k: v for k, v in h.items() if k.lower() in ('content-type', 'x-csrftoken', 'outsystems-locale', 'accept')}
+    ba, br = json.loads(ba), json.loads(br)
+    def post(u, h, corpo):
+        for t in range(3):
+            r = ctx.request.post(u, data=json.dumps(corpo), headers=cab(h), timeout=60000)
+            if r.ok: return r.json()
+            time.sleep(3 * (t + 1))
+        raise RuntimeError(f'o SILUC respondeu {r.status}')
+    out, falhas = {}, 0
+    for n, i in enumerate(ids):
+        try:
+            ba['screenData']['variables']['AnaliseTecnicaId'] = i
+            rec = (post(ua, ha, ba).get('data') or {})
+            if not rec.get('AnaliseTecnica'): continue
+            v = br['screenData']['variables']
+            v['AnaliseTecnicaId'] = i
+            v['GetAnaliseTecnica'] = dict(v.get('GetAnaliseTecnica') or {}, **rec)
+            art = (post(ur, hr, br).get('data') or {}).get('Articulacao') or {}
+            d = {}
+            for k, curto in REL_CHAVES.items():
+                itens = []
+                for it in lista(art.get(k)):
+                    t = re.sub(r'\s+', ' ', it.get('Title') or '').strip()
+                    if not t: continue
+                    x = [t, data(it.get('DataPublicacao')) or '', (it.get('Link') or '').strip()]
+                    a = str(it.get('AnaliseTecnicaId') or '0')
+                    if a != '0': x.append(a)
+                    if it.get('IsRevogado'): x.append('revogado')
+                    itens.append(x)
+                if itens: d[curto] = itens
+            out[i] = d
+        except Exception as e:
+            falhas += 1
+            if falhas > 25: raise RuntimeError(f'demasiadas falhas ({e})')
+        if n % 100 == 99: log(f'  relações: {n + 1} de {len(ids)}')
+        time.sleep(0.05)
+    log(f'  alterações e regulamentação lidas em {len(out)} diplomas ({falhas} falhas)')
+    return out
 
 def arvore(temas_json):
     nos = lista(((temas_json or {}).get('data') or {}).get('Temas'))
@@ -113,7 +185,27 @@ def arvore(temas_json):
 def main():
     t0 = datetime.now(timezone.utc)
     log(f'SILUC {t0:%Y-%m-%d %H:%M} UTC')
-    hits, total, temas_json = recolher()
+    anterior = None
+    if SAIDA.exists():
+        try: anterior = json.loads(SAIDA.read_text())
+        except Exception: pass
+    rel_ant = {d['id']: {k: d[k] for k in REL_CHAVES.values() if k in d} | ({'_r': d['_r']} if '_r' in d else {})
+               for d in (anterior or {}).get('diplomas', [])}
+    hoje = t0.strftime('%Y-%m-%d'); dia = t0.toordinal()
+    def escolher(hits):
+        # todos os que ainda não têm relações lidas; os principais regimes todos os dias; os alterados no SILUC nos
+        # últimos 60 dias; e um sétimo dos restantes por dia, para que cada ficha seja revista uma vez por semana
+        lim = (t0 - timedelta(days=60)).strftime('%Y-%m-%d')
+        ids = []
+        for h in hits:
+            s_ = h.get('Source') or {}; i = str(s_.get('DbId') or '')
+            if not i: continue
+            if i not in rel_ant or '_r' not in rel_ant[i] or (s_.get('Numero') or '').strip() in PRINCIPAIS \
+               or (data(s_.get('DataModificacao')) or '') >= lim or int(i) % 7 == dia % 7:
+                ids.append(i)
+        log(f'  a ler alterações e regulamentação de {len(ids)} diplomas')
+        return ids
+    hits, total, temas_json, rel = recolher(escolher)
     log(f'  {len(hits)} fichas recebidas de {total}')
     por_id, cadeia, raizes = arvore(temas_json)
     if not raizes:
@@ -153,12 +245,12 @@ def main():
             'cri': data(s.get('DataAdicao') or s.get('DataCriacao')),
             'fonte': (s.get('TipoFonte') or '').strip(),
         }
+        if i in rel:
+            d.update(rel[i]); d['_r'] = hoje                  # dia em que as relações foram lidas
+        elif i in rel_ant:
+            d.update(rel_ant[i])
         diplomas.append({k: v for k, v in d.items() if v not in (None, '', [])})
 
-    anterior = None
-    if SAIDA.exists():
-        try: anterior = json.loads(SAIDA.read_text())
-        except Exception: pass
     n_ant = len((anterior or {}).get('diplomas', []))
     if n_ant and len(diplomas) < 0.9 * n_ant:
         log(f'  só {len(diplomas)} diplomas contra {n_ant} da última vez: não gravo, fica a cópia anterior')
