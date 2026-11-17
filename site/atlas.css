@@ -290,3 +290,15 @@ button,select,input{font:inherit;color:inherit}
 .tiles .tile.more span{max-width:34ch}
 @media (max-width:760px){.tiles .tile.more{min-height:0}}
 .pill.f-arquitecturaviva{background:#f6efe6}
+
+/* cartões da abertura na cor clara de cada separador (pedido do Pedro, 17 Nov. 2026);
+   o cartão da Submissão urbanística deixa de ser preto e passa a ter a sua cor, como os outros */
+.tiles .tile[style*="--tc"],.tiles .tile.dark[style*="--tc"]{background:color-mix(in srgb,var(--tc) 25%,#fff);color:var(--ink)}
+.tiles .tile[style*="--tc"] h2 small{color:color-mix(in srgb,var(--ink) 55%,transparent)}
+.tiles .tile[style*="--tc"] p,.tiles .tile.dark[style*="--tc"] p,.tiles .tile.dark[style*="--tc"] .ix span{color:color-mix(in srgb,var(--ink) 70%,transparent)}
+.tiles .tile[style*="--tc"] .ar,.tiles .tile.dark[style*="--tc"] .ar{background:rgba(255,255,255,.7);color:var(--ink)}
+.tiles .tile[style*="--tc"]:hover .ar{background:var(--tc);color:#fff}
+.tiles .tile[style*="--tc"] .pill:not(.dark):not(.out),.tiles .tile.dark[style*="--tc"] .pill:not(.dark):not(.out){background:rgba(255,255,255,.7);color:var(--ink)}
+.tiles .tile.dark[style*="--tc"] .pill.out{background:transparent;box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--ink) 25%,transparent);color:var(--ink)}
+.tiles .tile[style*="--tc"] .pill.out{background:transparent;box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--ink) 22%,transparent)}
+.tiles .tile[style*="--tc"]::before{background:var(--tc)}
