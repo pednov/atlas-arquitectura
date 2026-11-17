@@ -5,7 +5,7 @@
 .amark .ad{display:grid;grid-template-columns:repeat(4,6px);gap:2.5px}
 .amark .ad i{width:6px;height:6px;border-radius:50%;background:var(--c)}
 .amark b{font:800 17px/1 "Figtree","Helvetica Neue",Arial,sans-serif;letter-spacing:.14em}
-.atabs{display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;min-width:0}
+.atabs{display:flex;gap:5px;overflow-x:auto;scrollbar-width:none;min-width:0}
 .atabs::-webkit-scrollbar{display:none}
 .atabs a{flex:none;font:600 14px/1 "Figtree","Helvetica Neue",Arial,sans-serif;text-decoration:none;color:#cfccc6;padding:10px 14px;border-radius:999px;transition:background .15s,color .15s;white-space:nowrap}
 .atabs a:hover{background:rgba(255,255,255,.1);color:#fff}
@@ -23,6 +23,9 @@
 .atabs a{display:inline-flex;align-items:center;gap:8px}
 .atabs a::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--tc);flex:none}
 .atabs a:not([style*="--tc"])::before{display:none}
+/* cor «levezinha»: a cor do separador a 25 %, como se tivesse 75 % de transparência sobre branco */
+.atabs a[style*="--tc"]{background:color-mix(in srgb,var(--tc) 25%,#fff);color:#1b1b1b}
+.atabs a[style*="--tc"]:hover{background:color-mix(in srgb,var(--tc) 40%,#fff);color:#1b1b1b}
 .atabs a[aria-current="page"][style*="--tc"]{background:var(--tc);color:#fff}
 .atabs a[aria-current="page"][style*="--tc"]::before{background:#fff}
 .abar.cur{box-shadow:inset 0 -3px 0 var(--tc)}
