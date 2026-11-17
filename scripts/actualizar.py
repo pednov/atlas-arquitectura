@@ -124,7 +124,8 @@ def autoria_de(texto):
 ENC = 'https://encomenda.oasrs.org'
 def encomenda(existentes):
     novos, vistos = [], set()
-    for path in ['/concursos', '/concursos?page=2', '/concursos/oasrs', '/concursos/outros']:
+    pub, acompanhados = {}, set()                       # data de publicação e concursos acompanhados pela plataforma
+    for path in ['/concursos/oasrs', '/concursos', '/concursos?page=2', '/concursos/outros']:
         try:
             soup = BeautifulSoup(get(ENC + path).text, 'html.parser')
         except Exception as ex:
@@ -132,7 +133,9 @@ def encomenda(existentes):
         for a in soup.select('a[href*="/concursos/detalhe/"]'):
             u = a['href'].split('?')[0]
             if u.startswith('/'): u = ENC + u
-            if u in vistos: continue
+            m = re.search(r'(\d{4}-\d{2}-\d{2})', a.get_text(' ', strip=True))
+            if m: pub.setdefault(u, m.group(1))
+            if path == '/concursos/oasrs': acompanhados.add(u)
             vistos.add(u)
     log('Encomenda:', len(vistos), 'fichas na listagem')
     por_url = {c['url']: c for c in existentes}
@@ -143,7 +146,8 @@ def encomenda(existentes):
             log('  ficha falhou', u, ex); continue
         bh = soup.select_one('#billhead')
         if not bh: continue
-        titulo = limpar((bh.select_one('h2') or {}).get_text(' ', strip=True) if bh.select_one('h2') else '')
+        titulo_orig = bh.select_one('h2').get_text(' ', strip=True) if bh.select_one('h2') else ''
+        titulo = limpar(titulo_orig)
         info = {}
         for m in bh.select('.middle, .entrega'):
             sp = [x.get_text(' ', strip=True) for x in m.select('span')]
@@ -163,6 +167,9 @@ def encomenda(existentes):
             titulo = titulo[: -len(local) - 2].strip()
         analise = re.match(r'an[aá]lise\s*[–-]\s*', titulo, flags=re.I)
         if analise: titulo = titulo[analise.end():]
+        # recomendação: «sim» para concursos acompanhados (lista «em curso» da plataforma ou assessoria indicada no título),
+        # «nao» para procedimentos analisados com reservas, None quando não há apreciação
+        rec = 'nao' if analise else ('sim' if (u in acompanhados or re.search(r'assessoria', titulo_orig, flags=re.I)) else None)
         texto = soup.select_one('#info').get_text(' ', strip=True) if soup.select_one('#info') else ''
         ft = fold(texto)
         tipo = ('Concurso de ideias' if 'concurso de ideias' in ft or 'concurso publico de ideias' in ft else
@@ -177,7 +184,7 @@ def encomenda(existentes):
              'promotor': limpar(info.get('promotor', '')) or None, 'concelho': concelho, 'sec': sec,
              'local': local or None, 'programa': limpar(info.get('programa', '')) or None, 'tipo': tipo,
              'entrega': entrega, 'esclarecimentos': None, 'premios': [], 'valor_base': None, 'custo_obra': None,
-             'fonte': 'encomenda', 'url': u, 'links': links[:4], 'auto': True}
+             'fonte': 'encomenda', 'url': u, 'links': links[:4], 'recomendacao': rec, 'publicado': pub.get(u), 'auto': True}
         if analise:
             c['nota'] = 'Procedimento analisado na plataforma Encomenda. Ver a análise na ficha original.'
         if excluir(titulo, c['promotor'] or ''): continue
