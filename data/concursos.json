@@ -1,0 +1,449 @@
+{
+ "actualizado": "2026-11-16",
+ "fontes": [
+  {
+   "id": "encomenda",
+   "nome": "Encomenda",
+   "url": "https://encomenda.oasrs.org/concursos",
+   "estado": "ligada",
+   "nota": "Concursos de concepção e análises de procedimentos de contratação de projecto.",
+   "curto": "Encomenda"
+  },
+  {
+   "id": "construir",
+   "nome": "Construir",
+   "url": "https://construir.pt/categoria/arquitectura",
+   "estado": "ligada",
+   "nota": "Procedimentos de projecto noticiados na secção de arquitectura."
+  },
+  {
+   "id": "base",
+   "nome": "Portal BASE",
+   "url": "https://www.base.gov.pt/Base4/pt/pesquisa/?type=anuncios",
+   "estado": "a ligar",
+   "nota": "Anúncios de procedimentos ao abrigo do Código dos Contratos Públicos, a filtrar por serviços de arquitectura."
+  },
+  {
+   "id": "dr",
+   "nome": "Diário da República, 2.ª série",
+   "url": "https://diariodarepublica.pt/dr/pesquisa-avancada",
+   "estado": "a ligar",
+   "nota": "Anúncios de concursos de concepção e de aquisição de serviços de projecto."
+  },
+  {
+   "id": "ted",
+   "nome": "TED, Jornal Oficial da União Europeia",
+   "url": "https://ted.europa.eu/pt/",
+   "estado": "a ligar",
+   "nota": "Concursos de concepção portugueses acima dos limiares europeus."
+  }
+ ],
+ "concursos": [
+  {
+   "id": "palacio-burnay",
+   "titulo": "Requalificação do Palácio Burnay",
+   "promotor": "Museus e Monumentos de Portugal, E.P.E.",
+   "concelho": "Lisboa",
+   "local": "Lisboa",
+   "programa": "Cultura",
+   "tipo": "Concurso público de concepção, seguido de procedimento de negociação com os três seleccionados",
+   "entrega": "2027-01-28T23:59",
+   "esclarecimentos": "2026-11-29",
+   "premios": [
+    [
+     "1.º",
+     16000
+    ],
+    [
+     "2.º",
+     13000
+    ],
+    [
+     "3.º",
+     10000
+    ]
+   ],
+   "premios_nota": "1.º prémio 16.000 €, mais 7.000 € a cada seleccionado na negociação",
+   "valor_base": 689000,
+   "custo_obra": 8035000,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/EYnfqO/requalificacao-do-palacio-burnay-lisboa",
+   "links": [
+    [
+     "Anúncio DR",
+     "https://encomenda.oasrs.org/media/2026/11/419976580.pdf"
+    ],
+    [
+     "Termos de referência",
+     "https://encomenda.oasrs.org/media/2026/11/palacio-burnay-tr.pdf"
+    ],
+    [
+     "Programa preliminar",
+     "https://encomenda.oasrs.org/media/2026/11/palacio-burnay-pp.pdf"
+    ],
+    [
+     "Plataforma acinGov",
+     "https://www.acingov.pt"
+    ]
+   ],
+   "sec": "LVT"
+  },
+  {
+   "id": "sao-novo-porto",
+   "titulo": "Reabilitação do Palácio de São Novo para museu",
+   "promotor": null,
+   "concelho": "Porto",
+   "local": "Porto",
+   "programa": "Cultura",
+   "tipo": "Aquisição de serviços de projecto, com prazo de 420 dias para a elaboração do projecto",
+   "entrega": "2026-11-29T23:59",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": 940000,
+   "custo_obra": null,
+   "fonte": "construir",
+   "url": "https://construir.pt/2026/10/27/porto-lanca-reabilitacao-para-transformar-palacio-de-sao-novo-em-museu",
+   "nota": "Dados da notícia do Construir. Confirmar a hora-limite e as peças do procedimento no anúncio oficial.",
+   "links": [],
+   "sec": "NORTE"
+  },
+  {
+   "id": "quinta-mosteiro-maia",
+   "titulo": "Regeneração da Quinta do Mosteiro de São Salvador",
+   "promotor": "Câmara Municipal da Maia",
+   "concelho": "Maia",
+   "local": "Moreira, Maia",
+   "programa": "Cultura",
+   "tipo": "Concurso de concepção, sem contrato de desenvolvimento previsto",
+   "entrega": "2027-01-08T17:00",
+   "esclarecimentos": "2026-11-07",
+   "premios": [
+    [
+     "1.º",
+     20000
+    ],
+    [
+     "2.º",
+     10000
+    ],
+    [
+     "3.º",
+     7500
+    ],
+    [
+     "Prémios de participação",
+     10000
+    ]
+   ],
+   "valor_base": null,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/GwXsB0/regeneracao-da-quinta-do-mosteiro-de-sao-salvador-em-moreira-maia-assessoria-oasrn",
+   "links": [
+    [
+     "Processo do concurso",
+     "http://www.oasrn.org/concursos.php?pag=detalhe&id=1157"
+    ]
+   ],
+   "sec": "NORTE"
+  },
+  {
+   "id": "eugenio-dos-santos",
+   "titulo": "Requalificação e ampliação da Escola Básica Eugénio dos Santos",
+   "promotor": "Lisboa Ocidental SRU, E.M., S.A.",
+   "concelho": "Lisboa",
+   "local": "Alvalade, Lisboa",
+   "programa": "Ensino",
+   "tipo": "Concurso público internacional para aquisição de serviços",
+   "entrega": "2026-04-05T23:59",
+   "esclarecimentos": null,
+   "premios": [],
+   "valor_base": 953405,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/zo8TPe/analise-escola-basica-eugenio-dos-santos-lisboa",
+   "nota": "Aquisição de serviços, sem concurso de concepção. A análise publicada na plataforma Encomenda levanta reservas ao tipo de procedimento, à composição do júri e à experiência exigida ao gestor BIM.",
+   "links": [
+    [
+     "Anúncio DR",
+     "https://encomenda.oasrs.org/media/2026/03/419950474.pdf"
+    ]
+   ],
+   "sec": "LVT"
+  },
+  {
+   "id": "abrantes-percursos",
+   "titulo": "Rede de percursos, pontes e ciclovias que ligam a Terra ao Rio Tejo",
+   "promotor": "Município de Abrantes",
+   "concelho": "Abrantes",
+   "local": "Abrantes",
+   "programa": "Espaço público",
+   "tipo": "Concurso público internacional de concepção, em dois itinerários",
+   "entrega": "2026-04-19T23:59",
+   "esclarecimentos": "2026-02-18",
+   "premios": [
+    [
+     "Itinerário 1, 1.º",
+     10000
+    ],
+    [
+     "Itinerário 2, 1.º",
+     12000
+    ]
+   ],
+   "premios_total": 46000,
+   "valor_base": 388000,
+   "custo_obra": 9700000,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/9E4t70/rede-de-percursos-pontes-e-ciclovias-que-ligam-a-terra-ao-rio-tejo-abrantes",
+   "links": [
+    [
+     "Anúncio DR",
+     "https://encomenda.oasrs.org/media/2026/01/anuncio-de-procedimento-no-1164-2026-dr.pdf"
+    ],
+    [
+     "Anúncio JOUE",
+     "https://encomenda.oasrs.org/media/2026/01/anunciojoue-40408-2026-concurso-ted.pdf"
+    ]
+   ],
+   "sec": "LVT"
+  },
+  {
+   "id": "luis-antonio-verney",
+   "titulo": "Escola Luís António Verney",
+   "promotor": "Município de Lisboa",
+   "concelho": "Lisboa",
+   "local": "Beato, Lisboa",
+   "programa": "Ensino",
+   "tipo": "Concurso público de concepção",
+   "entrega": "2026-02-18T17:00",
+   "esclarecimentos": "2025-10-16",
+   "premios": [
+    [
+     "1.º",
+     10000
+    ],
+    [
+     "2.º",
+     8000
+    ],
+    [
+     "3.º",
+     5000
+    ],
+    [
+     "4.º",
+     3000
+    ]
+   ],
+   "valor_base": 1308101,
+   "custo_obra": 26162023,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/PQ8CkG/escola-luis-antonio-verney-lisboa",
+   "links": [
+    [
+     "Anúncio DR",
+     "https://encomenda.oasrs.org/media/2025/09/dr-antonio-verney.pdf"
+    ]
+   ],
+   "sec": "LVT"
+  },
+  {
+   "id": "luis-de-camoes",
+   "titulo": "Escola Básica Luís de Camões",
+   "promotor": "Município de Lisboa",
+   "concelho": "Lisboa",
+   "local": "Areeiro, Lisboa",
+   "programa": "Ensino",
+   "tipo": "Concurso público de concepção",
+   "entrega": "2026-01-05T17:00",
+   "esclarecimentos": "2025-09-07",
+   "premios": [
+    [
+     "1.º",
+     10000
+    ],
+    [
+     "2.º",
+     8000
+    ],
+    [
+     "3.º",
+     5000
+    ],
+    [
+     "4.º",
+     3000
+    ]
+   ],
+   "valor_base": 655053,
+   "custo_obra": 10917545,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/DQNuPE/escola-basica-luis-de-camoes-lisboa",
+   "links": [
+    [
+     "Anúncio DR",
+     "https://encomenda.oasrs.org/media/2025/08/dr-1.pdf"
+    ]
+   ],
+   "sec": "LVT"
+  },
+  {
+   "id": "manuel-da-maia",
+   "titulo": "Escola Manuel da Maia",
+   "promotor": "Município de Lisboa",
+   "concelho": "Lisboa",
+   "local": "Campo de Ourique, Lisboa",
+   "programa": "Ensino",
+   "tipo": "Concurso público de concepção",
+   "entrega": "2025-12-15T17:00",
+   "esclarecimentos": "2025-10-16",
+   "premios": [
+    [
+     "1.º",
+     10000
+    ],
+    [
+     "2.º",
+     8000
+    ],
+    [
+     "3.º",
+     5000
+    ],
+    [
+     "4.º",
+     3000
+    ]
+   ],
+   "valor_base": 1381629,
+   "custo_obra": 27632576,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/GxoHRb/escola-manuel-da-maia-lisboa",
+   "links": [
+    [
+     "Anúncio DR",
+     "https://encomenda.oasrs.org/media/2025/09/dr-1.pdf"
+    ]
+   ],
+   "sec": "LVT"
+  },
+  {
+   "id": "es-lumiar",
+   "titulo": "Escola Secundária do Lumiar",
+   "promotor": "Município de Lisboa",
+   "concelho": "Lisboa",
+   "local": "Lumiar, Lisboa",
+   "programa": "Ensino",
+   "tipo": "Concurso público de concepção",
+   "entrega": "2025-11-06T17:00",
+   "esclarecimentos": "2025-09-07",
+   "premios": [
+    [
+     "1.º",
+     10000
+    ],
+    [
+     "2.º",
+     8000
+    ],
+    [
+     "3.º",
+     5000
+    ],
+    [
+     "4.º",
+     3000
+    ]
+   ],
+   "valor_base": 1221957,
+   "custo_obra": 24439134,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/ZmVIRZ/escola-secundaria-do-lumiar-lisboa",
+   "links": [
+    [
+     "Anúncio DR",
+     "https://encomenda.oasrs.org/media/2025/08/dr.pdf"
+    ]
+   ],
+   "sec": "LVT"
+  },
+  {
+   "id": "novo-portugal-novo",
+   "titulo": "Novo Portugal Novo",
+   "promotor": "Município de Lisboa",
+   "concelho": "Lisboa",
+   "local": "Areeiro, Lisboa",
+   "programa": "Habitação",
+   "tipo": "Concurso público de ideias, reabilitação urbana integrada e realojamento",
+   "entrega": "2025-11-03T17:00",
+   "esclarecimentos": "2025-09-04",
+   "premios": [
+    [
+     "Três prémios de",
+     15000
+    ]
+   ],
+   "premios_total": 45000,
+   "valor_base": null,
+   "custo_obra": null,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/zGYCQl/novo-portugal-novo",
+   "links": [
+    [
+     "Anúncio DR",
+     "https://encomenda.oasrs.org/media/2025/08/anuncio-o4aqscp25.pdf"
+    ],
+    [
+     "Termos de referência",
+     "https://encomenda.oasrs.org/media/2025/08/nptn-tr-vf.pdf"
+    ]
+   ],
+   "sec": "LVT"
+  },
+  {
+   "id": "auditorio-amt",
+   "titulo": "Auditório da AMT",
+   "promotor": "Autoridade da Mobilidade e dos Transportes",
+   "concelho": "Lisboa",
+   "local": "Av. António Augusto de Aguiar, Lisboa",
+   "programa": "Institucional",
+   "tipo": "Concurso de concepção",
+   "entrega": "2025-04-05T18:00",
+   "esclarecimentos": "2025-03-06",
+   "premios": [
+    [
+     "1.º",
+     6000
+    ],
+    [
+     "2.º",
+     5000
+    ],
+    [
+     "3.º",
+     4000
+    ],
+    [
+     "4.º",
+     3000
+    ],
+    [
+     "5.º",
+     2000
+    ]
+   ],
+   "valor_base": 65000,
+   "custo_obra": 650000,
+   "fonte": "encomenda",
+   "url": "https://encomenda.oasrs.org/concursos/detalhe/qpmuyL/auditorio-da-amt-lisboa",
+   "links": [
+    [
+     "Anúncio DR",
+     "https://encomenda.oasrs.org/media/2025/02/4033-2025.pdf"
+    ]
+   ],
+   "sec": "LVT"
+  }
+ ]
+}

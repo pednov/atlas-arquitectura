@@ -1,0 +1,33 @@
+{
+ "_nota": "Padrões (expressões regulares, sem distinguir maiúsculas) aplicados ao título e ao resumo de cada notícia ou concurso. 'excluir' deixa a ficha de fora; 'limpar' apaga o trecho do texto mostrado; 'bloquear_urls' retira notícias concretas.",
+ "excluir": [
+  "ordem dos arquitect",
+  "(?-i:\\bOA\\b)",
+  "(?-i:\\bOA-?S?R)",
+  "(?-i:\\bOASR[NS]?\\b)",
+  "(?-i:\\bSRLVT\\b)",
+  "\\bfeiras?\\b",
+  "\\bbuyers?\\b",
+  "fornecedores",
+  "podcast",
+  "intelig[eê]ncia artificial",
+  "(?-i:\\bIA\\b)",
+  "cowork",
+  "imobili[aá]ri",
+  "\\bvendas?\\b",
+  "investidor",
+  "\\bwebinar",
+  "patroc[ií]n",
+  "(?-i:\\bHAS 20)",
+  "lan[cç]a (?:uma )?(?:solu[cç][aã]o|plataforma|aplica[cç][aã]o|app|software)",
+  "\\bsoftware\\b",
+  "\\bstartup"
+ ],
+ "limpar": [
+  "\\s*[–-]\\s*Assessoria\\s+OA\\w*",
+  "\\s*\\(?\\bOA-?S?R\\w*\\)?",
+  "\\s*\\(?\\bOASR[NS]?\\b\\)?",
+  "\\s*,?\\s*(?:da|pela|com a)?\\s*Ordem dos Arquitect[oe]s?(?:\\s*[-–]\\s*Sec[cç][aã]o Regional [\\w ]+)?"
+ ],
+ "bloquear_urls": []
+}
