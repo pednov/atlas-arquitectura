@@ -23,9 +23,9 @@
 .atabs a{display:inline-flex;align-items:center;gap:8px}
 .atabs a::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--tc);flex:none}
 .atabs a:not([style*="--tc"])::before{display:none}
-/* cor «levezinha»: a cor do separador a 25 %, como se tivesse 75 % de transparência sobre branco */
-.atabs a[style*="--tc"]{background:color-mix(in srgb,var(--tc) 25%,#fff);color:#1b1b1b}
-.atabs a[style*="--tc"]:hover{background:color-mix(in srgb,var(--tc) 40%,#fff);color:#1b1b1b}
+/* um aro na cor de cada separador (pedido do Pedro, 17 Nov. 2026); o separador aberto fica preenchido */
+.atabs a[style*="--tc"]{background:transparent;box-shadow:inset 0 0 0 1.5px var(--tc);color:#ece9e3}
+.atabs a[style*="--tc"]:hover{background:color-mix(in srgb,var(--tc) 22%,transparent);color:#fff}
 .atabs a[aria-current="page"][style*="--tc"]{background:var(--tc);color:#fff}
 .atabs a[aria-current="page"][style*="--tc"]::before{background:#fff}
 .abar.cur{box-shadow:inset 0 -3px 0 var(--tc)}
