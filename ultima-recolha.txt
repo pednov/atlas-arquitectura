@@ -1,16 +1,7 @@
-2026-11-17 02:21 UTC
+2026-11-17 02:23 UTC
 Encomenda: 19 fichas na listagem
-  excluída: Saraiva e Associados lança ‘Unlocker AI’: o primeiro podcast de arquitectura totalmente gerado com IA
-  excluída: Feeders assina novo espaço criativo em Telheiras
-  excluída: HAS 2026 junta fornecedores e buyers na área da hotelaria e arquitectura (c/ galeria de imagens)
-  excluída: Arquitectos querem reunião do Conselho Nacional de Habitação com a “máxima brevidade”
-  nova notícia (Construir): 2026-10-09 Conferência internacional CICA debate papel da crítica de arquitectura nos dias de hoje | sem imagem
-  excluída: Segmento Urbano lança verificação técnica de projectos com apoio de IA
-  excluída: Huître assina escritório da FastFiber
-  nova notícia (Construir): 2026-09-10 Hunter International Forum 2026 reúne grandes nomes da arquitectura no Memorial da América Latina | sem imagem
-  excluída: Arquitectura de Fernão Simões de Carvalho ‘ouvida’ no PNUM 2026
-  nova notícia (Construir): 2026-09-08 Arquitectura biofílica como respostas às ondas de calor integra agenda da Homeing | imagem
-  nova notícia (Construir): 2026-08-28 Perkins&Will propõe sistema modular em madeira para acelerar a construção de habitação | imagem
-ArchDaily: 3 obras na página de Portugal
-Concursos: 0 novos, 10 no total. Notícias: 4 novas, 39 no total.
+Construir: falhou 500 Server Error: Internal Server Error for url: https://backoffice.construir.pt/wp-json/wp/v2/posts?categories=3&per_page=40&_embed=wp:featuredmedia
+ArchDaily: 30 obras na página de Portugal
+  fora de Portugal: Fondation Louis Vuitton / Gehry Partners
+Concursos: 0 novos, 10 no total. Notícias: 0 novas, 39 no total.
 Sem alterações.
