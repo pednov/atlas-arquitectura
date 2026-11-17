@@ -12,6 +12,11 @@
    "nome": "ArchDaily",
    "url": "https://www.archdaily.com/country/portugal",
    "nota": "Obras publicadas em Portugal."
+  },
+  {
+   "id": "arquitecturaviva",
+   "nome": "Arquitectura Viva",
+   "url": "https://arquitecturaviva.com/articulos"
   }
  ],
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o imobiliário e as notícias sem ligação a arquitectura ou a arquitectos portugueses.",
@@ -37,6 +42,17 @@
    "sec": "ACORES"
   },
   {
+   "d": "2026-11-13",
+   "f": "arquitecturaviva",
+   "tema": "Exposição",
+   "t": "‘Antonio Lamela. Arquitecto 1926–2017’",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/antonio-lamela-arquitecto-19262017",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84272/av_imagen.webp?h=5b1a6936"
+  },
+  {
    "d": "2026-11-12",
    "f": "construir",
    "tema": "Instituições",
@@ -45,6 +61,17 @@
    "u": "https://construir.pt/2026/11/12/casa-da-arquitetura-e-museu-oscar-niemeyer-assinam-protocolo-de-cooperacao",
    "sec": "NORTE",
    "img": "https://backoffice.construir.pt/app/uploads/2026/11/museu-oscar-niemeyer.jpg"
+  },
+  {
+   "d": "2026-11-12",
+   "f": "arquitecturaviva",
+   "tema": "Prémio",
+   "t": "Premios Richard H. Driehaus y Rafael Manzano 2026",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/premios-richard-h-driehaus-y-rafael-manzano-2026",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84270/av_imagen.webp?h=8007505b"
   },
   {
    "d": "2026-11-11",
@@ -65,6 +92,17 @@
    "u": "https://www.archdaily.com/1188291/benfica-am-and-mr-villa-joao-tiago-aguiar-arquitectos",
    "img": "https://images.adsttc.com/media/images/6af1/c386/4ba6/4700/01d0/8243/newsletter/JTABenficaFN0182.jpg?1794229141",
    "sec": "LVT"
+  },
+  {
+   "d": "2026-11-10",
+   "f": "arquitecturaviva",
+   "tema": "Exposição",
+   "t": "‘José María García de Paredes. Espacios de encuentro’ en Granada",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/jose-maria-garcia-de-paredes-espacios-de-encuentro-en-granada",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84266/av_imagen.webp?h=287cadfb"
   },
   {
    "d": "2026-11-09",
@@ -107,6 +145,26 @@
    "img": "https://backoffice.construir.pt/app/uploads/2026/11/20260525-SABRAB-CASA-M-ARIANE-181-1584x950.jpg"
   },
   {
+   "d": "2026-11-06",
+   "f": "arquitecturaviva",
+   "tema": "Exposição",
+   "t": "Barbara Kruger en la rotonda de Tadao Ando",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/barbara-kruger-en-la-rotonda-de-tadao-ando",
+   "sec": "INT",
+   "auto": true
+  },
+  {
+   "d": "2026-11-06",
+   "f": "arquitecturaviva",
+   "tema": "Exposição",
+   "t": "‘Aqua Mater’, de Sebastião Salgado",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/aqua-mater-de-sebastio-salgado",
+   "sec": "INT",
+   "auto": true
+  },
+  {
    "d": "2026-11-05",
    "f": "archdaily",
    "tema": "Obra",
@@ -134,6 +192,16 @@
    "u": "https://www.archdaily.com/1035360/house-in-beloura-arx-portugal-arquitectos",
    "sec": "LVT",
    "img": "https://images.adsttc.com/media/images/68fa/b1e6/66e5/d600/015e/8b35/newsletter/0014.jpg?1761260141"
+  },
+  {
+   "d": "2026-11-04",
+   "f": "arquitecturaviva",
+   "tema": "Prémio",
+   "t": "Cruz y Ortiz, Premio Nacional de Arquitectura 2025",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/premio-nacional-de-arquitectura-2025",
+   "sec": "INT",
+   "auto": true
   },
   {
    "d": "2026-11-03",
@@ -176,6 +244,17 @@
    "sec": "NORTE"
   },
   {
+   "d": "2026-11-03",
+   "f": "arquitecturaviva",
+   "tema": "Exposição",
+   "t": "‘Anupama Kundoo. Construyendo conocimiento’",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/anupama-kundoo-construyendo-conocimiento",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84244/av_imagen.webp?h=8407171d"
+  },
+  {
    "d": "2026-11-02",
    "f": "archdaily",
    "tema": "Obra",
@@ -184,6 +263,16 @@
    "u": "https://www.archdaily.com/1187977/quinta-da-casa-artequitectos",
    "img": "https://images.adsttc.com/media/images/6ae3/2f7f/20d6/d801/8852/1f6a/newsletter/house-quinta-da-casa-artequitectos_15.jpg?1793273743",
    "sec": "NORTE"
+  },
+  {
+   "d": "2026-11-02",
+   "f": "arquitecturaviva",
+   "tema": "Necrologia",
+   "t": "Miquel Navarro (1945-2026)",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/miquel-navarro-1945-2026",
+   "sec": "INT",
+   "auto": true
   },
   {
    "d": "2026-10-30",
@@ -246,6 +335,17 @@
    "img": "https://backoffice.construir.pt/app/uploads/2026/10/Req.-Largo-Galinheiras_04_PR-1584x900.jpg"
   },
   {
+   "d": "2026-10-26",
+   "f": "arquitecturaviva",
+   "tema": "Necrologia",
+   "t": "Antonio Ferrer Vega (1948-2026)",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/antonio-ferrer-vega-1948-2026",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84230/av_imagen.webp?h=4c3567f3"
+  },
+  {
    "d": "2026-10-23",
    "f": "construir",
    "tema": "Exposição",
@@ -254,6 +354,27 @@
    "u": "https://construir.pt/2026/10/23/parceria-entre-portugal-e-espanha-leva-exposicao-da-xiv-biau-a-matosinhos",
    "sec": "NORTE",
    "img": "https://backoffice.construir.pt/app/uploads/2026/10/casa_da_arquitetura_e_casa_de_la_arquitectura_reforcam_ligacao_com_itinerancia_da_xiv_biau_6ada44ff7c705-950x1350.jpg"
+  },
+  {
+   "d": "2026-10-23",
+   "f": "arquitecturaviva",
+   "tema": "Prémio",
+   "t": "Premios arquia/próxima y arquia/innova",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/premios-arquia-proxima-y-arquia-innova-2026",
+   "sec": "INT",
+   "auto": true
+  },
+  {
+   "d": "2026-10-22",
+   "f": "arquitecturaviva",
+   "tema": "Exposição",
+   "t": "Centenario de Manolo Millares",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/centenario-de-manolo-millares",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84216/av_imagen.webp?h=fed6567c"
   },
   {
    "d": "2026-10-21",
@@ -284,6 +405,28 @@
    "sec": "NORTE"
   },
   {
+   "d": "2026-10-16",
+   "f": "arquitecturaviva",
+   "tema": "Prémio",
+   "t": "Ganador del Premio Stirling 2026",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/ganador-del-premio-stirling-2026",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84192/av_imagen.webp?h=f58555f2"
+  },
+  {
+   "d": "2026-10-16",
+   "f": "arquitecturaviva",
+   "tema": "Prémio",
+   "t": "Premio Europeo del Espacio Público Urbano 2026",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/premio-europeo-del-espacio-publico-urbano-2026",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84190/av_imagen.webp?h=d2d75c07"
+  },
+  {
    "d": "2026-10-15",
    "f": "construir",
    "tema": "Prémio",
@@ -291,6 +434,38 @@
    "m": "Inês Carneiro · Matosinhos",
    "u": "https://construir.pt/2026/10/15/ines-carneiro-vence-premio-fernando-tavora-com-viagem-as-arquitecturas-do-cosmos",
    "sec": "NORTE"
+  },
+  {
+   "d": "2026-10-14",
+   "f": "arquitecturaviva",
+   "tema": "Prémio",
+   "t": "Junya Ishigami, Barragán Prize",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/junya-ishigami-barragan-prize",
+   "sec": "INT",
+   "auto": true
+  },
+  {
+   "d": "2026-10-09",
+   "f": "arquitecturaviva",
+   "tema": "Prémio",
+   "t": "Premios COAM 2026",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/premios-coam-2026",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84154/av_thumb__av_325881.webp?h=867a73d0"
+  },
+  {
+   "d": "2026-10-08",
+   "f": "arquitecturaviva",
+   "tema": "Exposição",
+   "t": "El Museo Goya de Zaragoza reabre sus puertas con la exposición ‘Solo Goya. El arte de ver’",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/reapertura-del-muse-goya-con-solo-goya-el-arte-de-ver",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84136/av_imagen.webp?h=6213f754"
   },
   {
    "d": "2026-10-06",
@@ -313,6 +488,17 @@
    "sec": "INT"
   },
   {
+   "d": "2026-10-06",
+   "f": "arquitecturaviva",
+   "tema": "Prémio",
+   "t": "Pilar Albarracín, Premio Nacional de Artes Plásticas 2026",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/pilar-albarracin-premio-nacional-de-artes-plasticas",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84134/av_imagen.webp?h=134656c8"
+  },
+  {
    "d": "2026-10-05",
    "f": "construir",
    "tema": "Prémio",
@@ -321,6 +507,16 @@
    "u": "https://construir.pt/2026/10/05/14-projectos-portugueses-conquistam-loop-design-awards-2026",
    "img": "https://backoffice.construir.pt/app/uploads/2026/10/3-600x600.jpg",
    "sec": "NAC"
+  },
+  {
+   "d": "2026-09-30",
+   "f": "arquitecturaviva",
+   "tema": "Prémio",
+   "t": "Farshid Moussavi, Medalla Soane 2026",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/farshid-moussavi-medalla-soane-2026",
+   "sec": "INT",
+   "auto": true
   },
   {
    "d": "2026-09-29",
@@ -332,6 +528,27 @@
    "auto": true,
    "img": "https://backoffice.construir.pt/app/uploads/2026/09/Museu-do-Mobiliario-Paredes_1-1-300x170.jpg",
    "sec": "NORTE"
+  },
+  {
+   "d": "2026-09-28",
+   "f": "arquitecturaviva",
+   "tema": "Necrologia",
+   "t": "César Ortiz-Echagüe (1927-2026)",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/cesar-ortiz-echague-1927-2026",
+   "sec": "INT",
+   "auto": true
+  },
+  {
+   "d": "2026-09-25",
+   "f": "arquitecturaviva",
+   "tema": "Exposição",
+   "t": "‘Pipilotti Rist. Ever is Over All’",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/pipilotti-rist-ever-is-over-all",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84080/av_imagen.webp?h=7e89b55d"
   },
   {
    "d": "2026-09-22",

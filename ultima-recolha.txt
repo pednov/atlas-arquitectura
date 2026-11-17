@@ -1,4 +1,4 @@
-2026-11-17 15:44 UTC
+2026-11-17 15:54 UTC
 Encomenda: 19 fichas na listagem
   excluída: Saraiva e Associados lança ‘Unlocker AI’: o primeiro podcast de arquitectura totalmente gerado com IA
   excluída: Feeders assina novo espaço criativo em Telheiras
@@ -8,9 +8,29 @@ Encomenda: 19 fichas na listagem
   excluída: Arquitectura de Fernão Simões de Carvalho ‘ouvida’ no PNUM 2026
 ArchDaily: 30 obras na página de Portugal
   fora de Portugal: Fondation Louis Vuitton / Gehry Partners
-Concursos: 0 novos, 10 no total. Notícias: 0 novas, 37 no total.
-Sem alterações.
+  nova notícia (Arquitectura Viva): 2026-11-13 ‘Antonio Lamela. Arquitecto 1926–2017’ | imagem
+  nova notícia (Arquitectura Viva): 2026-11-12 Premios Richard H. Driehaus y Rafael Manzano 2026 | imagem
+  nova notícia (Arquitectura Viva): 2026-11-10 ‘José María García de Paredes. Espacios de encuentro’ en Granada | imagem
+  nova notícia (Arquitectura Viva): 2026-11-06 Barbara Kruger en la rotonda de Tadao Ando | sem imagem
+  nova notícia (Arquitectura Viva): 2026-11-06 ‘Aqua Mater’, de Sebastião Salgado | sem imagem
+  nova notícia (Arquitectura Viva): 2026-11-04 Cruz y Ortiz, Premio Nacional de Arquitectura 2025 | sem imagem
+  nova notícia (Arquitectura Viva): 2026-11-03 ‘Anupama Kundoo. Construyendo conocimiento’ | imagem
+  nova notícia (Arquitectura Viva): 2026-11-02 Miquel Navarro (1945-2026) | sem imagem
+  nova notícia (Arquitectura Viva): 2026-10-26 Antonio Ferrer Vega (1948-2026) | imagem
+  nova notícia (Arquitectura Viva): 2026-10-23 Premios arquia/próxima y arquia/innova | sem imagem
+  nova notícia (Arquitectura Viva): 2026-10-22 Centenario de Manolo Millares | imagem
+  nova notícia (Arquitectura Viva): 2026-10-16 Ganador del Premio Stirling 2026 | imagem
+  nova notícia (Arquitectura Viva): 2026-10-16 Premio Europeo del Espacio Público Urbano 2026 | imagem
+  nova notícia (Arquitectura Viva): 2026-10-14 Junya Ishigami, Barragán Prize | sem imagem
+  nova notícia (Arquitectura Viva): 2026-10-09 Premios COAM 2026 | imagem
+  nova notícia (Arquitectura Viva): 2026-10-08 El Museo Goya de Zaragoza reabre sus puertas con la exposición ‘Solo Goya. El arte de ver’ | imagem
+  nova notícia (Arquitectura Viva): 2026-10-06 Pilar Albarracín, Premio Nacional de Artes Plásticas 2026 | imagem
+  nova notícia (Arquitectura Viva): 2026-09-30 Farshid Moussavi, Medalla Soane 2026 | sem imagem
+  nova notícia (Arquitectura Viva): 2026-09-28 César Ortiz-Echagüe (1927-2026) | sem imagem
+  nova notícia (Arquitectura Viva): 2026-09-25 ‘Pipilotti Rist. Ever is Over All’ | imagem
+Concursos: 0 novos, 10 no total. Notícias: 20 novas, 57 no total.
+Dados gravados.
 
-SILUC 2026-11-17 15:44 UTC
+SILUC 2026-11-17 15:55 UTC
   1840 fichas recebidas de 1840
-  1840 diplomas em 7 temas gravados (1840 novos ou alterados)
+  sem alterações
