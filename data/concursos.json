@@ -86,7 +86,9 @@
      "https://www.acingov.pt"
     ]
    ],
-   "sec": "LVT"
+   "sec": "LVT",
+   "recomendacao": "sim",
+   "publicado": "2026-11-02"
   },
   {
    "id": "sao-novo-porto",
@@ -105,7 +107,9 @@
    "url": "https://construir.pt/2026/10/27/porto-lanca-reabilitacao-para-transformar-palacio-de-sao-novo-em-museu",
    "nota": "Dados da notícia do Construir. Confirmar a hora-limite e as peças do procedimento no anúncio oficial.",
    "links": [],
-   "sec": "NORTE"
+   "sec": "NORTE",
+   "recomendacao": null,
+   "publicado": "2026-10-27"
   },
   {
    "id": "quinta-mosteiro-maia",
@@ -145,7 +149,9 @@
      "http://www.oasrn.org/concursos.php?pag=detalhe&id=1157"
     ]
    ],
-   "sec": "NORTE"
+   "sec": "NORTE",
+   "recomendacao": "sim",
+   "publicado": "2026-10-15"
   },
   {
    "id": "eugenio-dos-santos",
@@ -169,7 +175,9 @@
      "https://encomenda.oasrs.org/media/2026/03/419950474.pdf"
     ]
    ],
-   "sec": "LVT"
+   "sec": "LVT",
+   "recomendacao": "nao",
+   "publicado": "2026-03-09"
   },
   {
    "id": "abrantes-percursos",
@@ -206,7 +214,9 @@
      "https://encomenda.oasrs.org/media/2026/01/anunciojoue-40408-2026-concurso-ted.pdf"
     ]
    ],
-   "sec": "LVT"
+   "sec": "LVT",
+   "recomendacao": "sim",
+   "publicado": "2026-01-20"
   },
   {
    "id": "luis-antonio-verney",
@@ -246,7 +256,9 @@
      "https://encomenda.oasrs.org/media/2025/09/dr-antonio-verney.pdf"
     ]
    ],
-   "sec": "LVT"
+   "sec": "LVT",
+   "recomendacao": "sim",
+   "publicado": "2025-09-22"
   },
   {
    "id": "luis-de-camoes",
@@ -286,7 +298,9 @@
      "https://encomenda.oasrs.org/media/2025/08/dr-1.pdf"
     ]
    ],
-   "sec": "LVT"
+   "sec": "LVT",
+   "recomendacao": "sim",
+   "publicado": "2025-08-17"
   },
   {
    "id": "manuel-da-maia",
@@ -326,7 +340,9 @@
      "https://encomenda.oasrs.org/media/2025/09/dr-1.pdf"
     ]
    ],
-   "sec": "LVT"
+   "sec": "LVT",
+   "recomendacao": "sim",
+   "publicado": "2025-09-22"
   },
   {
    "id": "es-lumiar",
@@ -366,7 +382,9 @@
      "https://encomenda.oasrs.org/media/2025/08/dr.pdf"
     ]
    ],
-   "sec": "LVT"
+   "sec": "LVT",
+   "recomendacao": "sim",
+   "publicado": "2025-08-17"
   },
   {
    "id": "novo-portugal-novo",
@@ -399,7 +417,9 @@
      "https://encomenda.oasrs.org/media/2025/08/nptn-tr-vf.pdf"
     ]
    ],
-   "sec": "LVT"
+   "sec": "LVT",
+   "recomendacao": "sim",
+   "publicado": "2025-08-07"
   }
  ]
 }
