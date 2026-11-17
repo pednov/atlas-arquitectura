@@ -41,6 +41,7 @@ def save(name, obj):
 CONC = load('concelhos.json')                      # nome do concelho -> região
 CONC_F = {fold(k): v for k, v in CONC.items()}
 REGRAS = load('regras.json')
+BLOQ = set(REGRAS.get('bloquear_urls', []))
 
 def limpar(s):
     """Retira do texto as referências à Ordem dos Arquitectos e às suas secções (regra editorial do ATLAS)."""
@@ -190,7 +191,7 @@ def construir(existentes):
     novos = []
     for p in posts:
         u = p['link'].replace('://www.', '://').rstrip('/')
-        if u in urls: continue
+        if u in urls or u in BLOQ: continue
         t = limpar(p['title']['rendered'])
         ex = html.unescape(re.sub(r'<[^>]+>', ' ', p.get('excerpt', {}).get('rendered', ''))).strip()
         if excluir(t, ex):
@@ -227,10 +228,10 @@ def archdaily(existentes):
         par = (m.group(1), 'https://www.archdaily.com/' + m.group(1) + '/' + m.group(2))
         if m.group(3) and par not in lista: lista.append(par)
         if par not in links: links.append(par)
-    if lista: links = lista                                 # a lista principal leva esta marca; o resto são destaques
+    links = lista + [x for x in links if x not in lista]    # primeiro a lista principal, depois o resto (cada ficha é verificada)
     log('ArchDaily:', len(links), 'obras na página de Portugal')
     novos = []
-    for aid, u in links[:20]:
+    for aid, u in links[:30]:
         if aid in ids: continue
         try:
             soup = BeautifulSoup(get(u).text, 'html.parser')
@@ -241,7 +242,7 @@ def archdaily(existentes):
         if not titulo or ' / ' not in titulo or titulo.lower().startswith('ad classics'):
             continue                                       # só fichas de obra («Obra / Autor»), não artigos
         texto = str(soup)
-        if '/country/portugal' not in texto and '"Portugal"' not in texto:
+        if 'archdaily.com/country/portugal' not in texto:
             log('  fora de Portugal:', titulo); continue
         nome, _, autor = titulo.partition(' / ')
         pub = meta('article:published_time') or ''
