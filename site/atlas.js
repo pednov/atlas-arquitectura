@@ -186,6 +186,8 @@ ${n.m ? `<div class="m">${esc(n.m)}</div>` : ''}</div></article>`;
       temas.map(t => `<button class="fb" type="button" data-k="tema" data-v="${esc(t)}" aria-pressed="false">${esc(t)} <span class="n num"></span></button>`).join('');
   }
   const upd = $('#upd-n'); if (upd && d.actualizado) upd.textContent = fmtLong(d.actualizado);
+  const ld = $('main p.lead');                         /* fontes da Imprensa, também nas páginas publicadas antes do Dezeen (18 Nov. 2026) */
+  if (ld && d.excluidas) ld.textContent = 'Arquitectura, urbanismo e vida nas cidades, a partir da secção de arquitectura do Construir, das obras em Portugal publicadas no ArchDaily, do Lisboa Para Pessoas e do ECO, com a actualidade internacional da Arquitectura Viva e do Dezeen. ' + d.excluidas;
   const pu = upd && upd.parentNode;                    /* páginas publicadas antes de 18 Nov. 2026 ainda dizem «arrumadas por região» */
   if (pu && pu.textContent.includes('arrumadas por região'))
     pu.innerHTML = pu.innerHTML.replace(/As notícias estão arrumadas por região[^.]*\./, 'As notícias seguem a ordem do calendário e cada uma tem a cor da sua região, cinzenta quando não se prende a uma região e verde quando se passa no estrangeiro.');
@@ -421,8 +423,51 @@ function renderLegislacao(L){
     more.addEventListener('click', () => { state.n += LEX_PASSO; apply(true); });
     if (rb) rb.addEventListener('click', e => { if (e.target.closest('.recmore')) { recTodas = !recTodas; apply(true); } });
   }
+  /* «#q=163/2006»: pesquisa vinda de outra página do ATLAS (por exemplo, dos verificadores) */
+  const hq = /[#&]q=([^&]+)/.exec(location.hash);
+  if (hq) { try { state.q = decodeURIComponent(hq[1]); } catch(_) { state.q = hq[1]; } const qi = $('#lex-q'); if (qi) qi.value = state.q; }
   fillSub(); apply();
   box.classList.add('ready');
+}
+
+/* ---------- fotógrafos de arquitectura (Divisare) ---------- */
+const foSec = id => id === 'NAC' ? {nome: 'Outros lugares', cor: '#8c8c8c'} : nsecOf(id);
+const foCid = f => String(f.c || '').split(' e ')[0];
+function foCard(f){
+  const id = nsecId(f), s = foSec(id);
+  const obras = (f.obras || []).slice(0, 4);
+  const q = fold([f.n, f.c, s.nome, ...(f.obras || []).map(o => [o.t, o.l, o.a].join(' '))].join(' '));
+  const host = f.w ? f.w.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '') : '';
+  const lis = obras.map(o => {
+    const sub = [o.l, o.a ? 'arquitectura de ' + o.a : ''].filter(Boolean).join(' · ');
+    return `<li><a href="${esc(o.u)}" target="_blank" rel="noopener">${esc(o.t)}</a>${sub ? `<span>${esc(sub)}</span>` : ''}</li>`;
+  }).join('');
+  return `<article class="fo" style="--c:${s.cor}" data-sec="${esc(id)}" data-c="${esc(foCid(f))}" data-q="${esc(q)}">
+<div class="fh"><h3><a href="${esc(f.u)}" target="_blank" rel="noopener">${esc(f.n)}</a></h3><span class="pill rg"><i></i>${esc(f.c || s.nome)}</span></div>
+${lis ? `<ol class="fobras">${lis}</ol>` : '<p class="fsem">Sem obras na primeira página do Divisare.</p>'}
+<div class="lnks"><a class="lnk dark" href="${esc(f.u)}" target="_blank" rel="noopener">Ver no Divisare ${EXT}</a>${f.w ? `<a class="lnk" href="${esc(f.w)}" target="_blank" rel="noopener">${esc(host)} ${EXT}</a>` : ''}</div>
+</article>`;
+}
+function renderFotografos(d){
+  const box = $('#flist'); if (!box) return;
+  const fs = d.fotografos || [];
+  if (!fs.length) { box.innerHTML = '<p class="empty">A lista de fotógrafos ainda está a ser recolhida.</p>'; return; }
+  const grupos = [...SECORDER, 'NAC'].filter(id => fs.some(f => nsecId(f) === id));
+  box.innerHTML = grupos.map(id => { const s = foSec(id);
+    return `<section class="fgrp" data-group="${esc(id)}"><h2 class="nmonth"><i style="background:${s.cor}"></i>${esc(s.nome)}<span class="gn num"></span></h2><div class="fgrid">${fs.filter(f => nsecId(f) === id).map(foCard).join('')}</div></section>`;
+  }).join('');
+  const rb = $('#regs-f');
+  if (rb) rb.innerHTML = '<span class="lab">Região</span><button class="fb" type="button" data-k="sec" data-v="all" aria-pressed="true">Todas</button>' +
+    grupos.map(id => { const s = foSec(id);
+      return `<button class="fb" type="button" data-k="sec" data-v="${esc(id)}" aria-pressed="false" style="--c:${s.cor}"><i></i>${esc(s.nome)} <span class="n num"></span></button>`; }).join('');
+  const sel = $('#cid-f');
+  if (sel) {
+    const conta = {}; fs.forEach(f => { const c = foCid(f); if (c) conta[c] = (conta[c] || 0) + 1; });
+    sel.innerHTML = '<option value="all">Todas as cidades</option>' + Object.keys(conta).sort((a, b) => a.localeCompare(b, 'pt'))
+      .map(c => `<option value="${esc(c)}">${esc(c)} (${conta[c]})</option>`).join('');
+  }
+  const upd = $('#upd-f'); if (upd && d.actualizado) upd.textContent = fmtLong(d.actualizado);
+  const tot = $('#tot-f'); if (tot) tot.textContent = fs.length;
 }
 
 /* o separador «Notícias» passou a chamar-se «Imprensa» (pedido do Pedro, 18 Nov. 2026): corrige as páginas publicadas antes */
@@ -446,6 +491,9 @@ function renderLegislacao(L){
 const sc = snap('snap-concursos'), sn = snap('snap-noticias');
 if ($('#clist') && sc) { recLabels(); renderConcursos(sc); setupFilters(); fresh('concursos.json', sc).then(d => { if (d !== sc) { renderConcursos(d); setupFilters(); } }); }
 if ($('#nlist') && sn) { renderNoticias(sn); setupFilters(); fresh('noticias.json', sn).then(d => { if (d !== sn) { renderNoticias(d); setupFilters(); } }); }
+const sf = snap('snap-fotografos');
+if ($('#flist') && sf) { renderFotografos(sf); setupFilters(); fresh('fotografos.json', sf).then(d => { if (d !== sf) { renderFotografos(d); setupFilters(); } }); }
+if ($('[data-foto-count]')) fresh('fotografos.json', null).then(d => { const n = d && (d.fotografos || []).length; if (n) $$('[data-foto-count]').forEach(e => e.textContent = n); });
 if ($('#lex')) { const p = lexLoad(); p && p.then(L => { if (L) renderLegislacao(L); else { const er = $('#lex-erro'); if (er) er.hidden = false; } }); }
 if ($('#mini-c') || $('#mini-n')) {
   renderHome(sc, sn);
