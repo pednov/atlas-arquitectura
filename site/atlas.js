@@ -136,8 +136,10 @@ function renderConcursos(d){
 }
 
 /* ---------- notícias ---------- */
-/* agrupadas por região, mais «Nacional» (sem região própria) e «Internacional» (no estrangeiro) */
-const NEXTRA = {NAC: {nome: 'Nacional', cor: '#8c8c8c'}, INT: {nome: 'Internacional', cor: '#2b2b2b'}};
+/* por ordem do calendário, agrupadas por mês (pedido do Pedro, 18 Nov. 2026); cada notícia leva a cor da sua região,
+   cinzento se for nacional (sem região própria) e verde se for internacional (no estrangeiro) */
+const NEXTRA = {NAC: {nome: 'Nacional', cor: '#8c8c8c'}, INT: {nome: 'Internacional', cor: '#2F9E44'}};
+const MESF = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 const nsecOf = id => SEC[id] || NEXTRA[id] || NEXTRA.NAC;
 const nsecId = n => (SEC[n.sec] || NEXTRA[n.sec]) ? n.sec : 'NAC';
 function renderNoticias(d){
@@ -145,17 +147,19 @@ function renderNoticias(d){
   const fontes = Object.fromEntries((d.fontes || []).map(f => [f.id, f]));
   const ns = (d.noticias || []).slice().sort((a,b) => b.d.localeCompare(a.d));
   const order = [...SECORDER, 'NAC', 'INT'];
-  box.innerHTML = order.map(id => {
-    const items = ns.filter(n => nsecId(n) === id); if (!items.length) return '';
-    const s = nsecOf(id);
-    return `<section class="cgroup ngroup" data-group="${esc(id)}" style="--c:${s.cor}"><h2 class="cgh"><i></i>${esc(s.nome)}<span class="gn num"></span></h2><div class="nlist">${items.map(n => {
+  const meses = [...new Set(ns.map(n => n.d.slice(0, 7)))];
+  box.innerHTML = meses.map(ym => {
+    const items = ns.filter(n => n.d.startsWith(ym));
+    const [yy, mo] = ym.split('-').map(Number);
+    return `<section class="nmes" data-group="${esc(ym)}"><h2 class="nmonth">${MESF[mo - 1]} de ${yy}<span class="gn num"></span></h2><div class="nlist">${items.map(n => {
       const [y, mm, dd] = n.d.split('-').map(Number);
       const f = fontes[n.f] || {nome: n.f};
+      const id = nsecId(n), s = nsecOf(id);
       const th = n.img ? `<a class="th" href="${esc(n.u)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>` : '';
       const q = fold([n.t, n.m, n.tema, f.nome, s.nome].join(' '));
-      return `<article class="ni" data-f="${esc(n.f)}" data-tema="${esc(n.tema)}" data-sec="${esc(id)}" data-q="${esc(q)}">
+      return `<article class="ni sc" style="--c:${s.cor}" data-f="${esc(n.f)}" data-tema="${esc(n.tema)}" data-sec="${esc(id)}" data-q="${esc(q)}">
 <div class="dt"><b>${dd}</b>${MES[mm-1]}<span class="yr">${y}</span>${th}</div>
-<div><div class="tg"><span class="pill f-${esc(n.f)}">${esc(f.nome)}</span><span class="pill out">${esc(n.tema)}</span></div>
+<div><div class="tg"><span class="pill rg"><i></i>${esc(s.nome)}</span><span class="pill f-${esc(n.f)}">${esc(f.nome)}</span><span class="pill out">${esc(n.tema)}</span></div>
 <h3><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a></h3>
 ${n.m ? `<div class="m">${esc(n.m)}</div>` : ''}</div></article>`;
     }).join('')}</div></section>`;
@@ -182,6 +186,9 @@ ${n.m ? `<div class="m">${esc(n.m)}</div>` : ''}</div></article>`;
       temas.map(t => `<button class="fb" type="button" data-k="tema" data-v="${esc(t)}" aria-pressed="false">${esc(t)} <span class="n num"></span></button>`).join('');
   }
   const upd = $('#upd-n'); if (upd && d.actualizado) upd.textContent = fmtLong(d.actualizado);
+  const pu = upd && upd.parentNode;                    /* páginas publicadas antes de 18 Nov. 2026 ainda dizem «arrumadas por região» */
+  if (pu && pu.textContent.includes('arrumadas por região'))
+    pu.innerHTML = pu.innerHTML.replace(/As notícias estão arrumadas por região[^.]*\./, 'As notícias seguem a ordem do calendário e cada uma tem a cor da sua região, cinzenta quando não se prende a uma região e verde quando se passa no estrangeiro.');
 }
 
 /* ---------- entrada: prazos, últimas notícias e contagens ---------- */

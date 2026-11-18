@@ -318,3 +318,13 @@ button,select,input{font:inherit;color:inherit}
 @media (max-width:760px){.lx details.rel ol.many{columns:1}}
 .lexrec-list .recmore{grid-column:1/-1;justify-self:start;border:1.5px solid var(--ink);background:var(--paper);border-radius:var(--pill);padding:10px 16px;font:700 13.5px/1 var(--body);cursor:pointer}
 .lexrec-list .recmore:hover{background:var(--ink);color:#fff}
+
+/* notícias por ordem do calendário, com a cor da região em cada uma */
+.nmes{margin:6px 0 26px}
+.nmes .nmonth{display:flex;align-items:baseline;gap:10px;margin:26px 0 8px}
+.nmes .nmonth .gn{font:600 12.5px/1 var(--body);color:var(--ink-2)}
+.ni.sc{position:relative;padding-left:18px}
+.ni.sc::before{content:"";position:absolute;left:0;top:15px;bottom:15px;width:4px;border-radius:4px;background:var(--c)}
+.ni .pill.rg{background:color-mix(in srgb,var(--c) 16%,#fff);color:var(--ink);gap:7px}
+.ni .pill.rg i{width:9px;height:9px;border-radius:50%;background:var(--c);display:inline-block}
+@media (max-width:760px){.ni.sc{padding-left:14px}}
