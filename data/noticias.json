@@ -38,6 +38,61 @@
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o negócio imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura, a urbanismo ou à vida nas cidades.",
  "noticias": [
   {
+   "d": "2026-11-18",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Habitação: Governo vai receber dois grupos da acampada do Porto",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/18/habitacao-governo-vai-receber-dois-grupos-da-acampada-do-porto",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/10/cropped-48002717-scaled-1.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-18",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Impostos, habitação, pensões e energia: as principais propostas dos partidos para o OE2027",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/18/impostos-habitacao-pensoes-e-energia-as-principais-propostas-dos-partidos-para-o-oe2027",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/10/cropped-eco-oe2027-27out-2000px-014.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-18",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Comissão de amortização antecipada, IMT e rendas moderadas: as propostas dos partidos para a habitação",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/18/comissao-de-amortizacao-antecipada-imt-e-rendas-moderadas-as-propostas-dos-partidos-para-a-habitacao",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/08/cropped-45445303-scaled-4.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-18",
+   "f": "dezeen",
+   "tema": "Património",
+   "t": "Cotswolds barn renovation by ConForm creates a \"dialogue between old and new\"",
+   "m": "Inglaterra",
+   "u": "https://www.dezeen.com/2026/11/18/open-byre-conform",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/cotswolds-open-byre-barn-renovation-conform-sq_dezeen_2364_col_2-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-18",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "Harvard GSD students propose alternatives to Trump's arch",
+   "m": "EUA",
+   "u": "https://www.dezeen.com/2026/11/18/harvard-gsd-triumphal-arch-proposals-the-cultural-landscape-foundation",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/the-cultural-landscape-foundation-harvard-triumphal-arch-provocations_dezeen_sq-1-1024x1024.jpg"
+  },
+  {
    "d": "2026-11-17",
    "f": "eco",
    "tema": "Habitação",
@@ -341,17 +396,6 @@
   },
   {
    "d": "2026-11-13",
-   "f": "eco",
-   "tema": "Cidade",
-   "t": "Câmara de Lisboa prevê orçamento de 1.463 milhões de euros para 2027",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/13/camara-de-lisboa-preve-orcamento-de-1-463-milhoes-de-euros-para-2027",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/01/cropped-6p1a5541.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-13",
    "f": "dezeen",
    "tema": "Obra",
    "t": "Perforated brick walls envelop giant market in Kinshasa by Think Tank Architecture",
@@ -416,27 +460,6 @@
   },
   {
    "d": "2026-11-12",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "Mais de 90% das medidas do PS para a habitação foram aceites pelo Governo, diz Pinto Luz",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/12/mais-de-90-das-medidas-do-ps-para-a-habitacao-foram-aceites-pelo-governo-diz-pinto-luz",
-   "sec": "NAC",
-   "auto": true
-  },
-  {
-   "d": "2026-11-12",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "Manifestantes pela habitação pedem: “Ó Web Summit, sai de Lisboa”",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/12/manifestantes-pela-habitacao-pedem-o-web-summit-sai-de-lisboa",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/11/whatsapp-image-2026-11-12-at-183635.jpeg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-12",
    "f": "dezeen",
    "tema": "Obra",
    "t": "Crosslam completes Brazil's tallest mass-timber tower",
@@ -467,28 +490,6 @@
    "sec": "INT",
    "auto": true,
    "img": "https://static-2026.dezeen.com/uploads/2026/11/joana-vasconcelos-wedding-cake-pavilion-waddesdon-manor-ceramic-tiles-pastel-sculpture_dezeen_2364_sq-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-12",
-   "f": "dezeen",
-   "tema": "Actualidade",
-   "t": "Renovation delays pose \"Notre Dame-like\" fire risk for Houses of Parliament",
-   "m": "Reino Unido",
-   "u": "https://www.dezeen.com/2026/11/12/fire-risk-palace-westminster-renovation-delay",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/houses-of-parliament-renovation-report-sq_dezeen_2364_col_0-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-12",
-   "f": "dezeen",
-   "tema": "Actualidade",
-   "t": "Access to Shanghai Grand Opera House staircase restricted to paid ticket holders",
-   "m": "China",
-   "u": "https://www.dezeen.com/2026/11/12/shanghai-grand-opera-house-staircase-paid-access",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/snohetta-shanghai-grand-opera-house-public-staircase-barricade_dezeen_1704_col_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-11",
