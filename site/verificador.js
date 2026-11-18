@@ -45,7 +45,8 @@ async function lerPDF(file, aviso){
     const pg = await pdf.getPage(i);
     const tc = await pg.getTextContent();
     const items = tc.items.filter(it => it.str && it.str.trim()).map(it => ({
-      s: it.str, f: fold(it.str), x: it.transform[4], y: it.transform[5], h: Math.abs(it.transform[3]) || Math.hypot(it.transform[2], it.transform[3]) || 8}));
+      s: it.str, f: fold(it.str), x: it.transform[4], y: it.transform[5], h: Math.abs(it.transform[3]) || Math.hypot(it.transform[2], it.transform[3]) || 8,
+      w: it.width || 0, hh: it.height || 0}));
     const ord = items.slice().sort((a, b) => (b.y - a.y) || (a.x - b.x));
     const linhas = []; let cur = null;
     for (const it of ord) {
@@ -58,7 +59,7 @@ async function lerPDF(file, aviso){
     if (aviso) aviso(i, N);
   }
   const chars = pages.reduce((a, p) => a + p.texto.length, 0);
-  return {nome: file.name, total: pdf.numPages, lidas: N, pages, temTexto: chars > 40 * N};
+  return {nome: file.name, total: pdf.numPages, lidas: N, pages, temTexto: chars > 40 * N, pdf};
 }
 
 /* frases da memória, com a página e o texto original (para citar) e dobrado (para procurar) */
@@ -126,8 +127,9 @@ const fmtV = (tipo, x) => tipo === 'pct' ? fmtN(x.v, x.v % 1 ? 1 : 0) + ' %' : t
 const corta = (s, n) => s.length > n ? s.slice(0, n - 1).replace(/\s+\S*$/, '') + '…' : s;
 
 /* procura de um parâmetro na memória (frases) e nas peças desenhadas (textos próximos) */
+const posDe = it => ({x: it.x, y: it.y, w: it.w || it.s.length * it.h * 0.5, h: it.hh || it.h});
 function recolher(p, D){
-  const ev = {mem: [], des: [], refs: []};
+  const ev = {mem: [], des: [], refs: [], hits: []};
   const rx = new RegExp(p.chave, 'g');
   for (const fr of D.fr) {
     rx.lastIndex = 0; const ms = [...fr.f.matchAll(rx)]; if (!ms.length) continue;
@@ -144,11 +146,12 @@ function recolher(p, D){
       const its = pg.items;
       const hits = its.filter(it => { rx.lastIndex = 0; return rx.test(it.f); });
       if (hits.length) ev.refs.push({doc: 'des', pag: pg.n, ex: hits[0].s});
+      hits.slice(0, 4).forEach(h => ev.hits.push({pag: pg.n, pos: posDe(h), s: h.s}));
       if (p.tipo === 'presenca') continue;
       if (p.desenho === 'vao') {
         for (const it of its) for (const m of it.f.matchAll(RX.dim2)) {
           const a = num(m[1]) * (m[2] === 'cm' ? 0.01 : 1), b = num(m[3]) * (m[4] === 'cm' ? 0.01 : 1);
-          if (a >= 0.5 && a <= 2.6 && b >= 1.9 && b <= 2.7) ev.des.push({v: a, pag: pg.n, ex: it.s});
+          if (a >= 0.5 && a <= 2.6 && b >= 1.9 && b <= 2.7) ev.des.push({v: a, pag: pg.n, ex: it.s, pos: posDe(it)});
         }
         continue;
       }
@@ -158,7 +161,7 @@ function recolher(p, D){
         for (const it of its) {
           const perto = /\bi\s*=/.test(it.f) || hits.some(h => Math.hypot(h.x - it.x, h.y - it.y) < 220);
           if (!perto) continue;
-          for (const x of valores('pct', it.f)) ev.des.push({v: x.v, pag: pg.n, ex: it.s});
+          for (const x of valores('pct', it.f)) ev.des.push({v: x.v, pag: pg.n, ex: it.s, pos: posDe(it)});
         }
         continue;
       }
@@ -166,11 +169,20 @@ function recolher(p, D){
         const raio = Math.max(90, h.h * 12);
         let best = null, bd = Infinity;
         for (const it of its) {
-          if (it === h) { for (const x of valores(p.tipo, it.f)) { best = {v: x.v, d: x.d, cls: x.cls, ex: it.s}; bd = 0; } continue; }
-          const d = Math.hypot(h.x - it.x, h.y - it.y); if (d > raio || d >= bd) continue;
+          if (it === h) { for (const x of valores(p.tipo, it.f)) { best = {v: x.v, d: x.d, cls: x.cls, ex: it.s, pos: posDe(it)}; bd = 0; } continue; }
+          /* mais perto na mesma linha do que em linhas diferentes; legendas de vãos («0,90x2,10») e áreas não contam como cotas soltas */
+          const dx = Math.abs(h.x + (h.w || 0) - it.x), dy = Math.abs(h.y - it.y);
+          const naLinha = dy < h.h * 0.8 && dx < raio * 2.5;
+          const d = naLinha ? dx * 0.5 : Math.hypot(h.x - it.x, (h.y - it.y) * 1.5);
+          if ((!naLinha && d > raio) || d >= bd) continue;
           let xs = valores(p.tipo, it.f);
-          if (!xs.length && p.tipo === 'len') xs = [...it.f.matchAll(RX.solto)].map(m => ({v: num(m[1])})).filter(x => x.v >= 0.2 && x.v <= 20);
-          if (xs.length) { best = {v: xs[0].v, d: xs[0].d, cls: xs[0].cls, ex: h.s + ' … ' + it.s}; bd = d; }
+          if (!xs.length && p.tipo === 'len' && !RX.dim2.test(it.f) && !/m2|m²|\ba\s*=/.test(it.f)) xs = [...it.f.matchAll(RX.solto)].map(m => ({v: num(m[1])})).filter(x => x.v >= 0.2 && x.v <= 20);
+          RX.dim2.lastIndex = 0;
+          if (!xs.length && p.vaoPerto) for (const m of it.f.matchAll(RX.dim2)) {      /* «vão 0,80x2,20» junto à legenda da entrada */
+            const a = num(m[1]) * (m[2] === 'cm' ? 0.01 : 1), b = num(m[3]) * (m[4] === 'cm' ? 0.01 : 1);
+            if (a >= 0.5 && a <= 2.6 && b >= 1.9 && b <= 2.7) { xs = [{v: a}]; break; }
+          }
+          if (xs.length) { best = {v: xs[0].v, d: xs[0].d, cls: xs[0].cls, ex: h.s + ' … ' + it.s, pos: posDe(it)}; bd = d; }
         }
         if (best) ev.des.push(Object.assign(best, {pag: pg.n}));
       }
@@ -238,20 +250,21 @@ function generico(p, D, ctx){
       const pior = lista.reduce((a, b) => b.v > a.v ? b : a);
       const f = avaliaFaixas(p, pior, ctx);
       const st = src === 'des' && f.st === 'nok' ? 'rev' : f.st;
-      return {st, achado: fmtV(p.tipo, pior), ref: Object.assign({doc: src}, pior), nota: f.nota};
+      const maus = src === 'des' ? lista.filter(v => avaliaFaixas(p, v, ctx).st !== 'ok') : [];
+      return {st, achado: fmtV(p.tipo, pior), ref: Object.assign({doc: src}, pior), nota: f.nota, desMaus: maus};
     }
     const maus = lista.filter(v => viola(p, v));
     if (maus.length) {
       const pior = p.max != null && p.min == null ? maus.reduce((a, b) => b.v > a.v ? b : a) : maus.reduce((a, b) => b.v < a.v ? b : a);
       return {st: src === 'des' ? 'rev' : 'nok', achado: fmtV(p.tipo, pior), ref: Object.assign({doc: src}, pior),
-              nota: src === 'des' ? 'Valor lido nas peças desenhadas, a confirmar.' : ''};
+              nota: src === 'des' ? 'Valor lido nas peças desenhadas, a confirmar.' : '', desMaus: src === 'des' ? maus : []};
     }
     const x = lista[0];
     return {st: 'ok', achado: fmtV(p.tipo, x) + (lista.length > 1 ? ` (${lista.length} referências)` : ''), ref: Object.assign({doc: src}, x)};
   };
   const m = julga(ev.mem, 'mem'), d = julga(ev.des, 'des');
   if (m && d && ORD.indexOf(d.st) < ORD.indexOf(m.st)) return Object.assign(r, d, {nota: 'A memória indica ' + m.achado + ', mas as peças desenhadas mostram ' + d.achado + '. ' + (d.nota || '')});
-  if (m) return Object.assign(r, m);
+  if (m) return Object.assign(r, m, d && d.desMaus && d.desMaus.length ? {desMaus: d.desMaus} : {});   /* na planta, o sítio onde o desenho mostra a falha */
   if (d) return Object.assign(r, d);
   if (ev.refs.length) return Object.assign(r, {st: 'nd', nota: 'Referido sem valor.', ref: ev.refs.find(x => x.doc === 'mem') || ev.refs[0]});
   return Object.assign(r, {st: 'nd'});
@@ -412,7 +425,8 @@ function normaHTML(p){
 function itemHTML(r){
   const p = r.p, ref = r.ref;
   const ex = ref && ref.ex ? `<blockquote>«${esc(corta(ref.ex, 260))}» <cite>${esc(fonte(ref))}</cite></blockquote>` : '';
-  return `<li class="vr" data-st="${r.st}"><div class="vrh"><span class="vst">${ST[r.st]}</span><b>${esc(p.nome)}</b><span class="vg">${esc(p.grupo)}</span></div>
+  const mk = r.marca ? `<span class="vmk" title="Assinalado na planta com o n.º ${r.marca}">${r.marca}</span>` : '';
+  return `<li class="vr" data-st="${r.st}"><div class="vrh"><span class="vst">${ST[r.st]}</span>${mk}<b>${esc(p.nome)}</b><span class="vg">${esc(p.grupo)}</span></div>
 <dl class="vx"><div><dt>Exigido</dt><dd>${esc(r.exige || p.exige)}</dd></div>${r.achado ? `<div><dt>No projecto</dt><dd>${esc(r.achado)}</dd></div>` : ''}${r.nota ? `<div><dt>Nota</dt><dd>${esc(r.nota)}</dd></div>` : ''}</dl>
 ${ex}${normaHTML(p)}</li>`;
 }
@@ -441,6 +455,10 @@ function avaliarEDesenhar(){
   const ctx = lerFormulario();
   const res = avaliar(ULT.D, ctx).sort((a, b) => ORD.indexOf(a.st) - ORD.indexOf(b.st));
   const n = Object.fromEntries(ORD.map(s => [s, res.filter(r => r.st === s).length]));
+  const marcas = marcasPlanta(res);
+  const plan = ULT.D.des ? `<section class="vplanta"><h3>Na planta</h3>${marcas.length
+    ? '<p class="vdocs">Círculo a cheio onde o valor foi lido nas peças desenhadas; a tracejado, na legenda do espaço, quando o valor em falta vem da memória descritiva. Os números correspondem aos parâmetros do relatório.</p><div id="v-plan" class="vplan-l"><p class="vprog">A desenhar as páginas…</p></div>'
+    : '<p class="vdocs">Nenhum ponto em falta foi localizado nas peças desenhadas.</p>'}</section>` : '';
   const docs = [ULT.D.memDoc, ULT.D.des].filter(Boolean).map(d => `${d.nome} (${d.lidas}${d.lidas < d.total ? ' de ' + d.total : ''} ${d.total === 1 ? 'página' : 'páginas'}${d.temTexto ? '' : ', sem texto legível'})`);
   const avisos = [ULT.D.memDoc, ULT.D.des].filter(d => d && !d.temTexto).map(d => `<p class="vaviso">O PDF «${esc(d.nome)}» parece digitalizado ou desenhado sem texto. Sem texto não há leitura automática; exporte-o do programa de desenho com o texto activo.</p>`).join('');
   const grupo = (st, titulo, aberto) => {
@@ -457,12 +475,92 @@ function avaliarEDesenhar(){
     ? `<p class="vctxl">Utilização-tipo ${esc(ctx.ut || '?')}${ctx.ut && REG.scie.ut[ctx.ut] ? ' (' + esc(REG.scie.ut[ctx.ut]) + ')' : ''}, ${k && k.cat ? k.cat + '.ª categoria de risco calculada' : 'categoria de risco por apurar'}${ctx.catDecl ? ', ' + ctx.catDecl + '.ª declarada' : ''}.</p>`
     : `<p class="vctxl">${ctx.tipo === 'habitacao' ? 'Edifício habitacional' : ctx.tipo === 'misto' ? 'Edifício habitacional com espaços que recebem público' : 'Edifício ou estabelecimento que recebe público'}, ${ctx.obra === 'alteracao' ? 'obra de alteração, ampliação ou conservação' : 'construção nova'}.${ctx.obra === 'alteracao' ? ' Na reabilitação de edifícios aplica-se também o DL 95/2019 e a Portaria 301/2019, que admitem outras soluções.' : ''}</p>`;
   $('#v-res').innerHTML = `<div class="vsum">${ORD.map(s => `<span class="vc" data-st="${s}"><b class="num">${n[s]}</b>${ST[s]}</span>`).join('')}</div>
-<p class="vdocs">Lidos: ${esc(docs.join(' e ') || 'nenhum documento')}.</p>${cab}${avisos}
+<p class="vdocs">Lidos: ${esc(docs.join(' e ') || 'nenhum documento')}.</p>${cab}${avisos}${plan}
 ${grupo('nok', 'Parâmetros que o projecto não cumpre', true)}${grupo('rev', 'Parâmetros a verificar', true)}${grupo('nd', 'Parâmetros que os documentos não demonstram', true)}${grupo('ok', 'Parâmetros cumpridos ou referidos', false)}${grupo('na', 'Sem elementos no projecto', false)}
 <div class="vleis"><h3>Legislação aplicada</h3><ul>${leis}</ul></div>
 <p class="vnota">Verificação automática e preliminar, a partir do texto dos PDF, que não substitui a apreciação técnica do projecto. ${esc(REG.nota || '')}</p>`;
   $('#v-rel').hidden = false;
   ULT.res = res; ULT.ctx = ctx;
+  if (marcas.length) desenharPlantas(marcas);
+}
+
+/* ---------- planta com os pontos em falta ---------- */
+function marcasPlanta(res){
+  const out = []; let k = 0;
+  for (const r of res) {
+    delete r.marca;
+    if (r.st !== 'nok' && r.st !== 'rev') continue;
+    const ms = [];
+    const maus = (r.desMaus || []).filter(x => x.pos);
+    if (maus.length) maus.slice(0, 8).forEach(x => ms.push({pag: x.pag, pos: x.pos, trac: false}));
+    else if (r.ref && r.ref.doc === 'des' && r.ref.pos) ms.push({pag: r.ref.pag, pos: r.ref.pos, trac: false});
+    else if (r.ev && r.ev.hits && r.ev.hits.length) r.ev.hits.slice(0, 3).forEach(h => ms.push({pag: h.pag, pos: h.pos, trac: true}));
+    if (!ms.length) continue;
+    r.marca = ++k;
+    ms.forEach(m => out.push(Object.assign(m, {n: k, r})));
+  }
+  return out;
+}
+async function paginaBase(doc, n){
+  ULT.cache = ULT.cache || {};
+  if (ULT.cache[n]) return ULT.cache[n];
+  const pg = await doc.pdf.getPage(n);
+  const v1 = pg.getViewport({scale: 1});
+  const sc = Math.min(2600 / Math.max(v1.width, v1.height), 4);
+  const vp = pg.getViewport({scale: sc});
+  const cv = document.createElement('canvas'); cv.width = Math.round(vp.width); cv.height = Math.round(vp.height);
+  const c = cv.getContext('2d'); c.fillStyle = '#fff'; c.fillRect(0, 0, cv.width, cv.height);
+  await pg.render({canvasContext: c, viewport: vp}).promise;
+  return (ULT.cache[n] = {cv, vp, sc});
+}
+function circulo(c, base, g){
+  const {vp, sc} = base, p = g.pos;
+  const [cx, cy] = vp.convertToViewportPoint(p.x + p.w / 2, p.y + p.h / 2);
+  const r = Math.max(34, (p.w * sc) / 2 + 22), lw = Math.max(4, sc * 1.6);
+  c.save();
+  c.lineWidth = lw; c.strokeStyle = '#e03131'; c.fillStyle = 'rgba(224,49,49,0.10)';
+  c.setLineDash(g.trac ? [lw * 3, lw * 2] : []);
+  c.beginPath(); c.arc(cx, cy, r, 0, Math.PI * 2); c.fill(); c.stroke();
+  c.setLineDash([]);
+  const txt = g.ns.join(', '), fs = Math.max(18, Math.round(sc * 8));
+  c.font = `700 ${fs}px Figtree, Arial, sans-serif`;
+  const bh = fs * 1.6, bw = Math.max(bh, c.measureText(txt).width + fs);
+  const bx = cx + r * 0.72, by = cy - r * 0.72;
+  c.fillStyle = '#e03131'; c.beginPath();
+  if (c.roundRect) c.roundRect(bx - bw / 2, by - bh / 2, bw, bh, bh / 2); else c.arc(bx, by, bh / 2, 0, Math.PI * 2);
+  c.fill();
+  c.fillStyle = '#fff'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(txt, bx, by + 1);
+  c.restore();
+}
+let PLANO = 0, URLS = [];
+async function desenharPlantas(marcas){
+  const tok = ++PLANO;
+  const porPag = {};
+  for (const m of marcas) (porPag[m.pag] = porPag[m.pag] || []).push(m);
+  const figs = [], novos = [];
+  for (const n of Object.keys(porPag).map(Number).sort((a, b) => a - b).slice(0, 10)) {
+    let base; try { base = await paginaBase(ULT.D.des, n); } catch (ex) { console.error(ex); continue; }
+    if (tok !== PLANO) return;
+    const cv = document.createElement('canvas'); cv.width = base.cv.width; cv.height = base.cv.height;
+    const c = cv.getContext('2d'); c.drawImage(base.cv, 0, 0);
+    const grupos = [];
+    for (const m of porPag[n]) {
+      const g = grupos.find(g => Math.abs(g.pos.x - m.pos.x) < 3 && Math.abs(g.pos.y - m.pos.y) < 3);
+      if (g) { if (!g.ns.includes(m.n)) g.ns.push(m.n); g.trac = g.trac && m.trac; }
+      else grupos.push({pos: m.pos, ns: [m.n], trac: m.trac});
+    }
+    grupos.forEach(g => circulo(c, base, g));
+    const url = await new Promise(ok => cv.toBlob(b => ok(b ? URL.createObjectURL(b) : cv.toDataURL('image/png')), 'image/png'));
+    novos.push(url);
+    const nums = [...new Set(porPag[n].map(m => m.n))];
+    const lista = nums.map(k => { const r = porPag[n].find(m => m.n === k).r;
+      return `<li><span class="vmk">${k}</span>${esc(r.p.nome)}${r.achado ? ', ' + esc(r.achado) : ''} <span class="vst-t" data-st="${r.st}">${ST[r.st].toLowerCase()}</span></li>`; }).join('');
+    figs.push(`<figure class="vplan"><a href="${url}" target="_blank" rel="noopener" title="Abrir em tamanho real"><img src="${url}" alt="Peças desenhadas, página ${n}, com os pontos em falta assinalados a vermelho"></a>
+<figcaption><div class="vplan-h"><b>Peças desenhadas, página ${n}</b><a class="lnk" href="${url}" download="${KIND}-planta-p${n}.png">Descarregar imagem</a></div><ol class="vplan-k">${lista}</ol></figcaption></figure>`);
+  }
+  if (tok !== PLANO) { novos.forEach(u => u.startsWith('blob:') && URL.revokeObjectURL(u)); return; }
+  URLS.forEach(u => u.startsWith('blob:') && URL.revokeObjectURL(u)); URLS = novos;
+  const box = $('#v-plan'); if (box) box.innerHTML = figs.join('') || '<p class="vdocs">Não foi possível desenhar as páginas das peças desenhadas.</p>';
 }
 function textoRelatorio(){
   if (!ULT || !ULT.res) return '';
@@ -474,7 +572,7 @@ function textoRelatorio(){
     for (const r of rs) {
       const d = lexInfo(r.p.lex);
       linhas.push(`- ${r.p.nome}. Exigido: ${r.exige || r.p.exige}.` + (r.achado ? ` No projecto: ${r.achado}.` : '') + (r.nota ? ` ${r.nota}` : '') +
-        ` [${d ? lexNome(d) + ', ' : ''}${r.p.norma}]` + (r.ref && r.ref.pag ? ` (${fonte(r.ref)})` : ''));
+        ` [${d ? lexNome(d) + ', ' : ''}${r.p.norma}]` + (r.ref && r.ref.pag ? ` (${fonte(r.ref)})` : '') + (r.marca ? ` Assinalado na planta com o n.º ${r.marca}.` : ''));
     }
     linhas.push('');
   }
