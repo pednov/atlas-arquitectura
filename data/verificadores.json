@@ -21,7 +21,8 @@
     ],
     "chave": "portas? (de|da) (entrada|saida|acesso)|vaos? de entrada|entrada principal",
     "tipo": "len",
-    "min": 0.87
+    "min": 0.87,
+    "vaoPerto": true
    },
    {
     "id": "a-atrio",
@@ -368,7 +369,8 @@
     "existe": "ascensor(es)?|elevador(es)?",
     "chave": "portas? (do|dos|da) (ascensor|elevador|cabina)",
     "tipo": "len",
-    "min": 0.8
+    "min": 0.8,
+    "vaoPerto": true
    },
    {
     "id": "a-asc-patamar",
