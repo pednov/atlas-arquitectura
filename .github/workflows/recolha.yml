@@ -27,8 +27,11 @@ jobs:
         run: pip install -r scripts/requirements.txt
       - name: Recolher concursos e notícias
         run: python scripts/actualizar.py
-      - name: Instalar o navegador sem janela (para o SILUC)
+      - name: Instalar o navegador sem janela (para o SILUC e o Divisare)
         run: python -m playwright install --with-deps chromium
+        continue-on-error: true
+      - name: Recolher os fotógrafos de arquitectura (Divisare, uma vez por semana)
+        run: python scripts/fotografos.py
         continue-on-error: true
       - name: Recolher a legislação (SILUC)
         run: python scripts/siluc.py
