@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Recolha diária do ATLAS: concursos (plataforma Encomenda) e notícias (Construir e ArchDaily).
+"""Recolha diária do ATLAS: concursos (plataforma Encomenda) e notícias (Construir, ArchDaily, Lisboa Para Pessoas,
+ECO, Arquitectura Viva e Dezeen).
 
 Lê data/concursos.json e data/noticias.json, junta o que é novo e grava-os de volta.
 O que já lá está (incluindo o que foi revisto à mão) nunca é apagado nem reescrito,
@@ -67,6 +68,14 @@ def regiao_do_local(local):
         f = re.sub(r'[^a-z0-9]+', ' ', fold(parte)).strip()
         if f in CONC_F: return _nome(f), CONC_F[f]
     return None, None
+
+def regiao_inicio(t):
+    """Título que abre com o nome de um concelho («Porto abre guerra aos devolutos», «Setúbal, Maia e Coimbra lideram»)."""
+    ft = re.sub(r'[^a-z0-9]+', ' ', fold(t)).strip() + ' '
+    best = None
+    for nome_f, sec in CONC_F.items():
+        if ft.startswith(nome_f + ' ') and (best is None or len(nome_f) > len(best[0])): best = (nome_f, sec)
+    return (_nome(best[0]), best[1]) if best else (None, None)
 
 def regiao_de(*textos):
     """Concelho citado como lugar («em Lisboa», «no Porto», «in Beloura»), para não confundir apelidos com concelhos."""
@@ -277,6 +286,10 @@ def construir(existentes):
 CIDADE_MAX = 15
 URBANO = r'urban|arquitect|arquitet|habita|\bcasas?\b|rendas?\b|cidade|bairro|c[aâ]mara|autarqu|\bobras?\b|reabilit|mobilidade|\bmetro\b|ciclov|espa[cç]o p[uú]blico|\bPDM\b|licenciament|loteament|constru[cç]|jardim|pra[cç]a|\bruas?\b|cal[cç]ad|patrim[oó]n'
 NEGOCIO = r'\b(investidor|investidores|fundos?|aquisi[cç][aã]o|adquire|vende|vendas|compra|lucros?|receitas|bolsa|a[cç][oõ]es|resultados|fatura[cç][aã]o|IPO)\b'
+# no ECO, o título tem de falar de cidade, casa ou obra; fica de fora a finança da habitação e o que não é urbano
+ECO_FORA = r'euribor|\bjuros\b|cr[eé]dito|\bbancos?\b|seguradora|\bgreve\b|hospita|urg[eê]ncias|tripulantes|airlines|f[aá]brica'
+def eco_ok(t):
+    return bool(re.search(URBANO, t, flags=re.I)) and not re.search(NEGOCIO, t, flags=re.I) and not re.search(ECO_FORA, t, flags=re.I)
 
 LPP = 'https://lisboaparapessoas.pt'
 LPP_TEMA = {200: 'Habitação', 563: 'Mobilidade', 11: 'Cidade', 80: 'Opinião', 86: 'Cidadania', 547: 'Exposição'}
@@ -332,8 +345,7 @@ def eco(existentes):
             t = limpar(html.unescape(txt('title')))
             cats = {(c.text or '').strip() for c in it.findall('category')}
             if not t: continue
-            relevante = (cats & ECO_CATS) or re.search(URBANO, t, flags=re.I)
-            if not relevante or re.search(NEGOCIO, t, flags=re.I) or excluir(t):
+            if not eco_ok(t) or excluir(t):
                 continue
             try:
                 d = parsedate_to_datetime(txt('pubDate')).date().isoformat()
@@ -345,6 +357,7 @@ def eco(existentes):
                 cand = mi.group(1).split('?')[0] + '?w=300&fit=crop'
                 if not tem_pessoas(cand): img = cand
             local, sec = regiao_de(t)
+            if not sec: local, sec = regiao_inicio(t)
             tema = 'Habitação' if cats & {'Habitação', 'Crise na Habitação'} else ('Mobilidade' if 'Mobilidade' in cats else tema_de(t).replace('Obra', 'Cidade'))
             n = {'d': d, 'f': 'eco', 'tema': tema, 't': t, 'm': local or '', 'u': u, 'sec': sec or 'NAC', 'auto': True}
             if img: n['img'] = img
@@ -419,6 +432,82 @@ def arquitecturaviva(existentes):
         log('  nova notícia (Arquitectura Viva):', n['d'], n['t'], '| imagem' if n.get('img') else '| sem imagem')
     return novos[:AV_MAX]
 
+# ---------------------------------------------------------------- notícias internacionais: Dezeen
+# Pedido do Pedro (18 Nov. 2026). Feed RSS da secção de arquitectura do Dezeen. Guardamos título, data, imagem e
+# ligação, sem resumos. O país vem das categorias do próprio Dezeen; sem promoções nem séries da casa.
+DZ = 'https://www.dezeen.com'
+DZ_MAX = 20
+DZ_FORA = {'Promotions', 'Dezeen Showroom', 'Sponsored', 'Partnerships', 'Dezeen Jobs', 'Dezeen Events Guide',
+           'Dezeen Agenda', 'Dezeen Debate', 'Dezeen Weekly', 'Dezeen editorial series', 'Lookbooks', 'Products', 'Competitions'}
+DZ_TEMA = [('Necrologia', {'Obituaries'}), ('Prémio', {'Awards', 'Pritzker Architecture Prize', 'Stirling Prize', 'RIBA Stirling Prize', 'Dezeen Awards'}),
+           ('Exposição', {'Exhibitions', 'Biennales', 'Venice Architecture Biennale', 'Architecture biennales'}),
+           ('Entrevista', {'Interviews'}), ('Opinião', {'Opinion'}),
+           ('Habitação', {'Housing', 'Social housing', 'Low-cost housing', 'Affordable housing'}),
+           ('Património', {'Restorations', 'Renovations', 'Heritage', 'Adaptive reuse', 'Conservation'}),
+           ('Urbanismo', {'Urbanism', 'Masterplans', 'Urban design', 'Cities', 'Public spaces'}),
+           ('Mobilidade', {'Railway stations', 'Transport', 'Airports', 'Bridges'}), ('Actualidade', {'News'})]
+PAISES = {'USA': 'EUA', 'UK': 'Reino Unido', 'England': 'Inglaterra', 'Scotland': 'Escócia', 'Wales': 'País de Gales', 'Ireland': 'Irlanda',
+          'Northern Ireland': 'Irlanda do Norte', 'Spain': 'Espanha', 'France': 'França', 'Italy': 'Itália', 'Germany': 'Alemanha',
+          'Netherlands': 'Países Baixos', 'Belgium': 'Bélgica', 'Switzerland': 'Suíça', 'Austria': 'Áustria', 'Denmark': 'Dinamarca',
+          'Sweden': 'Suécia', 'Norway': 'Noruega', 'Finland': 'Finlândia', 'Iceland': 'Islândia', 'Poland': 'Polónia', 'Greece': 'Grécia',
+          'Czech Republic': 'República Checa', 'Hungary': 'Hungria', 'Croatia': 'Croácia', 'Slovenia': 'Eslovénia', 'Estonia': 'Estónia',
+          'Lithuania': 'Lituânia', 'Latvia': 'Letónia', 'Romania': 'Roménia', 'Bulgaria': 'Bulgária', 'Serbia': 'Sérvia', 'Ukraine': 'Ucrânia',
+          'Turkey': 'Turquia', 'Cyprus': 'Chipre', 'Malta': 'Malta', 'Luxembourg': 'Luxemburgo', 'Canada': 'Canadá', 'Mexico': 'México',
+          'Brazil': 'Brasil', 'Argentina': 'Argentina', 'Chile': 'Chile', 'Colombia': 'Colômbia', 'Peru': 'Peru', 'Uruguay': 'Uruguai',
+          'Ecuador': 'Equador', 'Paraguay': 'Paraguai', 'Costa Rica': 'Costa Rica', 'Guatemala': 'Guatemala', 'Cuba': 'Cuba',
+          'China': 'China', 'Hong Kong': 'Hong Kong', 'Taiwan': 'Taiwan', 'Japan': 'Japão', 'South Korea': 'Coreia do Sul', 'India': 'Índia',
+          'Sri Lanka': 'Sri Lanka', 'Bangladesh': 'Bangladesh', 'Pakistan': 'Paquistão', 'Nepal': 'Nepal', 'Vietnam': 'Vietname',
+          'Thailand': 'Tailândia', 'Indonesia': 'Indonésia', 'Malaysia': 'Malásia', 'Singapore': 'Singapura', 'Philippines': 'Filipinas',
+          'Cambodia': 'Camboja', 'Australia': 'Austrália', 'New Zealand': 'Nova Zelândia', 'United Arab Emirates': 'Emirados Árabes Unidos',
+          'Saudi Arabia': 'Arábia Saudita', 'Qatar': 'Catar', 'Israel': 'Israel', 'Lebanon': 'Líbano', 'Jordan': 'Jordânia', 'Iran': 'Irão',
+          'Egypt': 'Egipto', 'Morocco': 'Marrocos', 'South Africa': 'África do Sul', 'Kenya': 'Quénia', 'Nigeria': 'Nigéria', 'Ghana': 'Gana',
+          'Senegal': 'Senegal', 'Rwanda': 'Ruanda', 'Burkina Faso': 'Burkina Faso', 'Ethiopia': 'Etiópia', 'Tanzania': 'Tanzânia',
+          'Mozambique': 'Moçambique', 'Angola': 'Angola', 'Cape Verde': 'Cabo Verde', 'Guinea-Bissau': 'Guiné-Bissau'}
+def dezeen(existentes):
+    from email.utils import parsedate_to_datetime
+    urls = {n['u'].rstrip('/') for n in existentes}
+    try:
+        raiz = ET.fromstring(get(DZ + '/architecture/feed/').content)
+    except Exception as ex:
+        log('Dezeen: falhou', ex); return []
+    novos = []
+    for it in raiz.iter('item'):
+        txt = lambda tag: (it.findtext(tag) or '').strip()
+        u = txt('link').split('?')[0].rstrip('/')
+        if not u or u in urls or u in BLOQ: continue
+        t = limpar(html.unescape(txt('title')))
+        cats = [(c.text or '').strip() for c in it.findall('category')]
+        if not t or set(cats) & DZ_FORA or re.match(r'(Dezeen (Agenda|Debate|Weekly|Daily|launches)|This week|Competition:)', t, flags=re.I) or excluir(t):
+            continue
+        try:
+            d = parsedate_to_datetime(txt('pubDate')).date().isoformat()
+        except Exception:
+            continue
+        img = None
+        enc = it.find('enclosure')
+        cand = enc.get('url') if enc is not None else None
+        if not cand:
+            mi = re.search(r'<img[^>]+src="([^"]+)"', txt('description'))
+            cand = mi.group(1) if mi else None
+        if cand and not tem_pessoas(cand): img = cand
+        tema = next((tm for tm, cs in DZ_TEMA if cs & set(cats)), 'Obra')
+        if 'Portugal' in cats:
+            lugar = next((c for c in cats if lugar_sec(c)), '')
+            local, sec = regiao_de(re.sub(r'\bLisbon\b', 'Lisboa', re.sub(r'\bOporto\b', 'Porto', re.sub(r'\bin\b', 'em', t))))
+            sec = (sec or (lugar_sec(lugar) if lugar else None)
+                   or next((v for k, v in LUGARES.items() if re.search(r'\b' + k + r'\b', fold(t))), None) or 'NAC')
+            m = local or lugar.replace('Lisbon', 'Lisboa').replace('Oporto', 'Porto')
+        else:
+            sec = 'INT'
+            m = next((PAISES[c] for c in cats if c in PAISES), None) or estrangeiro_de(t) or ''
+        n = {'d': d, 'f': 'dezeen', 'tema': tema, 't': t, 'm': m, 'u': u, 'sec': sec, 'auto': True}
+        if img: n['img'] = img
+        novos.append(n)
+    novos.sort(key=lambda n: n['d'], reverse=True)
+    for n in novos[:DZ_MAX]:
+        log('  nova notícia (Dezeen):', n['d'], n['t'], '| imagem' if n.get('img') else '| sem imagem')
+    return novos[:DZ_MAX]
+
 # ---------------------------------------------------------------- notícias: ArchDaily (obras em Portugal)
 def archdaily(existentes):
     ids = {re.search(r'archdaily\.com/(\d+)/', n['u']).group(1) for n in existentes if 'archdaily' in n['u'] and re.search(r'archdaily\.com/(\d+)/', n['u'])}
@@ -486,9 +575,9 @@ def main():
     C['concursos'] = [c for c in C['concursos'] + novos_c if c['entrega'][:10] >= limite_c]
 
     novos_n = (construir(N['noticias']) + archdaily(N['noticias']) + lisboaparapessoas(N['noticias'])
-               + eco(N['noticias']) + arquitecturaviva(N['noticias']))
+               + eco(N['noticias']) + arquitecturaviva(N['noticias']) + dezeen(N['noticias']))
     for fid, nome, url in [('lpp', 'Lisboa Para Pessoas', LPP), ('eco', 'ECO', ECO + '/topico/habitacao/'),
-                           ('arquitecturaviva', 'Arquitectura Viva', AV + '/articulos')]:
+                           ('arquitecturaviva', 'Arquitectura Viva', AV + '/articulos'), ('dezeen', 'Dezeen', DZ + '/architecture/')]:
         if not any(f['id'] == fid for f in N['fontes']):
             N['fontes'].append({'id': fid, 'nome': nome, 'url': url})
     bloq = {x.rstrip('/') for x in REGRAS.get('bloquear_urls', [])}
@@ -498,6 +587,12 @@ def main():
         if n['d'] < limite_n or n['u'].rstrip('/') in bloq: continue
         if n.get('auto') and excluir(n['t'], n.get('m', '')):   # regras novas valem também para o que a recolha já trouxe
             log('  retirada:', n['t']); continue
+        if n['f'] == 'eco' and n.get('auto'):
+            if not eco_ok(n['t']):
+                log('  retirada (ECO):', n['t']); continue
+            if n.get('sec') == 'NAC' and not n.get('m'):
+                local, sec = regiao_inicio(n['t'])
+                if sec: n['sec'], n['m'] = sec, local
         if not n.get('sec'): n['sec'] = 'NAC'
         todas.append(n)
     vistos, N['noticias'] = set(), []
@@ -505,12 +600,12 @@ def main():
         if n['u'] not in vistos:
             vistos.add(n['u']); N['noticias'].append(n)
     # fontes com limite próprio, para não tomarem o lugar das notícias de arquitectura
-    LIMITE = {'arquitecturaviva': AV_MAX, 'lpp': CIDADE_MAX, 'eco': CIDADE_MAX}
+    LIMITE = {'arquitecturaviva': AV_MAX, 'dezeen': DZ_MAX, 'lpp': CIDADE_MAX, 'eco': CIDADE_MAX}
     conta, ficam = {}, []
     for n in N['noticias']:
         conta[n['f']] = conta.get(n['f'], 0) + 1
         if conta[n['f']] <= LIMITE.get(n['f'], 10**6): ficam.append(n)
-    N['noticias'] = ficam[:130]
+    N['noticias'] = ficam[:160]
 
     mudou_c = json.dumps(C, sort_keys=True) != antes_c
     mudou_n = json.dumps(N, sort_keys=True) != antes_n
