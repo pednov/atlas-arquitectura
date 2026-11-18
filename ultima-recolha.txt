@@ -1,4 +1,4 @@
-2026-11-17 16:26 UTC
+2026-11-18 01:35 UTC
 Encomenda: 19 fichas na listagem
   excluída: Saraiva e Associados lança ‘Unlocker AI’: o primeiro podcast de arquitectura totalmente gerado com IA
   excluída: Feeders assina novo espaço criativo em Telheiras
@@ -7,6 +7,37 @@ Encomenda: 19 fichas na listagem
   excluída: Segmento Urbano lança verificação técnica de projectos com apoio de IA
   excluída: Arquitectura de Fernão Simões de Carvalho ‘ouvida’ no PNUM 2026
 ArchDaily: falhou HTTPSConnectionPool(host='www.archdaily.com', port=443): Read timed out. (read timeout=30)
+  excluída (Lisboa Para Pessoas): Tempestade Charles em Lisboa esta quarta-feira. O que esperar?
+  nova notícia (Lisboa Para Pessoas): 2026-11-16 Acampada: das 10 reivindicações às “quatro exigências prioritárias” apresentadas a Seguro | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-11-12 O fim da paciência | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-11-03 Isto ainda é sobre casas para viver | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-11-03 Mais de 100 mil euros para limpar uma estátua? Custo invocado por Moedas foi dado como “não provado” | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-11-02 “Por favor, acabem com as bastonadas.” Tribunal dá razão a activista e diz que meia-noite e meia não é um limite absoluto | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-31 Em dias de acampada, habitação marca a agenda política de Lisboa | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-31 “Petição Pela Habitação” passa as 10 mil assinaturas e segue para o Parlamento | sem imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-27 “Tenho praticamente a idade da Revolução e nunca vi isto na minha vida.” A noite em que a acampada foi pelo direito à manifestação | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-23 De acampada a “aconchada”: o “movimento” entrou num novo capítulo | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-21 A acampada persiste no Rossio: “Vamos construir isto como se fosse uma cidade que é nossa” | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-20 Polícia termina com a acampada no Rossio durante a terceira noite | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-19 Centenas acampam no centro de Lisboa contra a crise da habitação | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-15 Depois de regular, Moedas quer suspender as trotinetas partilhadas. ACP propôs referendo | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-15 Isto não acabou | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-14 Só os Cães São Livres de Mijar: um livro sobre a história e falta de sanitários públicos em Lisboa | imagem
+  nova notícia (ECO): 2026-11-17 Moedas sugere criação de empresa metropolitana de habitação na região de Lisboa | sem imagem
+  nova notícia (ECO): 2026-11-17 Governo “estuda várias propostas” da oposição para habitação. “É um diálogo a sério” | sem imagem
+  nova notícia (ECO): 2026-11-17 Euribor sobe a três e a 12 meses e desce a seis meses | imagem
+  nova notícia (ECO): 2026-11-17 Habitação. Bruxelas identifica crise no setor como fator de risco para economia portuguesa | imagem
+  nova notícia (ECO): 2026-11-17 Conselheiro de Seguro critica “imoralidade atroz” nas urgências hospitalares | imagem
+  nova notícia (ECO): 2026-11-17 Luís Neves diz que gestão das acampadas está na esfera das autarquias | imagem
+  nova notícia (ECO): 2026-11-17 20 anos depois, São João da Pesqueira recupera cais com investimento de 6,5 milhões da APDL | imagem
+  nova notícia (ECO): 2026-11-17 Prémio Portugal Seguro vai avaliar risco e proteção em todos os 308 munícipios de Portugal | imagem
+  nova notícia (ECO): 2026-11-17 Tripulantes de cabine da Azores Airlines convocam greve de três dias em dezembro | imagem
+  nova notícia (ECO): 2026-11-17 Auditoria deteta constrangimentos que condicionam gestão municipal em Évora | imagem
+  nova notícia (ECO): 2026-11-17 Qualidade de vida pesa na captação de talento e investimento | imagem
+  nova notícia (ECO): 2026-11-17 Investimento municipal dispara em ano de eleições. Setúbal, Maia e Coimbra lideram subidas | imagem
+  nova notícia (ECO): 2026-11-16 “É muito fácil protestar. O difícil é resolver os problemas”, diz Montenegro | imagem
+  nova notícia (ECO): 2026-11-16 Porto abre guerra aos devolutos. Pressão da Câmara angaria “200 a 300 imóveis” para arrendamento acessível | imagem
+  nova notícia (ECO): 2026-11-16 Alemã Thyssenkrupp traz cadeia do hidrogénio para Gaia com fábrica de 14 milhões | imagem
   nova notícia (Arquitectura Viva): 2026-09-23 Exposición Radical Rehab | imagem
   nova notícia (Arquitectura Viva): 2026-09-16 Finalistas del Premio Europeo del Espacio Público Urbano 2026 | imagem
   nova notícia (Arquitectura Viva): 2026-09-08 Daniel Libeskind, Praemium Imperiale 2026 | imagem
@@ -27,29 +58,13 @@ ArchDaily: falhou HTTPSConnectionPool(host='www.archdaily.com', port=443): Read 
   nova notícia (Arquitectura Viva): 2026-07-10 Premio Europeo del Espacio Público Urbano, proyectos seleccionados | imagem
   nova notícia (Arquitectura Viva): 2026-07-03 Viaje a la Sijena medieval con gafas 3D: cuando la realidad virtual explica mejor las pinturas que los restos conservados | imagem
   nova notícia (Arquitectura Viva): 2026-07-02 José Manuel Ballester: Goya en silencio | imagem
-Concursos: 0 novos, 10 no total. Notícias: 20 novas, 57 no total.
-Sem alterações.
+Concursos: 0 novos, 10 no total. Notícias: 50 novas, 87 no total.
+Dados gravados.
 
-SILUC 2026-11-17 16:26 UTC
-  a ler alterações e regulamentação de 1840 diplomas
-  relações: 100 de 1840
-  relações: 200 de 1840
-  relações: 300 de 1840
-  relações: 400 de 1840
-  relações: 500 de 1840
-  relações: 600 de 1840
-  relações: 700 de 1840
-  relações: 800 de 1840
-  relações: 900 de 1840
-  relações: 1000 de 1840
-  relações: 1100 de 1840
-  relações: 1200 de 1840
-  relações: 1300 de 1840
-  relações: 1400 de 1840
-  relações: 1500 de 1840
-  relações: 1600 de 1840
-  relações: 1700 de 1840
-  relações: 1800 de 1840
-  alterações e regulamentação lidas em 1840 diplomas (0 falhas)
+SILUC 2026-11-18 01:35 UTC
+  a ler alterações e regulamentação de 279 diplomas
+  relações: 100 de 279
+  relações: 200 de 279
+  alterações e regulamentação lidas em 279 diplomas (0 falhas)
   1840 fichas recebidas de 1840
-  1840 diplomas em 7 temas gravados (1840 novos ou alterados)
+  1840 diplomas em 7 temas gravados (279 novos ou alterados)
