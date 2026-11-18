@@ -1,5 +1,6 @@
 {
  "actualizado": "2026-11-18",
+ "v": 2,
  "fonte": {
   "nome": "Divisare",
   "url": "https://divisare.com/photographers/europe/southern-europe/portugal"
@@ -21,36 +22,42 @@
     {
      "t": "Santo António Primary School",
      "u": "https://divisare.com/projects/578737-bfj-arquitectos-fernando-guerra-fg-sg-santo-antonio-primary-school",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1794581977/dd2202d2-7009-42da-8f04-83dea97ae5fb/bfj-arquitectos-fernando-guerra-fg-sg-santo-antonio-primary-school.jpg",
      "l": "Lisboa",
      "a": "BFJ Arquitectos"
     },
     {
      "t": "Muda L11",
      "u": "https://divisare.com/projects/567373-pereira-miguel-arquitectos-fernando-guerra-fg-sg-muda-l11",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1788176476/81bf2a83-644c-47fb-8725-a5cf7558e7b9/pereira-miguel-arquitectos-fernando-guerra-fg-sg-muda-l11.jpg",
      "l": "Grândola",
      "a": "Pereira Miguel Arquitectos"
     },
     {
      "t": "HOUSE IN LAS ROZAS",
      "u": "https://divisare.com/projects/564401-fran-silvestre-arquitectos-fernando-guerra-fg-sg-house-in-las-rozas",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1784638216/e32db72b-64e8-4c87-91c0-ef442aa5f331/fran-silvestre-arquitectos-fernando-guerra-fg-sg-house-in-las-rozas.jpg",
      "l": "Madrid, Espanha",
      "a": "Fran Silvestre Arquitectos"
     },
     {
      "t": "Vila do Bispo Museum",
      "u": "https://divisare.com/projects/555689-spaceworkers-fernando-guerra-fg-sg-vila-do-bispo-museum",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1775827109/1c3395e8-e8f0-4619-9d01-e8b3f10b41a7/spaceworkers-fernando-guerra-fg-sg-vila-do-bispo-museum.jpg",
      "l": "Vila do Bispo",
      "a": "spaceworkers®"
     },
     {
      "t": "MAS CADALT",
      "u": "https://divisare.com/projects/550732-fran-silvestre-arquitectos-fernando-guerra-fg-sg-mas-cadalt",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1770636214/8f5b9fa8-7365-4e40-a86b-a3039e7f3523/fran-silvestre-arquitectos-fernando-guerra-fg-sg-mas-cadalt.jpg",
      "l": "CANET D’ADRI, GIRONA, Espanha",
      "a": "Fran Silvestre Arquitectos"
     },
     {
      "t": "VILLA LAGO, LA MORALEJA",
      "u": "https://divisare.com/projects/550730-fran-silvestre-arquitectos-fernando-guerra-fg-sg-villa-lago-la-moraleja",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1770634021/e507a51d-aa30-45d5-8611-39162b48413b/fran-silvestre-arquitectos-fernando-guerra-fg-sg-villa-lago-la-moraleja.jpg",
      "l": "Madrid, Espanha",
      "a": "Fran Silvestre Arquitectos"
     }
@@ -73,36 +80,42 @@
     {
      "t": "Sá Townhouse",
      "u": "https://divisare.com/projects/547594-tiago-do-vale-arquitectos-joao-morgado-sa-townhouse",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1765987841/28eb3025-a3ab-4852-9f28-9a28c7cfa6e0/tiago-do-vale-arquitectos-joao-morgado-sa-townhouse.jpg",
      "l": "Aveiro",
      "a": "Tiago do Vale Arquitectos"
     },
     {
      "t": "Nery do Vale Clinic",
      "u": "https://divisare.com/projects/541501-tiago-do-vale-arquitectos-joao-morgado-nery-do-vale-clinic",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1759318837/a628f19d-f0ff-4ed6-b599-5b0dfe9db651/tiago-do-vale-arquitectos-joao-morgado-nery-do-vale-clinic.jpg",
      "l": "Braga",
      "a": "Tiago do Vale Arquitectos"
     },
     {
      "t": "Aurora 10 Building",
      "u": "https://divisare.com/projects/527664-tiago-do-vale-arquitectos-joao-morgado-aurora-10-building",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1743077317/bcdc8fe5-49ec-40b7-87ca-a4a30810d0fc/tiago-do-vale-arquitectos-joao-morgado-aurora-10-building.jpg",
      "l": "Ponte de Lima",
      "a": "Tiago do Vale Arquitectos"
     },
     {
      "t": "611 West 56th Street",
      "u": "https://divisare.com/projects/461410-alvaro-siza-vieira-joao-morgado-611-west-56th-street",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1654526824/atjarvq0hig3blwx20pz/alvaro-siza-vieira-joao-morgado-611-west-56th-street.jpg",
      "l": "New York, EUA",
      "a": "Álvaro Siza Vieira"
     },
     {
      "t": "Monte dos Judeus",
      "u": "https://divisare.com/projects/459739-ooda-joao-morgado-monte-dos-judeus",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1651739870/rt2jhtzmkvzpnbjnsgcm/ooda-joao-morgado-monte-dos-judeus.jpg",
      "l": "Porto",
      "a": "OODA"
     },
     {
      "t": "The Clay Pavillion",
      "u": "https://divisare.com/projects/438997-alvaro-siza-vieira-baaq-joao-morgado-the-clay-pavillion",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1615796093/nehj7bexmvwekugxrhhb/alvaro-siza-vieira-baaq-joao-morgado-the-clay-pavillion.jpg",
      "l": "Puerto Escondido, México",
      "a": "Álvaro Siza Vieira e BAAQ’"
     }
@@ -125,36 +138,42 @@
     {
      "t": "House in Cerrado",
      "u": "https://divisare.com/projects/555952-atelier-espaco-p2-jose-campos-house-in-cerrado",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1776245377/309115f2-0384-4dce-bb60-3de8f975b7ac/atelier-espaco-p2-jose-campos-house-in-cerrado.jpg",
      "l": "Leiria",
      "a": "Atelier Espaço P2"
     },
     {
      "t": "LEGAL INNOVATION CENTER",
      "u": "https://divisare.com/projects/502360-joaquim-portela-jose-campos-legal-innovation-center",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1715865371/5f12dd2d-de2e-4bb6-98cf-1264fb9a395c/joaquim-portela-jose-campos-legal-innovation-center.jpg",
      "l": "Bragança",
      "a": "Joaquim Portela"
     },
     {
      "t": "QBN House",
      "u": "https://divisare.com/projects/489030-par-do-jose-campos-qbn-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1698325946/5e41f55b-e0ce-429e-8795-466a49cd05d9/par-do-jose-campos-qbn-house.jpg",
      "l": "Viana do Castelo",
      "a": "par-do"
     },
     {
      "t": "Povoença House",
      "u": "https://divisare.com/projects/488786-par-do-jose-campos-povoenca-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1698144406/a53d6d38-a1ff-4128-812b-21b3438dcbb4/par-do-jose-campos-povoenca-house.jpg",
      "l": "Viana do Castelo",
      "a": "par-do"
     },
     {
      "t": "Casa de Francos",
      "u": "https://divisare.com/projects/468300-made-westudio-jose-campos-casa-de-francos",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1666549078/fvyh51ioywuyvwbxqqsa/made-westudio-jose-campos-casa-de-francos.jpg",
      "l": "Porto",
      "a": "MADE e WeStudio"
     },
     {
      "t": "CHESTNUT HOUSE",
      "u": "https://divisare.com/projects/466907-joao-mendes-ribeiro-jose-campos-chestnut-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1664269216/u0iro5o1qikebtczvqqp/joao-mendes-ribeiro-jose-campos-chestnut-house.jpg",
      "l": "Valeflor",
      "a": "João Mendes Ribeiro"
     }
@@ -177,36 +196,42 @@
     {
      "t": "LILAC",
      "u": "https://divisare.com/projects/570116-bureau-daniel-zamarbide-carine-pimenta-galliane-zamarbide-francisco-nogueira-lilac",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1789984716/e880e083-295f-48c1-a80b-cfa5744416fd/bureau-daniel-zamarbide-carine-pimenta-galliane-zamarbide-francisco-nogueira-lilac.jpg",
      "l": "Lisbon",
      "a": "BUREAU (Daniel Zamarbide, Carine Pimenta, Galliane Zamarbide)"
     },
     {
      "t": "Frame House",
      "u": "https://divisare.com/projects/527457-pedro-domingos-arquitectos-francisco-nogueira-frame-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1742914237/244cf6a4-c8a9-42fb-91fb-da78f740e714/pedro-domingos-arquitectos-francisco-nogueira-frame-house.jpg",
      "l": "Santa Bárbara-de-Nexe",
      "a": "pedro domingos arquitectos"
     },
     {
      "t": "House in Serra do Louro",
      "u": "https://divisare.com/projects/521244-cimbre-francisco-nogueira-house-in-serra-do-louro",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1736435289/f7dd894c-fdc2-4f4f-9ee0-0738ae94d2e9/cimbre-francisco-nogueira-house-in-serra-do-louro.jpg",
      "l": "Palmela",
      "a": "Cimbre"
     },
     {
      "t": "MONTIJO MUNICIPAL GALLERY’S GARDEN",
      "u": "https://divisare.com/projects/513659-bak-gordon-architects-rm-arquitectura-francisco-nogueira-montijo-municipal-gallery-s-garden",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1728378086/dae09b1b-443a-4c38-a8dc-db1278672d1d/bak-gordon-architects-rm-arquitectura-francisco-nogueira-montijo-municipal-gallery-s-garden.jpg",
      "l": "Montijo",
      "a": "Bak Gordon Architects e RM Arquitectura"
     },
     {
      "t": "Apartment CK",
      "u": "https://divisare.com/projects/512511-rar-studio-francisco-nogueira-apartment-ck",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1727296685/19002949-b4dd-4224-80e7-e00ffe9d68e5/rar-studio-francisco-nogueira-apartment-ck.jpg",
      "l": "Lisboa",
      "a": "rar.studio"
     },
     {
      "t": "Housing block",
      "u": "https://divisare.com/projects/507122-bureau-des-mesarchitectures-francisco-nogueira-housing-block",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1720710117/bea04575-1733-430e-83e2-2874db785aa0/bureau-des-mesarchitectures-francisco-nogueira-housing-block.jpg",
      "l": "Leiria",
      "a": "Bureau des Mésarchitectures"
     }
@@ -228,36 +253,42 @@
     {
      "t": "Students Residence and Winery, Santa Maria do Mar Monastery",
      "u": "https://divisare.com/projects/530403-pedro-matos-gameiro-marta-ferreira-luis-ferreira-alves-fotografia-students-residence-and-winery-santa-maria-do-mar-monastery",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1746201081/18de1028-05ad-457f-b100-95e6201b68e0/pedro-matos-gameiro-marta-ferreira-luis-ferreira-alves-fotografia-students-residence-and-winery-santa-maria-do-mar-monastery.jpg",
      "l": "Sassoeiros",
      "a": "Pedro Matos Gameiro"
     },
     {
      "t": "Casa no Campo Novo",
      "u": "https://divisare.com/projects/527015-correia-ragazzi-arquitectos-marta-ferreira-luis-ferreira-alves-fotografia-casa-no-campo-novo",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1742461139/9775651f-0c52-48ad-8263-32374e243ce1/correia-ragazzi-arquitectos-marta-ferreira-luis-ferreira-alves-fotografia-casa-no-campo-novo.jpg",
      "l": "Braga",
      "a": "Correia/Ragazzi Arquitectos"
     },
     {
      "t": "Tua Valley Interpretive Centre",
      "u": "https://divisare.com/projects/410783-rosmaninho-azevedo-marta-ferreira-luis-ferreira-alves-fotografia-tua-valley-interpretive-centre",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1563456732/ugnz9iosvytk3zfxuipx/rosmaninho-azevedo-marta-ferreira-luis-ferreira-alves-fotografia-tua-valley-interpretive-centre.jpg",
      "l": "Foz Tua",
      "a": "Rosmaninho + Azevedo"
     },
     {
      "t": "Matosinhos Jazz Orchestra",
      "u": "https://divisare.com/projects/379455-guilherme-machado-vaz-marta-ferreira-luis-ferreira-alves-fotografia-matosinhos-jazz-orchestra",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1518508791/lyzvrsflw3fgxmmvnvdl/guilherme-machado-vaz-marta-ferreira-luis-ferreira-alves-fotografia-matosinhos-jazz-orchestra.jpg",
      "l": "Matosinhos",
      "a": "Guilherme Machado Vaz"
     },
     {
      "t": "Casa da Arquitectura",
      "u": "https://divisare.com/projects/372314-guilherme-machado-vaz-marta-ferreira-luis-ferreira-alves-fotografia-casa-da-arquitectura",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1512125787/ob8gtzg1ke4214xpwczq/guilherme-machado-vaz-marta-ferreira-luis-ferreira-alves-fotografia-casa-da-arquitectura.jpg",
      "l": "Matosinhos",
      "a": "Guilherme Machado Vaz"
     },
     {
      "t": "COMPLEXO TERMAL DE VIDAGO",
      "u": "https://divisare.com/projects/367025-joao-paulo-loureiro-marta-ferreira-luis-ferreira-alves-fotografia-complexo-termal-de-vidago",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1528892880/geesmjemllqrm9y7gw7b/joao-paulo-loureiro-marta-ferreira-luis-ferreira-alves-fotografia-complexo-termal-de-vidago.jpg",
      "l": "Chaves",
      "a": "JOÃO PAULO LOUREIRO"
     }
@@ -280,36 +311,42 @@
     {
      "t": "Casa Coqueira",
      "u": "https://divisare.com/projects/576823-tiago-sousa-ivo-tavares-studio-casa-coqueira",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1793714884/fa91242b-a854-43c1-846c-01faffbe0e98/tiago-sousa-ivo-tavares-studio-casa-coqueira.jpg",
      "l": "Castanheira",
      "a": "Tiago Sousa"
     },
     {
      "t": "REQUALIFICATION OF THE OLD FAREJA BRIDGE",
      "u": "https://divisare.com/projects/528059-romulo-neto-arquitetos-ivo-tavares-studio-requalification-of-the-old-fareja-bridge",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1743516694/37511607-9abb-485d-9df7-9251d0fd287a/romulo-neto-arquitetos-ivo-tavares-studio-requalification-of-the-old-fareja-bridge.jpg",
      "l": "Vagos",
      "a": "Rómulo Neto Arquitetos"
     },
     {
      "t": "Casa da Levada",
      "u": "https://divisare.com/projects/527285-tsou-arquitectos-ivo-tavares-studio-casa-da-levada",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1742815627/71a4df3d-6095-4929-b46e-cc2343e20bed/tsou-arquitectos-ivo-tavares-studio-casa-da-levada.jpg",
      "l": "Penafiel",
      "a": "Tsou Arquitectos"
     },
     {
      "t": "Covelo House",
      "u": "https://divisare.com/projects/524903-spaceworkers-ivo-tavares-studio-covelo-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1740411875/f2e4a24d-13fd-4496-bee9-c37aa11ab970/spaceworkers-ivo-tavares-studio-covelo-house.jpg",
      "l": "Porto",
      "a": "spaceworkers®"
     },
     {
      "t": "Olaria Municipal",
      "u": "https://divisare.com/projects/511026-arde-arquitetura-design-ivo-tavares-studio-olaria-municipal",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1725958216/97153ca9-3dd3-4333-bc38-901849653da4/arde-arquitetura-design-ivo-tavares-studio-olaria-municipal.jpg",
      "l": "Quinta da Estrela, Odemira",
      "a": "ARDE Arquitetura+Design"
     },
     {
      "t": "The market",
      "u": "https://divisare.com/projects/510700-loftspace-tiago-sousa-ivo-tavares-studio-the-market",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1725546151/999c4d12-65a8-4d69-ace9-e3fd90d62b0d/loftspace-tiago-sousa-ivo-tavares-studio-the-market.jpg",
      "l": "CAMINHA",
      "a": "LOFTSPACE e Tiago Sousa"
     }
@@ -332,36 +369,42 @@
     {
      "t": "House No. 11 – Santa Isabel",
      "u": "https://divisare.com/projects/501265-camarim-nelson-garrido-house-no-11-santa-isabel",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1714472306/aa9ffb12-be0f-4773-8be5-38159332bfec/camarim-nelson-garrido-house-no-11-santa-isabel.jpg",
      "l": "Lisbon",
      "a": "Camarim"
     },
     {
      "t": "Guacamole 2",
      "u": "https://divisare.com/projects/431251-camarim-nelson-garrido-guacamole-2",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1602511167/smmrdnnym6o9jvy6vbdw/camarim-nelson-garrido-guacamole-2.png",
      "l": "Lisboa",
      "a": "Camarim"
     },
     {
      "t": "Pátio do Meco",
      "u": "https://divisare.com/projects/414367-fabio-ferreira-neves-nelson-garrido-patio-do-meco",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1570171052/be8drhsiuxlagrwge6jf/fabio-ferreira-neves-nelson-garrido-patio-do-meco.jpg",
      "l": "Sesimbra",
      "a": "Fábio Ferreira Neves"
     },
     {
      "t": "Casa no Porto",
      "u": "https://divisare.com/projects/383053-joao-vieira-de-campos-nelson-garrido-casa-no-porto",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1522758760/solzcydnrdblxpoqyi8u/joao-vieira-de-campos-nelson-garrido-casa-no-porto.jpg",
      "l": "Porto",
      "a": "João Vieira de Campos"
     },
     {
      "t": "RE",
      "u": "https://divisare.com/projects/374998-camarim-nelson-garrido-re",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1515658693/qw67fdc9py4tzb5ozyp8/camarim-nelson-garrido-re.jpg",
      "l": "Lisbon",
      "a": "Camarim"
     },
     {
      "t": "Mão Esquerda Vintage",
      "u": "https://divisare.com/projects/372454-gustavo-guimaraes-nelson-garrido-mao-esquerda-vintage",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1512377189/gfj1dlzxiqgyjbsjymja/gustavo-guimaraes-nelson-garrido-mao-esquerda-vintage.jpg",
      "l": "Porto",
      "a": "Gustavo Guimarães"
     }
@@ -383,36 +426,42 @@
     {
      "t": "Renovation of the Jayme Rios de Souza Student Housing",
      "u": "https://divisare.com/projects/577330-nuno-brandao-costa-francisco-ascensao-renovation-of-the-jayme-rios-de-souza-student-housing",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1793887306/1739a95b-3e51-45dc-9bc0-efcfa67a3e8c/nuno-brandao-costa-francisco-ascensao-renovation-of-the-jayme-rios-de-souza-student-housing.jpg",
      "l": "Porto",
      "a": "Nuno Brandão Costa"
     },
     {
      "t": "wood structure above brick structure",
      "u": "https://divisare.com/projects/576841-corpo-atelier-francisco-ascensao-wood-structure-above-brick-structure",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1793719424/cfc3a789-25d7-461a-94ee-b1e43bf541e5/corpo-atelier-francisco-ascensao-wood-structure-above-brick-structure.jpg",
      "l": "Olhão",
      "a": "Corpo Atelier"
     },
     {
      "t": "house around a column",
      "u": "https://divisare.com/projects/576174-fala-atelier-francisco-ascensao-giulietta-margot-rory-gardiner-house-around-a-column",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1793285380/2ac5ddf0-936c-4238-8cec-c5b162daa948/fala-atelier-francisco-ascensao-giulietta-margot-rory-gardiner-house-around-a-column.jpg",
      "l": "Porto",
      "a": "Fala Atelier"
     },
     {
      "t": "cookie cutter retreat",
      "u": "https://divisare.com/projects/572413-fala-atelier-francisco-ascensao-cookie-cutter-retreat",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1791281491/e09a6845-6503-466e-89f5-95fd25465325/fala-atelier-francisco-ascensao-cookie-cutter-retreat.jpg",
      "l": "sobral de monte agraço",
      "a": "Fala Atelier"
     },
     {
      "t": "Fabron",
      "u": "https://divisare.com/projects/569647-continentale-francisco-ascensao-fabron",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1789639085/2f5e4d9b-acd8-4fc8-86bc-95ffef7e6fcf/continentale-francisco-ascensao-fabron.jpg",
      "l": "Nice, França",
      "a": "Continentale"
     },
     {
      "t": "Avenida da Igreja",
      "u": "https://divisare.com/projects/569005-atelier-jose-andrade-rocha-studio-grilo-francisco-ascensao-avenida-da-igreja",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1789121203/ac6eb02b-4286-49c2-8b46-0391ba15ba72/atelier-jose-andrade-rocha-studio-grilo-francisco-ascensao-avenida-da-igreja.jpg",
      "l": "Lisboa",
      "a": "Atelier José Andrade Rocha e STUDIO GRILO"
     }
@@ -435,36 +484,42 @@
     {
      "t": "Museu Casa do Colecionador",
      "u": "https://divisare.com/projects/519946-atelier-data-do-mal-o-menos-museu-casa-do-colecionador",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1734445157/6b1d1694-6b43-4e8b-ad0c-1e26dfd8525f/atelier-data-do-mal-o-menos-museu-casa-do-colecionador.jpg",
      "l": "Moncarapacho",
      "a": "Atelier Data"
     },
     {
      "t": "Casa do Vale",
      "u": "https://divisare.com/projects/506233-volume-architecture-lisbon-studio-do-mal-o-menos-casa-do-vale",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1719939115/7c7cc64e-65e9-489c-9ea2-39faf203f70b/volume-architecture-lisbon-studio-do-mal-o-menos-casa-do-vale.jpg",
      "l": "Torres Vedras",
      "a": "Volume Architecture Lisbon Studio"
     },
     {
      "t": "HOUSE IN SILVES",
      "u": "https://divisare.com/projects/498566-bomo-arquitectos-do-mal-o-menos-house-in-silves",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1710933064/fdade190-ee2e-4d3d-b9da-6d80dee35b83/bomo-arquitectos-do-mal-o-menos-house-in-silves.jpg",
      "l": "Silves",
      "a": "BOMO Arquitectos"
     },
     {
      "t": "Imprensa Nacional 36",
      "u": "https://divisare.com/projects/478727-ala-rquitectos-do-mal-o-menos-imprensa-nacional-36",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1682079153/229345a3-ee59-44c5-bbbe-312c9ba8bd38/ala-rquitectos-do-mal-o-menos-imprensa-nacional-36.jpg",
      "l": "Lisbon",
      "a": "ALA.rquitectos"
     },
     {
      "t": "IPO Footbridge",
      "u": "https://divisare.com/projects/478360-branco-delrio-arquitectos-do-mal-o-menos-ipo-footbridge",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1681472774/b6954349-6a27-483a-999c-592cdff642c7/branco-delrio-arquitectos-do-mal-o-menos-ipo-footbridge.jpg",
      "l": "Coimbra",
      "a": "branco-delrio arquitectos"
     },
     {
      "t": "TAIPAS BUILDING LISBON",
      "u": "https://divisare.com/projects/441877-aurora-arquitectos-do-mal-o-menos-taipas-building-lisbon",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1620377209/faiwlfnpgxcopqbgj6je/aurora-arquitectos-do-mal-o-menos-taipas-building-lisbon.jpg",
      "l": "Lisbon",
      "a": "Aurora Arquitectos"
     }
@@ -487,36 +542,42 @@
     {
      "t": "CASA EM BELÉM",
      "u": "https://divisare.com/projects/543942-bruno-goncalves-pereira-tania-sousa-hugo-santos-silva-casa-em-belem",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1761818058/3ff3306b-9f16-492a-8dc5-104dc64fef13/bruno-goncalves-pereira-tania-sousa-hugo-santos-silva-casa-em-belem.jpg",
      "l": "Lisbon",
      "a": "Bruno Gonçalves Pereira e Tânia Sousa"
     },
     {
      "t": "Casa Verde Gago",
      "u": "https://divisare.com/projects/521047-bruno-dias-hugo-santos-silva-casa-verde-gago",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1736261272/0f478a28-01d4-4188-89ea-be34941a1354/bruno-dias-hugo-santos-silva-casa-verde-gago.jpg",
      "l": "Ansião",
      "a": "Bruno Dias"
     },
     {
      "t": "MOITA SANTA",
      "u": "https://divisare.com/projects/513304-bruno-dias-hugo-santos-silva-moita-santa",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1727962168/aef8ec8c-c4e5-4c3d-aed7-0c667c13b295/bruno-dias-hugo-santos-silva-moita-santa.jpg",
      "l": "Leiria",
      "a": "Bruno Dias"
     },
     {
      "t": "Chumbaria Village Hemp Brick House",
      "u": "https://divisare.com/projects/508634-arquitecturaviva-hugo-santos-silva-chumbaria-village-hemp-brick-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1722344481/4b724d80-94cb-4236-8107-30f0e93e1972/arquitecturaviva-hugo-santos-silva-chumbaria-village-hemp-brick-house.jpg",
      "l": "Chumbaria",
      "a": "Arquitecturaviva"
     },
     {
      "t": "URBAN HYGIENE UNIT IN BELÉM",
      "u": "https://divisare.com/projects/499122-fora-hugo-santos-silva-urban-hygiene-unit-in-belem",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1711554695/beac0db8-3ab3-4f54-a93f-f1d7dc2c1de7/fora-hugo-santos-silva-urban-hygiene-unit-in-belem.jpg",
      "l": "Lisbon",
      "a": "FORA"
     },
     {
      "t": "CASA ÂMAGO",
      "u": "https://divisare.com/projects/475831-bruno-dias-hugo-santos-silva-casa-amago",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1677511863/jfbz2hhp1aolo7qfc8jp/bruno-dias-hugo-santos-silva-casa-amago.jpg",
      "l": "Ramada",
      "a": "Bruno Dias"
     }
@@ -539,33 +600,39 @@
     {
      "t": "Apartment Terepins",
      "u": "https://divisare.com/projects/429758-ricardo-oliveira-alves-apartment-terepins",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1599587155/kkjmdlvo2j3yctsmtiqm/ricardo-oliveira-alves-apartment-terepins.jpg",
      "l": "Lisboa"
     },
     {
      "t": "Embracing House",
      "u": "https://divisare.com/projects/428779-ricardo-oliveira-alves-embracing-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1596732493/fpjsxlufogasx0cgcsrt/ricardo-oliveira-alves-embracing-house.jpg",
      "l": "Cascais"
     },
     {
      "t": "Champalimaud Foundation",
      "u": "https://divisare.com/projects/428778-charles-correa-associates-ricardo-oliveira-alves-champalimaud-foundation",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1596731273/eqkiwvjarfltluskmzvb/charles-correa-associates-ricardo-oliveira-alves-champalimaud-foundation.jpg",
      "l": "Lisboa",
      "a": "Charles Correa Associates"
     },
     {
      "t": "Tree Snake Houses",
      "u": "https://divisare.com/projects/428777-rebelo-de-andrade-ricardo-oliveira-alves-tree-snake-houses",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1596730484/gkdmaefq84lajxnhucua/rebelo-de-andrade-ricardo-oliveira-alves-tree-snake-houses.jpg",
      "l": "Vila Pouca de Aguiar",
      "a": "Rebelo de Andrade"
     },
     {
      "t": "House in S. Pedro do Estoril",
      "u": "https://divisare.com/projects/428772-ricardo-oliveira-alves-house-in-s-pedro-do-estoril",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1596727811/zc96orzdzef0eevp2edd/ricardo-oliveira-alves-house-in-s-pedro-do-estoril.jpg",
      "l": "Cascais"
     },
     {
      "t": "Sea Front Villa",
      "u": "https://divisare.com/projects/428763-ricardo-oliveira-alves-sea-front-villa",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1596720903/czswhzsj7gi6d5v8wq23/ricardo-oliveira-alves-sea-front-villa.jpg",
      "l": "Cascais"
     }
    ],
@@ -586,36 +653,42 @@
     {
      "t": "house around a column",
      "u": "https://divisare.com/projects/576174-fala-atelier-francisco-ascensao-giulietta-margot-rory-gardiner-house-around-a-column",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1793285380/2ac5ddf0-936c-4238-8cec-c5b162daa948/fala-atelier-francisco-ascensao-giulietta-margot-rory-gardiner-house-around-a-column.jpg",
      "l": "Porto",
      "a": "Fala Atelier"
     },
     {
      "t": "atelier pomo",
      "u": "https://divisare.com/projects/552680-fala-atelier-francisco-ascensao-giulietta-margot-atelier-pomo",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1772633730/1045f732-94d8-4895-bc81-da84cb390968/fala-atelier-francisco-ascensao-giulietta-margot-atelier-pomo.jpg",
      "l": "Porto",
      "a": "Fala Atelier"
     },
     {
      "t": "house within a few lines",
      "u": "https://divisare.com/projects/508184-fala-atelier-francisco-ascensao-ivo-tavares-studio-giulietta-margot-house-within-a-few-lines",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1721833210/6bae3c78-0d35-4bb2-9507-2e4d7babf104/fala-atelier-francisco-ascensao-ivo-tavares-studio-giulietta-margot-house-within-a-few-lines.jpg",
      "l": "Porto",
      "a": "Fala Atelier"
     },
     {
      "t": "house of countless windows",
      "u": "https://divisare.com/projects/504259-fala-atelier-francisco-ascensao-giulietta-margot-house-of-countless-windows",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1718017642/35dd4a1d-d655-4720-a4ad-145bbd6226ea/fala-atelier-francisco-ascensao-giulietta-margot-house-of-countless-windows.jpg",
      "l": "Lisbon",
      "a": "Fala Atelier"
     },
     {
      "t": "waves of glass and clouds of metal",
      "u": "https://divisare.com/projects/501133-fala-atelier-francisco-ascensao-giulietta-margot-rory-gardiner-waves-of-glass-and-clouds-of-metal",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1714373780/598c14df-78e7-4266-98e9-5d89f6ef291e/fala-atelier-francisco-ascensao-giulietta-margot-rory-gardiner-waves-of-glass-and-clouds-of-metal.jpg",
      "l": "Porto",
      "a": "Fala Atelier"
     },
     {
      "t": "Housing with pink chimneys",
      "u": "https://divisare.com/projects/499433-fala-atelier-francisco-ascensao-giulietta-margot-housing-with-pink-chimneys",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1712067299/2c01ead2-3f24-4370-9cbf-a06be3c79444/fala-atelier-francisco-ascensao-giulietta-margot-housing-with-pink-chimneys.jpg",
      "l": "Porto",
      "a": "Fala Atelier"
     }
@@ -637,36 +710,42 @@
     {
      "t": "House and atelier",
      "u": "https://divisare.com/projects/453466-fala-atelier-ricardo-loureiro-house-and-atelier",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1641565986/hhpxhelbsvc3emxnutip/fala-atelier-ricardo-loureiro-house-and-atelier.jpg",
      "l": "Porto",
      "a": "Fala Atelier"
     },
     {
      "t": "House under a big roof",
      "u": "https://divisare.com/projects/445208-fala-atelier-ricardo-loureiro-house-under-a-big-roof",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1626249655/e5oswsklnsmnet8v4b8o/fala-atelier-ricardo-loureiro-house-under-a-big-roof.jpg",
      "l": "Vila Nova de Famalicão",
      "a": "Fala Atelier"
     },
     {
      "t": "TASSO",
      "u": "https://divisare.com/projects/443715-nomos-ricardo-loureiro-tasso",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1623425830/ubmw2gh55vkdidko6w9e/nomos-ricardo-loureiro-tasso.jpg",
      "l": "Lisbon",
      "a": "NOMOS"
     },
     {
      "t": "completed houses",
      "u": "https://divisare.com/projects/433525-fala-atelier-ricardo-loureiro-completed-houses",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1606210762/fico9dmjs4fv9cd6mu3t/fala-atelier-ricardo-loureiro-completed-houses.jpg",
      "l": "Marco de Canaveses",
      "a": "Fala Atelier"
     },
     {
      "t": "House along a wall",
      "u": "https://divisare.com/projects/429180-fala-atelier-ricardo-loureiro-house-along-a-wall",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1598456062/gcqrb1siaw1giuqygm7z/fala-atelier-ricardo-loureiro-house-along-a-wall.jpg",
      "l": "Porto",
      "a": "Fala Atelier"
     },
     {
      "t": "Apartment on a mint floor",
      "u": "https://divisare.com/projects/429178-fala-atelier-ricardo-loureiro-apartment-on-a-mint-floor",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1598455808/ckesmut8ufqat9pml7at/fala-atelier-ricardo-loureiro-apartment-on-a-mint-floor.jpg",
      "l": "Porto",
      "a": "Fala Atelier"
     }
@@ -689,36 +768,42 @@
     {
      "t": "Quinta de Velude",
      "u": "https://divisare.com/projects/522544-correia-ragazzi-arquitectos-armenio-teixeira-quinta-de-velude",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1737995010/a13403d5-f547-42d2-b2a8-b8a2258b7f53/correia-ragazzi-arquitectos-armenio-teixeira-quinta-de-velude.jpg",
      "l": "Lugar de Veludo, Cinfães",
      "a": "Correia/Ragazzi Arquitectos"
     },
     {
      "t": "Intermodal terminal in campanhã",
      "u": "https://divisare.com/projects/475266-nuno-brandao-costa-francisco-ascensao-armenio-teixeira-intermodal-terminal-in-campanha",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1676884421/fz2idc2oehs9rmqeckhl/nuno-brandao-costa-francisco-ascensao-armenio-teixeira-intermodal-terminal-in-campanha.jpg",
      "l": "Porto",
      "a": "Nuno Brandão Costa"
     },
     {
      "t": "COURA RETREAT",
      "u": "https://divisare.com/projects/454989-luis-peixoto-armenio-teixeira-coura-retreat",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1643972442/pkixdbto38saomsgi4pz/luis-peixoto-armenio-teixeira-coura-retreat.jpg",
      "l": "Paredes de Coura",
      "a": "Luís Peixoto"
     },
     {
      "t": "House in Póvoa",
      "u": "https://divisare.com/projects/445811-luis-peixoto-armenio-teixeira-house-in-povoa",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1627385720/wxppi8v7peqr9gipzskw/luis-peixoto-armenio-teixeira-house-in-povoa.jpg",
      "l": "Paredes de Coura",
      "a": "Luís Peixoto"
     },
     {
      "t": "Coura House",
      "u": "https://divisare.com/projects/445810-luis-peixoto-armenio-teixeira-coura-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1627385303/tcnckj3wdm13zoifzqoz/luis-peixoto-armenio-teixeira-coura-house.jpg",
      "l": "Paredes de Coura",
      "a": "Luís Peixoto"
     },
     {
      "t": "House in Santo Tirso II",
      "u": "https://divisare.com/projects/425879-nuno-brandao-costa-andre-cepeda-armenio-teixeira-house-in-santo-tirso-ii",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1591282102/ajwwwgkmqx7cdoqus8t5/nuno-brandao-costa-andre-cepeda-armenio-teixeira-house-in-santo-tirso-ii.jpg",
      "l": "Santo Tirso",
      "a": "Nuno Brandão Costa"
     }
@@ -741,36 +826,42 @@
     {
      "t": "House-studio",
      "u": "https://divisare.com/projects/512859-atelier-landauer-tiago-casanova-house-studio",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1727692379/e3fe5f96-0be9-4f5e-8194-80715a96951b/atelier-landauer-tiago-casanova-house-studio.jpg",
      "l": "Castelo de Vide",
      "a": "Atelier Landauer"
     },
     {
      "t": "Rates House",
      "u": "https://divisare.com/projects/459862-atelierdacosta-tiago-casanova-rates-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1651848930/oosolrv4dnfc05gm7g2k/atelierdacosta-tiago-casanova-rates-house.jpg",
      "l": "São Pedro de Rates",
      "a": "ATELIERDACOSTA"
     },
     {
      "t": "Casas do Capitão",
      "u": "https://divisare.com/projects/450477-merooficina-tiago-casanova-casas-do-capitao",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1636918727/xxcmay0hds3yqbc35ccr/merooficina-tiago-casanova-casas-do-capitao.jpg",
      "l": "Guimarães",
      "a": "merooficina"
     },
     {
      "t": "casa da beiramar",
      "u": "https://divisare.com/projects/437533-merooficina-tiago-casanova-casa-da-beiramar",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1613398824/nkcbuxfeixhzbmmxerod/merooficina-tiago-casanova-casa-da-beiramar.jpg",
      "l": "Beiramar",
      "a": "merooficina"
     },
     {
      "t": "The Lapa Apartment",
      "u": "https://divisare.com/projects/426505-studio-gameiro-tiago-casanova-the-lapa-apartment",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1592408338/slpewpfdlvdpsypcubbx/studio-gameiro-tiago-casanova-the-lapa-apartment.jpg",
      "l": "Lisbon",
      "a": "Studio Gameiro"
     },
     {
      "t": "Holiday home",
      "u": "https://divisare.com/projects/425587-atelierdacosta-tiago-casanova-holiday-home",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1590667981/pnynw5mudvm8ev27wxr0/atelierdacosta-tiago-casanova-holiday-home.jpg",
      "l": "Esposende, Braga",
      "a": "ATELIERDACOSTA"
     }
@@ -792,36 +883,42 @@
     {
      "t": "House in Melgaço II",
      "u": "https://divisare.com/projects/552961-nuno-brandao-costa-andre-cepeda-francisco-ascensao-house-in-melgaco-ii",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1772809975/6621a320-fdab-40a9-9fe3-3c183064ea90/nuno-brandao-costa-andre-cepeda-francisco-ascensao-house-in-melgaco-ii.jpg",
      "l": "Outeiro",
      "a": "Nuno Brandão Costa"
     },
     {
      "t": "House in Coimbra",
      "u": "https://divisare.com/projects/456268-nuno-brandao-costa-andre-cepeda-house-in-coimbra",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1645989912/ng4gzr8suvcnbw826kre/nuno-brandao-costa-andre-cepeda-house-in-coimbra.jpg",
      "l": "Coimbra",
      "a": "Nuno Brandão Costa"
     },
     {
      "t": "BioFactory",
      "u": "https://divisare.com/projects/449956-ecologicstudio-andre-cepeda-biofactory",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1635942179/at9sceundjduxahmcaks/ecologicstudio-andre-cepeda-biofactory.jpg",
      "l": "Lisbon",
      "a": "ecoLogicStudio"
     },
     {
      "t": "House in Santo Tirso II",
      "u": "https://divisare.com/projects/425879-nuno-brandao-costa-andre-cepeda-armenio-teixeira-house-in-santo-tirso-ii",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1591282102/ajwwwgkmqx7cdoqus8t5/nuno-brandao-costa-andre-cepeda-armenio-teixeira-house-in-santo-tirso-ii.jpg",
      "l": "Santo Tirso",
      "a": "Nuno Brandão Costa"
     },
     {
      "t": "Mental",
      "u": "https://divisare.com/projects/425318-nuno-brandao-costa-andre-cepeda-armenio-teixeira-mental",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1590133111/l1graxv5laiak0nwolvp/nuno-brandao-costa-andre-cepeda-armenio-teixeira-mental.jpg",
      "l": "Carregosa",
      "a": "Nuno Brandão Costa"
     },
     {
      "t": "Ela Canela Restaurant",
      "u": "https://divisare.com/projects/375914-gustavo-guimaraes-andre-cepeda-ela-canela-restaurant",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1516725761/rlr4jk6il3dxra40zaab/gustavo-guimaraes-andre-cepeda-ela-canela-restaurant.jpg",
      "l": "Porto",
      "a": "Gustavo Guimarães"
     }
@@ -843,36 +940,42 @@
     {
      "t": "A Rice Husk House",
      "u": "https://divisare.com/projects/554174-summary-architects-alexander-bogorodskiy-architectural-photography-a-rice-husk-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1774285473/c7b7fee3-312a-4b5d-a376-a020e1a3f2e2/summary-architects-alexander-bogorodskiy-architectural-photography-a-rice-husk-house.jpg",
      "l": "Esmoriz",
      "a": "SUMMARY Architects"
     },
     {
      "t": "IGREJA E CENTRO PAROQUIAL DO BAIRRO DE SÃO JOSÉ DA BOAVISTA",
      "u": "https://divisare.com/projects/550563-pedro-matos-gameiro-atelier-bugio-joao-favila-menezes-alexander-bogorodskiy-architectural-photography-igreja-e-centro-paroquial-do-bairro-de-sao-jose-da-boavista",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1770214419/8b559cbd-ceeb-409d-a8a5-6ad1ed5c479a/pedro-matos-gameiro-atelier-bugio-joao-favila-menezes-alexander-bogorodskiy-architectural-photography-igreja-e-centro-paroquial-do-bairro-de-sao-jose-da-boavista.jpg",
      "l": "Lisbon",
      "a": "Pedro Matos Gameiro e Atelier Bugio - João Favila Menezes"
     },
     {
      "t": "SÃO PEDRO DO SUL ROMAN BATHS",
      "u": "https://divisare.com/projects/541532-joao-mendes-ribeiro-alexander-bogorodskiy-architectural-photography-sao-pedro-do-sul-roman-baths",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1759328834/4fc9a578-afac-4160-a5cd-0a35a2d197bd/joao-mendes-ribeiro-alexander-bogorodskiy-architectural-photography-sao-pedro-do-sul-roman-baths.jpg",
      "l": "São Pedro do Sul",
      "a": "João Mendes Ribeiro"
     },
     {
      "t": "MONTE DOS JUDEUS APARTMENTS",
      "u": "https://divisare.com/projects/539460-antonio-bessa-cruz-architects-jose-carlos-cruz-alexander-bogorodskiy-architectural-photography-monte-dos-judeus-apartments",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1757408671/26ad1217-06be-4756-b7d9-c97bbdb804bc/antonio-bessa-cruz-architects-jose-carlos-cruz-alexander-bogorodskiy-architectural-photography-monte-dos-judeus-apartments.jpg",
      "l": "Porto",
      "a": "António Bessa Cruz Architects e José Carlos Cruz"
     },
     {
      "t": "Paiva River Botanical and River Park",
      "u": "https://divisare.com/projects/526813-paradoxo-arquitectura-alexander-bogorodskiy-architectural-photography-paiva-river-botanical-and-river-park",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1742297371/45691092-e09b-48ce-a564-b8907053564c/paradoxo-arquitectura-alexander-bogorodskiy-architectural-photography-paiva-river-botanical-and-river-park.jpg",
      "l": "Cinfães",
      "a": "Paradoxo Arquitectura"
     },
     {
      "t": "G – 5 houses",
      "u": "https://divisare.com/projects/498990-summary-architects-alexander-bogorodskiy-architectural-photography-g-5-houses",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1711452232/218fd940-c148-47d1-b630-448a0d9f9701/summary-architects-alexander-bogorodskiy-architectural-photography-g-5-houses.jpg",
      "l": "Farrapa",
      "a": "SUMMARY Architects"
     }
@@ -894,36 +997,42 @@
     {
      "t": "House in Restelo",
      "u": "https://divisare.com/projects/436557-pedro-domingos-arquitectos-rui-cardoso-house-in-restelo",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1611759216/kuxioxf4rydo7wkktg7k/pedro-domingos-arquitectos-rui-cardoso-house-in-restelo.jpg",
      "l": "Restelo",
      "a": "pedro domingos arquitectos"
     },
     {
      "t": "HOUSE NEXT DOOR",
      "u": "https://divisare.com/projects/413375-miguel-gomes-rui-cardoso-house-next-door",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1568723011/tj1tqg3oqrkgh2tomhsv/miguel-gomes-rui-cardoso-house-next-door.jpg",
      "l": "Porto",
      "a": "MIGUEL GOMES"
     },
     {
      "t": "Santa Clara 1728",
      "u": "https://divisare.com/projects/412535-manuel-aires-mateus-rui-cardoso-santa-clara-1728",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1567355771/l8admunkjfuurvsyqamc/manuel-aires-mateus-rui-cardoso-santa-clara-1728.jpg",
      "l": "Lisbon",
      "a": "Manuel Aires Mateus"
     },
     {
      "t": "House In Time",
      "u": "https://divisare.com/projects/412534-manuel-aires-mateus-rui-cardoso-house-in-time",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1567349856/kfrwuihzt8rrow7iins5/manuel-aires-mateus-rui-cardoso-house-in-time.jpg",
      "l": "Alentejo",
      "a": "Manuel Aires Mateus"
     },
     {
      "t": "House In São Mamede",
      "u": "https://divisare.com/projects/412533-manuel-aires-mateus-rui-cardoso-house-in-sao-mamede",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1567252708/ace2qzumvr2s6kj9fogr/manuel-aires-mateus-rui-cardoso-house-in-sao-mamede.jpg",
      "l": "Lisbon",
      "a": "Manuel Aires Mateus"
     },
     {
      "t": "House in Monsaraz",
      "u": "https://divisare.com/projects/412532-manuel-aires-mateus-rui-cardoso-house-in-monsaraz",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1567250338/poaxqrjzifmjbyhgba3z/manuel-aires-mateus-rui-cardoso-house-in-monsaraz.jpg",
      "l": "Monsaraz",
      "a": "Manuel Aires Mateus"
     }
@@ -945,36 +1054,42 @@
     {
      "t": "Casa do Gerês",
      "u": "https://divisare.com/projects/310213-carvalho-araujo-hugo-carvalho-araujo-casa-do-geres",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1455268389/k8ta7kfjtmszkmfofplc/carvalho-araujo-hugo-carvalho-araujo-casa-do-geres.jpg",
      "l": "Vieira do Minho",
      "a": "Carvalho Araújo"
     },
     {
      "t": "Refúgio na Montaria",
      "u": "https://divisare.com/projects/308276-carvalho-araujo-hugo-carvalho-araujo-refugio-na-montaria",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1453376937/l9obqzwfwdibq9bshrxu/carvalho-araujo-hugo-carvalho-araujo-refugio-na-montaria.jpg",
      "l": "Viana do Castelo",
      "a": "Carvalho Araújo"
     },
     {
      "t": "De Lemos",
      "u": "https://divisare.com/projects/239116-carvalho-araujo-hugo-carvalho-araujo-de-lemos",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/4045447/HCA_02_0383/carvalho-araujo-hugo-carvalho-araujo-de-lemos.jpg",
      "l": "Viseu",
      "a": "Carvalho Araújo"
     },
     {
      "t": "GNRation",
      "u": "https://divisare.com/projects/184958-carvalho-araujo-hugo-carvalho-araujo-gnration",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/3980366/HCA_02/carvalho-araujo-hugo-carvalho-araujo-gnration.jpg",
      "l": "Braga",
      "a": "Carvalho Araújo"
     },
     {
      "t": "Galeria Mário Sequeira",
      "u": "https://divisare.com/projects/161401-carvalho-araujo-pedro-lobo-hugo-carvalho-araujo-galeria-mario-sequeira",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2455000/Exterior-2o/carvalho-araujo-pedro-lobo-hugo-carvalho-araujo-galeria-mario-sequeira.jpg",
      "l": "Braga",
      "a": "Carvalho Araújo"
     },
     {
      "t": "ABB Industry head office",
      "u": "https://divisare.com/projects/161129-carvalho-araujo-hugo-carvalho-araujo-abb-industry-head-office",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2449347/IMG_3882/carvalho-araujo-hugo-carvalho-araujo-abb-industry-head-office.jpg",
      "l": "Braga",
      "a": "Carvalho Araújo"
     }
@@ -995,36 +1110,42 @@
     {
      "t": "Santa Luzia House",
      "u": "https://divisare.com/projects/574249-studio-lpp-daniel-malhao-santa-luzia-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1792147411/09836743-a777-4e24-b547-213e825a353c/studio-lpp-daniel-malhao-santa-luzia-house.jpg",
      "l": "Tavira",
      "a": "STUDIO LPP"
     },
     {
      "t": "CASA DO PESSOAL",
      "u": "https://divisare.com/projects/475328-com-o-daniel-malhao-casa-do-pessoal",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1676904695/jvq6etpiyefuezqjbvif/com-o-daniel-malhao-casa-do-pessoal.jpg",
      "l": "Lisbon",
      "a": "COM/O"
     },
     {
      "t": "CASA TRIANGULAR",
      "u": "https://divisare.com/projects/422913-studio-lpp-daniel-malhao-casa-triangular",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1585051528/q0w3ql3zjiqhdo15ykiy/studio-lpp-daniel-malhao-casa-triangular.jpg",
      "l": "Lisbon",
      "a": "STUDIO LPP"
     },
     {
      "t": "Building in Príncipe Real",
      "u": "https://divisare.com/projects/383052-filipe-monica-helena-botelho-studio-daniel-malhao-building-in-principe-real",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1522758233/e2fjzzbm1cm4k1ubtqef/filipe-monica-helena-botelho-studio-daniel-malhao-building-in-principe-real.jpg",
      "l": "Lisbon",
      "a": "Filipe Mónica e HELENA BOTELHO STUDIO"
     },
     {
      "t": "House in Litoral Alentejano",
      "u": "https://divisare.com/projects/203520-manuel-aires-mateus-daniel-malhao-fernando-guerra-fg-sg-house-in-litoral-alentejano",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1507795468/nirufewzlbhfa6keiwsk/manuel-aires-mateus-daniel-malhao-fernando-guerra-fg-sg-house-in-litoral-alentejano.jpg",
      "l": "Grândola",
      "a": "Manuel Aires Mateus"
     },
     {
      "t": "House in Azeitão",
      "u": "https://divisare.com/projects/324668-manuel-aires-mateus-daniel-malhao-house-in-azeitao",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1472203235/sx4usmyfygyd6dqaujgx/manuel-aires-mateus-daniel-malhao-house-in-azeitao.jpg",
      "l": "Azeitão",
      "a": "Manuel Aires Mateus"
     }
@@ -1046,36 +1167,42 @@
     {
      "t": "UNTITLED HOUSE",
      "u": "https://divisare.com/projects/458305-atelier-jqts-diana-quintela-untitled-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1649265768/gmydp1pctgihr6b0psdk/atelier-jqts-diana-quintela-untitled-house.jpg",
      "l": "Cascais",
      "a": "ATELIER JQTS"
     },
     {
      "t": "ULISSEIA",
      "u": "https://divisare.com/projects/414511-atelier-jqts-diana-quintela-ulisseia",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1570518130/qgvkqmi0gqzdugnqjluo/atelier-jqts-diana-quintela-ulisseia.jpg",
      "l": "Lisbon",
      "a": "ATELIER JQTS"
     },
     {
      "t": "Noverca House",
      "u": "https://divisare.com/projects/383993-atelier-jqts-diana-quintela-noverca-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1523886830/q33qqycmnuyfzvccdhu9/atelier-jqts-diana-quintela-noverca-house.jpg",
      "l": "Loures",
      "a": "ATELIER JQTS"
     },
     {
      "t": "Insitu",
      "u": "https://divisare.com/projects/383991-atelier-jqts-diana-quintela-insitu",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1523885722/orm1vairpbjtjpqx1g2y/atelier-jqts-diana-quintela-insitu.jpg",
      "l": "Almada",
      "a": "ATELIER JQTS"
     },
     {
      "t": "Gallery Pavilion",
      "u": "https://divisare.com/projects/366407-atelier-jqts-diana-quintela-gallery-pavilion",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1505724200/qhnrht7p6eoxjuzftfj8/atelier-jqts-diana-quintela-gallery-pavilion.jpg",
      "l": "Ponta Delgada",
      "a": "ATELIER JQTS"
     },
     {
      "t": "KAIROS Pavilion",
      "u": "https://divisare.com/projects/276961-atelier-jqts-diana-quintela-kairos-pavilion",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/4862438/KAIROS_001/atelier-jqts-diana-quintela-kairos-pavilion.jpg",
      "l": "Lisbon",
      "a": "ATELIER JQTS"
     }
@@ -1097,36 +1224,42 @@
     {
      "t": "Nuovi spazi collettivi all’Hotel Meira",
      "u": "https://divisare.com/projects/424650-cor-arquitectos-cremascoli-okumura-rodrigues-rita-burmester-nuovi-spazi-collettivi-all-hotel-meira",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1588848429/qzoywaxclxgir0tkdhiw/cor-arquitectos-cremascoli-okumura-rodrigues-rita-burmester-nuovi-spazi-collettivi-all-hotel-meira.jpg",
      "l": "Vila Praia de Âncora",
      "a": "COR arquitectos / Cremascoli Okumura Rodrigues"
     },
     {
      "t": "Lisbon Cruise Terminal",
      "u": "https://divisare.com/projects/389620-joao-luis-carrilho-da-graca-fernando-guerra-fg-sg-rita-burmester-lisbon-cruise-terminal",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1530015430/kamaixx2pngeqnvsfgcr/joao-luis-carrilho-da-graca-fernando-guerra-fg-sg-rita-burmester-lisbon-cruise-terminal.jpg",
      "l": "Lisbon",
      "a": "joão luís carrilho da graça"
     },
     {
      "t": "Neighbourhood - where Alvaro meets Aldo",
      "u": "https://divisare.com/projects/389298-cor-arquitectos-cremascoli-okumura-rodrigues-nuno-grande-rita-burmester-neighbourhood-where-alvaro-meets-aldo",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1529588752/cssjddz2ssaibocnkpl3/cor-arquitectos-cremascoli-okumura-rodrigues-nuno-grande-rita-burmester-neighbourhood-where-alvaro-meets-aldo.jpg",
      "l": "Porto",
      "a": "COR arquitectos / Cremascoli Okumura Rodrigues e Nuno Grande"
     },
     {
      "t": "Rehabilitation of the Resin Factory in Marinha Grande",
      "u": "https://divisare.com/projects/265795-cor-arquitectos-cremascoli-okumura-rodrigues-rita-burmester-rehabilitation-of-the-resin-factory-in-marinha-grande",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/4612502/11_1793/cor-arquitectos-cremascoli-okumura-rodrigues-rita-burmester-rehabilitation-of-the-resin-factory-in-marinha-grande.jpg",
      "l": "Marinha Grande",
      "a": "COR arquitectos / Cremascoli Okumura Rodrigues"
     },
     {
      "t": "107_PROGETTO ESPOSITIVO_REMADE IN PORTUGAL_2010__MUSEO ELETTRICITÀ_FONDAZIONE EDP_LISBONA_PORTOGALLO",
      "u": "https://divisare.com/projects/167842-cor-arquitectos-cremascoli-okumura-rodrigues-rita-burmester-107_progetto-espositivo_remade-in-portugal_2010__museo-elettricita_fondazione-edp_lisbona_portogallo",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2579648/1/cor-arquitectos-cremascoli-okumura-rodrigues-rita-burmester-107_progetto-espositivo_remade-in-portugal_2010__museo-elettricita_fondazione-edp_lisbona_portogallo.jpg",
      "l": "LISBON",
      "a": "COR arquitectos / Cremascoli Okumura Rodrigues"
     },
     {
      "t": "Cultural Centre",
      "u": "https://divisare.com/projects/162596-pedro-mendes-arquitectos-rita-burmester-cultural-centre",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2477394/28/pedro-mendes-arquitectos-rita-burmester-cultural-centre.jpg",
      "l": "Almada",
      "a": "Pedro Mendes Arquitectos"
     }
@@ -1148,36 +1281,42 @@
     {
      "t": "AAAA13",
      "u": "https://divisare.com/projects/427959-aboim-inglez-arquitectos-ricardo-goncalves-aaaa13",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1595071644/nlrhfkrnsnyzhyy72mlo/aboim-inglez-arquitectos-ricardo-goncalves-aaaa13.jpg",
      "l": "Lisboa",
      "a": "aboim inglez arquitectos"
     },
     {
      "t": "Museu do Farol de Santa Marta",
      "u": "https://divisare.com/projects/146383-manuel-aires-mateus-ricardo-goncalves-fernando-guerra-fg-sg-museu-do-farol-de-santa-marta",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1517910718/msibml0oforntxxs0ufc/manuel-aires-mateus-ricardo-goncalves-fernando-guerra-fg-sg-museu-do-farol-de-santa-marta.jpg",
      "l": "Cascais",
      "a": "Manuel Aires Mateus"
     },
     {
      "t": "Museu do Oriente",
      "u": "https://divisare.com/projects/376259-joao-luis-carrilho-da-graca-ricardo-goncalves-museu-do-oriente",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1517186387/hprocjulegql1tlptx2t/joao-luis-carrilho-da-graca-ricardo-goncalves-museu-do-oriente.jpg",
      "l": "Lisbon",
      "a": "joão luís carrilho da graça"
     },
     {
      "t": "Casa em Sesimbra",
      "u": "https://divisare.com/projects/376258-manuel-aires-mateus-ricardo-goncalves-casa-em-sesimbra",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1517186005/bqexwyf4j9b3ehqhb1rs/manuel-aires-mateus-ricardo-goncalves-casa-em-sesimbra.jpg",
      "l": "Sesimbra",
      "a": "Manuel Aires Mateus"
     },
     {
      "t": "Casa na Arrábida",
      "u": "https://divisare.com/projects/376127-manuel-aires-mateus-ricardo-goncalves-casa-na-arrabida",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1516953231/aj8frdzvnczcztq1fhr4/manuel-aires-mateus-ricardo-goncalves-casa-na-arrabida.jpg",
      "l": "Arrábida",
      "a": "Manuel Aires Mateus"
     },
     {
      "t": "Monte da Azarujinha",
      "u": "https://divisare.com/projects/314116-aboim-inglez-arquitectos-ricardo-goncalves-hugo-santos-silva-monte-da-azarujinha",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1459291381/cs8yvedmfics7aq1nnyp/aboim-inglez-arquitectos-ricardo-goncalves-hugo-santos-silva-monte-da-azarujinha.jpg",
      "l": "Azaruja",
      "a": "aboim inglez arquitectos"
     }
@@ -1198,36 +1337,42 @@
     {
      "t": "JERONIMO HOUSE",
      "u": "https://divisare.com/projects/525530-stefano-riva-attilio-fiumarella-jeronimo-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1741009773/27da4ae2-0649-4aa8-889c-25e1bcc8f9b7/stefano-riva-attilio-fiumarella-jeronimo-house.jpg",
      "l": "Resende",
      "a": "Stefano Riva"
     },
     {
      "t": "Housing Building - Circunvalação I",
      "u": "https://divisare.com/projects/518930-caiano-morgado-arquitectos-attilio-fiumarella-housing-building-circunvalacao-i",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1733411239/11c8a3cc-0aad-477f-8feb-1050dc54d46b/caiano-morgado-arquitectos-attilio-fiumarella-housing-building-circunvalacao-i.jpg",
      "l": "Pedrouços, Maia",
      "a": "caiano morgado arquitectos"
     },
     {
      "t": "Casa da Volpe",
      "u": "https://divisare.com/projects/497228-marchi-architectes-attilio-fiumarella-casa-da-volpe",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1709137844/adbe34ad-4036-4c86-9599-29d1f126421a/marchi-architectes-attilio-fiumarella-casa-da-volpe.jpg",
      "l": "Alentejo",
      "a": "Marchi Architectes"
     },
     {
      "t": "1930 City Lodge",
      "u": "https://divisare.com/projects/266687-ren-ito-alessandro-pepe-attilio-fiumarella-1930-city-lodge",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/4629020/Ren-Pepe_1930-City-Lodge_01/ren-ito-alessandro-pepe-attilio-fiumarella-1930-city-lodge.jpg",
      "l": "Porto",
      "a": "Ren Ito e Alessandro Pepe"
     },
     {
      "t": "Casa Do Pinheiro",
      "u": "https://divisare.com/projects/225157-bernardo-amaral-attilio-fiumarella-casa-do-pinheiro",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/3737725/Bernardo-Amaral_Casa-do-Pinheiro02/bernardo-amaral-attilio-fiumarella-casa-do-pinheiro.jpg",
      "l": "Porto",
      "a": "Bernardo Amaral"
     },
     {
      "t": "Duas de Letra",
      "u": "https://divisare.com/projects/225155-bernardo-amaral-attilio-fiumarella-duas-de-letra",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/3737663/Bernardo-Amaral_Duas-de-Letra_02s/bernardo-amaral-attilio-fiumarella-duas-de-letra.jpg",
      "l": "Porto",
      "a": "Bernardo Amaral"
     }
@@ -1249,36 +1394,42 @@
     {
      "t": "Ramalde Sports Park",
      "u": "https://divisare.com/projects/549666-domitianus-arquitetura-ines-d-orey-ramalde-sports-park",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1769099624/63a04fdd-9fa2-4df8-8fc9-fd4fdb1515f3/domitianus-arquitetura-ines-d-orey-ramalde-sports-park.jpg",
      "l": "Porto",
      "a": "DOMITIANUS ARQUITETURA"
     },
     {
      "t": "D-A Studio  in Infante Santo  Avenue",
      "u": "https://divisare.com/projects/453913-domitianus-arquitetura-ines-d-orey-d-a-studio-in-infante-santo-avenue",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1642509236/ouvazg2py6qcwjshxyxu/domitianus-arquitetura-ines-d-orey-d-a-studio-in-infante-santo-avenue.jpg",
      "l": "Lisbon",
      "a": "DOMITIANUS ARQUITETURA"
     },
     {
      "t": "HMC_P198/19",
      "u": "https://divisare.com/projects/447407-philippe-meyer-architect-ines-d-orey-hmc_p198-19",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1631179472/cxepkhyopxduormdvjcd/philippe-meyer-architect-ines-d-orey-hmc_p198-19.jpg",
      "l": "Corsier, Suíça",
      "a": "Philippe Meyer Architect"
     },
     {
      "t": "Grândola´s Library and Municipal Archive",
      "u": "https://divisare.com/projects/443085-pedro-domingos-arquitectos-pedro-matos-gameiro-ines-d-orey-grandola-s-library-and-municipal-archive",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1622446717/vlucrhk6ellnw9ryfwcu/pedro-domingos-arquitectos-pedro-matos-gameiro-ines-d-orey-grandola-s-library-and-municipal-archive.jpg",
      "l": "Grândola",
      "a": "pedro domingos arquitectos e Pedro Matos Gameiro"
     },
     {
      "t": "HOUSE IN SANTA ISABEL",
      "u": "https://divisare.com/projects/437032-domitianus-arquitetura-ines-d-orey-house-in-santa-isabel",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1612456153/novzlrdmil2nqxcoycib/domitianus-arquitetura-ines-d-orey-house-in-santa-isabel.jpg",
      "l": "Lisbon",
      "a": "DOMITIANUS ARQUITETURA"
     },
     {
      "t": "CASA DRAGÃO",
      "u": "https://divisare.com/projects/367023-joao-paulo-loureiro-ines-d-orey-casa-dragao",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1506347288/qyzhwgltyvjy4meh43y0/joao-paulo-loureiro-ines-d-orey-casa-dragao.jpg",
      "l": "PORTO",
      "a": "JOÃO PAULO LOUREIRO"
     }
@@ -1300,35 +1451,41 @@
     {
      "t": "E336 Apartment",
      "u": "https://divisare.com/projects/438595-emontenegro-e336-apartment",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1619017251/zkhk0ohni61q1tpqkgpx/emontenegro-e336-apartment.jpg",
      "l": "Amadora"
     },
     {
      "t": "Freitas Reis Villa",
      "u": "https://divisare.com/projects/424858-commerzn-emontenegro-freitas-reis-villa",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1589309236/bssqfblx7kh5zlgfas8m/commerzn-emontenegro-freitas-reis-villa.jpg",
      "l": "Cascais",
      "a": "Commerzn"
     },
     {
      "t": "A Square in Summer",
      "u": "https://divisare.com/projects/415292-promontorio-francisco-nogueira-emontenegro-a-square-in-summer",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1571814560/dearpkttvtvfak0rkhat/promontorio-francisco-nogueira-emontenegro-a-square-in-summer.jpg",
      "l": "Lisbon",
      "a": "PROMONTORIO"
     },
     {
      "t": "SO HOUSE",
      "u": "https://divisare.com/projects/411127-phyd-arquitectura-emontenegro-so-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1563990806/gt5xzazyfirdfa1pa2op/phyd-arquitectura-emontenegro-so-house.jpg",
      "l": "Serra de Aire e Candeeiros",
      "a": "Phyd Arquitectura"
     },
     {
      "t": "Shepherd's House",
      "u": "https://divisare.com/projects/386901-linha-de-terra-architecture-emontenegro-shepherd-s-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1527588508/z4efcy8qfelvdbowotmx/linha-de-terra-architecture-emontenegro-shepherd-s-house.jpg",
      "l": "Torres Vedras",
      "a": "Linha de Terra Architecture"
     },
     {
      "t": "Apartment in Chiado",
      "u": "https://divisare.com/projects/365655-commerzn-emontenegro-apartment-in-chiado",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1504778692/klqm39yfxdbwmzqfsbso/commerzn-emontenegro-apartment-in-chiado.jpg",
      "l": "Lisboa",
      "a": "Commerzn"
     }
@@ -1350,36 +1507,42 @@
     {
      "t": "Tourist office and landscaping of Quinta do Aido",
      "u": "https://divisare.com/projects/268961-cg-lsc-pedro-lobo-tourist-office-and-landscaping-of-quinta-do-aido",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/4682501/cinfaes_4955/cg-lsc-pedro-lobo-tourist-office-and-landscaping-of-quinta-do-aido.jpg",
      "l": "Cinfães",
      "a": "CG+LSC"
     },
     {
      "t": "Living Porto",
      "u": "https://divisare.com/projects/165473-demm-arquitectura-pedro-lobo-living-porto",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2532731/dEMMlivingPorto_01/demm-arquitectura-pedro-lobo-living-porto.jpg",
      "l": "Porto",
      "a": "dEMM arquitectura"
     },
     {
      "t": "Living Foz",
      "u": "https://divisare.com/projects/165438-demm-arquitectura-pedro-lobo-living-foz",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2532333/demm_001/demm-arquitectura-pedro-lobo-living-foz.jpg",
      "l": "Porto",
      "a": "dEMM arquitectura"
     },
     {
      "t": "Mercado do Gado",
      "u": "https://divisare.com/projects/161404-carvalho-araujo-pedro-lobo-hugo-carvalho-araujo-mercado-do-gado",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2455102/Interior-0003/carvalho-araujo-pedro-lobo-hugo-carvalho-araujo-mercado-do-gado.jpg",
      "l": "Ponte de Lima",
      "a": "Carvalho Araújo"
     },
     {
      "t": "Galeria Mário Sequeira",
      "u": "https://divisare.com/projects/161401-carvalho-araujo-pedro-lobo-hugo-carvalho-araujo-galeria-mario-sequeira",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2455000/Exterior-2o/carvalho-araujo-pedro-lobo-hugo-carvalho-araujo-galeria-mario-sequeira.jpg",
      "l": "Braga",
      "a": "Carvalho Araújo"
     },
     {
      "t": "Externato Carvalho Araújo",
      "u": "https://divisare.com/projects/161398-carvalho-araujo-pedro-lobo-externato-carvalho-araujo",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2454892/Exterior-0003/carvalho-araujo-pedro-lobo-externato-carvalho-araujo.jpg",
      "l": "Braga",
      "a": "Carvalho Araújo"
     }
@@ -1401,36 +1564,42 @@
     {
      "t": "Photomaton Apartment",
      "u": "https://divisare.com/projects/457662-joao-carmo-simoes-jcs-photomaton-apartment",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1648146242/jumfbe1r0jcfro8xbtiu/joao-carmo-simoes-jcs-photomaton-apartment.jpg",
      "l": "Lisboa",
      "a": "João Carmo Simões"
     },
     {
      "t": "Beato 1904",
      "u": "https://divisare.com/projects/415284-promontorio-jcs-beato-1904",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1571812637/s4yy5jb4rdptfbhlffjk/promontorio-jcs-beato-1904.jpg",
      "l": "Lisbon",
      "a": "PROMONTORIO"
     },
     {
      "t": "House in Oeiras",
      "u": "https://divisare.com/projects/317630-pedro-domingos-arquitectos-jcs-house-in-oeiras",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1463092588/h3pgyj0milabbzkos7wf/pedro-domingos-arquitectos-jcs-house-in-oeiras.jpg",
      "l": "Oeiras",
      "a": "pedro domingos arquitectos"
     },
     {
      "t": "Lagarteiro Neighbourhood - Social housing building renovation",
      "u": "https://divisare.com/projects/322223-paulo-tormenta-pinto-jcs-lagarteiro-neighbourhood-social-housing-building-renovation",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1468432565/e4gbicp20qn5e95jcqzv/paulo-tormenta-pinto-jcs-lagarteiro-neighbourhood-social-housing-building-renovation.jpg",
      "l": "Porto",
      "a": "Paulo Tormenta Pinto"
     },
     {
      "t": "Lima Apartment",
      "u": "https://divisare.com/projects/318256-joao-carmo-simoes-jcs-lima-apartment",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1463740461/q30fclb1utdg0jd3igdg/joao-carmo-simoes-jcs-lima-apartment.jpg",
      "l": "Cascais",
      "a": "João Carmo Simões"
     },
     {
      "t": "Museu Nacional dos Coches",
      "u": "https://divisare.com/projects/318097-paulo-mendes-da-rocha-mmbb-arquitetos-bak-gordon-architects-jcs-fernando-guerra-fg-sg-museu-nacional-dos-coches",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1463659066/hncb28c8zmlxx6tr88ue/paulo-mendes-da-rocha-mmbb-arquitetos-bak-gordon-architects-jcs-fernando-guerra-fg-sg-museu-nacional-dos-coches.jpg",
      "l": "Lisboa",
      "a": "Paulo Mendes da Rocha, MMBB arquitetos e Bak Gordon Architects"
     }
@@ -1452,30 +1621,35 @@
     {
      "t": "RECUPERO DELLA CHIESA DI SAN FRANCESCO E CASA DELLA CULTURA",
      "u": "https://divisare.com/projects/168660-cannata-fernandes-marta-ferreira-luis-ferreira-alves-fotografia-joao-ferrand-recupero-della-chiesa-di-san-francesco-e-casa-della-cultura",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2595467/01/cannata-fernandes-marta-ferreira-luis-ferreira-alves-fotografia-joao-ferrand-recupero-della-chiesa-di-san-francesco-e-casa-della-cultura.jpg",
      "l": "Vinhais",
      "a": "Cannatà & Fernandes"
     },
     {
      "t": "CASA BARBOSA",
      "u": "https://divisare.com/projects/168675-cannata-fernandes-joao-ferrand-casa-barbosa",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2595871/00/cannata-fernandes-joao-ferrand-casa-barbosa.jpg",
      "l": "Matosinhos",
      "a": "Cannatà & Fernandes"
     },
     {
      "t": "Casa de Lavra",
      "u": "https://divisare.com/projects/122471-nuno-merino-rocha-joao-ferrand-casa-de-lavra",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/1771223/JFF62894/nuno-merino-rocha-joao-ferrand-casa-de-lavra.jpg",
      "l": "Matosinhos",
      "a": "Nuno Merino Rocha"
     },
     {
      "t": "Don Juan Gourmet",
      "u": "https://divisare.com/projects/122470-nuno-merino-rocha-joao-ferrand-don-juan-gourmet",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/1771094/JFF49824/nuno-merino-rocha-joao-ferrand-don-juan-gourmet.jpg",
      "l": "Leça da Palmeira, Porto",
      "a": "Nuno Merino Rocha"
     },
     {
      "t": "Conjunto de Habitações na Travessa de Salgueiros, Porto",
      "u": "https://divisare.com/projects/122292-carlos-veloso-joao-ferrand-conjunto-de-habitacoes-na-travessa-de-salgueiros-porto",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/1767301/JFFB104847/carlos-veloso-joao-ferrand-conjunto-de-habitacoes-na-travessa-de-salgueiros-porto.jpg",
      "l": "Porto",
      "a": "Carlos Veloso"
     }
@@ -1497,30 +1671,35 @@
     {
      "t": "FOUNDATION LIVRARIA LELLO",
      "u": "https://divisare.com/projects/502832-alvaro-siza-vieira-a-caixa-negra-filipe-braga-foundation-livraria-lello",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1716457545/f61df142-df20-42b5-8747-d4b0c87cc617/alvaro-siza-vieira-a-caixa-negra-filipe-braga-foundation-livraria-lello.jpg",
      "l": "Porto",
      "a": "Álvaro Siza Vieira"
     },
     {
      "t": "Serralves Pavilion",
      "u": "https://divisare.com/projects/365225-fahr-021-3-filipe-braga-serralves-pavilion",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1504191085/btw925nbgpsfb3yihc47/fahr-021-3-filipe-braga-serralves-pavilion.jpg",
      "l": "Porto",
      "a": "FAHR 021.3"
     },
     {
      "t": "Serralves Pavilion",
      "u": "https://divisare.com/projects/365223-ottotto-filipe-braga-serralves-pavilion",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1504190732/htt9s1sbutkmb0fmz3zc/ottotto-filipe-braga-serralves-pavilion.jpg",
      "l": "Porto",
      "a": "OTTOTTO"
     },
     {
      "t": "Serralves Pavilion",
      "u": "https://divisare.com/projects/365222-diogo-aguiar-filipe-braga-serralves-pavilion",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1504190229/kgbowqdsbygnx7p9dwv8/diogo-aguiar-filipe-braga-serralves-pavilion.jpg",
      "l": "Porto",
      "a": "Diogo Aguiar"
     },
     {
      "t": "Serralves Pavilion",
      "u": "https://divisare.com/projects/365217-depa-filipe-braga-jose-campos-serralves-pavilion",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1504188963/dd8z5dzeqipyzgd1jzuc/depa-filipe-braga-jose-campos-serralves-pavilion.jpg",
      "l": "Porto",
      "a": "depA"
     }
@@ -1542,36 +1721,42 @@
     {
      "t": "Parque Terra Nostra - Ticket Offices, Shop and Changing Rooms",
      "u": "https://divisare.com/projects/546207-pedro-mauricio-borges-paulo-lopes-vaz-alberto-placido-parque-terra-nostra-ticket-offices-shop-and-changing-rooms",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1764252109/6dee1afa-14b0-43ec-9523-e3768d1cb757/pedro-mauricio-borges-paulo-lopes-vaz-alberto-placido-parque-terra-nostra-ticket-offices-shop-and-changing-rooms.jpg",
      "l": "Furnas, São Miguel, Açores",
      "a": "Pedro Maurício Borges e Paulo Lopes Vaz"
     },
     {
      "t": "THE PINK HOUSE",
      "u": "https://divisare.com/projects/452729-pedro-mauricio-borges-alberto-placido-the-pink-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1697112733/9a97a4b7-595d-4ff7-a4b2-798c80171f3b/pedro-mauricio-borges-alberto-placido-the-pink-house.jpg",
      "l": "S. Miguel, Açores",
      "a": "Pedro Maurício Borges"
     },
     {
      "t": "Rehabilitation of an 18th Century Building, Porto",
      "u": "https://divisare.com/projects/156152-correia-ragazzi-arquitectos-alberto-placido-rehabilitation-of-an-18th-century-building-porto",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2355008/_DSC4836-_FINAL-a/correia-ragazzi-arquitectos-alberto-placido-rehabilitation-of-an-18th-century-building-porto.jpg",
      "l": "Porto",
      "a": "Correia/Ragazzi Arquitectos"
     },
     {
      "t": "EXACTUSENSU office",
      "u": "https://divisare.com/projects/156132-correia-ragazzi-arquitectos-alberto-placido-exactusensu-office",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2354476/EXACTUSENSO-office-1-meeting-room/correia-ragazzi-arquitectos-alberto-placido-exactusensu-office.jpg",
      "l": "Oporto",
      "a": "Correia/Ragazzi Arquitectos"
     },
     {
      "t": "Casa em Lousado",
      "u": "https://divisare.com/projects/156127-correia-ragazzi-arquitectos-marta-ferreira-luis-ferreira-alves-fotografia-alberto-placido-casa-em-lousado",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2354308/_DSC3917-Ea/correia-ragazzi-arquitectos-marta-ferreira-luis-ferreira-alves-fotografia-alberto-placido-casa-em-lousado.jpg",
      "l": "Lousado",
      "a": "Correia/Ragazzi Arquitectos"
     },
     {
      "t": "Pavilhão Multiusos Do Externato S. João Brito",
      "u": "https://divisare.com/projects/75456-correia-ragazzi-arquitectos-alberto-placido-pavilhao-multiusos-do-externato-s-joao-brito",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/1019601/escola01/correia-ragazzi-arquitectos-alberto-placido-pavilhao-multiusos-do-externato-s-joao-brito.jpg",
      "l": "Porto",
      "a": "Correia/Ragazzi Arquitectos"
     }
@@ -1593,24 +1778,28 @@
     {
      "t": "Carpintaria de São Lázaro",
      "u": "https://divisare.com/projects/413585-filipe-borges-de-macedo-nuno-almendra-carpintaria-de-sao-lazaro",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1568971506/bxxgaab5ybjmn8lbxn56/filipe-borges-de-macedo-nuno-almendra-carpintaria-de-sao-lazaro.jpg",
      "l": "Lisbon",
      "a": "Filipe Borges de Macedo"
     },
     {
      "t": "ADEGA 23",
      "u": "https://divisare.com/projects/384355-atelier-rua-nuno-almendra-adega-23",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1524247600/q5h61loe2nk9xq9fyf28/atelier-rua-nuno-almendra-adega-23.jpg",
      "l": "Sarnadas de Ródão",
      "a": "atelier RUA"
     },
     {
      "t": "House in Fátima",
      "u": "https://divisare.com/projects/381701-helena-botelho-studio-nuno-almendra-house-in-fatima",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1521018445/ukkg0mh55nkne2kjdnlc/helena-botelho-studio-nuno-almendra-house-in-fatima.jpg",
      "l": "Fátima",
      "a": "HELENA BOTELHO STUDIO"
     },
     {
      "t": "Praia do Estoril",
      "u": "https://divisare.com/projects/331640-jose-adriao-arquitectos-nuno-almendra-praia-do-estoril",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1480329574/uth63ttfiluytjc8trz9/jose-adriao-arquitectos-nuno-almendra-praia-do-estoril.jpg",
      "l": "Boa Vista Island, Cabo Verde",
      "a": "José Adrião Arquitectos"
     }
@@ -1631,24 +1820,28 @@
     {
      "t": "House of Filigree",
      "u": "https://divisare.com/projects/430628-nuno-graca-moura-ines-d-orey-carlos-albuquerque-castro-house-of-filigree",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1601389855/om41vhcfimtexgm6zyvw/nuno-graca-moura-ines-d-orey-carlos-albuquerque-castro-house-of-filigree.jpg",
      "l": "Porto",
      "a": "Nuno Graça Moura"
     },
     {
      "t": "L286",
      "u": "https://divisare.com/projects/261220-nuno-graca-moura-carlos-albuquerque-castro-l286",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/4516745/L286-13-2/nuno-graca-moura-carlos-albuquerque-castro-l286.jpg",
      "l": "Óbidos",
      "a": "Nuno Graça Moura"
     },
     {
      "t": "Rural House Refurbishment",
      "u": "https://divisare.com/projects/261028-nuno-graca-moura-carlos-albuquerque-castro-rural-house-refurbishment",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1528455465/ofeddcabqfmoxgbtukp4/nuno-graca-moura-carlos-albuquerque-castro-rural-house-refurbishment.jpg",
      "l": "VIdago",
      "a": "Nuno Graça Moura"
     },
     {
      "t": "Casa Rosa Hotel",
      "u": "https://divisare.com/projects/396564-nuno-graca-moura-carlos-albuquerque-castro-casa-rosa-hotel",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1537969594/rjxfylqcismhkylemdit/nuno-graca-moura-carlos-albuquerque-castro-casa-rosa-hotel.jpg",
      "l": "Porto",
      "a": "Nuno Graça Moura"
     }
@@ -1669,30 +1862,35 @@
     {
      "t": "FAMILY TOMB IN COIMBRA",
      "u": "https://divisare.com/projects/551868-comoco-arquitectos-frederico-martinho-family-tomb-in-coimbra",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1771845045/f53f535d-7896-424f-a2e6-acef1016eec6/comoco-arquitectos-frederico-martinho-family-tomb-in-coimbra.jpg",
      "l": "S. Martinho do Bispo",
      "a": "COMOCO arquitectos"
     },
     {
      "t": "HOUSE IN OLHÃO II",
      "u": "https://divisare.com/projects/548589-estudio-ods-frederico-martinho-house-in-olhao-ii",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1767882775/10c24fe2-8fd1-40b4-aa5b-b6a2ab9df124/estudio-ods-frederico-martinho-house-in-olhao-ii.jpg",
      "l": "Olhão",
      "a": "estudio ODS"
     },
     {
      "t": "Ladeirinha",
      "u": "https://divisare.com/projects/529038-experimental-frederico-martinho-francisco-ascensao-ladeirinha",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1744376671/d4fa814e-643b-42fa-87ef-614691c8b2b7/experimental-frederico-martinho-francisco-ascensao-ladeirinha.jpg",
      "l": "Fátima",
      "a": "EXPERIMENTAL"
     },
     {
      "t": "THREE EXPOSED CONCRETE FAÇADES",
      "u": "https://divisare.com/projects/490016-corpo-atelier-frederico-martinho-three-exposed-concrete-facades",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1699616292/f7287016-1d6e-41d5-a847-6a70d1b56b8e/corpo-atelier-frederico-martinho-three-exposed-concrete-facades.jpg",
      "l": "Faro",
      "a": "Corpo Atelier"
     },
     {
      "t": "FAÇADE FRAGMENTS INSIDE FAKE FAÇADES",
      "u": "https://divisare.com/projects/481872-corpo-atelier-frederico-martinho-facade-fragments-inside-fake-facades",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1687276451/952249fa-603f-4e82-bd11-a8a18fe032c5/corpo-atelier-frederico-martinho-facade-fragments-inside-fake-facades.jpg",
      "l": "Faro",
      "a": "Corpo Atelier"
     }
@@ -1714,30 +1912,35 @@
     {
      "t": "Pereiro Do Cha",
      "u": "https://divisare.com/projects/494238-valerio-olgiati-paulo-catrica-pereiro-do-cha",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1705482329/3916a00c-e4b5-4048-91a3-229667c6d20c/valerio-olgiati-paulo-catrica-pereiro-do-cha.jpg",
      "l": "Alentejo",
      "a": "Valerio Olgiati"
     },
     {
      "t": "CARNIVAL ARTS CENTRE",
      "u": "https://divisare.com/projects/460905-jose-neves-paulo-catrica-carnival-arts-centre",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1653575680/wkz86sx73ioavpvi8fj7/jose-neves-paulo-catrica-carnival-arts-centre.jpg",
      "l": "Lisbon",
      "a": "José Neves"
     },
     {
      "t": "E/C House",
      "u": "https://divisare.com/projects/279533-sami-arquitectos-paulo-catrica-e-c-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/4912009/SAMI-15/sami-arquitectos-paulo-catrica-e-c-house.jpg",
      "l": "São Miguel Arcanjo, Pico Island, Azores",
      "a": "SAMI - arquitectos"
     },
     {
      "t": "Granel",
      "u": "https://divisare.com/projects/367014-sami-arquitectos-paulo-catrica-granel",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1506339094/al5i9iie9md9slevcapg/sami-arquitectos-paulo-catrica-granel.jpg",
      "l": "Cais do Pico, Pico Island, Azores",
      "a": "SAMI - arquitectos"
     },
     {
      "t": "Casa Âncora",
      "u": "https://divisare.com/projects/366996-sami-arquitectos-paulo-catrica-casa-ancora",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1506331466/wlabi5lu0ydfucnyf02x/sami-arquitectos-paulo-catrica-casa-ancora.jpg",
      "l": "Cais do Pico, Pico Island, Azores",
      "a": "SAMI - arquitectos"
     }
@@ -1758,12 +1961,14 @@
     {
      "t": "FOUNDATION LIVRARIA LELLO",
      "u": "https://divisare.com/projects/502832-alvaro-siza-vieira-a-caixa-negra-filipe-braga-foundation-livraria-lello",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1716457545/f61df142-df20-42b5-8747-d4b0c87cc617/alvaro-siza-vieira-a-caixa-negra-filipe-braga-foundation-livraria-lello.jpg",
      "l": "Porto",
      "a": "Álvaro Siza Vieira"
     },
     {
      "t": "Supermercato",
      "u": "https://divisare.com/projects/112048-jose-fernando-goncalves-a-caixa-negra-supermercato",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/1584451/Supermercato__6__MDM/jose-fernando-goncalves-a-caixa-negra-supermercato.jpg",
      "l": "Vila Nova de Gaia",
      "a": "José Fernando Gonçalves"
     }
@@ -1784,35 +1989,41 @@
     {
      "t": "One day at the School",
      "u": "https://divisare.com/projects/382166-b720-fermin-vazquez-arquitectos-building-pictures-one-day-at-the-school",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1521575149/enpl0hrl0rbppo2od5lk/b720-fermin-vazquez-arquitectos-building-pictures-one-day-at-the-school.jpg",
      "l": "Barcelona, Espanha",
      "a": "b720 Fermín Vázquez Arquitectos"
     },
     {
      "t": "“From the infrastructure for basic services to the structure of open architecture”, Alejandro Aravena",
      "u": "https://divisare.com/projects/348611-summary-architects-tiago-casanova-building-pictures-from-the-infrastructure-for-basic-services-to-the-structure-of-open-architecture-alejandro-aravena",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1500048353/zuyuncpuphxxhy8zitc1/summary-architects-tiago-casanova-building-pictures-from-the-infrastructure-for-basic-services-to-the-structure-of-open-architecture-alejandro-aravena.jpg",
      "l": "venice, Itália",
      "a": "SUMMARY Architects"
     },
     {
      "t": "GOMOS #1",
      "u": "https://divisare.com/projects/347533-summary-architects-tiago-casanova-building-pictures-gomos-1",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1498817099/ficj4hxjkqs2lnrb64lz/summary-architects-tiago-casanova-building-pictures-gomos-1.jpg",
      "l": "Arouca",
      "a": "SUMMARY Architects"
     },
     {
      "t": "Ecocubo",
      "u": "https://divisare.com/projects/338991-building-pictures-ecocubo",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1488623562/iuguacsvpnc1hme6vvno/building-pictures-ecocubo.jpg",
      "l": "Vila Real"
     },
     {
      "t": "METAMORFOSE",
      "u": "https://divisare.com/projects/305782-fahr-021-3-fernando-guerra-fg-sg-building-pictures-metamorfose",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1450197289/ae7llzeuccfbz1jodrja/fahr-021-3-fernando-guerra-fg-sg-building-pictures-metamorfose.jpg",
      "l": "Oporto",
      "a": "FAHR 021.3"
     },
     {
      "t": "Fábrica das Palavras",
      "u": "https://divisare.com/projects/302847-building-pictures-fabrica-das-palavras",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1447177312/x6jg8udmywdgcmziayxs/building-pictures-fabrica-das-palavras.jpg",
      "l": "Vila Franca de Xira"
     }
    ]
@@ -1833,24 +2044,28 @@
     {
      "t": "DISTANT LIGHTS",
      "u": "https://divisare.com/projects/466120-bureau-daniel-zamarbide-carine-pimenta-galliane-zamarbide-nuno-cera-distant-lights",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1662996099/qn3bhvyprcmmyfxn7tla/bureau-daniel-zamarbide-carine-pimenta-galliane-zamarbide-nuno-cera-distant-lights.jpg",
      "l": "Sines",
      "a": "BUREAU (Daniel Zamarbide, Carine Pimenta, Galliane Zamarbide)"
     },
     {
      "t": "The Pressure of Light",
      "u": "https://divisare.com/projects/367059-alvaro-siza-vieira-nuno-cera-the-pressure-of-light",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1506411393/qjntxvk7xi8jfl8othss/alvaro-siza-vieira-nuno-cera-the-pressure-of-light.jpg",
      "l": "Aveiro",
      "a": "Álvaro Siza Vieira"
     },
     {
      "t": "Tomba Brion",
      "u": "https://divisare.com/projects/305967-carlo-scarpa-nuno-cera-tomba-brion",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1450361224/ckzuvgecq5wklktdnnti/carlo-scarpa-nuno-cera-tomba-brion.jpg",
      "l": "San Vito d´Altivole, Itália",
      "a": "Carlo Scarpa"
     },
     {
      "t": "Cimitero di San Cataldo",
      "u": "https://divisare.com/projects/246125-aldo-rossi-nuno-cera-andrea-pirisi-cimitero-di-san-cataldo",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/5083463/SanCataldo11lg2---2011-12-20/aldo-rossi-nuno-cera-andrea-pirisi-cimitero-di-san-cataldo.jpg",
      "l": "Modena, Itália",
      "a": "Aldo Rossi"
     }
@@ -1871,24 +2086,28 @@
     {
      "t": "Convento do Beato Residential Complex",
      "u": "https://divisare.com/projects/554166-risco-carolina-delgado-convento-do-beato-residential-complex",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1774284134/c2b5c917-f779-4b2d-8344-248b70ccca04/risco-carolina-delgado-convento-do-beato-residential-complex.jpg",
      "l": "Lisboa",
      "a": "RISCO"
     },
     {
      "t": "Beato Convent Events Centre",
      "u": "https://divisare.com/projects/471651-risco-carolina-delgado-beato-convent-events-centre",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1671530123/v20qqyhdbfmabtvzlfht/risco-carolina-delgado-beato-convent-events-centre.jpg",
      "l": "Lisboa",
      "a": "RISCO"
     },
     {
      "t": "FLAT REFURBISHMENT IN CHIADO, LISBON",
      "u": "https://divisare.com/projects/396574-marta-sequeira-pedro-matos-gameiro-carolina-delgado-flat-refurbishment-in-chiado-lisbon",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1537985510/qagdrdqrc4xhswn0ckxc/marta-sequeira-pedro-matos-gameiro-carolina-delgado-flat-refurbishment-in-chiado-lisbon.jpg",
      "l": "Lisbon",
      "a": "Marta Sequeira e Pedro Matos Gameiro"
     },
     {
      "t": "Hotel Monte Palace",
      "u": "https://divisare.com/projects/394641-olivier-clement-cacoub-carolina-delgado-hotel-monte-palace",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1537229597/qnrbugnoop4cqjdnoast/olivier-clement-cacoub-carolina-delgado-hotel-monte-palace.jpg",
      "l": "São Miguel",
      "a": "Olivier-Clément Cacoub"
     }
@@ -1909,24 +2128,28 @@
     {
      "t": "Loures Riverfront",
      "u": "https://divisare.com/projects/536791-topiaris-artur-carvalho-joao-guimaraes-loures-riverfront",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1753183365/60eae9e3-c84f-4f9b-9020-ecf86538e701/topiaris-artur-carvalho-joao-guimaraes-loures-riverfront.jpg",
      "l": "Lisbon",
      "a": "Topiaris"
     },
     {
      "t": "Building in Rua de São Marçal",
      "u": "https://divisare.com/projects/424015-sia-arquitectura-joao-guimaraes-building-in-rua-de-sao-marcal",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1587486283/u8nhheuwdyux1ozy5mga/sia-arquitectura-joao-guimaraes-building-in-rua-de-sao-marcal.jpg",
      "l": "Lisbon",
      "a": "SIA arquitectura"
     },
     {
      "t": "Travessa dos Pentes",
      "u": "https://divisare.com/projects/415289-promontorio-joao-guimaraes-travessa-dos-pentes",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1571813665/vy04jcaxv9mmo74xlau5/promontorio-joao-guimaraes-travessa-dos-pentes.jpg",
      "l": "Lisbon",
      "a": "PROMONTORIO"
     },
     {
      "t": "House 3000",
      "u": "https://divisare.com/projects/395545-rebelo-de-andrade-joao-guimaraes-house-3000",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1536917778/mmr7l6idywwolaha8thv/rebelo-de-andrade-joao-guimaraes-house-3000.jpg",
      "l": "Alcácer do Sal",
      "a": "Rebelo de Andrade"
     }
@@ -1948,18 +2171,21 @@
     {
      "t": "MUDAC and Elysee Building",
      "u": "https://divisare.com/projects/451702-manuel-aires-mateus-paulo-dos-sousa-mudac-and-elysee-building",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1638550974/gzz7flnavexghddd3xme/manuel-aires-mateus-paulo-dos-sousa-mudac-and-elysee-building.jpg",
      "l": "Lausanne, Suíça",
      "a": "Manuel Aires Mateus"
     },
     {
      "t": "Jining art museum",
      "u": "https://divisare.com/projects/420493-ryue-nishizawa-paulo-dos-sousa-jining-art-museum",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1580922438/tpeo6xdyyxenvj2nfsmq/ryue-nishizawa-paulo-dos-sousa-jining-art-museum.jpg",
      "l": "Jining, China",
      "a": "Ryue Nishizawa"
     },
     {
      "t": "Showroom Revigrés",
      "u": "https://divisare.com/projects/348382-alvaro-siza-vieira-paulo-dos-sousa-showroom-revigres",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1499869917/rkq7mu2hy4xoo7ygh68y/alvaro-siza-vieira-paulo-dos-sousa-showroom-revigres.jpg",
      "l": "Águeda",
      "a": "Álvaro Siza Vieira"
     }
@@ -1980,6 +2206,7 @@
     {
      "t": "CASA DA VOLTA",
      "u": "https://divisare.com/projects/446957-joao-cravo-promontorio-luis-viegas-alexandre-ramos-frame-fotografia-casa-da-volta",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1630324158/rpl7sdpomye6ww7inhmz/joao-cravo-promontorio-luis-viegas-alexandre-ramos-frame-fotografia-casa-da-volta.jpg",
      "l": "Grândola",
      "a": "Joao Cravo e PROMONTORIO"
     }
@@ -2000,6 +2227,7 @@
     {
      "t": "CASA DA VOLTA",
      "u": "https://divisare.com/projects/446957-joao-cravo-promontorio-luis-viegas-alexandre-ramos-frame-fotografia-casa-da-volta",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1630324158/rpl7sdpomye6ww7inhmz/joao-cravo-promontorio-luis-viegas-alexandre-ramos-frame-fotografia-casa-da-volta.jpg",
      "l": "Grândola",
      "a": "Joao Cravo e PROMONTORIO"
     }
@@ -2021,6 +2249,7 @@
     {
      "t": "Nakagin Capsule Tower. 1972",
      "u": "https://divisare.com/projects/17032-kisho-kurokawa-architect-and-associates-fala-nakagin-capsule-tower-1972",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1473757593/sbzisfwttkeim8e5pwa0/kisho-kurokawa-architect-and-associates-fala-nakagin-capsule-tower-1972.jpg",
      "l": "Tokyo, Japão",
      "a": "Kisho Kurokawa Architect And Associates"
     }
@@ -2041,12 +2270,14 @@
     {
      "t": "INBETWEEN PAVILION",
      "u": "https://divisare.com/projects/519531-pontoatelier-mariana-lopes-inbetween-pavilion",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1734004357/82130631-1cd8-454a-ac7d-d966f45dbc8b/pontoatelier-mariana-lopes-inbetween-pavilion.jpg",
      "l": "São Miguel Island",
      "a": "pontoatelier"
     },
     {
      "t": "VILA VENUS SOL",
      "u": "https://divisare.com/projects/491075-com-o-mariana-lopes-vila-venus-sol",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1700842885/38a18149-ec0e-476a-be5e-524d66fdeebb/com-o-mariana-lopes-vila-venus-sol.jpg",
      "l": "Caniço de Baixo",
      "a": "COM/O"
     }
@@ -2068,18 +2299,21 @@
     {
      "t": "a house for a bird",
      "u": "https://divisare.com/projects/292124-fala-flavio-pires-a-house-for-a-bird",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1460836417/l3hzshlhaztyo2bm0bcn/fala-flavio-pires-a-house-for-a-bird.jpg",
      "l": "Piacenza, Itália",
      "a": "Fala"
     },
     {
      "t": "Real Estate Store",
      "u": "https://divisare.com/projects/304915-fala-flavio-pires-real-estate-store",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1449398081/xsswxhhbjzqwgfgp4ch9/fala-flavio-pires-real-estate-store.jpg",
      "l": "Porto",
      "a": "Fala"
     },
     {
      "t": "Flagship Store",
      "u": "https://divisare.com/projects/292123-fala-flavio-pires-flagship-store",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/5181042/103_website_b4_7/fala-flavio-pires-flagship-store.jpg",
      "l": "porto",
      "a": "Fala"
     }
@@ -2100,6 +2334,7 @@
     {
      "t": "House of many faces",
      "u": "https://divisare.com/projects/495486-fala-atelier-rory-gardiner-francisco-ascensao-matilde-viegas-giulietta-margot-house-of-many-faces",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1707129647/a34a76b1-4592-4d15-a5ee-6e2c5c5e0ad8/fala-atelier-rory-gardiner-francisco-ascensao-matilde-viegas-giulietta-margot-house-of-many-faces.jpg",
      "l": "Porto",
      "a": "Fala Atelier"
     }
@@ -2120,6 +2355,7 @@
     {
      "t": "CASA TREVO",
      "u": "https://divisare.com/projects/430760-double-o-fabio-cunha-casa-trevo",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1601564850/rhfozauk6jjdapqcg9fw/double-o-fabio-cunha-casa-trevo.jpg",
      "l": "Aroeira",
      "a": "DOUBLE (O)"
     }
@@ -2141,6 +2377,7 @@
     {
      "t": "Casa Fernão Magalhães",
      "u": "https://divisare.com/projects/320345-alessandro-pepe-ren-ito-miguel-coelho-casa-fernao-magalhaes",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1466089170/kqqnoowygq2x31zxjn3y/alessandro-pepe-ren-ito-miguel-coelho-casa-fernao-magalhaes.jpg",
      "l": "Porto",
      "a": "Alessandro Pepe e Ren Ito"
     }
@@ -2162,12 +2399,14 @@
     {
      "t": "Performative Bond",
      "u": "https://divisare.com/projects/397729-martins-architecture-office-nudo-performative-bond",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1539178780/jzstie38agdhqeq8nblx/martins-architecture-office-nudo-performative-bond.jpg",
      "l": "Braga",
      "a": "MARTINS ARCHITECTURE OFFICE"
     },
     {
      "t": "Quartéis de Santa Justa",
      "u": "https://divisare.com/projects/348370-carvalho-araujo-nudo-quarteis-de-santa-justa",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1499852273/gkq4tcuaudpheendd8ka/carvalho-araujo-nudo-quarteis-de-santa-justa.jpg",
      "l": "Ponte de Lima",
      "a": "Carvalho Araújo"
     }
@@ -2188,12 +2427,14 @@
     {
      "t": "doze casas",
      "u": "https://divisare.com/projects/340245-murmuro-pedro-nuno-pacheco-doze-casas",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1490099731/hmytccoj2qm1z4bli1cw/murmuro-pedro-nuno-pacheco-doze-casas.jpg",
      "l": "Braga",
      "a": "murmuro"
     },
     {
      "t": "colégio dos plátanos",
      "u": "https://divisare.com/projects/340246-murmuro-pedro-nuno-pacheco-colegio-dos-platanos",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1510131202/jmf6a3afbxgafegomtfr/murmuro-pedro-nuno-pacheco-colegio-dos-platanos.jpg",
      "l": "Sintra",
      "a": "murmuro"
     }
@@ -2215,6 +2456,7 @@
     {
      "t": "Rua da Torrinha",
      "u": "https://divisare.com/projects/333336-sofia-granjo-a-caixa-negra-rua-da-torrinha",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1482149113/wgpziq97y8fkcslhhhzp/sofia-granjo-a-caixa-negra-rua-da-torrinha.jpg",
      "l": "Porto",
      "a": "Sofia Granjo"
     }
@@ -2235,12 +2477,14 @@
     {
      "t": "SETE DE BICO",
      "u": "https://divisare.com/projects/468744-fahr-021-3-filipa-frois-almeida-sete-de-bico",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1667319583/cx1apcvkeoidared4dol/fahr-021-3-filipa-frois-almeida-sete-de-bico.jpg",
      "l": "Vilares",
      "a": "FAHR 021.3"
     },
     {
      "t": "THE TOWER",
      "u": "https://divisare.com/projects/423161-still-urban-design-miguel-seabra-filipa-frois-almeida-the-tower",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1585577186/zekagjryqulnd3zsbxpj/still-urban-design-miguel-seabra-filipa-frois-almeida-the-tower.jpg",
      "l": "Monção",
      "a": "STILL urban design e Miguel Seabra"
     }
@@ -2261,6 +2505,7 @@
     {
      "t": "Loft em Marvila",
      "u": "https://divisare.com/projects/437778-ra-tr-arquitectos-rui-cavaleiro-loft-em-marvila",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1613659454/hv2v8imvscp925kgbzc6/ra-tr-arquitectos-rui-cavaleiro-loft-em-marvila.jpg",
      "l": "Lisbon",
      "a": "RA+TR arquitectos"
     }
@@ -2282,6 +2527,7 @@
     {
      "t": "Casas Caiadas",
      "u": "https://divisare.com/projects/297642-pereira-miguel-arquitectos-fernando-guerra-fg-sg-rute-raposo-casas-caiadas",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1441645347/idlaqnedihjifl2zvufx/pereira-miguel-arquitectos-fernando-guerra-fg-sg-rute-raposo-casas-caiadas.jpg",
      "l": "Arraiolos",
      "a": "Pereira Miguel Arquitectos"
     }
@@ -2302,6 +2548,7 @@
     {
      "t": "CAM - CENTRO DE ARTE MODERNA GULBENKIAN",
      "u": "https://divisare.com/projects/515101-kengo-kuma-and-associates-ooda-vdla-pedro-cardigo-cam-centro-de-arte-moderna-gulbenkian",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1729692331/a51e9cf3-6647-4fed-9783-34ffea8e24a0/kengo-kuma-and-associates-ooda-vdla-pedro-cardigo-cam-centro-de-arte-moderna-gulbenkian.jpg",
      "l": "Lisbon",
      "a": "KENGO KUMA AND ASSOCIATES 隈研吾建築都市設計事務所, OODA e VDLA"
     }
@@ -2322,12 +2569,14 @@
     {
      "t": "Weekend house in Odeceixe",
      "u": "https://divisare.com/projects/418195-estudio-ods-ricardo-santos-weekend-house-in-odeceixe",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1576600582/xpttlq9v0fv5nygwylta/estudio-ods-ricardo-santos-weekend-house-in-odeceixe.jpg",
      "l": "Odeceixe",
      "a": "estudio ODS"
     },
     {
      "t": "House in Goldra",
      "u": "https://divisare.com/projects/415183-estudio-ods-ricardo-santos-house-in-goldra",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1571652873/vwqzidea5z5oyh87djh5/estudio-ods-ricardo-santos-house-in-goldra.jpg",
      "l": "Goldra",
      "a": "estudio ODS"
     }
@@ -2348,6 +2597,7 @@
     {
      "t": "House renovation in Ovar",
      "u": "https://divisare.com/projects/499360-nelson-joaquim-leite-de-resende-tripe-house-renovation-in-ovar",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1712043101/bef5cf22-248a-41a7-aa23-0a0161bb8d92/nelson-joaquim-leite-de-resende-tripe-house-renovation-in-ovar.jpg",
      "l": "Ovar",
      "a": "Nelson Joaquim Leite de Resende"
     }
@@ -2369,12 +2619,14 @@
     {
      "t": "Casa do Quarteirão",
      "u": "https://divisare.com/projects/332350-orizzontale-rui-soares-casa-do-quarteirao",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1481014584/kyluokqxxdx5qgjl7sbu/orizzontale-rui-soares-casa-do-quarteirao.jpg",
      "l": "Ponta Delgada",
      "a": "Orizzontale"
     },
     {
      "t": "Two Manifolds",
      "u": "https://divisare.com/projects/330101-nuno-pimenta-rui-soares-two-manifolds",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1478692394/c4pi06dhabdnxrushrqj/nuno-pimenta-rui-soares-two-manifolds.jpg",
      "l": "Santa Clara",
      "a": "Nuno Pimenta"
     }
@@ -2396,6 +2648,7 @@
     {
      "t": "FAZENDA STA. IZABEL",
      "u": "https://divisare.com/projects/347480-bernardes-arquitetura-jacobsen-arquitetura-ike-ferreira-fazenda-sta-izabel",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1498751964/pmwuglmxqzislmwhrkue/bernardes-arquitetura-jacobsen-arquitetura-ike-ferreira-fazenda-sta-izabel.jpg",
      "l": "Ibiuna, Brasil",
      "a": "Bernardes Arquitetura e Jacobsen Arquitetura"
     }
@@ -2417,6 +2670,7 @@
     {
      "t": "Pista Ciclabile Cais do Sodre - Bélem",
      "u": "https://divisare.com/projects/111250-p06-atelier-global-arquitectura-paisagista-joao-silveira-ramos-pista-ciclabile-cais-do-sodre-belem",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/1628280/4-ciclovia/p06-atelier-global-arquitectura-paisagista-joao-silveira-ramos-pista-ciclabile-cais-do-sodre-belem.jpg",
      "l": "Lisbon",
      "a": "P06 Atelier e global arquitectura paisagista"
     }
@@ -2437,6 +2691,7 @@
     {
      "t": "ALBERTO",
      "u": "https://divisare.com/projects/458304-matthias-ballestrem-atelier-jqts-joao-barata-alberto",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1649264476/wrpagkabctzuu8oa6isc/matthias-ballestrem-atelier-jqts-joao-barata-alberto.jpg",
      "l": "MINDE",
      "a": "Matthias Ballestrem e ATELIER JQTS"
     }
@@ -2458,6 +2713,7 @@
     {
      "t": "Tea House, Montemor-o-Velho Castle",
      "u": "https://divisare.com/projects/301569-joao-mendes-ribeiro-edgar-martins-tea-house-montemor-o-velho-castle",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1445882579/bqnx2sklu7shqzqh2uqw/joao-mendes-ribeiro-edgar-martins-tea-house-montemor-o-velho-castle.jpg",
      "l": "Montemor-o-Velho",
      "a": "João Mendes Ribeiro"
     }
@@ -2478,6 +2734,7 @@
     {
      "t": "Bioclimatic House",
      "u": "https://divisare.com/projects/501756-utopia-arquitectura-e-engenharia-ricardo-cruz-bioclimatic-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1715169352/b8bdd3a6-0808-4b46-89f9-9ee2b0e9d011/utopia-arquitectura-e-engenharia-ricardo-cruz-bioclimatic-house.jpg",
      "l": "Parada",
      "a": "Utopia - Arquitectura e Engenharia"
     }
@@ -2498,6 +2755,7 @@
     {
      "t": "Loures Riverfront",
      "u": "https://divisare.com/projects/536791-topiaris-artur-carvalho-joao-guimaraes-loures-riverfront",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1753183365/60eae9e3-c84f-4f9b-9020-ecf86538e701/topiaris-artur-carvalho-joao-guimaraes-loures-riverfront.jpg",
      "l": "Lisbon",
      "a": "Topiaris"
     }
@@ -2519,6 +2777,7 @@
     {
      "t": "Adega dos Canários",
      "u": "https://divisare.com/projects/255311-ternullomelo-architects-pedro-sadio-photography-adega-dos-canarios",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/4391592/10/ternullomelo-architects-pedro-sadio-photography-adega-dos-canarios.jpg",
      "l": "Lisbon",
      "a": "TERNULLOMELO ARCHITECTS"
     }
@@ -2539,6 +2798,7 @@
     {
      "t": "Laboratories from Matilde Rosa Araújo Basic and Secondary School",
      "u": "https://divisare.com/projects/459951-ggll-atelier-jm-figueiredo-laboratories-from-matilde-rosa-araujo-basic-and-secondary-school",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1652115226/dqi4zrjxkn2tr6b19dos/ggll-atelier-jm-figueiredo-laboratories-from-matilde-rosa-araujo-basic-and-secondary-school.jpg",
      "l": "São Domingos de Rana",
      "a": "GGLL atelier"
     }
@@ -2560,6 +2820,7 @@
     {
      "t": "Petit Cabanon Café",
      "u": "https://divisare.com/projects/139782-ternullomelo-architects-pieter-bostoen-petit-cabanon-cafe",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2059629/01/ternullomelo-architects-pieter-bostoen-petit-cabanon-cafe.jpg",
      "l": "Lisbon",
      "a": "TERNULLOMELO ARCHITECTS"
     }
@@ -2581,6 +2842,7 @@
     {
      "t": "Refuge Pavilion",
      "u": "https://divisare.com/projects/17774-francisco-portugal-e-gomes-marta-ferreira-luis-ferreira-alves-fotografia-jorge-garcia-pereira-refuge-pavilion",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/561062/990462952/francisco-portugal-e-gomes-marta-ferreira-luis-ferreira-alves-fotografia-jorge-garcia-pereira-refuge-pavilion.jpg",
      "l": "Santiago",
      "a": "Francisco Portugal e Gomes"
     }
@@ -2602,6 +2864,7 @@
     {
      "t": "RESTAURANT + HOUSE OF TEA",
      "u": "https://divisare.com/projects/125764-francisco-portugal-e-gomes-fernando-gabriel-restaurant-house-of-tea",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/1825566/Restaurant_House-of-Tea-D--sections/francisco-portugal-e-gomes-fernando-gabriel-restaurant-house-of-tea.jpg",
      "l": "Porto",
      "a": "Francisco Portugal e Gomes"
     }
@@ -2623,6 +2886,7 @@
     {
      "t": "Casa Negro Y Mila",
      "u": "https://divisare.com/projects/18066-rozana-montiel-dante-busquets-pedro-rosenbluth-casa-negro-y-mila",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/577921/486382706/rozana-montiel-dante-busquets-pedro-rosenbluth-casa-negro-y-mila.jpg",
      "l": "Mexico city, México",
      "a": "Rozana Montiel"
     }
@@ -2643,6 +2907,7 @@
     {
      "t": "Centro de Arte Alberto Carneiro",
      "u": "https://divisare.com/projects/457406-nuno-pinto-gcarq-centro-de-arte-alberto-carneiro",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1647865088/c5wp7uqpwkicweu39iak/nuno-pinto-gcarq-centro-de-arte-alberto-carneiro.jpg",
      "l": "Santo Tirso",
      "a": "Nuno Pinto"
     }
@@ -2663,6 +2928,7 @@
     {
      "t": "Oporto Anselmo Apartments",
      "u": "https://divisare.com/projects/449049-arquitectos-aliados-alexander-bogorodskiy-architectural-photography-fernando-fernandes-oporto-anselmo-apartments",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1634206337/iqqfh2zpdbkfkvf2fg77/arquitectos-aliados-alexander-bogorodskiy-architectural-photography-fernando-fernandes-oporto-anselmo-apartments.jpg",
      "l": "Oporto",
      "a": "Arquitectos Aliados"
     }
@@ -2684,6 +2950,7 @@
     {
      "t": "CAS studio",
      "u": "https://divisare.com/projects/369755-cas-studio-jose-f-costa-cas-studio",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1509376654/peteqbtzelhhfhmycpjt/cas-studio-jose-f-costa-cas-studio.jpg",
      "l": "Lisbon",
      "a": "CAS Studio"
     }
@@ -2705,6 +2972,7 @@
     {
      "t": "Praça Nova do Castelo de São Jorge",
      "u": "https://divisare.com/projects/143424-joao-luis-carrilho-da-graca-global-arquitectura-paisagista-duarte-belo-fernando-guerra-fg-sg-praca-nova-do-castelo-de-sao-jorge",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/2361776/1/joao-luis-carrilho-da-graca-global-arquitectura-paisagista-duarte-belo-fernando-guerra-fg-sg-praca-nova-do-castelo-de-sao-jorge.jpg",
      "l": "Lisbon",
      "a": "joão luís carrilho da graça e global arquitectura paisagista"
     }
@@ -2725,6 +2993,7 @@
     {
      "t": "Rua de Bitarães",
      "u": "https://divisare.com/projects/507240-westudio-marcos-a-sousa-rua-de-bitaraes",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1720785021/cda96764-f763-40b3-9edf-c4d039bd218a/westudio-marcos-a-sousa-rua-de-bitaraes.jpg",
      "l": "Porto",
      "a": "WeStudio"
     }
@@ -2745,12 +3014,14 @@
     {
      "t": "Kinematix",
      "u": "https://divisare.com/projects/289827-likearchitects-dinis-sottomayor-kinematix",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/5127977/1/likearchitects-dinis-sottomayor-kinematix.jpg",
      "l": "Porto",
      "a": "LIKEarchitects"
     },
     {
      "t": "Fountain Hacks",
      "u": "https://divisare.com/projects/289546-likearchitects-dinis-sottomayor-andreia-garcia-fountain-hacks",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/5119745/barbecue5-%C2%A9Andreia-Garcia/likearchitects-dinis-sottomayor-andreia-garcia-fountain-hacks.jpg",
      "l": "Guimarães",
      "a": "LIKEarchitects"
     }
@@ -2772,12 +3043,14 @@
     {
      "t": "Constell.ation II",
      "u": "https://divisare.com/projects/289866-likearchitects-andreia-garcia-constell-ation-ii",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/5128833/1/likearchitects-andreia-garcia-constell-ation-ii.jpg",
      "l": "Amsterdam, Países Baixos",
      "a": "LIKEarchitects"
     },
     {
      "t": "Fountain Hacks",
      "u": "https://divisare.com/projects/289546-likearchitects-dinis-sottomayor-andreia-garcia-fountain-hacks",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/5119745/barbecue5-%C2%A9Andreia-Garcia/likearchitects-dinis-sottomayor-andreia-garcia-fountain-hacks.jpg",
      "l": "Guimarães",
      "a": "LIKEarchitects"
     }
@@ -2799,6 +3072,7 @@
     {
      "t": "Campo de Ourique",
      "u": "https://divisare.com/projects/195634-jose-adriao-arquitectos-enric-vives-rubio-campo-de-ourique",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/3120032/03/jose-adriao-arquitectos-enric-vives-rubio-campo-de-ourique.jpg",
      "l": "Lisboa",
      "a": "José Adrião Arquitectos"
     }
@@ -2820,6 +3094,7 @@
     {
      "t": "Ampliação e Conservação do Cemitério de Sendim No 2 - Tanatório",
      "u": "https://divisare.com/projects/205043-luisa-valente-rui-correia-ampliacao-e-conservacao-do-cemiterio-de-sendim-no-2-tanatorio",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/3317697/00-3/luisa-valente-rui-correia-ampliacao-e-conservacao-do-cemiterio-de-sendim-no-2-tanatorio.jpg",
      "l": "Matosinhos",
      "a": "Luísa Valente"
     }
@@ -2840,6 +3115,7 @@
     {
      "t": "Bairro Operário House",
      "u": "https://divisare.com/projects/451805-taep-aap-estudio-peso-bairro-operario-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1638799224/veyemvbuigpr2ctmfflb/taep-aap-estudio-peso-bairro-operario-house.jpg",
      "l": "Lagos",
      "a": "TAEP+AAP"
     }
@@ -2861,6 +3137,7 @@
     {
      "t": "CASA DAS ESTACAS",
      "u": "https://divisare.com/projects/290604-atelier-rua-ana-tome-miguel-manso-casa-das-estacas",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/5146486/_LM_Estacas_20140522_0349/atelier-rua-ana-tome-miguel-manso-casa-das-estacas.jpg",
      "l": "LISBON",
      "a": "atelier RUA e ana tome"
     }
@@ -2882,6 +3159,7 @@
     {
      "t": "Water Tank - Luz Village",
      "u": "https://divisare.com/projects/289525-helder-sousa-water-tank-luz-village",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/5119275/01/helder-sousa-water-tank-luz-village.jpg",
      "l": "Nova Aldeia da Luz"
     }
    ]
@@ -2902,6 +3180,7 @@
     {
      "t": "Casa/Atelier Rua do Almada",
      "u": "https://divisare.com/projects/271453-cristina-campilho-ines-guedes-casa-atelier-rua-do-almada",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/4736515/1-2-dia/cristina-campilho-ines-guedes-casa-atelier-rua-do-almada.jpg",
      "l": "Porto",
      "a": "Cristina Campilho"
     }
@@ -2923,6 +3202,7 @@
     {
      "t": "Observatory",
      "u": "https://divisare.com/projects/369893-machado-costa-celia-gomes-vasco-neves-observatory",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1509477937/hthiacuqlhkjcbwlrznh/machado-costa-celia-gomes-vasco-neves-observatory.jpg",
      "l": "Aveiro",
      "a": "Machado Costa e Célia Gomes"
     }
@@ -2944,6 +3224,7 @@
     {
      "t": "Apartment in Lisbon",
      "u": "https://divisare.com/projects/383399-angela-marquito-nuno-pereira-apartment-in-lisbon",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1523023986/pgipsr48s5m9cvf2xdfq/angela-marquito-nuno-pereira-apartment-in-lisbon.jpg",
      "l": "Lisboa",
      "a": "Angela Marquito"
     }
@@ -2964,6 +3245,7 @@
     {
      "t": "Centro Niemeyer",
      "u": "https://divisare.com/projects/568747-oscar-niemeyer-helder-oliveira-centro-niemeyer",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1788962391/f4e477d9-f847-4b40-a094-892326d321a2/oscar-niemeyer-helder-oliveira-centro-niemeyer.jpg",
      "l": "Avilés, Espanha",
      "a": "Oscar Niemeyer"
     }
@@ -2985,6 +3267,7 @@
     {
      "t": "Formosa Street Apartment",
      "u": "https://divisare.com/projects/337193-franca-arquitectura-lda-antonio-chaves-formosa-street-apartment",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1486724834/ld8z1x0vrswubjk41hcy/franca-arquitectura-lda-antonio-chaves-formosa-street-apartment.jpg",
      "l": "Porto",
      "a": "Franca Arquitectura Lda"
     }
@@ -3006,6 +3289,7 @@
     {
      "t": "New generosity, Nordic Pavilion, 16th Venice architecture Biennale",
      "u": "https://divisare.com/projects/389429-lunden-architecture-oy-andrea-ferro-photography-new-generosity-nordic-pavilion-16th-venice-architecture-biennale",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1529686831/pcbhiag4ee7is3jgoyvh/lunden-architecture-oy-andrea-ferro-photography-new-generosity-nordic-pavilion-16th-venice-architecture-biennale.jpg",
      "l": "Venezia, Itália",
      "a": "Lunden Architecture Oy"
     }
@@ -3026,6 +3310,7 @@
     {
      "t": "Chã House",
      "u": "https://divisare.com/projects/393247-krafna-fabio-verissimo-cha-house",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1534414839/qlxwjbdd1swjumjcpnsk/krafna-fabio-verissimo-cha-house.jpg",
      "l": "Oliveira de Azeméis",
      "a": "Krafna"
     }
@@ -3046,6 +3331,7 @@
     {
      "t": "Cork",
      "u": "https://divisare.com/projects/74480-arquitectos-anonimos-paulo-teodosio-ivo-canelas-cork",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/1005784/cork1/arquitectos-anonimos-paulo-teodosio-ivo-canelas-cork.jpg",
      "l": "Esposende",
      "a": "Arquitectos Anónimos ® e Paulo Teodósio"
     }
@@ -3066,6 +3352,7 @@
     {
      "t": "POC Santa Luzia",
      "u": "https://divisare.com/projects/467128-pedro-geraldes-paulo-alexandre-coelho-poc-santa-luzia",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1664545527/kouk0810wiysxfztfsax/pedro-geraldes-paulo-alexandre-coelho-poc-santa-luzia.jpg",
      "l": "Pampilhosa da Serra",
      "a": "Pedro Geraldes"
     }
@@ -3086,6 +3373,7 @@
     {
      "t": "Bar In Bom Sucessos Dock",
      "u": "https://divisare.com/projects/17953-falcao-de-campos-jose-manuel-rodrigues-bar-in-bom-sucesso-s-dock",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/571700/487244757/falcao-de-campos-jose-manuel-rodrigues-bar-in-bom-sucesso-s-dock.jpg",
      "l": "Lisboa",
      "a": "Falcão de Campos"
     }
@@ -3106,6 +3394,7 @@
     {
      "t": "Ffat",
      "u": "https://divisare.com/projects/74475-arquitectos-anonimos-abel-andrade-ffat",
+     "i": "https://images.divisare.com//images/w_400,q_auto,f_auto/v1/project_images/1005699/FFAT_photo1/arquitectos-anonimos-abel-andrade-ffat.jpg",
      "l": "Vila Nova Gaia",
      "a": "Arquitectos Anónimos ®"
     }
