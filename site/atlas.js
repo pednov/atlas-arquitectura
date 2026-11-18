@@ -441,17 +441,6 @@ function fotoDoDia(fs){
   h ^= h >>> 13; h = Math.imul(h, 0x5bd1e995); h ^= h >>> 15;
   return cand[(h >>> 0) % cand.length];
 }
-function renderFotoDia(d){
-  const tile = $('a.tile[href*="fotografos"]'); if (!tile || !d) return;
-  const f = fotoDoDia(d.fotografos); if (!f) return;
-  const h2 = $('h2', tile); if (!h2) return;
-  const mid = h2.parentNode; mid.classList.add('tmid');
-  let box = $('.fdia', tile);
-  if (!box) { box = document.createElement('div'); box.className = 'fdia'; mid.appendChild(box); }
-  box.innerHTML = `<img src="${esc(f.foto.src)}" alt="${esc((f.foto.t || 'Obra') + ', fotografia de ' + f.n)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"><span><small>Fotógrafo do dia</small><b>${esc(f.n)}</b><span>${esc([f.c, f.foto.t].filter(Boolean).join(' · '))}</span></span>`;
-  tile.setAttribute('href', tile.getAttribute('href').split('#')[0] + '#f-' + f.id);
-  tile.setAttribute('aria-label', 'Fotógrafos, com ' + f.n + ' em destaque hoje');
-}
 const foSec = id => id === 'NAC' ? {nome: 'Outros lugares', cor: '#8c8c8c'} : nsecOf(id);
 const foCid = f => String(f.c || '').split(' e ')[0];
 function foCard(f){
@@ -495,6 +484,21 @@ function renderFotografos(d){
   const tot = $('#tot-f'); if (tot) tot.textContent = fs.length;
   const dia = fotoDoDia(fs), el = dia && document.getElementById('f-' + dia.id);
   if (el) { el.classList.add('dia'); const fn = $('.fn', el); if (fn) fn.insertAdjacentHTML('afterbegin', '<span class="fdia-t">Fotógrafo do dia</span>'); }
+  /* destaque do dia no topo da página */
+  const F = $('.filters[data-for=".fo"]');
+  let dest = $('#fdest');
+  if (dia && F) {
+    if (!dest) { dest = document.createElement('section'); dest.id = 'fdest'; dest.className = 'fdest'; F.parentNode.insertBefore(dest, F); }
+    const s2 = foSec(nsecId(dia));
+    const grande = dia.foto.src.replace(/\/images\/[^/]+\/v/, '/images/w_1400,q_auto,f_auto/v');
+    const host = dia.w ? dia.w.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '') : '';
+    const obras = (dia.obras || []).slice(0, 3).map(o => `<li><a href="${esc(o.u)}" target="_blank" rel="noopener">${esc(o.t)}</a>${o.l || o.a ? `<span>${esc([o.l, o.a ? 'arquitectura de ' + o.a : ''].filter(Boolean).join(' · '))}</span>` : ''}</li>`).join('');
+    dest.style.setProperty('--c', s2.cor);
+    dest.innerHTML = `<a class="fdest-img" href="${esc(dia.foto.u || dia.u)}" target="_blank" rel="noopener" title="${esc(dia.foto.t || '')}"><img src="${esc(grande)}" alt="${esc((dia.foto.t || 'Obra') + ', fotografia de ' + dia.n)}" decoding="async" referrerpolicy="no-referrer" onerror="if(this.src!=='${esc(dia.foto.src)}')this.src='${esc(dia.foto.src)}';else this.parentNode.classList.add('sem')"></a>
+<div class="fdest-t"><span class="fdia-t">Fotógrafo do dia</span><h2><a href="${esc(dia.u)}" target="_blank" rel="noopener">${esc(dia.n)}</a></h2><span class="pill rg"><i></i>${esc(dia.c || s2.nome)}</span>
+${obras ? `<ol class="fobras">${obras}</ol>` : ''}
+<div class="lnks"><a class="lnk dark" href="${esc(dia.u)}" target="_blank" rel="noopener">Ver no Divisare ${EXT}</a>${dia.w ? `<a class="lnk" href="${esc(dia.w)}" target="_blank" rel="noopener">${esc(host)} ${EXT}</a>` : ''}<a class="lnk" href="#f-${esc(dia.id)}">Ver na lista</a></div></div>`;
+  } else if (dest) dest.remove();
   const alvo = /^#f-[\w-]+$/.test(location.hash) && document.getElementById(location.hash.slice(1));
   if (alvo && !box.dataset.saltou) { box.dataset.saltou = '1'; setTimeout(() => alvo.scrollIntoView({behavior: 'smooth', block: 'center'}), 150); }
   /* textos das páginas publicadas antes da ordem alfabética e das fotografias */
@@ -529,11 +533,7 @@ if ($('#clist') && sc) { recLabels(); renderConcursos(sc); setupFilters(); fresh
 if ($('#nlist') && sn) { renderNoticias(sn); setupFilters(); fresh('noticias.json', sn).then(d => { if (d !== sn) { renderNoticias(d); setupFilters(); } }); }
 const sf = snap('snap-fotografos');
 if ($('#flist') && sf) { renderFotografos(sf); setupFilters(); fresh('fotografos.json', sf).then(d => { if (d !== sf) { renderFotografos(d); setupFilters(); } }); }
-if ($('[data-foto-count]') || $('a.tile[href*="fotografos"]')) {
-  const sfm = snap('snap-fotografos-min');
-  if (sfm) renderFotoDia(sfm);
-  fresh('fotografos.json', sfm).then(d => { const n = d && (d.fotografos || []).length; if (n) $$('[data-foto-count]').forEach(e => e.textContent = n); if (d && d !== sfm) renderFotoDia(d); });
-}
+if ($('[data-foto-count]')) fresh('fotografos.json', null).then(d => { const n = d && (d.fotografos || []).length; if (n) $$('[data-foto-count]').forEach(e => e.textContent = n); });
 if ($('#lex')) { const p = lexLoad(); p && p.then(L => { if (L) renderLegislacao(L); else { const er = $('#lex-erro'); if (er) er.hidden = false; } }); }
 if ($('#mini-c') || $('#mini-n')) {
   renderHome(sc, sn);

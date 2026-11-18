@@ -469,15 +469,22 @@ button,select,input{font:inherit;color:inherit}
   .ni.ci > div:not(.dt){grid-column:2;grid-row:1 / span 2}
   .ni.ci .th{grid-column:1;grid-row:2;width:52px;height:39px}
 }
-/* fotógrafo do dia no cartão 06 e na página dos Fotógrafos (18 Nov. 2026) */
-.tile .tmid{display:flex;align-items:center;justify-content:space-between;gap:14px 18px;flex-wrap:wrap}
-.fdia{display:flex;align-items:center;gap:12px;max-width:300px;min-width:0;padding:7px 14px 7px 7px;border-radius:16px;background:color-mix(in srgb,var(--tc,#A0661A) 9%,#fff);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--tc,#A0661A) 22%,#fff)}
-.fdia img{flex:none;width:68px;height:68px;border-radius:11px;object-fit:cover;background:var(--faint)}
-.fdia > span{display:grid;gap:2px;min-width:0}
-.fdia small{font:700 11px/1.2 var(--body);letter-spacing:.04em;text-transform:uppercase;color:var(--tc,#A0661A)}
-.fdia b{font:800 15px/1.2 var(--body);color:var(--ink);display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.fdia > span > span{font-size:12.5px;color:var(--ink-2);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* fotógrafo do dia, em destaque no topo da página dos Fotógrafos (18 Nov. 2026) */
+.fdest{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:0;margin:4px 0 30px;border-radius:var(--r3);overflow:hidden;background:var(--paper);box-shadow:var(--sh)}
+.fdest-img{display:block;aspect-ratio:3/2;background:var(--faint);overflow:hidden}
+.fdest-img img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .4s}
+.fdest-img:hover img{transform:scale(1.03)}
+.fdest-img.sem img{display:none}
+.fdest-t{display:flex;flex-direction:column;align-items:flex-start;gap:10px;padding:26px 28px;border-left:5px solid var(--c)}
+.fdest-t h2{margin:0;font:800 clamp(26px,3vw,36px)/1.05 var(--display);letter-spacing:-.025em}
+.fdest-t h2 a{text-decoration:none}
+.fdest-t h2 a:hover{text-decoration:underline;text-underline-offset:4px;text-decoration-thickness:2px}
+.fdest-t .pill.rg{background:color-mix(in srgb,var(--c) 16%,#fff)}
+.fdest-t .pill.rg i{background:var(--c)}
+.fdest-p{margin:2px 0 0;font-size:14.5px;color:#3d3b38}
+.fdest-t .fobras{flex:0 0 auto}
+.fdest-t .lnks{margin-top:auto;padding-top:6px}
+.fdia-t{font:700 11.5px/1.2 var(--body);letter-spacing:.05em;text-transform:uppercase;color:#A0661A}
 .fo.dia{box-shadow:inset 0 0 0 2.5px var(--c),var(--sh)}
-.fdia-t{font:700 11px/1.2 var(--body);letter-spacing:.04em;text-transform:uppercase;color:#A0661A}
 .fo:target{box-shadow:inset 0 0 0 2.5px var(--ink),var(--sh2)}
-@media (max-width:560px){.fdia{max-width:100%}.fdia img{width:56px;height:56px}}
+@media (max-width:760px){.fdest{grid-template-columns:1fr}.fdest-img{min-height:0;aspect-ratio:4/3}.fdest-t{border-left:0;border-top:5px solid var(--c);padding:20px}}
