@@ -1,4 +1,4 @@
-2026-11-18 01:35 UTC
+2026-11-18 01:45 UTC
 Encomenda: 19 fichas na listagem
   excluída: Saraiva e Associados lança ‘Unlocker AI’: o primeiro podcast de arquitectura totalmente gerado com IA
   excluída: Feeders assina novo espaço criativo em Telheiras
@@ -6,38 +6,38 @@ Encomenda: 19 fichas na listagem
   excluída: Arquitectos querem reunião do Conselho Nacional de Habitação com a “máxima brevidade”
   excluída: Segmento Urbano lança verificação técnica de projectos com apoio de IA
   excluída: Arquitectura de Fernão Simões de Carvalho ‘ouvida’ no PNUM 2026
-ArchDaily: falhou HTTPSConnectionPool(host='www.archdaily.com', port=443): Read timed out. (read timeout=30)
+ArchDaily: 30 obras na página de Portugal
+  fora de Portugal: Fondation Louis Vuitton / Gehry Partners
   excluída (Lisboa Para Pessoas): Tempestade Charles em Lisboa esta quarta-feira. O que esperar?
-  nova notícia (Lisboa Para Pessoas): 2026-11-16 Acampada: das 10 reivindicações às “quatro exigências prioritárias” apresentadas a Seguro | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-11-12 O fim da paciência | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-11-03 Isto ainda é sobre casas para viver | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-11-03 Mais de 100 mil euros para limpar uma estátua? Custo invocado por Moedas foi dado como “não provado” | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-11-02 “Por favor, acabem com as bastonadas.” Tribunal dá razão a activista e diz que meia-noite e meia não é um limite absoluto | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-31 Em dias de acampada, habitação marca a agenda política de Lisboa | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-31 “Petição Pela Habitação” passa as 10 mil assinaturas e segue para o Parlamento | sem imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-27 “Tenho praticamente a idade da Revolução e nunca vi isto na minha vida.” A noite em que a acampada foi pelo direito à manifestação | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-23 De acampada a “aconchada”: o “movimento” entrou num novo capítulo | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-21 A acampada persiste no Rossio: “Vamos construir isto como se fosse uma cidade que é nossa” | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-20 Polícia termina com a acampada no Rossio durante a terceira noite | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-19 Centenas acampam no centro de Lisboa contra a crise da habitação | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-15 Depois de regular, Moedas quer suspender as trotinetas partilhadas. ACP propôs referendo | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-15 Isto não acabou | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-14 Só os Cães São Livres de Mijar: um livro sobre a história e falta de sanitários públicos em Lisboa | imagem
-  nova notícia (ECO): 2026-11-17 Moedas sugere criação de empresa metropolitana de habitação na região de Lisboa | sem imagem
-  nova notícia (ECO): 2026-11-17 Governo “estuda várias propostas” da oposição para habitação. “É um diálogo a sério” | sem imagem
-  nova notícia (ECO): 2026-11-17 Euribor sobe a três e a 12 meses e desce a seis meses | imagem
-  nova notícia (ECO): 2026-11-17 Habitação. Bruxelas identifica crise no setor como fator de risco para economia portuguesa | imagem
-  nova notícia (ECO): 2026-11-17 Conselheiro de Seguro critica “imoralidade atroz” nas urgências hospitalares | imagem
-  nova notícia (ECO): 2026-11-17 Luís Neves diz que gestão das acampadas está na esfera das autarquias | imagem
-  nova notícia (ECO): 2026-11-17 20 anos depois, São João da Pesqueira recupera cais com investimento de 6,5 milhões da APDL | imagem
-  nova notícia (ECO): 2026-11-17 Prémio Portugal Seguro vai avaliar risco e proteção em todos os 308 munícipios de Portugal | imagem
-  nova notícia (ECO): 2026-11-17 Tripulantes de cabine da Azores Airlines convocam greve de três dias em dezembro | imagem
-  nova notícia (ECO): 2026-11-17 Auditoria deteta constrangimentos que condicionam gestão municipal em Évora | imagem
-  nova notícia (ECO): 2026-11-17 Qualidade de vida pesa na captação de talento e investimento | imagem
-  nova notícia (ECO): 2026-11-17 Investimento municipal dispara em ano de eleições. Setúbal, Maia e Coimbra lideram subidas | imagem
-  nova notícia (ECO): 2026-11-16 “É muito fácil protestar. O difícil é resolver os problemas”, diz Montenegro | imagem
-  nova notícia (ECO): 2026-11-16 Porto abre guerra aos devolutos. Pressão da Câmara angaria “200 a 300 imóveis” para arrendamento acessível | imagem
-  nova notícia (ECO): 2026-11-16 Alemã Thyssenkrupp traz cadeia do hidrogénio para Gaia com fábrica de 14 milhões | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-14 Uma metrópole insatisfeita: o que o Barómetro das Cidades diz sobre Lisboa | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-14 Ciclovia em Monsanto com menos de um mês apagada por pressão da Junta e de moradores | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-14 A Charneca abriu as gavetas de casa. E uma parte de Lisboa entrou para o Arquivo | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-13 Nesta horta comunitária na Penha de França, o bem-estar continua a crescer com arte | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-13 Há quiosques em Lisboa a impedir o uso do computador. Podem? | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-13 Quiosques de Lisboa dão descontos só para clientes portugueses? | sem imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-13 Quiosques nos jardins e praças de Lisboa: mais vida urbana ou menos espaço público? | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-13 Joana Stichini Vilela e a Lisboa em que tudo era possível: “Essa ideia de nos juntarmos para fazer algo para todos perdeu força” | sem imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-13 Entre as margens, de passagem: como o Tejo pode transportar ainda mais pessoas | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-13 Forno do Tijolo sem carros: mais vida ou menos clientes? | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-12 Chegou o Jornal de Outono | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-10 FlixBus já pára em Sete Rios, mas “guerra” pelo terminal provisório de Lisboa continua | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-09 Envelhecer como mulher na Lisboa gentrificada | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-09 Quando o acesso a um serviço público se torna mais um obstáculo | sem imagem
+  nova notícia (ECO): 2026-11-15 Acampada de Lisboa decide manter tendas na Praça dos Restauradores até sábado | imagem
+  nova notícia (ECO): 2026-11-15 Ventura viabilizará todas as propostas “cabíveis” para menos custos com habitação e combustíveis | sem imagem
+  nova notícia (ECO): 2026-11-14 Manifestação pela habitação sai hoje à rua em 32 cidades | imagem
+  nova notícia (ECO): 2026-11-14 Milhares voltam às ruas em Lisboa e Porto pelo direito à habitação | imagem
+  nova notícia (ECO): 2026-11-13 Câmara de Lisboa vai ceder terrenos para PPP e cooperativas. Build to rent entra na equação | imagem
+  nova notícia (ECO): 2026-11-13 Habitação. Presidente deu “sinal político” e movimentos pediram mediação com Governo | imagem
+  nova notícia (ECO): 2026-11-13 Casas com benefícios fiscais no arrendamento só podem ser vendidas com autorização do Governo | imagem
+  nova notícia (ECO): 2026-11-13 Câmara de Lisboa prevê orçamento de 1.463 milhões de euros para 2027 | imagem
+  nova notícia (ECO): 2026-11-12 Mais de 90% das medidas do PS para a habitação foram aceites pelo Governo, diz Pinto Luz | sem imagem
+  nova notícia (ECO): 2026-11-12 Manifestantes pela habitação pedem: “Ó Web Summit, sai de Lisboa” | imagem
+  nova notícia (ECO): 2026-11-12 Parlamento espanhol aprova decreto que prolonga proteção contra despejos e limita aumentos das rendas | imagem
+  nova notícia (ECO): 2026-11-12 FMI aconselha Portugal a melhorar oferta de casas para travar subida dos preços na habitação | imagem
+  nova notícia (ECO): 2026-11-12 A renda come primeiro | sem imagem
+  nova notícia (ECO): 2026-11-12 Câmara de Loures aprova redução do IMI e da participação do IRS | imagem
+  nova notícia (ECO): 2026-11-06 Governo pronto para transferir gestão de 477 imóveis para as autarquias | sem imagem
   nova notícia (Arquitectura Viva): 2026-09-23 Exposición Radical Rehab | imagem
   nova notícia (Arquitectura Viva): 2026-09-16 Finalistas del Premio Europeo del Espacio Público Urbano 2026 | imagem
   nova notícia (Arquitectura Viva): 2026-09-08 Daniel Libeskind, Praemium Imperiale 2026 | imagem
@@ -58,13 +58,45 @@ ArchDaily: falhou HTTPSConnectionPool(host='www.archdaily.com', port=443): Read 
   nova notícia (Arquitectura Viva): 2026-07-10 Premio Europeo del Espacio Público Urbano, proyectos seleccionados | imagem
   nova notícia (Arquitectura Viva): 2026-07-03 Viaje a la Sijena medieval con gafas 3D: cuando la realidad virtual explica mejor las pinturas que los restos conservados | imagem
   nova notícia (Arquitectura Viva): 2026-07-02 José Manuel Ballester: Goya en silencio | imagem
-Concursos: 0 novos, 10 no total. Notícias: 50 novas, 87 no total.
+  nova notícia (Dezeen): 2026-11-17 “We're not saying they're perfect” says architect fighting to save Melbourne's public housing blocks | imagem
+  nova notícia (Dezeen): 2026-11-17 SOM completes first phase of Philadelphia train station restoration | imagem
+  nova notícia (Dezeen): 2026-11-17 SSdH "renegotiates light" in Melbourne warehouse transformation | sem imagem
+  nova notícia (Dezeen): 2026-11-17 Construction underway on Jean Nouvel's landmark opera house in China | imagem
+  nova notícia (Dezeen): 2026-11-16 Dezeen Awards 2026 architecture project of the year revealed | imagem
+  nova notícia (Dezeen): 2026-11-16 Photos reveal scale of Trump’s White House ballroom, drawing criticism | imagem
+  nova notícia (Dezeen): 2026-11-16 Shisuo Design Office creates "surreal" rural house in China using salvaged steel | imagem
+  nova notícia (Dezeen): 2026-11-16 Eight highlights from this year's Sharjah Architecture Triennial | imagem
+  nova notícia (Dezeen): 2026-11-15 Reims 502 uses pink palette for "non-referential" commercial building in Mexico | imagem
+  nova notícia (Dezeen): 2026-11-15 Mecanoo transforms former gold vault into "city’s living room" in renovation of De Nederlandsche Bank in Amsterdam | imagem
+  nova notícia (Dezeen): 2026-11-14 Japanese sauna by Daichi Inc makes "people feel as though they are dissolving into the forest" | imagem
+  nova notícia (Dezeen): 2026-11-14 Mexico's Parque del Jaguar protects jaguars with 18-kilometre limestone wall | imagem
+  nova notícia (Dezeen): 2026-11-13 Perforated brick walls envelop giant market in Kinshasa by Think Tank Architecture | imagem
+  nova notícia (Dezeen): 2026-11-13 BIG reveals "modular blueprint" for Refugee City in Uganda | imagem
+  nova notícia (Dezeen): 2026-11-13 Studio Octopi revives art deco pavilion and lido on Scottish coast | sem imagem
+  nova notícia (Dezeen): 2026-11-12 Crosslam completes Brazil's tallest mass-timber tower | imagem
+  nova notícia (Dezeen): 2026-11-12 EMBT shelters Naples metro station beneath "natural and welcoming" vaulted timber roof | imagem
+  nova notícia (Dezeen): 2026-11-12 Faulty Wedding Cake pavilion to be dismantled at Waddesdon Manor | imagem
+  nova notícia (Dezeen): 2026-11-12 Renovation delays pose "Notre Dame-like" fire risk for Houses of Parliament | imagem
+  nova notícia (Dezeen): 2026-11-12 Access to Shanghai Grand Opera House staircase restricted to paid ticket holders | imagem
+  retirada (ECO): Euribor sobe a três e a 12 meses e desce a seis meses
+  retirada (ECO): Conselheiro de Seguro critica “imoralidade atroz” nas urgências hospitalares
+  retirada (ECO): 20 anos depois, São João da Pesqueira recupera cais com investimento de 6,5 milhões da APDL
+  retirada (ECO): Prémio Portugal Seguro vai avaliar risco e proteção em todos os 308 munícipios de Portugal
+  retirada (ECO): Tripulantes de cabine da Azores Airlines convocam greve de três dias em dezembro
+  retirada (ECO): Auditoria deteta constrangimentos que condicionam gestão municipal em Évora
+  retirada (ECO): Qualidade de vida pesa na captação de talento e investimento
+  retirada (ECO): Investimento municipal dispara em ano de eleições. Setúbal, Maia e Coimbra lideram subidas
+  retirada (ECO): “É muito fácil protestar. O difícil é resolver os problemas”, diz Montenegro
+  retirada (ECO): Alemã Thyssenkrupp traz cadeia do hidrogénio para Gaia com fábrica de 14 milhões
+Concursos: 0 novos, 10 no total. Notícias: 69 novas, 107 no total.
 Dados gravados.
+Fotógrafos (Divisare): 94 na lista de Portugal
+Fotógrafos: 94 gravados, 94 com obras publicadas.
 
-SILUC 2026-11-18 01:35 UTC
+SILUC 2026-11-18 01:48 UTC
   a ler alterações e regulamentação de 279 diplomas
   relações: 100 de 279
   relações: 200 de 279
   alterações e regulamentação lidas em 279 diplomas (0 falhas)
   1840 fichas recebidas de 1840
-  1840 diplomas em 7 temas gravados (279 novos ou alterados)
+  sem alterações

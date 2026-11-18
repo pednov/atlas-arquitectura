@@ -28,6 +28,11 @@
    "id": "eco",
    "nome": "ECO",
    "url": "https://eco.sapo.pt/topico/habitacao/"
+  },
+  {
+   "id": "dezeen",
+   "nome": "Dezeen",
+   "url": "https://www.dezeen.com/architecture/"
   }
  ],
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o negócio imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura, a urbanismo ou à vida nas cidades.",
@@ -56,34 +61,12 @@
    "d": "2026-11-17",
    "f": "eco",
    "tema": "Habitação",
-   "t": "Euribor sobe a três e a 12 meses e desce a seis meses",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/17/euribor-sobe-a-tres-e-a-12-meses-e-desce-a-seis-meses-9",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/10/cropped-41424520-scaled-1.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-17",
-   "f": "eco",
-   "tema": "Habitação",
    "t": "Habitação. Bruxelas identifica crise no setor como fator de risco para economia portuguesa",
    "m": "",
    "u": "https://eco.sapo.pt/2026/11/17/habitacao-bruxelas-identifica-crise-no-setor-como-fator-de-risco-para-economia-portuguesa",
    "sec": "NAC",
    "auto": true,
    "img": "https://eco.imgix.net/uploads/2026/10/cropped-doc2025080645445300-ps05709-2.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-17",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "Conselheiro de Seguro critica “imoralidade atroz” nas urgências hospitalares",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/17/conselheiro-de-seguro-critica-imoralidade-atroz-nas-urgencias-hospitalares",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2021/03/cropped-pndr6289.jpg?w=300&fit=crop"
   },
   {
    "d": "2026-11-17",
@@ -98,69 +81,46 @@
   },
   {
    "d": "2026-11-17",
-   "f": "eco",
-   "tema": "Mobilidade",
-   "t": "20 anos depois, São João da Pesqueira recupera cais com investimento de 6,5 milhões da APDL",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/17/20-anos-depois-sao-joao-da-pesqueira-recupera-cais-com-investimento-de-65-milhoes-da-apdl",
-   "sec": "NAC",
+   "f": "dezeen",
+   "tema": "Entrevista",
+   "t": "“We're not saying they're perfect” says architect fighting to save Melbourne's public housing blocks",
+   "m": "Austrália",
+   "u": "https://www.dezeen.com/2026/11/17/office-simon-robinson-public-housing-melbourne-australia",
+   "sec": "INT",
    "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/11/cropped-apresentacao-do-cais-da-ferradosa-em-sao-joao-da-pesqueira.jpeg?w=300&fit=crop"
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/simon-robinson-office-interview-melbourne-victoria-public-housing-australia-_dezeen_1704_col_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-17",
-   "f": "eco",
-   "tema": "Prémio",
-   "t": "Prémio Portugal Seguro vai avaliar risco e proteção em todos os 308 munícipios de Portugal",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/17/premio-portugal-seguro-vai-avaliar-risco-e-protecao-em-todos-os-308-municipios-de-portugal",
-   "sec": "NAC",
+   "f": "dezeen",
+   "tema": "Património",
+   "t": "SOM completes first phase of Philadelphia train station restoration",
+   "m": "EUA",
+   "u": "https://www.dezeen.com/2026/11/17/som-30-street-station-philadelphia-restoration",
+   "sec": "INT",
    "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/11/cropped-af364f5d-f0e9-464a-87b6-adcd0a7e774a.jpg?w=300&fit=crop"
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/30-street-station-som-philadelphia_dezeen_2364_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-17",
-   "f": "eco",
-   "tema": "Mobilidade",
-   "t": "Tripulantes de cabine da Azores Airlines convocam greve de três dias em dezembro",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/17/tripulantes-de-cabine-da-azores-airlines-convocam-greve-de-tres-dias-em-dezembro",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2025/01/cropped-cropped-doc-20231011-41656341-sata22-1.jpg?w=300&fit=crop"
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "SSdH \"renegotiates light\" in Melbourne warehouse transformation",
+   "m": "Austrália",
+   "u": "https://www.dezeen.com/2026/11/17/ssdh-adaptation-warehouse-melbourne",
+   "sec": "INT",
+   "auto": true
   },
   {
    "d": "2026-11-17",
-   "f": "eco",
-   "tema": "Cidade",
-   "t": "Auditoria deteta constrangimentos que condicionam gestão municipal em Évora",
-   "m": "Évora",
-   "u": "https://eco.sapo.pt/2026/11/17/auditoria-deteta-constrangimentos-que-condicionam-gestao-municipal-em-evora",
-   "sec": "ALT",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "Construction underway on Jean Nouvel's landmark opera house in China",
+   "m": "China",
+   "u": "https://www.dezeen.com/2026/11/17/jean-nouvels-shenzhen-opera-house",
+   "sec": "INT",
    "auto": true,
-   "img": "https://eco.imgix.net/uploads/2017/08/cropped-cropped-cropped-evora_-_praca_do_giraldo-2-1.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-17",
-   "f": "eco",
-   "tema": "Cidade",
-   "t": "Qualidade de vida pesa na captação de talento e investimento",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/17/qualidade-de-vida-pesa-na-captacao-de-talento-e-investimento",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/11/800x450-6.png?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-17",
-   "f": "eco",
-   "tema": "Cidade",
-   "t": "Investimento municipal dispara em ano de eleições. Setúbal, Maia e Coimbra lideram subidas",
-   "m": "",
-   "u": "https://eco.sapo.pt/especiais/investimento-municipal-dispara-em-ano-de-eleicoes-setubal-maia-e-coimbra-lideram-subidas",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2025/12/cropped-setubal01.jpg?w=300&fit=crop"
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/shenzhen-opera-house-jean-nouvel-architecture-china-cultural_dezeen_2364_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-16",
@@ -197,34 +157,143 @@
    "d": "2026-11-16",
    "f": "eco",
    "tema": "Habitação",
-   "t": "“É muito fácil protestar. O difícil é resolver os problemas”, diz Montenegro",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/16/e-muito-facil-protestar-o-dificil-e-resolver-os-problemas-diz-montenegro",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/11/cropped-48138776-scaled-1.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-16",
-   "f": "eco",
-   "tema": "Habitação",
    "t": "Porto abre guerra aos devolutos. Pressão da Câmara angaria “200 a 300 imóveis” para arrendamento acessível",
-   "m": "",
+   "m": "Porto",
    "u": "https://eco.sapo.pt/especiais/porto-abre-guerra-aos-devolutos-pressao-da-camara-angaria-200-a-300-imoveis-para-arrendamento-acessivel",
-   "sec": "NAC",
+   "sec": "NORTE",
    "auto": true,
    "img": "https://eco.imgix.net/uploads/2026/01/cropped-pedro-duarte005.jpg?w=300&fit=crop"
   },
   {
    "d": "2026-11-16",
-   "f": "eco",
-   "tema": "Cidade",
-   "t": "Alemã Thyssenkrupp traz cadeia do hidrogénio para Gaia com fábrica de 14 milhões",
+   "f": "dezeen",
+   "tema": "Prémio",
+   "t": "Dezeen Awards 2026 architecture project of the year revealed",
    "m": "",
-   "u": "https://eco.sapo.pt/2026/11/16/alema-thyssenkrupp-traz-cadeia-do-hidrogenio-para-gaia-com-fabrica-de-14-milhoes",
+   "u": "https://www.dezeen.com/2026/11/16/dezeen-awards-2026-architecture-project-of-the-year-revealed",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/09/DAICHI-inc.-DAICHI-silent-river-TREE-SAUNA_dezeen_2364_col_0-411x411.jpg"
+  },
+  {
+   "d": "2026-11-16",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "Photos reveal scale of Trump’s White House ballroom, drawing criticism",
+   "m": "EUA",
+   "u": "https://www.dezeen.com/2026/11/16/white-house-ballroom-topping-out",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/white-house-ballroom-construction-november-2026_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-16",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Shisuo Design Office creates \"surreal\" rural house in China using salvaged steel",
+   "m": "China",
+   "u": "https://www.dezeen.com/2026/11/16/shisuo-design-office-jiang-deng-lu",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/jiang-deng-lu-shisuo-design-office-architecture-residential-china-houses-stainless-steel_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-16",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Eight highlights from this year's Sharjah Architecture Triennial",
+   "m": "Emirados Árabes Unidos",
+   "u": "https://www.dezeen.com/2026/11/16/sharjah-architecture-triennial-highlights",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/sharjah-architecture-triennial-2026-sq_dezeen_2364_col_0-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-15",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Acampada de Lisboa decide manter tendas na Praça dos Restauradores até sábado",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/15/acampada-de-lisboa-decide-manter-tendas-na-praca-dos-restauradores-ate-sabado",
    "sec": "NAC",
    "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/11/cropped-48138819-scaled-1.jpg?w=300&fit=crop"
+   "img": "https://eco.imgix.net/uploads/2026/11/cropped-48132933-scaled-1.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-15",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Ventura viabilizará todas as propostas “cabíveis” para menos custos com habitação e combustíveis",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/15/ventura-viabilizara-todas-as-propostas-cabiveis-para-menos-custos-com-habitacao-e-combustiveis",
+   "sec": "NAC",
+   "auto": true
+  },
+  {
+   "d": "2026-11-15",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Reims 502 uses pink palette for \"non-referential\" commercial building in Mexico",
+   "m": "México",
+   "u": "https://www.dezeen.com/2026/11/15/reims-502-rosadoce",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/rosadoce-reims-502-architecture-mexico-commercial-office_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-15",
+   "f": "dezeen",
+   "tema": "Património",
+   "t": "Mecanoo transforms former gold vault into \"city’s living room\" in renovation of De Nederlandsche Bank in Amsterdam",
+   "m": "Países Baixos",
+   "u": "https://www.dezeen.com/2026/11/15/netherlands-central-bank-renovation-mecanoo",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/mecanoo-de-nederlandsche-bank_dezeen_2364_sq_0-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-14",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Manifestação pela habitação sai hoje à rua em 32 cidades",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/14/manifestacao-pela-habitacao-sai-hoje-a-rua-em-32-cidades",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2024/10/cropped-pavol-duracka-mu01df6uzeo-unsplash-2.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-14",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Milhares voltam às ruas em Lisboa e Porto pelo direito à habitação",
+   "m": "Lisboa",
+   "u": "https://eco.sapo.pt/2026/11/14/milhares-voltam-as-ruas-em-lisboa-e-porto-pelo-direito-a-habitacao",
+   "sec": "LVT",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/11/cropped-48129554-scaled-1.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-14",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Japanese sauna by Daichi Inc makes \"people feel as though they are dissolving into the forest\"",
+   "m": "Japão",
+   "u": "https://www.dezeen.com/2026/11/14/daichi-inc-silent-river-tree-sauna",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/daichi-silent-river-tree-sauna-daichi-architecture-sauna-japan-public-leisure_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-14",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Mexico's Parque del Jaguar protects jaguars with 18-kilometre limestone wall",
+   "m": "México",
+   "u": "https://www.dezeen.com/2026/11/14/parque-del-jaguar-colectivo-c733-tulum-mexico-ecological-park",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/parque-del-jaguar-colectivo-c733-tulum-mexico-ecological-park-sq_dezeen_2364_col_0-1024x1024.jpg"
   },
   {
    "d": "2026-11-13",
@@ -236,6 +305,82 @@
    "sec": "INT",
    "auto": true,
    "img": "https://arquitecturaviva.com/assets/uploads/articulos/84272/av_imagen.webp?h=5b1a6936"
+  },
+  {
+   "d": "2026-11-13",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Câmara de Lisboa vai ceder terrenos para PPP e cooperativas. Build to rent entra na equação",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/13/camara-de-lisboa-vai-ceder-terrenos-para-ppp-e-cooperativas-abandona-modelo-lancado-ha-dois-anos",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/10/cropped-doc2025080645445261-ps02974.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-13",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Habitação. Presidente deu “sinal político” e movimentos pediram mediação com Governo",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/13/habitacao-presidente-deu-sinal-politico-e-movimentos-pediram-mediacao-com-governo",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/11/cropped-261113-prajs-mfl-0394-9301.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-13",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Casas com benefícios fiscais no arrendamento só podem ser vendidas com autorização do Governo",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/13/casas-com-beneficios-fiscais-no-arrendamento-so-podem-ser-vendidas-com-autorizacao-do-governo",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/10/cropped-doc2025080645445292-ps05544.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-13",
+   "f": "eco",
+   "tema": "Cidade",
+   "t": "Câmara de Lisboa prevê orçamento de 1.463 milhões de euros para 2027",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/13/camara-de-lisboa-preve-orcamento-de-1-463-milhoes-de-euros-para-2027",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/01/cropped-6p1a5541.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-13",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Perforated brick walls envelop giant market in Kinshasa by Think Tank Architecture",
+   "m": "",
+   "u": "https://www.dezeen.com/2026/11/13/zando-central-market-think-tank-architecture",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/zando-central-market-think-tank-architecture-democratic-republic-congo-infrastructure_dezeen_2364_sq2-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-13",
+   "f": "dezeen",
+   "tema": "Urbanismo",
+   "t": "BIG reveals \"modular blueprint\" for Refugee City in Uganda",
+   "m": "",
+   "u": "https://www.dezeen.com/2026/11/13/big-refugee-city-uganda",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/big-refugee-city-uganda-sq_dezeen_2364_col_0-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-13",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Studio Octopi revives art deco pavilion and lido on Scottish coast",
+   "m": "Escócia",
+   "u": "https://www.dezeen.com/2026/11/13/tarlair-outdoor-pool-pavilion-studio-octopi-andrew-doolan-award",
+   "sec": "INT",
+   "auto": true
   },
   {
    "d": "2026-11-12",
@@ -268,6 +413,82 @@
    "sec": "LVT",
    "auto": true,
    "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/11/fimdapaciencia-300x200.jpg"
+  },
+  {
+   "d": "2026-11-12",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Mais de 90% das medidas do PS para a habitação foram aceites pelo Governo, diz Pinto Luz",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/12/mais-de-90-das-medidas-do-ps-para-a-habitacao-foram-aceites-pelo-governo-diz-pinto-luz",
+   "sec": "NAC",
+   "auto": true
+  },
+  {
+   "d": "2026-11-12",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Manifestantes pela habitação pedem: “Ó Web Summit, sai de Lisboa”",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/12/manifestantes-pela-habitacao-pedem-o-web-summit-sai-de-lisboa",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/11/whatsapp-image-2026-11-12-at-183635.jpeg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-12",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Crosslam completes Brazil's tallest mass-timber tower",
+   "m": "Brasil",
+   "u": "https://www.dezeen.com/2026/11/12/brazil-tallest-timber-tower-crosslam-sao-paulo",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/crosslam-aurora-275-timber-apartment-building-brazil_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-12",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "EMBT shelters Naples metro station beneath \"natural and welcoming\" vaulted timber roof",
+   "m": "Itália",
+   "u": "https://www.dezeen.com/2026/11/12/embt-naples-underground-central-station",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/naples-underground-central-station-embt-architecture-infrastructure-timber-glulam_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-12",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "Faulty Wedding Cake pavilion to be dismantled at Waddesdon Manor",
+   "m": "Reino Unido",
+   "u": "https://www.dezeen.com/2026/11/12/wedding-cake-pavilion-dismantled",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/joana-vasconcelos-wedding-cake-pavilion-waddesdon-manor-ceramic-tiles-pastel-sculpture_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-12",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "Renovation delays pose \"Notre Dame-like\" fire risk for Houses of Parliament",
+   "m": "Reino Unido",
+   "u": "https://www.dezeen.com/2026/11/12/fire-risk-palace-westminster-renovation-delay",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/houses-of-parliament-renovation-report-sq_dezeen_2364_col_0-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-12",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "Access to Shanghai Grand Opera House staircase restricted to paid ticket holders",
+   "m": "China",
+   "u": "https://www.dezeen.com/2026/11/12/shanghai-grand-opera-house-staircase-paid-access",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/snohetta-shanghai-grand-opera-house-public-staircase-barricade_dezeen_1704_col_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-11",
