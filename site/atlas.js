@@ -428,6 +428,9 @@ function renderLegislacao(L){
 /* o separador «Notícias» passou a chamar-se «Imprensa» (pedido do Pedro, 18 Nov. 2026): corrige as páginas publicadas antes */
 (function(){
   $$('.atabs a[href*="noticias"]').forEach(a => { if (a.textContent.trim() === 'Notícias') a.textContent = 'Imprensa'; });
+  /* «Roteiros» passou a «Guias de Arquitectura», com o subtítulo «Roteiros Intersecções» (18 Nov. 2026) */
+  $$('.atabs a[href*="roteiros"], .atabs a[href*="Lx7XNvU4"]').forEach(a => { if (a.textContent.trim() === 'Roteiros') a.innerHTML = '<span class="lg">Guias de Arquitectura</span><span class="sh">Guias</span>'; });
+  $$('.tile h2').forEach(h => { const t = h.firstChild, sm = h.querySelector('small'); if (t && t.nodeType === 3 && t.textContent.trim() === 'Roteiros') { t.textContent = 'Guias de Arquitectura'; if (sm) sm.textContent = 'Roteiros Intersecções'; } });
   $$('.tile[href*="noticias"] h2').forEach(h => { const t = h.firstChild; if (t && t.nodeType === 3 && t.textContent.trim() === 'Notícias') t.textContent = 'Imprensa'; });
   $$('a.more-l[href*="noticias"]').forEach(a => { if (a.textContent.trim() === 'Todas as notícias') a.textContent = 'Toda a imprensa'; });
   if ($('#nlist')) {
@@ -436,6 +439,7 @@ function renderLegislacao(L){
     if (document.title.startsWith('Notícias')) document.title = document.title.replace(/^Notícias/, 'Imprensa');
   }
   $$('p').forEach(p => { if (p.textContent.includes('Os Concursos e as Notícias')) p.innerHTML = p.innerHTML.replace('Os Concursos e as Notícias', 'Os Concursos e a Imprensa'); });
+  $$('p').forEach(p => { if (p.textContent.includes('Os Roteiros compilam')) p.innerHTML = p.innerHTML.replace('Os Roteiros compilam as obras publicadas nas revistas Intersecções.', 'Os Guias de Arquitectura reúnem os Roteiros Intersecções, com as obras publicadas nas revistas Intersecções.'); });
 })();
 
 /* ---------- arranque ---------- */
