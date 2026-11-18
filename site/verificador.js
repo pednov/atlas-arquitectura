@@ -142,11 +142,13 @@ function recolher(p, D){
     if (v) ev.mem.push(Object.assign(v, {pag: fr.pag, ex: fr.o, f: fr.f}));
   }
   if (D.des && p.desenho !== 'nao') {
+    const rxd = new RegExp(p.rotulo ? p.chave + '|' + p.rotulo : p.chave, 'g');   /* no desenho conta também o nome do espaço («CIRCULAÇÃO», «I.S.») */
     for (const pg of D.des.pages) {
       const its = pg.items;
       const hits = its.filter(it => { rx.lastIndex = 0; return rx.test(it.f); });
+      const rots = p.rotulo ? its.filter(it => { rxd.lastIndex = 0; return rxd.test(it.f); }) : hits;
       if (hits.length) ev.refs.push({doc: 'des', pag: pg.n, ex: hits[0].s});
-      hits.slice(0, 4).forEach(h => ev.hits.push({pag: pg.n, pos: posDe(h), s: h.s}));
+      rots.slice(0, 4).forEach(h => ev.hits.push({pag: pg.n, pos: posDe(h), s: h.s}));
       if (p.tipo === 'presenca') continue;
       if (p.desenho === 'vao') {
         for (const it of its) for (const m of it.f.matchAll(RX.dim2)) {
@@ -456,9 +458,18 @@ function avaliarEDesenhar(){
   const res = avaliar(ULT.D, ctx).sort((a, b) => ORD.indexOf(a.st) - ORD.indexOf(b.st));
   const n = Object.fromEntries(ORD.map(s => [s, res.filter(r => r.st === s).length]));
   const marcas = marcasPlanta(res);
-  const plan = ULT.D.des ? `<section class="vplanta"><h3>Na planta</h3>${marcas.length
-    ? '<p class="vdocs">Círculo a cheio onde o valor foi lido nas peças desenhadas; a tracejado, na legenda do espaço, quando o valor em falta vem da memória descritiva. Os números correspondem aos parâmetros do relatório.</p><div id="v-plan" class="vplan-l"><p class="vprog">A desenhar as páginas…</p></div>'
-    : '<p class="vdocs">Nenhum ponto em falta foi localizado nas peças desenhadas.</p>'}</section>` : '';
+  let plan = '';
+  const des = ULT.D.des;
+  if (des) {
+    const nTxt = des.pages.reduce((a, pg) => a + pg.items.length, 0);
+    const semLugar = res.filter(r => (r.st === 'nok' || r.st === 'rev') && !r.marca);
+    const pouco = nTxt < des.lidas * 15
+      ? `<p class="vaviso">As peças desenhadas têm pouco texto legível (${nTxt} ${nTxt === 1 ? 'elemento' : 'elementos'} em ${des.lidas} ${des.lidas === 1 ? 'página' : 'páginas'}). Acontece quando as letras saem do programa de desenho como linhas, por exemplo com as fontes SHX do AutoCAD; assim as cotas e os nomes dos espaços não se lêem e os pontos em falta não se localizam na planta. Exporte o PDF com fontes TrueType ou com o texto pesquisável.</p>` : '';
+    plan = `<section class="vplanta"><h3>Na planta</h3><p class="vdocs">${marcas.length
+      ? 'Círculo a cheio onde o valor foi lido nas peças desenhadas; a tracejado, no nome do espaço, quando o valor em falta vem da memória descritiva. Os números correspondem aos parâmetros do relatório.'
+      : 'Nenhum ponto em falta foi localizado no desenho, por isso a planta aparece sem marcas.'}</p>${pouco}${semLugar.length
+      ? `<p class="vdocs">Sem localização no desenho: ${semLugar.map(r => esc(r.p.nome)).join('; ')}.</p>` : ''}<div id="v-plan" class="vplan-l"><p class="vprog">A desenhar as páginas…</p></div></section>`;
+  }
   const docs = [ULT.D.memDoc, ULT.D.des].filter(Boolean).map(d => `${d.nome} (${d.lidas}${d.lidas < d.total ? ' de ' + d.total : ''} ${d.total === 1 ? 'página' : 'páginas'}${d.temTexto ? '' : ', sem texto legível'})`);
   const avisos = [ULT.D.memDoc, ULT.D.des].filter(d => d && !d.temTexto).map(d => `<p class="vaviso">O PDF «${esc(d.nome)}» parece digitalizado ou desenhado sem texto. Sem texto não há leitura automática; exporte-o do programa de desenho com o texto activo.</p>`).join('');
   const grupo = (st, titulo, aberto) => {
@@ -481,7 +492,7 @@ ${grupo('nok', 'Parâmetros que o projecto não cumpre', true)}${grupo('rev', 'P
 <p class="vnota">Verificação automática e preliminar, a partir do texto dos PDF, que não substitui a apreciação técnica do projecto. ${esc(REG.nota || '')}</p>`;
   $('#v-rel').hidden = false;
   ULT.res = res; ULT.ctx = ctx;
-  if (marcas.length) desenharPlantas(marcas);
+  if (ULT.D.des) desenharPlantas(marcas);
 }
 
 /* ---------- planta com os pontos em falta ---------- */
@@ -532,14 +543,17 @@ function circulo(c, base, g){
   c.fillStyle = '#fff'; c.textAlign = 'center'; c.textBaseline = 'middle'; c.fillText(txt, bx, by + 1);
   c.restore();
 }
-let PLANO = 0, URLS = [];
+let PLANO = 0, URLS = [], ERRO_PLANTA = '';
 async function desenharPlantas(marcas){
   const tok = ++PLANO;
   const porPag = {};
   for (const m of marcas) (porPag[m.pag] = porPag[m.pag] || []).push(m);
   const figs = [], novos = [];
-  for (const n of Object.keys(porPag).map(Number).sort((a, b) => a - b).slice(0, 10)) {
-    let base; try { base = await paginaBase(ULT.D.des, n); } catch (ex) { console.error(ex); continue; }
+  let pags = Object.keys(porPag).map(Number).sort((a, b) => a - b).slice(0, 10);
+  if (!pags.length) pags = [...Array(Math.min(2, ULT.D.des.lidas)).keys()].map(i => i + 1);   /* sem marcas, mostra as primeiras páginas */
+  for (const n of pags) {
+    porPag[n] = porPag[n] || [];
+    let base; try { base = await paginaBase(ULT.D.des, n); } catch (ex) { console.error(ex); ERRO_PLANTA = String(ex && ex.message || ex); continue; }
     if (tok !== PLANO) return;
     const cv = document.createElement('canvas'); cv.width = base.cv.width; cv.height = base.cv.height;
     const c = cv.getContext('2d'); c.drawImage(base.cv, 0, 0);
@@ -555,12 +569,12 @@ async function desenharPlantas(marcas){
     const nums = [...new Set(porPag[n].map(m => m.n))];
     const lista = nums.map(k => { const r = porPag[n].find(m => m.n === k).r;
       return `<li><span class="vmk">${k}</span>${esc(r.p.nome)}${r.achado ? ', ' + esc(r.achado) : ''} <span class="vst-t" data-st="${r.st}">${ST[r.st].toLowerCase()}</span></li>`; }).join('');
-    figs.push(`<figure class="vplan"><a href="${url}" target="_blank" rel="noopener" title="Abrir em tamanho real"><img src="${url}" alt="Peças desenhadas, página ${n}, com os pontos em falta assinalados a vermelho"></a>
-<figcaption><div class="vplan-h"><b>Peças desenhadas, página ${n}</b><a class="lnk" href="${url}" download="${KIND}-planta-p${n}.png">Descarregar imagem</a></div><ol class="vplan-k">${lista}</ol></figcaption></figure>`);
+    figs.push(`<figure class="vplan"><a href="${url}" target="_blank" rel="noopener" title="Abrir em tamanho real"><img src="${url}" alt="Peças desenhadas, página ${n}${lista ? ', com os pontos em falta assinalados a vermelho' : ''}"></a>
+<figcaption><div class="vplan-h"><b>Peças desenhadas, página ${n}</b><a class="lnk" href="${url}" download="${KIND}-planta-p${n}.png">Descarregar imagem</a></div>${lista ? `<ol class="vplan-k">${lista}</ol>` : ''}</figcaption></figure>`);
   }
   if (tok !== PLANO) { novos.forEach(u => u.startsWith('blob:') && URL.revokeObjectURL(u)); return; }
   URLS.forEach(u => u.startsWith('blob:') && URL.revokeObjectURL(u)); URLS = novos;
-  const box = $('#v-plan'); if (box) box.innerHTML = figs.join('') || '<p class="vdocs">Não foi possível desenhar as páginas das peças desenhadas.</p>';
+  const box = $('#v-plan'); if (box) box.innerHTML = figs.join('') || `<p class="vaviso">Não foi possível desenhar as páginas das peças desenhadas${ERRO_PLANTA ? ' (' + esc(ERRO_PLANTA) + ')' : ''}.</p>`;
 }
 function textoRelatorio(){
   if (!ULT || !ULT.res) return '';
