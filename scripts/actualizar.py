@@ -446,7 +446,7 @@ DZ_TEMA = [('Necrologia', {'Obituaries'}), ('Prémio', {'Awards', 'Pritzker Arch
            ('Património', {'Restorations', 'Renovations', 'Heritage', 'Adaptive reuse', 'Conservation'}),
            ('Urbanismo', {'Urbanism', 'Masterplans', 'Urban design', 'Cities', 'Public spaces'}),
            ('Mobilidade', {'Railway stations', 'Transport', 'Airports', 'Bridges'}), ('Actualidade', {'News'})]
-PAISES = {'USA': 'EUA', 'UK': 'Reino Unido', 'England': 'Inglaterra', 'Scotland': 'Escócia', 'Wales': 'País de Gales', 'Ireland': 'Irlanda',
+PAISES = {'USA': 'EUA', 'United States': 'EUA', 'UK': 'Reino Unido', 'United Kingdom': 'Reino Unido', 'The Netherlands': 'Países Baixos', 'England': 'Inglaterra', 'Scotland': 'Escócia', 'Wales': 'País de Gales', 'Ireland': 'Irlanda',
           'Northern Ireland': 'Irlanda do Norte', 'Spain': 'Espanha', 'France': 'França', 'Italy': 'Itália', 'Germany': 'Alemanha',
           'Netherlands': 'Países Baixos', 'Belgium': 'Bélgica', 'Switzerland': 'Suíça', 'Austria': 'Áustria', 'Denmark': 'Dinamarca',
           'Sweden': 'Suécia', 'Norway': 'Noruega', 'Finland': 'Finlândia', 'Iceland': 'Islândia', 'Poland': 'Polónia', 'Greece': 'Grécia',
