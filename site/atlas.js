@@ -155,13 +155,14 @@ function renderNoticias(d){
       const [y, mm, dd] = n.d.split('-').map(Number);
       const f = fontes[n.f] || {nome: n.f};
       const id = nsecId(n), s = nsecOf(id);
-      const th = n.img ? `<a class="th" href="${esc(n.u)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.remove()"></a>` : '';
+      /* fotografia pequena à direita, na altura do texto, para não aumentar o espaço de cada notícia (pedido do Pedro, 18 Nov. 2026) */
+      const th = n.img ? `<a class="th" href="${esc(n.u)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var a=this.parentNode,e=a.parentNode;e.classList.remove('ci');a.remove()"></a>` : '';
       const q = fold([n.t, n.m, n.tema, f.nome, s.nome].join(' '));
-      return `<article class="ni sc" style="--c:${s.cor}" data-f="${esc(n.f)}" data-tema="${esc(n.tema)}" data-sec="${esc(id)}" data-q="${esc(q)}">
-<div class="dt"><b>${dd}</b>${MES[mm-1]}<span class="yr">${y}</span>${th}</div>
+      return `<article class="ni sc${th ? ' ci' : ''}" style="--c:${s.cor}" data-f="${esc(n.f)}" data-tema="${esc(n.tema)}" data-sec="${esc(id)}" data-q="${esc(q)}">
+<div class="dt"><b>${dd}</b>${MES[mm-1]}<span class="yr">${y}</span></div>
 <div><div class="tg"><span class="pill rg"><i></i>${esc(s.nome)}</span><span class="pill f-${esc(n.f)}">${esc(f.nome)}</span><span class="pill out">${esc(n.tema)}</span></div>
 <h3><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a></h3>
-${n.m ? `<div class="m">${esc(n.m)}</div>` : ''}</div></article>`;
+${n.m ? `<div class="m">${esc(n.m)}</div>` : ''}</div>${th}</article>`;
     }).join('')}</div></section>`;
   }).join('');
   const fr = $('#fontes-n');
@@ -442,8 +443,10 @@ function foCard(f){
     const sub = [o.l, o.a ? 'arquitectura de ' + o.a : ''].filter(Boolean).join(' · ');
     return `<li><a href="${esc(o.u)}" target="_blank" rel="noopener">${esc(o.t)}</a>${sub ? `<span>${esc(sub)}</span>` : ''}</li>`;
   }).join('');
-  return `<article class="fo" style="--c:${s.cor}" data-sec="${esc(id)}" data-c="${esc(foCid(f))}" data-q="${esc(q)}">
-<div class="fh"><h3><a href="${esc(f.u)}" target="_blank" rel="noopener">${esc(f.n)}</a></h3><span class="pill rg"><i></i>${esc(f.c || s.nome)}</span></div>
+  /* uma fotografia do portfolio ao lado do nome (pedido do Pedro, 18 Nov. 2026), servida pelo Divisare e com ligação à obra */
+  const ft = f.foto && f.foto.src ? `<a class="fport" href="${esc(f.foto.u || f.u)}" target="_blank" rel="noopener" title="Portfolio: ${esc(f.foto.t || '')}"><img src="${esc(f.foto.src)}" alt="${esc((f.foto.t || 'Obra') + ', fotografia de ' + f.n)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('sem')"><span>Portfolio</span></a>` : '';
+  return `<article class="fo${ft ? ' cfoto' : ''}" style="--c:${s.cor}" data-sec="${esc(id)}" data-c="${esc(foCid(f))}" data-q="${esc(q)}">
+<div class="fh">${ft}<div class="fn"><h3><a href="${esc(f.u)}" target="_blank" rel="noopener">${esc(f.n)}</a></h3><span class="pill rg"><i></i>${esc(f.c || s.nome)}</span></div></div>
 ${lis ? `<ol class="fobras">${lis}</ol>` : '<p class="fsem">Sem obras na primeira página do Divisare.</p>'}
 <div class="lnks"><a class="lnk dark" href="${esc(f.u)}" target="_blank" rel="noopener">Ver no Divisare ${EXT}</a>${f.w ? `<a class="lnk" href="${esc(f.w)}" target="_blank" rel="noopener">${esc(host)} ${EXT}</a>` : ''}</div>
 </article>`;
@@ -453,9 +456,11 @@ function renderFotografos(d){
   const fs = d.fotografos || [];
   if (!fs.length) { box.innerHTML = '<p class="empty">A lista de fotógrafos ainda está a ser recolhida.</p>'; return; }
   const grupos = [...SECORDER, 'NAC'].filter(id => fs.some(f => nsecId(f) === id));
-  box.innerHTML = grupos.map(id => { const s = foSec(id);
-    return `<section class="fgrp" data-group="${esc(id)}"><h2 class="nmonth"><i style="background:${s.cor}"></i>${esc(s.nome)}<span class="gn num"></span></h2><div class="fgrid">${fs.filter(f => nsecId(f) === id).map(foCard).join('')}</div></section>`;
-  }).join('');
+  /* por ordem alfabética (pedido do Pedro, 18 Nov. 2026), com uma letra a abrir cada grupo; a região fica na cor e no filtro */
+  const az = fs.slice().sort((a, b) => a.n.localeCompare(b.n, 'pt', {sensitivity: 'base', ignorePunctuation: true}));
+  const letra = f => { const c = fold(f.n).replace(/[^a-z0-9]/g, '').charAt(0).toUpperCase(); return /[A-Z]/.test(c) ? c : '#'; };
+  const letras = [...new Set(az.map(letra))];
+  box.innerHTML = letras.map(L => `<section class="fgrp" data-group="${esc(L)}"><h2 class="nmonth fl">${esc(L)}<span class="gn num"></span></h2><div class="fgrid">${az.filter(f => letra(f) === L).map(foCard).join('')}</div></section>`).join('');
   const rb = $('#regs-f');
   if (rb) rb.innerHTML = '<span class="lab">Região</span><button class="fb" type="button" data-k="sec" data-v="all" aria-pressed="true">Todas</button>' +
     grupos.map(id => { const s = foSec(id);
@@ -468,6 +473,13 @@ function renderFotografos(d){
   }
   const upd = $('#upd-f'); if (upd && d.actualizado) upd.textContent = fmtLong(d.actualizado);
   const tot = $('#tot-f'); if (tot) tot.textContent = fs.length;
+  /* textos das páginas publicadas antes da ordem alfabética e das fotografias */
+  const pu = upd && upd.parentNode;
+  if (pu && pu.textContent.includes('ordem do Divisare')) pu.innerHTML = pu.innerHTML.replace(/Cada fotógrafo tem a cor[^.]*\./, 'A lista segue a ordem alfabética e cada fotógrafo tem a cor da região onde trabalha.');
+  const ld = $('main.fotp p.lead');
+  if (ld && ld.textContent.includes('com ligação ao seu sítio. As fotografias')) ld.textContent = 'Os fotógrafos de arquitectura que trabalham em Portugal e publicam no Divisare. Cada ficha mostra uma fotografia do portfolio e as obras que o fotógrafo publicou mais recentemente, com a cidade onde trabalha e a ligação ao seu sítio. As fotografias são dos fotógrafos e vêm do Divisare, para onde levam as ligações.';
+  const sn = $('main.fotp .srcnote');
+  if (sn && sn.textContent.includes('Guardamos apenas')) sn.innerHTML = sn.innerHTML.replace(/Guardamos apenas[^.]*\./, 'A fotografia de cada ficha é mostrada a partir do Divisare, com ligação à obra, e não é copiada para o ATLAS.');
 }
 
 /* o separador «Notícias» passou a chamar-se «Imprensa» (pedido do Pedro, 18 Nov. 2026): corrige as páginas publicadas antes */

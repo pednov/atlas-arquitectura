@@ -445,3 +445,27 @@ button,select,input{font:inherit;color:inherit}
 .vst-t{font-size:12px;color:var(--ink-2)}
 .vst-t[data-st="nok"]{color:#a51d1d}
 @media print{.vplan{box-shadow:none;border:1px solid #ddd;break-inside:avoid}.vplan-h .lnk{display:none}}
+/* fotógrafos por ordem alfabética, com uma fotografia de portfolio ao lado do nome (18 Nov. 2026) */
+.fgrp .nmonth.fl{font:800 26px/1 var(--display);color:var(--ink);letter-spacing:-.02em;margin:34px 0 12px}
+.fo .fh{flex-direction:row;align-items:flex-start;gap:14px}
+.fo .fn{display:flex;flex-direction:column;align-items:flex-start;gap:8px;min-width:0}
+.fport{position:relative;flex:none;width:112px;aspect-ratio:1;border-radius:12px;overflow:hidden;background:var(--faint);text-decoration:none}
+.fport img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .25s}
+.fo:hover .fport img{transform:scale(1.05)}
+.fport span{position:absolute;left:6px;bottom:6px;padding:3px 7px;border-radius:999px;background:rgba(27,27,27,.78);color:#fff;font:700 10.5px/1 var(--body);letter-spacing:.02em}
+.fport.sem img{display:none}
+.fport.sem{display:grid;place-items:center}
+.fport.sem span{position:static;background:none;color:var(--ink-2)}
+.fpt{font-size:12.5px;color:var(--ink-2);line-height:1.3}
+@media (max-width:420px){.fport{width:88px}}
+/* Imprensa: fotografia pequena à direita, sem aumentar a altura de cada notícia (18 Nov. 2026) */
+.ni.ci{grid-template-columns:96px minmax(0,1fr) 72px}
+.ni .th{margin-top:0;width:72px;height:54px;aspect-ratio:auto;border-radius:10px;align-self:start}
+.ni .dt .th{display:none}
+/* no telemóvel a fotografia passa para debaixo da data, para não estreitar o texto */
+@media (max-width:560px){
+  .ni.ci{grid-template-columns:72px minmax(0,1fr);grid-template-rows:auto 1fr;row-gap:6px}
+  .ni.ci > .dt{grid-column:1;grid-row:1}
+  .ni.ci > div:not(.dt){grid-column:2;grid-row:1 / span 2}
+  .ni.ci .th{grid-column:1;grid-row:2;width:52px;height:39px}
+}
