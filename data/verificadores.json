@@ -1,0 +1,1054 @@
+{
+ "actualizado": "2026-11-18",
+ "nota": "Base de trabalho (18 Nov. 2026), a afinar. Valores do DL 163/2006 (anexo) e do RT-SCIE na redacção da Portaria 135/2020; categorias de risco do anexo III do DL 220/2008.",
+ "acessibilidades": {
+  "diplomas": [
+   "28209",
+   "26472",
+   "28050",
+   "53487"
+  ],
+  "parametros": [
+   {
+    "id": "a-entrada",
+    "grupo": "Entrada e átrios",
+    "nome": "Portas de entrada e saída do edifício",
+    "exige": "Largura útil não inferior a 0,87 m",
+    "norma": "Anexo, 2.2.3",
+    "lex": "28209",
+    "aplica": [
+     "publico"
+    ],
+    "chave": "portas? (de|da) (entrada|saida|acesso)|vaos? de entrada|entrada principal",
+    "tipo": "len",
+    "min": 0.87
+   },
+   {
+    "id": "a-atrio",
+    "grupo": "Entrada e átrios",
+    "nome": "Zona de manobra junto às portas de acesso e nos átrios",
+    "exige": "Rotação de 360º, círculo com 1,5 m de diâmetro",
+    "norma": "Anexo, 2.2.1, 2.2.2 e 4.4.1",
+    "lex": "28209",
+    "aplica": [
+     "publico"
+    ],
+    "chave": "(zona|area) de manobra|rotacao de 360|circulo (com|de) 1[,.]5|diametro de 1[,.]5",
+    "tipo": "presenca"
+   },
+   {
+    "id": "a-portas",
+    "grupo": "Portas",
+    "nome": "Vãos de porta no percurso acessível",
+    "exige": "Largura útil não inferior a 0,77 m",
+    "norma": "Anexo, 4.9.1",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "chave": "\\bportas?\\b|vaos? de porta",
+    "tipo": "len",
+    "min": 0.77,
+    "desenho": "vao"
+   },
+   {
+    "id": "a-portas-alt",
+    "grupo": "Portas",
+    "nome": "Altura útil de passagem das portas",
+    "exige": "Não inferior a 2 m",
+    "norma": "Anexo, 4.9.2",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "chave": "altura (util|livre) de passagem|altura das portas",
+    "tipo": "len",
+    "min": 2.0
+   },
+   {
+    "id": "a-soleira",
+    "grupo": "Portas",
+    "nome": "Ressaltos, batentes e soleiras",
+    "exige": "Não superiores a 0,02 m",
+    "norma": "Anexo, 4.8.2 e 4.9.8",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "chave": "ressaltos?|soleiras?|batentes?",
+    "tipo": "len",
+    "max": 0.02
+   },
+   {
+    "id": "a-puxador",
+    "grupo": "Portas",
+    "nome": "Puxadores e dispositivos de operação das portas",
+    "exige": "Entre 0,8 m e 1,1 m do piso",
+    "norma": "Anexo, 4.9.10",
+    "lex": "28209",
+    "aplica": [
+     "publico"
+    ],
+    "chave": "puxadores?|dispositivos? de (operacao|abertura)|macanetas?",
+    "tipo": "len",
+    "min": 0.8,
+    "max": 1.1
+   },
+   {
+    "id": "a-corredor",
+    "grupo": "Circulação horizontal",
+    "nome": "Corredores, galerias e patamares",
+    "exige": "Largura não inferior a 1,2 m (0,9 m em troços com menos de 1,5 m)",
+    "norma": "Anexo, 2.3.1 e 2.3.2",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "chave": "corredor(es)?|galerias?|circulac(ao|oes) horizonta",
+    "tipo": "len",
+    "min": 1.2
+   },
+   {
+    "id": "a-corredor-hab",
+    "grupo": "Habitações",
+    "nome": "Corredores no interior das habitações",
+    "exige": "Largura não inferior a 1,1 m (0,9 m em troços até 1,5 m)",
+    "norma": "Anexo, 3.3.2",
+    "lex": "28209",
+    "aplica": [
+     "habitacao"
+    ],
+    "chave": "corredor(es)? (da|das|no interior|interior)|corredores? dos fogos|circulacao interior",
+    "tipo": "len",
+    "min": 1.1
+   },
+   {
+    "id": "a-altura-livre",
+    "grupo": "Circulação horizontal",
+    "nome": "Altura livre nos percursos",
+    "exige": "Não inferior a 2 m nos espaços encerrados e 2,4 m nos não encerrados",
+    "norma": "Anexo, 4.5.1",
+    "lex": "28209",
+    "aplica": [
+     "publico"
+    ],
+    "chave": "altura livre|pe[- ]direito livre",
+    "tipo": "len",
+    "min": 2.0
+   },
+   {
+    "id": "a-pisos",
+    "grupo": "Circulação horizontal",
+    "nome": "Inclinação dos pisos do percurso",
+    "exige": "Inferior a 5 % no sentido do percurso e não superior a 2 % na transversal",
+    "norma": "Anexo, 4.7.5 e 4.7.6",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "chave": "inclinacao (longitudinal|transversal|dos pavimentos|do pavimento)|pendente",
+    "tipo": "pct",
+    "max": 5
+   },
+   {
+    "id": "a-escada-larg",
+    "grupo": "Escadas",
+    "nome": "Largura dos lanços, patins e patamares das escadas",
+    "exige": "Não inferior a 1,2 m",
+    "norma": "Anexo, 2.4.1",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "escadas?",
+    "chave": "escadas?.{0,40}largura|largura (dos|do) lanc|lanco",
+    "tipo": "len",
+    "min": 1.2
+   },
+   {
+    "id": "a-escada-hab",
+    "grupo": "Habitações",
+    "nome": "Escadas no interior das habitações",
+    "exige": "Lanços com largura não inferior a 1 m e patamares de 1,2 m",
+    "norma": "Anexo, 3.3.5",
+    "lex": "28209",
+    "aplica": [
+     "habitacao"
+    ],
+    "existe": "escada interior|escadas interiores|duplex|triplex",
+    "chave": "escadas? interior(es)?",
+    "tipo": "len",
+    "min": 1.0
+   },
+   {
+    "id": "a-patamar",
+    "grupo": "Escadas",
+    "nome": "Profundidade dos patamares das escadas",
+    "exige": "Não inferior a 1,2 m",
+    "norma": "Anexo, 2.4.2",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "escadas?",
+    "chave": "patamar(es)?.{0,40}profundidade|profundidade (do|dos) patamar",
+    "tipo": "len",
+    "min": 1.2
+   },
+   {
+    "id": "a-cobertor",
+    "grupo": "Escadas",
+    "nome": "Cobertor dos degraus",
+    "exige": "Profundidade não inferior a 0,28 m",
+    "norma": "Anexo, 2.4.3",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "escadas?|degraus?",
+    "chave": "cobertor(es)?|\\bpiso do degrau",
+    "tipo": "len",
+    "min": 0.28
+   },
+   {
+    "id": "a-espelho",
+    "grupo": "Escadas",
+    "nome": "Espelho dos degraus",
+    "exige": "Altura não superior a 0,18 m",
+    "norma": "Anexo, 2.4.3",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "escadas?|degraus?",
+    "chave": "espelho(s)?|altura do degrau",
+    "tipo": "len",
+    "max": 0.18
+   },
+   {
+    "id": "a-corrimao",
+    "grupo": "Escadas",
+    "nome": "Altura dos corrimãos das escadas",
+    "exige": "Entre 0,85 m e 0,9 m, prolongados 0,3 m no topo",
+    "norma": "Anexo, 2.4.9",
+    "lex": "28209",
+    "aplica": [
+     "publico"
+    ],
+    "existe": "escadas?",
+    "chave": "corrimao|corrimaos|corrimoes",
+    "tipo": "len",
+    "min": 0.85,
+    "max": 0.9
+   },
+   {
+    "id": "a-rampa-incl",
+    "grupo": "Rampas",
+    "nome": "Inclinação das rampas",
+    "exige": "Até 6 % (desnível até 0,6 m e projecção até 10 m) ou até 8 % (desnível até 0,4 m e projecção até 5 m)",
+    "norma": "Anexo, 2.5.1 e 2.5.2",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "rampas?",
+    "chave": "rampas?|\\bi\\s*=",
+    "tipo": "pct",
+    "faixas": [
+     [
+      6,
+      "ok",
+      ""
+     ],
+     [
+      8,
+      "rev",
+      "Só é admissível para desníveis até 0,4 m e projecção horizontal até 5 m (2.5.1).",
+      {
+       "chave": "desnivel",
+       "max": 0.4,
+       "nota": "Desnível de {v} indicado na memória, dentro dos 0,4 m que o 2.5.1 admite para 8 %; confirme a projecção horizontal (até 5 m)."
+      }
+     ],
+     [
+      12,
+      "alt",
+      "Só em obras de alteração ou conservação, até 10 % com desnível até 0,2 m ou até 12 % com desnível até 0,1 m (2.5.2)."
+     ]
+    ],
+    "desenho": "pct"
+   },
+   {
+    "id": "a-rampa-larg",
+    "grupo": "Rampas",
+    "nome": "Largura das rampas",
+    "exige": "Não inferior a 1,2 m (0,9 m nos casos do 2.5.4)",
+    "norma": "Anexo, 2.5.4",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "rampas?",
+    "chave": "rampas?.{0,40}largura|largura (da|das) rampa",
+    "tipo": "len",
+    "min": 1.2
+   },
+   {
+    "id": "a-rampa-plat",
+    "grupo": "Rampas",
+    "nome": "Plataformas de descanso das rampas",
+    "exige": "Comprimento não inferior a 1,5 m, na base, no topo e nas mudanças de direcção",
+    "norma": "Anexo, 2.5.6",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "rampas?",
+    "chave": "plataformas? (horizonta(l|is) )?de descanso|patamar(es)? (da|das) rampa",
+    "tipo": "len",
+    "min": 1.5
+   },
+   {
+    "id": "a-rampa-corr",
+    "grupo": "Rampas",
+    "nome": "Corrimãos das rampas",
+    "exige": "Entre 0,85 m e 0,95 m (até 6 %); acima de 6 %, duplos a 0,7–0,75 m e 0,9–0,95 m",
+    "norma": "Anexo, 2.5.9",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "rampas?",
+    "chave": "rampas?.{0,60}corrima|corrima.{0,60}rampa",
+    "tipo": "presenca"
+   },
+   {
+    "id": "a-ascensor",
+    "grupo": "Ascensores e plataformas",
+    "nome": "Cabina dos ascensores",
+    "exige": "Dimensões interiores não inferiores a 1,1 m × 1,4 m",
+    "norma": "Anexo, 2.6.2",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "ascensor(es)?|elevador(es)?",
+    "chave": "ascensor(es)?|elevador(es)?|cabina",
+    "tipo": "dim2",
+    "min": [
+     1.1,
+     1.4
+    ]
+   },
+   {
+    "id": "a-asc-porta",
+    "grupo": "Ascensores e plataformas",
+    "nome": "Portas dos ascensores",
+    "exige": "Largura útil não inferior a 0,8 m",
+    "norma": "Anexo, 2.6.4",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "ascensor(es)?|elevador(es)?",
+    "chave": "portas? (do|dos|da) (ascensor|elevador|cabina)",
+    "tipo": "len",
+    "min": 0.8
+   },
+   {
+    "id": "a-asc-patamar",
+    "grupo": "Ascensores e plataformas",
+    "nome": "Patamares em frente aos ascensores",
+    "exige": "Zona de manobra para rotação de 360º e inclinação até 2 %",
+    "norma": "Anexo, 2.6.1",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "ascensor(es)?|elevador(es)?",
+    "chave": "patamar(es)?.{0,60}(ascensor|elevador)|(ascensor|elevador).{0,60}patamar",
+    "tipo": "presenca"
+   },
+   {
+    "id": "a-asc-cmd",
+    "grupo": "Ascensores e plataformas",
+    "nome": "Comandos dos ascensores",
+    "exige": "Entre 0,9 m e 1,2 m nos patamares e entre 0,9 m e 1,3 m na cabina",
+    "norma": "Anexo, 2.6.5",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "ascensor(es)?|elevador(es)?",
+    "chave": "comandos|botoneiras?",
+    "tipo": "len",
+    "min": 0.9,
+    "max": 1.3
+   },
+   {
+    "id": "a-plataforma",
+    "grupo": "Ascensores e plataformas",
+    "nome": "Plataformas elevatórias",
+    "exige": "Dimensões mínimas de 0,75 m × 1 m e zona livre de 1,2 m à entrada",
+    "norma": "Anexo, 2.7.1 e 2.7.3",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "plataformas? elevatorias?|elevador de escada",
+    "chave": "plataformas? elevatorias?",
+    "tipo": "dim2",
+    "min": [
+     0.75,
+     1.0
+    ]
+   },
+   {
+    "id": "a-estac",
+    "grupo": "Estacionamento",
+    "nome": "Lugares de estacionamento reservados",
+    "exige": "Largura útil de 2,5 m, faixa de acesso lateral de 1 m e comprimento de 5 m",
+    "norma": "Anexo, 2.8.2",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "estacionamento|parqueamento|garagem|lugares? de (estacionamento|parqueamento)",
+    "chave": "lugar(es)? (reservado|acessive|para pessoas)|mobilidade condicionada.{0,40}lugar",
+    "tipo": "dim2",
+    "min": [
+     2.5,
+     5.0
+    ]
+   },
+   {
+    "id": "a-estac-n",
+    "grupo": "Estacionamento",
+    "nome": "Número de lugares reservados",
+    "exige": "Até 10 lugares, 1; 11 a 25, 2; 26 a 100, 3; 101 a 500, 4; acima de 500, 1 por cada 100 (em habitação: até 50, 1; 51 a 200, 2; acima de 200, 1 por cada 100)",
+    "norma": "Anexo, 2.8.1 e 3.2.6",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "existe": "estacionamento|parqueamento|garagem",
+    "chave": "lugar(es)? (reservado|acessive|para pessoas)",
+    "tipo": "presenca"
+   },
+   {
+    "id": "a-is",
+    "grupo": "Instalações sanitárias",
+    "nome": "Instalações sanitárias acessíveis",
+    "exige": "Pelo menos 10 % dos aparelhos, com o mínimo de um de cada tipo",
+    "norma": "Anexo, 2.9.3",
+    "lex": "28209",
+    "aplica": [
+     "publico"
+    ],
+    "chave": "(instalac(ao|oes) sanitaria|\\bi\\.?s\\.?\\b|wc).{0,60}(acessive|mobilidade condicionada|deficien)|(acessive|mobilidade condicionada).{0,40}(instalac(ao|oes) sanitaria|\\bi\\.?s\\.?\\b|wc)",
+    "tipo": "presenca"
+   },
+   {
+    "id": "a-is-dim",
+    "grupo": "Instalações sanitárias",
+    "nome": "Cabina com sanita acessível",
+    "exige": "Espaço interior não inferior a 1,6 m × 1,7 m",
+    "norma": "Anexo, 2.9.5",
+    "lex": "28209",
+    "aplica": [
+     "publico"
+    ],
+    "chave": "(instalac(ao|oes) sanitaria|\\bi\\.?s\\.?\\b|wc|cabina).{0,40}(acessive|mobilidade)",
+    "tipo": "dim2",
+    "min": [
+     1.6,
+     1.7
+    ]
+   },
+   {
+    "id": "a-sanita",
+    "grupo": "Instalações sanitárias",
+    "nome": "Altura do assento da sanita",
+    "exige": "0,45 m do piso ao bordo superior do assento, com tolerância de 0,01 m",
+    "norma": "Anexo, 2.9.4",
+    "lex": "28209",
+    "aplica": [
+     "publico"
+    ],
+    "chave": "\\bsanitas?\\b|bacia de retrete",
+    "tipo": "len",
+    "min": 0.44,
+    "max": 0.46
+   },
+   {
+    "id": "a-lavatorio",
+    "grupo": "Instalações sanitárias",
+    "nome": "Altura do lavatório",
+    "exige": "Bordo a 0,8 m do piso (± 0,02 m), com zona livre por baixo de 0,7 m × 0,65 m × 0,5 m",
+    "norma": "Anexo, 2.9.13",
+    "lex": "28209",
+    "aplica": [
+     "publico"
+    ],
+    "chave": "lavatorios?",
+    "tipo": "len",
+    "min": 0.78,
+    "max": 0.82
+   },
+   {
+    "id": "a-is-hab",
+    "grupo": "Habitações",
+    "nome": "Instalação sanitária da habitação",
+    "exige": "Pelo menos uma por habitação nas condições do 3.3.4 (base de duche com 0,8 m × 0,8 m, se houver duche)",
+    "norma": "Anexo, 3.3.4",
+    "lex": "28209",
+    "aplica": [
+     "habitacao"
+    ],
+    "chave": "(instalac(ao|oes) sanitaria|casa de banho|\\bi\\.?s\\.?\\b).{0,80}(3\\.3\\.4|acessive|adaptave|mobilidade)",
+    "tipo": "presenca"
+   },
+   {
+    "id": "a-cozinha",
+    "grupo": "Habitações",
+    "nome": "Cozinha",
+    "exige": "Zona de manobra para rotação de 360º e 1,2 m livres entre bancadas e paredes",
+    "norma": "Anexo, 3.3.3",
+    "lex": "28209",
+    "aplica": [
+     "habitacao"
+    ],
+    "chave": "cozinhas?.{0,80}(1[,.]2|manobra|360)|(bancadas?).{0,40}1[,.]2",
+    "tipo": "presenca"
+   },
+   {
+    "id": "a-entrada-hab",
+    "grupo": "Habitações",
+    "nome": "Espaço de entrada das habitações",
+    "exige": "Zona de manobra para rotação de 360º",
+    "norma": "Anexo, 3.3.1",
+    "lex": "28209",
+    "aplica": [
+     "habitacao"
+    ],
+    "chave": "(vestibulo|hall|entrada) (da|das) habitac|entrada.{0,40}(360|manobra)",
+    "tipo": "presenca"
+   },
+   {
+    "id": "a-mecanicos",
+    "grupo": "Habitações",
+    "nome": "Previsão de meios mecânicos de comunicação vertical",
+    "exige": "Possibilidade de servir todos os pisos por meios mecânicos instalados depois, afectando só as partes comuns",
+    "norma": "Anexo, 3.2.1 a 3.2.3",
+    "lex": "28209",
+    "aplica": [
+     "habitacao"
+    ],
+    "chave": "ascensor|elevador|meios mecanicos|plataforma elevatoria",
+    "tipo": "presenca"
+   },
+   {
+    "id": "a-balcao",
+    "grupo": "Atendimento",
+    "nome": "Balcões e guichets de atendimento",
+    "exige": "Extensão de pelo menos 0,8 m a uma altura entre 0,75 m e 0,85 m",
+    "norma": "Anexo, 2.12.1",
+    "lex": "28209",
+    "aplica": [
+     "publico"
+    ],
+    "existe": "balc(ao|oes)|guiche|rececao|recepcao|atendimento",
+    "chave": "balc(ao|oes)|guiche",
+    "tipo": "len",
+    "min": 0.75,
+    "max": 0.85
+   },
+   {
+    "id": "a-plano",
+    "grupo": "Elementos do processo",
+    "nome": "Plano de acessibilidades",
+    "exige": "Peças escritas e desenhadas que demonstrem o cumprimento das normas técnicas, com o percurso acessível",
+    "norma": "Artigo 3.º",
+    "lex": "28209",
+    "aplica": [
+     "publico",
+     "habitacao"
+    ],
+    "chave": "plano de acessibilidade",
+    "tipo": "presenca"
+   }
+  ]
+ },
+ "scie": {
+  "diplomas": [
+   "28065",
+   "28066"
+  ],
+  "parametros": [
+   {
+    "id": "s-cat",
+    "grupo": "Enquadramento",
+    "nome": "Categoria de risco",
+    "exige": "A mais baixa que satisfaça todos os critérios do anexo III para a utilização-tipo",
+    "norma": "Artigos 12.º e 13.º e anexo III",
+    "lex": "28065",
+    "calc": "categoria"
+   },
+   {
+    "id": "s-peca",
+    "grupo": "Enquadramento",
+    "nome": "Projecto de SCIE ou ficha de segurança",
+    "exige": "Na 1.ª categoria de risco das utilizações-tipo I, II, III e VI a XII basta a ficha de segurança; nos restantes casos, projecto de especialidade de SCIE",
+    "norma": "Artigo 17.º, n.os 1 e 2",
+    "lex": "28065",
+    "calc": "peca",
+    "chave": "ficha de seguranca|projeto de (especialidade de )?(scie|seguranca contra incendio)|projecto de (especialidade de )?(scie|seguranca contra incendio)"
+   },
+   {
+    "id": "s-acesso",
+    "grupo": "Acesso dos meios de socorro",
+    "nome": "Vias de acesso ao edifício",
+    "exige": "Até 9 m de altura, largura útil de 3,5 m, altura útil de 4 m, raio de curvatura de 11 m e inclinação até 15 %; acima de 9 m, 6 m (10 m em impasse), 5 m, 13 m e 10 %",
+    "norma": "RT-SCIE, artigos 4.º e 5.º",
+    "lex": "28066",
+    "calc": "acesso",
+    "chave": "vias? de acesso|acesso (dos|de) (veiculos|viaturas|meios) de socorro|arruamento"
+   },
+   {
+    "id": "s-faixa",
+    "grupo": "Acesso dos meios de socorro",
+    "nome": "Faixa de operação",
+    "exige": "Acima de 9 m de altura, faixa com 7 m de largura e 15 m de comprimento, a 3 m a 10 m da fachada",
+    "norma": "RT-SCIE, artigo 5.º",
+    "lex": "28066",
+    "calc": "faixa",
+    "chave": "faixas? de operacao"
+   },
+   {
+    "id": "s-hidrante",
+    "grupo": "Acesso dos meios de socorro",
+    "nome": "Hidrantes exteriores",
+    "exige": "Marcos de incêndio junto ao lancil, a não mais de 30 m das saídas do edifício",
+    "norma": "RT-SCIE, artigo 12.º",
+    "lex": "28066",
+    "chave": "marcos? de incendio|hidrantes?|bocas? de incendio (exterior|de parede)",
+    "tipo": "presenca"
+   },
+   {
+    "id": "s-rf",
+    "grupo": "Resistência ao fogo",
+    "nome": "Resistência ao fogo dos elementos estruturais",
+    "exige": "Conforme o quadro IX, pela utilização-tipo e pela categoria de risco",
+    "norma": "RT-SCIE, artigo 15.º",
+    "lex": "28066",
+    "calc": "rf",
+    "chave": "\\b(r|rei|re)\\s?(15|30|45|60|90|120|180|240)\\b"
+   },
+   {
+    "id": "s-compart",
+    "grupo": "Resistência ao fogo",
+    "nome": "Compartimentação corta-fogo",
+    "exige": "Compartimentos corta-fogo e isolamento dos locais de risco conforme o título III",
+    "norma": "RT-SCIE, título III",
+    "lex": "28066",
+    "chave": "compartiment(acao|os?) corta[- ]fogo|compartimentacao geral|isolamento (e protecao|dos locais)",
+    "tipo": "presenca"
+   },
+   {
+    "id": "s-saidas",
+    "grupo": "Evacuação",
+    "nome": "Número de saídas",
+    "exige": "Pelo efectivo de cada local, quadro XXIX",
+    "norma": "RT-SCIE, artigo 54.º",
+    "lex": "28066",
+    "calc": "saidas",
+    "chave": "(\\d+|uma|duas|tres|quatro|cinco|seis) saidas|saidas? (de emergencia|independentes|distintas)"
+   },
+   {
+    "id": "s-up",
+    "grupo": "Evacuação",
+    "nome": "Largura das saídas e dos caminhos de evacuação",
+    "exige": "Pelo efectivo, quadro XXXI (1 UP = 0,9 m, 2 UP = 1,4 m, n UP = n × 0,6 m); 2 UP com 200 pessoas ou mais",
+    "norma": "RT-SCIE, artigo 56.º e anexo I",
+    "lex": "28066",
+    "calc": "up",
+    "chave": "\\bup\\b|unidades? de passagem"
+   },
+   {
+    "id": "s-dist-local",
+    "grupo": "Evacuação",
+    "nome": "Distâncias a percorrer nos locais",
+    "exige": "Até 15 m nos pontos em impasse e até 30 m com acesso a saídas distintas (45 m nas condições do n.º 3)",
+    "norma": "RT-SCIE, artigo 57.º",
+    "lex": "28066",
+    "calc": "dist",
+    "chave": "distancias? (maximas? )?a percorrer|percurso (maximo|ate a saida)|impasse"
+   },
+   {
+    "id": "s-dist-via",
+    "grupo": "Evacuação",
+    "nome": "Distâncias nas vias horizontais de evacuação",
+    "exige": "Em impasse, até 15 m (10 m se servirem locais de risco D ou E); sem impasse, até 30 m (20 m acima de 28 m ou abaixo do plano de referência)",
+    "norma": "RT-SCIE, artigo 61.º",
+    "lex": "28066",
+    "chave": "vias? (horizonta(l|is) )?de evacuacao.{0,60}impasse|impasse.{0,60}vias?",
+    "tipo": "len",
+    "max": 15
+   },
+   {
+    "id": "s-portas",
+    "grupo": "Evacuação",
+    "nome": "Portas dos caminhos de evacuação",
+    "exige": "Com mais de 50 utilizadores, abrir facilmente no sentido da evacuação e sem meios de desbloqueamento",
+    "norma": "RT-SCIE, artigo 62.º",
+    "lex": "28066",
+    "calc": "portas",
+    "chave": "sentido da evacuacao|barras? antipanico|barra antipanico"
+   },
+   {
+    "id": "s-ccf",
+    "grupo": "Evacuação",
+    "nome": "Câmaras corta-fogo",
+    "exige": "Área mínima de 3 m² (dobro com mais de 50 utilizadores), 1,2 m entre portas, pé-direito de 2 m e dimensão linear de 1,4 m",
+    "norma": "RT-SCIE, artigo 63.º",
+    "lex": "28066",
+    "existe": "camaras? corta[- ]fogo",
+    "chave": "camaras? corta[- ]fogo",
+    "tipo": "area",
+    "min": 3
+   },
+   {
+    "id": "s-vias-vert",
+    "grupo": "Evacuação",
+    "nome": "Vias verticais de evacuação",
+    "exige": "Pelo menos duas acima de 28 m; largura de 1 UP por cada 70 utilizadores, com 2 UP no mínimo acima de 28 m",
+    "norma": "RT-SCIE, artigo 64.º",
+    "lex": "28066",
+    "calc": "viasvert",
+    "chave": "vias? verticais? de evacuacao|escadas? (protegidas?|enclausuradas?|de emergencia|de evacuacao)"
+   },
+   {
+    "id": "s-degraus",
+    "grupo": "Evacuação",
+    "nome": "Degraus por lanço nas escadas de evacuação",
+    "exige": "Entre 3 e 25 degraus por lanço, no máximo dois lanços seguidos sem mudança de direcção",
+    "norma": "RT-SCIE, artigo 65.º",
+    "lex": "28066",
+    "existe": "escadas?|degraus?",
+    "chave": "degraus",
+    "tipo": "int",
+    "min": 3,
+    "max": 25
+   },
+   {
+    "id": "s-rampas",
+    "grupo": "Evacuação",
+    "nome": "Rampas nos caminhos de evacuação",
+    "exige": "Inclinação até 10 % (6 % se usadas por pessoas com mobilidade condicionada) e patamares de 2 m",
+    "norma": "RT-SCIE, artigo 66.º",
+    "lex": "28066",
+    "existe": "rampas?",
+    "chave": "rampas?|\\bi\\s*=",
+    "tipo": "pct",
+    "desenho": "pct",
+    "faixas": [
+     [
+      6,
+      "ok",
+      ""
+     ],
+     [
+      10,
+      "rev",
+      "Admissível só se a rampa não servir pessoas com mobilidade condicionada (artigo 66.º, n.º 1, alínea a))."
+     ]
+    ]
+   },
+   {
+    "id": "s-guardas",
+    "grupo": "Evacuação",
+    "nome": "Guardas dos caminhos de evacuação",
+    "exige": "Altura mínima de 1 m (desnível até 6 m) ou 1,2 m (desnível acima de 6 m), quadro XXXIII",
+    "norma": "RT-SCIE, artigo 67.º",
+    "lex": "28066",
+    "existe": "guardas?|varandas?|galerias?|guarda[- ]corpos?",
+    "chave": "guardas?|guarda[- ]corpos?|parapeitos?",
+    "tipo": "len",
+    "min": 1.0
+   },
+   {
+    "id": "s-sinal",
+    "grupo": "Equipamentos e sistemas",
+    "nome": "Sinalização de segurança",
+    "exige": "Sinalização dos caminhos de evacuação, saídas e meios de intervenção",
+    "norma": "RT-SCIE, título VI, capítulo I",
+    "lex": "28066",
+    "chave": "sinalizacao (de seguranca|de emergencia|fotoluminescente)|sinaletica de seguranca|placas? de sinalizacao",
+    "tipo": "presenca"
+   },
+   {
+    "id": "s-ilum",
+    "grupo": "Equipamentos e sistemas",
+    "nome": "Iluminação de emergência",
+    "exige": "Iluminação de ambiente e de balizagem ou circulação nos caminhos de evacuação",
+    "norma": "RT-SCIE, título VI, capítulo II",
+    "lex": "28066",
+    "chave": "iluminacao de (emergencia|seguranca|balizagem)|blocos? autonomos",
+    "tipo": "presenca"
+   },
+   {
+    "id": "s-detec",
+    "grupo": "Equipamentos e sistemas",
+    "nome": "Detecção, alarme e alerta",
+    "exige": "Sistema com a configuração exigida para a utilização-tipo e a categoria de risco",
+    "norma": "RT-SCIE, título VI, capítulo III",
+    "lex": "28066",
+    "chave": "detecao|deteccao|detetores?|detectores?|alarme|botoneiras?",
+    "tipo": "presenca"
+   },
+   {
+    "id": "s-fumo",
+    "grupo": "Equipamentos e sistemas",
+    "nome": "Controlo de fumo",
+    "exige": "Desenfumagem das vias de evacuação e dos locais onde é exigida",
+    "norma": "RT-SCIE, título VI, capítulo IV",
+    "lex": "28066",
+    "chave": "controlo de fumo|desenfumage|exutores?|pressurizacao",
+    "tipo": "presenca"
+   },
+   {
+    "id": "s-extint",
+    "grupo": "Equipamentos e sistemas",
+    "nome": "Extintores",
+    "exige": "18 L de agente extintor padrão por cada 500 m² de piso, com um extintor por cada 200 m² no mínimo e no máximo 15 m a percorrer até um extintor",
+    "norma": "RT-SCIE, artigo 163.º",
+    "lex": "28066",
+    "calc": "extint",
+    "chave": "extintor(es)?"
+   }
+  ],
+  "categorias": {
+   "I": {
+    "altura": [
+     9,
+     28,
+     50
+    ],
+    "abaixo": [
+     1,
+     3,
+     5
+    ]
+   },
+   "II": {
+    "altura": [
+     9,
+     28,
+     28
+    ],
+    "area": [
+     3200,
+     9600,
+     32000
+    ],
+    "abaixo": [
+     1,
+     3,
+     5
+    ]
+   },
+   "III": {
+    "altura": [
+     9,
+     28,
+     50
+    ],
+    "efectivo": [
+     100,
+     1000,
+     5000
+    ]
+   },
+   "IV": {
+    "altura": [
+     9,
+     9,
+     28
+    ],
+    "efectivo": [
+     100,
+     500,
+     1500
+    ],
+    "efectivoDE": [
+     25,
+     100,
+     400
+    ]
+   },
+   "V": {
+    "altura": [
+     9,
+     9,
+     28
+    ],
+    "efectivo": [
+     100,
+     500,
+     1500
+    ],
+    "efectivoDE": [
+     25,
+     100,
+     400
+    ]
+   },
+   "VI": {
+    "altura": [
+     9,
+     28,
+     28
+    ],
+    "abaixo": [
+     0,
+     1,
+     2
+    ],
+    "efectivo": [
+     100,
+     1000,
+     5000
+    ]
+   },
+   "VII": {
+    "altura": [
+     9,
+     28,
+     28
+    ],
+    "efectivo": [
+     100,
+     500,
+     1500
+    ],
+    "efectivoE": [
+     50,
+     200,
+     800
+    ]
+   },
+   "VIII": {
+    "altura": [
+     9,
+     28,
+     28
+    ],
+    "abaixo": [
+     0,
+     1,
+     2
+    ],
+    "efectivo": [
+     100,
+     1000,
+     5000
+    ]
+   },
+   "IX": {
+    "altura": [
+     9,
+     28,
+     28
+    ],
+    "abaixo": [
+     0,
+     1,
+     2
+    ],
+    "efectivo": [
+     100,
+     1000,
+     5000
+    ]
+   }
+  },
+  "ut": {
+   "I": "Habitacionais",
+   "II": "Estacionamentos",
+   "III": "Administrativos",
+   "IV": "Escolares",
+   "V": "Hospitalares e lares de idosos",
+   "VI": "Espectáculos e reuniões públicas",
+   "VII": "Hoteleiros e restauração",
+   "VIII": "Comerciais e gares de transportes",
+   "IX": "Desportivos e de lazer",
+   "X": "Museus e galerias de arte",
+   "XI": "Bibliotecas e arquivos",
+   "XII": "Industriais, oficinas e armazéns"
+  },
+  "rf": {
+   "base": [
+    30,
+    60,
+    90,
+    120
+   ],
+   "II": [
+    60,
+    90,
+    120,
+    180
+   ],
+   "XI": [
+    60,
+    90,
+    120,
+    180
+   ],
+   "XII": [
+    60,
+    90,
+    120,
+    180
+   ]
+  },
+  "saidas": [
+   [
+    50,
+    "uma"
+   ],
+   [
+    1500,
+    "uma por cada 500 pessoas ou fracção, mais uma"
+   ],
+   [
+    3000,
+    "uma por cada 500 pessoas ou fracção"
+   ],
+   [
+    null,
+    "seis no mínimo, condicionadas pelas distâncias a percorrer"
+   ]
+  ]
+ }
+}
