@@ -3,8 +3,9 @@
 
 Lê a lista pública dos fotógrafos portugueses no Divisare e, de cada um, a página de autor: cidade,
 sítio na internet e as obras mais recentes que lá publicou (título, lugar, autoria do projecto e ligação).
-Guarda também o endereço de uma fotografia da obra mais recente, que a página mostra como «Portfolio» a partir
-dos servidores do Divisare (pedido do Pedro, 18 Nov. 2026); a imagem não é copiada. Não guarda telefones, moradas nem emails.
+Guarda também o endereço da fotografia de capa de cada obra, que a página mostra no portfolio de cada fotógrafo,
+dentro do ATLAS e com o crédito do fotógrafo (pedido do Pedro, 18 Nov. 2026); as imagens não são copiadas.
+Não guarda telefones, moradas nem emails.
 
 Corre uma vez por semana (ou sempre, com --forcar). Tenta primeiro um pedido simples e, se o Divisare o
 recusar, abre as páginas com o navegador sem janela (Playwright). Se a recolha falhar ou vier muito
@@ -25,6 +26,7 @@ LISTA = BASE + '/photographers/europe/southern-europe/portugal'
 FICH = DATA / 'fotografos.json'
 HOJE = datetime.now(timezone.utc).date()
 OBRAS_MAX = 6
+VERSAO = 2          # 2: fotografia de capa em cada obra (portfolio dentro do ATLAS)
 CIDADES = {'oporto': ('Porto', 'NORTE'), 'lisbon': ('Lisboa', 'LVT'), 's miguel': ('São Miguel', 'ACORES'),
            'sao miguel': ('São Miguel', 'ACORES'), 'azores': ('Açores', 'ACORES'), 'madeira': ('Madeira', 'MAD')}
 LOG = []
@@ -133,6 +135,9 @@ def ficha(leitor, f):
         if 'foto' not in f and src.startswith('http') and '/images/' in src:
             # miniatura de 400 px pedida ao próprio Divisare (a transformação vai no caminho do endereço)
             f['foto'] = {'src': re.sub(r'/images/[^/]+/v', '/images/w_400,q_auto,f_auto/v', src, count=1), 't': titulo, 'u': o['u']}
+        if src.startswith('http') and '/images/' in src:
+            # fotografia de capa de cada obra, para o portfolio que abre dentro do ATLAS (pedido do Pedro, 18 Nov. 2026)
+            o['i'] = re.sub(r'/images/[^/]+/v', '/images/w_400,q_auto,f_auto/v', src, count=1)
         if lugar: o['l'] = lugar
         if autores: o['a'] = juntar(autores)
         obras.append(o)
@@ -145,7 +150,8 @@ def ficha(leitor, f):
 def main():
     antes = json.loads(FICH.read_text(encoding='utf-8')) if FICH.exists() else {}
     forcar = '--forcar' in sys.argv
-    sem_foto = any('foto' not in f for f in antes.get('fotografos') or [])      # fichas anteriores à fotografia de portfolio
+    sem_foto = (any('foto' not in f for f in antes.get('fotografos') or [])     # fichas anteriores à fotografia de portfolio
+                or antes.get('v', 1) < VERSAO)                                  # ou anteriores às fotografias de cada obra
     if antes.get('actualizado') and not forcar and not sem_foto and date.fromisoformat(antes['actualizado']) > HOJE - timedelta(days=7):
         log(f'Fotógrafos: lista de {antes["actualizado"]}, ainda com menos de uma semana.'); return gravar_log()
     leitor = Leitor()
@@ -167,7 +173,7 @@ def main():
         com = sum(1 for f in fs if f.get('obras'))
         if com < len(fs) * 0.6 and n_antes:
             log(f'Fotógrafos: só {com} fichas com obras, fica a lista anterior.'); return gravar_log()
-        novo = {'actualizado': HOJE.isoformat(),
+        novo = {'actualizado': HOJE.isoformat(), 'v': VERSAO,
                 'fonte': {'nome': 'Divisare', 'url': LISTA},
                 'fotografos': fs}
         FICH.write_text(json.dumps(novo, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
