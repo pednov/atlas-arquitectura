@@ -7,6 +7,7 @@ salvo a data de entrega de um concurso, que pode ter sido prorrogada.
 Se uma fonte falhar, as fichas dessa fonte ficam como estavam.
 """
 import html, json, re, sys, time, unicodedata
+import xml.etree.ElementTree as ET
 from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 
@@ -147,7 +148,9 @@ def tem_pessoas(url):
 TEMAS = [('Concurso', r'\bconcurso'), ('Prémio', r'pr[eé]mio|\bvence|distingu|awards?\b|galard|men[cç][aã]o honrosa|masterprize'),
          ('Exposição', r'exposi[cç]|trienal|bienal|\bmostra\b'), ('Habitação', r'habita[cç]|\bcasas\b|\bfogos\b'),
          ('Património', r'patrim[oó]n|restauro|reabilita'), ('Debate', r'debate|confer[eê]ncia|semin[aá]rio|col[oó]quio'),
-         ('Instituições', r'\bacervo|protocolo|esp[oó]lio|arquivo'), ('Espaço público', r'\blargo\b|\bpra[cç]a\b|espa[cç]o p[uú]blico|jardim')]
+         ('Instituições', r'\bacervo|protocolo|esp[oó]lio|arquivo'), ('Espaço público', r'\blargo\b|\bpra[cç]a\b|espa[cç]o p[uú]blico|jardim'),
+         ('Mobilidade', r'mobilidade|\bmetro\b|autocarro|ciclovia|bicicleta|tr[aâ]nsito|estacionamento|\bcarris\b|ferrovi'),
+         ('Urbanismo', r'urban|\bPDM\b|loteament|licenciament|planeamento|\bbairro')]
 def tema_de(texto):
     for t, p in TEMAS:
         if re.search(p, texto, flags=re.I): return t
@@ -267,6 +270,90 @@ def construir(existentes):
         log('  nova notícia (Construir):', n['d'], t, '| imagem' if img else '| sem imagem')
         novos.append(n)
     return novos
+
+# ---------------------------------------------------------------- notícias de cidade: Lisboa Para Pessoas e ECO
+# Pedido do Pedro (18 Nov. 2026): urbanismo, arquitectura, viver em cidades e problemas urbanos. Guardamos título, data,
+# imagem e ligação, sem resumos, e no máximo CIDADE_MAX notícias de cada fonte.
+CIDADE_MAX = 15
+URBANO = r'urban|arquitect|arquitet|habita|\bcasas?\b|rendas?\b|cidade|bairro|c[aâ]mara|autarqu|\bobras?\b|reabilit|mobilidade|\bmetro\b|ciclov|espa[cç]o p[uú]blico|\bPDM\b|licenciament|loteament|constru[cç]|jardim|pra[cç]a|\bruas?\b|cal[cç]ad|patrim[oó]n'
+NEGOCIO = r'\b(investidor|investidores|fundos?|aquisi[cç][aã]o|adquire|vende|vendas|compra|lucros?|receitas|bolsa|a[cç][oõ]es|resultados|fatura[cç][aã]o|IPO)\b'
+
+LPP = 'https://lisboaparapessoas.pt'
+LPP_TEMA = {200: 'Habitação', 563: 'Mobilidade', 11: 'Cidade', 80: 'Opinião', 86: 'Cidadania', 547: 'Exposição'}
+def lisboaparapessoas(existentes):
+    urls = {n['u'].rstrip('/') for n in existentes}
+    novos = []
+    try:
+        posts = get(LPP + '/wp-json/wp/v2/posts?per_page=30&_embed=wp:featuredmedia&_fields=date,link,title,categories,_links,_embedded').json()
+    except Exception as ex:
+        log('Lisboa Para Pessoas: falhou', ex); return []
+    for p in posts:
+        u = (p.get('link') or '').rstrip('/')
+        if not u or u in urls or u in BLOQ: continue
+        t = limpar(html.unescape(re.sub(r'<[^>]+>', '', (p.get('title') or {}).get('rendered', ''))).strip())
+        if not t or excluir(t):
+            log('  excluída (Lisboa Para Pessoas):', t); continue
+        cats = p.get('categories') or []
+        tema = next((LPP_TEMA[c] for c in cats if c in LPP_TEMA), None) or tema_de(t).replace('Obra', 'Cidade')
+        local, sec = regiao_de(t)
+        img = None
+        try:
+            med = (p.get('_embedded') or {}).get('wp:featuredmedia') or []
+            sz = (med[0].get('media_details') or {}).get('sizes') or {}
+            cand = (sz.get('medium') or sz.get('medium_large') or {}).get('source_url') or med[0].get('source_url')
+            if cand and not tem_pessoas(cand): img = cand
+        except Exception:
+            pass
+        n = {'d': p['date'][:10], 'f': 'lpp', 'tema': tema, 't': t, 'm': local or 'Lisboa', 'u': u, 'sec': sec or 'LVT', 'auto': True}
+        if img: n['img'] = img
+        novos.append(n)
+    novos.sort(key=lambda n: n['d'], reverse=True)
+    for n in novos[:CIDADE_MAX]:
+        log('  nova notícia (Lisboa Para Pessoas):', n['d'], n['t'], '| imagem' if n.get('img') else '| sem imagem')
+    return novos[:CIDADE_MAX]
+
+ECO = 'https://eco.sapo.pt'
+ECO_TOPICOS = ['habitacao', 'crise-na-habitacao', 'local-online', 'imobiliario']
+ECO_CATS = {'Habitação', 'Crise na Habitação', 'Urbanismo', 'Arquitetura', 'Mobilidade', 'Autarquias', 'Obras Públicas', 'Construção', 'Reabilitação Urbana', 'Cidades', 'Ordenamento do Território'}
+def eco(existentes):
+    from email.utils import parsedate_to_datetime
+    urls = {n['u'].rstrip('/') for n in existentes}
+    novos, vistos = [], set()
+    for top in ECO_TOPICOS:
+        try:
+            raiz = ET.fromstring(get(f'{ECO}/topico/{top}/feed/').content)
+        except Exception as ex:
+            log('ECO: falhou o tópico', top, ex); continue
+        for it in raiz.iter('item'):
+            txt = lambda tag: (it.findtext(tag) or '').strip()
+            u = txt('link').split('?')[0].rstrip('/')
+            if not u or u in urls or u in BLOQ or u in vistos: continue
+            vistos.add(u)
+            t = limpar(html.unescape(txt('title')))
+            cats = {(c.text or '').strip() for c in it.findall('category')}
+            if not t: continue
+            relevante = (cats & ECO_CATS) or re.search(URBANO, t, flags=re.I)
+            if not relevante or re.search(NEGOCIO, t, flags=re.I) or excluir(t):
+                continue
+            try:
+                d = parsedate_to_datetime(txt('pubDate')).date().isoformat()
+            except Exception:
+                continue
+            img = None
+            mi = re.search(r'<img[^>]+src="([^"]+)"', txt('description'))
+            if mi:
+                cand = mi.group(1).split('?')[0] + '?w=300&fit=crop'
+                if not tem_pessoas(cand): img = cand
+            local, sec = regiao_de(t)
+            tema = 'Habitação' if cats & {'Habitação', 'Crise na Habitação'} else ('Mobilidade' if 'Mobilidade' in cats else tema_de(t).replace('Obra', 'Cidade'))
+            n = {'d': d, 'f': 'eco', 'tema': tema, 't': t, 'm': local or '', 'u': u, 'sec': sec or 'NAC', 'auto': True}
+            if img: n['img'] = img
+            novos.append(n)
+        time.sleep(1)
+    novos.sort(key=lambda n: n['d'], reverse=True)
+    for n in novos[:CIDADE_MAX]:
+        log('  nova notícia (ECO):', n['d'], n['t'], '| imagem' if n.get('img') else '| sem imagem')
+    return novos[:CIDADE_MAX]
 
 # ---------------------------------------------------------------- notícias internacionais: Arquitectura Viva
 # Pedido do Pedro (17 Nov. 2026). A listagem de artigos é carregada por um pedido interno da própria página
@@ -398,9 +485,12 @@ def main():
     limite_c = (HOJE - timedelta(days=550)).isoformat()      # fichas encerradas há mais de 18 meses saem
     C['concursos'] = [c for c in C['concursos'] + novos_c if c['entrega'][:10] >= limite_c]
 
-    novos_n = construir(N['noticias']) + archdaily(N['noticias']) + arquitecturaviva(N['noticias'])
-    if not any(f['id'] == 'arquitecturaviva' for f in N['fontes']):
-        N['fontes'].append({'id': 'arquitecturaviva', 'nome': 'Arquitectura Viva', 'url': AV + '/articulos'})
+    novos_n = (construir(N['noticias']) + archdaily(N['noticias']) + lisboaparapessoas(N['noticias'])
+               + eco(N['noticias']) + arquitecturaviva(N['noticias']))
+    for fid, nome, url in [('lpp', 'Lisboa Para Pessoas', LPP), ('eco', 'ECO', ECO + '/topico/habitacao/'),
+                           ('arquitecturaviva', 'Arquitectura Viva', AV + '/articulos')]:
+        if not any(f['id'] == fid for f in N['fontes']):
+            N['fontes'].append({'id': fid, 'nome': nome, 'url': url})
     bloq = {x.rstrip('/') for x in REGRAS.get('bloquear_urls', [])}
     limite_n = (HOJE - timedelta(days=120)).isoformat()      # notícias com mais de 4 meses saem
     todas = []
@@ -414,8 +504,13 @@ def main():
     for n in sorted(todas, key=lambda n: n['d'], reverse=True):
         if n['u'] not in vistos:
             vistos.add(n['u']); N['noticias'].append(n)
-    av = [n for n in N['noticias'] if n['f'] == 'arquitecturaviva'][:AV_MAX]      # as internacionais não tomam o lugar das portuguesas
-    N['noticias'] = [n for n in N['noticias'] if n['f'] != 'arquitecturaviva' or n in av][:100]
+    # fontes com limite próprio, para não tomarem o lugar das notícias de arquitectura
+    LIMITE = {'arquitecturaviva': AV_MAX, 'lpp': CIDADE_MAX, 'eco': CIDADE_MAX}
+    conta, ficam = {}, []
+    for n in N['noticias']:
+        conta[n['f']] = conta.get(n['f'], 0) + 1
+        if conta[n['f']] <= LIMITE.get(n['f'], 10**6): ficam.append(n)
+    N['noticias'] = ficam[:130]
 
     mudou_c = json.dumps(C, sort_keys=True) != antes_c
     mudou_n = json.dumps(N, sort_keys=True) != antes_n
