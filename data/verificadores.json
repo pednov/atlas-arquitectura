@@ -11,6 +11,7 @@
   "parametros": [
    {
     "id": "a-entrada",
+    "rotulo": "entrada|\\bhall\\b|atrio|vestibulo",
     "grupo": "Entrada e átrios",
     "nome": "Portas de entrada e saída do edifício",
     "exige": "Largura útil não inferior a 0,87 m",
@@ -26,6 +27,7 @@
    },
    {
     "id": "a-atrio",
+    "rotulo": "entrada|\\bhall\\b|atrio|vestibulo",
     "grupo": "Entrada e átrios",
     "nome": "Zona de manobra junto às portas de acesso e nos átrios",
     "exige": "Rotação de 360º, círculo com 1,5 m de diâmetro",
@@ -100,6 +102,7 @@
    },
    {
     "id": "a-corredor",
+    "rotulo": "corredor|circulac|\\bcirc\\b|galeria|\\bhall\\b",
     "grupo": "Circulação horizontal",
     "nome": "Corredores, galerias e patamares",
     "exige": "Largura não inferior a 1,2 m (0,9 m em troços com menos de 1,5 m)",
@@ -115,6 +118,7 @@
    },
    {
     "id": "a-corredor-hab",
+    "rotulo": "corredor|circulac|\\bcirc\\b|\\bhall\\b",
     "grupo": "Habitações",
     "nome": "Corredores no interior das habitações",
     "exige": "Largura não inferior a 1,1 m (0,9 m em troços até 1,5 m)",
@@ -158,6 +162,7 @@
    },
    {
     "id": "a-escada-larg",
+    "rotulo": "escada",
     "grupo": "Escadas",
     "nome": "Largura dos lanços, patins e patamares das escadas",
     "exige": "Não inferior a 1,2 m",
@@ -189,6 +194,7 @@
    },
    {
     "id": "a-patamar",
+    "rotulo": "escada|patamar",
     "grupo": "Escadas",
     "nome": "Profundidade dos patamares das escadas",
     "exige": "Não inferior a 1,2 m",
@@ -205,6 +211,7 @@
    },
    {
     "id": "a-cobertor",
+    "rotulo": "escada|degrau",
     "grupo": "Escadas",
     "nome": "Cobertor dos degraus",
     "exige": "Profundidade não inferior a 0,28 m",
@@ -221,6 +228,7 @@
    },
    {
     "id": "a-espelho",
+    "rotulo": "escada|degrau",
     "grupo": "Escadas",
     "nome": "Espelho dos degraus",
     "exige": "Altura não superior a 0,18 m",
@@ -237,6 +245,7 @@
    },
    {
     "id": "a-corrimao",
+    "rotulo": "escada|corrima",
     "grupo": "Escadas",
     "nome": "Altura dos corrimãos das escadas",
     "exige": "Entre 0,85 m e 0,9 m, prolongados 0,3 m no topo",
@@ -291,6 +300,7 @@
    },
    {
     "id": "a-rampa-larg",
+    "rotulo": "rampa",
     "grupo": "Rampas",
     "nome": "Largura das rampas",
     "exige": "Não inferior a 1,2 m (0,9 m nos casos do 2.5.4)",
@@ -307,6 +317,7 @@
    },
    {
     "id": "a-rampa-plat",
+    "rotulo": "rampa",
     "grupo": "Rampas",
     "nome": "Plataformas de descanso das rampas",
     "exige": "Comprimento não inferior a 1,5 m, na base, no topo e nas mudanças de direcção",
@@ -323,6 +334,7 @@
    },
    {
     "id": "a-rampa-corr",
+    "rotulo": "rampa",
     "grupo": "Rampas",
     "nome": "Corrimãos das rampas",
     "exige": "Entre 0,85 m e 0,95 m (até 6 %); acima de 6 %, duplos a 0,7–0,75 m e 0,9–0,95 m",
@@ -338,6 +350,7 @@
    },
    {
     "id": "a-ascensor",
+    "rotulo": "elevador|ascensor",
     "grupo": "Ascensores e plataformas",
     "nome": "Cabina dos ascensores",
     "exige": "Dimensões interiores não inferiores a 1,1 m × 1,4 m",
@@ -357,6 +370,7 @@
    },
    {
     "id": "a-asc-porta",
+    "rotulo": "elevador|ascensor",
     "grupo": "Ascensores e plataformas",
     "nome": "Portas dos ascensores",
     "exige": "Largura útil não inferior a 0,8 m",
@@ -374,6 +388,7 @@
    },
    {
     "id": "a-asc-patamar",
+    "rotulo": "elevador|ascensor",
     "grupo": "Ascensores e plataformas",
     "nome": "Patamares em frente aos ascensores",
     "exige": "Zona de manobra para rotação de 360º e inclinação até 2 %",
@@ -406,6 +421,7 @@
    },
    {
     "id": "a-plataforma",
+    "rotulo": "plataforma",
     "grupo": "Ascensores e plataformas",
     "nome": "Plataformas elevatórias",
     "exige": "Dimensões mínimas de 0,75 m × 1 m e zona livre de 1,2 m à entrada",
@@ -425,6 +441,7 @@
    },
    {
     "id": "a-estac",
+    "rotulo": "estacionamento|parqueamento|garagem|\\blugar",
     "grupo": "Estacionamento",
     "nome": "Lugares de estacionamento reservados",
     "exige": "Largura útil de 2,5 m, faixa de acesso lateral de 1 m e comprimento de 5 m",
@@ -459,6 +476,7 @@
    },
    {
     "id": "a-is",
+    "rotulo": "\\bi\\.?\\s?s\\.?\\b|\\bwc\\b|sanitari|casa de banho",
     "grupo": "Instalações sanitárias",
     "nome": "Instalações sanitárias acessíveis",
     "exige": "Pelo menos 10 % dos aparelhos, com o mínimo de um de cada tipo",
@@ -472,6 +490,7 @@
    },
    {
     "id": "a-is-dim",
+    "rotulo": "\\bi\\.?\\s?s\\.?\\b|\\bwc\\b|sanitari|casa de banho",
     "grupo": "Instalações sanitárias",
     "nome": "Cabina com sanita acessível",
     "exige": "Espaço interior não inferior a 1,6 m × 1,7 m",
@@ -489,6 +508,7 @@
    },
    {
     "id": "a-sanita",
+    "rotulo": "\\bi\\.?\\s?s\\.?\\b|\\bwc\\b|sanitari|casa de banho",
     "grupo": "Instalações sanitárias",
     "nome": "Altura do assento da sanita",
     "exige": "0,45 m do piso ao bordo superior do assento, com tolerância de 0,01 m",
@@ -504,6 +524,7 @@
    },
    {
     "id": "a-lavatorio",
+    "rotulo": "\\bi\\.?\\s?s\\.?\\b|\\bwc\\b|sanitari|casa de banho",
     "grupo": "Instalações sanitárias",
     "nome": "Altura do lavatório",
     "exige": "Bordo a 0,8 m do piso (± 0,02 m), com zona livre por baixo de 0,7 m × 0,65 m × 0,5 m",
@@ -519,6 +540,7 @@
    },
    {
     "id": "a-is-hab",
+    "rotulo": "\\bi\\.?\\s?s\\.?\\b|\\bwc\\b|sanitari|casa de banho",
     "grupo": "Habitações",
     "nome": "Instalação sanitária da habitação",
     "exige": "Pelo menos uma por habitação nas condições do 3.3.4 (base de duche com 0,8 m × 0,8 m, se houver duche)",
@@ -532,6 +554,7 @@
    },
    {
     "id": "a-cozinha",
+    "rotulo": "cozinha|kitchenette",
     "grupo": "Habitações",
     "nome": "Cozinha",
     "exige": "Zona de manobra para rotação de 360º e 1,2 m livres entre bancadas e paredes",
@@ -545,6 +568,7 @@
    },
    {
     "id": "a-entrada-hab",
+    "rotulo": "entrada|\\bhall\\b|vestibulo",
     "grupo": "Habitações",
     "nome": "Espaço de entrada das habitações",
     "exige": "Zona de manobra para rotação de 360º",
@@ -571,6 +595,7 @@
    },
    {
     "id": "a-balcao",
+    "rotulo": "balc|rece(p)?cao|atendimento",
     "grupo": "Atendimento",
     "nome": "Balcões e guichets de atendimento",
     "exige": "Extensão de pelo menos 0,8 m a uma altura entre 0,75 m e 0,85 m",
