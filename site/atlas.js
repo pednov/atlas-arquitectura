@@ -443,23 +443,72 @@ function fotoDoDia(fs){
 }
 const foSec = id => id === 'NAC' ? {nome: 'Outros lugares', cor: '#8c8c8c'} : nsecOf(id);
 const foCid = f => String(f.c || '').split(' e ')[0];
+/* portfolio dentro do ATLAS (pedido do Pedro, 18 Nov. 2026): as fichas deixam de levar ao Divisare e abrem o portfolio
+   do fotógrafo numa janela, com a fotografia de capa de cada obra, o crédito do fotógrafo e a ligação ao seu sítio */
+const FOTOS = {};
+const imgW = (src, w) => String(src || '').replace(/\/images\/[^/]+\/v/, `/images/w_${w},q_auto,f_auto/v`);
+const foHost = w => w ? w.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '') : '';
+const foSub = o => [o.l, o.a ? 'arquitectura de ' + o.a : ''].filter(Boolean).join(' · ');
+function foObras(f){
+  const os = (f.obras || []).map(o => Object.assign({}, o));
+  if (f.foto && f.foto.src && os.length && !os.some(o => o.i)) os[0].i = f.foto.src;   /* dados anteriores às capas de cada obra */
+  return os;
+}
 function foCard(f){
+  FOTOS[f.id] = f;
   const id = nsecId(f), s = foSec(id);
-  const obras = (f.obras || []).slice(0, 4);
+  const obras = foObras(f).slice(0, 4);
   const q = fold([f.n, f.c, s.nome, ...(f.obras || []).map(o => [o.t, o.l, o.a].join(' '))].join(' '));
-  const host = f.w ? f.w.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '') : '';
-  const lis = obras.map(o => {
-    const sub = [o.l, o.a ? 'arquitectura de ' + o.a : ''].filter(Boolean).join(' · ');
-    return `<li><a href="${esc(o.u)}" target="_blank" rel="noopener">${esc(o.t)}</a>${sub ? `<span>${esc(sub)}</span>` : ''}</li>`;
-  }).join('');
-  /* uma fotografia do portfolio ao lado do nome (pedido do Pedro, 18 Nov. 2026), servida pelo Divisare e com ligação à obra */
-  const ft = f.foto && f.foto.src ? `<a class="fport" href="${esc(f.foto.u || f.u)}" target="_blank" rel="noopener" title="Portfolio: ${esc(f.foto.t || '')}"><img src="${esc(f.foto.src)}" alt="${esc((f.foto.t || 'Obra') + ', fotografia de ' + f.n)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('sem')"><span>Portfolio</span></a>` : '';
+  const lis = obras.map((o, k) => { const sub = foSub(o);
+    return `<li><button type="button" class="fob" data-port="${esc(f.id)}" data-k="${k}">${esc(o.t)}</button>${sub ? `<span>${esc(sub)}</span>` : ''}</li>`; }).join('');
+  const ft = f.foto && f.foto.src ? `<button type="button" class="fport" data-port="${esc(f.id)}" data-k="0" aria-label="Abrir o portfolio de ${esc(f.n)}"><img src="${esc(f.foto.src)}" alt="${esc((f.foto.t || 'Obra') + ', fotografia de ' + f.n)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="this.parentNode.classList.add('sem')"><span>Portfolio</span></button>` : '';
   return `<article class="fo${ft ? ' cfoto' : ''}" id="f-${esc(f.id)}" style="--c:${s.cor}" data-sec="${esc(id)}" data-c="${esc(foCid(f))}" data-q="${esc(q)}">
-<div class="fh">${ft}<div class="fn"><h3><a href="${esc(f.u)}" target="_blank" rel="noopener">${esc(f.n)}</a></h3><span class="pill rg"><i></i>${esc(f.c || s.nome)}</span></div></div>
-${lis ? `<ol class="fobras">${lis}</ol>` : '<p class="fsem">Sem obras na primeira página do Divisare.</p>'}
-<div class="lnks"><a class="lnk dark" href="${esc(f.u)}" target="_blank" rel="noopener">Ver no Divisare ${EXT}</a>${f.w ? `<a class="lnk" href="${esc(f.w)}" target="_blank" rel="noopener">${esc(host)} ${EXT}</a>` : ''}</div>
+<div class="fh">${ft}<div class="fn"><h3><button type="button" class="fnome" data-port="${esc(f.id)}" data-k="0">${esc(f.n)}</button></h3><span class="pill rg"><i></i>${esc(f.c || s.nome)}</span></div></div>
+${lis ? `<ol class="fobras">${lis}</ol>` : '<p class="fsem">Sem obras publicadas.</p>'}
+<div class="lnks">${ft ? `<button type="button" class="lnk dark" data-port="${esc(f.id)}" data-k="0">Ver portfolio</button>` : ''}${f.w ? `<a class="lnk" href="${esc(f.w)}" target="_blank" rel="noopener">${esc(foHost(f.w))} ${EXT}</a>` : ''}</div>
 </article>`;
 }
+let PORT = null;
+function portfolio(id, k){
+  const f = FOTOS[id]; if (!f) return;
+  const slides = foObras(f).map((o, idx) => Object.assign({idx}, o)).filter(o => o.i);
+  if (!slides.length) return;
+  let dlg = $('#fport-dlg');
+  if (!dlg) {
+    dlg = document.createElement('dialog'); dlg.id = 'fport-dlg'; dlg.className = 'fpdlg'; document.body.appendChild(dlg);
+    dlg.addEventListener('click', e => { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener('keydown', e => { if (e.key === 'ArrowRight') { e.preventDefault(); mostrarFoto(PORT.k + 1); } if (e.key === 'ArrowLeft') { e.preventDefault(); mostrarFoto(PORT.k - 1); } });
+  }
+  const s = foSec(nsecId(f));
+  PORT = {f, slides, k: Math.max(0, slides.findIndex(o => o.idx === k))};
+  dlg.style.setProperty('--c', s.cor);
+  dlg.setAttribute('aria-label', 'Portfolio de ' + f.n);
+  dlg.innerHTML = `<div class="fpd-h"><div><span class="fdia-t">Portfolio</span><h2>${esc(f.n)}</h2><span class="pill rg"><i></i>${esc(f.c || s.nome)}</span></div><div class="fpd-a">${f.w ? `<a class="lnk" href="${esc(f.w)}" target="_blank" rel="noopener">${esc(foHost(f.w))} ${EXT}</a>` : ''}<button type="button" class="fpd-x" aria-label="Fechar">×</button></div></div>
+<figure class="fpd-f"><div class="fpd-img"><img alt="" referrerpolicy="no-referrer" decoding="async"><button type="button" class="fpd-n ant" aria-label="Fotografia anterior">‹</button><button type="button" class="fpd-n seg" aria-label="Fotografia seguinte">›</button></div>
+<figcaption><b class="fpd-t"></b><span class="fpd-s"></span><span class="fpd-c">© ${esc(f.n)}</span></figcaption></figure>
+<div class="fpd-th">${slides.map((o, i) => `<button type="button" data-i="${i}" aria-label="${esc(o.t)}"><img src="${esc(o.i)}" alt="" loading="lazy" referrerpolicy="no-referrer"></button>`).join('')}</div>`;
+  $('.fpd-x', dlg).onclick = () => dlg.close();
+  $('.fpd-n.ant', dlg).onclick = () => mostrarFoto(PORT.k - 1);
+  $('.fpd-n.seg', dlg).onclick = () => mostrarFoto(PORT.k + 1);
+  $$('.fpd-th button', dlg).forEach(b => b.onclick = () => mostrarFoto(+b.dataset.i));
+  if (slides.length < 2) { $$('.fpd-n', dlg).forEach(b => b.hidden = true); $('.fpd-th', dlg).hidden = true; }
+  mostrarFoto(PORT.k);
+  if (!dlg.open) { if (dlg.showModal) dlg.showModal(); else dlg.setAttribute('open', ''); }
+  $('.fpd-x', dlg).focus();
+}
+function mostrarFoto(i){
+  const dlg = $('#fport-dlg'); if (!PORT || !dlg) return;
+  const n = PORT.slides.length; PORT.k = ((i % n) + n) % n;
+  const o = PORT.slides[PORT.k], img = $('.fpd-img img', dlg);
+  img.classList.add('car');
+  img.onload = () => img.classList.remove('car');
+  img.onerror = () => { if (img.src !== o.i) img.src = o.i; else img.classList.remove('car'); };   /* se a imagem grande falhar, fica a pequena */
+  img.src = imgW(o.i, 1600); img.alt = `${o.t}, fotografia de ${PORT.f.n}`;
+  $('.fpd-t', dlg).textContent = o.t; $('.fpd-s', dlg).textContent = foSub(o);
+  $$('.fpd-th button', dlg).forEach((b, j) => b.setAttribute('aria-current', j === PORT.k ? 'true' : 'false'));
+  const th = $$('.fpd-th button', dlg)[PORT.k]; if (th && th.scrollIntoView) th.scrollIntoView({block: 'nearest', inline: 'center'});
+}
+document.addEventListener('click', e => { const b = e.target.closest && e.target.closest('[data-port]'); if (b) { e.preventDefault(); portfolio(b.dataset.port, +b.dataset.k || 0); } });
 function renderFotografos(d){
   const box = $('#flist'); if (!box) return;
   const fs = d.fotografos || [];
@@ -490,25 +539,27 @@ function renderFotografos(d){
   if (dia && F) {
     if (!dest) { dest = document.createElement('section'); dest.id = 'fdest'; dest.className = 'fdest'; F.parentNode.insertBefore(dest, F); }
     const s2 = foSec(nsecId(dia));
-    const grande = dia.foto.src.replace(/\/images\/[^/]+\/v/, '/images/w_1400,q_auto,f_auto/v');
-    const host = dia.w ? dia.w.replace(/^https?:\/\//, '').replace(/^www\./, '').replace(/\/$/, '') : '';
-    const obras = (dia.obras || []).slice(0, 3).map(o => `<li><a href="${esc(o.u)}" target="_blank" rel="noopener">${esc(o.t)}</a>${o.l || o.a ? `<span>${esc([o.l, o.a ? 'arquitectura de ' + o.a : ''].filter(Boolean).join(' · '))}</span>` : ''}</li>`).join('');
+    const obras = foObras(dia).slice(0, 3).map((o, k) => `<li><button type="button" class="fob" data-port="${esc(dia.id)}" data-k="${k}">${esc(o.t)}</button>${foSub(o) ? `<span>${esc(foSub(o))}</span>` : ''}</li>`).join('');
     dest.style.setProperty('--c', s2.cor);
-    dest.innerHTML = `<a class="fdest-img" href="${esc(dia.foto.u || dia.u)}" target="_blank" rel="noopener" title="${esc(dia.foto.t || '')}"><img src="${esc(grande)}" alt="${esc((dia.foto.t || 'Obra') + ', fotografia de ' + dia.n)}" decoding="async" referrerpolicy="no-referrer" onerror="if(this.src!=='${esc(dia.foto.src)}')this.src='${esc(dia.foto.src)}';else this.parentNode.classList.add('sem')"></a>
-<div class="fdest-t"><span class="fdia-t">Fotógrafo do dia</span><h2><a href="${esc(dia.u)}" target="_blank" rel="noopener">${esc(dia.n)}</a></h2><span class="pill rg"><i></i>${esc(dia.c || s2.nome)}</span>
+    dest.innerHTML = `<button type="button" class="fdest-img" data-port="${esc(dia.id)}" data-k="0" aria-label="Abrir o portfolio de ${esc(dia.n)}"><img src="${esc(imgW(dia.foto.src, 1400))}" alt="${esc((dia.foto.t || 'Obra') + ', fotografia de ' + dia.n)}" decoding="async" referrerpolicy="no-referrer" onerror="if(this.src!=='${esc(dia.foto.src)}')this.src='${esc(dia.foto.src)}';else this.parentNode.classList.add('sem')"></button>
+<div class="fdest-t"><span class="fdia-t">Fotógrafo do dia</span><h2><button type="button" class="fnome" data-port="${esc(dia.id)}" data-k="0">${esc(dia.n)}</button></h2><span class="pill rg"><i></i>${esc(dia.c || s2.nome)}</span>
 ${obras ? `<ol class="fobras">${obras}</ol>` : ''}
-<div class="lnks"><a class="lnk dark" href="${esc(dia.u)}" target="_blank" rel="noopener">Ver no Divisare ${EXT}</a>${dia.w ? `<a class="lnk" href="${esc(dia.w)}" target="_blank" rel="noopener">${esc(host)} ${EXT}</a>` : ''}<a class="lnk" href="#f-${esc(dia.id)}">Ver na lista</a></div></div>`;
+<div class="lnks"><button type="button" class="lnk dark" data-port="${esc(dia.id)}" data-k="0">Ver portfolio</button>${dia.w ? `<a class="lnk" href="${esc(dia.w)}" target="_blank" rel="noopener">${esc(foHost(dia.w))} ${EXT}</a>` : ''}<a class="lnk" href="#f-${esc(dia.id)}">Ver na lista</a></div></div>`;
   } else if (dest) dest.remove();
   const alvo = /^#f-[\w-]+$/.test(location.hash) && document.getElementById(location.hash.slice(1));
   if (alvo && !box.dataset.saltou) { box.dataset.saltou = '1'; setTimeout(() => alvo.scrollIntoView({behavior: 'smooth', block: 'center'}), 150); }
-  /* textos das páginas publicadas antes da ordem alfabética e das fotografias */
+  /* textos das páginas publicadas antes do portfolio no ATLAS */
   const pu = upd && upd.parentNode;
   if (pu && pu.textContent.includes('ordem do Divisare')) pu.innerHTML = pu.innerHTML.replace(/Cada fotógrafo tem a cor[^.]*\./, 'A lista segue a ordem alfabética e cada fotógrafo tem a cor da região onde trabalha.');
   const ld = $('main.fotp p.lead');
-  if (ld && ld.textContent.includes('com ligação ao seu sítio. As fotografias')) ld.textContent = 'Os fotógrafos de arquitectura que trabalham em Portugal e publicam no Divisare. Cada ficha mostra uma fotografia do portfolio e as obras que o fotógrafo publicou mais recentemente, com a cidade onde trabalha e a ligação ao seu sítio. As fotografias são dos fotógrafos e vêm do Divisare, para onde levam as ligações.';
+  if (ld && /Divisare/.test(ld.textContent)) ld.textContent = FO_LEAD;
   const sn = $('main.fotp .srcnote');
-  if (sn && sn.textContent.includes('Guardamos apenas')) sn.innerHTML = sn.innerHTML.replace(/Guardamos apenas[^.]*\./, 'A fotografia de cada ficha é mostrada a partir do Divisare, com ligação à obra, e não é copiada para o ATLAS.');
+  if (sn && /divisare\.com|Guardamos|mostrada a partir/.test(sn.innerHTML)) sn.textContent = FO_NOTA;
 }
+const FO_LEAD = 'Fotógrafos de arquitectura que trabalham em Portugal. Cada ficha abre o portfolio do fotógrafo, com as obras que fotografou mais recentemente, e leva ao seu sítio.';
+const FO_NOTA = 'As fotografias são de cada fotógrafo, que detém os respectivos direitos, e foram publicadas originalmente no Divisare.';
+$$('.tiles .pill').forEach(p => { if (p.textContent.trim() === 'A partir do Divisare') p.textContent = 'Portfolios'; });
+$$('p').forEach(p => { if (p.textContent.includes('arquitectura em Portugal e publica no Divisare')) p.innerHTML = p.innerHTML.replace(/Os Fotógrafos reúnem quem fotografa arquitectura em Portugal e publica no Divisare, com ligação às obras de cada um\./, 'Os Fotógrafos reúnem quem fotografa arquitectura em Portugal, com o portfolio de cada um.'); });
 
 /* o separador «Notícias» passou a chamar-se «Imprensa» (pedido do Pedro, 18 Nov. 2026): corrige as páginas publicadas antes */
 (function(){
