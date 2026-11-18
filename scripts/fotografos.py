@@ -3,7 +3,8 @@
 
 Lê a lista pública dos fotógrafos portugueses no Divisare e, de cada um, a página de autor: cidade,
 sítio na internet e as obras mais recentes que lá publicou (título, lugar, autoria do projecto e ligação).
-Não copia fotografias, que são obra dos fotógrafos e ficam no Divisare, nem telefones, moradas ou emails.
+Guarda também o endereço de uma fotografia da obra mais recente, que a página mostra como «Portfolio» a partir
+dos servidores do Divisare (pedido do Pedro, 18 Nov. 2026); a imagem não é copiada. Não guarda telefones, moradas nem emails.
 
 Corre uma vez por semana (ou sempre, com --forcar). Tenta primeiro um pedido simples e, se o Divisare o
 recusar, abre as páginas com o navegador sem janela (Playwright). Se a recolha falhar ou vier muito
@@ -108,6 +109,7 @@ def ficha(leitor, f):
             w = m.group(1).rstrip('.,;')
             f['w'] = w if w.startswith('http') else 'http://' + w
     obras = []
+    f.pop('foto', None)
     for li in soup.select('li.project'):
         a = li.select_one('a.link')
         info = li.select_one('.info')
@@ -126,6 +128,11 @@ def ficha(leitor, f):
             partes = [p.strip() for p in lugar.split(' - ') if p.strip()]
             lugar = partes[0] if partes and fold(partes[-1]) == 'portugal' else ', '.join(partes[:-1] + [PAISES.get(partes[-1], partes[-1])])
         o = {'t': titulo, 'u': BASE + a['href'].split('?')[0]}
+        im = li.select_one('img')
+        src = (im.get('data-src') or im.get('src') or '') if im else ''
+        if 'foto' not in f and src.startswith('http') and '/images/' in src:
+            # miniatura de 400 px pedida ao próprio Divisare (a transformação vai no caminho do endereço)
+            f['foto'] = {'src': re.sub(r'/images/[^/]+/v', '/images/w_400,q_auto,f_auto/v', src, count=1), 't': titulo, 'u': o['u']}
         if lugar: o['l'] = lugar
         if autores: o['a'] = juntar(autores)
         obras.append(o)
@@ -138,7 +145,8 @@ def ficha(leitor, f):
 def main():
     antes = json.loads(FICH.read_text(encoding='utf-8')) if FICH.exists() else {}
     forcar = '--forcar' in sys.argv
-    if antes.get('actualizado') and not forcar and date.fromisoformat(antes['actualizado']) > HOJE - timedelta(days=7):
+    sem_foto = any('foto' not in f for f in antes.get('fotografos') or [])      # fichas anteriores à fotografia de portfolio
+    if antes.get('actualizado') and not forcar and not sem_foto and date.fromisoformat(antes['actualizado']) > HOJE - timedelta(days=7):
         log(f'Fotógrafos: lista de {antes["actualizado"]}, ainda com menos de uma semana.'); return gravar_log()
     leitor = Leitor()
     try:
