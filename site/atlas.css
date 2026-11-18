@@ -295,9 +295,10 @@ button,select,input{font:inherit;color:inherit}
    o da Submissão urbanística deixa de ser preto e fica como os outros */
 .tiles .tile[style*="--tc"],.tiles .tile.dark[style*="--tc"]{background:var(--paper);color:var(--ink);box-shadow:inset 0 0 0 2.5px var(--tc),var(--sh)}
 .tiles .tile[style*="--tc"]:hover{box-shadow:inset 0 0 0 2.5px var(--tc),var(--sh2)}
-.tiles .tile.dark[style*="--tc"] p,.tiles .tile.dark[style*="--tc"] .ix span{color:var(--ink-2)}
+.tiles .tile.dark[style*="--tc"] p,.tiles .tile.dark[style*="--tc"] .ix span:not(.ar){color:var(--ink-2)}
+.tiles .tile.dark[style*="--tc"]:hover .ix .ar{background:var(--tc);color:#fff}
 .tiles .tile.dark[style*="--tc"] h2 small{color:#a29f99}
-.tiles .tile.dark[style*="--tc"] .ar{background:var(--faint);color:var(--ink)}
+.tiles .tile.dark[style*="--tc"] .ar{background:var(--faint);color:var(--ink-2)}
 .tiles .tile.dark[style*="--tc"] .pill:not(.dark):not(.out){background:var(--faint);color:var(--ink)}
 .tiles .tile.dark[style*="--tc"] .pill.out{background:var(--paper);box-shadow:inset 0 0 0 1.5px var(--rule);color:var(--ink)}
 .tiles .tile[style*="--tc"]:hover .ar{background:var(--tc);color:#fff}
