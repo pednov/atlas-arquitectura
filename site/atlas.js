@@ -425,6 +425,19 @@ function renderLegislacao(L){
   box.classList.add('ready');
 }
 
+/* o separador «Notícias» passou a chamar-se «Imprensa» (pedido do Pedro, 18 Nov. 2026): corrige as páginas publicadas antes */
+(function(){
+  $$('.atabs a[href*="noticias"]').forEach(a => { if (a.textContent.trim() === 'Notícias') a.textContent = 'Imprensa'; });
+  $$('.tile[href*="noticias"] h2').forEach(h => { const t = h.firstChild; if (t && t.nodeType === 3 && t.textContent.trim() === 'Notícias') t.textContent = 'Imprensa'; });
+  $$('a.more-l[href*="noticias"]').forEach(a => { if (a.textContent.trim() === 'Todas as notícias') a.textContent = 'Toda a imprensa'; });
+  if ($('#nlist')) {
+    const h1 = $('h1.h1'); if (h1 && h1.textContent.trim() === 'Notícias') h1.textContent = 'Imprensa';
+    const k = $('.kicker'); if (k && k.lastChild && k.lastChild.nodeType === 3 && k.lastChild.textContent.trim() === 'Imprensa') k.lastChild.textContent = 'Notícias de arquitectura';
+    if (document.title.startsWith('Notícias')) document.title = document.title.replace(/^Notícias/, 'Imprensa');
+  }
+  $$('p').forEach(p => { if (p.textContent.includes('Os Concursos e as Notícias')) p.innerHTML = p.innerHTML.replace('Os Concursos e as Notícias', 'Os Concursos e a Imprensa'); });
+})();
+
 /* ---------- arranque ---------- */
 const sc = snap('snap-concursos'), sn = snap('snap-noticias');
 if ($('#clist') && sc) { recLabels(); renderConcursos(sc); setupFilters(); fresh('concursos.json', sc).then(d => { if (d !== sc) { renderConcursos(d); setupFilters(); } }); }
