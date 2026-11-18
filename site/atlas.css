@@ -329,3 +329,5 @@ button,select,input{font:inherit;color:inherit}
 .ni .pill.rg{background:color-mix(in srgb,var(--c) 16%,#fff);color:var(--ink);gap:7px}
 .ni .pill.rg i{width:9px;height:9px;border-radius:50%;background:var(--c);display:inline-block}
 @media (max-width:760px){.ni.sc{padding-left:14px}}
+.pill.f-lpp{background:#eef3fb}
+.pill.f-eco{background:#fdf0ea}
