@@ -161,7 +161,7 @@ function desenharBlocos(O, R){
 <div class="ob-grid">${b.graficos.map(g => grafico(g, usa[g.id] && usa[g.id].n ? usa[g.id] : null)).join('')}</div></section>`).join('');
   ajustarSegmentos(box); dica();
   const nav = $('#obs-nav');
-  if (nav) nav.innerHTML = O.blocos.map(b => `<a class="fb" href="#b-${esc(b.id)}">${esc(b.titulo)}</a>`).join('') + '<a class="fb on" href="#questionario">Responder ao questionário</a>';
+  if (nav) nav.innerHTML = O.blocos.map(b => `<a class="fb" href="#b-${esc(b.id)}">${esc(b.titulo)}</a>`).join('');
   const est = $('#obs-resp');
   if (est) {
     const n = R ? R.n || 0 : 0;
@@ -174,13 +174,16 @@ function desenharBlocos(O, R){
 const MESES = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio', 'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro'];
 const fmtData = s => { const [y, m, d] = String(s).slice(0, 10).split('-').map(Number); return `${d} de ${MESES[m - 1]} de ${y}`; };
 
-/* ---------------------------------------------------------------- questionário */
+/* ---------------------------------------------------------------- questionário: no início da página, uma janela de cada vez (pedido do Pedro, 19 Nov. 2026, 01:35) */
 function questionario(){
   const f = $('#obs-form'); if (!f) return;
+  const ant = $('#obs-ant'), seg = $('#obs-seg'), env = $('#obs-env'), win = $('#obs-win');
   const condOk = el => { const s = el.dataset.se; if (!s) return true; let c; try { c = JSON.parse(s); } catch (x) { return true; }
     return Object.entries(c).every(([k, vals]) => { const els = $$(`[name="${CSS.escape(k)}"]`, f).filter(x => !x.disabled);
       const v = els.filter(x => (x.type === 'radio' || x.type === 'checkbox') ? x.checked : true).map(x => x.value);
       return v.some(x => vals.includes(x)); }); };
+  const passos = () => $$('.qs', f).filter(s => !s.hidden && $$('.qq', s).some(q => !q.hidden) || s.classList.contains('qfim') && !s.hidden);
+  let atual = $('.qs', f).dataset.titulo;
   const actualizar = () => {
     for (let k = 0; k < 3; k++) {                    /* condições encadeadas (inscrição, forma de exercício, regiões) */
       $$('.qs', f).forEach(s => { const on = condOk(s); s.hidden = !on; $$('input,select,textarea', s).forEach(x => { if (!x.closest('.qq[data-off]')) x.disabled = !on; }); });
@@ -190,13 +193,36 @@ function questionario(){
     const vis = $$('.qq', f).filter(q => !q.hidden), resp = vis.filter(q => $$('input,select,textarea', q).some(x => (x.type === 'radio' || x.type === 'checkbox') ? x.checked : x.value.trim()));
     const pr = $('#obs-prog'); if (pr) pr.textContent = `${resp.length} de ${vis.length} perguntas respondidas`;
   };
-  f.addEventListener('change', actualizar); f.addEventListener('input', actualizar); actualizar();
+  const mostrar = (rolar) => {
+    actualizar();
+    const ps = passos();
+    let i = ps.findIndex(s => s.dataset.titulo === atual);
+    if (i < 0) i = 0;
+    atual = ps[i].dataset.titulo;
+    $$('.qs', f).forEach(s => s.classList.toggle('on', s === ps[i]));
+    $('#obs-passo').textContent = `Passo ${i + 1} de ${ps.length}`;
+    $('#obs-ptit').textContent = atual;
+    $('#obs-pbar').style.width = `${Math.round(100 * (i + 1) / ps.length)}%`;
+    ant.hidden = i === 0; seg.hidden = i === ps.length - 1; env.hidden = i !== ps.length - 1;
+    if (rolar) { const r = win.getBoundingClientRect(); if (r.top < 0 || r.top > innerHeight * .4) win.scrollIntoView({behavior: 'smooth', block: 'start'});
+      const p1 = $('.qs.on input:not([type=hidden]),.qs.on select', f); if (p1) p1.focus({preventScroll: true}); }
+  };
+  const valido = () => { const s = $('.qs.on', f); if (!s) return true;
+    const mau = $$('input,select,textarea', s).find(x => !x.disabled && !x.checkValidity());
+    if (mau) { mau.reportValidity(); return false; } return true; };
+  const andar = d => { if (d > 0 && !valido()) return; const ps = passos(); let i = ps.findIndex(s => s.dataset.titulo === atual);
+    i = Math.max(0, Math.min(ps.length - 1, i + d)); atual = ps[i].dataset.titulo; $('#obs-msg').textContent = ''; mostrar(true); };
+  ant.addEventListener('click', () => andar(-1));
+  seg.addEventListener('click', () => andar(1));
+  f.addEventListener('change', () => mostrar(false)); f.addEventListener('input', actualizar);
+  mostrar(false);
   let ja = null; try { ja = localStorage.getItem('atlas-obs-respondido'); } catch (x) {}
   if (ja) { const a = $('#obs-ja'); if (a) { a.hidden = false; a.textContent = `Este navegador já enviou uma resposta a ${fmtData(ja)}. Pedimos que cada arquitecto responda uma única vez.`; } }
   f.addEventListener('submit', async ev => {
     ev.preventDefault();
+    if (env.hidden) { andar(1); return; }                   /* Enter a meio do questionário passa ao passo seguinte */
     const msg = $('#obs-msg'); msg.className = 'ob-msg'; msg.textContent = '';
-    if (!f.reportValidity()) return;
+    if (!valido()) return;
     const body = new URLSearchParams();
     body.set('form-name', f.getAttribute('name')); body.set('bot-field', ($('[name="bot-field"]', f) || {}).value || '');
     const grupos = {};
@@ -207,15 +233,15 @@ function questionario(){
       if (String(x.value).trim() !== '') body.set(x.name, String(x.value).trim());
     });
     for (const [k, v] of Object.entries(grupos)) body.set(k, v.join(' | '));
-    const btn = $('button[type="submit"]', f); btn.disabled = true; msg.textContent = 'A enviar…';
+    env.disabled = true; msg.textContent = 'A enviar…';
     try {
       if (!/netlify\.app$|atlas/.test(location.hostname) || location.protocol === 'file:') throw new Error('pré-visualização');
       const r = await fetch('/', {method: 'POST', headers: {'Content-Type': 'application/x-www-form-urlencoded'}, body: body.toString()});
       if (!r.ok) throw new Error('HTTP ' + r.status);
       try { localStorage.setItem('atlas-obs-respondido', new Date().toISOString().slice(0, 10)); } catch (x) {}
-      f.hidden = true; const ok = $('#obs-ok'); ok.hidden = false; ok.scrollIntoView({behavior: 'smooth', block: 'center'});
+      f.hidden = true; $('.qw-h', win).hidden = true; const ok = $('#obs-ok'); ok.hidden = false; win.scrollIntoView({behavior: 'smooth', block: 'start'});
     } catch (x) {
-      btn.disabled = false; msg.className = 'ob-msg err';
+      env.disabled = false; msg.className = 'ob-msg err';
       msg.textContent = x.message === 'pré-visualização' ? 'O envio só funciona no ATLAS publicado (atlas-arquitectura.netlify.app). Nesta pré-visualização o questionário serve apenas para rever as perguntas.'
         : 'Não foi possível enviar a resposta. Tente de novo dentro de momentos.';
     }

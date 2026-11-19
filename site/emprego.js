@@ -33,20 +33,79 @@ function visiveis(){
 }
 
 /* ---------------------------------------------------------------- lista */
+const NAO_LIGAR = /ordemdosarquitectos|arquitectos\.pt/i;          /* o ATLAS não leva ao sítio de origem (pedido do Pedro, 19 Nov. 2026) */
+function ligar(t){                                                  /* emails e endereços no texto passam a ligações */
+  return esc(t).replace(/\b[\w.+-]+@[\w-]+(?:\.[\w-]+)+\b/g, m => `<a href="mailto:${m}">${m}</a>`)
+    .replace(/\bhttps?:\/\/[^\s<]+[^\s<.,;:)]/g, m => NAO_LIGAR.test(m) ? m : `<a href="${m}" target="_blank" rel="noopener">${m}</a>`);
+}
+function blocos(txt){
+  return String(txt || '').split(/\n{2,}/).map(b => {
+    const ls = b.split('\n'); let out = '', ul = [];
+    const fecha = () => { if (ul.length) { out += `<ul>${ul.map(x => `<li>${ligar(x)}</li>`).join('')}</ul>`; ul = []; } };
+    ls.forEach(l => { if (l.startsWith('• ')) ul.push(l.slice(2)); else { fecha(); if (l.trim()) out += `<p>${ligar(l)}</p>`; } });
+    fecha(); return out;
+  }).join('');
+}
+const site = u => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (x) { return u; } };
 function cartao(o){
   const s = SEC[o.sec] || {nome: 'Sem região', cor: '#8c8c8c'};
   const dd = o.prazo ? dias(o.prazo) : null;
   const prazo = o.prazo ? `<span class="pill${dd <= 7 ? ' dark' : ''}">Candidaturas até ${dcurta(o.prazo)}</span>` : '<span class="pill out">Sem prazo indicado</span>';
-  const det = [o.funcoes && ['Funções', o.funcoes], o.requisitos && ['Requisitos', o.requisitos]].filter(Boolean);
   return `<article class="eo${state.sel === o.id ? ' sel' : ''}" id="o-${o.id}" data-id="${o.id}" style="--c:${s.cor}">
 <div class="tg"><span class="pill rg"><i></i>${esc(s.nome)}</span>${prazo}${estagio(o) ? '<span class="pill out">Estágio</span>' : ''}</div>
-<h3><a href="${esc(o.u)}" target="_blank" rel="noopener">${esc(o.t)}</a></h3>
+<h3><a href="#oferta-${o.id}" data-abre="${o.id}">${esc(o.t)}</a></h3>
 <div class="m">${esc([o.ent, o.loc].filter(Boolean).join(' · '))}</div>
 ${o.resumo ? `<p class="er">${esc(o.resumo)}</p>` : ''}
-${det.length ? `<details class="ed"><summary>Funções e requisitos</summary>${det.map(([k, v]) => `<p><b>${k}.</b> ${esc(v)}</p>`).join('')}</details>` : ''}
-<div class="lnks"><a class="lnk dark" href="${esc(o.u)}" target="_blank" rel="noopener">Ver a oferta e candidatar-se ${EXT}</a>${o.site ? `<a class="lnk" href="${esc(o.site)}" target="_blank" rel="noopener">Sítio da entidade ${EXT}</a>` : ''}${o.lat != null ? `<button class="lnk" type="button" data-ver="${o.id}">Ver no mapa</button>` : ''}</div>
+<div class="lnks"><a class="lnk dark" href="#oferta-${o.id}" data-abre="${o.id}">Ver o anúncio</a>${o.lat != null ? `<button class="lnk" type="button" data-ver="${o.id}">Ver no mapa</button>` : ''}</div>
 ${o.pub ? `<div class="src">Publicada a ${dlonga(o.pub)}</div>` : ''}</article>`;
 }
+
+/* ---------------------------------------------------------------- anúncio completo, numa janela com endereço próprio (#oferta-n.º) */
+let dlg = null;
+function anuncio(id){
+  const o = OF.find(x => x.id === Number(id)); if (!o) return;
+  if (!dlg) {
+    dlg = document.createElement('dialog'); dlg.className = 'edlg'; dlg.id = 'emp-dlg'; dlg.setAttribute('aria-labelledby', 'edlg-t');
+    document.body.appendChild(dlg);
+    dlg.addEventListener('close', () => { if (/^#oferta-/.test(location.hash)) history.replaceState(null, '', location.pathname + location.search); });
+    dlg.addEventListener('click', ev => {
+      if (ev.target === dlg || ev.target.closest('[data-fecha]')) { dlg.close(); return; }
+      const c = ev.target.closest('[data-copia]');
+      if (c) { const u = location.origin + location.pathname + '#oferta-' + c.dataset.copia;
+        (navigator.clipboard ? navigator.clipboard.writeText(u) : Promise.reject()).then(() => { c.textContent = 'Ligação copiada'; }, () => { prompt('Ligação do anúncio', u); }); }
+      const v = ev.target.closest('[data-ver]');
+      if (v) { dlg.close(); verNoMapa(Number(v.dataset.ver)); }
+    });
+  }
+  const s = SEC[o.sec] || {nome: 'Sem região', cor: '#8c8c8c'};
+  const dd = o.prazo ? dias(o.prazo) : null;
+  const sec = (t, txt) => txt ? `<section><h3>${t}</h3>${blocos(txt)}</section>` : '';
+  const assunto = encodeURIComponent('Candidatura: ' + o.t);
+  const linhas = [
+    o.email && ['Enviar o currículo para', `<a href="mailto:${esc(o.email)}?subject=${assunto}">${esc(o.email)}</a>`],
+    o.entrevista && ['Contacto para entrevista', ligar(o.entrevista)],
+    ['Prazo de candidatura', o.prazo ? `${dlonga(o.prazo)}${dd === 0 ? ', termina hoje' : dd === 1 ? ', falta 1 dia' : `, faltam ${dd} dias`}` : 'Sem prazo indicado'],
+    o.site && !NAO_LIGAR.test(o.site) && ['Sítio da entidade', `<a href="${esc(o.site)}" target="_blank" rel="noopener">${esc(site(o.site))}</a>`],
+  ].filter(Boolean);
+  dlg.style.setProperty('--c', s.cor);
+  dlg.innerHTML = `<div class="ed-h"><div class="tg"><span class="pill rg"><i></i>${esc(s.nome)}</span>${o.prazo ? `<span class="pill${dd <= 7 ? ' dark' : ''}">Candidaturas até ${dcurta(o.prazo)}</span>` : ''}${estagio(o) ? '<span class="pill out">Estágio</span>' : ''}</div><button class="ed-x" type="button" data-fecha aria-label="Fechar o anúncio">×</button></div>
+<div class="ed-b"><span class="kicker" style="--c:${s.cor}"><i></i>Anúncio de emprego</span><h2 id="edlg-t">${esc(o.t)}</h2><div class="m">${esc([o.ent, o.loc].filter(Boolean).join(' · '))}</div>
+${sec('A oferta', o.resumo_txt || o.resumo)}${sec('Descrição', o.descricao)}${sec('Funções', o.funcoes)}${sec('Requisitos mínimos', o.requisitos)}
+<section class="ed-cand"><h3>Candidatura</h3><dl>${linhas.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
+<div class="lnks">${o.email ? `<a class="lnk dark" href="mailto:${esc(o.email)}?subject=${assunto}">Candidatar-me por email</a>` : ''}<button class="lnk" type="button" data-copia="${o.id}">Copiar a ligação do anúncio</button>${o.lat != null ? `<button class="lnk" type="button" data-ver="${o.id}">Ver no mapa</button>` : ''}</div></section>
+<div class="src">${o.pub ? `Publicada a ${dlonga(o.pub)} · ` : ''}Anúncio n.º ${o.id}</div></div>`;
+  if (location.hash !== '#oferta-' + o.id) history.replaceState(null, '', '#oferta-' + o.id);
+  if (!dlg.open) dlg.showModal();
+  dlg.querySelector('.ed-b').scrollTop = 0;
+  escolher(o.id, false);
+}
+function verNoMapa(id){
+  const o = OF.find(x => x.id === id); if (!o) return;
+  escolher(o.id, true);
+  if (map && o.lat != null) { map.flyTo(pos(o), Math.max(map.getZoom(), 11), {duration: .6}); }
+}
+function deHash(){ const m = /^#oferta-(\d+)$/.exec(location.hash); if (m) anuncio(m[1]); else if (dlg && dlg.open) dlg.close(); }
+
 function desenharLista(){
   const box = $('#emp-list'), list = visiveis();
   const grupos = [...ORDER, '_'].map(id => [id, list.filter(o => (id === '_' ? !SEC[o.sec] : o.sec === id))]).filter(([, l]) => l.length);
@@ -121,7 +180,7 @@ function desenharMarcadores(list){
     const sel = state.sel === o.id;
     const m = L.circleMarker(pos(o), {radius: sel ? 8 : z >= 11 ? 6 : z >= 8.5 ? 5 : 4, color: '#fff', weight: sel ? 2.5 : 1.4, fillColor: sel ? '#1b1b1b' : '#111', fillOpacity: 1});
     m.bindTooltip(`<b>${esc(o.ent || o.t)}</b><br>${esc(o.t)}`, {className: 'tt', direction: 'top', offset: [0, -6]});
-    m.on('click', () => escolher(o.id, true));
+    m.on('click', () => { escolher(o.id, true); anuncio(o.id); });
     m.addTo(mlayer); markers[o.id] = m;
     if (sel) m.bringToFront();
   });
@@ -157,9 +216,15 @@ function enquadrar(){
     if (map) map.restyle(); desenharLista(); enquadrar(); });
   let qT; $('#q-e').addEventListener('input', ev => { clearTimeout(qT); qT = setTimeout(() => { state.q = ev.target.value; desenharLista(); }, 160); });
   $('#tipo-e').addEventListener('change', ev => { state.tipo = ev.target.value; desenharLista(); });
-  $('#emp-list').addEventListener('click', ev => { const b = ev.target.closest('[data-ver]'); if (!b) return;
-    const o = OF.find(x => x.id === Number(b.dataset.ver)); if (!o || !map) return;
-    escolher(o.id, false); map.flyTo(pos(o), Math.max(map.getZoom(), 11), {duration: .6}); $('#emp-map').scrollIntoView({behavior: 'smooth', block: 'nearest'}); });
+  $('#emp-list').addEventListener('click', ev => {
+    const a = ev.target.closest('[data-abre]'); if (a) { ev.preventDefault(); anuncio(a.dataset.abre); return; }
+    const b = ev.target.closest('[data-ver]');
+    if (b) { const o = OF.find(x => x.id === Number(b.dataset.ver)); if (!o || !map) return;
+      escolher(o.id, false); map.flyTo(pos(o), Math.max(map.getZoom(), 11), {duration: .6}); $('#emp-map').scrollIntoView({behavior: 'smooth', block: 'nearest'}); return; }
+    const c = ev.target.closest('.eo'); if (c && !ev.target.closest('a,button,summary')) anuncio(c.dataset.id);
+  });
+  addEventListener('hashchange', deHash);
+  deHash();
   $('#emp-list').addEventListener('pointerover', ev => { const c = ev.target.closest('.eo'); if (!c || !markers[c.dataset.id]) return;
     const m = markers[c.dataset.id]; m.setStyle({radius: 8, weight: 2.5}); m.bringToFront(); });
   $('#emp-list').addEventListener('pointerout', ev => { const c = ev.target.closest('.eo'); if (!c || !markers[c.dataset.id] || state.sel === Number(c.dataset.id)) return;
