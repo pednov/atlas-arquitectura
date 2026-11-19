@@ -48,8 +48,10 @@ def sem_ordem(s):
     s = re.sub(r'\s*(?:na|da|pela|à|a|com a)\s+Ordem dos Arquitec?t\w*(?:\s+Portugues\w*)?', '', s, flags=re.I)
     s = re.sub(r'\s*[-–|]\s*OA\b\s*', ' ', s)
     s = re.sub(r'Ordem dos Arquitec?t\w*(?:\s+Portugues\w*)?', '', s, flags=re.I)
+    s = re.sub(r'\b(est[aá]gio)\s+(?:da\s+|de\s+acesso\s+[àa]\s+)?OA\b', r'\1 de acesso à profissão', s, flags=re.I)
     s = re.sub(r'\b(?:na|da|à)\s+OA\b', '', s)
-    return re.sub(r'\s{2,}', ' ', s).strip(' -–|')
+    s = re.sub(r'\s*\bOA\b', '', s)
+    return re.sub(r'[ \t]{2,}', ' ', s).strip(' -–|')
 
 def texto(h, n):
     """HTML da fonte em texto corrido, cortado em n caracteres numa fronteira de palavra."""
