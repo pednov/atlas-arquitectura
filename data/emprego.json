@@ -1,9 +1,6 @@
 {
  "actualizado": "2026-11-19",
- "fonte": {
-  "nome": "Bolsa de emprego",
-  "url": "https://www.ordemdosarquitectos.org/bolsa_emprego?mapMode=true&type=OFERTA&p=1&seccaoFilter=&typeFilter=&searchFilter=&order=desc"
- },
+ "v": 2,
  "total_fonte": 78,
  "ofertas": [
   {
@@ -17,10 +14,13 @@
    "prazo": "2026-12-17",
    "pub": "2026-11-17",
    "resumo": "Procuramos Arquiteta(o) ou arquiteta(o) de interiores, para estágio ou emprego jovem, com hipótese de continuação.",
+   "resumo_txt": "Procuramos Arquiteta(o) ou arquiteta(o) de interiores, para estágio ou emprego jovem, com hipótese de continuação.",
+   "descricao": "Hipotese de Integração em equipa dinâmica e com uma diversidade grande de trabalhos Damos preferencia a experiência BIM e 3D Pedimos que o curriculum mencione: - Data de Nascimento - Data de fomação - Universidade - Média de curso - Nota de Mestrado e orientador/a - Experiência informática 2D e 3D Bim - Se tem hipótese de estágio IEFP",
    "funcoes": "Arquiteto",
    "requisitos": "Curso Completo de arquitetura ou arquitetura de interiores",
-   "site": "https://pardalmonteiro.com/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/pardalmonteiro_estagio"
+   "email": "Geral@pardalmonteiro.com",
+   "entrevista": "João Pardal Monteiro",
+   "site": "https://pardalmonteiro.com/"
   },
   {
    "id": 4780,
@@ -33,10 +33,13 @@
    "prazo": "2026-12-18",
    "pub": "2026-11-17",
    "resumo": "A Guerreiro & Teófilo procura um(a) Arquiteto(a) Júnior para integrar a sua equipa de projeto, com vontade de aprender, desenvolver competências e participar de forma ativa na conceção e desenvolvimento de projetos de arquitetura em diferentes escalas e áreas de intervenção.",
-   "funcoes": "• Elaboração de projetos em diferentes fases; • Elaboração de apresentações a clientes recorrendo a técnicas de apresentação digital inovadoras; • Colaboração com equipas multidisciplinares.",
-   "requisitos": "Mestrado em Arquitetura; - Experiência profissional mínima de 2 anos; - Domínio de AutoCAD e Revit; - Conhecimentos de metodologia BIM; - Capacidade de representação e comunicação gráfica de projetos; - Interesse pelo desenvolvimento técnico e construtivo da arquitetura…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-junior-covilha"
+   "resumo_txt": "A Guerreiro & Teófilo procura um(a) Arquiteto(a) Júnior para integrar a sua equipa de projeto, com vontade de aprender, desenvolver competências e participar de forma ativa na conceção e desenvolvimento de projetos de arquitetura em diferentes escalas e áreas de intervenção.",
+   "descricao": "Procuramos alguém com espírito crítico, rigor técnico e criatividade. Valorizamos a capacidade de conciliar criatividade, conhecimento técnico e pragmatismo na resolução dos desafios inerentes a cada projeto. Oferecemos integração numa equipa dinâmica e multidisciplinar, participação em projetos de áreas diversificadas e oportunidade de crescimento e desenvolvimento profissional.",
+   "funcoes": "• Elaboração de projetos em diferentes fases;\n• Elaboração de apresentações a clientes recorrendo a técnicas de apresentação digital inovadoras;\n• Colaboração com equipas multidisciplinares.",
+   "requisitos": "• Mestrado em Arquitetura;\n• Experiência profissional mínima de 2 anos;\n• Domínio de AutoCAD e Revit;\n• Conhecimentos de metodologia BIM;\n• Capacidade de representação e comunicação gráfica de projetos;\n• Interesse pelo desenvolvimento técnico e construtivo da arquitetura;\n• Atenção ao detalhe, rigor e capacidade de organização;\n• Espírito de equipa, iniciativa e vontade de aprender;\n• Aceitam-se candidaturas ao abrigo do programa IEFP.",
+   "email": "geral@guerreiroteofilo.pt",
+   "entrevista": "275315229",
+   "site": ""
   },
   {
    "id": 4779,
@@ -49,10 +52,13 @@
    "prazo": "2026-12-14",
    "pub": "2026-11-17",
    "resumo": "Procuramos Arquiteto Júnior com gosto por desenho técnico e arquitetura de interiores. O seu principal objetivo é fazer a ponte entre as equipas de design e arquitetura, realizando o projeto de execução; concebendo, documentando e orçamentando todos os aspetos dos interiores, desde os sistemas de climatização até aos azulejos, passando pelas tomadas e fichas, pelos acabamentos das paredes, pelos eletrodomésticos e…",
-   "funcoes": "Somos uma empresa de desenho, produção e construção de casas em madeira de luxo. Estamos a formar as equipas que irão criar estas casas, que incorporam o que há de mais recente em design e tecnologia modernos, com uma sede em Lisboa para…",
-   "requisitos": "Conhecimentos de ArchiCAD - Conhecimentos sobre design de mobiliário, processos de fabrico e seleção de materiais - Proficiência em software CAD e ferramentas de modelação 3D - Atenção aos detalhes e criatividade - Inglês fluente (obrigatório) - Gosto pela contrução e pela…",
-   "site": "https://www.arolla.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arolla_junior2"
+   "resumo_txt": "Procuramos Arquiteto Júnior com gosto por desenho técnico e arquitetura de interiores. O seu principal objetivo é fazer a ponte entre as equipas de design e arquitetura, realizando o projeto de execução; concebendo, documentando e orçamentando todos os aspetos dos interiores, desde os sistemas de climatização até aos azulejos, passando pelas tomadas e fichas, pelos acabamentos das paredes, pelos eletrodomésticos e cozinhas, até aos roupeiros e à iluminação.",
+   "descricao": "Na Arolla, o nosso objetivo é construir espaços bonitos sem deixar rasto. A nossa solução de construção inovadora, baseada num sistema exclusivo de madeira maciça, proporciona casas intuitivas e concebidas à medida, numa proposta «chave na mão» para cada um dos seus clientes. A nossa abordagem revolucionária permite-nos assumir o controlo de todo o processo de construção, o que significa que os nossos clientes podem confiar de que cumpriremos o prometido",
+   "funcoes": "Somos uma empresa de desenho, produção e construção de casas em madeira de luxo. Estamos a formar as equipas que irão criar estas casas, que incorporam o que há de mais recente em design e tecnologia modernos, com uma sede em Lisboa para as equipas de design e suporte e uma unidade de produção em Setúbal para as equipas de fábrica e construção civil.",
+   "requisitos": "• Conhecimentos de ArchiCAD - Conhecimentos sobre design de mobiliário, processos de fabrico e seleção de materiais - Proficiência em software CAD e ferramentas de modelação 3D - Atenção aos detalhes e criatividade - Inglês fluente (obrigatório) - Gosto pela contrução e pela madeira",
+   "email": "human.resources@arolla.pt",
+   "entrevista": "213421476",
+   "site": "https://www.arolla.pt/"
   },
   {
    "id": 4778,
@@ -65,10 +71,13 @@
    "prazo": "2027-01-31",
    "pub": "2026-11-16",
    "resumo": "Procuramos um(a) Arquiteto(a) para integrar a nossa equipa, com experiência profissional mínima de 5 anos, sentido de responsabilidade e capacidade de acompanhar projetos desde a fase conceptual até à sua concretização em obra.",
-   "funcoes": "Liderar e coordenar projetos de arquitetura desde a fase de conceito até à execução; - Desenvolver e supervisionar estudos prévios, projetos de licenciamento e projetos de execução; - Acompanhar a execução dos projetos em obra.",
-   "requisitos": "• Formação superior em Arquitetura; • Experiência profissional mínima de 5 anos; • Conhecimentos sólidos de desenvolvimento de projetos de execução; • Experiência e conhecimentos no acompanhamento e coordenação de obra; • Domínio de AutoCAD; • Experiência em Archicad e Sketchup…",
-   "site": "https://guma.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-senior-leiria"
+   "resumo_txt": "Procuramos um(a) Arquiteto(a) para integrar a nossa equipa, com experiência profissional mínima de 5 anos, sentido de responsabilidade e capacidade de acompanhar projetos desde a fase conceptual até à sua concretização em obra.",
+   "descricao": "Procuramos alguém com sensibilidade arquitetónica, rigor técnico e capacidade de transformar ideias em soluções concretas e bem fundamentadas. Valorizamos a capacidade de conciliar criatividade, conhecimento técnico e pragmatismo na resolução dos desafios inerentes a cada projeto.\n\nOferecemos:\n• Integração numa equipa dinâmica, multidisciplinar e ambiente colaborativo;\n• Participação em projetos diversificados e desafiantes;\n• Oportunidade de crescimento e desenvolvimento profissional.",
+   "funcoes": "• Liderar e coordenar projetos de arquitetura desde a fase de conceito até à execução;\n• Desenvolver e supervisionar estudos prévios, projetos de licenciamento e projetos de execução;\n• Acompanhar a execução dos projetos em obra.",
+   "requisitos": "• Formação superior em Arquitetura;\n• Experiência profissional mínima de 5 anos;\n• Conhecimentos sólidos de desenvolvimento de projetos de execução;\n• Experiência e conhecimentos no acompanhamento e coordenação de obra;\n• Domínio de AutoCAD;\n• Experiência em Archicad e Sketchup é valorizada;\n• Boa capacidade de organização, planeamento e gestão de processos;\n• Visão conceptual, pensamento crítico e atenção ao detalhe;\n• Autonomia, proatividade e capacidade de trabalho em equipa.",
+   "email": "secretaria@guma.pt",
+   "entrevista": "244851664",
+   "site": "https://guma.pt/"
   },
   {
    "id": 4776,
@@ -81,10 +90,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-11-16",
    "resumo": "A C.F.D.S. Architects procura um(a) Arquiteto(a) para integrar a sua equipa em Penafiel, com foco no desenvolvimento de Projetos de Execução. A função envolve a elaboração de desenhos técnicos, pormenores construtivos, compatibilização de especialidades e definição de soluções construtivas, assegurando o rigor e a qualidade técnica dos projetos.",
+   "resumo_txt": "A C.F.D.S. Architects procura um(a) Arquiteto(a) para integrar a sua equipa em Penafiel, com foco no desenvolvimento de Projetos de Execução. A função envolve a elaboração de desenhos técnicos, pormenores construtivos, compatibilização de especialidades e definição de soluções construtivas, assegurando o rigor e a qualidade técnica dos projetos.",
+   "descricao": "Desenvolvimento de projetos de execução de arquitetura, elaboração de desenhos técnicos, pormenores construtivos e peças desenhadas e escritas. Compatibilização com projetos de especialidades, definição de materiais, acabamentos e soluções construtivas. Apoio na elaboração de mapas de acabamentos e medições, em articulação com a equipa de projeto e acompanhamento técnico em obra.",
    "funcoes": "Arquitetura",
-   "requisitos": "Inscrição em vigor como arquitecto. Licenciatura ou Mestrado em Arquitetura. Conhecimentos sólidos em AutoCAD e ArchiCAD. Capacidade de interpretação e desenvolvimento de desenhos técnicos e pormenores construtivos. Conhecimentos de materiais, sistemas e técnicas construtivas.…",
-   "site": "https://cfds.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-projeto-de-execucao-cfds-architects"
+   "requisitos": "Inscrição em vigor como arquitecto.\n\nLicenciatura ou Mestrado em Arquitetura.\n\nConhecimentos sólidos em AutoCAD e ArchiCAD.\n\nCapacidade de interpretação e desenvolvimento de desenhos técnicos e pormenores construtivos.\n\nConhecimentos de materiais, sistemas e técnicas construtivas.\n\nOrganização, rigor, autonomia, responsabilidade e espírito de equipa.\n\nExperiência em projetos de execução (preferencial).",
+   "email": "jobs@cfds.pt",
+   "entrevista": "",
+   "site": "https://cfds.pt/"
   },
   {
    "id": 4775,
@@ -97,10 +109,13 @@
    "prazo": "2026-11-27",
    "pub": "2026-11-13",
    "resumo": "Estágio profissional presencial em escritório na Quinta do Lago, Faro, Algarve, para colaborar em todo o tipo de projetos, com possibilidade de integrar na equipa.",
-   "funcoes": "Colaboração no desenvolvimento de projetos de arquitetura nas fases de estudo prévio, licenciamento e execução; - Apoio à elaboração de peças desenhadas e peças escritas; - Desenvolvimento de modelos tridimensionais e elementos de…",
-   "requisitos": "Mestrado integrado em Arquitetura; - Conhecimentos de Autodesk Revit (obrigatório); - Conhecimentos de ferramentas de modelação e visualização 3D; - Conhecimentos de inglês;",
-   "site": "https://www.maiderneto.com/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/estagio-profissional-2"
+   "resumo_txt": "Estágio profissional presencial em escritório na Quinta do Lago, Faro, Algarve, para colaborar em todo o tipo de projetos, com possibilidade de integrar na equipa.",
+   "descricao": "Arquiteto/a estagiário/a",
+   "funcoes": "• Colaboração no desenvolvimento de projetos de arquitetura nas fases de estudo prévio, licenciamento e execução; - Apoio à elaboração de peças desenhadas e peças escritas; - Desenvolvimento de modelos tridimensionais e elementos de apresentação de projetos; - Participação na preparação de soluções arquitetónicas e construtivas; - Participação em reuniões de equipa e acompanhamento das diferentes fases dos projetos.",
+   "requisitos": "• Mestrado integrado em Arquitetura; - Conhecimentos de Autodesk Revit (obrigatório); - Conhecimentos de ferramentas de modelação e visualização 3D; - Conhecimentos de inglês;",
+   "email": "maiderneto@maider.pt",
+   "entrevista": "913352897",
+   "site": "https://www.maiderneto.com/"
   },
   {
    "id": 4774,
@@ -113,10 +128,13 @@
    "prazo": "2027-01-12",
    "pub": "2026-11-13",
    "resumo": "Procura Arquitecto/a Estagiário/a para integrar uma equipa pequena em Azeitão, ao abrigo de Estágio + talento IEFP.",
-   "funcoes": "Funções Desenvolvimento de projetos de arquitetura nas diferentes fases (estudo prévio, licenciamento e execução); Modelação BIM e desenvolvimento de peças desenhadas e escritas em Archicad e AutoCAD; Preparação, instrução e acompanhamento…",
-   "requisitos": "Formação superior em Arquitetura; Elegibilidade para realização da medida ESTÁGIOS + TALENTO via IEFP — obrigatório; Conhecimentos das regras de urbanismo e legislação portuguesa (RJUE, RGEU, PDMs, etc.); Domínio avançado de Archicad — obrigatório — e conhecimentos de AutoCAD…",
-   "site": "https://www.cpanechouarchitecte.com/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/charlotte_estagio"
+   "resumo_txt": "Procura Arquitecto/a Estagiário/a para integrar uma equipa pequena em Azeitão, ao abrigo de Estágio + talento IEFP.",
+   "descricao": "Atelier de arquitetura de pequena dimensão (2 a 3 pessoas) sediado em Azeitão, focado em arquitetura bioclimática e materiais biosustentáveis, procura Arquiteto(a) polivalente para integrar a equipa ao abrigo da medida Estágios + Talento (IEFP).",
+   "funcoes": "Funções Desenvolvimento de projetos de arquitetura nas diferentes fases (estudo prévio, licenciamento e execução); Modelação BIM e desenvolvimento de peças desenhadas e escritas em Archicad e AutoCAD; Preparação, instrução e acompanhamento de processos de licenciamento municipal; Desenvolvimento de detalhes e soluções construtivas sustentáveis;",
+   "requisitos": "Formação superior em Arquitetura; Elegibilidade para realização da medida ESTÁGIOS + TALENTO via IEFP — obrigatório; Conhecimentos das regras de urbanismo e legislação portuguesa (RJUE, RGEU, PDMs, etc.); Domínio avançado de Archicad — obrigatório — e conhecimentos de AutoCAD; Domínio fluente de Português e Inglês, oral e escrito — obrigatório; Conhecimentos de Francês — mais-valia; Rigor, autonomia, espírito de iniciativa, proactivo e polivalência para trabalhar numa equipa pequena;",
+   "email": "candidatura@cpanechouarchitecte.com",
+   "entrevista": "",
+   "site": "https://www.cpanechouarchitecte.com/"
   },
   {
    "id": 4773,
@@ -129,10 +147,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-11-12",
    "resumo": "Procura Arquiteta/o até 2 anos de experiência.",
+   "resumo_txt": "Procura Arquiteta/o até 2 anos de experiência.",
+   "descricao": "Desenvolvimento de projetos em todas as suas fases.",
    "funcoes": "Arquiteto/a",
    "requisitos": "Archicad 3D",
-   "site": "https://www.paulosantacruz.com",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/procura-arquiteta-o-ate-2-anos-de-experiencia"
+   "email": "atelier@paulosantacruz.com",
+   "entrevista": "916622626",
+   "site": "https://www.paulosantacruz.com"
   },
   {
    "id": 4772,
@@ -145,10 +166,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-11-12",
    "resumo": "A Floret Studio, atelier de arquitetura sediado no Porto, procura Arquiteto(a) com experiência mínima de 5 anos para integrar a sua equipa. Procuramos um profissional autónomo, rigoroso e motivado para desenvolver projetos de arquitetura, com especial enfoque na habitação coletiva, reabilitação de edifícios e empreendimentos turísticos.",
-   "funcoes": "Desenvolvimento de projetos de arquitetura nas fases de estudo prévio, licenciamento e execução. Elaboração de peças desenhadas e escritas, modelação BIM em Revit, desenvolvimento de soluções construtivas e compatibilização de…",
-   "requisitos": "Formação superior em Arquitetura e inscrição ativa como arquitecto. Experiência profissional mínima de 5 anos. Domínio obrigatório de Revit e experiência em projetos de estudo prévio, licenciamento e execução. Conhecimento da legislação aplicável, capacidade de desenvolvimento…",
-   "site": "https://floret.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/floret-studio-contrata-arquiteto-a-com-min-5-anos-experiencia"
+   "resumo_txt": "A Floret Studio, atelier de arquitetura sediado no Porto, procura Arquiteto(a) com experiência mínima de 5 anos para integrar a sua equipa.\n\nProcuramos um profissional autónomo, rigoroso e motivado para desenvolver projetos de arquitetura, com especial enfoque na habitação coletiva, reabilitação de edifícios e empreendimentos turísticos.",
+   "descricao": "Integração numa equipa dinâmica e colaborativa, com participação em projetos de diferentes escalas e complexidades.\n\nProcuramos um(a) arquiteto(a) com autonomia, capacidade técnica e sentido de responsabilidade. Oferecemos contrato de trabalho de 1 ano, com possibilidade de continuidade, remuneração compatível com a experiência e oportunidades de valorização profissional. Trabalho presencial no Porto.",
+   "funcoes": "Desenvolvimento de projetos de arquitetura nas fases de estudo prévio, licenciamento e execução.\n\nElaboração de peças desenhadas e escritas, modelação BIM em Revit, desenvolvimento de soluções construtivas e compatibilização de especialidades.\n\nPreparação de processos de licenciamento, participação em reuniões técnicas e acompanhamento dos projetos, assegurando qualidade, rigor e cumprimento de prazos.",
+   "requisitos": "Formação superior em Arquitetura e inscrição ativa como arquitecto.\n\nExperiência profissional mínima de 5 anos.\n\nDomínio obrigatório de Revit e experiência em projetos de estudo prévio, licenciamento e execução.\n\nConhecimento da legislação aplicável, capacidade de desenvolvimento de pormenores construtivos e conhecimentos de inglês.\n\nAutonomia, organização, rigor técnico e espírito de equipa.",
+   "email": "geral@floret.pt",
+   "entrevista": "914161516",
+   "site": "https://floret.pt/"
   },
   {
    "id": 4771,
@@ -161,10 +185,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-11-12",
    "resumo": "A Floret Studio, atelier de arquitetura sediado no Porto, procura Arquiteto(a) Estagiário(a), no âmbito de um estágio profissional IEFP, para integrar a sua equipa e colaborar no desenvolvimento de projetos de arquitetura, com especial enfoque na habitação coletiva, reabilitação de edifícios e turismo.",
-   "funcoes": "Colaboração no desenvolvimento de projetos de arquitetura nas fases de estudo prévio, licenciamento e execução; Apoio à elaboração de peças desenhadas e escritas; Desenvolvimento de modelos tridimensionais e elementos de apresentação de…",
-   "requisitos": "Mestrado Integrado em Arquitetura ou formação superior equivalente que permita o acesso à profissão; Elegibilidade para realização de estágio profissional através do IEFP; Conhecimentos de Autodesk Revit (obrigatório); Conhecimentos de ferramentas de modelação e visualização 3D…",
-   "site": "https://floret.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/estagio-iefp-arquiteto-a-estagiario-a"
+   "resumo_txt": "A Floret Studio, atelier de arquitetura sediado no Porto, procura Arquiteto(a) Estagiário(a), no âmbito de um estágio profissional IEFP, para integrar a sua equipa e colaborar no desenvolvimento de projetos de arquitetura, com especial enfoque na habitação coletiva, reabilitação de edifícios e turismo.",
+   "descricao": "A Floret Studio é um atelier de arquitetura com uma experiência consolidada no desenvolvimento de projetos de diferentes escalas e programas, com incidência na reabilitação do património edificado, habitação coletiva e empreendimentos turísticos.\n\nProcuramos um(a) Arquiteto(a) Estagiário(a) motivado(a), criativo(a) e com vontade de aprender, para integrar uma equipa multidisciplinar e participar ativamente nas diferentes fases de desenvolvimento dos projetos.",
+   "funcoes": "Colaboração no desenvolvimento de projetos de arquitetura nas fases de estudo prévio, licenciamento e execução;\n\nApoio à elaboração de peças desenhadas e escritas;\n\nDesenvolvimento de modelos tridimensionais e elementos de apresentação de projetos;\n\nParticipação na preparação de soluções arquitetónicas e construtivas;\n\nApoio à compatibilização de projetos de arquitetura e especialidades;\n\nParticipação em reuniões de equipa e acompanhamento das diferentes fases dos projetos.",
+   "requisitos": "Mestrado Integrado em Arquitetura ou formação superior equivalente que permita o acesso à profissão;\n\nElegibilidade para realização de estágio profissional através do IEFP;\n\nConhecimentos de Autodesk Revit (obrigatório);\n\nConhecimentos de ferramentas de modelação e visualização 3D;\n\nConhecimentos de inglês;\n\nCapacidade de organização, sentido de responsabilidade e atenção ao detalhe;\n\nFacilidade de comunicação e espírito de equipa;\n\nMotivação para aprender e desenvolver competências técnicas e criativas.",
+   "email": "geral@floret.pt",
+   "entrevista": "914161516",
+   "site": "https://floret.pt/"
   },
   {
    "id": 4770,
@@ -177,10 +204,13 @@
    "prazo": "2027-12-31",
    "pub": "2026-11-11",
    "resumo": "Gabinete no Campo Grande, Entrecampos, em Lisboa, abre vaga para Estagiário(a), ou Arquitecto(a) Recém-Formado(a), ou com até 3 Anos Experiência Fojo Cadima Lda, (desde 1994 individual/2001 em formato empresarial) Gabinete no Campo Grande/ Entrecampos em Lisboa, abre vaga para Estagiário(a), ou Arquitecto(a) Recém-Formado(a), ou com até 3 Anos Experiência. Enquadramento em Estágio de qualquer formato remunerado.…",
+   "resumo_txt": "Gabinete no Campo Grande, Entrecampos, em Lisboa, abre vaga para Estagiário(a), ou Arquitecto(a) Recém-Formado(a), ou com até 3 Anos Experiência Fojo Cadima Lda, (desde 1994 individual/2001 em formato empresarial) Gabinete no Campo Grande/ Entrecampos em Lisboa, abre vaga para Estagiário(a), ou Arquitecto(a) Recém-Formado(a), ou com até 3 Anos Experiência. Enquadramento em Estágio de qualquer formato remunerado. Trabalho em Gabinete e Acompanhamento de Obra.",
+   "descricao": "Estagiário ou Recém-Formado ou Arquitecto Júnior, para vaga de trabalho, ou enquadramento em Estágio de qualquer formato remunerado. Trabalho em Gabinete e Acompanhamento de Obras.",
    "funcoes": "Arquitectura, Coordenação, Análise/ Revisão de Projectos, Levantamentos, Auditorias Técnicas, Especialidades, Acompanhamento de Obras e afins.",
-   "requisitos": "Fase Final da Licenciatura/Mestrado, Estágio Profissional, ou Arquitecto Júnior. Proximidade local de trabalho Conhecimentos informáticos gerais, no âmbito de programas da profissão, mormente, de Desenho, CAD, BIM, Imagem, Modelação etc. Preferencial, Não Fumante, Diligente/ Com…",
-   "site": "https://www.fc.com",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/fojocadima_estagio"
+   "requisitos": "Fase Final da Licenciatura/Mestrado, Estágio Profissional, ou Arquitecto Júnior. Proximidade local de trabalho Conhecimentos informáticos gerais, no âmbito de programas da profissão, mormente, de Desenho, CAD, BIM, Imagem, Modelação etc. Preferencial, Não Fumante, Diligente/ Com Iniciativa/ Disponibilidade/Responsável Vontade de aprender e trabalhar. Pretensão de Estabilidade/ Continuidade.",
+   "email": "fojocadima.arq15@gmail.com",
+   "entrevista": "963255127",
+   "site": "https://www.fc.com"
   },
   {
    "id": 4769,
@@ -193,10 +223,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-11-11",
    "resumo": "A Hard Wall, construtora do grupo WALLNUT, procura um(a) arquitecto(a) ou engenheiro(a) júnior para pôr em obra um sistema de controlo de qualidade com IA: capturas LiDAR e 360°, preparação de dados e comparação com o modelo BIM no Revit. Contrato sem termo, 1.720 € brutos x 14 + subsídio de alimentação. Lisboa, com deslocação a obras. Candidaturas até 30/11, só pelo formulário…",
-   "funcoes": "Planear e fazer capturas em obra com scanner LiDAR e câmaras 360°, incluindo pontos de controlo. Preparar e anotar os dados de treino: identificar nas nuvens de pontos pilares, vigas, lajes, paredes e tubagens. Comparar a captura com o…",
-   "requisitos": "Licenciatura ou mestrado em Arquitectura, Engenharia Civil, Geomática ou área afim. Revit ou outra ferramenta BIM no dia-a-dia. Leitura de projecto de estruturas e especialidades. Carta de condução e gosto por trabalho de campo. Português fluente; inglês técnico. Valoriza-se…",
-   "site": "https://www.wallnut.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/wallnut_arquiteto"
+   "resumo_txt": "A Hard Wall, construtora do grupo WALLNUT, procura um(a) arquitecto(a) ou engenheiro(a) júnior para pôr em obra um sistema de controlo de qualidade com IA: capturas LiDAR e 360°, preparação de dados e comparação com o modelo BIM no Revit. Contrato sem termo, 1.720 € brutos x 14 + subsídio de alimentação. Lisboa, com deslocação a obras. Candidaturas até 30/11, só pelo formulário: [https://app.wallnut.pt/vagas/tecnico-a-bim-e-de-captura-de-dados-para-ia]",
+   "descricao": "Captamos a obra com LiDAR e câmaras 360°, reconstruímos em nuvem de pontos e comparamos automaticamente com o modelo BIM, para detectar desvios antes de se tornarem erros caros. Vais trabalhar no terreno com o Engenheiro de IA e a consultora BIM do projecto. Formação assegurada. Deslocações pagas pela empresa. Projecto cofinanciado pelo PRR, Linha «IA nas PME», NextGenerationEU.",
+   "funcoes": "Planear e fazer capturas em obra com scanner LiDAR e câmaras 360°, incluindo pontos de controlo. Preparar e anotar os dados de treino: identificar nas nuvens de pontos pilares, vigas, lajes, paredes e tubagens. Comparar a captura com o modelo BIM/IFC no Revit e validar os desvios que o sistema encontra. Manter o registo de cada captura, para que os resultados sejam reprodutíveis.",
+   "requisitos": "Licenciatura ou mestrado em Arquitectura, Engenharia Civil, Geomática ou área afim. Revit ou outra ferramenta BIM no dia-a-dia. Leitura de projecto de estruturas e especialidades. Carta de condução e gosto por trabalho de campo. Português fluente; inglês técnico. Valoriza-se: laser scanning, fotogrametria ou topografia (CloudCompare, ReCap, Metashape), IFC e coordenação BIM, Python básico, experiência em obra.",
+   "email": "vagas@wallnut.pt",
+   "entrevista": "910835338",
+   "site": "https://www.wallnut.pt/"
   },
   {
    "id": 4768,
@@ -209,10 +242,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-11-11",
    "resumo": "Vaga para Arquitecto(a)",
+   "resumo_txt": "Vaga para Arquitecto(a)",
+   "descricao": "",
    "funcoes": "Participação nas diversas fases de projecto, integração em equipa multidisciplinar.",
    "requisitos": "2 anos de esperiência, conhecimentos de Archicad",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/jbmg_arquiteto"
+   "email": "Info@jbmg-arquitectos.pt",
+   "entrevista": "JBMG",
+   "site": ""
   },
   {
    "id": 4767,
@@ -225,10 +261,13 @@
    "prazo": "2026-11-20",
    "pub": "2026-11-11",
    "resumo": "Arquiteta/o Sénior para iniciar funções em Janeiro/Fevereiro 2027. Informação completa em: https://www.cannatafernandes.com/pt/page/recrutamento/",
+   "resumo_txt": "Arquiteta/o Sénior para iniciar funções em Janeiro/Fevereiro 2027.\n\nInformação completa em: https://www.cannatafernandes.com/pt/page/recrutamento/",
+   "descricao": "A Cannatà & Fernandes procura Arquiteta/o Sénior para integrar a equipa.\n\nSerão aceites as candidaturas até às 23:59 de dia 20 de Novembro de 2026.",
    "funcoes": "Arquiteta/o Sénior",
-   "requisitos": "Experiência mínima de 5 anos; Domínio de Autocad e Archicad; Conhecimento da legislação portuguesa (RJUE, RGEU e PDMs); Informação completa no nosso site.",
-   "site": "https://www.cannatafernandes.com/pt/page/recrutamento/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/vaga-para-arquiteto-a-senior-1"
+   "requisitos": "Experiência mínima de 5 anos;\n\nDomínio de Autocad e Archicad;\n\nConhecimento da legislação portuguesa (RJUE, RGEU e PDMs);\n\nInformação completa no nosso site.",
+   "email": "work@cannatafernandes.com",
+   "entrevista": "228329172",
+   "site": "https://www.cannatafernandes.com/pt/page/recrutamento/"
   },
   {
    "id": 4766,
@@ -241,10 +280,13 @@
    "prazo": "2026-12-30",
    "pub": "2026-11-10",
    "resumo": "Arquitecto -Entrada Imediata",
+   "resumo_txt": "Arquitecto -Entrada Imediata",
+   "descricao": "A Nocos pretende recrutar para entrada imediata Arquitecto, para apoio a produção.",
    "funcoes": "Apoio a produção.",
-   "requisitos": "Licenciatura em Arquitectura ou equivalente - conhecimentos de Autocad - Bons conhecimentos de Microsoft Office",
-   "site": "https://nocos.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/nocos_arquiteto2"
+   "requisitos": "• Licenciatura em Arquitectura ou equivalente - conhecimentos de Autocad - Bons conhecimentos de Microsoft Office",
+   "email": "geral@nocos.pt",
+   "entrevista": "211944485",
+   "site": "https://nocos.pt/"
   },
   {
    "id": 4765,
@@ -257,10 +299,13 @@
    "prazo": "2026-12-12",
    "pub": "2026-11-09",
    "resumo": "Será responsável por definir, implementar e garantir a qualidade dos processos BIM, assegurando a coordenação entre disciplinas, a conformidade dos modelos e a integração da metodologia em todas as fases do projeto.",
+   "resumo_txt": "Será responsável por definir, implementar e garantir a qualidade dos processos BIM, assegurando a coordenação entre disciplinas, a conformidade dos modelos e a integração da metodologia em todas as fases do projeto.",
+   "descricao": "• Coordenar as equipas de projeto e as várias especialidades, garantindo a interoperabilidade dos modelos; • Realizar a deteção de conflitos e a verificação da qualidade e da informação dos modelos; • Fomentar a criação de bibliotecas de famílias, modelos de projeto (templates) e standards em Revit e AutoCAD.",
    "funcoes": "Gestão Integrada de Projetos",
    "requisitos": "• Formação em Arquitetura; • Formação em BIM Management ou experiência comprovada como BIM Manager; • Domínio de Revit e AutoCAD.",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/ddn_bim_manager2"
+   "email": "recrutamento@ddn-box.com",
+   "entrevista": "965396738",
+   "site": ""
   },
   {
    "id": 4763,
@@ -273,10 +318,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-11-09",
    "resumo": "Arquitecto, para trabalhar nas áreas de Arquitectura e Urbanismo, em Atelier com experiência em diferentes áreas com cerca de 50 anos. O valor inicial da oferta de emprego é de 1.200,00€",
+   "resumo_txt": "Arquitecto, para trabalhar nas áreas de Arquitectura e Urbanismo, em Atelier com experiência em diferentes áreas com cerca de 50 anos. O valor inicial da oferta de emprego é de 1.200,00€",
+   "descricao": "Trabalho a tempo inteiro, em Atelier de Lisboa.",
    "funcoes": "Colaboração nas Áreas de Arquitectura e Urbanista em equipas especificas.",
    "requisitos": "Conhecimentos de Autocad",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/luisdefreitas_arquiteto"
+   "email": "lmsfreitas@gmail.com",
+   "entrevista": "218476519 / 963856176",
+   "site": ""
   },
   {
    "id": 4762,
@@ -289,10 +337,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-11-06",
    "resumo": "Com 32 anos de experiência no setor da Construção Civil, a DDN é uma empresa de referência na Fiscalização de Obras e Gestão de Projetos, reconhecida pelo seu rigor técnico, profissionalismo, inovação e crescimento sustentado. No âmbito do reforço da nossa equipa de Arquitetura, procuramos um Arquiteto para integrar os nossos quadros e participar no desenvolvimento de estudos e projetos de arquitetura, contribuindo…",
+   "resumo_txt": "Com 32 anos de experiência no setor da Construção Civil, a DDN é uma empresa de referência na Fiscalização de Obras e Gestão de Projetos, reconhecida pelo seu rigor técnico, profissionalismo, inovação e crescimento sustentado. No âmbito do reforço da nossa equipa de Arquitetura, procuramos um Arquiteto para integrar os nossos quadros e participar no desenvolvimento de estudos e projetos de arquitetura, contribuindo para a qualidade técnica e a concretização dos projetos.",
+   "descricao": "Principais responsabilidades: Participar na elaboração e desenvolvimento de estudos e projetos de arquitetura, nas diferentes fases do processo; Preparar e desenvolver peças desenhadas e documentação técnica de projeto; Acompanhar processos de licenciamento, comunicação prévia e aprovação de projetos junto das entidades competentes;",
    "funcoes": "Gestão de Projetos",
-   "requisitos": "Licenciatura ou Mestrado em Arquitetura; Experiência profissional mínima de cerca de 2 anos em Portugal, preferencialmente no desenvolvimento de estudos e projetos de edifícios; Domínio de AutoCAD e de Revit; Conhecimentos da Metodologia BIM (preferencial); Capacidade de…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/ddn_arquiteto"
+   "requisitos": "Licenciatura ou Mestrado em Arquitetura; Experiência profissional mínima de cerca de 2 anos em Portugal, preferencialmente no desenvolvimento de estudos e projetos de edifícios; Domínio de AutoCAD e de Revit; Conhecimentos da Metodologia BIM (preferencial); Capacidade de organização, planeamento e gestão autónoma do trabalho; Sentido de responsabilidade, rigor técnico e atenção ao detalhe; Capacidade de comunicação e de trabalho em equipa.",
+   "email": "recrutamento@ddn-box.com",
+   "entrevista": "965396738",
+   "site": ""
   },
   {
    "id": 4759,
@@ -305,10 +356,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-11-04",
    "resumo": "Procuramos um(a) arquiteto(a) com capacidade para acompanhar um projeto em todas as suas fases, da análise urbanística à execução em obra. Valorizamos uma visão prática e integrada da arquitetura, autonomia na gestão de projetos e facilidade de comunicação e relacionamento com clientes. Somos uma equipa multidisciplinar que atua nas áreas de assessoria e análise urbanística, arquitetura e engenharias, assegurando…",
-   "funcoes": "Principais responsabilidades: - Análise e desenvolvimento de processos e procedimentos urbanísticos; - Desenvolvimento de projetos de arquitetura e projetos de execução; - Coordenação e acompanhamento de obra; - Comunicação e articulação…",
+   "resumo_txt": "Procuramos um(a) arquiteto(a) com capacidade para acompanhar um projeto em todas as suas fases, da análise urbanística à execução em obra. Valorizamos uma visão prática e integrada da arquitetura, autonomia na gestão de projetos e facilidade de comunicação e relacionamento com clientes. Somos uma equipa multidisciplinar que atua nas áreas de assessoria e análise urbanística, arquitetura e engenharias, assegurando também a gestão, coordenação e acompanhamento de obra, do conceito à execução.",
+   "descricao": "Valorizamos uma visão prática e integrada da arquitetura, autonomia na gestão de projetos e facilidade de comunicação e relacionamento com clientes. Somos uma equipa multidisciplinar que atua nas áreas de assessoria e análise urbanística, arquitetura e engenharias, assegurando também a gestão, coordenação e acompanhamento de obra, do conceito à execução.",
+   "funcoes": "Principais responsabilidades: - Análise e desenvolvimento de processos e procedimentos urbanísticos; - Desenvolvimento de projetos de arquitetura e projetos de execução; - Coordenação e acompanhamento de obra; - Comunicação e articulação com clientes e restantes intervenientes nos projetos.",
    "requisitos": "Perfil e requisitos: - Autonomia, proatividade e sentido de responsabilidade; - Boa capacidade de comunicação e relacionamento interpessoal; - Inscrição válida como arquitecto; - Domínio de ferramentas Office, Autocad, Archicad; - Carta de condução; - Fluência em inglês;",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/achievingup_arquiteto3"
+   "email": "INFO@A-UP.PT",
+   "entrevista": "218437285",
+   "site": ""
   },
   {
    "id": 4761,
@@ -321,10 +375,13 @@
    "prazo": "2026-11-24",
    "pub": "2026-11-03",
    "resumo": "Procuro licenciado/a ou mestre em Arquitetura para estágio no meu atelier, em Redondo, com apoio do IEFP (Estágios +Talento). Se tiver mestrado, pode fazer aqui o estágio de admissão à profissão. Trabalho sobretudo em levantamentos, licenciamentos e legalizações, e na recuperação de casas em taipa, adobe e pedra. Pode começar assim que a candidatura for aprovada.",
-   "funcoes": "Levantamentos de edifícios e terrenos e passagem a CAD/BIM. Leitura do PDM, do RMUE e do RJUE aplicáveis a cada caso. Desenhos e memórias descritivas para PIP, licenciamento, comunicação prévia e legalização. Projeto de execução e…",
-   "requisitos": "Licenciatura ou mestrado em Arquitetura. AutoCAD é obrigatório; ArchiCAD conta a favor. Uso corrente de Office. É preciso escrever bem em português e ter disponibilidade para sair do atelier para levantamentos, obras e câmaras. O interesse por construção tradicional e património…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego?mapMode=true&type=OFERTA&p=1&seccaoFilter=&typeFilter=&searchFilter=&order=desc"
+   "resumo_txt": "Procuro licenciado/a ou mestre em Arquitetura para estágio no meu atelier, em Redondo, com apoio do IEFP (Estágios +Talento). Se tiver mestrado, pode fazer aqui o estágio de admissão à profissão. Trabalho sobretudo em levantamentos, licenciamentos e legalizações, e na recuperação de casas em taipa, adobe e pedra. Pode começar assim que a candidatura for aprovada.",
+   "descricao": "Atelier próprio em Redondo, com cerca de 10 anos de atividade, sobretudo em habitação. Vai trabalhar comigo em todas as fases: levantamento, projeto, processo na câmara, execução e obra. Estágio +Talento (IEFP), sujeito a elegibilidade e aprovação. Bolsa de 1 181,69 € (licenciatura) ou 1 289,11 € (mestrado), refeição e seguro. Seis meses (com possibilidade de renovação), início após aprovação. Presencial, podendo passar a misto. Para mestres, posso orientar o estágio OA.",
+   "funcoes": "Levantamentos de edifícios e terrenos e passagem a CAD/BIM. Leitura do PDM, do RMUE e do RJUE aplicáveis a cada caso. Desenhos e memórias descritivas para PIP, licenciamento, comunicação prévia e legalização. Projeto de execução e pormenores. Montagem dos processos e contatos com as câmaras. Visitas e acompanhamento de obra.",
+   "requisitos": "Licenciatura ou mestrado em Arquitetura. AutoCAD é obrigatório; ArchiCAD conta a favor. Uso corrente de Office. É preciso escrever bem em português e ter disponibilidade para sair do atelier para levantamentos, obras e câmaras. O interesse por construção tradicional e património é uma vantagem.",
+   "email": "geral@sousaazaruja-arq.com",
+   "entrevista": "965254333",
+   "site": ""
   },
   {
    "id": 4760,
@@ -337,10 +394,13 @@
    "prazo": "2026-11-24",
    "pub": "2026-11-03",
    "resumo": "Procuro licenciado/a ou mestre em Arquitetura para estágio remunerado no meu atelier, em Redondo. Esta oferta é para quem não reúne as condições dos estágios do IEFP (para esses casos há outra oferta). Se tiver mestrado, pode fazer aqui o estágio de admissão à profissão. Trabalho sobretudo em levantamentos, licenciamentos e legalizações.",
-   "funcoes": "Levantamentos de edifícios e terrenos e passagem a CAD/BIM. Leitura do PDM, do RMUE e do RJUE aplicáveis a cada caso. Desenhos e memórias descritivas para PIP, licenciamento, comunicação prévia e legalização. Projeto de execução e…",
-   "requisitos": "Licenciatura ou mestrado em Arquitetura. AutoCAD é obrigatório; ArchiCAD conta a favor. Uso corrente de Office. É preciso escrever bem em português e ter disponibilidade para sair do atelier para levantamentos, obras e câmaras. O interesse por construção tradicional e património…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego?mapMode=true&type=OFERTA&p=1&seccaoFilter=&typeFilter=&searchFilter=&order=desc"
+   "resumo_txt": "Procuro licenciado/a ou mestre em Arquitetura para estágio remunerado no meu atelier, em Redondo. Esta oferta é para quem não reúne as condições dos estágios do IEFP (para esses casos há outra oferta). Se tiver mestrado, pode fazer aqui o estágio de admissão à profissão. Trabalho sobretudo em levantamentos, licenciamentos e legalizações.",
+   "descricao": "Condições: contrato de estágio pago pelo atelier, com 1 181,69 € (licenciatura) ou 1 289,11 € (mestrado) brutos por mês, mais subsídio de refeição e seguro. Duração 12 meses. Início a combinar. Trabalho presencial em Redondo, que mais tarde pode passar a regime misto. A quem tiver mestrado, posso orientar o estágio de admissão à profissão.",
+   "funcoes": "Levantamentos de edifícios e terrenos e passagem a CAD/BIM. Leitura do PDM, do RMUE e do RJUE aplicáveis a cada caso. Desenhos e memórias descritivas para PIP, licenciamento, comunicação prévia e legalização. Projeto de execução e pormenores. Montagem dos processos e contatos com as câmaras. Visitas e acompanhamento de obra.",
+   "requisitos": "Licenciatura ou mestrado em Arquitetura. AutoCAD é obrigatório; ArchiCAD conta a favor. Uso corrente de Office. É preciso escrever bem em português e ter disponibilidade para sair do atelier para levantamentos, obras e câmaras. O interesse por construção tradicional e património é uma vantagem.",
+   "email": "geral@sousaazaruja-arq.com",
+   "entrevista": "965254333",
+   "site": ""
   },
   {
    "id": 4758,
@@ -353,10 +413,13 @@
    "prazo": "2026-11-20",
    "pub": "2026-11-03",
    "resumo": "O/A candidato/a deverá ser elegível para estágio IEFP. Valoriza-se conhecimentos em Archicad, PS e InDesign.",
+   "resumo_txt": "O/A candidato/a deverá ser elegível para estágio IEFP. Valoriza-se conhecimentos em Archicad, PS e InDesign.",
+   "descricao": "A Bernardes Arquitetura está a recrutar um/a estagiário/a para integrar a equipa de arquitetura e/ou interiores, na nossa sede em Lisboa, em formato presencial.",
    "funcoes": "Acompanhamento das equipas de arquitetura e interiores no desenvolvimento de projetos em todas as suas fases.",
    "requisitos": "Formação em Mestrado Integrado em Arquitetura.",
-   "site": "https://www.bernardesarq.com.br/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/bernardes_estagio"
+   "email": "ines@bernardesarq.com.br",
+   "entrevista": "Inês Reis ou Vera Cantante",
+   "site": "https://www.bernardesarq.com.br/"
   },
   {
    "id": 4757,
@@ -369,10 +432,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-11-03",
    "resumo": "A+Architecture procura Arquitecto/a Estagiário/a para integrar a sua equipa em Lisboa, ao abrigo de Estágio IEFP, com possibilidade de realização de estágio profissional de acesso à profissão.",
-   "funcoes": "Colaboração em todas as fases dos projetos; - Desenvolvimento de projectos em Archicad; - Edição de imagens e peças desenhadas para uma melhorar apresentação ao cliente; - Realização de estudos de conceito e análises de regulamentos…",
-   "requisitos": "Residência em Lisboa ou arredores, ou com possibilidade de alterar redidência para Lisboa; - Formação na Faculade de Arquitetura do Porto (FAUP); - Eligivel para Estágio IEFP (fator eliminatório); - Excelente capacidade de trabalho em equipa; - Domínio de software Archicad…",
-   "site": "https://www.a-architecture.org",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/amaisa_architecture_estagio"
+   "resumo_txt": "A+Architecture procura Arquitecto/a Estagiário/a para integrar a sua equipa em Lisboa, ao abrigo de Estágio IEFP, com possibilidade de realização de estágio profissional de acesso à profissão.",
+   "descricao": "A A+Architecture está a recrutar um(a) estagiário(a), preferencialmente formado(a) na Faculdade de Arquitetura do Porto (FAUP), para se juntar à nossa equipa. Procuramos alguém motivado(a) e com vontade de crescer profissionalmente, para colaborar em todas as fases dos projetos em desenvolvimento, numa perspetiva de continuidade da relação profissional de longo prazo. Terás a oportunidade de participar em projetos diversos, desde a fase de conceito até à execução e à experiência em obra.",
+   "funcoes": "• Colaboração em todas as fases dos projetos; - Desenvolvimento de projectos em Archicad; - Edição de imagens e peças desenhadas para uma melhorar apresentação ao cliente; - Realização de estudos de conceito e análises de regulamentos; - Colaboração na elaboração de peças gráficas e documentação técnica; - Colaboração na preparação de processos de camarários; - Interação com fornecedores e entidades públicas sempre que necessário;",
+   "requisitos": "• Residência em Lisboa ou arredores, ou com possibilidade de alterar redidência para Lisboa; - Formação na Faculade de Arquitetura do Porto (FAUP); - Eligivel para Estágio IEFP (fator eliminatório); - Excelente capacidade de trabalho em equipa; - Domínio de software Archicad (fator eliminatório); - Conhecimento de Adobe Photoshop, Indesign, e Microsoft Office; - Fluente em português e inglês; - Espírito criativo e vontade de aprender;",
+   "email": "a.abreu@a-architecture.org",
+   "entrevista": "André Abreu",
+   "site": "https://www.a-architecture.org"
   },
   {
    "id": 4756,
@@ -385,10 +451,13 @@
    "prazo": "2027-02-28",
    "pub": "2026-11-03",
    "resumo": "Procuramos Arquiteto(a) para integrar a nossa equipa. Pode ser arquiteto(a) estagiário(a) para estágio profissional de acesso à profissão.",
+   "resumo_txt": "Procuramos Arquiteto(a) para integrar a nossa equipa. Pode ser arquiteto(a) estagiário(a) para estágio profissional de acesso à profissão.",
+   "descricao": "Com ou sem experiência. Integra em equipa sólida e dinâmica. Pessoa com responsabilidade e vontade de aprender.",
    "funcoes": "Arquiteto(a) ou arquiteto(a) estagiário(a) para apoio na elaboração de projetos.",
    "requisitos": "Conhecimentos de Auto-Cad e/ou outros programas de desenho. Valorizamos experiência.",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-ou-arquiteto-estagiario-a"
+   "email": "davidsousa.engenharia@gmail.com",
+   "entrevista": "252967900",
+   "site": ""
   },
   {
    "id": 4755,
@@ -401,10 +470,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-11-03",
    "resumo": "Estágio profissional IEFP",
+   "resumo_txt": "Estágio profissional IEFP",
+   "descricao": "Integração e aprendizagem em gabinete de arquitectura, nas diversas fases de projecto",
    "funcoes": "Participação em diversas fases de projecto, aprendizagem e interação com a prática profissional",
    "requisitos": "Conhecimentos de Archicad Inscrição no IEFP",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/jbmg_estagio"
+   "email": "Info@jbmg-arquitectos.pt",
+   "entrevista": "JBMG",
+   "site": ""
   },
   {
    "id": 4754,
@@ -417,10 +489,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-11-03",
    "resumo": "Barbosa & Guimarães Arquitectos procura um(a) Arquiteto(a) Júnior para integrar a sua equipa de projeto, com vontade de aprender, desenvolver competências e participar ativamente no desenvolvimento de projetos de arquitetura em diferentes escalas e áreas de intervenção. O atelier desenvolve projetos nas mais diversas áreas da arquitetura.",
-   "funcoes": "O atelier desenvolve projetos nas mais diversas áreas da arquitetura, abrangendo a encomenda pública — saúde, ensino, desporto, cultura, justiça, reabilitação urbana, espaço público e planeamento — e a encomenda privada, nos setores da…",
-   "requisitos": "Inscrição em vigor como arquitecto; Mestrado em Arquitetura; Domínio de AutoCAD e Revit; Conhecimentos sólidos de metodologia BIM; Capacidade de representação e comunicação gráfica de projetos; Interesse pelo desenvolvimento técnico e construtivo da arquitetura; Atenção ao…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/oportunidade-de-emprego-arquiteto-a-junior"
+   "resumo_txt": "Barbosa & Guimarães Arquitectos procura um(a) Arquiteto(a) Júnior para integrar a sua equipa de projeto, com vontade de aprender, desenvolver competências e participar ativamente no desenvolvimento de projetos de arquitetura em diferentes escalas e áreas de intervenção. O atelier desenvolve projetos nas mais diversas áreas da arquitetura.",
+   "descricao": "Procuramos um(a) profissional motivado(a), criativo(a) e com sentido de responsabilidade, que pretenda integrar uma equipa multidisciplinar e acompanhar as diferentes fases de desenvolvimento dos projetos, contribuindo para uma prática de arquitetura rigorosa, exigente e colaborativa.",
+   "funcoes": "O atelier desenvolve projetos nas mais diversas áreas da arquitetura, abrangendo a encomenda pública — saúde, ensino, desporto, cultura, justiça, reabilitação urbana, espaço público e planeamento — e a encomenda privada, nos setores da habitação, comércio, escritórios, hotelaria e turismo.",
+   "requisitos": "Inscrição em vigor como arquitecto;\n\nMestrado em Arquitetura;\n\nDomínio de AutoCAD e Revit;\n\nConhecimentos sólidos de metodologia BIM;\n\nCapacidade de representação e comunicação gráfica de projetos;\n\nInteresse pelo desenvolvimento técnico e construtivo da arquitetura;\n\nAtenção ao detalhe, rigor e capacidade de organização;\n\nEspírito de equipa, iniciativa e vontade de aprender.",
+   "email": "mail@barbosa-guimaraes.com",
+   "entrevista": "229363022",
+   "site": ""
   },
   {
    "id": 4753,
@@ -433,10 +508,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-11-02",
    "resumo": "A TUA CARREIRA EM ARQUITETURA COMEÇA AQUI! A 3Riscos está a recrutar um(a) Arquiteto(a) para Estágio Profissional IEFP, em Faro, a tempo inteiro. Procuramos talento, criatividade e vontade de crescer! Requisitos: • Formação em Arquitetura • AutoCAD, SketchUp e Archicad • Domínio de inglês • Elegibilidade para estágio IEFP Oferecemos uma equipa dinâmica, projetos diversificados e oportunidades de aprendizagem.…",
+   "resumo_txt": "A TUA CARREIRA EM ARQUITETURA COMEÇA AQUI! A 3Riscos está a recrutar um(a) Arquiteto(a) para Estágio Profissional IEFP, em Faro, a tempo inteiro. Procuramos talento, criatividade e vontade de crescer! Requisitos: • Formação em Arquitetura • AutoCAD, SketchUp e Archicad • Domínio de inglês • Elegibilidade para estágio IEFP Oferecemos uma equipa dinâmica, projetos diversificados e oportunidades de aprendizagem. Candidata-te! geral@3riscos.pt",
+   "descricao": "Valor a acordar.",
    "funcoes": "Arquiteto/a",
    "requisitos": "Valor a acordar.",
-   "site": "https://3riscos.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-62"
+   "email": "geral@3riscos.pt",
+   "entrevista": "934254117",
+   "site": "https://3riscos.pt/"
   },
   {
    "id": 4752,
@@ -449,10 +527,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-11-02",
    "resumo": "O gabinete de arquitetura CCHE procura Arquiteto(a)s para completar a nossa equipa respondendo aos requisitos abaixo indicados. Se pretendes juntar-te a uma equipa dinâmica e com espírito de partilha, beneficiando ao mesmo tempo de um ambiente profissional íntegro, aguardamos com expectativa a tua candidatura completa (CV, Portfólio académico e/ou profissional).",
-   "funcoes": "Tarefas principais : • Elaboração de projetos em diferentes fases; • Elaboração de apresentações a clientes recorrendo a técnicas de apresentação digital inovadoras; • Colaboração com equipas multidisciplinares e internacionais;",
-   "requisitos": "O teu perfil : • Conhecimentos em Archicad BIM, Adobe Photoshop, Illustrator, outros programas de imagem; • Experiência internacional num escritório de arquitetura é valorizado; • Sensibilidade ao desenvolvimento sustentável • Criatividade e intuição para uma arquitetura de alto…",
-   "site": "https://cche.com",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-junior-15"
+   "resumo_txt": "O gabinete de arquitetura CCHE procura Arquiteto(a)s para completar a nossa equipa respondendo aos requisitos abaixo indicados. Se pretendes juntar-te a uma equipa dinâmica e com espírito de partilha, beneficiando ao mesmo tempo de um ambiente profissional íntegro, aguardamos com expectativa a tua candidatura completa (CV, Portfólio académico e/ou profissional).",
+   "descricao": "Tarefas principais :\n\n• Desenvolvimento de ideias, concursos, estudos de viabilidade\n\n• Elaboração de diferentes projetos em equipa ou de forma autónoma\n\n• Criatividade e intuição para uma arquitetura de alto valor acrescentado",
+   "funcoes": "Tarefas principais :\n\n• Elaboração de projetos em diferentes fases;\n\n• Elaboração de apresentações a clientes recorrendo a técnicas de apresentação digital inovadoras;\n\n• Colaboração com equipas multidisciplinares e internacionais;",
+   "requisitos": "O teu perfil :\n\n• Conhecimentos em Archicad BIM, Adobe Photoshop, Illustrator, outros programas de imagem;\n\n• Experiência internacional num escritório de arquitetura é valorizado;\n\n• Sensibilidade ao desenvolvimento sustentável\n\n• Criatividade e intuição para uma arquitetura de alto valor acrescentado\n\n• Espírito de análise e de síntese\n\n• Rigor e dinamismo\n\n• Capacidades de comunicação, fluente em inglês ou francês falado e escrito é valorizado;\n\n• Aceitam-se candidaturas ao abrigo do programa IEFP.",
+   "email": "recrutamento@ccheporto.com",
+   "entrevista": "221450086",
+   "site": "https://cche.com"
   },
   {
    "id": 4751,
@@ -465,10 +546,13 @@
    "prazo": "2027-02-28",
    "pub": "2026-10-29",
    "resumo": "Pretende-se estagiário para colaborar em todo tipo de projetos e licenciamentos, com possibilidade de integrar na equipa.",
+   "resumo_txt": "Pretende-se estagiário para colaborar em todo tipo de projetos e licenciamentos, com possibilidade de integrar na equipa.",
+   "descricao": "O valor a atribuir será de acordo com o trabalho, conhecimentos e autonomia do estagiário.",
    "funcoes": "Arquiteto/a estagiário/a",
    "requisitos": "Autonomia e dedicação profissional",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/estagio-1"
+   "email": "arq.afonso@gmail.com",
+   "entrevista": "919669624",
+   "site": ""
   },
   {
    "id": 4750,
@@ -481,10 +565,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-29",
    "resumo": "O gabinete Eliana Sousa Arquitectura, sediado em Espinho, encontra-se em fase de reforço de equipa e pretende admitir um(a) Arquiteto(a) Estagiário(a) para integrar a sua equipa multidisciplinar. Procuramos um perfil motivado, com forte sentido de responsabilidade, rigor técnico e espírito de equipa.",
-   "funcoes": "• Colaboração ativa no desenvolvimento de projetos de arquitetura em todas as suas fases (Estudo Prévio, Licenciamento e Execução). • Preparação e instrução de processos camarários e comunicações prévias. • Elaboração de peças desenhadas e…",
-   "requisitos": "• Formação Superior (Mestrado Integrado) em Arquitetura. • Elegibilidade para a realização de Estágio Profissional de acesso à profissão e/ou Estágio IEFP. • Domínio de ferramentas de desenho Archicad • Produtividade: Domínio do pacote Office (Word e Excel) e ferramentas de…",
-   "site": "https://www.elianasousa.com/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-estagiario-a-espinho-2"
+   "resumo_txt": "O gabinete Eliana Sousa Arquitectura, sediado em Espinho, encontra-se em fase de reforço de equipa e pretende admitir um(a) Arquiteto(a) Estagiário(a) para integrar a sua equipa multidisciplinar.\n\nProcuramos um perfil motivado, com forte sentido de responsabilidade, rigor técnico e espírito de equipa.",
+   "descricao": "• Apoio no desenvolvimento de projetos de arquitetura nas suas diversas fases, incluindo Estudo Prévio, Licenciamento (Projetos de Arquitetura e Especialidades) e Execução.\n\n• Elaboração e organização de peças desenhadas (plantas, cortes, alçados e pormenores construtivos) e peças escritas (memórias descritivas e mapas de quantidades).\n\n• Colaboração na modelação 3D e renderização para apresentação de propostas a clientes.\n\n• Acompanhamento técnico na preparação de maquetes digitais.",
+   "funcoes": "• Colaboração ativa no desenvolvimento de projetos de arquitetura em todas as suas fases (Estudo Prévio, Licenciamento e Execução).\n\n• Preparação e instrução de processos camarários e comunicações prévias.\n\n• Elaboração de peças desenhadas e escritas.\n\n• Apoio no acompanhamento de obra.",
+   "requisitos": "• Formação Superior (Mestrado Integrado) em Arquitetura.\n\n• Elegibilidade para a realização de Estágio Profissional de acesso à profissão e/ou Estágio IEFP.\n\n• Domínio de ferramentas de desenho Archicad\n\n• Produtividade: Domínio do pacote Office (Word e Excel) e ferramentas de edição de imagem ([Photoshop / InDesign]).\n\n• Idiomas: Fluência em Português (escrito e falado).",
+   "email": "mail@elianasousa.com",
+   "entrevista": "918610908",
+   "site": "https://www.elianasousa.com/"
   },
   {
    "id": 4749,
@@ -497,10 +584,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-28",
    "resumo": "Contrato de Trabalho Full-time. Remuneração inicial elevada. Progressão na carreira. Projectos internacionais.",
+   "resumo_txt": "Contrato de Trabalho Full-time. Remuneração inicial elevada. Progressão na carreira. Projectos internacionais.",
+   "descricao": "Arquitecto. Execução todas as Fases de Projecto.",
    "funcoes": "Nuno Antunes - Sócio Gerente",
    "requisitos": "Licenciado em Arquitectura. Mestrado em Arquitectura.",
-   "site": "http://www.goncalosilva.pt",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/gsaa_arquiteto2"
+   "email": "careers@goncalosilva.pt",
+   "entrevista": "Arq. Gonçalo Silva ou o Arq. Nuno Antunes",
+   "site": "http://www.goncalosilva.pt"
   },
   {
    "id": 4748,
@@ -513,10 +603,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-28",
    "resumo": "Contrato de Trabalho Full-time. Remuneração inicial elevada. Progressão na carreira. Projectos internacionais.",
+   "resumo_txt": "Contrato de Trabalho Full-time. Remuneração inicial elevada. Progressão na carreira. Projectos internacionais.",
+   "descricao": "Arquitecto. Execução todas as Fases de Projecto e Visualização 3D.",
    "funcoes": "Nuno Antunes - Sócio Gerente",
    "requisitos": "Licenciado em Arquitectura. Mestrado em Arquitectura. Talento em modelação e renderização 3D.",
-   "site": "http://www.goncalosilva.pt",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/gsaa_3D2"
+   "email": "careers@goncalosilva.pt",
+   "entrevista": "Arq. Gonçalo Silva ou o Arq. Nuno Antunes",
+   "site": "http://www.goncalosilva.pt"
   },
   {
    "id": 4746,
@@ -529,10 +622,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-28",
    "resumo": "Integração na equipa de projeto para desenvolvimento de Projetos de Arquitetura, com especial incidência em projetos de execução. Procuramos um profissional autónomo, rigoroso e orientado para o cumprimento de prazos.",
+   "resumo_txt": "Integração na equipa de projeto para desenvolvimento de Projetos de Arquitetura, com especial incidência em projetos de execução. Procuramos um profissional autónomo, rigoroso e orientado para o cumprimento de prazos.",
+   "descricao": "Procuramos um(a) Arquiteto(a) para integrar a nossa equipa de projeto em regime de tempo inteiro. Valorizamos experiência comprovada no desenvolvimento de Projetos de Arquitetura em todas as fases, com especial enfoque em projetos de execução para edifícios habitacionais. O candidato deverá demonstrar competências na produção de peças desenhadas, pormenorização construtiva, medições e mapas de quantidades, bem como na compatibilização entre especialidades.",
    "funcoes": "Arquiteto",
-   "requisitos": "Experiência comprovada em gabinete de arquitetura (mínimo de 5 anos); Experiência em projetos de execução e compatibilização das diversas especialidades; Domínio de AutoCAD; Sólidos conhecimentos de desenho técnico e pormenorização construtiva; Conhecimento aprofundado de…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/pe-c-arquitectos-vaga-para-arquiteto-a"
+   "requisitos": "Experiência comprovada em gabinete de arquitetura (mínimo de 5 anos);\n\nExperiência em projetos de execução e compatibilização das diversas especialidades;\n\nDomínio de AutoCAD;\n\nSólidos conhecimentos de desenho técnico e pormenorização construtiva;\n\nConhecimento aprofundado de materiais e sistemas construtivos;\n\nCapacidade de organização, rigor e cumprimento de prazos;\n\nEspírito crítico, sentido de responsabilidade e capacidade de iniciativa;\n\nNacionalidade portuguesa (fator eliminatório).",
+   "email": "pvideira@pecarquitectos.com",
+   "entrevista": "967557412",
+   "site": ""
   },
   {
    "id": 4742,
@@ -545,10 +641,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-10-28",
    "resumo": "Procura-se arquiteto/a com experiência em processo de licenciamento.",
+   "resumo_txt": "Procura-se arquiteto/a com experiência em processo de licenciamento.",
+   "descricao": "Pretende-se um colaborador para integrar a empresa no desenvolvimento de projetos de arquitetura em diferentes fases, desde o estudo prévio, licenciamento e acompanhamento de obra. Gabinete de projeto sediado em Sernancelhe, com filial em São João da Pesqueira e Celorico da Beira, com possibilidade entre os 3 gabinetes. Full-time ou part-time.",
    "funcoes": "Arquiteto/a, projetista. Fiscalização de obra.",
-   "requisitos": "Inscrição em vigor como arquitecto - Licenciatura em Arquitetura - Aptidão em utilização IA - Desenho em Autocad e/ou Archicad - Modelação em Sketchup e rendarização no Lumion - Conhecimento e trabalho em BIM",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquitecta-sandra-silva-unipessoal-lda-vaga-para-arquiteto-a"
+   "requisitos": "• Inscrição em vigor como arquitecto\n\n• Licenciatura em Arquitetura\n\n• Aptidão em utilização IA\n\n• Desenho em Autocad e/ou Archicad\n\n• Modelação em Sketchup e rendarização no Lumion\n\n• Conhecimento e trabalho em BIM",
+   "email": "arquitectasandrasilva@gmail.com",
+   "entrevista": "968070144",
+   "site": ""
   },
   {
    "id": 4745,
@@ -561,10 +660,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-10-27",
    "resumo": "Integração imediata em projectos activos. Condução de projecto, coordenação de especialidades e instrução de processos. Contrato de trabalho, presencial em Lisboa. Remuneração compatível com a experiência demonstrada. Candidatura com CV e portefólio: NOZ-ARQS-O-2026@noz.com.pt",
+   "resumo_txt": "Integração imediata em projectos activos. Condução de projecto, coordenação de especialidades e instrução de processos. Contrato de trabalho, presencial em Lisboa. Remuneração compatível com a experiência demonstrada. Candidatura com CV e portefólio: NOZ-ARQS-O-2026@noz.com.pt",
+   "descricao": "A NOZ está a crescer. Com projectos institucionais e comerciais em curso em Lisboa e no Algarve, procuramos um/a arquitecto/a sénior para conduzir projectos do estudo prévio à obra, em articulação directa com os sócios. Somos selectivos com o trabalho que aceitamos. Autonomia real e responsabilidades atribuídas de acordo com a capacidade demonstrada.",
    "funcoes": "Condução de 2 a 3 projectos em simultâneo, do programa ao projecto de execução e acompanhamento de obra. Coordenação e compatibilização de especialidades. Instrução de processos junto das câmaras municipais.",
-   "requisitos": "Mínimo 6 anos de experiência, com projectos desenvolvidos até à fase de submissão estatutária e à obra, e funções identificáveis. Conhecimento do RJUE e da regulamentação de edifícios. Revit ao nível de utilizador. Português e inglês fluentes. Candidatura com CV, portefólio e…",
-   "site": "https://www.noz.com.pt",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/noz_arquiteto_senior"
+   "requisitos": "Mínimo 6 anos de experiência, com projectos desenvolvidos até à fase de submissão estatutária e à obra, e funções identificáveis. Conhecimento do RJUE e da regulamentação de edifícios. Revit ao nível de utilizador. Português e inglês fluentes. Candidatura com CV, portefólio e nota sobre o teu papel em cada projecto.",
+   "email": "NOZ-ARQS-O-2026@noz.com.pt",
+   "entrevista": "Rui Dias",
+   "site": "https://www.noz.com.pt"
   },
   {
    "id": 4744,
@@ -577,10 +679,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-10-27",
    "resumo": "Immediate integration in active projects. Ownership of model and documentation production, families and graphic standards. Employment contract, on-site in Lisbon. Competitive salary based on experience. Apply with CV and 3 to 6 sheets of model images and drawings: NOZ-REVS-O-2026@noz.com.pt",
-   "funcoes": "Revit modelling across project phases, from the design team's instructions. Drawing production: plans, sections, elevations, details, schedules and quantities. Creation and maintenance of families, templates and office graphic standards.…",
-   "requisitos": "Minimum 5 years of Revit production work. Revit proficiency is mandatory - applications without demonstrated Revit experience will not be considered: parametric families, worksharing, views, sheets and schedules. Background in drafting, architecture, engineering or BIM; foreign…",
-   "site": "https://www.noz.com.pt",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/noz_revit_operator"
+   "resumo_txt": "Immediate integration in active projects. Ownership of model and documentation production, families and graphic standards. Employment contract, on-site in Lisbon. Competitive salary based on experience. Apply with CV and 3 to 6 sheets of model images and drawings: NOZ-REVS-O-2026@noz.com.pt",
+   "descricao": "NOZ is growing. With ongoing institutional and commercial projects in Lisbon and the Algarve, we are looking for a Revit Operator to lead model and drawing production. We are selective about the work we take on and we work in BIM across all project phases. An architecture degree is not required: we value Revit mastery and drawing and modelling quality. / A NOZ está a crescer. Procuramos Operador/a Revit.",
+   "funcoes": "Revit modelling across project phases, from the design team's instructions. Drawing production: plans, sections, elevations, details, schedules and quantities. Creation and maintenance of families, templates and office graphic standards. Shared models and coordination with consultant models (IFC). This is merely a draftsman position, but an active position contributing to the overall design quality.",
+   "requisitos": "Minimum 5 years of Revit production work. Revit proficiency is mandatory - applications without demonstrated Revit experience will not be considered: parametric families, worksharing, views, sheets and schedules. Background in drafting, architecture, engineering or BIM; foreign degrees welcome. Practical test in the process. Portuguese not required.",
+   "email": "NOZ-REVS-O-2026@noz.com.pt",
+   "entrevista": "Rui Dias",
+   "site": "https://www.noz.com.pt"
   },
   {
    "id": 4743,
@@ -593,10 +698,13 @@
    "prazo": "2026-11-28",
    "pub": "2026-10-27",
    "resumo": "Localização: Lisboa Remuneração mensal: 2.200 € a 2.400 € Possibilidade de viatura de empresa e outras regalias",
+   "resumo_txt": "Localização: Lisboa Remuneração mensal: 2.200 € a 2.400 € Possibilidade de viatura de empresa e outras regalias",
+   "descricao": "Procuramos um(a) Arquiteto(a) com experiência, capacidade de liderança e competências de coordenação de equipas e projetos. Oferecemos: • Salário mensal entre 2.200 € e 2.400 €; • Possibilidade de viatura de empresa; • Outras regalias a negociar. Valorizamos o rigor, a autonomia, a organização e a orientação para resultados. Envie o seu CV para admin@tnvarquitetura.com.",
    "funcoes": "Arquiteto(a) – Chefe de Equipa / Coordenador(a)",
-   "requisitos": "Procuramos um(a) Arquiteto(a) com experiência, capacidade de liderança e competências de coordenação de equipas e projetos. Oferecemos: • Salário mensal entre 2.200 € e 2.400 €; • Possibilidade de viatura de empresa; • Outras regalias a negociar. Valorizamos o rigor, a…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/tnv_arquiteto"
+   "requisitos": "Procuramos um(a) Arquiteto(a) com experiência, capacidade de liderança e competências de coordenação de equipas e projetos. Oferecemos: • Salário mensal entre 2.200 € e 2.400 €; • Possibilidade de viatura de empresa; • Outras regalias a negociar. Valorizamos o rigor, a autonomia, a organização e a orientação para resultados. Envie o seu CV para admin@tnvarquitetura.com.",
+   "email": "admin@tnvarquitetura.com",
+   "entrevista": "924385285",
+   "site": ""
   },
   {
    "id": 4741,
@@ -609,10 +717,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-27",
    "resumo": "O gabinete Hugo Correia Arq, sediado em Vila Nova de Famalicão desde 2006, recruta Arquiteto/a para reforçar a sua equipa.",
-   "funcoes": "• Participação em todas as fases de projeto de arquitetura: estudo prévio, licenciamento, projeto de execução; • Participação em projetos de diversas tipologias, principalmente habitação multifamiliar e equipamentos hoteleiros; • Interação…",
-   "requisitos": "• Inscrição em vigor como arquitecto; • Licenciatura ou Mestrado em Arquitetura (fator eliminatório); • Conhecimentos em ARCHICAD; • Experiência profissional na função até 5 anos (fator eliminatório) e em projetos de habitação multifamiliar e/ou equipamentos hoteleiros (fator…",
-   "site": "https://www.facebook.com/arquisquare.hugocorreia/?locale=pt_PT",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-vila-nova-de-famalicao-1"
+   "resumo_txt": "O gabinete Hugo Correia Arq, sediado em Vila Nova de Famalicão desde 2006, recruta Arquiteto/a para reforçar a sua equipa.",
+   "descricao": "• Remuneração compatível com a função e a experiência demonstrada;\n\n• Oportunidade de desenvolvimento profissional e pessoal em projetos de grandes dimensões e diversas tipologias;\n\n• Integração em empresa sólida e em crescimento.",
+   "funcoes": "• Participação em todas as fases de projeto de arquitetura: estudo prévio, licenciamento, projeto de execução;\n\n• Participação em projetos de diversas tipologias, principalmente habitação multifamiliar e equipamentos hoteleiros;\n\n• Interação com entidades públicas e privadas inerentes à atividade;",
+   "requisitos": "• Inscrição em vigor como arquitecto;\n\n• Licenciatura ou Mestrado em Arquitetura (fator eliminatório);\n\n• Conhecimentos em ARCHICAD;\n\n• Experiência profissional na função até 5 anos (fator eliminatório) e em projetos de habitação multifamiliar e/ou equipamentos hoteleiros (fator preferencial);\n\n• Com elevado sentido de responsabilidade e organização;\n\n• Capacidade de trabalhar em equipa e de gerir prazos e tarefas relacionadas com o projeto;\n\n• Residência em V. N. de Famalicão ou num raio até 20Km de distância.",
+   "email": "rh@hugocorreiaarq.pt",
+   "entrevista": "+351919600922",
+   "site": "https://www.facebook.com/arquisquare.hugocorreia/?locale=pt_PT"
   },
   {
    "id": 4740,
@@ -625,10 +736,13 @@
    "prazo": "2026-11-20",
    "pub": "2026-10-27",
    "resumo": "A Arquibotelho, abriu vaga para arquiteto(a) estagiário(a). Sediada em Matosinhos, encontra-se em fase de expansão e pretende reforçar a sua equipa multidisciplinar. Perfil Pretendido: Procuramos um estagiário motivado, com forte sentido de responsabilidade, rigor técnico e excelente capacidade de comunicação e trabalho em equipa.",
+   "resumo_txt": "A Arquibotelho, abriu vaga para arquiteto(a) estagiário(a).\n\nSediada em Matosinhos, encontra-se em fase de expansão e pretende reforçar a sua equipa multidisciplinar.\n\nPerfil Pretendido: Procuramos um estagiário motivado, com forte sentido de responsabilidade, rigor técnico e excelente capacidade de comunicação e trabalho em equipa.",
+   "descricao": "Apoio no desenvolvimento de projetos de arquitetura em todas as suas fases (do Estudo Prévio à Execução);\n\nPreparação de processos de Licenciamento e Comunicações Prévias;\n\nElaboração de peças desenhadas e escritas;\n\nApoio na instrução de processos camarários.\n\nOportunidade de contrato no fim do estágio, com remuneração de acordo com a capacidade e competência demonstrada.",
    "funcoes": "Arquitetura",
-   "requisitos": "Formação Superior em Arquitetura; Domínio de AutoCAD (2D) e ferramentas de Office; Elegibilidade para realização de Estágio Profissional de acesso à profissão; Conhecimentos de modelação 3D e renderização (valorizado).",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-estagiario-a-oa"
+   "requisitos": "Formação Superior em Arquitetura;\n\nDomínio de AutoCAD (2D) e ferramentas de Office;\n\nElegibilidade para realização de Estágio Profissional de acesso à profissão;\n\nConhecimentos de modelação 3D e renderização (valorizado).",
+   "email": "filipemagalhaes@arquibotelho.com",
+   "entrevista": "965005419",
+   "site": ""
   },
   {
    "id": 4734,
@@ -641,10 +755,13 @@
    "prazo": "2026-11-22",
    "pub": "2026-10-26",
    "resumo": "Posição B — Arquiteto(a) com experiência superior 5 anos",
+   "resumo_txt": "Posição B — Arquiteto(a) com experiência superior 5 anos",
+   "descricao": "Experiência profissional na área de formação superior a 5 anos.",
    "funcoes": "",
-   "requisitos": "• conhecimentos informáticos consolidados de Archicad/ Archiline e Autocad; • experiência consolidada em projeto de execução, pormenorização e licenciamentos; • trabalho presencial; • dinamismo e boa capacidade de planeamento e autonomia na resolução de problemas.",
-   "site": "https://www.clareneves.com",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/a-clare-neves-arquitectura-e-projectos-tem-em-curso-um-processo-de-recrutamento-para-dois-colaboradores-arquitetos"
+   "requisitos": "• conhecimentos informáticos consolidados de Archicad/ Archiline e Autocad;\n\n• experiência consolidada em projeto de execução, pormenorização e licenciamentos;\n\n• trabalho presencial;\n\n• dinamismo e boa capacidade de planeamento e autonomia na resolução de problemas.",
+   "email": "clare.neves@clareneves.com",
+   "entrevista": "220993131",
+   "site": "https://www.clareneves.com"
   },
   {
    "id": 4733,
@@ -657,10 +774,13 @@
    "prazo": "2026-11-22",
    "pub": "2026-10-26",
    "resumo": "Posição 1 — Arquiteto(a) com experiência até 5 anos ou elegível para a medida ESTÁGIOS +TALENTO do IEFP.",
+   "resumo_txt": "Posição 1 — Arquiteto(a) com experiência até 5 anos ou elegível para a medida ESTÁGIOS +TALENTO do IEFP.",
+   "descricao": "Experiência profissional na área de formação até 5 anos ou elegibilidade para a medida Estágios +TALENTO do IEFP.",
    "funcoes": "",
-   "requisitos": "Constituem fatores de valorização da candidatura: • conhecimentos informáticos consolidados de Archicad/ Archiline e Autocad; • conhecimentos/experiência em projeto de execução e licenciamentos; • elegibilidade para a medida ESTÁGIOS+TALENTO do IEFP (fator de valorização da…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/clare-neves-arquitectura-e-projectos-procura-1-arquiteto-experiencia-ate-5-anos-ou-elegivel-para-a-medida-estagios-talento-do-iefp"
+   "requisitos": "Constituem fatores de valorização da candidatura:\n\n• conhecimentos informáticos consolidados de Archicad/ Archiline e Autocad;\n\n• conhecimentos/experiência em projeto de execução e licenciamentos;\n\n• elegibilidade para a medida ESTÁGIOS+TALENTO do IEFP (fator de valorização da candidatura, mas não imprescindível) ;\n\n• trabalho presencial;",
+   "email": "clare.neves@clareneves.com",
+   "entrevista": "220993131",
+   "site": ""
   },
   {
    "id": 4732,
@@ -673,10 +793,13 @@
    "prazo": "2027-04-30",
    "pub": "2026-10-23",
    "resumo": "Procuramos Arquitecto(a) com experiência mínima de 3 anos para integrar a nossa equipa jovem e dinâmica. Alguém com paixão pela arquitectura, sentido de responsabilidade e verdadeira entrega ao trabalho, que queira crescer connosco e assumir um papel activo no desenvolvimento dos projectos.",
-   "funcoes": "Oferecemos liberdade e autonomia para participar no desenvolvimento do projecto em todas as suas fases, desde: • Instrução e desenvolvimento do projecto; • Estudo prévio; • Instrução processual; • Projecto de execução, • Coordenação e…",
+   "resumo_txt": "Procuramos Arquitecto(a) com experiência mínima de 3 anos para integrar a nossa equipa jovem e dinâmica. Alguém com paixão pela arquitectura, sentido de responsabilidade e verdadeira entrega ao trabalho, que queira crescer connosco e assumir um papel activo no desenvolvimento dos projectos.",
+   "descricao": "Valorizamos o percurso e as competências de cada profissional, proporcionando: • Ordenado acima da média, ajustado à experiência e competências demonstradas; • Valorização contínua do colaborador; • Ambiente de trabalho positivo e colaborativo; • Oportunidades de formação e desenvolvimento profissional; • Acompanhamento regular; • Plano de progressão na carreira, com possibilidade de evolução interna e assunção de novas responsabilidades, acompanhadas da respectiva valorização salarial.",
+   "funcoes": "Oferecemos liberdade e autonomia para participar no desenvolvimento do projecto em todas as suas fases, desde: • Instrução e desenvolvimento do projecto; • Estudo prévio; • Instrução processual; • Projecto de execução, • Coordenação e acompanhamento em obra.",
    "requisitos": "Experiência profissional mínima de 3 anos e domínio das seguintes ferramentas: • Microsoft Word • Microsoft Excel • Archicad • AutoCAD • SketchUp",
-   "site": "https://unoarquitectos.pt/pt/home-pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquitecto-a-3-anos-de-experiencia-entrada-imediata"
+   "email": "geral@unoarquitectos.pt",
+   "entrevista": "919712724",
+   "site": "https://unoarquitectos.pt/pt/home-pt/"
   },
   {
    "id": 4730,
@@ -689,10 +812,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-10-22",
    "resumo": "Oferecemos um ambiente de trabalho estável e colaborativo, com oportunidades de crescimento profissional, contacto com diferentes fases do projeto, horário organizado com sexta-feira à tarde livre e encontros mensais de equipa.",
+   "resumo_txt": "Oferecemos um ambiente de trabalho estável e colaborativo, com oportunidades de crescimento profissional, contacto com diferentes fases do projeto, horário organizado com sexta-feira à tarde livre e encontros mensais de equipa.",
+   "descricao": "O Atelier de Arquitetura Carlos Gonçalves pretende reforçar a sua equipa com a integração de um/a arquiteto/a para colaboração em contexto de atelier. Procuramos um perfil com sentido de responsabilidade, rigor técnico, capacidade de trabalho em equipa e alinhamento com os princípios e a cultura de trabalho do atelier.",
    "funcoes": "Colaboração no desenvolvimento de projetos de arquitetura, abrangendo diferentes fases do processo, desde os estudos iniciais aos processos de licenciamento e desenvolvimento técnico do projeto.",
-   "requisitos": "Experiência profissional de 4 a 5 anos; - Domínio de AutoCAD e/ou Revit; - Experiência em processos de licenciamento e submissão de projetos; - Capacidade de modelação 3D e comunicação gráfica de projeto; - Rigor técnico, sentido de responsabilidade, compromisso e capacidade de…",
-   "site": "https://www.aacg.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/aacg_arquiteto3"
+   "requisitos": "• Experiência profissional de 4 a 5 anos; - Domínio de AutoCAD e/ou Revit; - Experiência em processos de licenciamento e submissão de projetos; - Capacidade de modelação 3D e comunicação gráfica de projeto; - Rigor técnico, sentido de responsabilidade, compromisso e capacidade de organização; - Espírito de equipa e facilidade de colaboração.",
+   "email": "carlos@aacg.pt",
+   "entrevista": "964217282",
+   "site": "https://www.aacg.pt/"
   },
   {
    "id": 4729,
@@ -705,10 +831,13 @@
    "prazo": "2027-01-31",
    "pub": "2026-10-21",
    "resumo": "A MARSOLVE, empresa de construção com atuação no Algarve, pretende reforçar a sua equipa com um/a Arquiteto/a com interesse pela área da construção, para desempenhar funções de orçamentação, preparação e planeamento de obra.",
+   "resumo_txt": "A MARSOLVE, empresa de construção com atuação no Algarve, pretende reforçar a sua equipa com um/a Arquiteto/a com interesse pela área da construção, para desempenhar funções de orçamentação, preparação e planeamento de obra.",
+   "descricao": "PRINCIPAIS FUNÇÕES - Análise e interpretação de projetos; - Levantamento, medição e quantificação de trabalhos e materiais; - Elaboração de orçamentos e propostas comerciais; - Preparação e planeamento das obras; - Acompanhamento dos processos de obra e articulação com as equipas; - Controlo de custos, materiais e prazos.",
    "funcoes": "Empresa de Construção Civil",
-   "requisitos": "Formação em Arquitetura; - Experiência ou conhecimentos de orçamentação e preparação de obra; - Capacidade de leitura e interpretação de projetos; - Conhecimentos de materiais e processos construtivos; - Bons conhecimentos de informática e ferramentas de desenho técnico; - Boa…",
-   "site": "https://marsolve.net/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-orcamentacao-e-preparacao-de-obra"
+   "requisitos": "• Formação em Arquitetura; - Experiência ou conhecimentos de orçamentação e preparação de obra; - Capacidade de leitura e interpretação de projetos; - Conhecimentos de materiais e processos construtivos; - Bons conhecimentos de informática e ferramentas de desenho técnico; - Boa capacidade de organização, planeamento e atenção ao detalhe; - Espírito prático, autonomia e sentido de responsabilidade; - Boa capacidade de comunicação e trabalho em equipa; - Carta de condução.",
+   "email": "comercial@marsolve.net",
+   "entrevista": "964398051",
+   "site": "https://marsolve.net/"
   },
   {
    "id": 4728,
@@ -721,10 +850,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-21",
    "resumo": "Colaborar com a restante equipa no desenvolvimento de projeto de arquitetura de vários usos. Acompanhar e participar nos processos criativos; Acompanhar o desenvolvimento do projeto de execução.",
+   "resumo_txt": "Colaborar com a restante equipa no desenvolvimento de projeto de arquitetura de vários usos. Acompanhar e participar nos processos criativos; Acompanhar o desenvolvimento do projeto de execução.",
+   "descricao": "Pretende-se arquiteto/a, com capacidade de integração em equipa, com vontade de participar em projetos de edifícios, planeamento, requalificação etc.",
    "funcoes": "As funções será participar no desenvolvimento de estudos e desenvolvimento de projetos, acompanhamento do desenvolvimento destes, seja em ambiente de gabinete como de obra.",
    "requisitos": "Essencial o domínio de Autocad e Revit; mestrado integrado em Arquitetura; elegível para estágio profissional no âmbito IEFP ATIVAR.",
-   "site": "https://lgarq.com/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/lourencogomes_estagiario1"
+   "email": "Isabelj@lgarq.com",
+   "entrevista": "917273578",
+   "site": "https://lgarq.com/"
   },
   {
    "id": 4726,
@@ -737,10 +869,13 @@
    "prazo": "2027-02-21",
    "pub": "2026-10-21",
    "resumo": "Integrar a equipa de Arquitectos",
+   "resumo_txt": "Integrar a equipa de Arquitectos",
+   "descricao": "A CPU Architects International tem em carteira diversos projectos de diferentes tipologias e dimensão (urbanismo, habitação, serviços, turismo, reabilitação, etc.). O candidato deverá participar em diversos trabalhos, integrando uma equipa de arquitectos com larga experiência.",
    "funcoes": "Integrar a equipa de Arquitectos",
    "requisitos": "Mínimo de 3 a 5 anos de experiência na elaboração de estudos e projectos de Arquitectura, preparação e formatação de projectos de licenciamento, de execução e coordenação de especialidades. Prática de software REVIT / BIM requerida.",
-   "site": "https://www.cpu.pt/pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/cpu_arquiteto4"
+   "email": "jcordeiro@cpu.pt",
+   "entrevista": "914406262",
+   "site": "https://www.cpu.pt/pt/"
   },
   {
    "id": 4724,
@@ -753,10 +888,13 @@
    "prazo": "2026-11-29",
    "pub": "2026-10-20",
    "resumo": "Estágio profissional remunerado nos termos do programa do IEFP - Orientação de estágio de acesso à profissão - Contacto direto com todas as fases do processo, desde as fases todas de projecto à própria construção que somos nós que executamos - Desenvolvimento dos skills de Archicad (obrigatório domínio básico do software) - Possibilidade de integração na equipa no fim do estágio",
-   "funcoes": "Investimento Imobiliário - Desenvolvimento de marca imobiliária - Desenvolvimento de projecto - Desenvolvimento de construção - Mediação imobiliária",
-   "requisitos": "Mestrado Integrado em Arquitetura (ou equivalente), concluído - Reunir as condições de elegibilidade para estágio profissional do IEFP - Domínio de Archicad (obrigatório) - Disponibilidade para iniciar o estágio de acesso à profissão - Vontade de aprender e trabalhar em várias…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/metodo_estagiario"
+   "resumo_txt": "• Estágio profissional remunerado nos termos do programa do IEFP - Orientação de estágio de acesso à profissão - Contacto direto com todas as fases do processo, desde as fases todas de projecto à própria construção que somos nós que executamos - Desenvolvimento dos skills de Archicad (obrigatório domínio básico do software) - Possibilidade de integração na equipa no fim do estágio",
+   "descricao": "• Apoio ao desenvolvimento de projetos de arquitetura em todas as fases - Apoio na preparação de obras em todas as fases - Produção de desenhos técnicos e modelação 3D em Archicad - Preparação de apresentações, peças gráficas e imagens - Apoio ao trabalho de excel aliado aos projectos e obras - Apoio a licenciamentos e coordenação com especialidades",
+   "funcoes": "• Investimento Imobiliário - Desenvolvimento de marca imobiliária - Desenvolvimento de projecto - Desenvolvimento de construção - Mediação imobiliária",
+   "requisitos": "• Mestrado Integrado em Arquitetura (ou equivalente), concluído - Reunir as condições de elegibilidade para estágio profissional do IEFP - Domínio de Archicad (obrigatório) - Disponibilidade para iniciar o estágio de acesso à profissão - Vontade de aprender e trabalhar em várias etapas diferentes do processo",
+   "email": "info@mtd.studio",
+   "entrevista": "931887450",
+   "site": ""
   },
   {
    "id": 4722,
@@ -769,10 +907,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-20",
    "resumo": "A A400 pretende reforçar a sua equipa com Arquiteto(a) Estagiário(a), para escritório do Porto.",
+   "resumo_txt": "A A400 pretende reforçar a sua equipa com Arquiteto(a) Estagiário(a), para escritório do Porto.",
+   "descricao": "A A400 pretende reforçar a sua equipa com Arquiteto(a) Estagiário(a).\n\nGrupo Empresarial com projeção nacional e internacional;\n\nOportunidade de participação em projetos aliciantes;\n\nProjetos à escala global;\n\nEquipa de Arquitetura em ambiente de trabalho multidisciplinar;",
    "funcoes": "Arquiteto(a) Estagiário(a)",
-   "requisitos": "Formação em arquitetura (mestrado integrado concluído); Interesse por BIM e/ou Revit; Interesse por construção; Ativo/a, dinâmico/a, criativo/a e sentido de responsabilidade; Gosto e apetência pelo trabalho em equipa e pelo cumprimento de objetivos.",
-   "site": "https://a400.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-estagiario-a-conhecimentos-em-revit-porto-1"
+   "requisitos": "Formação em arquitetura (mestrado integrado concluído);\n\nInteresse por BIM e/ou Revit;\n\nInteresse por construção;\n\nAtivo/a, dinâmico/a, criativo/a e sentido de responsabilidade;\n\nGosto e apetência pelo trabalho em equipa e pelo cumprimento de objetivos.",
+   "email": "rh@a400.pt",
+   "entrevista": "914 546 438",
+   "site": "https://a400.pt/"
   },
   {
    "id": 4721,
@@ -785,10 +926,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-10-19",
    "resumo": "A JP Arquitetos, procura arquiteto/a com experiência, para colaborar no seu atelier. O candidato irá colaborar com a restante equipa, em todas as fases de um projeto de arquitetura.",
-   "funcoes": "A JP Arquitetos, criada em 2015, tem desenvolvidos projetos de arquitetura desde o Conceito à Execução com acompanhamento de obra. Atuamos na coordenação, organização e gestão de processos junto de entidades licenciadoras. “Criamos espaços…",
-   "requisitos": "2 anos de experiência em arquitetura, com conhecimentos em REVIT, domínio de AutoCad, SketchUp e/ou outras ferramentas de edição de imagem 3D. Perfil pretendido: interesse em lidar com a tecnologia, adaptando-a a novos desafios, capacidade de organização, planeamento, definição…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/jparquitetos_arquiteto"
+   "resumo_txt": "A JP Arquitetos, procura arquiteto/a com experiência, para colaborar no seu atelier. O candidato irá colaborar com a restante equipa, em todas as fases de um projeto de arquitetura.",
+   "descricao": "Oferecemos a oportunidade de integrar uma equipa jovem, ambiciosa e motivada com acesso a formação contínua, potenciando o bom desempenho e a otimização de resultados. Terá como funções o desenvolvimento de projetos em REVIT, nas diversas fases de projeto, desde o conceito até à execução.",
+   "funcoes": "A JP Arquitetos, criada em 2015, tem desenvolvidos projetos de arquitetura desde o Conceito à Execução com acompanhamento de obra. Atuamos na coordenação, organização e gestão de processos junto de entidades licenciadoras. “Criamos espaços para viver, trabalhar e sentir”",
+   "requisitos": "2 anos de experiência em arquitetura, com conhecimentos em REVIT, domínio de AutoCad, SketchUp e/ou outras ferramentas de edição de imagem 3D. Perfil pretendido: interesse em lidar com a tecnologia, adaptando-a a novos desafios, capacidade de organização, planeamento, definição de prioridades e adaptação a diferentes tipologias de projeto; autonomia, rigor, sentido critico e criativo; bem como capacidade de comunicação e espírito de equipa.",
+   "email": "jmp@jmp-arq.pt",
+   "entrevista": "",
+   "site": ""
   },
   {
    "id": 4720,
@@ -801,10 +945,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-19",
    "resumo": "Gabinete focado na criação de projetos habitacionais personalizados que transformam aspirações em espaços de vida funcionais e esteticamente marcantes, desde o primeiro esboço até à entrega da obra.",
-   "funcoes": "• Colaboração no desenvolvimento de projetos de arquitetura nas suas diferentes fases; • Produção, organização e revisão de peças desenhadas e elementos técnicos; • Participação em reuniões de trabalho com clientes, consultores e…",
-   "requisitos": "Archicad (domínio – Obrigatório ) - Adobe e Office (mais valia) - Softwares de renderização (mais valia)",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-61"
+   "resumo_txt": "Gabinete focado na criação de projetos habitacionais personalizados que transformam aspirações em espaços de vida funcionais e esteticamente marcantes, desde o primeiro esboço até à entrega da obra.",
+   "descricao": "Colaboração no desenvolvimento de projetos de arquitetura em todas as suas fases, incluindo a elaboração de peças desenhadas e escritas. Acompanhamento de obra.",
+   "funcoes": "• Colaboração no desenvolvimento de projetos de arquitetura nas suas diferentes fases;\n\n• Produção, organização e revisão de peças desenhadas e elementos técnicos;\n\n• Participação em reuniões de trabalho com clientes, consultores e parceiros;\n\n• Preparação e acompanhamento de processos de licenciamento;\n\n• Articulação e compatibilização dos projetos de arquitetura com as diferentes especialidades.",
+   "requisitos": "• Archicad (domínio – Obrigatório )\n\n• Adobe e Office (mais valia)\n\n• Softwares de renderização (mais valia)",
+   "email": "geral@cp-arquitetos.com",
+   "entrevista": "910308188",
+   "site": ""
   },
   {
    "id": 4719,
@@ -817,10 +964,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-19",
    "resumo": "Gabinete focado na criação de projetos habitacionais personalizados que transformam aspirações em espaços de vida funcionais e esteticamente marcantes, desde o primeiro esboço até à entrega da obra.",
-   "funcoes": "• Colaboração no desenvolvimento de projetos de arquitetura nas suas diferentes fases; • Produção, organização e revisão de peças desenhadas e elementos técnicos; • Participação em reuniões de trabalho com clientes, consultores e…",
-   "requisitos": "Archicad (domínio – Obrigatório ) - Adobe e Office (mais valia) - Softwares de renderização (mais valia)",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-estagiario-a-iefp-4"
+   "resumo_txt": "Gabinete focado na criação de projetos habitacionais personalizados que transformam aspirações em espaços de vida funcionais e esteticamente marcantes, desde o primeiro esboço até à entrega da obra.",
+   "descricao": "Procuramos integrar na nossa equipa um(a) arquiteto(a) dinâmico(a), responsável e motivado(a), com interesse em participar nas diferentes etapas do processo arquitetónico, desde a conceção inicial até ao desenvolvimento do projeto de execução.",
+   "funcoes": "• Colaboração no desenvolvimento de projetos de arquitetura nas suas diferentes fases;\n\n• Produção, organização e revisão de peças desenhadas e elementos técnicos;\n\n• Participação em reuniões de trabalho com clientes, consultores e parceiros;\n\n• Preparação e acompanhamento de processos de licenciamento;",
+   "requisitos": "• Archicad (domínio – Obrigatório )\n\n• Adobe e Office (mais valia)\n\n• Softwares de renderização (mais valia)",
+   "email": "geral@cp-arquitetos.com",
+   "entrevista": "910308188",
+   "site": ""
   },
   {
    "id": 4714,
@@ -833,10 +983,13 @@
    "prazo": "2026-12-14",
    "pub": "2026-10-15",
    "resumo": "Atelier brunovazsousaarq, com sede em Viana do Castelo, procura para colaborar Arquiteto(a) Júnior / Estagiário(a) elegível para medida/estágio IEFP. Possível oferta de estágio profissional para a admissão à profissão.",
+   "resumo_txt": "Atelier brunovazsousaarq, com sede em Viana do Castelo, procura para colaborar Arquiteto(a) Júnior / Estagiário(a) elegível para medida/estágio IEFP. Possível oferta de estágio profissional para a admissão à profissão.",
+   "descricao": "Pretende-se um jovem colega que seja organizado e que tenha vontade de aprender numa equipa dinâmica e diversificada, para elaboração de trabalhos nas várias fases de projeto.",
    "funcoes": "",
-   "requisitos": "Ferramentas: Cad 2d/3d, Revit, Sketchup, Twinmotion. Remuneração de acordo com experiência.",
-   "site": "https://www.brunovazsousaarq.com/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-junior-estagiario-a-viana-do-castelo-1"
+   "requisitos": "Ferramentas: Cad 2d/3d, Revit, Sketchup, Twinmotion.\n\nRemuneração de acordo com experiência.",
+   "email": "brunovazsousaarq@gmail.com",
+   "entrevista": "965642620",
+   "site": "https://www.brunovazsousaarq.com/"
   },
   {
    "id": 4710,
@@ -849,10 +1002,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-13",
    "resumo": "A Projecentro, Lda pretende contratar para a sua equipa um(a) Arquiteto(a) para participação em projetos em áreas diversificadas.",
+   "resumo_txt": "A Projecentro, Lda pretende contratar para a sua equipa um(a) Arquiteto(a) para participação em projetos em áreas diversificadas.",
+   "descricao": "Pretende-se uma pessoa responsável e empenhada, com disponibilidade em participar no desenvolvimento de projetos de várias áreas com um mínimo de prática.",
    "funcoes": "Apoio e participação na execução de projetos de arquitetura; Elaboração de projetos e seus elementos técnicos/peças desenhadas; Acompanhamento e organização entre projetos de especialidades e arquitetura.",
    "requisitos": "Inscrição em vigor como arquitecto; Mestrado em Arquitetura; Boa capacidade de organização, comunicação e trabalho em equipa.",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/oferta-de-trabalho-penela"
+   "email": "projecentro.trabalho@gmail.com",
+   "entrevista": "939477809",
+   "site": ""
   },
   {
    "id": 4706,
@@ -865,10 +1021,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-12",
    "resumo": "Integração numa empresa de arquitetura em crescimento. - Responsabilidade pela metodologia BIM e evolução dos processos. - Contacto direto com a Direção de Operações. - Colaboração com BIM Architects e desenvolvimento de soluções de automação. - Autonomia, aprendizagem contínua e perspetivas de crescimento profissional. - Remuneração ajustada à experiência e perfil. - Seguro de saúde. - Local de trabalho: Gondomar…",
-   "funcoes": "A PMA (Paulo Merlini Architects) é uma empresa de arquitetura em crescimento, que alia qualidade arquitetónica, viabilidade técnica e eficiência operacional. Procuramos um **BIM Manager** para liderar a evolução da metodologia BIM…",
-   "requisitos": "Requisitos essenciais: - Inscrição em vigor como arquitecto. - Formação superior em Arquitetura. - Experiência em BIM e projetos de média/grande escala. - Domínio avançado de Autodesk Revit. - Experiência com templates, bibliotecas, standards e procedimentos BIM. - Capacidade de…",
-   "site": "https://paulomerlini.com/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/bim-manager-pma-paulo-merlini-architects"
+   "resumo_txt": "• Integração numa empresa de arquitetura em crescimento.\n\n• Responsabilidade pela metodologia BIM e evolução dos processos.\n\n• Contacto direto com a Direção de Operações.\n\n• Colaboração com BIM Architects e desenvolvimento de soluções de automação.\n\n• Autonomia, aprendizagem contínua e perspetivas de crescimento profissional.\n\n• Remuneração ajustada à experiência e perfil.\n\n• Seguro de saúde.\n\n• Local de trabalho: Gondomar (Centro).",
+   "descricao": "• Definir e implementar standards, procedimentos e boas práticas BIM;\n\n• Normalizar templates, bibliotecas, nomenclaturas e regras de modelação;\n\n• Assegurar a qualidade dos modelos e reduzir erros e retrabalho;\n\n• Otimizar processos de produção e coordenação técnica;\n\n• Identificar oportunidades de automação em articulação com o BIM Developer;\n\n• Promover a melhoria contínua e o desenvolvimento das competências BIM da equipa.",
+   "funcoes": "A PMA (Paulo Merlini Architects) é uma empresa de arquitetura em crescimento, que alia qualidade arquitetónica, viabilidade técnica e eficiência operacional.\n\nProcuramos um **BIM Manager** para liderar a evolução da metodologia BIM, melhorar os processos de trabalho e reforçar a qualidade e consistência dos projetos. Uma oportunidade para assumir responsabilidades, desenvolver competências de liderança e contribuir para o crescimento da empresa.",
+   "requisitos": "Requisitos essenciais:\n\n• Inscrição em vigor como arquitecto.\n\n• Formação superior em Arquitetura.\n\n• Experiência em BIM e projetos de média/grande escala.\n\n• Domínio avançado de Autodesk Revit.\n\n• Experiência com templates, bibliotecas, standards e procedimentos BIM.\n\n• Capacidade de otimização de processos, organização, comunicação e liderança.\n\n• Autonomia, iniciativa e sentido crítico.\n\n• Domínio oral e escrito de português e inglês.\n\nCompetências valorizadas:\n\n• Coordenação BIM.\n\n• IFC, interoperabilidade e ISO 19650.\n\n• Dynamo, Pyt.",
+   "email": "joinus@paulomerlini.com",
+   "entrevista": "",
+   "site": "https://paulomerlini.com/"
   },
   {
    "id": 4705,
@@ -881,10 +1040,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-12",
    "resumo": "Procuramos um(a) jovem arquiteto(a) motivado(a), com vontade de aprender, evoluir profissionalmente e participar ativamente em todas as fases do projeto. A UAID Arquitetos, integra este estágio no contexto de estágio para adesão à profissão. O Estágio é remunerado e a remuneração é clarificada nas entrevistas.",
-   "funcoes": "Participação em projetos reais nas áreas de habitação, turismo, equipamentos publicos e indústria; - Contacto com todas as fases do projeto e processos de licenciamento; - Deslocações a obras e realização de todas as tarefas associadas à…",
-   "requisitos": "Mestrado em Arquitetura concluído há menos de 12 meses; - Conhecimento ou domínio de ferramentas de desenho e modelação (ArchiCAD, AutoCAD, SketchUp ou equivalentes); - Sentido de responsabilidade, organização e espírito de equipa; - Vontade de aprender e evoluir…",
-   "site": "https://uaid.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/uaid-arquitetos-estagio-profissional-em-arquitetura-1"
+   "resumo_txt": "Procuramos um(a) jovem arquiteto(a) motivado(a), com vontade de aprender, evoluir profissionalmente e participar ativamente em todas as fases do projeto. A UAID Arquitetos, integra este estágio no contexto de estágio para adesão à profissão. O Estágio é remunerado e a remuneração é clarificada nas entrevistas.",
+   "descricao": "A UAID Arquitetos é um atelier multidisciplinar de arquitetura que pretende reforçar a sua equipa através da integração de um(a) estagiário(a) recém formado em arquitetura. No nosso atelier os membros da equipa têm a possibilidade de trabalhar em projetos de vários programas, escalas e objetivos, nomeadamente: - obras publicas, edifícios públicos e espaço público. - habitação privada e coletiva - espaço público - turismo - industria.",
+   "funcoes": "• Participação em projetos reais nas áreas de habitação, turismo, equipamentos publicos e indústria; - Contacto com todas as fases do projeto e processos de licenciamento; - Deslocações a obras e realização de todas as tarefas associadas à profissão no ãmbito dos trabalhos desenvolvidos pela UAID.",
+   "requisitos": "• Mestrado em Arquitetura concluído há menos de 12 meses; - Conhecimento ou domínio de ferramentas de desenho e modelação (ArchiCAD, AutoCAD, SketchUp ou equivalentes); - Sentido de responsabilidade, organização e espírito de equipa; - Vontade de aprender e evoluir profissionalmente.",
+   "email": "info@uaid.pt",
+   "entrevista": "910210474",
+   "site": "https://uaid.pt/"
   },
   {
    "id": 4701,
@@ -897,10 +1059,13 @@
    "prazo": "2026-12-08",
    "pub": "2026-10-12",
    "resumo": "O Gabinete Ângulos e Dimensões - Arquitetura e Engenharia, sediado em Felgueiras, pretende contratar Arquiteto/a.",
-   "funcoes": "Desenvolvimento de estudos prévios, projetos de licenciamento e projetos de execução; - Elaboração de desenhos técnicos; - Preparação de modelos 3D e apresentações de projetos; - Acompanhamento e coordenação de projetos nas diferentes…",
-   "requisitos": "Perfil : - Formação em Arquitetura em Portugal; - Inscrição como arquitecto; - Experiência na elaboração, gestão e coordenação de projetos de arquitetura; - Conhecimentos em 3D (preferencial); - Elevada capacidade de organização e planeamento; - Dinamismo e proatividade…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-60"
+   "resumo_txt": "O Gabinete Ângulos e Dimensões - Arquitetura e Engenharia, sediado em Felgueiras, pretende contratar Arquiteto/a.",
+   "descricao": "Procuramos um/a Arquiteto/a criativo/a, dinâmico/a, organizado/a e com atenção ao detalhe, para participar no desenvolvimento de projetos de arquitetura, desde o estudo prévio até à execução.",
+   "funcoes": "• Desenvolvimento de estudos prévios, projetos de licenciamento e projetos de execução;\n\n• Elaboração de desenhos técnicos;\n\n• Preparação de modelos 3D e apresentações de projetos;\n\n• Acompanhamento e coordenação de projetos nas diferentes fases;\n\n• Articulação com clientes, engenheiros e outras especialidades;\n\n• Garantir o cumprimento das normas e regulamentos aplicáveis.",
+   "requisitos": "Perfil :\n\n• Formação em Arquitetura em Portugal;\n\n• Inscrição como arquitecto;\n\n• Experiência na elaboração, gestão e coordenação de projetos de arquitetura;\n\n• Conhecimentos em 3D (preferencial);\n\n• Elevada capacidade de organização e planeamento;\n\n• Dinamismo e proatividade;\n\n• Elevado sentido de responsabilidade e autonomia.",
+   "email": "ad.arq.recrutamento@gmail.com",
+   "entrevista": "912637799",
+   "site": ""
   },
   {
    "id": 4703,
@@ -913,10 +1078,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-10-09",
    "resumo": "At Quark, part of Sener Group, we are leading the design of next-generation digital infrastructure. Specialized in the development of mission-critical facilities, we deliver engineering, architecture, project management, and consulting services for some of the world's most advanced data center projects. Today, we are expanding our Architecture team and looking for a Senior Architect to join us in delivering…",
-   "funcoes": "•Develop architectural designs and technical solutions across different project stages. •Produce detailed architectural packages aligned with RIBA Stage 3 and 4 requirements. •Coordinate and integrate design information from multiple…",
-   "requisitos": "•Degree in Architecture. •8 to 10 years of professional experience in the design and development of complex building projects. •Strong technical and construction detailing expertise. •Experience producing execution-level documentation and construction drawings. •Proficiency in…",
-   "site": "https://www.group.sener/en/portugal/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/sener_senior"
+   "resumo_txt": "At Quark, part of Sener Group, we are leading the design of next-generation digital infrastructure. Specialized in the development of mission-critical facilities, we deliver engineering, architecture, project management, and consulting services for some of the world's most advanced data center projects. Today, we are expanding our Architecture team and looking for a Senior Architect to join us in delivering state-of-the-art data center developments from concept through construction.",
+   "descricao": "As a Senior Architect, you will contribute to the design and technical development of large-scale, multidisciplinary projects within an international environment. Working alongside in-house engineering & architectural specialists, you will play a role in transforming complex concepts into detailed and buildable solutions. If you are passionate about architecture, technical excellence, and developing innovative solutions we'd love to hear from you.",
+   "funcoes": "•Develop architectural designs and technical solutions across different project stages. •Produce detailed architectural packages aligned with RIBA Stage 3 and 4 requirements. •Coordinate and integrate design information from multiple disciplines and manufacturers. •Prepare technical reports, specifications, drawings, and project documentation. •Support quantity take-offs and measurement activities. •Collaborate with multidisciplinary teams to ensure technical consistency and design quality.",
+   "requisitos": "•Degree in Architecture. •8 to 10 years of professional experience in the design and development of complex building projects. •Strong technical and construction detailing expertise. •Experience producing execution-level documentation and construction drawings. •Proficiency in Revit, AutoCAD, BIM360, MS Office, and other relevant design tools. •Ability to work collaboratively within multidisciplinary project teams. •Availability to travel when required. •Good command of English.",
+   "email": "janire.lezcano@corporate.sener",
+   "entrevista": "+34637778142",
+   "site": "https://www.group.sener/en/portugal/"
   },
   {
    "id": 4698,
@@ -929,10 +1097,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-08",
    "resumo": "Oferta de estágio profissional de acesso à profissão ou no âmbito do IEFP.",
+   "resumo_txt": "Oferta de estágio profissional de acesso à profissão ou no âmbito do IEFP.",
+   "descricao": "António Silva Machado - arquitecto, Lda., em Lousada, procura, para integrar a sua equipa, arquiteto/a estagiário/a com interesse na realização de estágio profissional de acesso à profissão ou no âmbito do IEFP.",
    "funcoes": "Apoio no desenvolvimento das diferentes fases dos Projetos de Arquitetura.",
-   "requisitos": "Conhecimentos sólidos de AutoCad, modelação 3D e Photoshop; - Capacidade de organização; - Capacidade de trabalho em equipa; - Espírito dinâmico; - Sentido de responsabilidade.",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-estagiario-a-17"
+   "requisitos": "• Conhecimentos sólidos de AutoCad, modelação 3D e Photoshop;\n\n• Capacidade de organização;\n\n• Capacidade de trabalho em equipa;\n\n• Espírito dinâmico;\n\n• Sentido de responsabilidade.",
+   "email": "geral@amatelier.pt",
+   "entrevista": "912907717",
+   "site": ""
   },
   {
    "id": 4694,
@@ -945,10 +1116,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-08",
    "resumo": "A RSV Arquitetos Associados procura Arquiteto/a Júnior para integrar a equipa no Dafundo. Procuramos um perfil dinâmico, rigoroso e com interesse em desenvolver projetos de arquitetura em diferentes fases. O domínio de Archicad e da metodologia BIM é requisito obrigatório e será fator eliminatório na seleção das candidaturas.",
-   "funcoes": "Desenvolvimento de peças desenhadas e modelos em Archicad/BIM; Apoio em estudos prévios, licenciamento e projetos de execução; Preparação e organização de elementos gráficos e técnicos; Compatibilização da arquitetura com os projetos de…",
-   "requisitos": "Formação superior em Arquitetura; Domínio obrigatório de Archicad; Conhecimentos sólidos de metodologia BIM; Boa capacidade de representação gráfica e organização; Sentido de responsabilidade, rigor e capacidade de trabalho em equipa; Disponibilidade para trabalho presencial no…",
-   "site": "https://rsvarquitetos.com",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/rsv_junior2"
+   "resumo_txt": "A RSV Arquitetos Associados procura Arquiteto/a Júnior para integrar a equipa no Dafundo. Procuramos um perfil dinâmico, rigoroso e com interesse em desenvolver projetos de arquitetura em diferentes fases. O domínio de Archicad e da metodologia BIM é requisito obrigatório e será fator eliminatório na seleção das candidaturas.",
+   "descricao": "Procuramos Arquiteto/a Júnior para colaboração a tempo inteiro, com participação em estudos prévios, licenciamento, projeto de execução e preparação de elementos gráficos e técnicos. O trabalho será desenvolvido maioritariamente em Archicad, em ambiente BIM, pelo que não serão consideradas candidaturas sem experiência efetiva neste software.",
+   "funcoes": "Desenvolvimento de peças desenhadas e modelos em Archicad/BIM; Apoio em estudos prévios, licenciamento e projetos de execução; Preparação e organização de elementos gráficos e técnicos; Compatibilização da arquitetura com os projetos de especialidades; Apoio na produção de imagens, apresentações e documentação de projeto; Participação na coordenação e acompanhamento dos trabalhos em curso.",
+   "requisitos": "Formação superior em Arquitetura; Domínio obrigatório de Archicad; Conhecimentos sólidos de metodologia BIM; Boa capacidade de representação gráfica e organização; Sentido de responsabilidade, rigor e capacidade de trabalho em equipa; Disponibilidade para trabalho presencial no Dafundo; Envio obrigatório de portefólio; Inscrição como arquitecto ou possibilidade de inscrição.",
+   "email": "recrutamento.rsv.arq@gmail.com",
+   "entrevista": "",
+   "site": "https://rsvarquitetos.com"
   },
   {
    "id": 4691,
@@ -961,10 +1135,13 @@
    "prazo": "2027-01-31",
    "pub": "2026-10-07",
    "resumo": "Procuramos Arquitecto(a) com experiência mínima de 3 anos para integrar a nossa equipa jovem e dinâmica. Procuramos alguém com paixão pela arquitectura, sentido de responsabilidade e verdadeira entrega ao trabalho, que queira crescer connosco e assumir um papel activo no desenvolvimento dos projectos.",
-   "funcoes": "Oferecemos liberdade e autonomia para participar no desenvolvimento do projecto em todas as suas fases, desde: • Instrução e desenvolvimento do projecto • Estudo prévio • Instrução processual • Projecto de execução • Coordenação e…",
+   "resumo_txt": "Procuramos Arquitecto(a) com experiência mínima de 3 anos para integrar a nossa equipa jovem e dinâmica. Procuramos alguém com paixão pela arquitectura, sentido de responsabilidade e verdadeira entrega ao trabalho, que queira crescer connosco e assumir um papel activo no desenvolvimento dos projectos.",
+   "descricao": "Valorizamos o percurso e as competências de cada profissional, proporcionando: • Ordenado acima da média, ajustado à experiência e competências demonstradas; • Valorização contínua do colaborador; • Ambiente de trabalho positivo e colaborativo; • Oportunidades de formação e desenvolvimento profissional; • Acompanhamento regular; • Plano de progressão na carreira, com possibilidade de evolução interna e assunção de novas responsabilidades, acompanhadas da respectiva valorização salarial.",
+   "funcoes": "Oferecemos liberdade e autonomia para participar no desenvolvimento do projecto em todas as suas fases, desde: • Instrução e desenvolvimento do projecto • Estudo prévio • Instrução processual • Projecto de execução • Coordenação e acompanhamento em obra",
    "requisitos": "Experiência profissional mínima de 3 anos e domínio das seguintes ferramentas: • Microsoft Word • Microsoft Excel • Archicad • AutoCAD • SketchUp Procuramos sobretudo uma pessoa com paixão e dedicação pela arquitectura, onde o trabalho e o talento são valorizados.",
-   "site": "https://unoarquitectos.pt/pt/home-pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego?mapMode=true&type=OFERTA&p=1&seccaoFilter=&typeFilter=&searchFilter=&order=desc"
+   "email": "geral@unoarquitectos.pt",
+   "entrevista": "917442408",
+   "site": "https://unoarquitectos.pt/pt/home-pt/"
   },
   {
    "id": 4689,
@@ -977,10 +1154,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-10-07",
    "resumo": "Procuramos Arquiteto(a) (Mestrado) ou profissional com competências equivalentes (Licenciatura em Estudos de Arquitetura), para trabalhar num gabinete de arquitectura em Almancil – Faro.",
-   "funcoes": "As funções a desempenhar são: • Desenvolvimento de projetos (Elaboração de estudos prévios, anteprojetos e projetos de licenciamento ou de execução - desde a concepção inicial até ao detalhe construtivo) • Desenho técnico e digital • Peças…",
-   "requisitos": "• Conhecimento de ARCHICAD em BIM é essencial • Conhecimentos de modelação topográfica e renderização / visual 3D são uma vantagem. • Conhecimento e consulta das ferramentas e documentos oficiais que regem o trabalho em Arquitectura • Fluência em português e inglês escrito e…",
-   "site": "https://www.sms-arquitectos.com/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego?mapMode=true&type=OFERTA&p=1&seccaoFilter=&typeFilter=&searchFilter=&order=desc"
+   "resumo_txt": "Procuramos Arquiteto(a) (Mestrado) ou profissional com competências equivalentes (Licenciatura em Estudos de Arquitetura), para trabalhar num gabinete de arquitectura em Almancil – Faro.",
+   "descricao": "O candidato(a) selecionado participará na realização de projetos desde a concepção até às etapas de conclusão.",
+   "funcoes": "As funções a desempenhar são: • Desenvolvimento de projetos (Elaboração de estudos prévios, anteprojetos e projetos de licenciamento ou de execução - desde a concepção inicial até ao detalhe construtivo) • Desenho técnico e digital • Peças escritas",
+   "requisitos": "• Conhecimento de ARCHICAD em BIM é essencial • Conhecimentos de modelação topográfica e renderização / visual 3D são uma vantagem. • Conhecimento e consulta das ferramentas e documentos oficiais que regem o trabalho em Arquitectura • Fluência em português e inglês escrito e falado. • Boa capacidade de comunicação e redação. • Vontade de aprender e de se adaptar ao trabalho em equipa. • Capacidade de organização e de trabalho sob pressão e com prazos fixos.",
+   "email": "admin@sms-arquitectos.com",
+   "entrevista": "966590079",
+   "site": "https://www.sms-arquitectos.com/"
   },
   {
    "id": 4688,
@@ -993,10 +1173,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-10-07",
    "resumo": "A Creative Drawit procura um Arquiteto (M/F) com forte sentido estético e domínio técnico para integrar a sua equipa criativa.",
-   "funcoes": "Desenvolvimento e coordenação de projetos de arquitetura em diferentes fases, desde o estudo prévio ao projeto de execução; - Produção de peças desenhadas, modelos BIM e documentação técnica; - Articulação e compatibilização com as…",
-   "requisitos": "Inscrição em vigor como arquitecto; - Mestrado em Arquitetura; - Experiência profissional mínima de 3 anos; - Domínio de desenho técnico e desenvolvimento de projeto; - Conhecimentos sólidos de software BIM (preferencial Archicad); - Sentido de responsabilidade, organização e…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-m-f-3"
+   "resumo_txt": "A Creative Drawit procura um Arquiteto (M/F) com forte sentido estético e domínio técnico para integrar a sua equipa criativa.",
+   "descricao": "Se és apaixonado por arquitetura, design e inovação tecnológica, envie portfólio e currículo para drawit@drawit.pt, com o assunto: ARQUITETO.",
+   "funcoes": "• Desenvolvimento e coordenação de projetos de arquitetura em diferentes fases, desde o estudo prévio ao projeto de execução;\n\n• Produção de peças desenhadas, modelos BIM e documentação técnica;\n\n• Articulação e compatibilização com as diversas especialidades de engenharia;\n\n• Colaboração no desenvolvimento de soluções arquitetónicas inovadoras, sustentáveis e tecnicamente eficientes;",
+   "requisitos": "• Inscrição em vigor como arquitecto;\n\n• Mestrado em Arquitetura;\n\n• Experiência profissional mínima de 3 anos;\n\n• Domínio de desenho técnico e desenvolvimento de projeto;\n\n• Conhecimentos sólidos de software BIM (preferencial Archicad);\n\n• Sentido de responsabilidade, organização e atenção ao detalhe;\n\n• Boa capacidade de comunicação e trabalho em equipa;\n\n• Bons conhecimentos em inglês;",
+   "email": "drawit@drawit.pt",
+   "entrevista": "",
+   "site": ""
   },
   {
    "id": 4681,
@@ -1009,10 +1192,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-10-01",
    "resumo": "O Grupo Atual procura Arquiteto/a para integrar a sua equipa e participar no desenvolvimento e acompanhamento de projetos de arquitetura, promoção imobiliária e construção.",
-   "funcoes": "Desenvolvimento e acompanhamento de projetos de arquitetura; Elaboração e preparação de peças desenhadas e documentação de projeto; Apoio nas diferentes fases de desenvolvimento dos projetos; Acompanhamento e articulação com equipas de…",
-   "requisitos": "Inscrição como arquitecto; Conhecimentos de ferramentas de desenho e representação arquitetónica; Capacidade de organização e cumprimento de prazos; Capacidade de trabalhar de forma articulada com diferentes áreas e equipas; Sentido de responsabilidade e autonomia; Boa…",
-   "site": "https://grupoatual.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-59"
+   "resumo_txt": "O Grupo Atual procura Arquiteto/a para integrar a sua equipa e participar no desenvolvimento e acompanhamento de projetos de arquitetura, promoção imobiliária e construção.",
+   "descricao": "O profissional será integrado numa equipa multidisciplinar e terá oportunidade de acompanhar diferentes fases dos projetos, desde o estudo e desenvolvimento até à sua concretização. A função permitirá o contacto direto com projetos de arquitetura e construção, bem como com diferentes áreas complementares, nomeadamente engenharia, arquitetura de interiores, gestão e promoção imobiliária. Procuramos um profissional responsável, organizado e com vontade de desenvolver o seu percurso profissional.",
+   "funcoes": "Desenvolvimento e acompanhamento de projetos de arquitetura;\n\nElaboração e preparação de peças desenhadas e documentação de projeto;\n\nApoio nas diferentes fases de desenvolvimento dos projetos;\n\nAcompanhamento e articulação com equipas de engenharia e outras especialidades;\n\nApoio no acompanhamento de obra e na concretização dos projetos;\n\nParticipação em reuniões de projeto e articulação com diferentes intervenientes;\n\nColaboração no desenvolvimento de soluções arquitetónicas e técnicas;",
+   "requisitos": "Inscrição como arquitecto;\n\nConhecimentos de ferramentas de desenho e representação arquitetónica;\n\nCapacidade de organização e cumprimento de prazos;\n\nCapacidade de trabalhar de forma articulada com diferentes áreas e equipas;\n\nSentido de responsabilidade e autonomia;\n\nBoa capacidade de comunicação;\n\nVontade de aprender e desenvolver competências profissionais.",
+   "email": "rh@grupoatual.pt",
+   "entrevista": "925792192",
+   "site": "https://grupoatual.pt/"
   },
   {
    "id": 4677,
@@ -1025,10 +1211,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-09-30",
    "resumo": "A MARSOLVE SOLUTIONS, empresa de construção com atuação no Algarve, encontra-se a recrutar Arquiteto/a para integrar a sua equipa, com uma função diretamente ligada à preparação de obra, orçamentação e acompanhamento dos processos de construção.",
+   "resumo_txt": "A MARSOLVE SOLUTIONS, empresa de construção com atuação no Algarve, encontra-se a recrutar Arquiteto/a para integrar a sua equipa, com uma função diretamente ligada à preparação de obra, orçamentação e acompanhamento dos processos de construção.",
+   "descricao": "PRINCIPAIS FUNÇÕES - Análise e interpretação de projetos; - Levantamento, medição e quantificação de trabalhos e materiais; - Elaboração de orçamentos e propostas comerciais; - Consulta e análise de preços de fornecedores e subempreiteiros; - Apoio na definição de soluções construtivas e respetivos custos; - Preparação e planeamento das obras; - Acompanhamento dos processos de obra e articulação com as equipas; - Controlo de custos, materiais e prazos",
    "funcoes": "Empresa de Construção civil",
-   "requisitos": "Formação em Arquitetura; - Experiência ou conhecimentos de orçamentação e preparação de obra; - Capacidade de leitura e interpretação de projetos; - Conhecimentos de materiais e processos construtivos; - Bons conhecimentos de informática e ferramentas de desenho técnico; - Boa…",
-   "site": "https://marsolve.net/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego?mapMode=true&type=OFERTA&p=1&seccaoFilter=&typeFilter=&searchFilter=&order=desc"
+   "requisitos": "• Formação em Arquitetura; - Experiência ou conhecimentos de orçamentação e preparação de obra; - Capacidade de leitura e interpretação de projetos; - Conhecimentos de materiais e processos construtivos; - Bons conhecimentos de informática e ferramentas de desenho técnico; - Boa capacidade de organização, planeamento e atenção ao detalhe; - Espírito prático, autonomia e sentido de responsabilidade; - Boa capacidade de comunicação e trabalho em equipa; - Carta de condução.",
+   "email": "marta.rafael@marsolve.net",
+   "entrevista": "Marta Rafael",
+   "site": "https://marsolve.net/"
   },
   {
    "id": 4666,
@@ -1041,10 +1230,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-09-21",
    "resumo": "Integração na equipa de projeto para desenvolvimento de Projetos de Execução de Arquitetura. Procuramos um profissional com sólidos conhecimentos de desenho técnico, soluções construtivas e coordenação de projetos, com elevado sentido de responsabilidade e cumprimento de prazos.",
+   "resumo_txt": "Integração na equipa de projeto para desenvolvimento de Projetos de Execução de Arquitetura. Procuramos um profissional com sólidos conhecimentos de desenho técnico, soluções construtivas e coordenação de projetos, com elevado sentido de responsabilidade e cumprimento de prazos.",
+   "descricao": "A PeC Arquitectos está a recrutar um(a) Arquiteto(a) para integrar a nossa equipa de projeto, em regime de tempo inteiro. O candidato deverá possuir experiência comprovada na elaboração de Projetos de Execução de Arquitetura para edifícios habitacionais, incluindo desenvolvimento de peças desenhadas, pormenorização construtiva, medições, mapas de quantidades e compatibilização de especialidades.",
    "funcoes": "Arquiteto/a | Projetos de Execução",
-   "requisitos": "Experiência comprovada em Projetos de Execução (fator eliminatório); - Capacidade de leitura e compatibilização de projetos das diversas especialidades (fator eliminatório); - Domínio de AutoCAD; - Conhecimentos avançados de desenho técnico e pormenorização construtiva…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-com-experiencia-em-projetos-de-execucao"
+   "requisitos": "• Experiência comprovada em Projetos de Execução (fator eliminatório);\n\n• Capacidade de leitura e compatibilização de projetos das diversas especialidades (fator eliminatório);\n\n• Domínio de AutoCAD;\n\n• Conhecimentos avançados de desenho técnico e pormenorização construtiva;\n\n• Conhecimento de materiais e sistemas construtivos;\n\n• Capacidade de análise crítica e resolução de problemas;\n\n• Organização, rigor e orientação para resultados;\n\n• Autonomia e cumprimento de prazos.",
+   "email": "pvideira@pecarquitectos.com",
+   "entrevista": "967557412",
+   "site": ""
   },
   {
    "id": 4659,
@@ -1057,10 +1249,13 @@
    "prazo": "2026-11-21",
    "pub": "2026-09-16",
    "resumo": "Abrimos vaga para arquitecto/a ou arquitecto/a estagiário/a",
+   "resumo_txt": "Abrimos vaga para arquitecto/a ou arquitecto/a estagiário/a",
+   "descricao": "abrimos vaga para colaborador(a) que tenha verdadeiro interesse por arquitectura",
    "funcoes": "arquitecto/a",
    "requisitos": "Domínio de archicad",
-   "site": "https://www.amb-arquitectos.com/pt",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/mafaldabatalha_arquiteto_estagiario"
+   "email": "info@amb-arquitectos.com",
+   "entrevista": "",
+   "site": "https://www.amb-arquitectos.com/pt"
   },
   {
    "id": 4642,
@@ -1073,10 +1268,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-09-08",
    "resumo": "Procura Arquitecto/a Estagiário/a para integrar a sua equipa em Palmela, ao abrigo de Estágio IEFP, com possibilidade de realização de estágio profissional de acesso à profissão.",
-   "funcoes": "• Apoio no desenvolvimento de projectos de arquitectura nas diferentes fases; • Desenvolvimento e organização de peças desenhadas em AutoCAD e Revit; • Modelação e desenvolvimento de modelos BIM (Revit); • Apoio na preparação de processos…",
-   "requisitos": "• Formação superior em Arquitectura; • Elegibilidade para realização de Estágio IEFP; • Conhecimentos/experiência prática em Revit e AutoCAD — obrigatório; • Domínio de Português e Inglês, oral e escrito — obrigatório; • Bons conhecimentos de ferramentas de representação e…",
-   "site": "https://www.veranunes.com/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/veranunes_estagio"
+   "resumo_txt": "Procura Arquitecto/a Estagiário/a para integrar a sua equipa em Palmela, ao abrigo de Estágio IEFP, com possibilidade de realização de estágio profissional de acesso à profissão.",
+   "descricao": "Gabinete de arquitectura e engenharia, sediado em Palmela, dedicado ao desenvolvimento de projectos de arquitectura em diferentes fases, desde o estudo prévio e desenvolvimento conceptual até aos projectos de licenciamento, execução e obra . Procuramos integrar na nossa equipa um/a Arquitecto/a Estagiário/a com motivação, sentido de responsabilidade e interesse pelo desenvolvimento de projecto, proporcionando contacto directo com diferentes fases e componentes da prática profissional.",
+   "funcoes": "• Apoio no desenvolvimento de projectos de arquitectura nas diferentes fases; • Desenvolvimento e organização de peças desenhadas em AutoCAD e Revit; • Modelação e desenvolvimento de modelos BIM (Revit); • Apoio na preparação de processos de licenciamento; • Apoio no desenvolvimento de projectos de execução e respectivos elementos técnicos; • Desenvolvimento de detalhes e soluções construtivas, sob orientação da equipa; • Apoio à equipa de projecto em tarefas de investigação e levantamentos",
+   "requisitos": "• Formação superior em Arquitectura; • Elegibilidade para realização de Estágio IEFP; • Conhecimentos/experiência prática em Revit e AutoCAD — obrigatório; • Domínio de Português e Inglês, oral e escrito — obrigatório; • Bons conhecimentos de ferramentas de representação e comunicação gráfica; • Capacidade de organização, autonomia e sentido de responsabilidade; • Capacidade de trabalho em equipa; • Motivação para aprender e desenvolver competências profissionais; • Disponibilidade para trabalha",
+   "email": "geral@veranunes.com",
+   "entrevista": "933306610",
+   "site": "https://www.veranunes.com/"
   },
   {
    "id": 4559,
@@ -1089,10 +1287,13 @@
    "prazo": "2026-12-14",
    "pub": "2026-07-24",
    "resumo": "A A2 Arquitetura & Engenharia, sediada em Monção, pretende reforçar a sua equipa com a contratação de um(a) Arquiteto(a), para integração imediata.",
-   "funcoes": "Desenvolvimento de projetos de arquitetura em todas as fases; Modelação e desenvolvimento de projetos em Revit (BIM); Elaboração e coordenação de peças desenhadas, peças escritas e restante documentação técnica; Compatibilização dos…",
-   "requisitos": "Mestrado em Arquitetura; Inscrição em vigor como arquitecto; Experiência profissional mínima de 5 anos em desenvolvimento de projetos de arquitetura; Domínio de Revit (BIM) (fator eliminatório); Bons conhecimentos de AutoCAD; Conhecimentos do processo de licenciamento…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-56"
+   "resumo_txt": "A A2 Arquitetura & Engenharia, sediada em Monção, pretende reforçar a sua equipa com a contratação de um(a) Arquiteto(a), para integração imediata.",
+   "descricao": "Procuramos um profissional dinâmico, responsável e com gosto pelo desenvolvimento de projetos de arquitetura, desde a fase conceptual até ao acompanhamento de obra.\n\nValorizamos candidatos com experiência em Revit (BIM), espírito de equipa, autonomia e capacidade de organização.\n\nOferecemos a oportunidade de integrar um gabinete em crescimento.\n\nDisponibilidade para trabalhar em regime presencial, em Monção, 4 dias por semana.",
+   "funcoes": "Desenvolvimento de projetos de arquitetura em todas as fases;\n\nModelação e desenvolvimento de projetos em Revit (BIM);\n\nElaboração e coordenação de peças desenhadas, peças escritas e restante documentação técnica;\n\nCompatibilização dos projetos de arquitetura com as diferentes especialidades;\n\nPreparação de processos para submissão junto das entidades competentes.",
+   "requisitos": "Mestrado em Arquitetura;\n\nInscrição em vigor como arquitecto;\n\nExperiência profissional mínima de 5 anos em desenvolvimento de projetos de arquitetura;\n\nDomínio de Revit (BIM) (fator eliminatório);\n\nBons conhecimentos de AutoCAD;\n\nConhecimentos do processo de licenciamento urbanístico e legislação aplicável;\n\nCapacidade de desenvolver projetos com autonomia;\n\nBoa capacidade de organização, gestão de prazos e atenção ao detalhe;\n\nEspírito de equipa, sentido de responsabilidade e proatividade.",
+   "email": "cterra.arq@gmail.com",
+   "entrevista": "915965837",
+   "site": ""
   },
   {
    "id": 4524,
@@ -1105,10 +1306,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-06-25",
    "resumo": "Procura-se arquiteto estagiário para integração em gabinete de projeto/ construção em Carregal do Sal, no âmbito de estágio profissional IEFP, para apoio ao desenvolvimento de projetos em todas as fases. Pretende-se motivação, capacidade de trabalho em equipa e domínio das principais ferramentas de desenho e modelação.",
-   "funcoes": "> Colaboração no desenvolvimento de estudos prévios, anteprojetos e projetos de execução > Modelação e produção de peças desenhadas em BIM, Archicad > Preparação de elementos gráficos e apresentações > Elaboração de Peças Escritas e…",
-   "requisitos": "> Licenciatura ou Mestrado em Arquitetura > Elegibilidade para estágio profissional IEFP > Domínio de AutoCAD > Domínio de Archicad (nível intermédio ou superior) > Conhecimentos de Microsoft Office > Conhecimentos de software Adobe (Photoshop, InDesign ou Illustrator) >…",
-   "site": "https://www.facebook.com/Mcengenhariaarquitetura",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/estagiario-memoria-construtiva"
+   "resumo_txt": "Procura-se arquiteto estagiário para integração em gabinete de projeto/ construção em Carregal do Sal, no âmbito de estágio profissional IEFP, para apoio ao desenvolvimento de projetos em todas as fases. Pretende-se motivação, capacidade de trabalho em equipa e domínio das principais ferramentas de desenho e modelação.",
+   "descricao": "Gabinete de projeto e construção sediado em Carregal do Sal. Pretende-se um colaborador para integrar a empresa no desenvolvimento de projetos de arquitetura em diferentes fases, desde o estudo prévio ao acompanhamento de obra, incluindo modelação BIM, produção de peças desenhadas e preparação de elementos técnicos. Pretende-se alguém com intenção de permanecer na empresa e que ajude no seu crescimento.",
+   "funcoes": "> Colaboração no desenvolvimento de estudos prévios, anteprojetos e projetos de execução > Modelação e produção de peças desenhadas em BIM, Archicad > Preparação de elementos gráficos e apresentações > Elaboração de Peças Escritas e análise de Legislação > Preparação de processos para licenciamento > Acompanhamento pontual de obra e apoio às tarefas de coordenação.",
+   "requisitos": "> Licenciatura ou Mestrado em Arquitetura > Elegibilidade para estágio profissional IEFP > Domínio de AutoCAD > Domínio de Archicad (nível intermédio ou superior) > Conhecimentos de Microsoft Office > Conhecimentos de software Adobe (Photoshop, InDesign ou Illustrator) > Capacidade de organização e gestão de tempo > Boa capacidade de comunicação e de trabalho em equipa",
+   "email": "geral@civilsousa.com",
+   "entrevista": "962413797",
+   "site": "https://www.facebook.com/Mcengenhariaarquitetura"
   },
   {
    "id": 4503,
@@ -1121,10 +1325,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-06-12",
    "resumo": "Ao integrar a nossa equipa, irá contribuir para o desenvolvimento de uma vasta gama de projetos de arquitetura, colaborando de forma próxima com arquitetos seniores e equipas multidisciplinares ao longo das diferentes fases do projeto.",
+   "resumo_txt": "Ao integrar a nossa equipa, irá contribuir para o desenvolvimento de uma vasta gama de projetos de arquitetura, colaborando de forma próxima com arquitetos seniores e equipas multidisciplinares ao longo das diferentes fases do projeto.",
+   "descricao": "Capacidade de compreender as intenções conceptuais de um projeto e contribuir para o desenvolvimento e produção da documentação arquitetónica, incluindo desenhos, modelos BIM, visualizações e apresentações gráficas. Capacidade de identificar desafios de projeto e questões técnicas, participando ativamente no desenvolvimento de soluções arquitetónicas ponderadas e de valor acrescentado. Curiosidade e vontade de aprender sobre design, arquitetura, técnicas construtivas, materiais, tecnologias.",
    "funcoes": "Arquitetura.",
-   "requisitos": "Capacidade de compreender e desenvolver conceitos arquitetónicos, contribuindo com ideias num ambiente de trabalho colaborativo. Criativo, motivado, proativo e responsável. Bons conhecimentos de Archicad e metodologias BIM. Conhecimentos de Rhino e Grasshopper serão valorizados.…",
-   "site": "https://paulomartins.com.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/vaga-para-arquiteto-a-junior-aveiro"
+   "requisitos": "Capacidade de compreender e desenvolver conceitos arquitetónicos, contribuindo com ideias num ambiente de trabalho colaborativo. Criativo, motivado, proativo e responsável. Bons conhecimentos de Archicad e metodologias BIM. Conhecimentos de Rhino e Grasshopper serão valorizados. Boas competências de comunicação e forte vontade de aprender. Mínimo de 2 anos de experiência em projetos construídos. Trabalho presencial nas nossas instalações em Aveiro, Portugal.",
+   "email": "jobs@paulomartins.com.pt",
+   "entrevista": "234135831",
+   "site": "https://paulomartins.com.pt/"
   },
   {
    "id": 4480,
@@ -1137,10 +1344,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-06-02",
    "resumo": "\"Ideia Concreta Arquitetura\" procura um(a) Arquiteto(a) para integrar presencialmente a nossa equipa em crescimento.",
-   "funcoes": "O que oferecemos: - Ambiente de trabalho criativo, dinâmico e colaborativo; - Interação com diferentes especialidades de engenharia; - Envolvimento em projetos, desde o Estudo Prévio até à fase de Execução; - Participação no…",
-   "requisitos": "Requisitos: - Inscrição em vigor como arquitecto; - Mestrado em Arquitetura; - Visão crítica de soluções, rigor técnico e sentido de responsabilidade; - Boa capacidade de organização e gestão de processos; - Capacidade de comunicação e diálogo na obtenção de soluções de…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-valenca-presencial-1"
+   "resumo_txt": "\"Ideia Concreta Arquitetura\" procura um(a) Arquiteto(a) para integrar presencialmente a nossa equipa em crescimento.",
+   "descricao": "\"Ideia Concreta Arquitetura\" procura um(a) Arquiteto(a) para integrar presencialmente a nossa equipa em crescimento. Condições:\n\n• Remuneração compatível com a experiência;\n\n• Arquiteto(a) em regime full-time;\n\n• Aderência a semana de 4 dias de trabalho (6 meses após integração).",
+   "funcoes": "O que oferecemos:\n\n• Ambiente de trabalho criativo, dinâmico e colaborativo;\n\n• Interação com diferentes especialidades de engenharia;\n\n• Envolvimento em projetos, desde o Estudo Prévio até à fase de Execução;\n\n• Participação no desenvolvimento de projetos variados;\n\n• Integração numa equipa colaborativa, criativa e profissional.",
+   "requisitos": "Requisitos:\n\n• Inscrição em vigor como arquitecto;\n\n• Mestrado em Arquitetura;\n\n• Visão crítica de soluções, rigor técnico e sentido de responsabilidade;\n\n• Boa capacidade de organização e gestão de processos;\n\n• Capacidade de comunicação e diálogo na obtenção de soluções de consenso;\n\n• Domínio de Autocad e Sketchup - fator obrigatório;\n\n• Bons conhecimentos de Revit, Lumion, e ferramentas Office e Adobe.",
+   "email": "ideiaconcretaprojectos@gmail.com",
+   "entrevista": "938 998 145",
+   "site": ""
   },
   {
    "id": 4420,
@@ -1153,10 +1363,13 @@
    "prazo": "2026-12-28",
    "pub": "2026-05-08",
    "resumo": "Atelier de arquitetura e interiores procura arquiteto(a) estagiário(a) para integrar a equipa.",
+   "resumo_txt": "Atelier de arquitetura e interiores procura arquiteto(a) estagiário(a) para integrar a equipa.",
+   "descricao": "Estamos a recrutar um(a) Arquiteto(a) Estagiário(a) para integrar a equipa e colaborar no desenvolvimento de projetos em diferentes fases, desde o conceito até à execução. Procuramos futuros profissionais, com formação em Arquitetura concluída, com vontade de evoluir. O(a) candidato(a) irá participar na elaboração de projetos, desenvolvimento de peças desenhadas, modelação 3D, acompanhamento de processos de licenciamento e apoio à coordenação de obra.",
    "funcoes": "Arquitetura e interiores.",
-   "requisitos": "_Mestrado integrado em Arquitetura; _Domínio de AutoCAD; _Conhecimentos de modelação 3D e Renderização;",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-estagiario-a-11"
+   "requisitos": "_Mestrado integrado em Arquitetura;\n\n_Domínio de AutoCAD;\n\n_Conhecimentos de modelação 3D e Renderização;",
+   "email": "tela.0arquitetura@gmail.com",
+   "entrevista": "962977022",
+   "site": ""
   },
   {
    "id": 4419,
@@ -1169,10 +1382,13 @@
    "prazo": "2026-12-28",
    "pub": "2026-05-08",
    "resumo": "Atelier de arquitetura e interiores, sediado em Vila Real, procura arquiteto/a para integrar a sua equipa.",
+   "resumo_txt": "Atelier de arquitetura e interiores, sediado em Vila Real, procura arquiteto/a para integrar a sua equipa.",
+   "descricao": "• Remuneração compatível com a experiência;\n\n• Arquiteto(a) em regime full-time;\n\n• Envolvimento em projetos, desde o Estudo Prévio até à fase de Execução;\n\n• Participação no desenvolvimento de projetos variados;",
    "funcoes": "Projetos de arquitetura e interiores.",
-   "requisitos": "Visão crítica de soluções, rigor técnico e sentido de responsabilidade; - Boa capacidade de organização e gestão de processos; - Experiência nas fases de projeto (Estudo prévio, licenciamento até execução); - Capacidade de comunicação e diálogo na obtenção de soluções de…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-48"
+   "requisitos": "• Visão crítica de soluções, rigor técnico e sentido de responsabilidade;\n\n• Boa capacidade de organização e gestão de processos;\n\n• Experiência nas fases de projeto (Estudo prévio, licenciamento até execução);\n\n• Capacidade de comunicação e diálogo na obtenção de soluções de consenso;\n\n• Domínio de Autocad e programas de modelação 3d;",
+   "email": "tela.0arquitetura@gmail.com",
+   "entrevista": "962977022",
+   "site": ""
   },
   {
    "id": 4309,
@@ -1185,10 +1401,13 @@
    "prazo": "2026-12-31",
    "pub": "2026-03-18",
    "resumo": "Procuramos arquiteto/a para o nosso escritório de Aveiro para integrar o grupo de trabalho. Ao juntar à nossa equipa, será responsável pelo progresso dos vários projetos que lhe sejam atribuídos, bem como a responder sobre os prazos estipulados e comprometer-se com o rigor dos mesmos.",
+   "resumo_txt": "Procuramos arquiteto/a para o nosso escritório de Aveiro para integrar o grupo de trabalho. Ao juntar à nossa equipa, será responsável pelo progresso dos vários projetos que lhe sejam atribuídos, bem como a responder sobre os prazos estipulados e comprometer-se com o rigor dos mesmos.",
+   "descricao": "• Capacidade de compreensão das intenções conceptuais do projeto e desenvolvimento e produção dos documentos necessários que suportam o projeto arquitetónico nas suas diferentes fases: desenhos, modelos 3D, peças escritas e desenhadas;\n• Capacidade para identificar problemas técnicos/projetuais e desenvolver soluções de valor acrescentado;\n• Constante procura e aprendizagem das novas tendências de design/arquitetura, técnicas e processos construtivos, materiais, de marcas no mercado.",
    "funcoes": "Arquitetura & Design",
-   "requisitos": "• Mínimo de 4 anos de experiência em projetos construídos, desde a fase conceptual até ao acompanhamento da obra; • Capacidade de perceber e formular novas ideias conceptuais e partilhar com a equipa para discussão; • Criativo, motivado e responsável; • Pleno domínio da…",
-   "site": "https://paulomartins.com.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/paulo-martins-arquitectura-arquiteto-senior-aveiro"
+   "requisitos": "• Mínimo de 4 anos de experiência em projetos construídos, desde a fase conceptual até ao acompanhamento da obra;\n• Capacidade de perceber e formular novas ideias conceptuais e partilhar com a equipa para discussão;\n• Criativo, motivado e responsável;\n• Pleno domínio da ferramenta Archicad / Metodologia BIM;\n• Conhecimentos de Rhino e Grasshopper valorizado.",
+   "email": "jobs@paulomartins.com.pt",
+   "entrevista": "Paulo Martins",
+   "site": "https://paulomartins.com.pt/"
   },
   {
    "id": 4253,
@@ -1201,10 +1420,13 @@
    "prazo": "2026-12-28",
    "pub": "2026-03-02",
    "resumo": "\"Ideia Concreta Arquitetura\" procura um(a) Arquiteto(a) para integrar presencialmente a nossa equipa em crescimento.",
-   "funcoes": "O que oferecemos: - Ambiente de trabalho criativo, dinâmico e colaborativo; - Interação com diferentes especialidades de engenharia; - Envolvimento em projetos, desde o Estudo Prévio até à fase de Execução; - Participação no…",
-   "requisitos": "Requisitos: - Inscrição em vigor como arquitecto; - Mestrado em Arquitetura; - Visão crítica de soluções, rigor técnico e sentido de responsabilidade; - Boa capacidade de organização e gestão de processos; - Experiência nas fases de projeto (Estudo prévio, licenciamento até…",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquiteto-a-valenca-presencial"
+   "resumo_txt": "\"Ideia Concreta Arquitetura\" procura um(a) Arquiteto(a) para integrar presencialmente a nossa equipa em crescimento.",
+   "descricao": "\"Ideia Concreta Arquitetura\" procura um(a) Arquiteto(a) para integrar presencialmente a nossa equipa em crescimento. Condições:\n\n• Remuneração compatível com a experiência;\n\n• Arquiteto(a) em regime full-time;\n\n• Aderência a semana de 4 dias de trabalho (6 meses após integração).",
+   "funcoes": "O que oferecemos:\n\n• Ambiente de trabalho criativo, dinâmico e colaborativo;\n\n• Interação com diferentes especialidades de engenharia;\n\n• Envolvimento em projetos, desde o Estudo Prévio até à fase de Execução;\n\n• Participação no desenvolvimento de projetos variados;\n\n• Integração numa equipa colaborativa, criativa e profissional.",
+   "requisitos": "Requisitos:\n\n• Inscrição em vigor como arquitecto;\n\n• Mestrado em Arquitetura;\n\n• Visão crítica de soluções, rigor técnico e sentido de responsabilidade;\n\n• Boa capacidade de organização e gestão de processos;\n\n• Experiência nas fases de projeto (Estudo prévio, licenciamento até execução);\n\n• Capacidade de comunicação e diálogo na obtenção de soluções de consenso;\n\n• Domínio de Autocad e Sketchup - fator obrigatório;\n\n• Bons conhecimentos de Revit, Lumion, e ferramentas Office e Adobe.",
+   "email": "ideiaconcretaprojectos@gmail.com",
+   "entrevista": "938 998 145",
+   "site": ""
   },
   {
    "id": 4242,
@@ -1217,10 +1439,13 @@
    "prazo": "2026-11-30",
    "pub": "2026-02-24",
    "resumo": "Procuramos arquiteto(a) estagiário(a), com possibilidade de realizar em simultâneo estágio profissional no âmbito IEFP (não obrigatório). Pretende-se alguém com intenção de permanecer na empresa e que ajude ao seu crescimento.",
+   "resumo_txt": "Procuramos arquiteto(a) estagiário(a), com possibilidade de realizar em simultâneo estágio profissional no âmbito IEFP (não obrigatório). Pretende-se alguém com intenção de permanecer na empresa e que ajude ao seu crescimento.",
+   "descricao": "Architecture TOTE SER, recruta arquiteto(a) estagiário(a) para o escritório de Lisboa.",
    "funcoes": "Participação e apoio no desenvolvimento em projetos nas suas várias fases, desde levantamentos, estudo prévio, licenciamento, execução, fiscalização, gestão e acompanhamento de obra.",
-   "requisitos": "Formação académica em Arquitetura; - Conhecimentos em Microsoft Office, Microsoft Project e Autocad; - Carta de condução; - Elevada capacidade organização e planificação; - Capacidade de liderança; - Resistência ao stress e autonomia; - Vontade inovar e fazer melhor.",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/architecture-tote-ser-vaga-para-arquiteto-a-estagiario-a-1"
+   "requisitos": "• Formação académica em Arquitetura; - Conhecimentos em Microsoft Office, Microsoft Project e Autocad; - Carta de condução; - Elevada capacidade organização e planificação; - Capacidade de liderança; - Resistência ao stress e autonomia; - Vontade inovar e fazer melhor.",
+   "email": "geral@toteser.com",
+   "entrevista": "213240920",
+   "site": ""
   },
   {
    "id": 4216,
@@ -1233,10 +1458,13 @@
    "prazo": "2026-12-12",
    "pub": "2026-02-05",
    "resumo": "Estamos à procura de alguém responsável, dinâmico e com verdadeiro espírito de equipa para integrar uma prática criativa e colaborativa.",
+   "resumo_txt": "Estamos à procura de alguém responsável, dinâmico e com verdadeiro espírito de equipa para integrar uma prática criativa e colaborativa.",
+   "descricao": "O trabalho envolve o desenvolvimento de projetos desde a conceção até à execução, com tipologias diversificadas e sempre estimulantes.",
    "funcoes": "Arquiteto/a",
    "requisitos": "Valorizamos: Experiência em AutoCAD; Experiência em Revit; Boa capacidade de organização e gestão de processos; Visão conceptual e sentido crítico apurado.",
-   "site": "",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/arquitecto-pombal-regime-presencial"
+   "email": "geral@pedrosantosarq.com",
+   "entrevista": "236213200",
+   "site": ""
   },
   {
    "id": 4128,
@@ -1249,10 +1477,13 @@
    "prazo": "2026-12-20",
    "pub": "2025-12-22",
    "resumo": "Procura-se arquiteto estagiário para integração em gabinete de arquitetura na Batalha, no âmbito de estágio profissional IEFP, para apoio ao desenvolvimento de projectos em todas as fases. Pretende-se motivação, capacidade de trabalho em equipa e domínio das principais ferramentas de desenho e modelação.",
-   "funcoes": "> Colaboração no desenvolvimento de estudos prévios, anteprojetos e projetos de execução. > Modelação e produção de peças desenhadas em BIM, Revit. > Preparação de elementos gráficos e apresentações. > Elaboração de Peças Escritas e…",
-   "requisitos": "> Licenciatura ou Mestrado em Arquitetura. > Elegibilidade para estágio profissional IEFP. > Domínio de AutoCAD. > Domínio de Revit (nível intermédio ou superior). > Conhecimentos de Microsoft Office. > Conhecimentos de software Adobe (Photoshop, InDesign ou Illustrator). >…",
-   "site": "https://besolid.pt/",
-   "u": "https://www.ordemdosarquitectos.org/bolsa_emprego/oferta/batalha-estagio-profissional-e-iefp"
+   "resumo_txt": "Procura-se arquiteto estagiário para integração em gabinete de arquitetura na Batalha, no âmbito de estágio profissional IEFP, para apoio ao desenvolvimento de projectos em todas as fases. Pretende-se motivação, capacidade de trabalho em equipa e domínio das principais ferramentas de desenho e modelação.",
+   "descricao": "A beSOLID é um gabinete de arquitetura e construção sediado na Batalha. Pretende-se um colaborador para integrar a empresa no desenvolvimento de projetos de arquitetura em diferentes fases, desde o estudo prévio ao acompanhamento de obra, incluindo modelação BIM, produção de peças desenhadas e preparação de elementos técnicos. Pretende-se alguém com intenção de permanecer na empresa e que ajude no seu crescimento.",
+   "funcoes": "> Colaboração no desenvolvimento de estudos prévios, anteprojetos e projetos de execução. > Modelação e produção de peças desenhadas em BIM, Revit. > Preparação de elementos gráficos e apresentações. > Elaboração de Peças Escritas e análise de Legislação. > Preparação de processos para licenciamento. > Acompanhamento pontual de obra e apoio às tarefas de coordenação.",
+   "requisitos": "> Licenciatura ou Mestrado em Arquitetura. > Elegibilidade para estágio profissional IEFP. > Domínio de AutoCAD. > Domínio de Revit (nível intermédio ou superior). > Conhecimentos de Microsoft Office. > Conhecimentos de software Adobe (Photoshop, InDesign ou Illustrator). > Capacidade de organização e gestão de tempo. > Boa capacidade de comunicação e de trabalho em equipa.",
+   "email": "geral@besolid.pt",
+   "entrevista": "913242578",
+   "site": "https://besolid.pt/"
   }
  ]
 }

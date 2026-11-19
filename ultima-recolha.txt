@@ -1,4 +1,4 @@
-2026-11-19 01:10 UTC
+2026-11-19 01:47 UTC
 Encomenda: 19 fichas na listagem
   excluída: “Iremos, mais uma vez, defender um Sistema Nacional de Habitação que deve funcionar como um instrumento integral de planeamento”
   excluída: Saraiva e Associados lança ‘Unlocker AI’: o primeiro podcast de arquitectura totalmente gerado com IA
@@ -78,21 +78,16 @@ ArchDaily: 30 obras na página de Portugal
   nova notícia (Dezeen): 2026-11-08 Five examples of Mesoamerican modern architecture | imagem
   nova notícia (Dezeen): 2026-11-07 Taller Alberto Calleja nestles concrete Casa Nova into tree-filled site on Mexican coast | imagem
   nova notícia (Dezeen): 2026-11-07 Eight galleries artfully made from concrete | imagem
-  nova notícia (institucional): 2026-11-18 RADAR 2030 - Habitação | imagem
-  nova notícia (institucional): 2026-11-10 Sede nacional encerra ao público | imagem
-  nova notícia (institucional): 2026-11-09 Seis anos ao serviço da instituição, da arquitetura, dos arquitetos e dos açores, *mensadem do presidente cessante nuno costa* | sem imagem
-  nova notícia (institucional): 2026-11-09 *relatório sobre o exercício da* profissão de arquiteto(a) na região autónoma dos açores | imagem
-  nova notícia (institucional): 2026-10-26 Nova legislação com futuro impacto na atividade profissional dos arquitetos | imagem
-Concursos: 0 novos, 10 no total. Notícias: 73 novas, 112 no total.
-Dados gravados.
+Concursos: 0 novos, 10 no total. Notícias: 68 novas, 110 no total.
+Sem alterações.
 Fotógrafos: lista de 2026-11-18, ainda com menos de uma semana.
 
-SILUC 2026-11-19 01:10 UTC
+SILUC 2026-11-19 01:48 UTC
   a ler alterações e regulamentação de 284 diplomas
   relações: 100 de 284
   relações: 200 de 284
   alterações e regulamentação lidas em 284 diplomas (0 falhas)
   1840 fichas recebidas de 1840
-  1840 diplomas em 7 temas gravados (284 novos ou alterados)
+  sem alterações
 Bolsa de emprego: 78 de 78 ofertas lidas em 16 páginas
 Bolsa de emprego: 78 ofertas em vigor gravadas
