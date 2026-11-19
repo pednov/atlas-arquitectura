@@ -36,6 +36,14 @@ jobs:
       - name: Recolher a legislação (SILUC)
         run: python scripts/siluc.py
         continue-on-error: true
+      - name: Recolher as ofertas da bolsa de emprego
+        run: python scripts/emprego.py
+        continue-on-error: true
+      - name: Compilar as respostas ao questionário do Observatório (só com o segredo NETLIFY_TOKEN)
+        run: python scripts/observatorio.py
+        continue-on-error: true
+        env:
+          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
       - name: Gravar no repositório
         run: |
           git config user.name "atlas-recolha"
