@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-18",
+ "actualizado": "2026-11-19",
  "fontes": [
   {
    "id": "construir",
@@ -144,6 +144,17 @@
    "sec": "INT",
    "auto": true,
    "img": "https://static-2026.dezeen.com/uploads/2026/11/wiley-adu-wyoming-clb-architects_dezeen_2364_sq-1-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-18",
+   "f": "inst",
+   "tema": "Habitação",
+   "t": "RADAR 2030 - Habitação",
+   "m": "",
+   "u": "https://www.ordemdosarquitectos.org/noticias/rada-1",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://ordemdosarquitectos.org/backend/uploads/small_site_OA_0e6a5aa235.png"
   },
   {
    "d": "2026-11-17",
@@ -521,6 +532,17 @@
    "img": "https://arquitecturaviva.com/assets/uploads/articulos/84266/av_imagen.webp?h=287cadfb"
   },
   {
+   "d": "2026-11-10",
+   "f": "inst",
+   "tema": "Obra",
+   "t": "Sede nacional encerra ao público",
+   "m": "",
+   "u": "https://www.ordemdosarquitectos.org/noticias/noticia-279",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://ordemdosarquitectos.org/backend/uploads/small_site_20261110_88f8bf590d.jpg"
+  },
+  {
    "d": "2026-11-09",
    "f": "construir",
    "tema": "Património",
@@ -539,6 +561,27 @@
    "u": "https://www.archdaily.com/1188321/hospital-da-luz-clinica-da-figueira-da-foz-risco",
    "sec": "CENTRO",
    "img": "https://images.adsttc.com/media/images/6af1/a46b/4ba6/4700/01d0/816f/newsletter/RISCO-ClinicaFigueiraFoz-040.jpg?1794221224"
+  },
+  {
+   "d": "2026-11-09",
+   "f": "inst",
+   "tema": "Obra",
+   "t": "Seis anos ao serviço da instituição, da arquitetura, dos arquitetos e dos açores, *mensadem do presidente cessante nuno costa*",
+   "m": "",
+   "u": "https://www.ordemdosarquitectos.org/noticias/srazo_031",
+   "sec": "ACORES",
+   "auto": true
+  },
+  {
+   "d": "2026-11-09",
+   "f": "inst",
+   "tema": "Obra",
+   "t": "*relatório sobre o exercício da* profissão de arquiteto(a) na região autónoma dos açores",
+   "m": "",
+   "u": "https://www.ordemdosarquitectos.org/noticias/srazo_030",
+   "sec": "ACORES",
+   "auto": true,
+   "img": "https://ordemdosarquitectos.org/backend/uploads/small_SITE_RELATORIO_ARQUITETURA_89114e3a8b.jpg"
   },
   {
    "d": "2026-11-06",
@@ -825,6 +868,17 @@
    "sec": "INT",
    "auto": true,
    "img": "https://arquitecturaviva.com/assets/uploads/articulos/84230/av_imagen.webp?h=4c3567f3"
+  },
+  {
+   "d": "2026-10-26",
+   "f": "inst",
+   "tema": "Obra",
+   "t": "Nova legislação com futuro impacto na atividade profissional dos arquitetos",
+   "m": "",
+   "u": "https://www.ordemdosarquitectos.org/noticias/Novalegislacao_quatroiniciativasGoverno",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://ordemdosarquitectos.org/backend/uploads/small_NAC_novalegislacao_5dfd6dd427.jpg"
   },
   {
    "d": "2026-10-23",

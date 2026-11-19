@@ -1,4 +1,4 @@
-2026-11-18 21:13 UTC
+2026-11-19 01:10 UTC
 Encomenda: 19 fichas na listagem
   excluída: “Iremos, mais uma vez, defender um Sistema Nacional de Habitação que deve funcionar como um instrumento integral de planeamento”
   excluída: Saraiva e Associados lança ‘Unlocker AI’: o primeiro podcast de arquitectura totalmente gerado com IA
@@ -24,14 +24,12 @@ ArchDaily: 30 obras na página de Portugal
   nova notícia (Lisboa Para Pessoas): 2026-10-10 FlixBus já pára em Sete Rios, mas “guerra” pelo terminal provisório de Lisboa continua | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-09 Envelhecer como mulher na Lisboa gentrificada | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-09 Quando o acesso a um serviço público se torna mais um obstáculo | sem imagem
-  nova notícia (ECO): 2026-11-18 Freguesias abrangidas pela transferência de património edificado sem contrapartidas | sem imagem
-  nova notícia (ECO): 2026-11-18 Municípios vão poder receber imóveis rústicos do Estado para reforçar habitação acessível | imagem
-  nova notícia (ECO): 2026-11-18 Câmara de Coimbra apresenta Simplex com 50 medidas contra burocracia | sem imagem
-  nova notícia (ECO): 2026-11-18 Câmara do Porto gasta 765 mil euros nas luzes de Natal. Praça D. João I sem programação | imagem
+  nova notícia (ECO): 2026-11-14 Milhares voltam às ruas em Lisboa e Porto pelo direito à habitação | imagem
+  nova notícia (ECO): 2026-11-13 Câmara de Lisboa vai ceder terrenos para PPP e cooperativas. Build to rent entra na equação | imagem
+  nova notícia (ECO): 2026-11-13 Habitação. Presidente deu “sinal político” e movimentos pediram mediação com Governo | imagem
+  nova notícia (ECO): 2026-11-13 Casas com benefícios fiscais no arrendamento só podem ser vendidas com autorização do Governo | imagem
   nova notícia (ECO): 2026-11-12 Mais de 90% das medidas do PS para a habitação foram aceites pelo Governo, diz Pinto Luz | sem imagem
   nova notícia (ECO): 2026-11-12 Manifestantes pela habitação pedem: “Ó Web Summit, sai de Lisboa” | imagem
-  nova notícia (ECO): 2026-11-12 Parlamento espanhol aprova decreto que prolonga proteção contra despejos e limita aumentos das rendas | imagem
-  nova notícia (ECO): 2026-11-12 FMI aconselha Portugal a melhorar oferta de casas para travar subida dos preços na habitação | imagem
   nova notícia (ECO): 2026-11-06 Governo pronto para transferir gestão de 477 imóveis para as autarquias | sem imagem
   nova notícia (ECO): 2026-11-06 Crise da habitação? Banca aponta à construção de casas a custos moderados | imagem
   nova notícia (ECO): 2026-11-05 Resolver crise da habitação “não é para uma legislatura”, avisa líder da Caixa | imagem
@@ -39,6 +37,7 @@ ArchDaily: 30 obras na página de Portugal
   nova notícia (ECO): 2026-11-03 Afinal, Câmara do Porto só licencia projetos turísticos se construírem casas de renda acessível | sem imagem
   nova notícia (ECO): 2026-11-02 Líder do BPI defende política de industrialização na construção de casas | imagem
   nova notícia (ECO): 2026-10-29 Bispo do Porto diz que Igreja Católica deve disponibilizar mais património para habitação | imagem
+  nova notícia (ECO): 2026-10-27 Estado mais do que triplica ganhos com impostos na habitação na última década | imagem
   nova notícia (Arquitectura Viva): 2026-09-23 Exposición Radical Rehab | imagem
   nova notícia (Arquitectura Viva): 2026-09-16 Finalistas del Premio Europeo del Espacio Público Urbano 2026 | imagem
   nova notícia (Arquitectura Viva): 2026-09-08 Daniel Libeskind, Praemium Imperiale 2026 | imagem
@@ -59,7 +58,7 @@ ArchDaily: 30 obras na página de Portugal
   nova notícia (Arquitectura Viva): 2026-07-10 Premio Europeo del Espacio Público Urbano, proyectos seleccionados | imagem
   nova notícia (Arquitectura Viva): 2026-07-03 Viaje a la Sijena medieval con gafas 3D: cuando la realidad virtual explica mejor las pinturas que los restos conservados | imagem
   nova notícia (Arquitectura Viva): 2026-07-02 José Manuel Ballester: Goya en silencio | imagem
-  nova notícia (Dezeen): 2026-11-18 CLB Architects creates ADU in Wyoming with rock-climbing wall | imagem
+  nova notícia (Dezeen): 2026-11-12 Faulty Wedding Cake pavilion to be dismantled at Waddesdon Manor | imagem
   nova notícia (Dezeen): 2026-11-12 Renovation delays pose "Notre Dame-like" fire risk for Houses of Parliament | imagem
   nova notícia (Dezeen): 2026-11-12 Access to Shanghai Grand Opera House staircase restricted to paid ticket holders | imagem
   nova notícia (Dezeen): 2026-11-12 Licht Kunst Licht illuminates Cologne Cathedral’s historic facade with "largely invisible" lights | imagem
@@ -79,15 +78,21 @@ ArchDaily: 30 obras na página de Portugal
   nova notícia (Dezeen): 2026-11-08 Five examples of Mesoamerican modern architecture | imagem
   nova notícia (Dezeen): 2026-11-07 Taller Alberto Calleja nestles concrete Casa Nova into tree-filled site on Mexican coast | imagem
   nova notícia (Dezeen): 2026-11-07 Eight galleries artfully made from concrete | imagem
-Concursos: 0 novos, 10 no total. Notícias: 69 novas, 107 no total.
+  nova notícia (institucional): 2026-11-18 RADAR 2030 - Habitação | imagem
+  nova notícia (institucional): 2026-11-10 Sede nacional encerra ao público | imagem
+  nova notícia (institucional): 2026-11-09 Seis anos ao serviço da instituição, da arquitetura, dos arquitetos e dos açores, *mensadem do presidente cessante nuno costa* | sem imagem
+  nova notícia (institucional): 2026-11-09 *relatório sobre o exercício da* profissão de arquiteto(a) na região autónoma dos açores | imagem
+  nova notícia (institucional): 2026-10-26 Nova legislação com futuro impacto na atividade profissional dos arquitetos | imagem
+Concursos: 0 novos, 10 no total. Notícias: 73 novas, 112 no total.
 Dados gravados.
-Fotógrafos (Divisare): 94 na lista de Portugal
-Fotógrafos: 94 gravados, 94 com obras publicadas.
+Fotógrafos: lista de 2026-11-18, ainda com menos de uma semana.
 
-SILUC 2026-11-18 21:19 UTC
-  a ler alterações e regulamentação de 279 diplomas
-  relações: 100 de 279
-  relações: 200 de 279
-  alterações e regulamentação lidas em 279 diplomas (0 falhas)
+SILUC 2026-11-19 01:10 UTC
+  a ler alterações e regulamentação de 284 diplomas
+  relações: 100 de 284
+  relações: 200 de 284
+  alterações e regulamentação lidas em 284 diplomas (0 falhas)
   1840 fichas recebidas de 1840
-  sem alterações
+  1840 diplomas em 7 temas gravados (284 novos ou alterados)
+Bolsa de emprego: 78 de 78 ofertas lidas em 16 páginas
+Bolsa de emprego: 78 ofertas em vigor gravadas
