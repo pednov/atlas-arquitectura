@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Recolha diária do ATLAS: concursos (plataforma Encomenda) e notícias (Construir, ArchDaily, Lisboa Para Pessoas,
-ECO, Arquitectura Viva e Dezeen).
+ECO, Arquitectura Viva, Dezeen e as notícias institucionais, que a página não identifica).
 
 Lê data/concursos.json e data/noticias.json, junta o que é novo e grava-os de volta.
 O que já lá está (incluindo o que foi revisto à mão) nunca é apagado nem reescrito,
@@ -508,6 +508,63 @@ def dezeen(existentes):
         log('  nova notícia (Dezeen):', n['d'], n['t'], '| imagem' if n.get('img') else '| sem imagem')
     return novos[:DZ_MAX]
 
+# ---------------------------------------------------------------- notícias institucionais (pedido do Pedro, 19 Nov. 2026)
+# Entram na Imprensa sem que a página diga de onde vêm: a fonte não figura na lista das fontes nem em cada notícia.
+# As notícias da vida interna da instituição (órgãos, eleições, assembleias, quotas) ficam de fora,
+# tal como as que a citam pelo nome (regra editorial do ATLAS, em regras.json).
+INST = 'https://www.ordemdosarquitectos.org'
+INST_MAX = 20
+INST_SEC = {'norte': 'NORTE', 'centro': 'CENTRO', 'lvt': 'LVT', 'alentejo': 'ALT', 'algarve': 'ALG', 'acores': 'ACORES', 'madeira': 'MAD'}
+INST_FORA = (r'tomada de posse|tomou posse|\b[oó]rg[aã]os\b|elei[cç][oõ]|eleitora|assembleia|plen[aá]ri|\bquotas?\b|mandato|'
+             r'conselho (?:diretivo|directivo|nacional|regional|fiscal|de disciplina)|\bmembros\b|\bsec[cç][aã]o regional|delega[cç][aã]o|n[uú]cleo|'
+             r'cancelamento|\badiad|\bcomunicado|aviso|parecer|regulamento interno|or[cç]amento|relat[oó]rio (?:e contas|de atividades|final de mandato)|'
+             r'\bestatuto|\bdeontolog|\bseguro\b|forma[cç][aã]o cont[ií]nua|\bcurso\b|\bwebinar|horário|encerramento dos servi[cç]os|\bbolsa de emprego')
+def institucional(existentes):
+    urls = {n['u'].rstrip('/') for n in existentes}
+    novos = []
+    for p in (1, 2):
+        try:
+            texto = get(f'{INST}/noticias?p={p}').text
+            m = re.search(r'<script id="__NEXT_DATA__"[^>]*>(.*?)</script>', texto, flags=re.S)
+            itens = json.loads(m.group(1))['props']['pageProps']['noticias']['data']
+        except Exception as ex:
+            log('Notícias institucionais: falhou', ex); break
+        for i in itens:
+            slug = i.get('slug')
+            if not slug: continue
+            u = f'{INST}/noticias/{slug}'
+            if u in urls or u in BLOQ or any(n['u'] == u for n in novos): continue
+            t0 = html.unescape(str(i.get('titulo') or '')).strip()
+            sin0 = html.unescape(re.sub(r'<[^>]+>', ' ', str(i.get('sinopse') or ''))).strip()
+            if not t0 or excluir(t0, sin0) or re.search(INST_FORA, t0 + ' ' + sin0, flags=re.I):
+                continue
+            t, sin = limpar(t0), limpar(sin0)
+            if t.isupper():                              # títulos em maiúsculas passam a frase, com os concelhos em maiúscula
+                t = t.capitalize()
+                for nome in CONC:
+                    if len(nome) > 3: t = re.sub(r'(?<![\w])' + re.escape(nome.lower()) + r'(?![\w])', nome, t)
+            d = str(i.get('data_publicacao') or i.get('publishedAt') or '')[:10]
+            if not re.match(r'\d{4}-\d{2}-\d{2}$', d): continue
+            local, sec = regiao_de(t, sin)
+            sec = sec or INST_SEC.get(fold(i.get('seccao_codigo') or ''))
+            sec, est = seccao_noticia(sec, t, sin)
+            img = None
+            try:
+                a = (i.get('imagem') or {}).get('data') or i.get('imagem') or {}
+                a = a.get('attributes') or a
+                f = (a.get('formats') or {})
+                src = ((f.get('small') or f.get('medium') or {}).get('url')) or a.get('url')
+                if src:
+                    src = src if src.startswith('http') else 'https://ordemdosarquitectos.org/backend' + src
+                    if not tem_pessoas(src): img = src
+            except Exception:
+                pass
+            n = {'d': d, 'f': 'inst', 'tema': tema_de(t + ' ' + sin), 't': t, 'm': local or est or '', 'u': u, 'sec': sec, 'auto': True}
+            if img: n['img'] = img
+            log('  nova notícia (institucional):', d, t, '| imagem' if img else '| sem imagem')
+            novos.append(n)
+    return novos[:INST_MAX]
+
 # ---------------------------------------------------------------- notícias: ArchDaily (obras em Portugal)
 def archdaily(existentes):
     ids = {re.search(r'archdaily\.com/(\d+)/', n['u']).group(1) for n in existentes if 'archdaily' in n['u'] and re.search(r'archdaily\.com/(\d+)/', n['u'])}
@@ -575,7 +632,7 @@ def main():
     C['concursos'] = [c for c in C['concursos'] + novos_c if c['entrega'][:10] >= limite_c]
 
     novos_n = (construir(N['noticias']) + archdaily(N['noticias']) + lisboaparapessoas(N['noticias'])
-               + eco(N['noticias']) + arquitecturaviva(N['noticias']) + dezeen(N['noticias']))
+               + eco(N['noticias']) + arquitecturaviva(N['noticias']) + dezeen(N['noticias']) + institucional(N['noticias']))
     for fid, nome, url in [('lpp', 'Lisboa Para Pessoas', LPP), ('eco', 'ECO', ECO + '/topico/habitacao/'),
                            ('arquitecturaviva', 'Arquitectura Viva', AV + '/articulos'), ('dezeen', 'Dezeen', DZ + '/architecture/')]:
         if not any(f['id'] == fid for f in N['fontes']):
@@ -600,7 +657,7 @@ def main():
         if n['u'] not in vistos:
             vistos.add(n['u']); N['noticias'].append(n)
     # fontes com limite próprio, para não tomarem o lugar das notícias de arquitectura
-    LIMITE = {'arquitecturaviva': AV_MAX, 'dezeen': DZ_MAX, 'lpp': CIDADE_MAX, 'eco': CIDADE_MAX}
+    LIMITE = {'arquitecturaviva': AV_MAX, 'dezeen': DZ_MAX, 'lpp': CIDADE_MAX, 'eco': CIDADE_MAX, 'inst': INST_MAX}
     conta, ficam = {}, []
     for n in N['noticias']:
         conta[n['f']] = conta.get(n['f'], 0) + 1
