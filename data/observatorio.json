@@ -1,0 +1,2725 @@
+{
+ "fonte": {
+  "titulo": "Observatório da Profissão, Inquérito aos Membros, relatório final",
+  "autor": "João António, CESOP, Universidade Católica Portuguesa",
+  "data": "Fevereiro de 2023",
+  "campo": "15 de Setembro a 30 de Outubro de 2022",
+  "n": 7649
+ },
+ "destaques": [
+  {
+   "v": "7649",
+   "l": "arquitectos responderam ao inquérito de 2022"
+  },
+  {
+   "v": "43 anos",
+   "l": "de idade média"
+  },
+  {
+   "v": "90%",
+   "l": "exercem arquitectura"
+  },
+  {
+   "v": "43 horas",
+   "l": "de trabalho por semana, em média"
+  },
+  {
+   "v": "20%",
+   "l": "ganham até 850 € líquidos por mês ou não têm rendimento"
+  }
+ ],
+ "blocos": [
+  {
+   "id": "amostra",
+   "titulo": "Quem respondeu",
+   "intro": "Responderam 7649 arquitectos, membros efectivos e estagiários. A maioria (53%) é do sexo masculino e as idades vão dos 22 aos 90 anos, com uma média de 43.",
+   "graficos": [
+    {
+     "id": "curso",
+     "tipo": "col",
+     "q": "Ano em que concluiu o curso de Arquitectura",
+     "cats": [
+      "1960–70",
+      "1971–80",
+      "1981–90",
+      "1991–2000",
+      "2001–10",
+      "2011 em diante"
+     ],
+     "v": [
+      0.2,
+      2,
+      7,
+      19,
+      33,
+      38
+     ],
+     "nota": "A maioria formou-se nos últimos vinte anos."
+    },
+    {
+     "id": "idade",
+     "tipo": "col",
+     "q": "Idade",
+     "cats": [
+      "Até 30",
+      "31–40",
+      "41–50",
+      "51–65",
+      "66 ou mais"
+     ],
+     "v": [
+      16,
+      29,
+      33,
+      19,
+      4
+     ]
+    },
+    {
+     "id": "universidade",
+     "tipo": "bar",
+     "q": "Universidade onde se formou",
+     "cats": [
+      "Universidade de Lisboa",
+      "Universidade do Porto",
+      "Universidade Lusíada (Lisboa)",
+      "Universidade Lusíada Norte (Porto)",
+      "Universidade de Coimbra",
+      "Outras instituições"
+     ],
+     "v": [
+      24,
+      14,
+      14,
+      7,
+      5,
+      36
+     ],
+     "ultimo": true,
+     "nota": "Só as universidades mais referidas aparecem pelo nome."
+    }
+   ]
+  },
+  {
+   "id": "estagio",
+   "titulo": "Estágio",
+   "intro": "Os estagiários fazem quase sempre o estágio numa só entidade, de pequena dimensão, sobretudo na região de Lisboa e no Norte.",
+   "graficos": [
+    {
+     "id": "est-dest",
+     "tipo": "stat",
+     "q": "O estágio em números",
+     "itens": [
+      {
+       "v": 83,
+       "l": "terminaram ou contam terminar o estágio em 12 meses"
+      },
+      {
+       "v": 87,
+       "l": "fizeram ou fazem o estágio numa só entidade"
+      },
+      {
+       "v": 95,
+       "l": "cumprem o plano de estágio apresentado"
+      }
+     ]
+    },
+    {
+     "id": "est-regiao",
+     "tipo": "bar",
+     "q": "Região da entidade de acolhimento",
+     "cats": [
+      "Norte",
+      "Centro",
+      "Área Metropolitana de Lisboa",
+      "Alentejo",
+      "Algarve",
+      "Madeira",
+      "Açores"
+     ],
+     "v": [
+      33,
+      14,
+      46,
+      2,
+      4,
+      1,
+      0
+     ],
+     "ordem": true
+    },
+    {
+     "id": "est-concelho",
+     "tipo": "bar",
+     "q": "Concelhos com mais entidades de acolhimento",
+     "cats": [
+      "Lisboa",
+      "Porto",
+      "Oeiras",
+      "Coimbra",
+      "Cascais",
+      "Braga",
+      "Sintra"
+     ],
+     "v": [
+      34,
+      15,
+      3,
+      3,
+      3,
+      3,
+      2
+     ],
+     "aberta": true
+    },
+    {
+     "id": "est-dimensao",
+     "tipo": "col",
+     "q": "Trabalhadores da entidade de acolhimento",
+     "cats": [
+      "1–2",
+      "3–5",
+      "6–10",
+      "11–20",
+      "21 ou mais"
+     ],
+     "v": [
+      25,
+      41,
+      17,
+      8,
+      9
+     ]
+    },
+    {
+     "id": "est-tempo",
+     "tipo": "media",
+     "q": "Tempo dedicado a cada acto profissional durante o estágio",
+     "cats": [
+      "Elaboração ou apreciação de estudos",
+      "Projectos e planos de arquitectura",
+      "Intervenção em estudos, projectos e planos",
+      "Consultoria",
+      "Gestão de obra",
+      "Fiscalização",
+      "Direcção de obra",
+      "Planificação, coordenação e avaliação da edificação",
+      "Outras actividades ligadas à profissão",
+      "Actividades não ligadas à profissão"
+     ],
+     "v": [
+      16,
+      40,
+      15,
+      3,
+      5,
+      3,
+      3,
+      3,
+      8,
+      4
+     ],
+     "max": 100,
+     "un": "%",
+     "nota": "Valores médios. Em média, 40% do tempo vai para projectos e planos de arquitectura."
+    },
+    {
+     "id": "est-satisf",
+     "tipo": "media",
+     "q": "Satisfação com a experiência em cada acto, de 0 a 10",
+     "cats": [
+      "Elaboração ou apreciação de estudos",
+      "Projectos e planos de arquitectura",
+      "Intervenção em estudos, projectos e planos",
+      "Consultoria",
+      "Gestão de obra",
+      "Fiscalização",
+      "Direcção de obra",
+      "Planificação, coordenação e avaliação da edificação",
+      "Outras actividades ligadas à profissão",
+      "Actividades não ligadas à profissão"
+     ],
+     "v": [
+      7.7,
+      8.0,
+      7.7,
+      6.4,
+      6.4,
+      6.1,
+      6.4,
+      6.9,
+      7.2,
+      5.9
+     ],
+     "max": 10,
+     "nota": "Valores médios, de 0 (muito insatisfeito) a 10 (muito satisfeito)."
+    },
+    {
+     "id": "est-deont",
+     "tipo": "col",
+     "q": "Importância da formação em Estatuto e Deontologia, de 0 a 10",
+     "cats": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10"
+     ],
+     "v": [
+      0.3,
+      1,
+      2,
+      2,
+      2,
+      6,
+      6,
+      15,
+      20,
+      14,
+      32
+     ]
+    },
+    {
+     "id": "est-cursos",
+     "tipo": "bar",
+     "q": "Cursos de formação profissional mais frequentados",
+     "cats": [
+      "Estatuto e Deontologia",
+      "Instrução de Processo",
+      "Honorários em Arquitectura",
+      "Coordenação de Projecto",
+      "Direcção de Obra",
+      "Eficiência Energética",
+      "Direito da Propriedade e RJUE",
+      "Direcção e Fiscalização de Obra",
+      "Metodologias no Projecto de Execução",
+      "Reabilitação de Estruturas de Madeira",
+      "Reabilitação Estrutural do Edificado Antigo Corrente",
+      "Reabilitação de Estruturas de Alvenaria"
+     ],
+     "v": [
+      33,
+      22,
+      20,
+      19,
+      10,
+      9,
+      7,
+      7,
+      6,
+      5,
+      5,
+      5
+     ],
+     "aberta": true
+    },
+    {
+     "id": "est-cursos-rel",
+     "tipo": "media",
+     "q": "Relevância dos cursos mais frequentados, de 0 a 10",
+     "cats": [
+      "Eficiência Energética",
+      "Honorários em Arquitectura",
+      "Instrução de Processo",
+      "Direito da Propriedade e RJUE",
+      "Direcção e Fiscalização de Obra",
+      "Estatuto e Deontologia",
+      "Coordenação de Projecto",
+      "Metodologias no Projecto de Execução",
+      "Reabilitação de Estruturas de Alvenaria",
+      "Reabilitação Estrutural do Edificado Antigo Corrente",
+      "Direcção de Obra",
+      "Reabilitação de Estruturas de Madeira"
+     ],
+     "v": [
+      9.1,
+      8.6,
+      8.5,
+      8.4,
+      8.4,
+      8.2,
+      8.0,
+      7.9,
+      7.9,
+      7.6,
+      7.5,
+      7.4
+     ],
+     "max": 10,
+     "aberta": true
+    }
+   ]
+  },
+  {
+   "id": "exercicio",
+   "titulo": "Exercício da profissão",
+   "intro": "Nove em cada dez exercem arquitectura. Os arquitectos distribuem-se pelo país quase como a população, com mais peso da região de Lisboa e do Algarve. Houve respostas de 277 dos 308 concelhos.",
+   "graficos": [
+    {
+     "id": "anos",
+     "tipo": "col",
+     "q": "Anos de experiência na arquitectura, depois da inscrição",
+     "cats": [
+      "1–5",
+      "6–10",
+      "11–15",
+      "16–20",
+      "21–25",
+      "26 ou mais"
+     ],
+     "v": [
+      23,
+      17,
+      15,
+      15,
+      13,
+      16
+     ]
+    },
+    {
+     "id": "exerce",
+     "tipo": "seg",
+     "q": "Exerce arquitectura na actividade profissional actual?",
+     "cats": [
+      "Sim",
+      "Não"
+     ],
+     "v": [
+      90,
+      10
+     ]
+    },
+    {
+     "id": "tempo-prof",
+     "tipo": "col",
+     "q": "Parte do tempo de trabalho dedicada a actividades da profissão",
+     "cats": [
+      "Menos de 10%",
+      "11–50%",
+      "51–89%",
+      "90–99%",
+      "100%"
+     ],
+     "v": [
+      12,
+      22,
+      26,
+      10,
+      30
+     ]
+    },
+    {
+     "id": "regiao",
+     "tipo": "bar",
+     "q": "Região do local de trabalho",
+     "cats": [
+      "Norte",
+      "Centro",
+      "Lisboa e Vale do Tejo",
+      "Alentejo",
+      "Algarve",
+      "Madeira",
+      "Açores",
+      "Fora do país"
+     ],
+     "v": [
+      32,
+      12,
+      40,
+      3,
+      5,
+      2,
+      3,
+      3
+     ],
+     "ordem": true
+    },
+    {
+     "id": "concelho",
+     "tipo": "bar",
+     "q": "Concelhos mais representados",
+     "cats": [
+      "Lisboa",
+      "Porto",
+      "Braga",
+      "Cascais",
+      "Vila Nova de Gaia",
+      "Coimbra",
+      "Oeiras",
+      "Matosinhos",
+      "Sintra",
+      "Guimarães"
+     ],
+     "v": [
+      24,
+      12,
+      3,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+     ],
+     "aberta": true
+    },
+    {
+     "id": "formas",
+     "tipo": "bar",
+     "q": "Formas de exercício da profissão",
+     "cats": [
+      "Funcionário público",
+      "Trabalhador contratado pela administração pública",
+      "Sócio, administrador ou gerente de sociedade",
+      "Profissional independente ou empresário em nome individual",
+      "Trabalhador por conta de outrem (sector privado)",
+      "Trabalhador por conta de outrem (sector social)",
+      "Prestador de serviços a outros arquitectos ou sociedades de arquitectura",
+      "Ensino de arquitectura",
+      "Investigação",
+      "Outra situação"
+     ],
+     "v": [
+      15,
+      2,
+      19,
+      38,
+      34,
+      0.4,
+      8,
+      3,
+      4,
+      2
+     ],
+     "multi": true,
+     "nota": "Resposta múltipla: a soma passa de 100%."
+    },
+    {
+     "id": "forma",
+     "tipo": "bar",
+     "q": "Forma principal de exercício",
+     "cats": [
+      "Funcionário público",
+      "Trabalhador contratado pela administração pública",
+      "Sócio, administrador ou gerente de sociedade",
+      "Profissional independente ou empresário em nome individual",
+      "Trabalhador por conta de outrem (sector privado)",
+      "Trabalhador por conta de outrem (sector social)",
+      "Prestador de serviços a outros arquitectos ou sociedades de arquitectura",
+      "Ensino de arquitectura",
+      "Investigação",
+      "Outra situação"
+     ],
+     "v": [
+      14,
+      2,
+      17,
+      26,
+      32,
+      0.4,
+      4,
+      1,
+      1,
+      1
+     ]
+    }
+   ]
+  },
+  {
+   "id": "formas-ex",
+   "titulo": "Condições de trabalho, por forma de exercício",
+   "intro": "Na função pública predomina a administração local e o contrato sem termo. Nas empresas privadas, os serviços de arquitectura. Os sócios trabalham sobretudo em atelier e os independentes, muitas vezes, em casa.",
+   "graficos": [
+    {
+     "id": "fp-admin",
+     "tipo": "bar",
+     "q": "Função pública: administração onde trabalha",
+     "cats": [
+      "Central",
+      "Regional",
+      "Local",
+      "Outra"
+     ],
+     "v": [
+      11,
+      7,
+      78,
+      5
+     ],
+     "ordem": true
+    },
+    {
+     "id": "fp-contrato",
+     "tipo": "bar",
+     "q": "Função pública: tipo de contrato",
+     "cats": [
+      "Prestação de serviços (recibos verdes)",
+      "Contrato a termo certo",
+      "Contrato a termo incerto",
+      "Contrato sem termo",
+      "Outra situação"
+     ],
+     "v": [
+      5,
+      14,
+      19,
+      60,
+      3
+     ],
+     "ordem": true
+    },
+    {
+     "id": "fp-categoria",
+     "tipo": "bar",
+     "q": "Função pública: categoria profissional",
+     "cats": [
+      "Chefe de serviço",
+      "Técnico superior",
+      "Outra situação"
+     ],
+     "v": [
+      12,
+      84,
+      3
+     ],
+     "ordem": true
+    },
+    {
+     "id": "fp-narq",
+     "tipo": "col",
+     "q": "Função pública: arquitectos no serviço ou unidade",
+     "cats": [
+      "1–2",
+      "3–5",
+      "6–10",
+      "11–20",
+      "Mais de 20"
+     ],
+     "v": [
+      27,
+      31,
+      25,
+      10,
+      7
+     ]
+    },
+    {
+     "id": "tco-sector",
+     "tipo": "bar",
+     "q": "Conta de outrem: sector da empresa",
+     "cats": [
+      "Construção",
+      "Serviços de arquitectura",
+      "Outras actividades"
+     ],
+     "v": [
+      20,
+      70,
+      10
+     ],
+     "ordem": true
+    },
+    {
+     "id": "tco-contrato",
+     "tipo": "bar",
+     "q": "Conta de outrem: tipo de contrato",
+     "cats": [
+      "Prestação de serviços (recibos verdes)",
+      "Contrato a termo certo",
+      "Contrato a termo incerto",
+      "Contrato sem termo",
+      "Outra situação"
+     ],
+     "v": [
+      3,
+      21,
+      9,
+      65,
+      2
+     ],
+     "ordem": true
+    },
+    {
+     "id": "tco-sede",
+     "tipo": "seg",
+     "q": "Conta de outrem: sede da empresa",
+     "cats": [
+      "Portugal",
+      "Outro país"
+     ],
+     "v": [
+      89,
+      11
+     ]
+    },
+    {
+     "id": "tco-narq",
+     "tipo": "col",
+     "q": "Conta de outrem: arquitectos no serviço ou unidade",
+     "cats": [
+      "1–2",
+      "3–5",
+      "6–10",
+      "11–20",
+      "Mais de 20"
+     ],
+     "v": [
+      33,
+      32,
+      16,
+      9,
+      9
+     ]
+    },
+    {
+     "id": "soc-volume",
+     "tipo": "col",
+     "q": "Sócios e gerentes: volume de negócios anual da sociedade",
+     "cats": [
+      "Menos de 2 mil €",
+      "2–5 mil €",
+      "5–15 mil €",
+      "15–25 mil €",
+      "25–50 mil €",
+      "50–100 mil €",
+      "100–250 mil €",
+      "250–500 mil €",
+      "Mais de 500 mil €"
+     ],
+     "v": [
+      1,
+      1,
+      5,
+      9,
+      22,
+      26,
+      19,
+      11,
+      6
+     ]
+    },
+    {
+     "id": "soc-sede",
+     "tipo": "seg",
+     "q": "Sócios e gerentes: sede da empresa",
+     "cats": [
+      "Portugal",
+      "Outro país"
+     ],
+     "v": [
+      99,
+      1
+     ]
+    },
+    {
+     "id": "soc-lugar",
+     "tipo": "bar",
+     "q": "Sócios e gerentes: lugar onde exerce",
+     "cats": [
+      "Casa",
+      "Atelier",
+      "Atelier partilhado",
+      "Outro local"
+     ],
+     "v": [
+      14,
+      73,
+      11,
+      2
+     ],
+     "ordem": true
+    },
+    {
+     "id": "soc-parceria",
+     "tipo": "col",
+     "q": "Sócios e gerentes: trabalho em parceria com outros arquitectos",
+     "cats": [
+      "Nunca",
+      "Poucas vezes",
+      "Muitas vezes",
+      "Sempre"
+     ],
+     "v": [
+      10,
+      54,
+      28,
+      8
+     ]
+    },
+    {
+     "id": "soc-narq",
+     "tipo": "col",
+     "q": "Sócios e gerentes: arquitectos na empresa ou sociedade",
+     "cats": [
+      "1",
+      "2",
+      "3–5",
+      "6–10",
+      "11–20"
+     ],
+     "v": [
+      35,
+      30,
+      25,
+      6,
+      2
+     ]
+    },
+    {
+     "id": "ind-lugar",
+     "tipo": "bar",
+     "q": "Independentes: lugar onde exerce",
+     "cats": [
+      "Em casa",
+      "Em atelier próprio",
+      "Atelier partilhado",
+      "Outro local"
+     ],
+     "v": [
+      55,
+      29,
+      13,
+      3
+     ],
+     "ordem": true
+    },
+    {
+     "id": "ind-parceria",
+     "tipo": "col",
+     "q": "Independentes: trabalho em parceria com outros arquitectos",
+     "cats": [
+      "Nunca",
+      "Poucas vezes",
+      "Muitas vezes",
+      "Sempre"
+     ],
+     "v": [
+      13,
+      50,
+      27,
+      10
+     ]
+    },
+    {
+     "id": "pre-local",
+     "tipo": "bar",
+     "q": "Prestadores a outros arquitectos: onde trabalham",
+     "cats": [
+      "Sempre em local próprio",
+      "Quase sempre em local próprio",
+      "Quase sempre no local de quem contrata",
+      "Sempre no local de quem contrata"
+     ],
+     "v": [
+      36,
+      23,
+      20,
+      21
+     ],
+     "ordem": true
+    },
+    {
+     "id": "pre-horario",
+     "tipo": "bar",
+     "q": "Prestadores a outros arquitectos: quem define o horário",
+     "cats": [
+      "Sempre ou quase sempre o próprio",
+      "A maior parte das vezes o próprio",
+      "A maior parte das vezes quem contrata",
+      "Sempre ou quase sempre quem contrata"
+     ],
+     "v": [
+      47,
+      25,
+      11,
+      17
+     ],
+     "ordem": true
+    },
+    {
+     "id": "pre-tipo",
+     "tipo": "seg",
+     "q": "Prestadores a outros arquitectos: tipo de serviço",
+     "cats": [
+      "Alocado a projectos específicos",
+      "Não definido"
+     ],
+     "v": [
+      67,
+      33
+     ]
+    },
+    {
+     "id": "pre-meios",
+     "tipo": "bar",
+     "q": "Prestadores a outros arquitectos: meios informáticos",
+     "cats": [
+      "Sempre ou quase sempre próprios",
+      "A maior parte das vezes próprios",
+      "A maior parte das vezes de quem contrata",
+      "Sempre ou quase sempre de quem contrata"
+     ],
+     "v": [
+      50,
+      13,
+      15,
+      22
+     ],
+     "ordem": true
+    },
+    {
+     "id": "docencia",
+     "tipo": "bar",
+     "q": "Ensino, entre quem não exerce arquitectura",
+     "cats": [
+      "Ensino superior",
+      "Ensino secundário",
+      "2.º e 3.º ciclos",
+      "Outra situação"
+     ],
+     "v": [
+      7,
+      6,
+      4,
+      2
+     ],
+     "ordem": true,
+     "nota": "Entre os 10% que não exercem arquitectura, 15% são docentes. Entre os que exercem, 3% fazem-no no ensino e 4% na investigação."
+    }
+   ]
+  },
+  {
+   "id": "horario",
+   "titulo": "Horário de trabalho",
+   "intro": "Em média, os arquitectos trabalham cerca de 43 horas por semana. A carga é maior entre sócios e gerentes e menor na função pública, e mais horas andam a par de rendimentos mais altos.",
+   "graficos": [
+    {
+     "id": "cumpre",
+     "tipo": "seg",
+     "q": "Cumpre um horário de trabalho?",
+     "cats": [
+      "Sim",
+      "Não"
+     ],
+     "v": [
+      72,
+      28
+     ]
+    },
+    {
+     "id": "horas",
+     "tipo": "col",
+     "q": "Horas de trabalho por semana",
+     "cats": [
+      "Menos de 10 h",
+      "11–20 h",
+      "21–30 h",
+      "31–40 h",
+      "Mais de 40 h"
+     ],
+     "v": [
+      4,
+      3,
+      4,
+      41,
+      48
+     ]
+    }
+   ]
+  },
+  {
+   "id": "encomenda",
+   "titulo": "Encomenda nos últimos cinco anos",
+   "intro": "A encomenda vem sobretudo de particulares e de empresas privadas. A habitação domina os programas, e obras novas e reabilitação ocupam a maior parte do tempo.",
+   "graficos": [
+    {
+     "id": "clientes",
+     "tipo": "heat",
+     "q": "Parte do tempo dedicada a cada tipo de cliente",
+     "linhas": [
+      "Administração pública central",
+      "Administração pública regional",
+      "Administração pública local",
+      "Empresas privadas",
+      "Sector social",
+      "Particulares"
+     ],
+     "cats": [
+      "0%",
+      "1–10%",
+      "11–40%",
+      "41–60%",
+      "61–99%",
+      "100%"
+     ],
+     "v": [
+      [
+       90,
+       4,
+       3,
+       1,
+       1,
+       1
+      ],
+      [
+       90,
+       5,
+       4,
+       1,
+       1,
+       0
+      ],
+      [
+       69,
+       9,
+       8,
+       3,
+       4,
+       7
+      ],
+      [
+       34,
+       8,
+       26,
+       15,
+       12,
+       6
+      ],
+      [
+       87,
+       7,
+       4,
+       1,
+       0,
+       0
+      ],
+      [
+       19,
+       8,
+       21,
+       18,
+       20,
+       14
+      ]
+     ],
+     "nota": "Leitura: 90% não dedicaram nenhuma hora a encomendas da administração central."
+    },
+    {
+     "id": "trabalhos",
+     "tipo": "heat",
+     "q": "Parte do tempo dedicada a cada tipo de trabalho",
+     "linhas": [
+      "Apreciação de estudos, planos e projectos",
+      "Obras novas",
+      "Reabilitação",
+      "Manutenção e conservação do edificado",
+      "Loteamento",
+      "Planeamento e urbanismo",
+      "Arranjos exteriores",
+      "Obras efémeras",
+      "Acompanhamento de obra",
+      "Mobiliário e interiores",
+      "Pedido de informação prévia",
+      "Consultoria pública",
+      "Consultoria privada",
+      "Legalizações",
+      "Avaliação imobiliária",
+      "Outras áreas"
+     ],
+     "cats": [
+      "0%",
+      "1–10%",
+      "11–40%",
+      "41–60%",
+      "61–99%",
+      "100%"
+     ],
+     "v": [
+      [
+       57,
+       19,
+       15,
+       4,
+       2,
+       2
+      ],
+      [
+       20,
+       14,
+       43,
+       15,
+       7,
+       1
+      ],
+      [
+       24,
+       20,
+       43,
+       9,
+       4,
+       1
+      ],
+      [
+       78,
+       16,
+       6,
+       0,
+       0,
+       0
+      ],
+      [
+       70,
+       25,
+       4,
+       0,
+       0,
+       0
+      ],
+      [
+       80,
+       13,
+       5,
+       1,
+       1,
+       1
+      ],
+      [
+       77,
+       20,
+       2,
+       0,
+       0,
+       0
+      ],
+      [
+       94,
+       5,
+       1,
+       0,
+       0,
+       0
+      ],
+      [
+       41,
+       34,
+       22,
+       2,
+       1,
+       0
+      ],
+      [
+       75,
+       18,
+       6,
+       1,
+       0,
+       0
+      ],
+      [
+       58,
+       34,
+       7,
+       0,
+       0,
+       0
+      ],
+      [
+       97,
+       2,
+       1,
+       0,
+       0,
+       0
+      ],
+      [
+       81,
+       15,
+       3,
+       0,
+       0,
+       0
+      ],
+      [
+       56,
+       27,
+       15,
+       1,
+       0,
+       0
+      ],
+      [
+       93,
+       6,
+       1,
+       0,
+       0,
+       0
+      ],
+      [
+       89,
+       5,
+       3,
+       1,
+       1,
+       1
+      ]
+     ]
+    },
+    {
+     "id": "programas",
+     "tipo": "bar",
+     "q": "Programas feitos",
+     "cats": [
+      "Habitação",
+      "Indústria",
+      "Comércio",
+      "Serviços (escritórios, restauração)",
+      "Hotelaria e turismo",
+      "Obra pública",
+      "Espaço público",
+      "Planeamento urbano",
+      "Outros"
+     ],
+     "v": [
+      78,
+      21,
+      31,
+      46,
+      32,
+      22,
+      14,
+      13,
+      7
+     ],
+     "multi": true,
+     "ultimo": true,
+     "nota": "Resposta múltipla: a soma passa de 100%."
+    },
+    {
+     "id": "licenc",
+     "tipo": "col",
+     "q": "Parte dos processos não sujeitos a licenciamento",
+     "cats": [
+      "0%",
+      "1–10%",
+      "11–40%",
+      "41–60%",
+      "61–99%",
+      "100%"
+     ],
+     "v": [
+      23,
+      30,
+      24,
+      9,
+      10,
+      4
+     ]
+    },
+    {
+     "id": "valor",
+     "tipo": "grp",
+     "q": "Valor médio da obra",
+     "cats": [
+      "Até 1 000 €",
+      "1 001–10 000 €",
+      "10 001–50 000 €",
+      "50 001–100 000 €",
+      "100 001–500 000 €",
+      "500 001 € –1 milhão",
+      "Mais de 1 milhão"
+     ],
+     "series": [
+      "Obra pública",
+      "Obra privada"
+     ],
+     "v": [
+      [
+       19,
+       10,
+       10,
+       6,
+       19,
+       30,
+       6
+      ],
+      [
+       16,
+       18,
+       8,
+       6,
+       35,
+       13,
+       3
+      ]
+     ]
+    },
+    {
+     "id": "valor-m2",
+     "tipo": "grp",
+     "q": "Valor médio da obra por metro quadrado",
+     "cats": [
+      "Até 100 €",
+      "101–999 €",
+      "1 000 €",
+      "1 001–1 500 €",
+      "1 501–2 000 €",
+      "Mais de 2 000 €"
+     ],
+     "series": [
+      "Obra pública",
+      "Obra privada"
+     ],
+     "v": [
+      [
+       9,
+       26,
+       16,
+       26,
+       7,
+       16
+      ],
+      [
+       6,
+       27,
+       16,
+       26,
+       7,
+       18
+      ]
+     ]
+    },
+    {
+     "id": "servicos-regiao",
+     "tipo": "bar",
+     "q": "Regiões onde se localizam os trabalhos",
+     "cats": [
+      "Norte",
+      "Centro",
+      "Lisboa e Vale do Tejo",
+      "Alentejo",
+      "Algarve",
+      "Madeira",
+      "Açores",
+      "Fora do país"
+     ],
+     "v": [
+      32,
+      21,
+      35,
+      11,
+      12,
+      3,
+      4,
+      8
+     ],
+     "multi": true,
+     "ordem": true,
+     "nota": "Resposta múltipla: a soma passa de 100%."
+    },
+    {
+     "id": "ilhas",
+     "tipo": "bar",
+     "q": "Ilhas dos Açores onde se localizam os trabalhos",
+     "cats": [
+      "Corvo",
+      "Faial",
+      "Flores",
+      "Graciosa",
+      "Pico",
+      "Santa Maria",
+      "São Jorge",
+      "São Miguel",
+      "Terceira"
+     ],
+     "v": [
+      5,
+      11,
+      10,
+      3,
+      22,
+      8,
+      9,
+      63,
+      22
+     ],
+     "multi": true,
+     "nota": "Entre quem trabalha nos Açores. Resposta múltipla."
+    }
+   ]
+  },
+  {
+   "id": "concursos",
+   "titulo": "Concursos",
+   "intro": "Poucos participam em concursos. A falta de tempo é o motivo mais apontado e, nos concursos públicos, também a burocracia e a desconfiança nos processos.",
+   "graficos": [
+    {
+     "id": "conc-priv",
+     "tipo": "seg",
+     "q": "Costuma participar em concursos privados?",
+     "cats": [
+      "Sim",
+      "Não"
+     ],
+     "v": [
+      13,
+      87
+     ]
+    },
+    {
+     "id": "conc-priv-n",
+     "tipo": "col",
+     "q": "Concursos privados em que participou",
+     "cats": [
+      "1–2",
+      "3–5",
+      "6–10",
+      "11–20",
+      "Mais de 20"
+     ],
+     "v": [
+      30,
+      41,
+      16,
+      8,
+      5
+     ],
+     "nota": "Entre quem participa."
+    },
+    {
+     "id": "conc-pub",
+     "tipo": "seg",
+     "q": "Participou em concursos públicos nos últimos dez anos?",
+     "cats": [
+      "Sim",
+      "Não"
+     ],
+     "v": [
+      26,
+      74
+     ]
+    },
+    {
+     "id": "conc-pub-n",
+     "tipo": "col",
+     "q": "Concursos públicos em que participou",
+     "cats": [
+      "1–2",
+      "3–5",
+      "6–10",
+      "11–20",
+      "Mais de 20"
+     ],
+     "v": [
+      48,
+      31,
+      13,
+      5,
+      4
+     ],
+     "nota": "Entre quem participou."
+    }
+   ]
+  },
+  {
+   "id": "outras",
+   "titulo": "Divulgação e cargos públicos",
+   "intro": "",
+   "graficos": [
+    {
+     "id": "divulgacao",
+     "tipo": "seg",
+     "q": "Exerce ou exerceu actividades de divulgação da arquitectura?",
+     "cats": [
+      "Sim, exerço",
+      "Sim, exerci",
+      "Não"
+     ],
+     "v": [
+      7,
+      19,
+      74
+     ]
+    },
+    {
+     "id": "politico",
+     "tipo": "seg",
+     "q": "Exerce ou exerceu algum cargo de nomeação política?",
+     "cats": [
+      "Sim, exerço",
+      "Sim, exerci",
+      "Não"
+     ],
+     "v": [
+      2,
+      3,
+      95
+     ]
+    }
+   ]
+  },
+  {
+   "id": "rendimento",
+   "titulo": "Rendimento",
+   "intro": "Um em cada cinco arquitectos ganha até 850 euros líquidos por mês ou não tem rendimento. Para dois terços, todo o rendimento vem da arquitectura.",
+   "graficos": [
+    {
+     "id": "rend",
+     "tipo": "grp",
+     "q": "Rendimento líquido mensal",
+     "cats": [
+      "Sem rendimento",
+      "Até 850 €",
+      "851–1 000 €",
+      "1 001–1 200 €",
+      "1 201–1 500 €",
+      "1 501–2 000 €",
+      "2 001–2 400 €",
+      "Mais de 2 400 €"
+     ],
+     "series": [
+      "Todos",
+      "Quem exerce arquitectura"
+     ],
+     "v": [
+      [
+       4,
+       16,
+       18,
+       17,
+       17,
+       13,
+       6,
+       9
+      ],
+      [
+       2,
+       14,
+       18,
+       19,
+       18,
+       14,
+       7,
+       9
+      ]
+     ],
+     "nota": "Inclui rendimentos de outras actividades."
+    },
+    {
+     "id": "rend-pct",
+     "tipo": "grp",
+     "q": "Parte do rendimento que vem da arquitectura",
+     "cats": [
+      "Até 10%",
+      "11–40%",
+      "41–60%",
+      "61–99%",
+      "100%"
+     ],
+     "series": [
+      "Todos",
+      "Quem exerce arquitectura"
+     ],
+     "v": [
+      [
+       13,
+       5,
+       5,
+       11,
+       66
+      ],
+      [
+       5,
+       6,
+       5,
+       12,
+       72
+      ]
+     ]
+    }
+   ]
+  }
+ ],
+ "questionario": {
+  "form": "observatorio",
+  "versao": 1,
+  "seccoes": [
+   {
+    "id": "perfil",
+    "titulo": "Perfil",
+    "nota": "Para comparar as respostas com o inquérito de 2022.",
+    "se": null,
+    "perguntas": [
+     {
+      "id": "inscricao",
+      "tipo": "radio",
+      "label": "Situação de inscrição",
+      "g": null,
+      "op": [
+       "Efectiva",
+       "Em estágio"
+      ],
+      "se": null,
+      "obr": true
+     },
+     {
+      "id": "curso",
+      "tipo": "select",
+      "label": "Ano em que concluiu o curso de Arquitectura (licenciatura ou mestrado integrado)",
+      "g": "curso",
+      "op": [
+       "1960–70",
+       "1971–80",
+       "1981–90",
+       "1991–2000",
+       "2001–10",
+       "2011 em diante"
+      ],
+      "se": null
+     },
+     {
+      "id": "idade",
+      "tipo": "select",
+      "label": "Idade",
+      "g": "idade",
+      "op": [
+       "Até 30",
+       "31–40",
+       "41–50",
+       "51–65",
+       "66 ou mais"
+      ],
+      "se": null
+     },
+     {
+      "id": "sexo",
+      "tipo": "radio",
+      "label": "Sexo",
+      "g": null,
+      "op": [
+       "Feminino",
+       "Masculino",
+       "Prefiro não responder"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "universidade",
+      "tipo": "select",
+      "label": "Universidade onde se formou",
+      "g": "universidade",
+      "op": [
+       "Universidade de Lisboa",
+       "Universidade do Porto",
+       "Universidade Lusíada (Lisboa)",
+       "Universidade Lusíada Norte (Porto)",
+       "Universidade de Coimbra",
+       "Outras instituições"
+      ],
+      "se": null
+     }
+    ]
+   },
+   {
+    "id": "estagio",
+    "titulo": "Estágio",
+    "nota": "Para quem está em estágio.",
+    "se": {
+     "inscricao": [
+      "Em estágio"
+     ]
+    },
+    "perguntas": [
+     {
+      "id": "est-regiao",
+      "tipo": "select",
+      "label": "Região da entidade de acolhimento",
+      "g": "est-regiao",
+      "op": [
+       "Norte",
+       "Centro",
+       "Área Metropolitana de Lisboa",
+       "Alentejo",
+       "Algarve",
+       "Madeira",
+       "Açores"
+      ],
+      "se": null
+     },
+     {
+      "id": "est-concelho",
+      "tipo": "text",
+      "label": "Concelho da entidade de acolhimento",
+      "se": null,
+      "ph": "Por exemplo, Lisboa"
+     },
+     {
+      "id": "est-12m",
+      "tipo": "radio",
+      "label": "Terminou ou conta terminar o estágio em 12 meses?",
+      "g": null,
+      "op": [
+       "Sim",
+       "Não"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "est-entidades",
+      "tipo": "radio",
+      "label": "Em quantas entidades fez ou faz o estágio?",
+      "g": null,
+      "op": [
+       "Uma",
+       "Duas",
+       "Três ou mais"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "est-plano",
+      "tipo": "radio",
+      "label": "O estágio corresponde ao plano apresentado?",
+      "g": null,
+      "op": [
+       "Sim",
+       "Não"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "est-dimensao",
+      "tipo": "radio",
+      "label": "Trabalhadores da entidade de acolhimento",
+      "g": "est-dimensao",
+      "op": [
+       "1–2",
+       "3–5",
+       "6–10",
+       "11–20",
+       "21 ou mais"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "est-satisf",
+      "tipo": "escala",
+      "label": "Satisfação com a experiência em cada acto, de 0 (muito insatisfeito) a 10 (muito satisfeito)",
+      "g": "est-satisf",
+      "linhas": [
+       "Elaboração ou apreciação de estudos",
+       "Projectos e planos de arquitectura",
+       "Intervenção em estudos, projectos e planos",
+       "Consultoria",
+       "Gestão de obra",
+       "Fiscalização",
+       "Direcção de obra",
+       "Planificação, coordenação e avaliação da edificação",
+       "Outras actividades ligadas à profissão",
+       "Actividades não ligadas à profissão"
+      ],
+      "op": [
+       "0",
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "10"
+      ],
+      "se": null
+     },
+     {
+      "id": "est-deont",
+      "tipo": "select",
+      "label": "Importância da formação em Estatuto e Deontologia, de 0 a 10",
+      "g": "est-deont",
+      "op": [
+       "0",
+       "1",
+       "2",
+       "3",
+       "4",
+       "5",
+       "6",
+       "7",
+       "8",
+       "9",
+       "10"
+      ],
+      "se": null
+     },
+     {
+      "id": "est-cursos",
+      "tipo": "check",
+      "label": "Cursos de formação profissional que frequentou",
+      "g": "est-cursos",
+      "op": [
+       "Estatuto e Deontologia",
+       "Instrução de Processo",
+       "Honorários em Arquitectura",
+       "Coordenação de Projecto",
+       "Direcção de Obra",
+       "Eficiência Energética",
+       "Direito da Propriedade e RJUE",
+       "Direcção e Fiscalização de Obra",
+       "Metodologias no Projecto de Execução",
+       "Reabilitação de Estruturas de Madeira",
+       "Reabilitação Estrutural do Edificado Antigo Corrente",
+       "Reabilitação de Estruturas de Alvenaria"
+      ],
+      "se": null
+     }
+    ]
+   },
+   {
+    "id": "exercicio",
+    "titulo": "Exercício da profissão",
+    "nota": "Para quem tem inscrição efectiva.",
+    "se": {
+     "inscricao": [
+      "Efectiva"
+     ]
+    },
+    "perguntas": [
+     {
+      "id": "anos",
+      "tipo": "radio",
+      "label": "Anos de experiência na arquitectura, depois da inscrição",
+      "g": "anos",
+      "op": [
+       "1–5",
+       "6–10",
+       "11–15",
+       "16–20",
+       "21–25",
+       "26 ou mais"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "exerce",
+      "tipo": "radio",
+      "label": "Exerce arquitectura na actividade profissional actual?",
+      "g": "exerce",
+      "op": [
+       "Sim",
+       "Não"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "tempo-prof",
+      "tipo": "radio",
+      "label": "Parte do tempo de trabalho dedicada a actividades da profissão",
+      "g": "tempo-prof",
+      "op": [
+       "Menos de 10%",
+       "11–50%",
+       "51–89%",
+       "90–99%",
+       "100%"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "regiao",
+      "tipo": "select",
+      "label": "Região do local de trabalho",
+      "g": "regiao",
+      "op": [
+       "Norte",
+       "Centro",
+       "Lisboa e Vale do Tejo",
+       "Alentejo",
+       "Algarve",
+       "Madeira",
+       "Açores",
+       "Fora do país"
+      ],
+      "se": null
+     },
+     {
+      "id": "concelho",
+      "tipo": "text",
+      "label": "Concelho do local de trabalho (onde passa mais tempo)",
+      "se": null,
+      "ph": "Por exemplo, Porto"
+     },
+     {
+      "id": "formas",
+      "tipo": "check",
+      "label": "Formas de exercício da profissão (pode escolher várias)",
+      "g": "formas",
+      "op": [
+       "Funcionário público",
+       "Trabalhador contratado pela administração pública",
+       "Sócio, administrador ou gerente de sociedade",
+       "Profissional independente ou empresário em nome individual",
+       "Trabalhador por conta de outrem (sector privado)",
+       "Trabalhador por conta de outrem (sector social)",
+       "Prestador de serviços a outros arquitectos ou sociedades de arquitectura",
+       "Ensino de arquitectura",
+       "Investigação",
+       "Outra situação"
+      ],
+      "se": null
+     },
+     {
+      "id": "forma",
+      "tipo": "select",
+      "label": "Forma principal de exercício",
+      "g": "forma",
+      "op": [
+       "Funcionário público",
+       "Trabalhador contratado pela administração pública",
+       "Sócio, administrador ou gerente de sociedade",
+       "Profissional independente ou empresário em nome individual",
+       "Trabalhador por conta de outrem (sector privado)",
+       "Trabalhador por conta de outrem (sector social)",
+       "Prestador de serviços a outros arquitectos ou sociedades de arquitectura",
+       "Ensino de arquitectura",
+       "Investigação",
+       "Outra situação"
+      ],
+      "se": null
+     }
+    ]
+   },
+   {
+    "id": "condicoes",
+    "titulo": "Condições de trabalho",
+    "nota": "As perguntas seguem a forma principal de exercício indicada acima.",
+    "se": {
+     "inscricao": [
+      "Efectiva"
+     ]
+    },
+    "perguntas": [
+     {
+      "id": "fp-admin",
+      "tipo": "radio",
+      "label": "Administração onde trabalha",
+      "g": "fp-admin",
+      "op": [
+       "Central",
+       "Regional",
+       "Local",
+       "Outra"
+      ],
+      "se": {
+       "forma": [
+        "Funcionário público",
+        "Trabalhador contratado pela administração pública"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "fp-contrato",
+      "tipo": "select",
+      "label": "Tipo de contrato",
+      "g": "fp-contrato",
+      "op": [
+       "Prestação de serviços (recibos verdes)",
+       "Contrato a termo certo",
+       "Contrato a termo incerto",
+       "Contrato sem termo",
+       "Outra situação"
+      ],
+      "se": {
+       "forma": [
+        "Funcionário público",
+        "Trabalhador contratado pela administração pública"
+       ]
+      }
+     },
+     {
+      "id": "fp-categoria",
+      "tipo": "radio",
+      "label": "Categoria profissional",
+      "g": "fp-categoria",
+      "op": [
+       "Chefe de serviço",
+       "Técnico superior",
+       "Outra situação"
+      ],
+      "se": {
+       "forma": [
+        "Funcionário público",
+        "Trabalhador contratado pela administração pública"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "fp-narq",
+      "tipo": "radio",
+      "label": "Arquitectos no serviço ou unidade",
+      "g": "fp-narq",
+      "op": [
+       "1–2",
+       "3–5",
+       "6–10",
+       "11–20",
+       "Mais de 20"
+      ],
+      "se": {
+       "forma": [
+        "Funcionário público",
+        "Trabalhador contratado pela administração pública"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "tco-sector",
+      "tipo": "radio",
+      "label": "Sector da empresa onde trabalha",
+      "g": "tco-sector",
+      "op": [
+       "Construção",
+       "Serviços de arquitectura",
+       "Outras actividades"
+      ],
+      "se": {
+       "forma": [
+        "Trabalhador por conta de outrem (sector privado)",
+        "Trabalhador por conta de outrem (sector social)"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "tco-contrato",
+      "tipo": "select",
+      "label": "Tipo de contrato",
+      "g": "tco-contrato",
+      "op": [
+       "Prestação de serviços (recibos verdes)",
+       "Contrato a termo certo",
+       "Contrato a termo incerto",
+       "Contrato sem termo",
+       "Outra situação"
+      ],
+      "se": {
+       "forma": [
+        "Trabalhador por conta de outrem (sector privado)",
+        "Trabalhador por conta de outrem (sector social)"
+       ]
+      }
+     },
+     {
+      "id": "tco-sede",
+      "tipo": "radio",
+      "label": "Sede da empresa",
+      "g": "tco-sede",
+      "op": [
+       "Portugal",
+       "Outro país"
+      ],
+      "se": {
+       "forma": [
+        "Trabalhador por conta de outrem (sector privado)",
+        "Trabalhador por conta de outrem (sector social)"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "tco-narq",
+      "tipo": "radio",
+      "label": "Arquitectos no serviço ou unidade",
+      "g": "tco-narq",
+      "op": [
+       "1–2",
+       "3–5",
+       "6–10",
+       "11–20",
+       "Mais de 20"
+      ],
+      "se": {
+       "forma": [
+        "Trabalhador por conta de outrem (sector privado)",
+        "Trabalhador por conta de outrem (sector social)"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "soc-volume",
+      "tipo": "select",
+      "label": "Volume de negócios anual da sociedade ou empresa",
+      "g": "soc-volume",
+      "op": [
+       "Menos de 2 mil €",
+       "2–5 mil €",
+       "5–15 mil €",
+       "15–25 mil €",
+       "25–50 mil €",
+       "50–100 mil €",
+       "100–250 mil €",
+       "250–500 mil €",
+       "Mais de 500 mil €"
+      ],
+      "se": {
+       "forma": [
+        "Sócio, administrador ou gerente de sociedade"
+       ]
+      }
+     },
+     {
+      "id": "soc-sede",
+      "tipo": "radio",
+      "label": "Sede da empresa",
+      "g": "soc-sede",
+      "op": [
+       "Portugal",
+       "Outro país"
+      ],
+      "se": {
+       "forma": [
+        "Sócio, administrador ou gerente de sociedade"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "soc-lugar",
+      "tipo": "radio",
+      "label": "Lugar onde exerce a actividade",
+      "g": "soc-lugar",
+      "op": [
+       "Casa",
+       "Atelier",
+       "Atelier partilhado",
+       "Outro local"
+      ],
+      "se": {
+       "forma": [
+        "Sócio, administrador ou gerente de sociedade"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "soc-parceria",
+      "tipo": "radio",
+      "label": "Trabalha em parceria com outros arquitectos?",
+      "g": "soc-parceria",
+      "op": [
+       "Nunca",
+       "Poucas vezes",
+       "Muitas vezes",
+       "Sempre"
+      ],
+      "se": {
+       "forma": [
+        "Sócio, administrador ou gerente de sociedade"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "soc-narq",
+      "tipo": "radio",
+      "label": "Arquitectos na empresa ou sociedade",
+      "g": "soc-narq",
+      "op": [
+       "1",
+       "2",
+       "3–5",
+       "6–10",
+       "11–20"
+      ],
+      "se": {
+       "forma": [
+        "Sócio, administrador ou gerente de sociedade"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "ind-lugar",
+      "tipo": "radio",
+      "label": "Lugar onde exerce a actividade",
+      "g": "ind-lugar",
+      "op": [
+       "Em casa",
+       "Em atelier próprio",
+       "Atelier partilhado",
+       "Outro local"
+      ],
+      "se": {
+       "forma": [
+        "Profissional independente ou empresário em nome individual"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "ind-parceria",
+      "tipo": "radio",
+      "label": "Trabalha em parceria com outros arquitectos?",
+      "g": "ind-parceria",
+      "op": [
+       "Nunca",
+       "Poucas vezes",
+       "Muitas vezes",
+       "Sempre"
+      ],
+      "se": {
+       "forma": [
+        "Profissional independente ou empresário em nome individual"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "pre-local",
+      "tipo": "radio",
+      "label": "Onde presta os serviços",
+      "g": "pre-local",
+      "op": [
+       "Sempre em local próprio",
+       "Quase sempre em local próprio",
+       "Quase sempre no local de quem contrata",
+       "Sempre no local de quem contrata"
+      ],
+      "se": {
+       "forma": [
+        "Prestador de serviços a outros arquitectos ou sociedades de arquitectura"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "pre-horario",
+      "tipo": "radio",
+      "label": "Quem define o horário de trabalho",
+      "g": "pre-horario",
+      "op": [
+       "Sempre ou quase sempre o próprio",
+       "A maior parte das vezes o próprio",
+       "A maior parte das vezes quem contrata",
+       "Sempre ou quase sempre quem contrata"
+      ],
+      "se": {
+       "forma": [
+        "Prestador de serviços a outros arquitectos ou sociedades de arquitectura"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "pre-tipo",
+      "tipo": "radio",
+      "label": "Tipo de serviço",
+      "g": "pre-tipo",
+      "op": [
+       "Alocado a projectos específicos",
+       "Não definido"
+      ],
+      "se": {
+       "forma": [
+        "Prestador de serviços a outros arquitectos ou sociedades de arquitectura"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "pre-meios",
+      "tipo": "radio",
+      "label": "Meios informáticos",
+      "g": "pre-meios",
+      "op": [
+       "Sempre ou quase sempre próprios",
+       "A maior parte das vezes próprios",
+       "A maior parte das vezes de quem contrata",
+       "Sempre ou quase sempre de quem contrata"
+      ],
+      "se": {
+       "forma": [
+        "Prestador de serviços a outros arquitectos ou sociedades de arquitectura"
+       ]
+      },
+      "obr": false
+     }
+    ]
+   },
+   {
+    "id": "horario",
+    "titulo": "Horário de trabalho",
+    "nota": "",
+    "se": null,
+    "perguntas": [
+     {
+      "id": "cumpre",
+      "tipo": "radio",
+      "label": "Cumpre um horário de trabalho?",
+      "g": "cumpre",
+      "op": [
+       "Sim",
+       "Não"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "horas",
+      "tipo": "radio",
+      "label": "Horas de trabalho por semana",
+      "g": "horas",
+      "op": [
+       "Menos de 10 h",
+       "11–20 h",
+       "21–30 h",
+       "31–40 h",
+       "Mais de 40 h"
+      ],
+      "se": null,
+      "obr": false
+     }
+    ]
+   },
+   {
+    "id": "encomenda",
+    "titulo": "Encomenda nos últimos cinco anos",
+    "nota": "Para quem faz projecto. Pode deixar em branco o que não se aplica.",
+    "se": null,
+    "perguntas": [
+     {
+      "id": "clientes",
+      "tipo": "grid",
+      "label": "Parte do tempo dedicada a cada tipo de cliente",
+      "g": "clientes",
+      "linhas": [
+       "Administração pública central",
+       "Administração pública regional",
+       "Administração pública local",
+       "Empresas privadas",
+       "Sector social",
+       "Particulares"
+      ],
+      "op": [
+       "0%",
+       "1–10%",
+       "11–40%",
+       "41–60%",
+       "61–99%",
+       "100%"
+      ],
+      "se": null
+     },
+     {
+      "id": "trabalhos",
+      "tipo": "grid",
+      "label": "Parte do tempo dedicada a cada tipo de trabalho",
+      "g": "trabalhos",
+      "linhas": [
+       "Apreciação de estudos, planos e projectos",
+       "Obras novas",
+       "Reabilitação",
+       "Manutenção e conservação do edificado",
+       "Loteamento",
+       "Planeamento e urbanismo",
+       "Arranjos exteriores",
+       "Obras efémeras",
+       "Acompanhamento de obra",
+       "Mobiliário e interiores",
+       "Pedido de informação prévia",
+       "Consultoria pública",
+       "Consultoria privada",
+       "Legalizações",
+       "Avaliação imobiliária",
+       "Outras áreas"
+      ],
+      "op": [
+       "0%",
+       "1–10%",
+       "11–40%",
+       "41–60%",
+       "61–99%",
+       "100%"
+      ],
+      "se": null
+     },
+     {
+      "id": "programas",
+      "tipo": "check",
+      "label": "Programas que fez (pode escolher vários)",
+      "g": "programas",
+      "op": [
+       "Habitação",
+       "Indústria",
+       "Comércio",
+       "Serviços (escritórios, restauração)",
+       "Hotelaria e turismo",
+       "Obra pública",
+       "Espaço público",
+       "Planeamento urbano",
+       "Outros"
+      ],
+      "se": null
+     },
+     {
+      "id": "licenc",
+      "tipo": "radio",
+      "label": "Parte dos processos não sujeitos a licenciamento",
+      "g": "licenc",
+      "op": [
+       "0%",
+       "1–10%",
+       "11–40%",
+       "41–60%",
+       "61–99%",
+       "100%"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "valor-pub",
+      "tipo": "select",
+      "label": "Valor médio da obra pública",
+      "g": null,
+      "op": [
+       "Até 1 000 €",
+       "1 001–10 000 €",
+       "10 001–50 000 €",
+       "50 001–100 000 €",
+       "100 001–500 000 €",
+       "500 001 € –1 milhão",
+       "Mais de 1 milhão"
+      ],
+      "se": null
+     },
+     {
+      "id": "valor-priv",
+      "tipo": "select",
+      "label": "Valor médio da obra privada",
+      "g": null,
+      "op": [
+       "Até 1 000 €",
+       "1 001–10 000 €",
+       "10 001–50 000 €",
+       "50 001–100 000 €",
+       "100 001–500 000 €",
+       "500 001 € –1 milhão",
+       "Mais de 1 milhão"
+      ],
+      "se": null
+     },
+     {
+      "id": "valor-m2-pub",
+      "tipo": "select",
+      "label": "Valor médio por metro quadrado, obra pública",
+      "g": null,
+      "op": [
+       "Até 100 €",
+       "101–999 €",
+       "1 000 €",
+       "1 001–1 500 €",
+       "1 501–2 000 €",
+       "Mais de 2 000 €"
+      ],
+      "se": null
+     },
+     {
+      "id": "valor-m2-priv",
+      "tipo": "select",
+      "label": "Valor médio por metro quadrado, obra privada",
+      "g": null,
+      "op": [
+       "Até 100 €",
+       "101–999 €",
+       "1 000 €",
+       "1 001–1 500 €",
+       "1 501–2 000 €",
+       "Mais de 2 000 €"
+      ],
+      "se": null
+     },
+     {
+      "id": "servicos-regiao",
+      "tipo": "check",
+      "label": "Regiões onde se localizam os trabalhos (pode escolher várias)",
+      "g": "servicos-regiao",
+      "op": [
+       "Norte",
+       "Centro",
+       "Lisboa e Vale do Tejo",
+       "Alentejo",
+       "Algarve",
+       "Madeira",
+       "Açores",
+       "Fora do país"
+      ],
+      "se": null
+     },
+     {
+      "id": "ilhas",
+      "tipo": "check",
+      "label": "Ilhas dos Açores onde se localizam os trabalhos",
+      "g": "ilhas",
+      "op": [
+       "Corvo",
+       "Faial",
+       "Flores",
+       "Graciosa",
+       "Pico",
+       "Santa Maria",
+       "São Jorge",
+       "São Miguel",
+       "Terceira"
+      ],
+      "se": {
+       "servicos-regiao": [
+        "Açores"
+       ]
+      }
+     }
+    ]
+   },
+   {
+    "id": "concursos",
+    "titulo": "Concursos",
+    "nota": "",
+    "se": null,
+    "perguntas": [
+     {
+      "id": "conc-priv",
+      "tipo": "radio",
+      "label": "Costuma participar em concursos privados?",
+      "g": "conc-priv",
+      "op": [
+       "Sim",
+       "Não"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "conc-priv-n",
+      "tipo": "radio",
+      "label": "Em quantos participou?",
+      "g": "conc-priv-n",
+      "op": [
+       "1–2",
+       "3–5",
+       "6–10",
+       "11–20",
+       "Mais de 20"
+      ],
+      "se": {
+       "conc-priv": [
+        "Sim"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "conc-pub",
+      "tipo": "radio",
+      "label": "Participou em concursos públicos nos últimos dez anos?",
+      "g": "conc-pub",
+      "op": [
+       "Sim",
+       "Não"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "conc-pub-n",
+      "tipo": "radio",
+      "label": "Em quantos participou?",
+      "g": "conc-pub-n",
+      "op": [
+       "1–2",
+       "3–5",
+       "6–10",
+       "11–20",
+       "Mais de 20"
+      ],
+      "se": {
+       "conc-pub": [
+        "Sim"
+       ]
+      },
+      "obr": false
+     },
+     {
+      "id": "conc-motivos",
+      "tipo": "check",
+      "label": "Se não participa, porquê? (pode escolher vários)",
+      "g": null,
+      "op": [
+       "Falta de tempo",
+       "Falta de interesse",
+       "Incompatibilidade",
+       "Falta de recursos",
+       "Burocracia",
+       "Desconfiança nos processos",
+       "Não é política da empresa",
+       "Outro motivo"
+      ],
+      "se": null
+     }
+    ]
+   },
+   {
+    "id": "outras",
+    "titulo": "Divulgação e cargos públicos",
+    "nota": "",
+    "se": null,
+    "perguntas": [
+     {
+      "id": "divulgacao",
+      "tipo": "radio",
+      "label": "Exerce ou exerceu actividades de divulgação da arquitectura (conteúdos, exposições, publicações)?",
+      "g": "divulgacao",
+      "op": [
+       "Sim, exerço",
+       "Sim, exerci",
+       "Não"
+      ],
+      "se": null,
+      "obr": false
+     },
+     {
+      "id": "politico",
+      "tipo": "radio",
+      "label": "Exerce ou exerceu algum cargo de nomeação política?",
+      "g": "politico",
+      "op": [
+       "Sim, exerço",
+       "Sim, exerci",
+       "Não"
+      ],
+      "se": null,
+      "obr": false
+     }
+    ]
+   },
+   {
+    "id": "rendimento",
+    "titulo": "Rendimento",
+    "nota": "O total do rendimento líquido mensal, incluindo outras actividades.",
+    "se": null,
+    "perguntas": [
+     {
+      "id": "rend",
+      "tipo": "select",
+      "label": "Rendimento líquido mensal",
+      "g": null,
+      "op": [
+       "Sem rendimento",
+       "Até 850 €",
+       "851–1 000 €",
+       "1 001–1 200 €",
+       "1 201–1 500 €",
+       "1 501–2 000 €",
+       "2 001–2 400 €",
+       "Mais de 2 400 €"
+      ],
+      "se": null
+     },
+     {
+      "id": "rend-pct",
+      "tipo": "radio",
+      "label": "Parte do rendimento que vem da arquitectura",
+      "g": null,
+      "op": [
+       "Até 10%",
+       "11–40%",
+       "41–60%",
+       "61–99%",
+       "100%"
+      ],
+      "se": null,
+      "obr": false
+     }
+    ]
+   }
+  ]
+ },
+ "compara": {
+  "curso": "curso",
+  "idade": "idade",
+  "universidade": "universidade",
+  "est-regiao": "est-regiao",
+  "est-dimensao": "est-dimensao",
+  "est-deont": "est-deont",
+  "est-cursos": "est-cursos",
+  "est-satisf": "est-satisf",
+  "anos": "anos",
+  "exerce": "exerce",
+  "tempo-prof": "tempo-prof",
+  "regiao": "regiao",
+  "formas": "formas",
+  "forma": "forma",
+  "fp-admin": "fp-admin",
+  "fp-contrato": "fp-contrato",
+  "fp-categoria": "fp-categoria",
+  "fp-narq": "fp-narq",
+  "tco-sector": "tco-sector",
+  "tco-contrato": "tco-contrato",
+  "tco-sede": "tco-sede",
+  "tco-narq": "tco-narq",
+  "soc-volume": "soc-volume",
+  "soc-sede": "soc-sede",
+  "soc-lugar": "soc-lugar",
+  "soc-parceria": "soc-parceria",
+  "soc-narq": "soc-narq",
+  "ind-lugar": "ind-lugar",
+  "ind-parceria": "ind-parceria",
+  "pre-local": "pre-local",
+  "pre-horario": "pre-horario",
+  "pre-tipo": "pre-tipo",
+  "pre-meios": "pre-meios",
+  "cumpre": "cumpre",
+  "horas": "horas",
+  "clientes": "clientes",
+  "trabalhos": "trabalhos",
+  "programas": "programas",
+  "licenc": "licenc",
+  "valor": [
+   "valor-pub",
+   "valor-priv"
+  ],
+  "valor-m2": [
+   "valor-m2-pub",
+   "valor-m2-priv"
+  ],
+  "servicos-regiao": "servicos-regiao",
+  "ilhas": "ilhas",
+  "conc-priv": "conc-priv",
+  "conc-priv-n": "conc-priv-n",
+  "conc-pub": "conc-pub",
+  "conc-pub-n": "conc-pub-n",
+  "divulgacao": "divulgacao",
+  "politico": "politico",
+  "rend": "rend",
+  "rend-pct": "rend-pct"
+ }
+}
