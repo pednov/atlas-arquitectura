@@ -518,7 +518,19 @@ INST_SEC = {'norte': 'NORTE', 'centro': 'CENTRO', 'lvt': 'LVT', 'alentejo': 'ALT
 INST_FORA = (r'tomada de posse|tomou posse|\b[oó]rg[aã]os\b|elei[cç][oõ]|eleitora|assembleia|plen[aá]ri|\bquotas?\b|mandato|'
              r'conselho (?:diretivo|directivo|nacional|regional|fiscal|de disciplina)|\bmembros\b|\bsec[cç][aã]o regional|delega[cç][aã]o|n[uú]cleo|'
              r'cancelamento|\badiad|\bcomunicado|aviso|parecer|regulamento interno|or[cç]amento|relat[oó]rio (?:e contas|de atividades|final de mandato)|'
-             r'\bestatuto|\bdeontolog|\bseguro\b|forma[cç][aã]o cont[ií]nua|\bcurso\b|\bwebinar|horário|encerramento dos servi[cç]os|\bbolsa de emprego')
+             r'\bestatuto|\bdeontolog|\bseguro\b|forma[cç][aã]o cont[ií]nua|\bcurso\b|\bwebinar|horário|encerra|\bsede\b|\bbolsa de emprego|'
+             r'presidente|cessante|institui[cç][aã]o|mensagem|mensadem|bastonári|homenagem|condol[eê]ncias|faleceu|protocolo')
+INST_NOMES = ['Açores', 'Madeira', 'Algarve', 'Alentejo', 'Portugal', 'Região Autónoma', 'Lisboa e Vale do Tejo']
+def titulo_inst(t):
+    """Título limpo: sem marcas de ênfase (*texto*) e, se vier em maiúsculas, em frase, com os lugares em maiúscula."""
+    t = re.sub(r'\s{2,}', ' ', re.sub(r'[*_]{1,2}', '', t)).strip(' -–')
+    letras = re.sub(r'[^A-Za-zÀ-ÿ]', '', t)
+    if letras and (t.isupper() or sum(c.islower() for c in letras) == 0 or (t[:1].islower())):
+        t = t.lower()
+        t = t[:1].upper() + t[1:]
+        for nome in list(CONC) + INST_NOMES:
+            if len(nome) > 3: t = re.sub(r'(?<![\w])' + re.escape(nome.lower()) + r'(?![\w])', nome, t)
+    return t
 def institucional(existentes):
     urls = {n['u'].rstrip('/') for n in existentes}
     novos = []
@@ -538,11 +550,7 @@ def institucional(existentes):
             sin0 = html.unescape(re.sub(r'<[^>]+>', ' ', str(i.get('sinopse') or ''))).strip()
             if not t0 or excluir(t0, sin0) or re.search(INST_FORA, t0 + ' ' + sin0, flags=re.I):
                 continue
-            t, sin = limpar(t0), limpar(sin0)
-            if t.isupper():                              # títulos em maiúsculas passam a frase, com os concelhos em maiúscula
-                t = t.capitalize()
-                for nome in CONC:
-                    if len(nome) > 3: t = re.sub(r'(?<![\w])' + re.escape(nome.lower()) + r'(?![\w])', nome, t)
+            t, sin = titulo_inst(limpar(t0)), limpar(sin0)
             d = str(i.get('data_publicacao') or i.get('publishedAt') or '')[:10]
             if not re.match(r'\d{4}-\d{2}-\d{2}$', d): continue
             local, sec = regiao_de(t, sin)
@@ -559,7 +567,8 @@ def institucional(existentes):
                     if not tem_pessoas(src): img = src
             except Exception:
                 pass
-            n = {'d': d, 'f': 'inst', 'tema': tema_de(t + ' ' + sin), 't': t, 'm': local or est or '', 'u': u, 'sec': sec, 'auto': True}
+            tema = tema_de(t + ' ' + sin)
+            n = {'d': d, 'f': 'inst', 'tema': 'Actualidade' if tema == 'Obra' else tema, 't': t, 'm': local or est or '', 'u': u, 'sec': sec, 'auto': True}
             if img: n['img'] = img
             log('  nova notícia (institucional):', d, t, '| imagem' if img else '| sem imagem')
             novos.append(n)
@@ -644,6 +653,11 @@ def main():
         if n['d'] < limite_n or n['u'].rstrip('/') in bloq: continue
         if n.get('auto') and excluir(n['t'], n.get('m', '')):   # regras novas valem também para o que a recolha já trouxe
             log('  retirada:', n['t']); continue
+        if n['f'] == 'inst':                                 # as regras das notícias institucionais valem também para as já guardadas
+            n['t'] = titulo_inst(n['t'])
+            if n.get('tema') == 'Obra': n['tema'] = 'Actualidade'
+            if re.search(INST_FORA, n['t'], flags=re.I):
+                log('  retirada (institucional):', n['t']); continue
         if n['f'] == 'eco' and n.get('auto'):
             if not eco_ok(n['t']):
                 log('  retirada (ECO):', n['t']); continue
