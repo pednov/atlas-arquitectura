@@ -3,9 +3,11 @@
 
 Lê as ofertas de emprego para arquitectos publicadas na bolsa de emprego pública que o Pedro indicou
 (a página com o mapa das ofertas, cinco por página) e guarda em data/emprego.json, para cada oferta em vigor,
-o título, a entidade, o lugar, a região, as coordenadas, o prazo de candidatura, um resumo da oferta,
-das funções e dos requisitos, o sítio da entidade e a ligação à oferta original, onde se faz a candidatura.
-Não guarda emails, telefones, números de contribuinte nem números de inscrição.
+o anúncio completo, que o ATLAS mostra numa janela própria sem ligar ao sítio de origem (pedido do Pedro,
+19 Nov. 2026, 01:35, «tal como nos fotógrafos»): título, entidade, lugar, região, coordenadas, prazo de candidatura,
+resumo, descrição, funções e requisitos, e os dados de candidatura que a entidade publicou para esse fim
+(email para envio do currículo, contacto para entrevista, sítio da entidade).
+Não guarda o telefone, o número de contribuinte nem o número de inscrição de quem publica a oferta.
 
 As ofertas com o prazo de candidatura ultrapassado ficam de fora. Se a recolha falhar ou vier incompleta,
 data/emprego.json fica como estava.
@@ -57,6 +59,31 @@ def texto(h, n):
     if len(s) > n: s = re.sub(r'\s+\S*$', '', s[:n]).rstrip(' ,;:-') + '…'
     return s
 
+def texto_longo(h, n=4000):
+    """HTML da fonte em texto com parágrafos (linha em branco) e listas (linhas a abrir com «• »)."""
+    s = str(h or '')
+    s = re.sub(r'<br\s*/?>', '\n', s, flags=re.I)
+    s = re.sub(r'<li[^>]*>', '\n• ', s, flags=re.I)
+    s = re.sub(r'</li>', '', s, flags=re.I)
+    s = re.sub(r'</(?:p|div|h\d|ul|ol|blockquote)>', '\n\n', s, flags=re.I)
+    s = html.unescape(re.sub(r'<[^>]+>', '', s)).replace('\xa0', ' ')
+    linhas = []
+    for l in s.split('\n'):
+        l = re.sub(r'[ \t]+', ' ', l).strip()
+        l = re.sub(r'^(?:[-–•·*]|\d+[.)])\s+', '• ', l)
+        if l.startswith('• '): l = '• ' + sem_ordem(l[2:])
+        elif l: l = sem_ordem(l)
+        linhas.append(l)
+    s = re.sub(r'\n{3,}', '\n\n', '\n'.join(linhas)).strip()
+    s = re.sub(r'(?<!\n)\n(?!\n)(?!• )', ' ', s)               # quebras soltas no meio de um parágrafo
+    s = re.sub(r'(?<=[^\n])\n(?=• )', '\n', s)
+    if len(s) > n: s = re.sub(r'\s+\S*$', '', s[:n]).rstrip(' ,;:-') + '…'
+    return s
+
+def email_ok(e):
+    e = (e or '').strip().strip('.;,')
+    return e if re.fullmatch(r'[\w.+-]+@[\w-]+(?:\.[\w-]+)+', e or '') else ''
+
 def url_ok(u):
     u = (u or '').strip()
     if not u: return ''
@@ -77,8 +104,12 @@ def oferta(i, geo):
          'loc': html.unescape(str(i.get('local') or '')).strip(), 'sec': sec_de(i) or geo.get(i['id'], [None, None, None])[2],
          'lat': round(float(lat), 5) if lat is not None else None, 'lng': round(float(lng), 5) if lng is not None else None,
          'prazo': (i.get('prazo_envio') or '')[:10], 'pub': (i.get('publishedAt') or i.get('createdAt') or '')[:10],
-         'resumo': texto(i.get('resumo_oferta'), 420), 'funcoes': texto(i.get('funcoes'), 240), 'requisitos': texto(i.get('requisitos_minimos'), 280),
-         'site': url_ok(i.get('website')), 'u': BASE + '/bolsa_emprego/oferta/' + slug if slug else LISTA.format(p=1)}
+         'resumo': texto(i.get('resumo_oferta'), 420), 'resumo_txt': texto_longo(i.get('resumo_oferta')),
+         'descricao': texto_longo(i.get('descricao')), 'funcoes': texto_longo(i.get('funcoes')), 'requisitos': texto_longo(i.get('requisitos_minimos')),
+         'email': email_ok(i.get('email_para_envio_cv')) or email_ok(i.get('email')),
+         'entrevista': texto(i.get('contacto_entrevista'), 300), 'site': url_ok(i.get('website'))}
+    if o['descricao'] and o['descricao'] == o['resumo_txt']: o['descricao'] = ''
+    if o['entrevista'] and re.sub(r'\W', '', o['entrevista'].lower()) in (re.sub(r'\W', '', o['email']), re.sub(r'\W', '', o['site'].lower())): o['entrevista'] = ''
     return o
 
 def recolher():
@@ -119,7 +150,7 @@ def main():
     ofertas.sort(key=lambda o: (o['pub'], o['id']), reverse=True)
     sem = [o['id'] for o in ofertas if not o['sec']]
     if sem: log('  sem região:', sem)
-    novo = {'actualizado': HOJE, 'fonte': {'nome': 'Bolsa de emprego', 'url': LISTA.format(p=1)}, 'total_fonte': total, 'ofertas': ofertas}
+    novo = {'actualizado': HOJE, 'v': 2, 'total_fonte': total, 'ofertas': ofertas}
     if antes and {k: v for k, v in antes.items() if k != 'actualizado'} == {k: v for k, v in novo.items() if k != 'actualizado'}:
         log('Bolsa de emprego: sem alterações'); return fim()
     FICH.write_text(json.dumps(novo, ensure_ascii=False, indent=1) + '\n', encoding='utf-8')
