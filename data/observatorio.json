@@ -1549,7 +1549,7 @@
  ],
  "questionario": {
   "form": "observatorio",
-  "versao": 1,
+  "versao": 2,
   "seccoes": [
    {
     "id": "perfil",
@@ -2362,7 +2362,15 @@
        "100%"
       ],
       "se": null
-     },
+     }
+    ]
+   },
+   {
+    "id": "obras",
+    "titulo": "Obras e trabalhos nos últimos cinco anos",
+    "nota": "Para quem faz projecto. Pode deixar em branco o que não se aplica.",
+    "se": null,
+    "perguntas": [
      {
       "id": "programas",
       "tipo": "check",
