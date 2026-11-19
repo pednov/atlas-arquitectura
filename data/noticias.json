@@ -38,6 +38,71 @@
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o negócio imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura, a urbanismo ou à vida nas cidades.",
  "noticias": [
   {
+   "d": "2026-11-19",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "Edifício de imagiologia do Hospital José Joaquim Fernandes vence Prémio Concreta Under 40",
+   "m": "",
+   "u": "https://construir.pt/2026/11/19/edificio-de-imagiologia-do-hospital-jose-joaquim-fernandes-vence-premio-concreta-under-40",
+   "sec": "NAC",
+   "auto": true
+  },
+  {
+   "d": "2026-11-19",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Lei dos solos. Em Oeiras e Loures quer-se menos terreno agrícola para aumentar habitação",
+   "m": "Oeiras",
+   "u": "https://eco.sapo.pt/2026/11/19/lei-dos-solos-em-oeiras-e-loures-quer-se-menos-terreno-agricola-para-aumentar-habitacao",
+   "sec": "LVT",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2025/03/cropped-cropped-cropped-oeiras-habitacao15-2.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-19",
+   "f": "arquitecturaviva",
+   "tema": "Prémio",
+   "t": "Premio Ambasz–MoMA",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/premio-ambaszmoma",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84280/av_imagen.jpeg?h=ec2820b8"
+  },
+  {
+   "d": "2026-11-19",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Fictional Project designs home in Kerala to feel \"one with the landscape\"",
+   "m": "Índia",
+   "u": "https://www.dezeen.com/2026/11/19/fictional-project-interstitial-living",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/fictional-project-interstitial-living-home-kerala-sq_dezeen_2364_col_1-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-19",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "Shigeru Ban unveils proposal for tent-like church in Rome",
+   "m": "Itália",
+   "u": "https://www.dezeen.com/2026/11/19/shigeru-ban-san-vincenzo-de-paoli-church-parish-complex",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/san-vincenzo-de-paoli-church-parish-complex-shigeru-ban-vittorio-petrucci-architecture-cultural-rome-italy_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-19",
+   "f": "dezeen",
+   "tema": "Património",
+   "t": "Waugh Thistleton Architects set to transform derelict bathing pavilion into Tracey Emin-backed studios and sauna",
+   "m": "Inglaterra",
+   "u": "https://www.dezeen.com/2026/11/19/westbrook-pavilion-tracey-emin-waugh-thistleton",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/westbrook-pavilion-margate-tracey-emin-waugh-thistleton-2_dezeen_2364_sq_0-1024x1024.jpg"
+  },
+  {
    "d": "2026-11-18",
    "f": "eco",
    "tema": "Habitação",
@@ -372,17 +437,6 @@
   },
   {
    "d": "2026-11-14",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "Manifestação pela habitação sai hoje à rua em 32 cidades",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/14/manifestacao-pela-habitacao-sai-hoje-a-rua-em-32-cidades",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2024/10/cropped-pavol-duracka-mu01df6uzeo-unsplash-2.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-14",
    "f": "dezeen",
    "tema": "Obra",
    "t": "Japanese sauna by Daichi Inc makes \"people feel as though they are dissolving into the forest\"",
@@ -437,16 +491,6 @@
    "img": "https://static-2026.dezeen.com/uploads/2026/11/big-refugee-city-uganda-sq_dezeen_2364_col_0-1024x1024.jpg"
   },
   {
-   "d": "2026-11-13",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "Studio Octopi revives art deco pavilion and lido on Scottish coast",
-   "m": "Escócia",
-   "u": "https://www.dezeen.com/2026/11/13/tarlair-outdoor-pool-pavilion-studio-octopi-andrew-doolan-award",
-   "sec": "INT",
-   "auto": true
-  },
-  {
    "d": "2026-11-12",
    "f": "construir",
    "tema": "Instituições",
@@ -477,28 +521,6 @@
    "sec": "LVT",
    "auto": true,
    "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/11/fimdapaciencia-300x200.jpg"
-  },
-  {
-   "d": "2026-11-12",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "Crosslam completes Brazil's tallest mass-timber tower",
-   "m": "Brasil",
-   "u": "https://www.dezeen.com/2026/11/12/brazil-tallest-timber-tower-crosslam-sao-paulo",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/crosslam-aurora-275-timber-apartment-building-brazil_dezeen_2364_sq-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-12",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "EMBT shelters Naples metro station beneath \"natural and welcoming\" vaulted timber roof",
-   "m": "Itália",
-   "u": "https://www.dezeen.com/2026/11/12/embt-naples-underground-central-station",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/naples-underground-central-station-embt-architecture-infrastructure-timber-glulam_dezeen_2364_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-11",
@@ -1129,17 +1151,6 @@
    "u": "https://arquitecturaviva.com/articulos/cesar-ortiz-echague-1927-2026",
    "sec": "INT",
    "auto": true
-  },
-  {
-   "d": "2026-09-25",
-   "f": "arquitecturaviva",
-   "tema": "Exposição",
-   "t": "‘Pipilotti Rist. Ever is Over All’",
-   "m": "",
-   "u": "https://arquitecturaviva.com/articulos/pipilotti-rist-ever-is-over-all",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84080/av_imagen.webp?h=7e89b55d"
   },
   {
    "d": "2026-09-22",
