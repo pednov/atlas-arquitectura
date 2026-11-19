@@ -532,17 +532,6 @@
    "img": "https://arquitecturaviva.com/assets/uploads/articulos/84266/av_imagen.webp?h=287cadfb"
   },
   {
-   "d": "2026-11-10",
-   "f": "inst",
-   "tema": "Obra",
-   "t": "Sede nacional encerra ao público",
-   "m": "",
-   "u": "https://www.ordemdosarquitectos.org/noticias/noticia-279",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://ordemdosarquitectos.org/backend/uploads/small_site_20261110_88f8bf590d.jpg"
-  },
-  {
    "d": "2026-11-09",
    "f": "construir",
    "tema": "Património",
@@ -565,18 +554,8 @@
   {
    "d": "2026-11-09",
    "f": "inst",
-   "tema": "Obra",
-   "t": "Seis anos ao serviço da instituição, da arquitetura, dos arquitetos e dos açores, *mensadem do presidente cessante nuno costa*",
-   "m": "",
-   "u": "https://www.ordemdosarquitectos.org/noticias/srazo_031",
-   "sec": "ACORES",
-   "auto": true
-  },
-  {
-   "d": "2026-11-09",
-   "f": "inst",
-   "tema": "Obra",
-   "t": "*relatório sobre o exercício da* profissão de arquiteto(a) na região autónoma dos açores",
+   "tema": "Actualidade",
+   "t": "Relatório sobre o exercício da profissão de arquiteto(a) na Região Autónoma dos Açores",
    "m": "",
    "u": "https://www.ordemdosarquitectos.org/noticias/srazo_030",
    "sec": "ACORES",
@@ -872,7 +851,7 @@
   {
    "d": "2026-10-26",
    "f": "inst",
-   "tema": "Obra",
+   "tema": "Actualidade",
    "t": "Nova legislação com futuro impacto na atividade profissional dos arquitetos",
    "m": "",
    "u": "https://www.ordemdosarquitectos.org/noticias/Novalegislacao_quatroiniciativasGoverno",
