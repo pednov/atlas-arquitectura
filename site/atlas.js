@@ -153,14 +153,14 @@ function renderNoticias(d){
     const [yy, mo] = ym.split('-').map(Number);
     return `<section class="nmes" data-group="${esc(ym)}"><h2 class="nmonth">${MESF[mo - 1]} de ${yy}<span class="gn num"></span></h2><div class="nlist">${items.map(n => {
       const [y, mm, dd] = n.d.split('-').map(Number);
-      const f = fontes[n.f] || {nome: n.f};
+      const f = fontes[n.f] || {nome: ''};                /* notícias de fonte não listada (institucionais) não dizem de onde vêm (pedido do Pedro, 19 Nov. 2026) */
       const id = nsecId(n), s = nsecOf(id);
       /* fotografia pequena à direita, na altura do texto, para não aumentar o espaço de cada notícia (pedido do Pedro, 18 Nov. 2026) */
       const th = n.img ? `<a class="th" href="${esc(n.u)}" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="${esc(n.img)}" alt="" loading="lazy" decoding="async" referrerpolicy="no-referrer" onerror="var a=this.parentNode,e=a.parentNode;e.classList.remove('ci');a.remove()"></a>` : '';
       const q = fold([n.t, n.m, n.tema, f.nome, s.nome].join(' '));
       return `<article class="ni sc${th ? ' ci' : ''}" style="--c:${s.cor}" data-f="${esc(n.f)}" data-tema="${esc(n.tema)}" data-sec="${esc(id)}" data-q="${esc(q)}">
 <div class="dt"><b>${dd}</b>${MES[mm-1]}<span class="yr">${y}</span></div>
-<div><div class="tg"><span class="pill rg"><i></i>${esc(s.nome)}</span><span class="pill f-${esc(n.f)}">${esc(f.nome)}</span><span class="pill out">${esc(n.tema)}</span></div>
+<div><div class="tg"><span class="pill rg"><i></i>${esc(s.nome)}</span>${f.nome ? `<span class="pill f-${esc(n.f)}">${esc(f.nome)}</span>` : ''}<span class="pill out">${esc(n.tema)}</span></div>
 <h3><a href="${esc(n.u)}" target="_blank" rel="noopener">${esc(n.t)}</a></h3>
 ${n.m ? `<div class="m">${esc(n.m)}</div>` : ''}</div>${th}</article>`;
     }).join('')}</div></section>`;
@@ -210,7 +210,7 @@ function renderHome(c, n){
     const fontes = Object.fromEntries((n.fontes || []).map(f => [f.id, f]));
     const ns = (n.noticias || []).slice().sort((a,b) => b.d.localeCompare(a.d));
     mn.innerHTML = ns.slice(0,4).map(x => { const [, mm, dd] = x.d.split('-').map(Number);
-      return `<a href="${esc(x.u)}" target="_blank" rel="noopener"><span class="d">${dd}<small>${MES[mm-1]}</small></span><span><b>${esc(x.t)}</b><span>${esc((fontes[x.f] || {}).nome || '')}${x.m ? ' · ' + esc(x.m) : ''}</span></span></a>`; }).join('');
+      return `<a href="${esc(x.u)}" target="_blank" rel="noopener"><span class="d">${dd}<small>${MES[mm-1]}</small></span><span><b>${esc(x.t)}</b><span>${esc([(fontes[x.f] || {}).nome, x.m].filter(Boolean).join(' · '))}</span></span></a>`; }).join('');
     $$('[data-news-count]').forEach(e => e.textContent = ns.length);
   }
 }
