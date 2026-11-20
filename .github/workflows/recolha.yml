@@ -39,16 +39,11 @@ jobs:
       - name: Recolher as ofertas da bolsa de emprego
         run: python scripts/emprego.py
         continue-on-error: true
-      - name: Compilar as respostas ao questionário do Observatório (só com o segredo NETLIFY_TOKEN)
-        run: python scripts/observatorio.py
-        continue-on-error: true
-        env:
-          NETLIFY_TOKEN: ${{ secrets.NETLIFY_TOKEN }}
       - name: Gravar no repositório
         run: |
           git config user.name "atlas-recolha"
           git config user.email "atlas-recolha@users.noreply.github.com"
-          git add data ultima-recolha.txt
+          git add data ultima-recolha.txt   # as respostas do Observatório compilam-se à parte, em observatorio.yml
           git diff --cached --quiet || git commit -m "Recolha diária $(date -u +%F)"
           git pull --rebase --autostash || true      # se entretanto entrou outra alteração no repositório
           git push
