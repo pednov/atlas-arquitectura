@@ -2669,7 +2669,8 @@
      }
     ]
    }
-  ]
+  ],
+  "minimo": 5
  },
  "compara": {
   "curso": "curso",
