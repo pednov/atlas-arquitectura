@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-20",
+ "actualizado": "2026-11-21",
  "fontes": [
   {
    "id": "construir",
@@ -37,6 +37,28 @@
  ],
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o negócio imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura, a urbanismo ou à vida nas cidades.",
  "noticias": [
+  {
+   "d": "2026-11-21",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "ZHA completes “secular” Théâtre Royal de Rabat in Morocco",
+   "m": "Marrocos",
+   "u": "https://www.dezeen.com/2026/11/21/zha-theatre-royal-de-rabat-morroco",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/theatre-royal-de-rabat-zha-architecture-morocco-cultural_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-21",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Five buildings where the staircase is the facade",
+   "m": "",
+   "u": "https://www.dezeen.com/2026/11/21/exterior-staircases-facade",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/staircase-buildings-roundup_dezeen-squares_dezeen_2364_col_1-1024x1024.jpg"
+  },
   {
    "d": "2026-11-20",
    "f": "eco",
@@ -164,6 +186,28 @@
    "sec": "INT",
    "auto": true,
    "img": "https://static-2026.dezeen.com/uploads/2026/11/Nachwachsende-Stadt-big-thun-switzerland_dezeen_2364_col_sq1-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-20",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "Dar continuidade ao que já existe",
+   "m": "",
+   "u": "https://construir.pt/2026/11/20/dar-continuidade-ao-que-ja-existe",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://backoffice.construir.pt/app/uploads/2026/11/Monasterio-despues-1-300x170.jpg"
+  },
+  {
+   "d": "2026-11-20",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Atelier Manferdini uses digital glitches to shape tile-and-metal facade of Virginia power station",
+   "m": "EUA",
+   "u": "https://www.dezeen.com/2026/11/20/atelier-manferdini-virginia-power-station",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/manferdini-virginia-power-station-invisible_dezeen_2364_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-19",
@@ -479,39 +523,6 @@
    "sec": "INT",
    "auto": true,
    "img": "https://static-2026.dezeen.com/uploads/2026/09/DAICHI-inc.-DAICHI-silent-river-TREE-SAUNA_dezeen_2364_col_0-411x411.jpg"
-  },
-  {
-   "d": "2026-11-16",
-   "f": "dezeen",
-   "tema": "Actualidade",
-   "t": "Photos reveal scale of Trump’s White House ballroom, drawing criticism",
-   "m": "EUA",
-   "u": "https://www.dezeen.com/2026/11/16/white-house-ballroom-topping-out",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/white-house-ballroom-construction-november-2026_dezeen_2364_sq-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-16",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "Shisuo Design Office creates \"surreal\" rural house in China using salvaged steel",
-   "m": "China",
-   "u": "https://www.dezeen.com/2026/11/16/shisuo-design-office-jiang-deng-lu",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/jiang-deng-lu-shisuo-design-office-architecture-residential-china-houses-stainless-steel_dezeen_2364_sq-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-16",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "Eight highlights from this year's Sharjah Architecture Triennial",
-   "m": "Emirados Árabes Unidos",
-   "u": "https://www.dezeen.com/2026/11/16/sharjah-architecture-triennial-highlights",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/sharjah-architecture-triennial-2026-sq_dezeen_2364_col_0-1024x1024.jpg"
   },
   {
    "d": "2026-11-13",

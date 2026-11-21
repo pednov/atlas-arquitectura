@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-19",
+ "actualizado": "2026-11-21",
  "v": 2,
- "total_fonte": 78,
+ "total_fonte": 75,
  "ofertas": [
   {
    "id": 4781,
@@ -251,25 +251,6 @@
    "site": ""
   },
   {
-   "id": 4767,
-   "t": "Vaga para Arquiteto/a Sénior",
-   "ent": "Cannatà & Fernandes Arquitectos Lda.",
-   "loc": "Porto",
-   "sec": "NORTE",
-   "lat": 41.16535,
-   "lng": -8.62394,
-   "prazo": "2026-11-20",
-   "pub": "2026-11-11",
-   "resumo": "Arquiteta/o Sénior para iniciar funções em Janeiro/Fevereiro 2027. Informação completa em: https://www.cannatafernandes.com/pt/page/recrutamento/",
-   "resumo_txt": "Arquiteta/o Sénior para iniciar funções em Janeiro/Fevereiro 2027.\n\nInformação completa em: https://www.cannatafernandes.com/pt/page/recrutamento/",
-   "descricao": "A Cannatà & Fernandes procura Arquiteta/o Sénior para integrar a equipa.\n\nSerão aceites as candidaturas até às 23:59 de dia 20 de Novembro de 2026.",
-   "funcoes": "Arquiteta/o Sénior",
-   "requisitos": "Experiência mínima de 5 anos;\n\nDomínio de Autocad e Archicad;\n\nConhecimento da legislação portuguesa (RJUE, RGEU e PDMs);\n\nInformação completa no nosso site.",
-   "email": "work@cannatafernandes.com",
-   "entrevista": "228329172",
-   "site": "https://www.cannatafernandes.com/pt/page/recrutamento/"
-  },
-  {
    "id": 4766,
    "t": "Nocos | Vaga para Arquitecto/a",
    "ent": "Nocos lda",
@@ -401,25 +382,6 @@
    "email": "geral@sousaazaruja-arq.com",
    "entrevista": "965254333",
    "site": ""
-  },
-  {
-   "id": 4758,
-   "t": "Bernardes Arquitetura | Vaga para Estágio IEFP",
-   "ent": "Bernardes Arquitetura",
-   "loc": "Lisboa",
-   "sec": "LVT",
-   "lat": 38.71909,
-   "lng": -9.15375,
-   "prazo": "2026-11-20",
-   "pub": "2026-11-03",
-   "resumo": "O/A candidato/a deverá ser elegível para estágio IEFP. Valoriza-se conhecimentos em Archicad, PS e InDesign.",
-   "resumo_txt": "O/A candidato/a deverá ser elegível para estágio IEFP. Valoriza-se conhecimentos em Archicad, PS e InDesign.",
-   "descricao": "A Bernardes Arquitetura está a recrutar um/a estagiário/a para integrar a equipa de arquitetura e/ou interiores, na nossa sede em Lisboa, em formato presencial.",
-   "funcoes": "Acompanhamento das equipas de arquitetura e interiores no desenvolvimento de projetos em todas as suas fases.",
-   "requisitos": "Formação em Mestrado Integrado em Arquitetura.",
-   "email": "ines@bernardesarq.com.br",
-   "entrevista": "Inês Reis ou Vera Cantante",
-   "site": "https://www.bernardesarq.com.br/"
   },
   {
    "id": 4757,
@@ -724,25 +686,6 @@
    "email": "rh@hugocorreiaarq.pt",
    "entrevista": "+351919600922",
    "site": "https://www.facebook.com/arquisquare.hugocorreia/?locale=pt_PT"
-  },
-  {
-   "id": 4740,
-   "t": "Arquiteto/a Estagiário/a",
-   "ent": "Arquibotelho",
-   "loc": "S Mamede de Infesta",
-   "sec": "NORTE",
-   "lat": 41.19546,
-   "lng": -8.60048,
-   "prazo": "2026-11-20",
-   "pub": "2026-10-27",
-   "resumo": "A Arquibotelho, abriu vaga para arquiteto(a) estagiário(a). Sediada em Matosinhos, encontra-se em fase de expansão e pretende reforçar a sua equipa multidisciplinar. Perfil Pretendido: Procuramos um estagiário motivado, com forte sentido de responsabilidade, rigor técnico e excelente capacidade de comunicação e trabalho em equipa.",
-   "resumo_txt": "A Arquibotelho, abriu vaga para arquiteto(a) estagiário(a).\n\nSediada em Matosinhos, encontra-se em fase de expansão e pretende reforçar a sua equipa multidisciplinar.\n\nPerfil Pretendido: Procuramos um estagiário motivado, com forte sentido de responsabilidade, rigor técnico e excelente capacidade de comunicação e trabalho em equipa.",
-   "descricao": "Apoio no desenvolvimento de projetos de arquitetura em todas as suas fases (do Estudo Prévio à Execução);\n\nPreparação de processos de Licenciamento e Comunicações Prévias;\n\nElaboração de peças desenhadas e escritas;\n\nApoio na instrução de processos camarários.\n\nOportunidade de contrato no fim do estágio, com remuneração de acordo com a capacidade e competência demonstrada.",
-   "funcoes": "Arquitetura",
-   "requisitos": "Formação Superior em Arquitetura;\n\nDomínio de AutoCAD (2D) e ferramentas de Office;\n\nElegibilidade para realização de Estágio Profissional de acesso à profissão;\n\nConhecimentos de modelação 3D e renderização (valorizado).",
-   "email": "filipemagalhaes@arquibotelho.com",
-   "entrevista": "965005419",
-   "site": ""
   },
   {
    "id": 4734,
