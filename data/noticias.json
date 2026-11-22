@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-21",
+ "actualizado": "2026-11-22",
  "fontes": [
   {
    "id": "construir",
@@ -38,6 +38,17 @@
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o negócio imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura, a urbanismo ou à vida nas cidades.",
  "noticias": [
   {
+   "d": "2026-11-22",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Domes depict constellations of missiles in the night sky at Sharjah Architecture Triennial",
+   "m": "Emirados Árabes Unidos",
+   "u": "https://www.dezeen.com/2026/11/22/after-night-there-is-nothing-sharjah-architecture-triennial",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/after-night-there-is-nothing-sharjah-architecture-triennial-sq_dezeen_2364_col_0-1024x1024.jpg"
+  },
+  {
    "d": "2026-11-21",
    "f": "dezeen",
    "tema": "Actualidade",
@@ -58,6 +69,28 @@
    "sec": "INT",
    "auto": true,
    "img": "https://static-2026.dezeen.com/uploads/2026/11/staircase-buildings-roundup_dezeen-squares_dezeen_2364_col_1-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-21",
+   "f": "eco",
+   "tema": "Cidade",
+   "t": "“No dia 28 de janeiro nasceu a Câmara Kristin”. Nove meses depois nasce o livro de Gonçalo Lopes",
+   "m": "",
+   "u": "https://eco.sapo.pt/entrevista/no-dia-28-de-janeiro-nasceu-a-camara-kristin-nove-meses-depois-nasce-o-livro-de-goncalo-lopes",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/11/cropped-goncalo-lopes03-3.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-21",
+   "f": "eco",
+   "tema": "Cidade",
+   "t": "Do contrato à cobrança da renda, a Vivin automatiza a gestão das estadias flexíveis",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/21/do-contrato-a-cobranca-da-renda-a-vivin-automatiza-a-gestao-das-estadias-flexiveis",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/11/cropped-whatsapp-image-2026-11-20-at-160656.jpeg?w=300&fit=crop"
   },
   {
    "d": "2026-11-20",
@@ -375,28 +408,6 @@
   },
   {
    "d": "2026-11-18",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "Impostos, habitação, pensões e energia: as principais propostas dos partidos para o OE2027",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/18/impostos-habitacao-pensoes-e-energia-as-principais-propostas-dos-partidos-para-o-oe2027",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/10/cropped-eco-oe2027-27out-2000px-014.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-18",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "Comissão de amortização antecipada, IMT e rendas moderadas: as propostas dos partidos para a habitação",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/18/comissao-de-amortizacao-antecipada-imt-e-rendas-moderadas-as-propostas-dos-partidos-para-a-habitacao",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/08/cropped-45445303-scaled-4.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-18",
    "f": "dezeen",
    "tema": "Património",
    "t": "Cotswolds barn renovation by ConForm creates a \"dialogue between old and new\"",
@@ -512,17 +523,6 @@
    "sec": "LVT",
    "auto": true,
    "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/11/acampadasegurorestauradores_01-300x200.jpg"
-  },
-  {
-   "d": "2026-11-16",
-   "f": "dezeen",
-   "tema": "Prémio",
-   "t": "Dezeen Awards 2026 architecture project of the year revealed",
-   "m": "",
-   "u": "https://www.dezeen.com/2026/11/16/dezeen-awards-2026-architecture-project-of-the-year-revealed",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/09/DAICHI-inc.-DAICHI-silent-river-TREE-SAUNA_dezeen_2364_col_0-411x411.jpg"
   },
   {
    "d": "2026-11-13",

@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-21",
+ "actualizado": "2026-11-22",
  "v": 2,
- "total_fonte": 75,
+ "total_fonte": 74,
  "ofertas": [
   {
    "id": 4781,
@@ -1180,25 +1180,6 @@
    "email": "pvideira@pecarquitectos.com",
    "entrevista": "967557412",
    "site": ""
-  },
-  {
-   "id": 4659,
-   "t": "Mafalda Batalha Arquitectos | Vaga para Arquitecto/a ou Estagiário/a",
-   "ent": "Mafalda Batalha",
-   "loc": "Lisboa",
-   "sec": "LVT",
-   "lat": 38.71932,
-   "lng": -9.16017,
-   "prazo": "2026-11-21",
-   "pub": "2026-09-16",
-   "resumo": "Abrimos vaga para arquitecto/a ou arquitecto/a estagiário/a",
-   "resumo_txt": "Abrimos vaga para arquitecto/a ou arquitecto/a estagiário/a",
-   "descricao": "abrimos vaga para colaborador(a) que tenha verdadeiro interesse por arquitectura",
-   "funcoes": "arquitecto/a",
-   "requisitos": "Domínio de archicad",
-   "email": "info@amb-arquitectos.com",
-   "entrevista": "",
-   "site": "https://www.amb-arquitectos.com/pt"
   },
   {
    "id": 4642,

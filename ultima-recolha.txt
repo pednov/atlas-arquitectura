@@ -1,6 +1,5 @@
-2026-11-21 13:35 UTC
+2026-11-22 13:27 UTC
 Encomenda: 19 fichas na listagem
-  nova notícia (Construir): 2026-11-20 Dar continuidade ao que já existe | imagem
   excluída: ‘Plataforma Cidade’ revisita 50 anos de transformação do território português
   excluída: “Iremos, mais uma vez, defender um Sistema Nacional de Habitação que deve funcionar como um instrumento integral de planeamento”
   excluída: Saraiva e Associados lança ‘Unlocker AI’: o primeiro podcast de arquitectura totalmente gerado com IA
@@ -25,14 +24,14 @@ ArchDaily: 30 obras na página de Portugal
   nova notícia (Lisboa Para Pessoas): 2026-10-12 Chegou o Jornal de Outono | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-10 FlixBus já pára em Sete Rios, mas “guerra” pelo terminal provisório de Lisboa continua | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-09 Envelhecer como mulher na Lisboa gentrificada | imagem
+  nova notícia (ECO): 2026-11-21 “No dia 28 de janeiro nasceu a Câmara Kristin”. Nove meses depois nasce o livro de Gonçalo Lopes | imagem
+  nova notícia (ECO): 2026-11-21 Do contrato à cobrança da renda, a Vivin automatiza a gestão das estadias flexíveis | imagem
   nova notícia (ECO): 2026-11-18 Freguesias abrangidas pela transferência de património edificado sem contrapartidas | sem imagem
   nova notícia (ECO): 2026-11-18 Municípios vão poder receber imóveis rústicos do Estado para reforçar habitação acessível | imagem
   nova notícia (ECO): 2026-11-18 Câmara de Coimbra apresenta Simplex com 50 medidas contra burocracia | sem imagem
-  nova notícia (ECO): 2026-11-18 Câmara do Porto investe 765 mil euros nas luzes de Natal. Praça D. João I sem programação | imagem
   nova notícia (ECO): 2026-11-17 Moedas sugere criação de empresa metropolitana de habitação na região de Lisboa | sem imagem
   nova notícia (ECO): 2026-11-17 Governo “estuda várias propostas” da oposição para habitação. “É um diálogo a sério” | sem imagem
   nova notícia (ECO): 2026-11-17 Luís Neves diz que gestão das acampadas está na esfera das autarquias | imagem
-  nova notícia (ECO): 2026-11-17 Habitação. Bruxelas identifica crise no setor como fator de risco para economia portuguesa | imagem
   nova notícia (ECO): 2026-11-16 Porto abre guerra aos devolutos. Pressão da Câmara angaria “200 a 300 imóveis” para arrendamento acessível | imagem
   nova notícia (ECO): 2026-11-06 Governo pronto para transferir gestão de 477 imóveis para as autarquias | sem imagem
   nova notícia (ECO): 2026-11-06 Crise da habitação? Banca aponta à construção de casas a custos moderados | imagem
@@ -60,9 +59,10 @@ ArchDaily: 30 obras na página de Portugal
   nova notícia (Arquitectura Viva): 2026-07-14 ‘Mitologías modernas’ en Alcalá 31 | imagem
   nova notícia (Arquitectura Viva): 2026-07-13 Frida Kahlo: de artista a icono | imagem
   nova notícia (Arquitectura Viva): 2026-07-10 Premio Europeo del Espacio Público Urbano, proyectos seleccionados | imagem
-  nova notícia (Dezeen): 2026-11-21 ZHA completes “secular” Théâtre Royal de Rabat in Morocco | imagem
-  nova notícia (Dezeen): 2026-11-21 Five buildings where the staircase is the facade | imagem
-  nova notícia (Dezeen): 2026-11-20 Atelier Manferdini uses digital glitches to shape tile-and-metal facade of Virginia power station | imagem
+  nova notícia (Dezeen): 2026-11-22 Domes depict constellations of missiles in the night sky at Sharjah Architecture Triennial | imagem
+  nova notícia (Dezeen): 2026-11-16 Photos reveal scale of Trump’s White House ballroom, drawing criticism | imagem
+  nova notícia (Dezeen): 2026-11-16 Shisuo Design Office creates "surreal" rural house in China using salvaged steel | imagem
+  nova notícia (Dezeen): 2026-11-16 Eight highlights from this year's Sharjah Architecture Triennial | imagem
   nova notícia (Dezeen): 2026-11-15 Reims 502 uses pink palette for "non-referential" commercial building in Mexico | imagem
   nova notícia (Dezeen): 2026-11-15 Mecanoo transforms former gold vault into "city’s living room" in renovation of De Nederlandsche Bank in Amsterdam | imagem
   nova notícia (Dezeen): 2026-11-14 Japanese sauna by Daichi Inc makes "people feel as though they are dissolving into the forest" | imagem
@@ -79,17 +79,16 @@ ArchDaily: 30 obras na página de Portugal
   nova notícia (Dezeen): 2026-11-11 Tonkin Liu creates pair of glulam buildings for craftspeople restoring York Minster | imagem
   nova notícia (Dezeen): 2026-11-11 Public toilets in Paris by Chartier-Corbasson "elevate the ordinary" | sem imagem
   nova notícia (Dezeen): 2026-11-11 Five little-known stage designs from the archives of Zaha Hadid | sem imagem
-  nova notícia (Dezeen): 2026-11-11 Sumayya Vally to design Dubai art foundation around the "memory of a house" | imagem
-Concursos: 0 novos, 10 no total. Notícias: 70 novas, 113 no total.
+Concursos: 0 novos, 10 no total. Notícias: 69 novas, 113 no total.
 Dados gravados.
 Fotógrafos: lista de 2026-11-18, ainda com menos de uma semana.
 
-SILUC 2026-11-21 13:35 UTC
-  a ler alterações e regulamentação de 285 diplomas
-  relações: 100 de 285
-  relações: 200 de 285
-  alterações e regulamentação lidas em 285 diplomas (0 falhas)
+SILUC 2026-11-22 13:28 UTC
+  a ler alterações e regulamentação de 294 diplomas
+  relações: 100 de 294
+  relações: 200 de 294
+  alterações e regulamentação lidas em 294 diplomas (0 falhas)
   1840 fichas recebidas de 1840
-  1840 diplomas em 7 temas gravados (285 novos ou alterados)
-Bolsa de emprego: 75 de 75 ofertas lidas em 15 páginas
-Bolsa de emprego: 75 ofertas em vigor gravadas
+  1840 diplomas em 7 temas gravados (294 novos ou alterados)
+Bolsa de emprego: 74 de 74 ofertas lidas em 15 páginas
+Bolsa de emprego: 74 ofertas em vigor gravadas
