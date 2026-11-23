@@ -95,6 +95,7 @@ function concursoCard(c){
   el.className = 'cc'; el.style.setProperty('--c', s.cor);
   Object.assign(el.dataset, {st, u, rec, sec: c.sec || '', prog: c.programa || '', q});
   el._due = due;
+  el.id = 'c-' + (c.id || ''); el._c = c;           /* para o mapa dos concursos (concursos-mapa.js) */
   el.innerHTML = `<div class="band"></div><div class="in">
 <div class="top"><span class="st" data-s="${st}" data-u="${u}">${LABEL[st]}</span><span class="rec" data-r="${rec}" title="${REC[rec][3]}"><b>${REC[rec][1]}</b>${REC[rec][0]}</span></div>
 <div class="due">${dueText(due, st)}</div>

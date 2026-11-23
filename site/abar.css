@@ -32,4 +32,6 @@
 @media (max-width:420px){.atabs a{gap:6px}.atabs a::before{width:7px;height:7px}}
 /* oito separadores (18 Nov. 2026): o subtítulo sai mais cedo e os nomes longos encurtam em ecrãs médios */
 @media (max-width:1700px){.abar .asub{display:none}}
-@media (max-width:1440px){.atabs .lg{display:none}.atabs .sh{display:inline}}
+@media (max-width:1640px){.atabs .lg{display:none}.atabs .sh{display:inline}}   /* era 1440 px até 23 Nov. 2026; o separador BIM pediu mais espaço */
+@media (min-width:1281px) and (max-width:1520px){.atabs{gap:4px}.atabs a{padding:10px 11px}}
+@media (min-width:1281px) and (max-width:1400px){.atabs a{padding:10px 9px}}
