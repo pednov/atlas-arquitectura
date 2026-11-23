@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-22",
+ "actualizado": "2026-11-23",
  "fontes": [
   {
    "id": "construir",
@@ -37,6 +37,69 @@
  ],
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o negócio imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura, a urbanismo ou à vida nas cidades.",
  "noticias": [
+  {
+   "d": "2026-11-23",
+   "f": "construir",
+   "tema": "Prémio",
+   "t": "‘Casa das Janelas Verdes’ distinguida nos Architecture & Design Collection Awards",
+   "m": "A2OFFICE · Vila do Conde",
+   "u": "https://construir.pt/2026/11/23/casa-das-janelas-verdes-distinguida-nos-architecture-design-collection-awards",
+   "sec": "NORTE",
+   "auto": true
+  },
+  {
+   "d": "2026-11-23",
+   "f": "lpp",
+   "tema": "Habitação",
+   "t": "10 terrenos, quase 60 milhões de euros: CML vende propriedade municipal, acção popular tenta travar",
+   "m": "Lisboa",
+   "u": "https://lisboaparapessoas.pt/2026/11/23/lisboa-hasta-publica-terrenos-municipais-accao-popular",
+   "sec": "LVT",
+   "auto": true,
+   "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/11/cmlhastapublicaterranos_01-300x200.jpg"
+  },
+  {
+   "d": "2026-11-23",
+   "f": "eco",
+   "tema": "Cidade",
+   "t": "Autarquias passam a ter de comunicar diversas decisões em jornais locais",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/23/autarquias-passam-a-ter-de-comunicar-diversas-decisoes-em-jornais-locais",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/11/cropped-benavente07.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-23",
+   "f": "dezeen",
+   "tema": "Habitação",
+   "t": "HTA Design unveils \"UK's largest council housing development\"",
+   "m": "Inglaterra",
+   "u": "https://www.dezeen.com/2026/11/23/kidbrooke-park-road-hta-design",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/kidbrooke-park-road-hta-design-council-housing_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-23",
+   "f": "dezeen",
+   "tema": "Entrevista",
+   "t": "Meet AMAA, Neri&Hu’s pick for the most influential architect of the next 20 years",
+   "m": "",
+   "u": "https://www.dezeen.com/2026/11/23/amaa-interview-dezeen-20x20-nerihu",
+   "sec": "INT",
+   "auto": true
+  },
+  {
+   "d": "2026-11-23",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "RIBA president rejoins ARB register to restore architect title",
+   "m": "",
+   "u": "https://www.dezeen.com/2026/11/23/riba-president-rejoins-arb",
+   "sec": "INT",
+   "auto": true
+  },
   {
    "d": "2026-11-22",
    "f": "dezeen",
@@ -397,17 +460,6 @@
   },
   {
    "d": "2026-11-18",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "Habitação: Governo vai receber dois grupos da acampada do Porto",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/18/habitacao-governo-vai-receber-dois-grupos-da-acampada-do-porto",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/10/cropped-48002717-scaled-1.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-18",
    "f": "dezeen",
    "tema": "Património",
    "t": "Cotswolds barn renovation by ConForm creates a \"dialogue between old and new\"",
@@ -460,38 +512,6 @@
    "sec": "INT",
    "auto": true,
    "img": "https://static-2026.dezeen.com/uploads/2026/11/simon-robinson-office-interview-melbourne-victoria-public-housing-australia-_dezeen_1704_col_sq-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-17",
-   "f": "dezeen",
-   "tema": "Património",
-   "t": "SOM completes first phase of Philadelphia train station restoration",
-   "m": "EUA",
-   "u": "https://www.dezeen.com/2026/11/17/som-30-street-station-philadelphia-restoration",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/30-street-station-som-philadelphia_dezeen_2364_sq-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-17",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "SSdH \"renegotiates light\" in Melbourne warehouse transformation",
-   "m": "Austrália",
-   "u": "https://www.dezeen.com/2026/11/17/ssdh-adaptation-warehouse-melbourne",
-   "sec": "INT",
-   "auto": true
-  },
-  {
-   "d": "2026-11-17",
-   "f": "dezeen",
-   "tema": "Actualidade",
-   "t": "Construction underway on Jean Nouvel's landmark opera house in China",
-   "m": "China",
-   "u": "https://www.dezeen.com/2026/11/17/jean-nouvels-shenzhen-opera-house",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/shenzhen-opera-house-jean-nouvel-architecture-china-cultural_dezeen_2364_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-16",
@@ -1070,17 +1090,6 @@
    "sec": "LVT",
    "auto": true,
    "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/10/lisboatrotinetasacp_01-300x200.jpg"
-  },
-  {
-   "d": "2026-10-15",
-   "f": "lpp",
-   "tema": "Cidadania",
-   "t": "Isto não acabou",
-   "m": "Lisboa",
-   "u": "https://lisboaparapessoas.pt/2026/10/15/isto-nao-acabou",
-   "sec": "LVT",
-   "auto": true,
-   "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/10/acampadaportolisboa-300x200.jpg"
   },
   {
    "d": "2026-10-14",
