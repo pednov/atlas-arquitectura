@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-23",
+ "actualizado": "2026-11-24",
  "fontes": [
   {
    "id": "construir",
@@ -37,6 +37,48 @@
  ],
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o negócio imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura, a urbanismo ou à vida nas cidades.",
  "noticias": [
+  {
+   "d": "2026-11-24",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "\"Intensely physical patterns\" cloak Gerhard Richter's self-designed gallery in Doha",
+   "m": "Catar",
+   "u": "https://www.dezeen.com/2026/11/24/gerhard-richters-doha-pavilion-selldorf-architects",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/doha-pavilion-gerhard-richter-selldorf-architects-qatar-architecture-galleries-cultural_dezeen_2364_sq-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-24",
+   "f": "dezeen",
+   "tema": "Entrevista",
+   "t": "Meet Courage Dzidula Kpodo, Lesley Lokko's pick for the most influential architect of the next 20 years",
+   "m": "",
+   "u": "https://www.dezeen.com/2026/11/24/courage-dzidula-kpodo-interview-lesley-lokko-20x20",
+   "sec": "INT",
+   "auto": true
+  },
+  {
+   "d": "2026-11-24",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Five key projects by Dezeen Awards emerging architect of the year Kuma&Elsa",
+   "m": "",
+   "u": "https://www.dezeen.com/2026/11/24/kumaelsa-key-projects-dezeen-awards-emerging-architect",
+   "sec": "INT",
+   "auto": true
+  },
+  {
+   "d": "2026-11-24",
+   "f": "dezeen",
+   "tema": "Património",
+   "t": "London Museum brings \"back a bit of London's heritage\" with Smithfield Market opening",
+   "m": "Reino Unido",
+   "u": "https://www.dezeen.com/2026/11/24/london-museum-stanton-williams-asif-khan-julian-harrap-architects",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/london-museum-stanton-williams-asif-khan-julian-harrap-architects-sq_dezeen_2364_col_2-1024x1024.jpg"
+  },
   {
    "d": "2026-11-23",
    "f": "construir",
@@ -99,6 +141,17 @@
    "u": "https://www.dezeen.com/2026/11/23/riba-president-rejoins-arb",
    "sec": "INT",
    "auto": true
+  },
+  {
+   "d": "2026-11-23",
+   "f": "inst",
+   "tema": "Actualidade",
+   "t": "Nova equipa de continuidade e renovação da SRMAD",
+   "m": "",
+   "u": "https://www.ordemdosarquitectos.org/noticias/noticia-282",
+   "sec": "MAD",
+   "auto": true,
+   "img": "https://ordemdosarquitectos.org/backend/uploads/small_05_f2d682f560.jpg"
   },
   {
    "d": "2026-11-22",
@@ -460,39 +513,6 @@
   },
   {
    "d": "2026-11-18",
-   "f": "dezeen",
-   "tema": "Património",
-   "t": "Cotswolds barn renovation by ConForm creates a \"dialogue between old and new\"",
-   "m": "Inglaterra",
-   "u": "https://www.dezeen.com/2026/11/18/open-byre-conform",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/cotswolds-open-byre-barn-renovation-conform-sq_dezeen_2364_col_2-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-18",
-   "f": "dezeen",
-   "tema": "Actualidade",
-   "t": "Harvard GSD students propose alternatives to Trump's arch",
-   "m": "EUA",
-   "u": "https://www.dezeen.com/2026/11/18/harvard-gsd-triumphal-arch-proposals-the-cultural-landscape-foundation",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/the-cultural-landscape-foundation-harvard-triumphal-arch-provocations_dezeen_sq-1-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-18",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "CLB Architects creates ADU in Wyoming with rock-climbing wall",
-   "m": "EUA",
-   "u": "https://www.dezeen.com/2026/11/18/clb-architects-wiley-adu-wyoming-rock-climbing",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/wiley-adu-wyoming-clb-architects_dezeen_2364_sq-1-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-18",
    "f": "inst",
    "tema": "Habitação",
    "t": "RADAR 2030 - Habitação",
@@ -501,17 +521,6 @@
    "sec": "NAC",
    "auto": true,
    "img": "https://ordemdosarquitectos.org/backend/uploads/small_site_OA_0e6a5aa235.png"
-  },
-  {
-   "d": "2026-11-17",
-   "f": "dezeen",
-   "tema": "Entrevista",
-   "t": "“We're not saying they're perfect” says architect fighting to save Melbourne's public housing blocks",
-   "m": "Austrália",
-   "u": "https://www.dezeen.com/2026/11/17/office-simon-robinson-public-housing-melbourne-australia",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/simon-robinson-office-interview-melbourne-victoria-public-housing-australia-_dezeen_1704_col_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-16",

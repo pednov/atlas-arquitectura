@@ -1,8 +1,27 @@
 {
- "actualizado": "2026-11-23",
+ "actualizado": "2026-11-24",
  "v": 2,
- "total_fonte": 76,
+ "total_fonte": 77,
  "ofertas": [
+  {
+   "id": 4790,
+   "t": "GPFA-Projeto e Coordenação | Vaga para Arquitecto ( M/F)",
+   "ent": "GPFA - Projeto e Coordenação, Lda.",
+   "loc": "Rua Garcia de Orta, nº 48, Amadora",
+   "sec": "LVT",
+   "lat": 38.74682,
+   "lng": -9.21026,
+   "prazo": "2026-12-25",
+   "pub": "2026-11-24",
+   "resumo": "Arquiteto(a) — Projeto e Licenciamento",
+   "resumo_txt": "Arquiteto(a) — Projeto e Licenciamento",
+   "descricao": "A GPFA-Projeto e Coordenação, Lda, empresa de Projetos da zona de Lisboa, pretende contratar Arquitecto (a) para integrar a sua equipa de projetistas.",
+   "funcoes": "• Elaboração de peças desenhadas e escritas nas várias fases de projeto. • Preparação e instrução de processos de licenciamento e comunicação prévia junto das câmaras municipais e demais entidades. • Articulação e compatibilização com projetos de especialidades. • Apoio ao acompanhamento de obra.",
+   "requisitos": " Mestrado em Arquitectura  Inscrição como arquitecto  Experiência em software AutoCad, Microsoft Office, Revit  Carta de condução categoria B  Disponibilidade para trabalhar em equipa",
+   "email": "geral@gpfa.pt",
+   "entrevista": "214767870",
+   "site": ""
+  },
   {
    "id": 4789,
    "t": "Europar | Vaga para Arquiteto/a Estágio profissional",

@@ -1,6 +1,6 @@
-2026-11-23 16:10 UTC
-Encomenda: 19 fichas na listagem
-  nova notícia (Construir): 2026-11-23 ‘Casa das Janelas Verdes’ distinguida nos Architecture & Design Collection Awards | sem imagem
+2026-11-24 15:59 UTC
+Encomenda: 18 fichas na listagem
+  excluída: Legado de Simões de Carvalho e IA em debate em Congresso Internacional no Egipto
   excluída: ‘Plataforma Cidade’ revisita 50 anos de transformação do território português
   excluída: “Iremos, mais uma vez, defender um Sistema Nacional de Habitação que deve funcionar como um instrumento integral de planeamento”
   excluída: Saraiva e Associados lança ‘Unlocker AI’: o primeiro podcast de arquitectura totalmente gerado com IA
@@ -8,9 +8,10 @@ Encomenda: 19 fichas na listagem
   excluída: HAS 2026 junta fornecedores e buyers na área da hotelaria e arquitectura (c/ galeria de imagens)
   excluída: Arquitectos querem reunião do Conselho Nacional de Habitação com a “máxima brevidade”
   excluída: Segmento Urbano lança verificação técnica de projectos com apoio de IA
-ArchDaily: falhou HTTPSConnectionPool(host='www.archdaily.com', port=443): Read timed out. (read timeout=30)
+ArchDaily: 32 obras na página de Portugal
+  fora de Portugal: Fondation Louis Vuitton / Gehry Partners
   excluída (Lisboa Para Pessoas): Tempestade Charles em Lisboa esta quarta-feira. O que esperar?
-  nova notícia (Lisboa Para Pessoas): 2026-11-23 10 terrenos, quase 60 milhões de euros: CML vende propriedade municipal, acção popular tenta travar | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-15 Isto não acabou | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-14 Só os Cães São Livres de Mijar: um livro sobre a história e falta de sanitários públicos em Lisboa | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-14 Uma metrópole insatisfeita: o que o Barómetro das Cidades diz sobre Lisboa | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-14 Ciclovia em Monsanto com menos de um mês apagada por pressão da Junta e de moradores | imagem
@@ -24,13 +25,11 @@ ArchDaily: falhou HTTPSConnectionPool(host='www.archdaily.com', port=443): Read 
   nova notícia (Lisboa Para Pessoas): 2026-10-13 Forno do Tijolo sem carros: mais vida ou menos clientes? | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-12 Chegou o Jornal de Outono | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-10 FlixBus já pára em Sete Rios, mas “guerra” pelo terminal provisório de Lisboa continua | imagem
-  nova notícia (ECO): 2026-11-23 Autarquias passam a ter de comunicar diversas decisões em jornais locais | imagem
   nova notícia (ECO): 2026-11-18 Freguesias abrangidas pela transferência de património edificado sem contrapartidas | sem imagem
   nova notícia (ECO): 2026-11-18 Municípios vão poder receber imóveis rústicos do Estado para reforçar habitação acessível | imagem
   nova notícia (ECO): 2026-11-18 Comissão de amortização antecipada, IMT e rendas moderadas: as propostas dos partidos para a habitação | imagem
   nova notícia (ECO): 2026-11-17 Moedas sugere criação de empresa metropolitana de habitação na região de Lisboa | sem imagem
   nova notícia (ECO): 2026-11-17 Governo “estuda várias propostas” da oposição para habitação. “É um diálogo a sério” | sem imagem
-  nova notícia (ECO): 2026-11-17 Luís Neves diz que gestão das acampadas está na esfera das autarquias | imagem
   nova notícia (ECO): 2026-11-16 Porto abre guerra aos devolutos. Pressão da Câmara angaria “200 a 300 imóveis” para arrendamento acessível | imagem
   nova notícia (ECO): 2026-11-06 Governo pronto para transferir gestão de 477 imóveis para as autarquias | sem imagem
   nova notícia (ECO): 2026-11-06 Crise da habitação? Banca aponta à construção de casas a custos moderados | imagem
@@ -38,15 +37,33 @@ ArchDaily: falhou HTTPSConnectionPool(host='www.archdaily.com', port=443): Read 
   nova notícia (ECO): 2026-11-05 Câmara de Faro sem margem legal para travar condomínio de luxo na Ria Formosa | imagem
   nova notícia (ECO): 2026-11-03 Afinal, Câmara do Porto só licencia projetos turísticos se construírem casas de renda acessível | sem imagem
   nova notícia (ECO): 2026-11-02 Líder do BPI defende política de industrialização na construção de casas | imagem
-  nova notícia (ECO): 2026-10-29 Bispo do Porto diz que Igreja Católica deve disponibilizar mais património para habitação | imagem
-Arquitectura Viva: falhou a categoria 44670 Expecting value: line 1 column 1 (char 0)
-Arquitectura Viva: falhou a categoria 42 Expecting value: line 1 column 1 (char 0)
-Arquitectura Viva: falhou a categoria 46408 Expecting value: line 1 column 1 (char 0)
-Arquitectura Viva: falhou a categoria 37 Expecting value: line 1 column 1 (char 0)
-Arquitectura Viva: falhou a categoria 43 Expecting value: line 1 column 1 (char 0)
-  nova notícia (Dezeen): 2026-11-23 HTA Design unveils "UK's largest council housing development" | imagem
-  nova notícia (Dezeen): 2026-11-23 Meet AMAA, Neri&Hu’s pick for the most influential architect of the next 20 years | sem imagem
-  nova notícia (Dezeen): 2026-11-23 RIBA president rejoins ARB register to restore architect title | sem imagem
+  nova notícia (Arquitectura Viva): 2026-09-28 César Ortiz-Echagüe (1927-2026) | sem imagem
+  nova notícia (Arquitectura Viva): 2026-09-25 ‘Pipilotti Rist. Ever is Over All’ | imagem
+  nova notícia (Arquitectura Viva): 2026-09-23 Exposición Radical Rehab | imagem
+  nova notícia (Arquitectura Viva): 2026-09-16 Finalistas del Premio Europeo del Espacio Público Urbano 2026 | imagem
+  nova notícia (Arquitectura Viva): 2026-09-08 Daniel Libeskind, Praemium Imperiale 2026 | imagem
+  nova notícia (Arquitectura Viva): 2026-09-04 María Moreno en el MUREC | imagem
+  nova notícia (Arquitectura Viva): 2026-09-02 Elia Zenghelis (1937–2026) | sem imagem
+  nova notícia (Arquitectura Viva): 2026-09-01 Memorias: Carlos Ferrater | sem imagem
+  nova notícia (Arquitectura Viva): 2026-09-01 Gran Premio de España de Fórmula 1 | imagem
+  nova notícia (Arquitectura Viva): 2026-09-01 El Modelo Balear de Vivienda Social, Premio Obel 2026 | imagem
+  nova notícia (Arquitectura Viva): 2026-08-31 Chipperfield en Santander | imagem
+  nova notícia (Arquitectura Viva): 2026-08-27 Yayoi Kusama (1929-2026) | sem imagem
+  nova notícia (Arquitectura Viva): 2026-08-24 Fernando Caruncho (1957-2026) | sem imagem
+  nova notícia (Arquitectura Viva): 2026-08-11 Ha muerto Rafael Otero | sem imagem
+  nova notícia (Arquitectura Viva): 2026-07-23 Ramón Gutiérrez (1939-2026) | sem imagem
+  nova notícia (Arquitectura Viva): 2026-07-17 Fujiko Nakaya en la Neue Nationalgalerie de Berlín | imagem
+  nova notícia (Arquitectura Viva): 2026-07-15 Regeneraciones: China y España en el espejo | imagem
+  nova notícia (Arquitectura Viva): 2026-07-14 ‘Mitologías modernas’ en Alcalá 31 | imagem
+  nova notícia (Arquitectura Viva): 2026-07-13 Frida Kahlo: de artista a icono | imagem
+  nova notícia (Arquitectura Viva): 2026-07-10 Premio Europeo del Espacio Público Urbano, proyectos seleccionados | imagem
+  nova notícia (Dezeen): 2026-11-24 "Intensely physical patterns" cloak Gerhard Richter's self-designed gallery in Doha | imagem
+  nova notícia (Dezeen): 2026-11-24 Meet Courage Dzidula Kpodo, Lesley Lokko's pick for the most influential architect of the next 20 years | sem imagem
+  nova notícia (Dezeen): 2026-11-24 Five key projects by Dezeen Awards emerging architect of the year Kuma&Elsa | sem imagem
+  nova notícia (Dezeen): 2026-11-24 London Museum brings "back a bit of London's heritage" with Smithfield Market opening | imagem
+  nova notícia (Dezeen): 2026-11-17 SOM completes first phase of Philadelphia train station restoration | imagem
+  nova notícia (Dezeen): 2026-11-17 SSdH "renegotiates light" in Melbourne warehouse transformation | sem imagem
+  nova notícia (Dezeen): 2026-11-17 Construction underway on Jean Nouvel's landmark opera house in China | imagem
   nova notícia (Dezeen): 2026-11-16 Dezeen Awards 2026 architecture project of the year revealed | imagem
   nova notícia (Dezeen): 2026-11-16 Photos reveal scale of Trump’s White House ballroom, drawing criticism | imagem
   nova notícia (Dezeen): 2026-11-16 Shisuo Design Office creates "surreal" rural house in China using salvaged steel | imagem
@@ -60,20 +77,17 @@ Arquitectura Viva: falhou a categoria 43 Expecting value: line 1 column 1 (char 
   nova notícia (Dezeen): 2026-11-13 Studio Octopi revives art deco pavilion and lido on Scottish coast | sem imagem
   nova notícia (Dezeen): 2026-11-12 Crosslam completes Brazil's tallest mass-timber tower | imagem
   nova notícia (Dezeen): 2026-11-12 EMBT shelters Naples metro station beneath "natural and welcoming" vaulted timber roof | imagem
-  nova notícia (Dezeen): 2026-11-12 Faulty Wedding Cake pavilion to be dismantled at Waddesdon Manor | imagem
-  nova notícia (Dezeen): 2026-11-12 Renovation delays pose "Notre Dame-like" fire risk for Houses of Parliament | imagem
-  nova notícia (Dezeen): 2026-11-12 Access to Shanghai Grand Opera House staircase restricted to paid ticket holders | imagem
-  nova notícia (Dezeen): 2026-11-12 Licht Kunst Licht illuminates Cologne Cathedral’s historic facade with "largely invisible" lights | imagem
-Concursos: 0 novos, 10 no total. Notícias: 50 novas, 114 no total.
+  nova notícia (institucional): 2026-11-23 Nova equipa de continuidade e renovação da SRMAD | imagem
+Concursos: 0 novos, 10 no total. Notícias: 67 novas, 115 no total.
 Dados gravados.
 Fotógrafos: lista de 2026-11-18, ainda com menos de uma semana.
 
-SILUC 2026-11-23 16:10 UTC
-  a ler alterações e regulamentação de 284 diplomas
-  relações: 100 de 284
-  relações: 200 de 284
-  alterações e regulamentação lidas em 284 diplomas (0 falhas)
+SILUC 2026-11-24 16:00 UTC
+  a ler alterações e regulamentação de 283 diplomas
+  relações: 100 de 283
+  relações: 200 de 283
+  alterações e regulamentação lidas em 283 diplomas (0 falhas)
   1840 fichas recebidas de 1840
-  1840 diplomas em 7 temas gravados (284 novos ou alterados)
-Bolsa de emprego: 76 de 76 ofertas lidas em 16 páginas
-Bolsa de emprego: 76 ofertas em vigor gravadas
+  1840 diplomas em 7 temas gravados (283 novos ou alterados)
+Bolsa de emprego: 77 de 77 ofertas lidas em 16 páginas
+Bolsa de emprego: 77 ofertas em vigor gravadas
