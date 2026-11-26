@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-25",
+ "actualizado": "2026-11-26",
  "fontes": [
   {
    "id": "construir",
@@ -37,6 +37,82 @@
  ],
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o negócio imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura, a urbanismo ou à vida nas cidades.",
  "noticias": [
+  {
+   "d": "2026-11-26",
+   "f": "lpp",
+   "tema": "Cidadania",
+   "t": "Transportes Metropolitanos de Lisboa aposta nos dados abertos",
+   "m": "Lisboa",
+   "u": "https://lisboaparapessoas.pt/2026/11/26/dados-abertos-tml",
+   "sec": "LVT",
+   "auto": true,
+   "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/11/tmldadosabertos_01-300x200.jpg"
+  },
+  {
+   "d": "2026-11-26",
+   "f": "lpp",
+   "tema": "Exposição",
+   "t": "De livro a exposição: “Só os Cães São Livres de Mijar” defende o direito a ir à casa-de-banho",
+   "m": "Lisboa",
+   "u": "https://lisboaparapessoas.pt/2026/11/26/so-os-caes-sao-livres-de-mijar-exposicao-sanitarios-publicos-lisboa",
+   "sec": "LVT",
+   "auto": true,
+   "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/11/caeslivresmijarexposiacao_01-300x200.jpg"
+  },
+  {
+   "d": "2026-11-26",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Portugueses gastam em média 16,3% do rendimento em habitação em 2025",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/26/portugueses-gastam-em-media-163-do-rendimento-em-habitacao-em-2025",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/10/cropped-doc2025080645445292-ps05544.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-26",
+   "f": "dezeen",
+   "tema": "Património",
+   "t": "\"Europe's largest museum development\" opens in 1930s Citroën garage in Brussels",
+   "m": "Bélgica",
+   "u": "https://www.dezeen.com/2026/11/26/kanal-museum-brussels-renovation-atelier-kanal",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/kanal-museum-brussels-renovation-atelier-kanal-sq2_dezeen_2364_col_0-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-26",
+   "f": "dezeen",
+   "tema": "Entrevista",
+   "t": "Meet BC Architects & Studies & Materials, Marina Tabassum's pick for the most influential architect of the next 20 years",
+   "m": "",
+   "u": "https://www.dezeen.com/2026/11/26/bc-architects-interview-20x20-marina-tabassum-2",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/bc-architects-interview-20x20-marina-tabassum_dezeen_2364_sq_2227-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-26",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "RSHP centres cantilevered office building Sąvaržėlė around glass atrium",
+   "m": "Lituânia",
+   "u": "https://www.dezeen.com/2026/11/26/rshp-savarzele-cantilevered-office",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/rshp-Savarzele-vilnius_dezeen_2364_col_sq3-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-26",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "Carlo Ratti and AI assistant to curate Seoul Biennale of Architecture and Urbanism 2027",
+   "m": "Coreia do Sul",
+   "u": "https://www.dezeen.com/2026/11/26/carlo-ratti-seoul-biennale",
+   "sec": "INT",
+   "auto": true
+  },
   {
    "d": "2026-11-25",
    "f": "lpp",
@@ -111,6 +187,50 @@
    "sec": "INT",
    "auto": true,
    "img": "https://static-2026.dezeen.com/uploads/2026/11/bosco-verticale-stefano-boeri-milan_dezeen_1704_col_0-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-25",
+   "f": "eco",
+   "tema": "Cidade",
+   "t": "Câmara de Lisboa aprova 68 câmaras de videovigilância na Baixa por 1,8 milhões de euros",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/25/camara-de-lisboa-aprova-68-camaras-de-videovigilancia-na-baixa-por-18-milhoes-de-euros",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2025/04/cropped-17389068-scaled-2.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-25",
+   "f": "eco",
+   "tema": "Cidade",
+   "t": "Fica em casa. Edifício da Zara no Rossio adquirido pela família Ortega por mais de 100 milhões de euros",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/25/fica-em-casa-edificio-da-zara-no-rossio-adquirido-pela-familia-ortega",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/11/cropped-cbre-zara-do-rossio-2.jpeg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-25",
+   "f": "eco",
+   "tema": "Mobilidade",
+   "t": "Pedidos à E-Rede para alimentar a mobilidade elétrica “dispararam” nos últimos quatro anos",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/25/pedidos-a-e-rede-para-alimentar-a-mobilidade-eletrica-dispararam-nos-ultimos-quatro-anos",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/11/800x450-27.png?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-25",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Desai Chia designs Bethesda Residence to balance \"openness and discretion\"",
+   "m": "EUA",
+   "u": "https://www.dezeen.com/2026/11/25/bethesda-residence-desai-chia-maryland",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/bethesda-residence-desai-chia-maryland-sq_dezeen_2364_col_0-1024x1024.jpg"
   },
   {
    "d": "2026-11-24",
@@ -371,49 +491,6 @@
   },
   {
    "d": "2026-11-20",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "OE2027. PS vitorioso no segundo dia de votações faz mossa nas rendas moderadas do Governo",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/20/ps-consagra-se-vencedor-do-segundo-de-dias-de-votacoes-do-oe2027",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/10/cropped-eco-oe2027-27out-2000px-014.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-20",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "PS e Chega aprovam IVA Zero. Benefícios fiscais das rendas moderadas caem",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/20/ps-e-chega-aprovam-iva-zero-beneficios-fiscais-das-rendas-moderadas-caem",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/10/cropped-doc2025080645445292-ps05544.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-20",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "Habitação sobre rodas",
-   "m": "",
-   "u": "https://eco.sapo.pt/opiniao/habitacao-sobre-rodas",
-   "sec": "NAC",
-   "auto": true
-  },
-  {
-   "d": "2026-11-20",
-   "f": "eco",
-   "tema": "Concurso",
-   "t": "Lisboa lança concurso para 100 câmaras de videovigilância e planeia chegar às 500",
-   "m": "Lisboa",
-   "u": "https://eco.sapo.pt/2026/11/20/lisboa-lanca-concurso-para-100-camaras-de-videovigilancia-e-planeia-chegar-as-500",
-   "sec": "LVT",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2025/04/cropped-22384591-scaled-3.jpg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-20",
    "f": "arquitecturaviva",
    "tema": "Exposição",
    "t": "Dalí y la influencia del universo freudiano",
@@ -445,28 +522,6 @@
   },
   {
    "d": "2026-11-20",
-   "f": "dezeen",
-   "tema": "Opinião",
-   "t": "\"All over the world, buildings designed to be explored in 3D are subject to restrictions\"",
-   "m": "China",
-   "u": "https://www.dezeen.com/2026/11/20/shanghai-opera-house-controversy-aaron-betsky-opinion",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/snohetta-shanghai-grand-opera-house-public-staircase-barricade_dezeen_1704_col_sq-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-20",
-   "f": "dezeen",
-   "tema": "Actualidade",
-   "t": "Upside-down cantilever cracks open timber hotel by BIG",
-   "m": "Suíça",
-   "u": "https://www.dezeen.com/2026/11/20/big-hotel-siegenthalergut-thun-switzerland",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/Nachwachsende-Stadt-big-thun-switzerland_dezeen_2364_col_sq1-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-20",
    "f": "construir",
    "tema": "Prémio",
    "t": "Dar continuidade ao que já existe",
@@ -475,17 +530,6 @@
    "sec": "NAC",
    "auto": true,
    "img": "https://backoffice.construir.pt/app/uploads/2026/11/Monasterio-despues-1-300x170.jpg"
-  },
-  {
-   "d": "2026-11-20",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "Atelier Manferdini uses digital glitches to shape tile-and-metal facade of Virginia power station",
-   "m": "EUA",
-   "u": "https://www.dezeen.com/2026/11/20/atelier-manferdini-virginia-power-station",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/manferdini-virginia-power-station-invisible_dezeen_2364_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-19",
@@ -507,28 +551,6 @@
    "sec": "INT",
    "auto": true,
    "img": "https://arquitecturaviva.com/assets/uploads/articulos/84280/av_imagen.jpeg?h=ec2820b8"
-  },
-  {
-   "d": "2026-11-19",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "Fictional Project designs home in Kerala to feel \"one with the landscape\"",
-   "m": "Índia",
-   "u": "https://www.dezeen.com/2026/11/19/fictional-project-interstitial-living",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/fictional-project-interstitial-living-home-kerala-sq_dezeen_2364_col_1-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-19",
-   "f": "dezeen",
-   "tema": "Actualidade",
-   "t": "Shigeru Ban unveils proposal for tent-like church in Rome",
-   "m": "Itália",
-   "u": "https://www.dezeen.com/2026/11/19/shigeru-ban-san-vincenzo-de-paoli-church-parish-complex",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/san-vincenzo-de-paoli-church-parish-complex-shigeru-ban-vittorio-petrucci-architecture-cultural-rome-italy_dezeen_2364_sq-1024x1024.jpg"
   },
   {
    "d": "2026-11-19",
@@ -1046,28 +1068,6 @@
    "m": "16 ateliers · Palácio Sinel de Cordes, até 2 de Março de 2027",
    "u": "https://construir.pt/2026/10/21/trienal-recebe-manobras-de-aproximacao",
    "sec": "LVT"
-  },
-  {
-   "d": "2026-10-21",
-   "f": "lpp",
-   "tema": "Cidadania",
-   "t": "A acampada persiste no Rossio: “Vamos construir isto como se fosse uma cidade que é nossa”",
-   "m": "Lisboa",
-   "u": "https://lisboaparapessoas.pt/2026/10/21/acampada-persiste-rossio",
-   "sec": "LVT",
-   "auto": true,
-   "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/10/acampadaresiste20_24-300x200.jpg"
-  },
-  {
-   "d": "2026-10-20",
-   "f": "lpp",
-   "tema": "Habitação",
-   "t": "Polícia termina com a acampada no Rossio durante a terceira noite",
-   "m": "Lisboa",
-   "u": "https://lisboaparapessoas.pt/2026/10/20/acampada-habitacao-rossio-policia",
-   "sec": "LVT",
-   "auto": true,
-   "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/10/acampadarossiopolicia-300x200.jpg"
   },
   {
    "d": "2026-10-19",

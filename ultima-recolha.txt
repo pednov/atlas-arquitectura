@@ -1,6 +1,5 @@
-2026-11-25 15:46 UTC
+2026-11-26 15:28 UTC
 Encomenda: 18 fichas na listagem
-  nova notícia (Construir): 2026-11-24 Museu Experimenta Paisagem e Atelier Marques de Aguiar assinalam sete anos a valorizar Região Centro | imagem
   excluída: Legado de Simões de Carvalho e IA em debate em Congresso Internacional no Egipto
   excluída: ‘Plataforma Cidade’ revisita 50 anos de transformação do território português
   excluída: “Iremos, mais uma vez, defender um Sistema Nacional de Habitação que deve funcionar como um instrumento integral de planeamento”
@@ -9,11 +8,12 @@ Encomenda: 18 fichas na listagem
   excluída: HAS 2026 junta fornecedores e buyers na área da hotelaria e arquitectura (c/ galeria de imagens)
   excluída: Arquitectos querem reunião do Conselho Nacional de Habitação com a “máxima brevidade”
   excluída: Segmento Urbano lança verificação técnica de projectos com apoio de IA
-ArchDaily: 32 obras na página de Portugal
-  fora de Portugal: Fondation Louis Vuitton / Gehry Partners
+ArchDaily: 28 obras na página de Portugal
   excluída (Lisboa Para Pessoas): Tempestade Charles em Lisboa esta quarta-feira. O que esperar?
-  nova notícia (Lisboa Para Pessoas): 2026-11-25 Isaltino, Plutónio, Japão e os gastos que estão a levantar dúvidas | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-11-24 A história da acampada que criou um “parlamento” no Rossio em 2011 | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-11-26 Transportes Metropolitanos de Lisboa aposta nos dados abertos | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-11-26 De livro a exposição: “Só os Cães São Livres de Mijar” defende o direito a ir à casa-de-banho | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-19 Centenas acampam no centro de Lisboa contra a crise da habitação | imagem
+  nova notícia (Lisboa Para Pessoas): 2026-10-15 Depois de regular, Moedas quer suspender as trotinetas partilhadas. ACP propôs referendo | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-15 Isto não acabou | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-14 Só os Cães São Livres de Mijar: um livro sobre a história e falta de sanitários públicos em Lisboa | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-14 Uma metrópole insatisfeita: o que o Barómetro das Cidades diz sobre Lisboa | imagem
@@ -24,23 +24,19 @@ ArchDaily: 32 obras na página de Portugal
   nova notícia (Lisboa Para Pessoas): 2026-10-13 Quiosques de Lisboa dão descontos só para clientes portugueses? | sem imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-13 Quiosques nos jardins e praças de Lisboa: mais vida urbana ou menos espaço público? | imagem
   nova notícia (Lisboa Para Pessoas): 2026-10-13 Joana Stichini Vilela e a Lisboa em que tudo era possível: “Essa ideia de nos juntarmos para fazer algo para todos perdeu força” | sem imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-13 Entre as margens, de passagem: como o Tejo pode transportar ainda mais pessoas | imagem
-  nova notícia (Lisboa Para Pessoas): 2026-10-13 Forno do Tijolo sem carros: mais vida ou menos clientes? | imagem
-  nova notícia (ECO): 2026-11-25 O Orçamento conta casas. Uma infraestrutura conta décadas | sem imagem
-  nova notícia (ECO): 2026-11-25 Portugal é o segundo país da UE onde preço das casas mais subiu | imagem
-  nova notícia (ECO): 2026-11-25 Madeira “rebenta a escala” do turismo e preços das casas. Açores centrados na agricultura | imagem
-  nova notícia (ECO): 2026-11-25 UTAD e Politécnico de Bragança unidas para desenvolver nova geração de casas | imagem
-  nova notícia (ECO): 2026-11-24 Governo espanhol prolonga imposto à banca para arrecadar 1.400 milhões de euros para habitação | sem imagem
-  nova notícia (ECO): 2026-11-24 Município do Porto vai pagar 27 milhões para garantir 331 casas com rendas acessíveis | imagem
+  nova notícia (ECO): 2026-11-26 Portugueses gastam em média 16,3% do rendimento em habitação em 2025 | imagem
+  nova notícia (ECO): 2026-11-25 Câmara de Lisboa aprova 68 câmaras de videovigilância na Baixa por 1,8 milhões de euros | imagem
+  nova notícia (ECO): 2026-11-25 Fica em casa. Edifício da Zara no Rossio adquirido pela família Ortega por mais de 100 milhões de euros | imagem
+  nova notícia (ECO): 2026-11-25 Pedidos à E-Rede para alimentar a mobilidade elétrica “dispararam” nos últimos quatro anos | imagem
+  nova notícia (ECO): 2026-11-19 Jovens até aos 35 anos vão poder usar garantia pública para construir primeira casa | imagem
+  nova notícia (ECO): 2026-11-19 Habitação preocupa 69% dos jovens do Porto. Maioria aprova impacto do turismo | imagem
+  nova notícia (ECO): 2026-11-19 Parlamento aprova isenção de mais-valias até 300 mil euros para pôr casas no mercado | imagem
   nova notícia (ECO): 2026-11-17 Moedas sugere criação de empresa metropolitana de habitação na região de Lisboa | sem imagem
   nova notícia (ECO): 2026-11-16 Porto abre guerra aos devolutos. Pressão da Câmara angaria “200 a 300 imóveis” para arrendamento acessível | imagem
   nova notícia (ECO): 2026-11-06 Governo pronto para transferir gestão de 477 imóveis para as autarquias | sem imagem
   nova notícia (ECO): 2026-11-06 Crise da habitação? Banca aponta à construção de casas a custos moderados | imagem
   nova notícia (ECO): 2026-11-05 Resolver crise da habitação “não é para uma legislatura”, avisa líder da Caixa | imagem
   nova notícia (ECO): 2026-11-05 Câmara de Faro sem margem legal para travar condomínio de luxo na Ria Formosa | imagem
-  nova notícia (ECO): 2026-11-03 Afinal, Câmara do Porto só licencia projetos turísticos se construírem casas de renda acessível | sem imagem
-  nova notícia (ECO): 2026-11-02 Líder do BPI defende política de industrialização na construção de casas | imagem
-  nova notícia (Arquitectura Viva): 2026-10-01 Georgia O’Keeffe en el Detroit Institute of Arts | sem imagem
   nova notícia (Arquitectura Viva): 2026-10-01 Geoffrey Bawa en el Museo Vitra | imagem
   nova notícia (Arquitectura Viva): 2026-10-01 Charlotte Perriand en la Fundación Miró | imagem
   nova notícia (Arquitectura Viva): 2026-10-01 Capricho Goyesco | imagem
@@ -48,6 +44,7 @@ ArchDaily: 32 obras na página de Portugal
   nova notícia (Arquitectura Viva): 2026-10-01 Memorias: Paredes Pedrosa | sem imagem
   nova notícia (Arquitectura Viva): 2026-10-01 El gran interpelador | imagem
   nova notícia (Arquitectura Viva): 2026-10-01 Orden sacerdotal | imagem
+  nova notícia (Arquitectura Viva): 2026-09-30 Farshid Moussavi, Medalla Soane 2026 | sem imagem
   nova notícia (Arquitectura Viva): 2026-09-28 César Ortiz-Echagüe (1927-2026) | sem imagem
   nova notícia (Arquitectura Viva): 2026-09-25 ‘Pipilotti Rist. Ever is Over All’ | imagem
   nova notícia (Arquitectura Viva): 2026-09-23 Exposición Radical Rehab | imagem
@@ -60,9 +57,14 @@ ArchDaily: 32 obras na página de Portugal
   nova notícia (Arquitectura Viva): 2026-09-01 El Modelo Balear de Vivienda Social, Premio Obel 2026 | imagem
   nova notícia (Arquitectura Viva): 2026-08-31 Chipperfield en Santander | imagem
   nova notícia (Arquitectura Viva): 2026-08-27 Yayoi Kusama (1929-2026) | sem imagem
-  nova notícia (Dezeen): 2026-11-25 Wine bar informs rich colour palette for Yorkshire home renovation by Tuckey Design Studio | sem imagem
-  nova notícia (Dezeen): 2026-11-25 Are trees on buildings more than a greenwashing gimmick? | imagem
-  nova notícia (Dezeen): 2026-11-24 Studio Gang completes women's leadership campus in Wisconsin | imagem
+  nova notícia (Dezeen): 2026-11-26 "Europe's largest museum development" opens in 1930s Citroën garage in Brussels | imagem
+  nova notícia (Dezeen): 2026-11-26 Meet BC Architects & Studies & Materials, Marina Tabassum's pick for the most influential architect of the next 20 years | imagem
+  nova notícia (Dezeen): 2026-11-26 RSHP centres cantilevered office building Sąvaržėlė around glass atrium | imagem
+  nova notícia (Dezeen): 2026-11-26 Carlo Ratti and AI assistant to curate Seoul Biennale of Architecture and Urbanism 2027 | sem imagem
+  nova notícia (Dezeen): 2026-11-25 Desai Chia designs Bethesda Residence to balance "openness and discretion" | imagem
+  nova notícia (Dezeen): 2026-11-19 Sid Lee Architecture references "rhythm of the vine" for curved Ontario hotel | imagem
+  nova notícia (Dezeen): 2026-11-19 SHoP Architects designs Novak Djokovic-backed Miami supertall skyscraper | imagem
+  nova notícia (Dezeen): 2026-11-19 Waugh Thistleton Architects set to transform derelict bathing pavilion into Tracey Emin-backed studios and sauna | imagem
   nova notícia (Dezeen): 2026-11-18 CLB Architects creates ADU in Wyoming with rock-climbing wall | imagem
   nova notícia (Dezeen): 2026-11-18 Cotswolds barn renovation by ConForm creates a "dialogue between old and new" | imagem
   nova notícia (Dezeen): 2026-11-18 Harvard GSD students propose alternatives to Trump's arch | imagem
@@ -75,23 +77,16 @@ ArchDaily: 32 obras na página de Portugal
   nova notícia (Dezeen): 2026-11-16 Shisuo Design Office creates "surreal" rural house in China using salvaged steel | imagem
   nova notícia (Dezeen): 2026-11-16 Eight highlights from this year's Sharjah Architecture Triennial | imagem
   nova notícia (Dezeen): 2026-11-15 Reims 502 uses pink palette for "non-referential" commercial building in Mexico | imagem
-  nova notícia (Dezeen): 2026-11-15 Mecanoo transforms former gold vault into "city’s living room" in renovation of De Nederlandsche Bank in Amsterdam | imagem
-  nova notícia (Dezeen): 2026-11-14 Japanese sauna by Daichi Inc makes "people feel as though they are dissolving into the forest" | imagem
-  nova notícia (Dezeen): 2026-11-14 Mexico's Parque del Jaguar protects jaguars with 18-kilometre limestone wall | imagem
-  nova notícia (Dezeen): 2026-11-13 Perforated brick walls envelop giant market in Kinshasa by Think Tank Architecture | imagem
-  nova notícia (Dezeen): 2026-11-13 BIG reveals "modular blueprint" for Refugee City in Uganda | imagem
-  nova notícia (institucional): 2026-11-24 Prémio Arquétipo | Lançamento da 5.ª edição e apresentação do protótipo vencedor da 4.ª edição | imagem
-Concursos: 0 novos, 10 no total. Notícias: 70 novas, 117 no total.
+Concursos: 0 novos, 10 no total. Notícias: 67 novas, 117 no total.
 Dados gravados.
-Fotógrafos (Divisare): 94 na lista de Portugal
-Fotógrafos: 94 gravados, 94 com obras publicadas.
+Fotógrafos: lista de 2026-11-25, ainda com menos de uma semana.
 
-SILUC 2026-11-25 15:50 UTC
-  a ler alterações e regulamentação de 276 diplomas
-  relações: 100 de 276
-  relações: 200 de 276
-  alterações e regulamentação lidas em 276 diplomas (0 falhas)
+SILUC 2026-11-26 15:28 UTC
+  a ler alterações e regulamentação de 281 diplomas
+  relações: 100 de 281
+  relações: 200 de 281
+  alterações e regulamentação lidas em 281 diplomas (0 falhas)
   1840 fichas recebidas de 1840
-  1840 diplomas em 7 temas gravados (276 novos ou alterados)
+  1840 diplomas em 7 temas gravados (281 novos ou alterados)
 Bolsa de emprego: 75 de 75 ofertas lidas em 15 páginas
-Bolsa de emprego: 75 ofertas em vigor gravadas
+Bolsa de emprego: sem alterações
