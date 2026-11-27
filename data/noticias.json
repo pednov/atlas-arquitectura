@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-26",
+ "actualizado": "2026-11-27",
  "fontes": [
   {
    "id": "construir",
@@ -37,6 +37,83 @@
  ],
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o negócio imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura, a urbanismo ou à vida nas cidades.",
  "noticias": [
+  {
+   "d": "2026-11-27",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Palco Z. Do escritório à casa, o que a Geração Z pede e o que cede",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/27/palco-z-do-escritorio-a-casa-o-que-a-geracao-z-pede-e-o-que-cede",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/11/cropped-palco-z-nov2026-54.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-27",
+   "f": "eco",
+   "tema": "Habitação",
+   "t": "Fim do IRS a 10% nas rendas arrisca afetar contratos em vigor",
+   "m": "",
+   "u": "https://eco.sapo.pt/2026/11/27/fim-do-irs-a-10-nas-rendas-arrisca-afetar-contratos-em-vigor",
+   "sec": "NAC",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/10/cropped-doc2025080645445292-ps05544.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-27",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "Texas reveals proposal for US Space Academy in Houston",
+   "m": "EUA",
+   "u": "https://www.dezeen.com/2026/11/27/us-space-academy-houston-texas",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/us-space-academy-houston-texas_dezeen_2364_sq_11-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-27",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Ambidestro clads coastal home in Brazil with rough local stone",
+   "m": "Brasil",
+   "u": "https://www.dezeen.com/2026/11/27/casa-los-cobos-ambidestro-brazil",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/casa-los-cobos-ambidestro-brazil-sq_dezeen_2364_col_0-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-27",
+   "f": "dezeen",
+   "tema": "Habitação",
+   "t": "Hawkins\\Brown's temporary housing for homeless families in London is a UK first",
+   "m": "Inglaterra",
+   "u": "https://www.dezeen.com/2026/11/27/harold-hill-family-welcome-centre-hawkins-brown-temporary-homeless-housing",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/harold-hill-family-welcome-centre-hawkins-brown-sq_dezeen_2364_col_0-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-27",
+   "f": "dezeen",
+   "tema": "Exposição",
+   "t": "\"We wanted to avoid the idea of tropical modernism\" says curator of Geoffrey Bawa exhibition at Vitra Design Museum",
+   "m": "Sri Lanka",
+   "u": "https://www.dezeen.com/2026/11/27/geoffrey-bawa-exhibition-vitra-design-museum",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/geoffrey-bawa_2364_sq_0-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-27",
+   "f": "dezeen",
+   "tema": "Actualidade",
+   "t": "Victorian hospital conversion in Edinburgh named Scotland’s best new building",
+   "m": "Reino Unido",
+   "u": "https://www.dezeen.com/2026/11/27/rias-doolan-award-edinburgh-futures",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/bennetts-associates-edinburgh-futures-institute-rias-doolan-award-sq_dezeen_2364_col_1-1-1024x1024.jpg"
+  },
   {
    "d": "2026-11-26",
    "f": "lpp",
@@ -112,6 +189,28 @@
    "u": "https://www.dezeen.com/2026/11/26/carlo-ratti-seoul-biennale",
    "sec": "INT",
    "auto": true
+  },
+  {
+   "d": "2026-11-26",
+   "f": "eco",
+   "tema": "Cidade",
+   "t": "Olhão garante mais três anos de videovigilância com 61 câmaras",
+   "m": "Olhão",
+   "u": "https://eco.sapo.pt/2026/11/26/olhao-garante-mais-tres-anos-de-videovigilancia-com-61-camaras",
+   "sec": "ALG",
+   "auto": true,
+   "img": "https://eco.imgix.net/uploads/2026/04/cropped-39647520-scaled-1.jpg?w=300&fit=crop"
+  },
+  {
+   "d": "2026-11-26",
+   "f": "arquitecturaviva",
+   "tema": "Exposição",
+   "t": "Dos paisajes literarios",
+   "m": "",
+   "u": "https://arquitecturaviva.com/articulos/dos-paisajes-literarios",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://arquitecturaviva.com/assets/uploads/articulos/84336/av_imagen.jpeg?h=f861d9d9"
   },
   {
    "d": "2026-11-25",
@@ -414,39 +513,6 @@
    "img": "https://ordemdosarquitectos.org/backend/uploads/small_05_f2d682f560.jpg"
   },
   {
-   "d": "2026-11-22",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "Domes depict constellations of missiles in the night sky at Sharjah Architecture Triennial",
-   "m": "Emirados Árabes Unidos",
-   "u": "https://www.dezeen.com/2026/11/22/after-night-there-is-nothing-sharjah-architecture-triennial",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/after-night-there-is-nothing-sharjah-architecture-triennial-sq_dezeen_2364_col_0-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-21",
-   "f": "dezeen",
-   "tema": "Actualidade",
-   "t": "ZHA completes “secular” Théâtre Royal de Rabat in Morocco",
-   "m": "Marrocos",
-   "u": "https://www.dezeen.com/2026/11/21/zha-theatre-royal-de-rabat-morroco",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/theatre-royal-de-rabat-zha-architecture-morocco-cultural_dezeen_2364_sq-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-21",
-   "f": "dezeen",
-   "tema": "Obra",
-   "t": "Five buildings where the staircase is the facade",
-   "m": "",
-   "u": "https://www.dezeen.com/2026/11/21/exterior-staircases-facade",
-   "sec": "INT",
-   "auto": true,
-   "img": "https://static-2026.dezeen.com/uploads/2026/11/staircase-buildings-roundup_dezeen-squares_dezeen_2364_col_1-1024x1024.jpg"
-  },
-  {
    "d": "2026-11-21",
    "f": "eco",
    "tema": "Cidade",
@@ -458,38 +524,6 @@
    "img": "https://eco.imgix.net/uploads/2026/11/cropped-goncalo-lopes03-3.jpg?w=300&fit=crop"
   },
   {
-   "d": "2026-11-21",
-   "f": "eco",
-   "tema": "Cidade",
-   "t": "Do contrato à cobrança da renda, a Vivin automatiza a gestão das estadias flexíveis",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/21/do-contrato-a-cobranca-da-renda-a-vivin-automatiza-a-gestao-das-estadias-flexiveis",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/11/cropped-whatsapp-image-2026-11-20-at-160656.jpeg?w=300&fit=crop"
-  },
-  {
-   "d": "2026-11-20",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "“País precisa é de mais casas, não impostos e politiquices”. Pinto Luz critica ziguezagues no Parlamento",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/20/pais-precisa-e-de-mais-casas-nao-impostos-e-politiquices-pinto-luz-critica-ziguezagues-no-parlamento",
-   "sec": "NAC",
-   "auto": true
-  },
-  {
-   "d": "2026-11-20",
-   "f": "eco",
-   "tema": "Habitação",
-   "t": "Salá­rio não chega para a renda aces­sí­vel em mais de metade dos con­ce­lhos",
-   "m": "",
-   "u": "https://eco.sapo.pt/2026/11/20/salario-nao-chega-para-a-renda-acessivel-em-mais-de-metade-dos-concelhos",
-   "sec": "NAC",
-   "auto": true,
-   "img": "https://eco.imgix.net/uploads/2026/06/cropped-6p1a0756.jpg?w=300&fit=crop"
-  },
-  {
    "d": "2026-11-20",
    "f": "arquitecturaviva",
    "tema": "Exposição",
@@ -499,26 +533,6 @@
    "sec": "INT",
    "auto": true,
    "img": "https://arquitecturaviva.com/assets/uploads/articulos/84290/av_imagen.jpeg?h=1a7da395"
-  },
-  {
-   "d": "2026-11-20",
-   "f": "dezeen",
-   "tema": "Património",
-   "t": "CAN combines eclectic references for eccentric revamp of London house",
-   "m": "Reino Unido",
-   "u": "https://www.dezeen.com/2026/11/20/can-house-tropicalia",
-   "sec": "INT",
-   "auto": true
-  },
-  {
-   "d": "2026-11-20",
-   "f": "dezeen",
-   "tema": "Entrevista",
-   "t": "Meet Lanza Atelier, Frida Escobedo's pick for the most influential architect of the next 20 years",
-   "m": "",
-   "u": "https://www.dezeen.com/2026/11/20/lanza-atelier-interview-frida-escobedo-20x20",
-   "sec": "INT",
-   "auto": true
   },
   {
    "d": "2026-11-20",
@@ -1191,16 +1205,6 @@
    "u": "https://construir.pt/2026/10/05/14-projectos-portugueses-conquistam-loop-design-awards-2026",
    "img": "https://backoffice.construir.pt/app/uploads/2026/10/3-600x600.jpg",
    "sec": "NAC"
-  },
-  {
-   "d": "2026-10-01",
-   "f": "arquitecturaviva",
-   "tema": "Actualidade",
-   "t": "Georgia O’Keeffe en el Detroit Institute of Arts",
-   "m": "",
-   "u": "https://arquitecturaviva.com/articulos/okeeffe-en-el-detroit-institute-of-arts",
-   "sec": "INT",
-   "auto": true
   },
   {
    "d": "2026-09-29",
