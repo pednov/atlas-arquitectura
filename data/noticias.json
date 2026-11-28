@@ -1,5 +1,5 @@
 {
- "actualizado": "2026-11-27",
+ "actualizado": "2026-11-28",
  "fontes": [
   {
    "id": "construir",
@@ -37,6 +37,28 @@
  ],
  "excluidas": "Ficam de fora a publicidade a produtos e serviços, as feiras comerciais, o negócio imobiliário e, nas fontes portuguesas, as notícias sem ligação a arquitectura, a urbanismo ou à vida nas cidades.",
  "noticias": [
+  {
+   "d": "2026-11-28",
+   "f": "lpp",
+   "tema": "Habitação",
+   "t": "Cada um com o seu tijolo: da acampada às cooperativas",
+   "m": "Lisboa",
+   "u": "https://lisboaparapessoas.pt/2026/11/28/acampada-cooperativas",
+   "sec": "LVT",
+   "auto": true,
+   "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/11/acampadacooperativas-300x200.jpg"
+  },
+  {
+   "d": "2026-11-28",
+   "f": "dezeen",
+   "tema": "Exposição",
+   "t": "Timber grid and external stair offer \"a wink\" to Centre Pompidou at its annexe in Massy",
+   "m": "França",
+   "u": "https://www.dezeen.com/2026/11/28/centre-pompidou-francilien-pca-stream",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/centre-pompidou-francilien-pca-stream-architecture-storage-exhibitions-france-cultural-infrastructure_dezeen_2364_sq-1024x1024.jpg"
+  },
   {
    "d": "2026-11-27",
    "f": "eco",
@@ -113,6 +135,17 @@
    "sec": "INT",
    "auto": true,
    "img": "https://static-2026.dezeen.com/uploads/2026/11/bennetts-associates-edinburgh-futures-institute-rias-doolan-award-sq_dezeen_2364_col_1-1-1024x1024.jpg"
+  },
+  {
+   "d": "2026-11-27",
+   "f": "dezeen",
+   "tema": "Obra",
+   "t": "Estúdio 41 wraps coastal Brazilian house in white brise-soleil",
+   "m": "Brasil",
+   "u": "https://www.dezeen.com/2026/11/27/guaratuba-house-brazil-estudio-41",
+   "sec": "INT",
+   "auto": true,
+   "img": "https://static-2026.dezeen.com/uploads/2026/11/guaratuba-house-brazil-estudio-41_dezeen_2364_sq-1-1024x1024.jpg"
   },
   {
    "d": "2026-11-26",
@@ -480,26 +513,6 @@
    "sec": "INT",
    "auto": true,
    "img": "https://static-2026.dezeen.com/uploads/2026/11/kidbrooke-park-road-hta-design-council-housing_dezeen_2364_sq-1024x1024.jpg"
-  },
-  {
-   "d": "2026-11-23",
-   "f": "dezeen",
-   "tema": "Entrevista",
-   "t": "Meet AMAA, Neri&Hu’s pick for the most influential architect of the next 20 years",
-   "m": "",
-   "u": "https://www.dezeen.com/2026/11/23/amaa-interview-dezeen-20x20-nerihu",
-   "sec": "INT",
-   "auto": true
-  },
-  {
-   "d": "2026-11-23",
-   "f": "dezeen",
-   "tema": "Actualidade",
-   "t": "RIBA president rejoins ARB register to restore architect title",
-   "m": "",
-   "u": "https://www.dezeen.com/2026/11/23/riba-president-rejoins-arb",
-   "sec": "INT",
-   "auto": true
   },
   {
    "d": "2026-11-23",
@@ -1051,17 +1064,6 @@
    "u": "https://arquitecturaviva.com/articulos/premios-arquia-proxima-y-arquia-innova-2026",
    "sec": "INT",
    "auto": true
-  },
-  {
-   "d": "2026-10-23",
-   "f": "lpp",
-   "tema": "Habitação",
-   "t": "De acampada a “aconchada”: o “movimento” entrou num novo capítulo",
-   "m": "Lisboa",
-   "u": "https://lisboaparapessoas.pt/2026/10/23/acampada-aconchada-rossio-movimento-habitacao",
-   "sec": "LVT",
-   "auto": true,
-   "img": "https://lisboaparapessoas.pt/wp-content/uploads/2026/10/acampadaaconchada_54-300x200.jpg"
   },
   {
    "d": "2026-10-22",

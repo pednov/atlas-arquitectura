@@ -1,7 +1,7 @@
 {
- "actualizado": "2026-11-25",
+ "actualizado": "2026-11-28",
  "v": 2,
- "total_fonte": 75,
+ "total_fonte": 74,
  "ofertas": [
   {
    "id": 4790,
@@ -192,25 +192,6 @@
    "email": "jobs@cfds.pt",
    "entrevista": "",
    "site": "https://cfds.pt/"
-  },
-  {
-   "id": 4775,
-   "t": "Estágio profissional",
-   "ent": "Maider Neto",
-   "loc": "Quinta Shopping 115",
-   "sec": "ALG",
-   "lat": 38.70677,
-   "lng": -9.66495,
-   "prazo": "2026-11-27",
-   "pub": "2026-11-13",
-   "resumo": "Estágio profissional presencial em escritório na Quinta do Lago, Faro, Algarve, para colaborar em todo o tipo de projetos, com possibilidade de integrar na equipa.",
-   "resumo_txt": "Estágio profissional presencial em escritório na Quinta do Lago, Faro, Algarve, para colaborar em todo o tipo de projetos, com possibilidade de integrar na equipa.",
-   "descricao": "Arquiteto/a estagiário/a",
-   "funcoes": "• Colaboração no desenvolvimento de projetos de arquitetura nas fases de estudo prévio, licenciamento e execução; - Apoio à elaboração de peças desenhadas e peças escritas; - Desenvolvimento de modelos tridimensionais e elementos de apresentação de projetos; - Participação na preparação de soluções arquitetónicas e construtivas; - Participação em reuniões de equipa e acompanhamento das diferentes fases dos projetos.",
-   "requisitos": "• Mestrado integrado em Arquitetura; - Conhecimentos de Autodesk Revit (obrigatório); - Conhecimentos de ferramentas de modelação e visualização 3D; - Conhecimentos de inglês;",
-   "email": "maiderneto@maider.pt",
-   "entrevista": "913352897",
-   "site": "https://www.maiderneto.com/"
   },
   {
    "id": 4774,
